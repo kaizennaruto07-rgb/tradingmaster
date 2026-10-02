@@ -49,6 +49,9 @@
     .segmented{display:grid;grid-template-columns:1fr 1fr;padding:4px;background:var(--surface-2);border:1px solid var(--line);border-radius:10px}.segmented label{position:relative;display:flex;align-items:center;justify-content:center;gap:7px;padding:8px;cursor:pointer;font-weight:700;font-size:12px;color:var(--muted)}.segmented input{width:14px;height:14px;margin:0;accent-color:var(--accent)}.segmented label:has(input:checked){background:var(--surface);border-radius:7px;color:var(--accent);box-shadow:0 2px 9px rgba(0,0,0,.08)}
     .checkline{display:flex;align-items:center;gap:10px;padding:12px 13px;border-radius:10px;background:var(--amber-soft);color:var(--amber);font-size:12px;font-weight:600}.switch{position:relative;width:38px;height:22px;flex:0 0 auto}.switch input{opacity:0;width:0;height:0}.slider{position:absolute;inset:0;background:var(--line);border-radius:20px;cursor:pointer}.slider::after{content:"";width:16px;height:16px;position:absolute;left:3px;top:3px;background:var(--surface);border-radius:50%;transition:.18s}.switch input:checked+.slider{background:var(--accent)}.switch input:checked+.slider::after{transform:translateX(16px)}
     .result-hero{padding:27px;background:linear-gradient(145deg,var(--accent-soft),transparent 75%);border-bottom:1px solid var(--line)}.result-kicker{font:600 10px/1 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}.result-big{font:600 clamp(24px,7vw,52px)/1.1 var(--mono);letter-spacing:-.05em;margin:10px 0 3px;max-width:100%;overflow-wrap:anywhere}.result-sub{color:var(--muted);font-size:12px}.result-grid{display:grid;grid-template-columns:1fr 1fr}.result-item{padding:16px 19px;border-bottom:1px solid var(--line)}.result-item:nth-child(odd){border-right:1px solid var(--line)}.result-item span{display:block;color:var(--muted);font-size:11px;margin-bottom:3px}.result-item strong{font:600 15px/1.3 var(--mono)}.good{color:var(--accent)!important}.bad{color:var(--danger)!important}.result-foot{padding:17px 19px;color:var(--muted);font-size:11px;display:flex;gap:8px;align-items:start}.result-foot svg{flex:0 0 auto;margin-top:2px}
+    .pnl-duo{display:grid;grid-template-columns:1fr 1fr;border-bottom:1px solid var(--line)}.pnl-cell{padding:22px 16px;min-width:0}.pnl-cell .result-kicker{min-height:21px}.pnl-cell.target{background:linear-gradient(150deg,var(--accent-soft),transparent 85%)}.pnl-cell.stop{background:linear-gradient(210deg,var(--danger-soft),transparent 85%);border-left:1px solid var(--line)}.pnl-cell.target .result-kicker{color:var(--accent)}.pnl-cell.stop .result-kicker{color:var(--danger)}.pnl-duo .result-big{font-size:clamp(22px,6.4vw,42px);margin:8px 0 0}.pnl-duo .unit{font-size:.32em;font-weight:600;color:var(--muted);letter-spacing:.05em;margin-right:.35em}
+    .size-duo{display:grid;grid-template-columns:1fr 1fr;border-bottom:1px solid var(--line)}.size-cell{padding:18px 20px;min-width:0}.size-cell.naive{border-right:1px solid var(--line)}.size-cell.aware{background:var(--accent-soft)}.size-cell.aware .result-kicker{color:var(--accent)}.size-big{font:600 clamp(16px,3.6vw,21px)/1.25 var(--mono);letter-spacing:-.03em;margin:8px 0 4px;overflow-wrap:anywhere}.size-cell.aware .size-big{color:var(--accent)}.size-note{color:var(--muted);font-size:11px;margin-top:3px}
+    .result-grid.crypto-grid .result-item:last-child{grid-column:1/-1;border-right:0}
     .breakdown{padding:5px 19px 16px}.breakdown details{border-top:1px solid var(--line);padding-top:14px}.breakdown summary{cursor:pointer;font-weight:700;font-size:12px}.lineitems{display:grid;gap:8px;margin-top:13px}.lineitem{display:flex;justify-content:space-between;gap:20px;font-size:11px;color:var(--muted)}.lineitem b{font-family:var(--mono);color:var(--ink)}
     .validation{display:none;margin-top:14px;padding:11px 13px;border-radius:10px;background:var(--danger-soft);color:var(--danger);font-size:12px;font-weight:600}.validation.show{display:block}
     .reference{padding:86px 0;border-top:1px solid var(--line)}.reference-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}.reference-card{min-width:0;border-radius:18px;padding:24px;box-shadow:none}.reference-card h3{margin:0 0 16px}.fee-table{display:grid;gap:0;min-width:0}.fee-row{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,auto);gap:20px;padding:11px 0;border-top:1px solid var(--line);font-size:12px;min-width:0}.fee-row span{color:var(--muted);min-width:0}.fee-row b{font-family:var(--mono);text-align:right;min-width:0;overflow-wrap:anywhere}.note{margin-top:16px;padding:13px;background:var(--amber-soft);color:var(--amber);border-radius:10px;font-size:11px;overflow-wrap:anywhere}.disclaimer{padding:30px 0 50px;border-top:1px solid var(--line);color:var(--muted);font-size:11px}.disclaimer strong{color:var(--ink)}
@@ -354,9 +357,16 @@
             <div class="validation" id="cValidation"></div>
           </div>
           <aside class="result-card" aria-live="polite" data-reveal="right">
-            <div class="result-hero"><div class="result-kicker">Net P&amp;L at target · after fees</div><div class="result-big good" id="cNet">USDT 0.00</div><div class="result-sub">Notional <span id="cNotional">USDT 0.00</span> · <span id="cContracts">0 contracts</span> · margin <span id="cMargin">USDT 0.00</span></div></div>
-            <div class="result-grid">
-              <div class="result-item"><span>Net P&amp;L at stop-loss</span><strong id="cNetStop" class="bad">USDT 0.00</strong></div><div class="result-item"><span>R:R</span><strong id="cRR">0.00 : 1</strong></div>
+            <div class="pnl-duo">
+              <div class="pnl-cell target"><div class="result-kicker">Net P&amp;L at target · after fees</div><div class="result-big good" id="cNet"><span class="unit">USDT</span>0.00</div></div>
+              <div class="pnl-cell stop"><div class="result-kicker">Net P&amp;L at stop-loss · after fees</div><div class="result-big bad" id="cNetStop"><span class="unit">USDT</span>0.00</div></div>
+            </div>
+            <div class="size-duo">
+              <div class="size-cell naive"><div class="result-kicker">Position size · ignoring fees</div><div class="size-big" id="cContractsNaive">0.0000 contracts</div><div class="result-sub">Notional <span id="cNotionalNaive">USDT 0.00</span></div><div class="size-note">Risk ÷ stop distance — no fees, GST, funding or TDS</div></div>
+              <div class="size-cell aware"><div class="result-kicker">Position size · after fees</div><div class="size-big" id="cContracts">0.0000 contracts</div><div class="result-sub">Notional <span id="cNotional">USDT 0.00</span> · margin <span id="cMargin">USDT 0.00</span></div><div class="size-note">Cost-aware solve — fees, GST, funding &amp; TDS included</div></div>
+            </div>
+            <div class="result-grid crypto-grid">
+              <div class="result-item"><span>R:R</span><strong id="cRR">0.00 : 1</strong></div>
               <div class="result-item"><span>Gross P&amp;L at target</span><strong id="cGross">USDT 0.00</strong></div><div class="result-item"><span>Round-trip cost</span><strong id="cRound">USDT 0.00</strong></div>
               <div class="result-item"><span>Risk budget</span><strong id="cBudget">USDT 0.00</strong></div><div class="result-item"><span>Breakeven move</span><strong id="cBE">0.000%</strong></div>
             </div>
@@ -649,6 +659,7 @@
 
   const money=n=>new Intl.NumberFormat('en-IN',{style:'currency',currency:'INR',minimumFractionDigits:2,maximumFractionDigits:2}).format(Number.isFinite(n)?n:0);
   const usdt=n=>'USDT '+new Intl.NumberFormat('en-US',{minimumFractionDigits:2,maximumFractionDigits:2}).format(Number.isFinite(n)?n:0);
+  const amt=n=>new Intl.NumberFormat('en-US',{minimumFractionDigits:2,maximumFractionDigits:2}).format(Number.isFinite(n)?n:0);
   const fixed=(n,d=2)=>Number.isFinite(n)?n.toFixed(d):(0).toFixed(d);
   const paise=n=>Math.round((n+Number.EPSILON)*100)/100;
   const quotes=[
@@ -691,6 +702,8 @@
     const notional=budget/lossPerNotional;
     const units=notional/entry;
     const contracts=units/unitPerContract;
+    const naiveContracts=budget/(Math.abs(stop-entry)*unitPerContract);
+    const naiveNotional=naiveContracts*unitPerContract*entry;
     const entryBase=notional*entryRate,entryGst=entryBase*.18;
     const exitNotional=notional*targetExitRatio;
     const exitBase=exitNotional*exitRate,exitGst=exitBase*.18;
@@ -706,9 +719,10 @@
     const rr=netStop<0?net/(-netStop):0;
     const entryFriction=entryRate*1.18,exitFriction=exitRate*1.18+(tdsOn?.01:0);
     const breakEvenRatio=dir===1?((1+entryFriction+fundingRatio)/(1-exitFriction)-1):(1-(1-entryFriction-fundingRatio)/(1+exitFriction));
-    $('cNet').textContent=usdt(net);$('cNet').className='result-big '+(net>=0?'good':'bad');$('cNotional').textContent=usdt(notional);$('cContracts').textContent=fixed(contracts,4)+' contracts';$('cMargin').textContent=usdt(notional/lev);$('cBudget').textContent=usdt(budget);$('cRound').textContent=usdt(round);
-    $('cGross').textContent=usdt(gross);$('cNetStop').textContent=usdt(netStop);$('cNetStop').className=netStop>=0?'good':'bad';$('cRR').textContent=netStop<0?fixed(rr,2)+' : 1':'—';$('cBE').textContent=fixed(Math.max(0,breakEvenRatio)*100,3)+'%';
+    $('cNet').innerHTML='<span class="unit">USDT</span>'+amt(net);$('cNet').className='result-big '+(net>=0?'good':'bad');$('cNotional').textContent=usdt(notional);$('cContracts').textContent=fixed(contracts,4)+' contracts';$('cMargin').textContent=usdt(notional/lev);$('cBudget').textContent=usdt(budget);$('cRound').textContent=usdt(round);
+    $('cGross').textContent=usdt(gross);$('cNetStop').innerHTML='<span class="unit">USDT</span>'+amt(netStop);$('cNetStop').className='result-big '+(netStop>=0?'good':'bad');$('cRR').textContent=netStop<0?fixed(rr,2)+' : 1':'—';$('cBE').textContent=fixed(Math.max(0,breakEvenRatio)*100,3)+'%';
     $('cEntryBase').textContent=usdt(entryBase);$('cEntryGst').textContent=usdt(entryGst);$('cEntryTotal').textContent=usdt(entryBase+entryGst);$('cExitBase').textContent=usdt(exitBase);$('cExitGst').textContent=usdt(exitGst);$('cExitTotal').textContent=usdt(exitBase+exitGst);$('cStopExitTotal').textContent=usdt(stopExitBase+stopExitGst);$('cFundingCost').textContent=(funding<0?'−':'')+usdt(Math.abs(funding));$('cTdsCost').textContent=usdt(tds);
+    $('cContractsNaive').textContent=fixed(naiveContracts,4)+' contracts';$('cNotionalNaive').textContent=usdt(naiveNotional);
   }
   ['cAccount','cRisk','cEntry','cStop','cTarget','cContract','cLeverage','cEntryType','cExitType','cFunding','cHours','cTds'].forEach(id=>$(id).addEventListener('input',cryptoCalc));
   document.querySelectorAll('input[name="cDir"]').forEach(x=>x.addEventListener('change',cryptoCalc));
