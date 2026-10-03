@@ -6,4 +6,4 @@ Disallow: /_quarantine/
 Disallow: /work/
 
 # Sitemap — UPDATE the domain below when deploying to the real domain
-Sitemap: https://monksofmarket.in/sitemap.xml
+Sitemap: https://monksofmarket.com/sitemap.xml
