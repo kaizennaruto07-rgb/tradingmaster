@@ -7,6 +7,7 @@ import cryptoSchema from './article-schema-crypto.json';
 import riskofruinSchema from './article-schema-riskofruin.json';
 import expectancySchema from './article-schema-expectancy.json';
 import winrateSchema from './article-schema-winrate.json';
+import breakevenSchema from './article-schema-breakeven.json';
 
 export async function getStaticPaths() {
   const articles = await getCollection('articles');
@@ -25,6 +26,7 @@ const schemaData = slug === 'options-trading-charges-india' ? optionsSchema
   : slug === 'risk-of-ruin-trading' ? riskofruinSchema
   : slug === 'what-is-trading-expectancy' ? expectancySchema
   : slug === 'win-rate-vs-risk-reward' ? winrateSchema
+  : slug === 'break-even-win-rate' ? breakevenSchema
   : cryptoSchema;
 const schemaHtml = '<script type="application/ld+json">' + JSON.stringify(schemaData) + '</script' + '>';
 
@@ -40,6 +42,8 @@ const toolCta = slug === 'options-trading-charges-india'
   ? { href: '/tools/what-if-simulator/', label: 'Simulate your expectancy' }
   : slug === 'win-rate-vs-risk-reward'
   ? { href: '/tools/what-if-simulator/', label: 'Simulate your win rate & risk-reward' }
+  : slug === 'break-even-win-rate'
+  ? { href: '/tools/what-if-simulator/', label: 'Test your breakeven in the simulator' }
   : { href: '/tools/crypto-futures/', label: 'Calculate your futures costs' };
 ---
 
