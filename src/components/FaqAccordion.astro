@@ -1,0 +1,28 @@
+---
+// Reusable FAQ accordion — collapsed by default, expands on click.
+// Usage: <FaqAccordion faqs={[{ q: "...", a: "..." }]} />
+interface Props {
+  faqs: { q: string; a: string }[];
+  heading?: string;
+}
+const { faqs, heading = "Frequently asked questions" } = Astro.props;
+---
+
+<section class="faq-section" aria-label={heading}>
+  <h2 class="faq-heading">{heading}</h2>
+  <div class="faq-list">
+    {faqs.map((f, i) => (
+      <div class="faq-item" data-faq>
+        <button class="faq-q" aria-expanded="false" aria-controls={`faq-a-${i}`} id={`faq-q-${i}`}>
+          <span>{f.q}</span>
+          <span class="faq-icon" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-a" id={`faq-a-${i}`} role="region" aria-labelledby={`faq-q-${i}`} hidden>
+          <p>{f.a}</p>
+        </div>
+      </div>
+    ))}
+  </div>
+</section>
+
+<!-- Toggle behavior is handled by /js/faq-accordion.js (loaded in Layout) -->
