@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+  Monks Of Market sitemap.
+  IMPORTANT: Replace https://monksofmarket.com/ with the real domain before deploying.
+  For the WordPress deployment: install Yoast SEO or RankMath — it auto-generates
+  and auto-updates the sitemap for articles. This static sitemap covers the
+  tool pages. When adding a new tool page, add its URL below with today's date.
+  Hash-routed URLs (#tool-crypto) are NOT crawlable — the real domain must serve
+  these as independent pages: /tools/crypto-futures/ and /tools/options-cost/
+-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://monksofmarket.com/</loc>
+    <lastmod>2026-10-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://monksofmarket.com/tools/crypto-futures/</loc>
+    <lastmod>2026-10-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://monksofmarket.com/tools/options-cost/</loc>
+    <lastmod>2026-10-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://monksofmarket.com/about/</loc>
+    <lastmod>2026-10-02</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+</urlset>
