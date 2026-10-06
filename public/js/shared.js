@@ -12,6 +12,20 @@
     document.addEventListener('keydown',function(event){if(event.key==='Escape')closeMenu();});
   }
 
+  // Theme toggle (dark / light), persisted in localStorage.
+  const themeToggle=$('themeToggle'), THEME_KEY='mom-theme';
+  function resolvedTheme(){const t=root.getAttribute('data-theme');if(t==='dark'||t==='light')return t;return matchMedia('(prefers-color-scheme: light)').matches?'light':'dark';}
+  function syncThemeToggle(){if(themeToggle)themeToggle.setAttribute('aria-label','Switch to '+(resolvedTheme()==='dark'?'light':'dark')+' mode');}
+  if(themeToggle){
+    syncThemeToggle();
+    themeToggle.addEventListener('click',function(){
+      const next=resolvedTheme()==='dark'?'light':'dark';
+      root.setAttribute('data-theme',next);
+      try{localStorage.setItem(THEME_KEY,next);}catch(e){}
+      syncThemeToggle();
+    });
+  }
+
   // Scroll-linked atmosphere and section reveals.
   const topline=document.querySelector('.topline');
   let scrollTick=false;
