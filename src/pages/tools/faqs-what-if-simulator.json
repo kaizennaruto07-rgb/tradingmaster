@@ -1,0 +1,22 @@
+[
+  {
+    "q": "What is a Monte Carlo simulation in trading?",
+    "a": "A Monte Carlo simulation runs your trading strategy thousands of times with randomised trade order, so you see the full range of possible outcomes instead of one lucky or unlucky sequence. Your backtest shows one path through history; Monte Carlo shows 1,000 possible paths with the same win rate and payoff — revealing the median outcome, the bad-luck tail, and how often the strategy blows up."
+  },
+  {
+    "q": "Why isn't one backtest enough to trust a strategy?",
+    "a": "A single backtest is one specific ordering of wins and losses. Shuffle the same trades into a different order and the equity curve — especially the drawdown — changes completely, even though the win rate and average win/loss are identical. A strategy can be profitable on average yet still hit a 40% drawdown in one unlucky ordering. Monte Carlo exposes that ordering risk before real money does."
+  },
+  {
+    "q": "What do P10, P50 and P90 mean in the results?",
+    "a": "P50 is the median outcome: half of the 1,000 simulated futures finished above it, half below. P10 is the bad-luck boundary — only 10% of futures did worse. P90 is the good-luck boundary — only 10% did better. The band between P10 and P90 is where 80% of your realistic futures live. Judge a strategy by its P10, not its P50: if you can survive the bad-luck case, the median takes care of itself."
+  },
+  {
+    "q": "Does the simulator include brokerage, taxes and slippage?",
+    "a": "No — it models pure trade outcomes from your win rate, average win and average loss. Real-world friction (brokerage, STT, slippage) makes every outcome slightly worse, which means the simulator is optimistic by design. The practical fix: reduce your average win slightly before entering it, or run the numbers through the Monks Of Market cost calculators first and use the net figures here."
+  },
+  {
+    "q": "What risk per trade keeps the chance of ruin low?",
+    "a": "There is no universal number — it depends on your win rate and payoff — but the simulator makes the trade-off visible: raise risk per trade and watch the ruin probability climb. As a starting point, most robust retail strategies keep risk at 1% or less per trade; the simulation usually shows ruin probability near zero there for any strategy with genuine positive expectancy, while 3–5% risk turns even good strategies fragile."
+  }
+]
