@@ -1,0 +1,72 @@
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Article",
+   "headline": "Crypto Futures Funding Rates, Explained: What It Actually Costs You to Hold a Leveraged Position",
+   "description": "Funding a $10,000 crypto perpetual at 10x costs ~3 USDT/day at a 0.01% 8-hour rate. How funding works, when it settles in IST, and how to plan holding costs.",
+   "author": {
+    "@type": "Person",
+    "name": "Kaizen"
+   },
+   "datePublished": "2026-10-03",
+   "publisher": {
+    "@type": "Organization",
+    "name": "Monks Of Market"
+   }
+  },
+  {
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "What is the funding rate in crypto futures?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "The funding rate is a recurring payment exchanged directly between long and short traders on perpetual futures contracts — not a fee paid to the exchange. When the perpetual contract trades above the spot price, funding is positive and longs pay shorts; when it trades below spot, funding is negative and shorts pay longs. This mechanism keeps the perpetual price anchored to the underlying spot market, since perpetuals never expire."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How often is funding charged?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "On most exchanges, funding settles every 8 hours — at 00:00, 08:00, and 16:00 UTC — and you pay or receive only if your position is open at the settlement timestamp. Close before settlement and no payment applies. Delta Exchange works differently: it settles funding continuously, minute by minute, on the prevailing rate, so there is no settlement-timestamp trick — you pay for exactly the time you hold. Always check your exchange's specific schedule."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What does a negative funding rate mean?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "A negative funding rate means the perpetual contract is trading below the spot price, so short position holders pay long holders. It usually signals that leveraged sellers outnumber leveraged buyers. A negative rate says nothing reliable about where the price will go next — the imbalance can persist for days — but if you are long, you receive funding instead of paying it for as long as the rate stays negative."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How do I calculate the funding cost on my position?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Multiply your full position value (not your margin) by the funding rate: Funding payment = Position Value × Funding Rate. For example, a 10,000 USDT position at a +0.01% 8-hour rate pays 1 USDT per settlement, or 3 USDT per day across three settlements. Leverage does not change the payment amount — it is charged on the whole notional position — but it does change what the payment represents as a share of your margin."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Can I avoid paying funding?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "On exchanges with discrete 8-hour settlements, closing your position before the settlement timestamp means no payment is due — but this does not work on Delta, where funding accrues continuously. The only universal way to avoid funding entirely is to trade spot instead of perpetuals: spot positions carry no funding. For perpetuals, treat funding as a planned holding cost, not an avoidable fee."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Do funding payments affect my liquidation risk?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes. Funding is deducted directly from your margin balance, so sustained positive funding steadily erodes your liquidation buffer even if the price does not move. A position that starts with a comfortable distance to liquidation can drift toward it purely from funding drag over days or weeks."
+     }
+    }
+   ]
+  }
+ ]
+}
