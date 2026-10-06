@@ -1,0 +1,121 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import FaqAccordion from '../../components/FaqAccordion.astro';
+import faqsData from './faqs-crypto-futures.json';
+import EmailSignup from '../../components/EmailSignup.astro';
+import faqData from './faq-crypto.json';
+const schemaHtml = '<script type="application/ld+json">' + JSON.stringify(faqData) + '</script' + '>';
+---
+
+<Layout title="Crypto Futures Cost Calculator (USDT) · Monks Of Market" description="Price every cost on a Delta Exchange crypto futures trade: locked maker/taker fees, GST, funding, and TDS. Position notional solved after all costs." current="tools" schema={schemaHtml}>
+<section class="tool-page" id="tool-crypto">
+    <div class="shell">
+      <a class="back-link" href="/tools/">← All tools</a>
+      <header class="tool-header"><div><div class="eyebrow">Tool 01 · Delta Exchange futures</div><h1>Crypto futures, priced in USDT.</h1><p class="tool-lead">Enter your trade variables. Position notional is solved after locked execution fees, GST, estimated funding and optional TDS — loss-at-stop is the budget the account actually commits.</p></div></header>
+      <div class="board-wrap">
+        <div class="calculator">
+          <div class="input-card" data-reveal="left">
+            <div class="card-head"><div><h3>Crypto futures position size</h3><p>USDT base. Loss-at-stop is solved after fees, GST, estimated funding and optional TDS.</p></div><button class="preset-btn" id="cryptoExample" type="button">Load example</button></div>
+            <div class="grid-2">
+              <div class="field"><label for="cAccount">Trading capital</label><div class="control with-suffix"><input id="cAccount" type="number" min="1" step="100" value="10000"><span class="suffix">USDT</span></div></div>
+              <div class="field"><label for="cRisk">Risk per trade</label><div class="control with-suffix"><input id="cRisk" type="number" min="0.01" max="100" step="0.1" value="1"><span class="suffix">%</span></div></div>
+            </div>
+            <fieldset class="fieldset"><legend>Trade setup</legend>
+              <div class="grid-2">
+                <div class="field"><label>Direction</label><div class="segmented"><label><input type="radio" name="cDir" value="long" checked>Long</label><label><input type="radio" name="cDir" value="short">Short</label></div></div>
+                <div class="field"><label for="cLeverage">Leverage</label><div class="control with-suffix"><input id="cLeverage" type="number" min="1" max="100" step="1" value="10"><span class="suffix">×</span></div></div>
+                <div class="field"><label for="cEntry">Entry price</label><div class="control with-suffix"><input id="cEntry" type="number" min="0.0001" step="any" value="108000"><span class="suffix">USDT</span></div></div>
+                <div class="field"><label for="cStop">Stop price</label><div class="control with-suffix"><input id="cStop" type="number" min="0.0001" step="any" value="107000"><span class="suffix">USDT</span></div></div>
+                <div class="field"><label for="cTarget">Target price</label><div class="control with-suffix"><input id="cTarget" type="number" min="0.0001" step="any" value="111000"><span class="suffix">USDT</span></div></div>
+                <div class="field"><label for="cContract">Underlying units per contract</label><div class="control"><input id="cContract" type="number" min="0.00000001" step="any" value="0.001"></div></div>
+              </div>
+            </fieldset>
+            <fieldset class="fieldset"><legend>Execution · fees locked</legend>
+              <div class="grid-2">
+                <div class="field"><label for="cEntryType">Entry order</label><div class="control"><select id="cEntryType"><option value="0.02">Maker · 0.02%</option><option value="0.05" selected>Taker · 0.05%</option></select></div></div>
+                <div class="field"><label for="cExitType">Exit order</label><div class="control"><select id="cExitType"><option value="0.02">Maker · 0.02%</option><option value="0.05" selected>Taker · 0.05%</option></select></div></div>
+              </div>
+              <div class="verified-note" style="margin-top:14px"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="10" width="16" height="10" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg><span>Maker 0.02% / taker 0.05% plus 18% GST — fee rates are locked and maintained by Monks Of Market. Last verified <strong>30 September 2026</strong>.</span></div>
+            </fieldset>
+            <fieldset class="fieldset"><legend>Carry &amp; tax estimate</legend>
+              <div class="grid-2">
+                <div class="field"><label for="cFunding">Expected funding per 8h</label><div class="control with-suffix"><input id="cFunding" type="number" min="-0.05" max="0.05" step="0.001" value="0.01"><span class="suffix">%</span></div></div>
+                <div class="field"><label for="cHours">Expected holding time</label><div class="control with-suffix"><input id="cHours" type="number" min="0" step="0.5" value="8"><span class="suffix">HRS</span></div></div>
+              </div>
+              <div class="checkline" style="margin-top:15px"><label class="switch"><input id="cTds" type="checkbox"><span class="slider"></span></label><span>Estimate 1% TDS on exit consideration (rate locked; off by default)</span></div>
+            </fieldset>
+            <div class="validation" id="cValidation"></div>
+          </div>
+          <aside class="result-card" aria-live="polite" data-reveal="right">
+            <div class="pnl-duo">
+              <div class="pnl-cell target"><div class="result-kicker">Net P&amp;L at target · after fees</div><div class="result-big good" id="cNet"><span class="unit">USDT</span>0.00</div></div>
+              <div class="pnl-cell stop"><div class="result-kicker">Net P&amp;L at stop-loss · after fees</div><div class="result-big bad" id="cNetStop"><span class="unit">USDT</span>0.00</div></div>
+            </div>
+            <div class="size-duo">
+              <div class="size-cell naive"><div class="result-kicker">Position size · ignoring fees</div><div class="size-big" id="cContractsNaive">0.0000 contracts</div><div class="result-sub">Notional <span id="cNotionalNaive">USDT 0.00</span></div><div class="size-note">Risk ÷ stop distance — no fees, GST, funding or TDS</div></div>
+              <div class="size-cell aware"><div class="result-kicker">Position size · after fees</div><div class="size-big" id="cContracts">0.0000 contracts</div><div class="result-sub">Notional <span id="cNotional">USDT 0.00</span> · margin <span id="cMargin">USDT 0.00</span></div><div class="size-note">Cost-aware solve — fees, GST, funding &amp; TDS included</div></div>
+            </div>
+            <div class="result-grid crypto-grid">
+              <div class="result-item"><span>R:R</span><strong id="cRR">0.00 : 1</strong></div>
+              <div class="result-item"><span>Gross P&amp;L at target</span><strong id="cGross">USDT 0.00</strong></div><div class="result-item"><span>Round-trip cost</span><strong id="cRound">USDT 0.00</strong></div>
+              <div class="result-item"><span>Risk budget</span><strong id="cBudget">USDT 0.00</strong></div><div class="result-item"><span>Breakeven move</span><strong id="cBE">0.000%</strong></div>
+            </div>
+            <div class="breakdown"><details open><summary>Fee &amp; funding breakdown</summary><div class="lineitems">
+              <div class="lineitem"><span>Entry fee</span><b id="cEntryBase">USDT 0.00</b></div><div class="lineitem"><span>Entry GST (18%)</span><b id="cEntryGst">USDT 0.00</b></div>
+              <div class="lineitem"><span>Entry cost total</span><b id="cEntryTotal">USDT 0.00</b></div><div class="lineitem"><span>Target exit fee</span><b id="cExitBase">USDT 0.00</b></div><div class="lineitem"><span>Target exit GST (18%)</span><b id="cExitGst">USDT 0.00</b></div><div class="lineitem"><span>Target exit cost total</span><b id="cExitTotal">USDT 0.00</b></div><div class="lineitem"><span>Stop exit cost total</span><b id="cStopExitTotal">USDT 0.00</b></div>
+              <div class="lineitem"><span>Estimated funding</span><b id="cFundingCost">USDT 0.00</b></div><div class="lineitem"><span>Estimated TDS withheld</span><b id="cTdsCost">USDT 0.00</b></div>
+            </div></details></div>
+            <div class="result-foot"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="12" r="9"/><path d="M12 10v6m0-9h.01"/></svg><span>Funding is an estimate and can be paid or received. TDS is shown as cash withheld, not necessarily final tax cost.</span></div>
+          </aside>
+        </div>
+      </div>
+      <div class="schedule" data-reveal>
+        <article class="reference-card schedule-card">
+          <span class="locked-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="10" width="16" height="10" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg>Locked · admin maintained</span>
+          <h3 style="margin:14px 0 14px">Delta Exchange futures fee schedule</h3>
+          <div class="fee-table">
+            <div class="fee-row"><span>Maker trading fee</span><b>0.02%</b></div><div class="fee-row"><span>Taker trading fee</span><b>0.05%</b></div><div class="fee-row"><span>GST on trading fee</span><b>18%</b></div><div class="fee-row"><span>All-in per side</span><b>0.0236% / 0.059%</b></div><div class="fee-row"><span>Funding baseline / clamp</span><b>0.01% / ±0.05% per 8h</b></div><div class="fee-row"><span>TDS on exit consideration</span><b>1% · optional</b></div><div class="fee-row"><span>Maximum leverage input</span><b>100×</b></div>
+          </div>
+          <div class="note"><strong>10,000 USDT check:</strong> taker fee 5 USDT + GST 0.90 USDT on entry, and the same on exit at equal notional = 11.80 USDT round trip.</div>
+          <div class="verified-note"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="10" width="16" height="10" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg><span>Schedule shown read-only and maintained by the Monks Of Market team. <strong>Last verified: 30 September 2026</strong> against the exchange fee schedule.</span></div>
+        </article>
+      </div>
+      <div class="tool-guide" data-reveal>
+        <h2>How crypto futures trading costs work</h2>
+        <p>A futures trade on an exchange like Delta looks free at the moment you click — the order fills, the position opens, and the only number moving is the unrealised P&amp;L. The bill arrives in pieces instead: a fee at entry, a fee at exit, tax on both, and a funding charge for every eight hours the position stays open. None of these appear in the candle that made you enter. All of them are subtracted from what you actually keep. This page exists so the bill is priced before the trade, not discovered after it. There are three costs to understand.</p>
+        <h3>Execution fees — maker vs taker</h3>
+        <p>Every futures order pays an execution fee calculated on the <strong>notional value</strong> of the position — not on your margin. Orders that add liquidity to the book (limit orders that rest and wait to be filled) are charged the maker rate; orders that remove liquidity (market orders, or limit orders that cross the spread) pay the taker rate. On the schedule locked into this calculator, maker is <strong>0.02%</strong> and taker is <strong>0.05%</strong> of notional, per side. A round trip at taker rates therefore starts at 0.10% of notional before anything else is added — small on a chart, decisive on a small edge. The calculator lets you select maker or taker independently for entry and exit, because a limit entry followed by a market exit is a different cost profile from two market orders.</p>
+        <h3>GST on trading fees</h3>
+        <p>In India, the exchange's trading fee attracts GST at <strong>18%</strong>. The tax applies to the fee, not to the notional — so a 0.05% taker fee becomes 0.059% all-in once GST is added, and the maker fee becomes 0.0236%. It is easy to dismiss 18% of a small number, but GST is charged on every side of every trade, winning or losing. Active traders pay it hundreds of times a year; the calculator adds it to both legs automatically so the drag is visible in every scenario.</p>
+        <h3>Funding — the rent on a held position</h3>
+        <p>Perpetual futures have no expiry, so exchanges use a <strong>funding rate</strong> to keep the contract price anchored to the spot price. Every eight hours, one side of the market pays the other: when funding is positive, longs pay shorts; when negative, shorts pay longs. It is not a fee paid to the exchange — it is a transfer between traders — but from your account's perspective it behaves exactly like a cost when you are on the paying side. The calculator estimates funding from the rate you enter (the schedule's baseline is <strong>0.01% per eight hours</strong>, clamped between −0.05% and +0.05%) multiplied by how many eight-hour windows your holding period covers. A position held for a day crosses three funding windows; held for a week, twenty-one. On leveraged notional, that quiet drip can exceed the entry fee — which is why holding time is an input here, not an afterthought.</p>
+        <h3>TDS on exit consideration (optional)</h3>
+        <p>The tax treatment of crypto derivatives in India has been debated, and the applicability of <strong>1% TDS</strong> to USDT-settled futures is not settled. The calculator therefore treats it as an optional scenario, off by default: switch it on to see 1% of the exit consideration withheld from your proceeds as a cash-flow effect. It is shown as cash withheld, not as a final tax cost — whether it ends up payable, creditable or refundable depends on your overall tax position. The <a href="/disclaimer/">disclaimer</a> covers this in more detail.</p>
+        <h2>What this calculator solves</h2>
+        <p>Most position-size formulas divide your risk budget by the distance to your stop. That answer ignores the bill — so the moment fees, GST and funding are charged, the realised loss at the stop is larger than the budget you chose. This calculator works the other way around: it solves for the notional at which loss-at-stop — price distance, plus entry fee and GST, plus exit fee and GST at the stop price, plus estimated funding and optional TDS — equals your risk budget exactly. The result panel shows both sizes side by side: the naive size that ignores fees, and the cost-aware size the account can actually afford. Above them sit the two numbers the trade will be judged by — <strong>net P&amp;L at target</strong> and <strong>net P&amp;L at stop-loss</strong>, each after every cost — and the R:R between them. The breakeven move tells you how far price must travel before the trade has paid its own bill.</p>
+        <h2>A worked example</h2>
+        <p>The calculator loads with this exact scenario: 10,000 USDT of capital, 1% risked per trade, a long BTC futures entry at 108,000 USDT with the stop at 107,000 and the target at 111,000, taker execution on both sides, held through one eight-hour funding window at 0.01%.</p>
+        <div class="guide-example"><div class="lineitems">
+          <div class="lineitem"><span>Risk budget (1% of 10,000 USDT)</span><b>USDT 100.00</b></div>
+          <div class="lineitem"><span>Naive size · ignores all costs</span><b>100.0000 contracts · USDT 10,800.00</b></div>
+          <div class="lineitem"><span>Cost-aware size · after fees, GST &amp; funding</span><b>87.9005 contracts · USDT 9,493.25</b></div>
+          <div class="lineitem"><span>Entry fee + GST</span><b>USDT 5.60</b></div>
+          <div class="lineitem"><span>Target exit fee + GST</span><b>USDT 5.76</b></div>
+          <div class="lineitem"><span>Estimated funding (1 window)</span><b>USDT 0.95</b></div>
+          <div class="lineitem"><span>Round-trip cost</span><b>USDT 12.31</b></div>
+          <div class="lineitem"><span>Gross P&amp;L at target</span><b>USDT 263.70</b></div>
+          <div class="lineitem"><span><strong>Net P&amp;L at target</strong></span><b>USDT 251.39</b></div>
+          <div class="lineitem"><span><strong>Net P&amp;L at stop-loss</strong></span><b>−USDT 100.00</b></div>
+          <div class="lineitem"><span>Realised R:R after costs</span><b>2.51 : 1</b></div>
+        </div></div>
+        <p>Read the two sizes carefully. The naive formula commits 10,800 USDT of notional to a 100 USDT risk budget — and then lets fees push the realised loss past the budget. The cost-aware solve gives up roughly 12% of the notional so that the loss at the stop, bill included, lands on exactly 100.00. And notice what costs do to the reward side: the price move offers a gross 3:1 (3,000 points of target against 1,000 points of stop), yet after the bill the trade actually pays 2.51:1. That gap — between the R:R the chart advertises and the R:R the account receives — is what this tool exists to close before entry.</p>
+        <FaqAccordion faqs={faqsData} /></div>
+      <EmailSignup
+        variant="tool"
+        heading="Get new tools first"
+        subtext="We launch a new calculator every 10 days. Be the first to try them."
+      />
+    </div>
+  </section>
+  <script src="/js/crypto-calc.js" is:inline slot="page-script"></script>
+</Layout>
