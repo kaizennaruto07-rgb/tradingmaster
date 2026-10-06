@@ -1,0 +1,36 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import FaqAccordion from '../../components/FaqAccordion.astro';
+import faqsData from './faqs-tools-index.json';
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": faqsData.map(f => ({
+    "@type": "Question",
+    "name": f.q,
+    "acceptedAnswer": { "@type": "Answer", "text": f.a }
+  }))
+};
+const schemaHtml = '<script type="application/ld+json">' + JSON.stringify(faqSchema) + '</script' + '>';
+---
+
+<Layout
+  title="Tools · Monks Of Market"
+  description="Cost-aware trading calculators: crypto futures position costs in USDT and full-cost Indian equity options calculations with locked, verified fee schedules."
+  current="tools"
+  schema={schemaHtml}
+>
+<section class="tool-page" id="tools">
+    <div class="shell">
+      <a class="back-link" href="/">← Home</a>
+      <header class="tool-header"><div><div class="eyebrow">Toolbox · Phase 1</div><h1>Tools that price the friction.</h1><p class="tool-lead">Every Monks Of Market tool works from net outcomes. Trade variables are yours to enter; fee schedules are locked and maintained by the Monks Of Market team, so the arithmetic is always consistent.</p></div></header>
+      <div class="tool-grid" data-reveal>
+        <a class="tool-card" href="/tools/crypto-futures/"><div class="tool-index">01</div><div><h2>Crypto futures position cost</h2><p>USDT position sizing for Delta Exchange futures: risk budget and stop distance solved after locked maker/taker fees with GST, funding estimates and optional TDS.</p><div class="tool-meta">Delta Exchange · USDT base · Fees locked &amp; verified</div></div><span class="tool-arrow" aria-hidden="true">→</span></a>
+        <a class="tool-card" href="/tools/options-cost/"><div class="tool-index">02</div><div><h2>Indian equity options costs</h2><p>Full premium-turnover charges on NSE/BSE equity options: brokerage, STT, exchange, SEBI, stamp duty and GST — separated from gross P&amp;L.</p><div class="tool-meta">NSE / BSE · INR · Fees locked &amp; verified</div></div><span class="tool-arrow" aria-hidden="true">→</span></a>
+        <a class="tool-card" href="/tools/what-if-simulator/"><div class="tool-index">03</div><div><h2>What-If Trade Simulator</h2><p>Monte Carlo your strategy: 1,000 simulated futures from your win rate and payoff. Median outcome, P10–P90 bands, probability of profit and risk of ruin.</p><div class="tool-meta">Monte Carlo · INR · Runs in your browser</div></div><span class="tool-arrow" aria-hidden="true">→</span></a>
+      </div>
+      <FaqAccordion faqs={faqsData} heading="Tools — frequently asked questions" />
+    </div>
+  </section>
+</Layout>
