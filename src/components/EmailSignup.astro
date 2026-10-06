@@ -1,0 +1,91 @@
+---
+/**
+ * EmailSignup — ConvertKit (Kit) inline signup form, styled for the Monks Of Market dark theme.
+ *
+ * Props:
+ *  - formId  : Kit form id            (default "9999731")
+ *  - uid     : Kit form uid           (default "f7f9c6deea")
+ *  - heading : card headline
+ *  - subtext : one-line supporting copy
+ *  - variant : "article" | "tool" | "footer" (styling hook)
+ *
+ * The Kit loader script (ck.5.js) is injected once per page via a guard,
+ * so any number of <EmailSignup/> instances on one page share it.
+ */
+interface Props {
+  formId?: string;
+  uid?: string;
+  heading: string;
+  subtext: string;
+  variant?: 'article' | 'tool' | 'footer';
+}
+
+const {
+  formId = '9999731',
+  uid = 'f7f9c6deea',
+  heading,
+  subtext,
+  variant = 'article',
+} = Astro.props;
+
+const formAction = `https://app.kit.com/forms/${formId}/subscriptions`;
+// Minimal v5 options: show an inline success message after subscribe.
+const dataOptions = JSON.stringify({
+  settings: {
+    after_subscribe: {
+      action: 'message',
+      success_message: 'Success! Now check your email to confirm your subscription.',
+      redirect_url: '',
+    },
+  },
+  version: '5',
+});
+---
+
+<link rel="stylesheet" href="/css/email-signup.css" />
+<script is:inline>
+  (function () {
+    if (document.getElementById('ckjs-kit')) return;
+    var s = document.createElement('script');
+    s.id = 'ckjs-kit';
+    s.async = true;
+    s.src = 'https://f.convertkit.com/ckjs/ck.5.js';
+    document.head.appendChild(s);
+  })();
+</script>
+
+<div class={`email-signup email-signup--${variant}`} data-reveal>
+  <div class="email-signup-copy">
+    <h3>{heading}</h3>
+    <p>{subtext}</p>
+  </div>
+  <form
+    action={formAction}
+    class="seva-form formkit-form"
+    method="post"
+    data-sv-form={formId}
+    data-uid={uid}
+    data-format="inline"
+    data-version="5"
+    data-options={dataOptions}
+  >
+    <div data-style="clean">
+      <ul class="formkit-alert formkit-alert-error" data-element="errors" data-group="alert"></ul>
+      <div data-element="fields" data-stacked="false" class="seva-fields formkit-fields">
+        <div class="formkit-field">
+          <input
+            class="formkit-input"
+            name="email_address"
+            aria-label="Email Address"
+            placeholder="Email Address"
+            required
+            type="email"
+          />
+        </div>
+        <button data-element="submit" class="formkit-submit" type="submit">
+          <span>Subscribe</span>
+        </button>
+      </div>
+    </div>
+  </form>
+</div>
