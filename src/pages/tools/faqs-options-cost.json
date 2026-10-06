@@ -1,0 +1,42 @@
+[
+  {
+    "q": "Why is STT charged only when I sell?",
+    "a": "That is how the tax is designed for options: STT is collected on the sale of an option (and, in a different and more expensive form, on exercised options at expiry), while the purchase leg is exempt. Practically, it means your exit bill is always heavier than your entry bill, and the tax rises with the premium you sell at — one more reason the calculator re-prices every charge at the actual exit being evaluated rather than assuming the two legs cost the same."
+  },
+  {
+    "q": "Why are there two breakeven numbers?",
+    "a": "Because charges move with the sell premium. The fee-recovery price takes the charges from the trade as entered and spreads them over your quantity — quick, and close. The exact dynamic breakeven re-solves the whole charge statement at each candidate sell premium until net P&amp;L is exactly zero. In the worked example the two differ by four paise (₹101.22 against ₹101.18); on larger turnovers the gap widens. Use the exact figure when you set targets."
+  },
+  {
+    "q": "Do intraday and positional option trades pay different charges?",
+    "a": "Not in this model — brokerage, STT, exchange charges, SEBI fee, stamp duty and GST are identical for both, which is why the product-type selector does not change the result. One real-world exception: an intraday position left open can be auto squared-off by the broker, and some brokers levy a penalty for that (₹50 plus GST in Zerodha's case). That penalty is deliberately excluded here; squaring off yourself is always the cheaper exit."
+  },
+  {
+    "q": "My broker charges more than ₹20 an order. Can I change the rate?",
+    "a": "The schedules on this page are locked deliberately: the same arithmetic for every trader, re-verified by the Monks Of Market team against official sources (last verified <strong>30 September 2026</strong>) instead of drifting with whatever a user types in. If your broker charges a percentage of premium or a higher flat fee, your real charges will be higher than the discount-broker baseline shown here — treat the output as the floor, and weigh the difference when choosing where to trade."
+  },
+  {
+    "q": "What happens if I let the option expire instead of selling it?",
+    "a": "The calculator deliberately does not model expiry. A long option expiring in the money without square-off attracts STT at 0.15% of intrinsic value, and exercise or physical settlement can create obligations far larger than the premium paid. Out-of-the-money options simply lapse worthless, losing the premium and the entry charges. In nearly every scenario a trader actually wants, selling before expiry is the cleaner and cheaper exit — the <a href=\"/disclaimer/\">disclaimer</a> explains the settlement risks in full."
+  },
+  {
+    "q": "Why do charges bite harder on small trades?",
+    "a": "Because the largest single charge — ₹40 of round-trip brokerage — is fixed, while everything you earn scales with size. On a ₹5,000 premium turnover the brokerage alone is 0.8% of turnover before any other charge is added; on ₹50,000 it is 0.08%. Small, frequent option trades therefore need disproportionately large premium moves just to break even, which is why the breakeven line in the result panel deserves as much attention as the target."
+  },
+  {
+    "q": "How much does it cost to trade one NIFTY options lot in India?",
+    "a": "On the fee schedule locked into this page, one NIFTY lot (65 units) bought at a ₹100 premium and sold at ₹120 on NSE costs <strong>₹65.12 all-in</strong>: ₹40 brokerage (₹20 per executed order), <strong>₹11.70 STT</strong> at 0.15% of the sell premium, ₹5.08 exchange charges at 0.03553% per side, ₹0.02 SEBI turnover fee (₹10 per crore), ₹0.20 stamp duty at 0.003% on the buy side, and ₹8.12 GST at 18%. The trade's ₹1,300 gross profit therefore lands as <strong>₹1,234.88 net</strong>. The fixed ₹40 brokerage dominates the bill on a single lot; every other charge scales with premium turnover, so enter your own premiums in the calculator above for your lot size and strike."
+  },
+  {
+    "q": "Do I pay STT when buying options?",
+    "a": "No. For options, STT is charged only on the sell side — <strong>0.15% of the premium you receive</strong>, at the rates effective from April 2026. The buy leg is exempt from STT; instead it carries stamp duty at <strong>0.003%</strong> of buy-side turnover, plus brokerage, exchange charges, the SEBI fee and GST. That asymmetry is why your exit bill is always heavier than your entry bill, and why this calculator prices the two legs of the trade separately."
+  },
+  {
+    "q": "What is STT on options trading in India?",
+    "a": "Since April 2026, STT on options is <strong>0.15% of the premium, charged on the sell side only</strong>; there is no STT when you buy. One important exception: if a long option expires in the money without being squared off, STT is levied at 0.15% of the option's <strong>intrinsic value</strong> rather than its premium — a figure that can exceed the premium you paid and turn a profitable expiry into a net loss. In almost every case, selling before expiry is the cheaper and cleaner exit."
+  },
+  {
+    "q": "Which trading charges are the same at every broker?",
+    "a": "STT, exchange transaction charges, the SEBI turnover fee and stamp duty are fixed by the government, the exchange and the regulator, so they are identical no matter where you trade — on this schedule: STT <strong>0.15%</strong> of sell premium, NSE exchange charges <strong>0.03553%</strong> per side, SEBI <strong>₹10 per crore</strong>, stamp duty <strong>0.003%</strong> on the buy side. GST at <strong>18%</strong> is also uniform, applied to brokerage plus exchange and SEBI charges. The charge that genuinely differs between brokers is brokerage itself — a flat <strong>₹20 per order</strong> at discount brokers such as Zerodha, but often a percentage of premium at full-service firms — along with extras like auto square-off or call-and-trade fees. Compare brokers on the brokerage line; every other line of the bill is already fixed."
+  }
+]
