@@ -1,0 +1,115 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import FaqAccordion from '../../components/FaqAccordion.astro';
+import faqsData from './faqs-what-if-simulator.json';
+import EmailSignup from '../../components/EmailSignup.astro';
+import faqData from './faq-whatif.json';
+const schemaHtml = '<script type="application/ld+json">' + JSON.stringify(faqData) + '</script' + '>';
+---
+
+<Layout title="What-If Trade Simulator — Monte Carlo Your Trading Strategy | Monks Of Market" description="Run your trading strategy 1,000 times in your browser. Monte Carlo simulator shows the median outcome, P10–P90 bands, probability of profit and risk of ruin — before real money is at stake." current="tools" schema={schemaHtml}>
+<style>
+  .run-btn{display:block;width:100%;margin-top:18px;height:52px;border:0;border-radius:12px;background:var(--accent);color:#fff;font:700 15px/1 var(--sans);cursor:pointer;letter-spacing:.01em}
+  .run-btn:hover{filter:brightness(1.08)}
+  .run-btn:disabled{opacity:.6;cursor:wait}
+  .run-meta{margin-top:8px;font:600 10px/1.6 var(--mono);color:var(--muted);letter-spacing:.08em;text-transform:uppercase}
+  .chart-wrap{padding:6px 10px 0;border-top:1px solid var(--line)}
+  .chart-wrap svg{display:block;width:100%;height:auto}
+  .chart-label{font:600 10px/1.4 var(--mono);fill:var(--muted)}
+  .chart-draw{stroke-dasharray:1;stroke-dashoffset:1;animation:drawline 1.6s ease-out forwards}
+  .chart-fade{animation:fadein 1.2s ease-out}
+  @keyframes drawline{to{stroke-dashoffset:0}}
+  @keyframes fadein{from{opacity:0}to{opacity:.13}}
+  .share-box{padding:16px 19px;border-top:1px solid var(--line)}
+  .share-box textarea{width:100%;min-height:74px;resize:vertical;border:1px solid var(--line);border-radius:10px;background:var(--bg);color:var(--ink);padding:10px 12px;font:400 12.5px/1.6 var(--sans)}
+  .share-row{display:flex;gap:10px;align-items:center;margin-top:10px}
+  .copy-btn{border:1px solid var(--line);background:var(--surface-2);border-radius:9px;padding:9px 14px;cursor:pointer;font:700 12px/1 var(--sans);color:var(--ink)}
+  .copy-btn:hover{border-color:var(--accent)}
+  .copy-msg{font-size:12px;color:var(--accent)}
+  .nosim{padding:26px 19px;color:var(--muted);font-size:13.5px;line-height:1.7}
+  .sim-note{display:flex;gap:8px;align-items:start}
+</style>
+<section class="tool-page" id="tool-whatif">
+    <div class="shell">
+      <a class="back-link" href="/tools/">← All tools</a>
+      <header class="tool-header"><div><div class="eyebrow">Tool 03 · Monte Carlo simulator</div><h1>What if you ran your strategy 1,000 times?</h1><p class="tool-lead">Your backtest is one lucky ordering of wins and losses. This simulator shuffles the same strategy into 1,000 possible futures — and shows the median outcome, the bad-luck tail, and how often the account blows up. Free, in your browser, no signup.</p></div></header>
+      <div class="board-wrap">
+        <div class="calculator">
+          <div class="input-card" data-reveal="left">
+            <div class="card-head"><div><h3>Your strategy's numbers</h3><p>Be honest here — the simulator is only as truthful as the inputs. Use net figures after costs where you can.</p></div><button class="preset-btn" id="wExample" type="button">Load example</button></div>
+            <div class="grid-2">
+              <div class="field"><label for="wCapital">Starting capital</label><div class="control with-suffix"><input id="wCapital" type="number" min="1000" step="1000" value="100000"><span class="suffix">₹</span></div></div>
+              <div class="field"><label for="wWinRate">Win rate</label><div class="control with-suffix"><input id="wWinRate" type="number" min="1" max="99" step="0.5" value="40"><span class="suffix">%</span></div></div>
+              <div class="field"><label for="wWinR">Average win</label><div class="control with-suffix"><input id="wWinR" type="number" min="0.1" step="0.1" value="2"><span class="suffix">R</span></div></div>
+              <div class="field"><label for="wLossR">Average loss</label><div class="control with-suffix"><input id="wLossR" type="number" min="0.1" step="0.1" value="1"><span class="suffix">R</span></div></div>
+              <div class="field"><label for="wRisk">Risk per trade</label><div class="control with-suffix"><input id="wRisk" type="number" min="0.1" max="25" step="0.1" value="1"><span class="suffix">%</span></div></div>
+              <div class="field"><label for="wTrades">Trades to simulate</label><div class="control"><input id="wTrades" type="number" min="10" max="2000" step="10" value="500"></div></div>
+            </div>
+            <div class="verified-note" style="margin-top:16px"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="10" width="16" height="10" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg><span>Fixed-fractional model: each trade risks the % you set of <em>current</em> capital, so winners compound and losers shrink the stake. 1 R = one unit of risk.</span></div>
+            <button class="run-btn" id="wRunBtn" type="button">Run simulation</button>
+            <div class="run-meta" id="wRunMeta">1,000 simulated futures · runs in your browser</div>
+            <div class="validation" id="wValidation"></div>
+          </div>
+          <aside class="result-card" aria-live="polite" data-reveal="right">
+            <noscript><div class="nosim">This simulator needs JavaScript — it runs 1,000 Monte Carlo simulations live in your browser, and there is no server to do it for you. Enable JavaScript to see your strategy's 1,000 possible futures.</div></noscript>
+            <div class="pnl-duo">
+              <div class="pnl-cell target"><div class="result-kicker">Median outcome · P50 final capital</div><div class="result-big good" id="wP50">—</div></div>
+              <div class="pnl-cell stop"><div class="result-kicker">Probability of profit</div><div class="result-big" id="wProbProfit" style="font-size:clamp(22px,6.4vw,42px)">—</div></div>
+            </div>
+            <div class="chart-wrap">
+              <div class="result-kicker" style="padding:14px 6px 4px">1,000 possible equity curves</div>
+              <svg id="wChart" role="img" aria-label="Fan chart of simulated equity curves showing P10, P50 and P90 paths"></svg>
+            </div>
+            <div class="result-grid">
+              <div class="result-item"><span>P10 · bad-luck outcome</span><strong id="wP10">—</strong></div>
+              <div class="result-item"><span>P90 · good-luck outcome</span><strong id="wP90">—</strong></div>
+              <div class="result-item"><span>Chance of profit</span><strong id="wProbProfit2">—</strong></div>
+              <div class="result-item"><span>Chance of 50%+ drawdown</span><strong id="wRuin">—</strong></div>
+              <div class="result-item"><span>Median max drawdown</span><strong id="wMedDD">—</strong></div>
+              <div class="result-item"><span>Simulated futures</span><strong>1,000</strong></div>
+            </div>
+            <div class="share-box">
+              <div class="result-kicker" style="margin-bottom:10px">Share your result</div>
+              <textarea id="wShare" readonly aria-label="Copy-pasteable simulation summary"></textarea>
+              <div class="share-row"><button class="copy-btn" id="wCopyBtn" type="button">Copy summary</button><span class="copy-msg" id="wCopyMsg"></span></div>
+            </div>
+            <div class="result-foot"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="12" r="9"/><path d="M12 10v6m0-9h.01"/></svg><span class="sim-note"><span>Simulation only — not a prediction. Costs, slippage and taxes are not modelled, so treat every outcome as optimistic. <a href="/disclaimer/">Read the disclaimer</a>.</span></span></div>
+          </aside>
+        </div>
+      </div>
+      <div class="tool-guide" data-reveal>
+        <h2>What a Monte Carlo simulation actually does</h2>
+        <p>Take your strategy's two numbers — how often it wins, and how much it wins versus loses — and deal them into 1,000 different orderings. Same win rate, same payoff, but the wins and losses land in different sequences each time. Every ordering produces its own equity curve. Stack all 1,000 curves together and you stop seeing <em>a</em> future and start seeing <em>the distribution of</em> futures: the median path, the lucky paths, and the unlucky ones where five losers arrive back-to-back in month two.</p>
+        <h3>Why one backtest is never enough</h3>
+        <p>A backtest is a single shuffle of history. It tells you what happened in <em>that</em> order of trades — but you will never trade that exact order again. Two traders running the identical strategy with the identical edge can have wildly different years, purely because one's losers clustered early. Monte Carlo makes that ordering risk visible before capital is committed: if 15% of your simulated futures hit a 50% drawdown, that is not a flaw in the simulation — it is a property of your strategy you were about to discover with real money.</p>
+        <h3>How to read the bands</h3>
+        <p><strong>P50</strong> is the median: half the futures finished above it, half below. It is the honest centre of your strategy. <strong>P10</strong> is the bad-luck boundary — only one future in ten did worse. <strong>P90</strong> is the good-luck boundary. The shaded band between P10 and P90 is where eight of your ten realistic years live. Judge every strategy by its P10, not its P50: if the account survives the bad-luck case, the median takes care of itself. A strategy whose P10 is still above starting capital is genuinely robust; one whose P10 is a smoking crater is a coin flip wearing a backtest's clothes.</p>
+        <h3>The risk-per-trade lesson, in one experiment</h3>
+        <p>Run the simulator twice with identical numbers except risk per trade: 1%, then 4%. Watch what happens to the chance of a 50%+ drawdown. The expectancy didn't change — the strategy is the same — but the ruin probability explodes, because larger bets turn normal losing streaks into account-ending ones. This is the entire philosophy of Monks Of Market in one chart: <strong>edge is what you earn, position sizing is whether you survive long enough to earn it.</strong></p>
+        <h2>A worked example</h2>
+        <p>The simulator loads with this scenario: ₹1,00,000 starting capital, 40% win rate, 2R average win against 1R average loss, 1% risked per trade, 500 trades.</p>
+        <div class="guide-example"><div class="lineitems">
+          <div class="lineitem"><span>Expectancy per trade</span><b>0.4 × 2R − 0.6 × 1R = +0.2R</b></div>
+          <div class="lineitem"><span>Median final capital (P50)</span><b>≈ ₹2.57 L</b></div>
+          <div class="lineitem"><span>Bad-luck outcome (P10)</span><b>≈ ₹1.69 L</b></div>
+          <div class="lineitem"><span>Good-luck outcome (P90)</span><b>≈ ₹3.79 L</b></div>
+          <div class="lineitem"><span><strong>Chance of finishing in profit</strong></span><b>≈ 99.8%</b></div>
+          <div class="lineitem"><span><strong>Chance of a 50%+ drawdown</strong></span><b>≈ 0.0%</b></div>
+          <div class="lineitem"><span>Median worst drawdown</span><b>≈ 15.7%</b></div>
+        </div></div>
+        <p>Now change only the win rate to 30% and the payoff to 1:1 — a strategy with negative expectancy (−0.4R per trade). The median future ends near ₹13,000, the chance of profit collapses to ~0%, and every single simulated future suffers a 50%+ drawdown. Same simulator, same honesty: it tells you the strategy is broken <em>before</em> the account does.</p>
+        <FaqAccordion faqs={faqsData} /><div class="tool-cta" style="margin-top:44px;padding:28px;border:1px solid var(--line);border-radius:16px;background:var(--surface)">
+          <h3 style="margin:0 0 8px">Understand the mathematics behind the bands</h3>
+          <p style="margin:0 0 16px;color:var(--muted);font-size:14px">The simulator shows you <em>what</em> can happen. The articles explain <em>why</em> — expectancy, risk of ruin, drawdown recovery and the streaks every trader underestimates.</p>
+          <a href="/articles/" class="copy-btn" style="text-decoration:none;display:inline-block">Browse the articles →</a>
+        </div>
+        <EmailSignup
+          variant="tool"
+          heading="Get new tools first"
+          subtext="We launch a new calculator every 10 days. Be the first to try them."
+        />
+      </div>
+    </div>
+  </section>
+  <script src="/js/whatif-calc.js" is:inline slot="page-script"></script>
+</Layout>
