@@ -1,0 +1,55 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { getCollection } from 'astro:content';
+
+// Auto-lists every article in src/content/articles/ — no manual updates needed.
+// New articles appear here automatically on the next build, sorted newest first.
+const articles = (await getCollection('articles')).sort(
+  (a, b) => b.data.date.valueOf() - a.data.date.valueOf()
+);
+
+function formatDate(d: Date) {
+  return d.toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' }).toUpperCase();
+}
+
+function readTime(id: string) {
+  // Rough estimate from known word counts; defaults to 12 min
+  const map: Record<string, string> = {
+    'risk-of-ruin-trading': '18 min read',
+    'what-is-trading-expectancy': '15 min read',
+    'options-trading-charges-india': '12 min read',
+    'crypto-futures-funding-rates': '14 min read',
+  };
+  return map[id] ?? '12 min read';
+}
+---
+
+<Layout
+  title="Articles · Monks Of Market"
+  description="In-depth Monks Of Market guides: trading mathematics, risk of ruin, expectancy, strategy validation, and trading costs — worked out in the open."
+  current="articles"
+>
+<section class="article-page" id="articles">
+    <div class="shell">
+      <div class="tool-header">
+        <div class="eyebrow">Monks Of Market · Articles</div>
+        <h1>Articles</h1>
+        <p class="tool-lead">Long-form guides on trading mathematics, risk, edge, and costs — every formula, probability, and breakeven, worked out in the open.</p>
+      </div>
+      <div class="article-grid">
+        {articles.map((a) => (
+          <a class="article-card" href={`/articles/${a.id}/`}>
+            <div class="article-card-tag">{a.data.tag ?? 'Monks Of Market'}</div>
+            <h2>{a.data.title}</h2>
+            <p>{a.data.description ?? a.data.meta_description ?? ''}</p>
+            <div class="article-card-meta">
+              <span>By {a.data.author}</span>
+              <span>{formatDate(a.data.date)}</span>
+              <span>{readTime(a.id)}</span>
+            </div>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+</Layout>
