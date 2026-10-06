@@ -1,0 +1,57 @@
+(function(){
+  'use strict';
+  const $=id=>document.getElementById(id);
+  const num=id=>Number($(id).value);
+  const usdt=n=>'USDT '+new Intl.NumberFormat('en-US',{minimumFractionDigits:2,maximumFractionDigits:2}).format(Number.isFinite(n)?n:0);
+    const amt=n=>new Intl.NumberFormat('en-US',{minimumFractionDigits:2,maximumFractionDigits:2}).format(Number.isFinite(n)?n:0);
+    const fixed=(n,d=2)=>Number.isFinite(n)?n.toFixed(d):(0).toFixed(d);
+    const paise=n=>Math.round((n+Number.EPSILON)*100)/100;
+function cryptoCalc(){
+    const account=num('cAccount'),riskPct=num('cRisk'),entry=num('cEntry'),stop=num('cStop'),target=num('cTarget'),lev=num('cLeverage'),unitPerContract=num('cContract');
+    const entryRate=num('cEntryType')/100,exitRate=num('cExitType')/100,fundingRate=num('cFunding')/100,hours=num('cHours'),tdsOn=$('cTds').checked;
+    const dir=document.querySelector('input[name="cDir"]:checked').value==='long'?1:-1;
+    const errors=[];
+    if(!(account>0))errors.push('Trading capital must be above zero.'); if(!(riskPct>0&&riskPct<=100))errors.push('Risk must be between 0 and 100%.');
+    if(!(entry>0&&stop>0&&target>0))errors.push('Entry, stop and target prices must be above zero.'); if(!(lev>=1&&lev<=100))errors.push('Leverage must be from 1× to 100×.'); if(!(unitPerContract>0))errors.push('Contract unit must be above zero.');
+    if(dir===1&&stop>=entry)errors.push('For a long, stop must be below entry.'); if(dir===-1&&stop<=entry)errors.push('For a short, stop must be above entry.');
+    if(dir===1&&target<=entry)errors.push('For a long, target must be above entry.'); if(dir===-1&&target>=entry)errors.push('For a short, target must be below entry.');
+    const v=$('cValidation');v.textContent=errors.join(' ');v.classList.toggle('show',errors.length>0);if(errors.length)return;
+    const budget=account*riskPct/100;
+    const stopRatio=Math.abs(stop-entry)/entry;
+    const stopExitRatio=stop/entry;
+    const targetExitRatio=target/entry;
+    const fundingRatio=fundingRate*(hours/8);
+    const riskFunding=Math.max(0,fundingRatio);
+    const tdsStopRatio=tdsOn?0.01*stopExitRatio:0;
+    const lossPerNotional=stopRatio+entryRate*1.18+exitRate*1.18*stopExitRatio+riskFunding+tdsStopRatio;
+    const notional=budget/lossPerNotional;
+    const units=notional/entry;
+    const contracts=units/unitPerContract;
+    const naiveContracts=budget/(Math.abs(stop-entry)*unitPerContract);
+    const naiveNotional=naiveContracts*unitPerContract*entry;
+    const entryBase=notional*entryRate,entryGst=entryBase*.18;
+    const exitNotional=notional*targetExitRatio;
+    const exitBase=exitNotional*exitRate,exitGst=exitBase*.18;
+    const stopExitNotional=notional*stopExitRatio;
+    const stopExitBase=stopExitNotional*exitRate,stopExitGst=stopExitBase*.18;
+    const funding=notional*fundingRatio,tds=tdsOn?exitNotional*.01:0,tdsStop=tdsOn?stopExitNotional*.01:0;
+    const round=entryBase+entryGst+exitBase+exitGst+funding+tds;
+    const costsStop=entryBase+entryGst+stopExitBase+stopExitGst+funding+tdsStop;
+    const gross=units*(target-entry)*dir;
+    const net=gross-round;
+    const grossStop=units*(stop-entry)*dir;
+    const netStop=grossStop-costsStop;
+    const rr=netStop<0?net/(-netStop):0;
+    const entryFriction=entryRate*1.18,exitFriction=exitRate*1.18+(tdsOn?.01:0);
+    const breakEvenRatio=dir===1?((1+entryFriction+fundingRatio)/(1-exitFriction)-1):(1-(1-entryFriction-fundingRatio)/(1+exitFriction));
+    $('cNet').innerHTML='<span class="unit">USDT</span>'+amt(net);$('cNet').className='result-big '+(net>=0?'good':'bad');$('cNotional').textContent=usdt(notional);$('cContracts').textContent=fixed(contracts,4)+' contracts';$('cMargin').textContent=usdt(notional/lev);$('cBudget').textContent=usdt(budget);$('cRound').textContent=usdt(round);
+    $('cGross').textContent=usdt(gross);$('cNetStop').innerHTML='<span class="unit">USDT</span>'+amt(netStop);$('cNetStop').className='result-big '+(netStop>=0?'good':'bad');$('cRR').textContent=netStop<0?fixed(rr,2)+' : 1':'—';$('cBE').textContent=fixed(Math.max(0,breakEvenRatio)*100,3)+'%';
+    $('cEntryBase').textContent=usdt(entryBase);$('cEntryGst').textContent=usdt(entryGst);$('cEntryTotal').textContent=usdt(entryBase+entryGst);$('cExitBase').textContent=usdt(exitBase);$('cExitGst').textContent=usdt(exitGst);$('cExitTotal').textContent=usdt(exitBase+exitGst);$('cStopExitTotal').textContent=usdt(stopExitBase+stopExitGst);$('cFundingCost').textContent=(funding<0?'−':'')+usdt(Math.abs(funding));$('cTdsCost').textContent=usdt(tds);
+    $('cContractsNaive').textContent=fixed(naiveContracts,4)+' contracts';$('cNotionalNaive').textContent=usdt(naiveNotional);
+  }
+  ['cAccount','cRisk','cEntry','cStop','cTarget','cContract','cLeverage','cEntryType','cExitType','cFunding','cHours','cTds'].forEach(id=>$(id).addEventListener('input',cryptoCalc));
+  document.querySelectorAll('input[name="cDir"]').forEach(x=>x.addEventListener('change',cryptoCalc));
+  $('cryptoExample').addEventListener('click',()=>{$('cAccount').value=10000;$('cRisk').value=1;$('cEntry').value=108000;$('cStop').value=107000;$('cTarget').value=111000;$('cContract').value=0.001;$('cLeverage').value=10;$('cEntryType').value='0.05';$('cExitType').value='0.05';$('cFunding').value=0.01;$('cHours').value=8;$('cTds').checked=false;cryptoCalc()});
+
+    cryptoCalc();
+})();
