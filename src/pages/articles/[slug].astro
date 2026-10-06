@@ -1,0 +1,80 @@
+---
+import { getCollection, render } from 'astro:content';
+import Layout from '../../layouts/Layout.astro';
+import EmailSignup from '../../components/EmailSignup.astro';
+import optionsSchema from './article-schema-options.json';
+import cryptoSchema from './article-schema-crypto.json';
+import riskofruinSchema from './article-schema-riskofruin.json';
+import expectancySchema from './article-schema-expectancy.json';
+import winrateSchema from './article-schema-winrate.json';
+
+export async function getStaticPaths() {
+  const articles = await getCollection('articles');
+  return articles.map((article) => ({
+    params: { slug: article.id.replace(/\.md$/, '') },
+    props: { article },
+  }));
+}
+
+const { article } = Astro.props;
+const { Content } = await render(article);
+
+// Select the right schema based on slug
+const slug = article.id.replace(/\.md$/, '');
+const schemaData = slug === 'options-trading-charges-india' ? optionsSchema
+  : slug === 'risk-of-ruin-trading' ? riskofruinSchema
+  : slug === 'what-is-trading-expectancy' ? expectancySchema
+  : slug === 'win-rate-vs-risk-reward' ? winrateSchema
+  : cryptoSchema;
+const schemaHtml = '<script type="application/ld+json">' + JSON.stringify(schemaData) + '</script' + '>';
+
+const description = article.data.meta_description || article.data.description || '';
+const dateStr = article.data.date.toLocaleDateString('en-IN', { day: 'numeric', month: 'long', year: 'numeric' });
+
+// Related tool CTA
+const toolCta = slug === 'options-trading-charges-india'
+  ? { href: '/tools/options-cost/', label: 'Calculate your options costs' }
+  : slug === 'risk-of-ruin-trading'
+  ? { href: '/tools/', label: 'Explore our trading tools' }
+  : slug === 'what-is-trading-expectancy'
+  ? { href: '/tools/what-if-simulator/', label: 'Simulate your expectancy' }
+  : slug === 'win-rate-vs-risk-reward'
+  ? { href: '/tools/what-if-simulator/', label: 'Simulate your win rate & risk-reward' }
+  : { href: '/tools/crypto-futures/', label: 'Calculate your futures costs' };
+---
+
+<Layout
+  title={`${article.data.title} · Monks Of Market`}
+  description={description}
+  current="articles"
+  schema={schemaHtml}
+  ogType="article"
+>
+  <article class="article-page">
+    <div class="shell">
+      <div class="tool-header">
+        <div class="eyebrow">Monks Of Market · Article</div>
+        <h1>{article.data.title}</h1>
+        <p class="tool-lead">{description}</p>
+        <div class="article-card-meta">
+          <span>By {article.data.author}</span>
+          <span>{dateStr}</span>
+        </div>
+      </div>
+      <div class="article-body">
+        <Content />
+      </div>
+      <EmailSignup
+        variant="article"
+        formId="9999729"
+        uid="8b81f75b9e"
+        heading="Get the next breakdown first"
+        subtext="One exceptional article per day. No spam, unsubscribe anytime."
+      />
+      <div class="article-cta">
+        <a class="btn btn-primary" href={toolCta.href}>{toolCta.label} <span>→</span></a>
+        <a class="btn btn-secondary" href="/articles/">All articles</a>
+      </div>
+    </div>
+  </article>
+</Layout>
