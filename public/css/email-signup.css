@@ -1,0 +1,146 @@
+/* EmailSignup — ConvertKit inline form, Monks Of Market dark theme.
+   Uses the site's CSS variables so it follows light/dark preference automatically. */
+
+.email-signup {
+  margin: 44px 0;
+  padding: 28px;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: linear-gradient(150deg, var(--accent-soft), transparent 70%), var(--surface);
+}
+
+.email-signup-copy h3 {
+  margin: 0 0 8px;
+  font-size: 22px;
+  letter-spacing: -0.02em;
+}
+
+.email-signup-copy p {
+  margin: 0 0 20px;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+/* FormKit field layout: input + button side by side on desktop */
+.email-signup .formkit-fields {
+  display: flex;
+  gap: 10px;
+  align-items: stretch;
+}
+
+.email-signup .formkit-field {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.email-signup .formkit-input {
+  width: 100%;
+  height: 48px;
+  padding: 0 14px;
+  font-size: 14px;
+  color: var(--ink);
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  outline: none;
+  transition: border-color 0.18s, box-shadow 0.18s;
+}
+
+.email-signup .formkit-input::placeholder {
+  color: var(--muted);
+  opacity: 0.85;
+}
+
+.email-signup .formkit-input:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px var(--accent-soft);
+}
+
+.email-signup .formkit-submit {
+  flex: 0 0 auto;
+  appearance: none;
+  border: 0;
+  border-radius: 12px;
+  padding: 0 26px;
+  min-height: 48px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #02140d;
+  background: var(--accent);
+  cursor: pointer;
+  transition: transform 0.18s, box-shadow 0.18s, filter 0.18s;
+  box-shadow: 0 10px 24px var(--accent-soft);
+}
+
+.email-signup .formkit-submit:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.06);
+}
+
+.email-signup .formkit-submit:active {
+  transform: translateY(0);
+}
+
+/* Hide the spinner element Kit injects (we keep it simple) */
+.email-signup .formkit-spinner {
+  display: none;
+}
+
+/* Error / success alerts */
+.email-signup .formkit-alert {
+  list-style: none;
+  margin: 0 0 14px;
+  padding: 12px 14px;
+  border-radius: 10px;
+  font-size: 13px;
+  width: 100%;
+}
+
+.email-signup .formkit-alert:empty {
+  display: none;
+}
+
+.email-signup .formkit-alert-error {
+  background: var(--danger-soft);
+  border: 1px solid var(--danger);
+  color: var(--danger);
+}
+
+.email-signup .formkit-alert-success {
+  background: var(--accent-soft);
+  border: 1px solid var(--accent);
+  color: var(--accent);
+}
+
+/* Kit "powered by" badge — required on free plans; keep it subtle */
+.email-signup .formkit-powered-by-convertkit-container {
+  margin-top: 12px;
+  text-align: right;
+}
+
+.email-signup .formkit-powered-by-convertkit {
+  font-size: 11px;
+  color: var(--muted);
+  text-decoration: none;
+  opacity: 0.7;
+}
+
+.email-signup .formkit-powered-by-convertkit:hover {
+  opacity: 1;
+}
+
+/* Mobile: stack input above button */
+@media (max-width: 560px) {
+  .email-signup {
+    padding: 22px;
+  }
+
+  .email-signup .formkit-fields {
+    flex-direction: column;
+  }
+
+  .email-signup .formkit-submit {
+    width: 100%;
+  }
+}
