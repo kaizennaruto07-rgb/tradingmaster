@@ -1,0 +1,42 @@
+[
+  {
+    "q": "Why does the cost-aware position size come out smaller?",
+    "a": "Because part of your risk budget is spent before price moves at all. Entry fee, GST, the exit fee at your stop price and estimated funding are all charged against the same budget as the price loss itself. If the position were sized naively, those charges would stack on top of a full-budget price loss and the account would lose more than you decided to risk. The solve trims the notional until price loss plus every charge equals the budget exactly."
+  },
+  {
+    "q": "Maker or taker — which should I select?",
+    "a": "Choose maker only if your order will genuinely rest on the book as a limit order and wait to be filled. Market orders, stop-market exits and any limit order priced to execute immediately are taker executions. When in doubt, model the exit as taker: stop-losses almost never earn maker rates in a fast move, and under-pricing your exit cost is the most common way these calculations flatter a trade."
+  },
+  {
+    "q": "Does the calculator include spread and slippage?",
+    "a": "No. Spread and slippage depend on the live order book and the speed of the move at the moment you execute, so no honest calculator can fix them in advance. The practical workaround is to model them yourself: nudge your expected entry or stop price a few ticks against you before entering the numbers, and let the calculator price the rest. What the tool does put in the answer is every cost that can be modelled before entry: locked execution fees and GST, funding at the rate and holding time you supply, and TDS when you choose to model it."
+  },
+  {
+    "q": "Can funding be received instead of paid?",
+    "a": "Yes. When the funding rate is negative, the paying side flips and holders on the other side receive the transfer. You can enter a negative expected rate in the calculator and the P&amp;L lines will credit it. One deliberate conservatism: expected funding income is never allowed to enlarge your position size. The risk solve only counts funding as a cost, so a position that merely breaks even on price cannot quietly grow on the assumption of funding receipts."
+  },
+  {
+    "q": "Why is everything priced in USDT, with no rupee conversion?",
+    "a": "These contracts settle in USDT, so the tool prices them in the currency the account actually wins and loses. Converting to rupees would smuggle an exchange-rate assumption into every result, and the USDT/INR rate you eventually realise depends on when and how you convert. Your fee percentages, R:R and risk discipline are identical in either currency — only the unit on the label changes."
+  },
+  {
+    "q": "Are these fee rates guaranteed to match my account?",
+    "a": "The rates are the published Delta Exchange schedule as last verified on <strong>30 September 2026</strong>, shown read-only in the fee card above so the arithmetic is identical for every trader. Exchanges revise schedules and run tiered or promotional pricing from time to time, so confirm the current schedule with the exchange before relying on any single calculation. If Delta changes its rates, this page's locked schedule is updated and re-verified by the Monks Of Market team."
+  },
+  {
+    "q": "Is the funding rate an exchange fee?",
+    "a": "No. Funding is a peer-to-peer transfer between the two sides of a perpetual futures contract: when the rate is positive, longs pay shorts; when it is negative, shorts pay longs. The exchange calculates and administers the transfer but does not keep it — unlike the maker and taker trading fees (<strong>0.02%</strong> and <strong>0.05%</strong> of notional on the schedule locked into this calculator, plus 18% GST), which are revenue for the exchange. From your account's perspective funding still behaves like a cost whenever you are on the paying side, which is why the calculator models it alongside fees."
+  },
+  {
+    "q": "How often is funding charged on crypto futures?",
+    "a": "On Delta-style perpetual futures, funding is charged <strong>every eight hours</strong> — three funding windows a day. Each charge is the funding rate multiplied by your position's notional value at that moment, and it applies to every window you hold through: a one-day hold crosses three windows, a week-long hold crosses twenty-one. The calculator turns your expected holding time into windows automatically (hours ÷ 8) and applies the rate you enter, so longer holds visibly cost more to carry."
+  },
+  {
+    "q": "Can funding rates predict price movements?",
+    "a": "Not reliably. Funding reveals positioning, not direction: persistently high positive funding means longs are crowded and paying a premium to stay long, which can precede a squeeze, but crowded trades can stay crowded for weeks and funding alone gives no timing. What funding does predict with precision is your own carry cost — rate × notional × windows held. Treat it as a gauge of how expensive your side of the trade is to hold, not as a signal to enter or exit."
+  },
+  {
+    "q": "Do funding payments affect liquidation risk?",
+    "a": "Yes. Each funding payment is settled from your account balance or margin, so a position held through many windows at an adverse rate steadily shrinks the buffer between the mark price and your liquidation price — even if price never moves against you. The effect is sharpest at high leverage, where that buffer is thin to begin with. This calculator counts funding inside the risk solve for exactly that reason: a position that merely breaks even on price can still be pushed toward liquidation by its own carry."
+  }
+]
