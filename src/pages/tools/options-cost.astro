@@ -1,0 +1,107 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import FaqAccordion from '../../components/FaqAccordion.astro';
+import faqsData from './faqs-options-cost.json';
+import EmailSignup from '../../components/EmailSignup.astro';
+import faqData from './faq-options.json';
+const schemaHtml = '<script type="application/ld+json">' + JSON.stringify(faqData) + '</script' + '>';
+---
+
+<Layout title="Indian Options Cost Calculator · Monks Of Market" description="Every rupee of cost on an NSE/BSE equity options trade: locked brokerage, STT at 0.15%, exchange charges, SEBI fee, stamp duty and GST." current="tools" schema={schemaHtml}>
+<section class="tool-page" id="tool-options">
+    <div class="shell">
+      <a class="back-link" href="/tools/">← All tools</a>
+      <header class="tool-header"><div><div class="eyebrow">Tool 02 · NSE / BSE equity options</div><h1>Indian options, every rupee of cost.</h1><p class="tool-lead">Enter quantity and premiums for a long options trade with target and stop-loss exits before expiry. Brokerage, STT, exchange, SEBI, stamp duty and GST are locked and verified — net P&amp;L is shown after every charge.</p></div></header>
+      <div class="board-wrap">
+        <div class="calculator">
+          <div class="input-card" data-reveal="left">
+            <div class="card-head"><div><h3>Indian options cost calculator</h3><p>Full premium-turnover charges for a long trade, recomputed at the target and stop-loss exits before expiry.</p></div><button class="preset-btn" id="optionsExample" type="button">Load 50 × ₹100→₹120 · stop ₹90</button></div>
+            <div class="grid-2">
+              <div class="field"><label for="oQty">Quantity</label><div class="control"><input id="oQty" type="number" min="1" step="1" value="50"></div></div>
+              <div class="field"><label for="oExchange">Exchange / contract</label><div class="control"><select id="oExchange"><option value="0.03553" selected>NSE · 0.03553%</option><option value="0.005">BSE · 0.005%</option><option value="0.0325">BSE Sensex / Bankex · 0.0325%</option></select></div></div>
+            </div>
+            <div class="grid-3" style="margin-top:15px">
+              <div class="field"><label for="oBuy">Buy premium</label><div class="control with-suffix"><input id="oBuy" type="number" min="0" step="0.05" value="100"><span class="suffix">INR</span></div></div>
+              <div class="field"><label for="oTarget">Target sell premium</label><div class="control with-suffix"><input id="oTarget" type="number" min="0" step="0.05" value="120"><span class="suffix">INR</span></div></div>
+              <div class="field"><label for="oStop">Stop-loss premium</label><div class="control with-suffix"><input id="oStop" type="number" min="0" step="0.05" value="90"><span class="suffix">INR</span></div></div>
+            </div>
+            <div class="verified-note" style="margin-top:15px"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="10" width="16" height="10" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg><span>Brokerage, STT, SEBI, stamp duty and GST rates are locked and maintained by Monks Of Market. Last verified <strong>30 September 2026</strong>.</span></div>
+            <fieldset class="fieldset"><legend>Trade handling</legend>
+              <div class="field"><label>Product type</label><div class="segmented"><label><input type="radio" name="oMode" value="intraday" checked>Intraday</label><label><input type="radio" name="oMode" value="positional">Positional</label></div></div>
+              <div class="note">Intraday and positional charges are identical here. Zerodha may charge ₹50 + GST for MIS auto square-off. That penalty is not included.</div>
+            </fieldset>
+            <div class="validation" id="oValidation"></div>
+          </div>
+          <aside class="result-card" aria-live="polite" data-reveal="right">
+            <div class="result-hero"><div class="result-kicker">Net P&amp;L at target · after every charge</div><div class="result-big good" id="oNet">₹0.00</div><div class="result-sub">Gross <span id="oGross">₹0.00</span> · total charges <span id="oTotal">₹0.00</span></div></div>
+            <div class="result-grid">
+              <div class="result-item"><span>Net P&amp;L at stop-loss</span><strong id="oNetStop" class="bad">₹0.00</strong></div><div class="result-item"><span>R:R</span><strong id="oRR">0.00 : 1</strong></div>
+              <div class="result-item"><span>Fee-recovery sell price</span><strong id="oBE">₹0.00</strong></div><div class="result-item"><span>Exact dynamic breakeven</span><strong id="oExactBE">₹0.00</strong></div>
+              <div class="result-item"><span>Charges / gross P&amp;L</span><strong id="oDrag">0.00%</strong></div><div class="result-item"><span>Quantity</span><strong id="oQtyOut">0</strong></div>
+            </div>
+            <div class="breakdown"><details open><summary>Complete charge statement · target exit</summary><div class="lineitems"><div class="lineitem"><span>Buy turnover</span><b id="oBuyTurn">₹0.00</b></div><div class="lineitem"><span>Sell turnover · at target</span><b id="oSellTurn">₹0.00</b></div>
+              <div class="lineitem"><span>Brokerage · buy + sell</span><b id="oBrok">₹0.00</b></div><div class="lineitem"><span>STT · sell only</span><b id="oSttOut">₹0.00</b></div>
+              <div class="lineitem"><span>Exchange · buy</span><b id="oExBuy">₹0.00</b></div><div class="lineitem"><span>Exchange · sell</span><b id="oExSell">₹0.00</b></div>
+              <div class="lineitem"><span>SEBI · buy + sell</span><b id="oSebi">₹0.00</b></div><div class="lineitem"><span>Stamp duty · buy only</span><b id="oStamp">₹0.00</b></div>
+              <div class="lineitem"><span>GST · buy</span><b id="oGstBuy">₹0.00</b></div><div class="lineitem"><span>GST · sell</span><b id="oGstSell">₹0.00</b></div>
+            </div></details></div>
+            <div class="result-foot"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M12 3 2 21h20L12 3Z"/><path d="M12 9v5m0 3h.01"/></svg><span><strong>STT trap:</strong> if a long option expires ITM without square-off, STT is 0.15% of intrinsic value. This calculator models a premium sale before expiry.</span></div>
+          </aside>
+        </div>
+      </div>
+      <div class="schedule" data-reveal>
+        <article class="reference-card schedule-card">
+          <span class="locked-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="10" width="16" height="10" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg>Locked · admin maintained</span>
+          <h3 style="margin:14px 0 14px">Indian equity options charge schedule</h3>
+          <div class="fee-table">
+            <div class="fee-row"><span>Brokerage · Zerodha model</span><b>₹20 / executed order</b></div><div class="fee-row"><span>STT on sell premium</span><b>0.15%</b></div><div class="fee-row"><span>NSE exchange charge</span><b>0.03553% / side</b></div><div class="fee-row"><span>BSE exchange charge</span><b>0.005% / side</b></div><div class="fee-row"><span>BSE Sensex / Bankex charge</span><b>0.0325% / side</b></div><div class="fee-row"><span>SEBI turnover fee</span><b>₹10 / crore / side</b></div><div class="fee-row"><span>Stamp duty on buy</span><b>0.003%</b></div><div class="fee-row"><span>GST</span><b>18% on brokerage + exchange + SEBI</b></div>
+          </div>
+          <div class="note"><strong>50-lot check:</strong> buy ₹100, sell ₹120 → charges ₹60.98, net P&amp;L ₹939.02. Recovering that entered trade's charges implies ₹101.22; exact charges solved at breakeven imply ₹101.18.</div>
+          <div class="verified-note"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="10" width="16" height="10" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg><span>Schedule shown read-only and maintained by the Monks Of Market team. <strong>Last verified: 30 September 2026</strong> against official schedules.</span></div>
+        </article>
+      </div>
+      <div class="tool-guide" data-reveal>
+        <h2>How option trade charges work in India</h2>
+        <p>Buy an option at ₹100 and sell it at ₹120, and the chart says you made ₹20 a unit. Your ledger disagrees. Between the two orders sit six separate charges levied by the broker, the exchange, the regulator and the tax code — each calculated on a different base, some charged on the way in, some only on the way out. On a single lot they look like rounding errors; measured against a small premium move, they routinely decide whether a winning trade was worth taking. Here is every line of the bill, in the order the calculator applies it. The rates below are the locked schedule this tool runs on — the same figures shown in the charge card above.</p>
+        <h3>Brokerage</h3>
+        <p>The broker's cut for executing your orders. The schedule uses the flat-fee model popularised by discount brokers such as Zerodha: <strong>₹20 per executed order</strong>. A round trip crosses two orders — one to open, one to close — so brokerage contributes a fixed ₹40 to every completed trade regardless of size. Fixed charges punish small positions: ₹40 is a footnote on a ₹50,000 premium turnover and a serious tax on a ₹2,000 one. This is also the line that varies most between brokers; percentage-of-premium brokerage at a full-service firm will produce a noticeably larger bill than the discount-broker baseline modelled here.</p>
+        <h3>STT — securities transaction tax</h3>
+        <p>STT is a government tax on the transaction itself, and in options it is charged <strong>only on the sell side</strong>, at <strong>0.15% of the premium you receive</strong>. Two consequences follow. First, there is no STT when you buy, so your entry bill is structurally smaller than your exit bill. Second, STT scales with the premium at exit — it grows precisely when your trade works. The dangerous version of STT appears at expiry: if a long option expires in the money and is never squared off, STT is levied at 0.15% of the option's intrinsic value rather than its premium, a figure that can dwarf the premium you paid and turn a profitable expiry into a net loss. The calculator models a sale before expiry; the result panel flags the expiry trap separately.</p>
+        <h3>Exchange transaction charges</h3>
+        <p>The exchange charges for matching your order, calculated as a percentage of <strong>premium turnover</strong> — of the premium, not of the underlying's notional value, which is what keeps option charges survivable on instruments controlling lakhs of rupees of stock. The rate depends on where the contract trades: <strong>0.03553% per side on NSE</strong>, <strong>0.005% per side on BSE</strong> equity options, and <strong>0.0325% per side</strong> for BSE's Sensex and Bankex contracts. Both legs pay it, on buy and sell turnover respectively, and the calculator re-prices the sell leg at whichever exit — target or stop — is being evaluated.</p>
+        <h3>SEBI turnover fee</h3>
+        <p>The market regulator funds itself through a turnover fee of <strong>₹10 per crore</strong> of turnover — one rupee for every ₹10 lakh traded — charged on both sides. Per trade it is the smallest line on the bill, usually paise. It still earns its line, because it forms part of the base on which GST is calculated, and because it is the clearest reminder that every participant in the chain is paid out of the same premium move you are trying to capture.</p>
+        <h3>Stamp duty</h3>
+        <p>Stamp duty is a state levy charged once, <strong>on the buy side only</strong>, at <strong>0.003% of buy-side premium turnover</strong>. It is the mirror image of STT: a charge that exists when you enter and never reappears when you exit. Small, fixed in character, and easy to forget — which is precisely why it belongs in a calculator rather than in memory.</p>
+        <h3>GST</h3>
+        <p>Goods and services tax at <strong>18%</strong> is charged not on your turnover but on the service charges within it — brokerage plus exchange charges plus the SEBI fee, computed separately for each side. STT and stamp duty, being taxes themselves, sit outside the GST base. GST is typically the second-largest line on a small trade's bill after brokerage, and it carries one uncomfortable property: it is charged in full on losing trades too. The tax code does not net off against your P&amp;L. Winning or losing, the bill is the bill.</p>
+        <h2>Breakeven — the number that quietly runs the trade</h2>
+        <p>Your breakeven is not your buy premium. It is the sell premium at which the trade returns exactly zero <strong>after every charge</strong> — and because several charges are themselves calculated on the sell premium, breakeven is a moving target: sell higher, and STT, exchange charges and GST all grow with you. The result panel therefore shows two versions. The <strong>fee-recovery sell price</strong> spreads the entered trade's total charges over your quantity and adds them to the buy premium — a sound first approximation. The <strong>exact dynamic breakeven</strong> solves the real equation: the sell premium at which net P&amp;L is precisely zero, with every charge recomputed at that premium. The exact figure is the honest one, and the small gap between the two is the cost of the approximation. Before any trade, compare your target with the exact breakeven. If the target sits below it, the trade cannot make money even when it "works" — the chart can be right and the ledger still red.</p>
+        <h2>A worked example</h2>
+        <p>The calculator's own check case: buy 50 options at ₹100, exit at the ₹120 target, charged at NSE rates.</p>
+        <div class="guide-example"><div class="lineitems">
+          <div class="lineitem"><span>Buy turnover (50 × ₹100)</span><b>₹5,000.00</b></div>
+          <div class="lineitem"><span>Sell turnover at target (50 × ₹120)</span><b>₹6,000.00</b></div>
+          <div class="lineitem"><span>Gross P&amp;L</span><b>₹1,000.00</b></div>
+          <div class="lineitem"><span>Brokerage · buy + sell</span><b>₹40.00</b></div>
+          <div class="lineitem"><span>STT · sell side only</span><b>₹9.00</b></div>
+          <div class="lineitem"><span>Exchange charges · buy + sell</span><b>₹3.91</b></div>
+          <div class="lineitem"><span>SEBI turnover fee · buy + sell</span><b>₹0.02</b></div>
+          <div class="lineitem"><span>Stamp duty · buy side only</span><b>₹0.15</b></div>
+          <div class="lineitem"><span>GST · buy + sell</span><b>₹7.90</b></div>
+          <div class="lineitem"><span>Total charges</span><b>₹60.98</b></div>
+          <div class="lineitem"><span><strong>Net P&amp;L at target</strong></span><b>₹939.02</b></div>
+          <div class="lineitem"><span>Net P&amp;L at the ₹90 stop-loss</span><b>−₹558.10</b></div>
+          <div class="lineitem"><span>Exact breakeven sell premium</span><b>₹101.18</b></div>
+        </div></div>
+        <p>The trade "made twenty points". The ledger kept ₹939.02 of the ₹1,000 — charges consumed 6.1% of the gross. And notice the asymmetry the R:R exposes: at the ₹90 stop, the same charge structure deepens a ₹500 gross loss into ₹558.10 net, so the realised reward-to-risk is <strong>1.68:1</strong>, thinner than the 2:1 the premium chart suggests. Charges compress winners and deepen losers in equal measure. Measuring that compression before entry — not discovering it in the contract note — is the entire purpose of this calculator.</p>
+        <FaqAccordion faqs={faqsData} /></div>
+      <EmailSignup
+        variant="tool"
+        heading="Get new tools first"
+        subtext="We launch a new calculator every 10 days. Be the first to try them."
+      />
+    </div>
+  </section>
+  <script src="/js/options-calc.js" is:inline slot="page-script"></script>
+</Layout>
