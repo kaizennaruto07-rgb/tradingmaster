@@ -1,0 +1,26 @@
+---
+interface Props {
+  current?: string;
+}
+const { current = '' } = Astro.props;
+---
+<header class="topline" id="topline">
+  <div class="scroll-meter" aria-hidden="true"></div>
+  <div class="shell topline-inner">
+    <div class="status"><i class="pulse"></i><a class="wordmark home-anchor" href="/">Monks Of Market</a><span class="status-meta">Locked fee model · Sep 2026</span></div>
+    <nav class="top-nav" aria-label="Primary">
+      <a class="nav-link" href="/" aria-current={current === 'home' ? 'page' : undefined}>Home</a>
+      <a class="nav-link nav-always" href="/articles/" aria-current={current === 'articles' ? 'page' : undefined}>Articles</a>
+      <div class="nav-item" id="toolsNavItem">
+        <button class="nav-drop" id="toolsMenuBtn" type="button" aria-haspopup="true" aria-expanded="false" aria-current={current === 'tools' ? 'page' : undefined}>Tools ▾</button>
+        <div class="menu-panel" id="toolsMenu" role="menu">
+          <a role="menuitem" href="/tools/crypto-futures/"><span>Crypto futures</span><small>USDT position costs · Delta Exchange</small><em>→</em></a>
+          <a role="menuitem" href="/tools/options-cost/"><span>Indian equity options</span><small>Full-cost NSE / BSE calculations</small><em>→</em></a>
+          <div class="menu-divider"></div>
+          <a role="menuitem" href="/tools/"><span>All tools</span><small>Browse the toolbox</small><em>→</em></a>
+        </div>
+      </div>
+    </nav>
+    <div class="top-actions"><a class="mini-btn" href="/tools/">Explore tools ↓</a></div>
+  </div>
+</header>
