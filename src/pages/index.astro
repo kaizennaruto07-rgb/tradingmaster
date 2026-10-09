@@ -1,5 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import EmailSignup from '../components/EmailSignup.astro';
 ---
 
 <Layout
@@ -172,6 +173,16 @@ import Layout from '../layouts/Layout.astro';
       </div>
       <p class="journal-more" data-reveal><a href="/articles/">Browse all articles <span aria-hidden="true">→</span></a></p>
     </section>
+
+    <div class="shell" data-reveal>
+      <EmailSignup
+        variant="article"
+        formId="9999729"
+        uid="8b81f75b9e"
+        heading="Get the next breakdown first"
+        subtext="One exceptional article per day. No spam, unsubscribe anytime."
+      />
+    </div>
 
   </main>
 </Layout>
