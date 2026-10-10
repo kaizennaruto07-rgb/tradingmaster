@@ -11,6 +11,7 @@ import breakevenSchema from './article-schema-breakeven.json';
 import thirtySchema from './article-schema-30percent.json';
 import positionsizingSchema from './article-schema-positionsizing.json';
 import profitfactorSchema from './article-schema-profitfactor.json';
+import strategyworksSchema from './article-schema-strategyworks.json';
 
 export async function getStaticPaths() {
   const articles = await getCollection('articles');
@@ -33,6 +34,7 @@ const schemaData = slug === 'options-trading-charges-india' ? optionsSchema
   : slug === 'profitable-with-30-percent-win-rate' ? thirtySchema
   : slug === 'position-sizing' ? positionsizingSchema
   : slug === 'profit-factor' ? profitfactorSchema
+  : slug === 'how-to-know-if-trading-strategy-works' ? strategyworksSchema
   : cryptoSchema;
 const schemaHtml = '<script type="application/ld+json">' + JSON.stringify(schemaData) + '</script' + '>';
 
@@ -56,6 +58,8 @@ const toolCta = slug === 'options-trading-charges-india'
   ? { href: '/tools/what-if-simulator/', label: 'Test your sizing in the simulator' }
   : slug === 'profit-factor'
   ? { href: '/tools/options-cost/', label: 'Calculate your real per-trade cost' }
+  : slug === 'how-to-know-if-trading-strategy-works'
+  ? { href: '/tools/what-if-simulator/', label: 'Stress-test your strategy in the simulator' }
   : { href: '/tools/crypto-futures/', label: 'Calculate your futures costs' };
 ---
 
