@@ -12,6 +12,7 @@ import thirtySchema from './article-schema-30percent.json';
 import positionsizingSchema from './article-schema-positionsizing.json';
 import profitfactorSchema from './article-schema-profitfactor.json';
 import strategyworksSchema from './article-schema-strategyworks.json';
+import howmanytradesSchema from './article-schema-howmanytrades.json';
 
 export async function getStaticPaths() {
   const articles = await getCollection('articles');
@@ -35,6 +36,7 @@ const schemaData = slug === 'options-trading-charges-india' ? optionsSchema
   : slug === 'position-sizing' ? positionsizingSchema
   : slug === 'profit-factor' ? profitfactorSchema
   : slug === 'how-to-know-if-trading-strategy-works' ? strategyworksSchema
+  : slug === 'how-many-trades-to-validate-a-strategy' ? howmanytradesSchema
   : cryptoSchema;
 const schemaHtml = '<script type="application/ld+json">' + JSON.stringify(schemaData) + '</script' + '>';
 
@@ -60,6 +62,8 @@ const toolCta = slug === 'options-trading-charges-india'
   ? { href: '/tools/options-cost/', label: 'Calculate your real per-trade cost' }
   : slug === 'how-to-know-if-trading-strategy-works'
   ? { href: '/tools/what-if-simulator/', label: 'Stress-test your strategy in the simulator' }
+  : slug === 'how-many-trades-to-validate-a-strategy'
+  ? { href: '/tools/what-if-simulator/', label: 'Stress-test your sample in the simulator' }
   : { href: '/tools/crypto-futures/', label: 'Calculate your futures costs' };
 ---
 
