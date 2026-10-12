@@ -47,7 +47,7 @@
      "name": "Which trading charges are the same at every broker?",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "Almost everything except brokerage. STT, exchange transaction charges (0.03553% of premium on NSE), the SEBI turnover fee (₹10 per crore), stamp duty, and GST (18% on brokerage + exchange + SEBI charges) are set by the government, exchanges, and regulators — your broker cannot change them. Only the brokerage itself varies: the discount-broker norm is a flat ~₹20 per executed order."
+      "text": "Almost everything except brokerage. STT, exchange transaction charges (0.03503% of premium on NSE), the SEBI turnover fee (₹10 per crore), stamp duty, and GST (18% on brokerage + exchange transaction + SEBI charges) are set by the government, exchanges, and regulators — your broker cannot change them. Only the brokerage itself varies: the discount-broker norm is a flat ~₹20 per executed order."
      }
     },
     {
