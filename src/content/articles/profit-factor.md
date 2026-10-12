@@ -206,24 +206,25 @@ Now the real Indian math. One consistent setup, and every number below flows fro
 |---|---|---|
 | Brokerage | ₹20 per order (₹40 round trip) | ₹40.00 |
 | STT | 0.15% on sell-side premium (₹50 × 65 = ₹3,250) | ₹4.88 |
-| Exchange transaction charges | 0.03553% on premium, each side (₹3,250 × 2 = ₹6,500) | ₹2.31 |
+| Exchange transaction charges | 0.03503% on premium, each side (₹3,250 × 2 = ₹6,500) | ₹2.28 |
 | Stamp duty | 0.003% on buy side (₹3,250) | ₹0.10 |
-| GST | 18% on (brokerage + exchange charges) | ₹7.62 |
-| **Verified charges subtotal** | | **≈ ₹54.90** |
+| SEBI turnover fee | ₹10/crore (₹6,500 turnover) | ₹0.01 |
+| GST | 18% on (brokerage + exchange charges + SEBI) | ₹7.61 |
+| **Verified charges subtotal** | | **≈ ₹54.88** |
 | Slippage (assumption: 1 tick each way, tick ₹0.05 × lot 65 = ₹3.25 per side) | | ₹6.50 |
-| **All-in cost per trade** | | **≈ ₹61.40** |
+| **All-in cost per trade** | | **≈ ₹61.38** |
 
 Reconciliation — how the example's numbers are built, with no shortcuts:
 
 | Step | Math | Result |
 |---|---|---|
-| All-in cost per trade | ₹54.90 verified charges + ₹6.50 slippage | ≈ ₹61.40 |
-| Total costs, 100 trades | 100 × ₹61.40 | ₹6,140 |
-| Net gross profit | ₹30,000 − ₹6,140 | ₹23,860 |
-| Net gross loss | ₹22,222 + ₹6,140 | ₹28,362 |
-| **Net PF** | 23,860 ÷ 28,362 | **≈ 0.84** |
+| All-in cost per trade | ₹54.88 verified charges + ₹6.50 slippage | ≈ ₹61.38 |
+| Total costs, 100 trades | 100 × ₹61.38 | ₹6,138 |
+| Net gross profit | ₹30,000 − ₹6,138 | ₹23,862 |
+| Net gross loss | ₹22,222 + ₹6,138 | ₹28,360 |
+| **Net PF** | 23,862 ÷ 28,360 | **≈ 0.84** |
 
-A gross PF of 1.35 — the kind of number that gets framed and hung on a wall — drops **below 1.0** after real costs. The mechanism is worth understanding, not just memorizing: fixed costs do not scale with premium size. At a ₹50 average premium, the flat ₹40 brokerage alone is nearly two-thirds of the ₹61.40 all-in round-trip cost. Small-premium and scalping strategies are cost-dominated by construction, which is why their PFs run lower — and why comparing them with trend-followers is meaningless.
+A gross PF of 1.35 — the kind of number that gets framed and hung on a wall — drops **below 1.0** after real costs. The mechanism is worth understanding, not just memorizing: fixed costs do not scale with premium size. At a ₹50 average premium, the flat ₹40 brokerage alone is nearly two-thirds of the ₹61.38 all-in round-trip cost. Small-premium and scalping strategies are cost-dominated by construction, which is why their PFs run lower — and why comparing them with trend-followers is meaningless.
 
 **Your concrete next step:** the Indian options cost calculator on this site computes exactly this per-trade cost for your own numbers — enter your premium, lot size, and buy/sell prices, and it totals brokerage, STT, exchange charges, stamp duty, and GST from the verified schedule. That output is your **c**. Multiply it by your trade count, add your own slippage estimate (the calculator gives you charges; your actual fills supply the rest), and plug it into Net PF = (Σwins − total costs) ÷ (Σlosses + total costs). No new tool needed — the calculator already does the hard part under the hood every time it shows you a net P&L figure.
 
@@ -239,13 +240,13 @@ A gross PF of 1.35 — the kind of number that gets framed and hung on a wall �
 <text x="180" y="160" fill="#92a59c" font-size="12">Net PF &#8212; after costs</text>
 <rect x="180" y="168" width="242" height="30" rx="6" fill="#ff4f65" fill-opacity="0.85" class="bar-grow"/>
 <text x="432" y="189" fill="#ff4f65" font-size="14" font-weight="700">0.84</text>
-<text x="180" y="216" fill="#92a59c" font-size="11">Rs 23,860 &#247; Rs 28,362 (Rs 61.40/trade &#215; 100)</text>
+<text x="180" y="216" fill="#92a59c" font-size="11">Rs 23,862 &#247; Rs 28,360 (Rs 61.38/trade &#215; 100)</text>
 <text x="180" y="240" fill="#92a59c" font-size="10">0</text>
 <text x="640" y="240" text-anchor="end" fill="#92a59c" font-size="10">1.6</text>
 <text x="340" y="272" text-anchor="middle" fill="#f2f7f4" font-size="13">Fixed costs don&#8217;t scale with premium size &#8212; a 1.35 backtest becomes a 0.84 reality.</text>
 <text x="340" y="298" text-anchor="middle" fill="#92a59c" font-size="11">Charge rates verified October 2026; premium, lot size and slippage are assumptions.</text>
 </svg>
-<figcaption>The same 100 trades before and after real Indian F&amp;O costs: Rs 61.40 per trade turns a 1.35 gross profit factor into a 0.84 net one &#8212; below breakeven.</figcaption>
+<figcaption>The same 100 trades before and after real Indian F&amp;O costs: Rs 61.38 per trade turns a 1.35 gross profit factor into a 0.84 net one &#8212; below breakeven.</figcaption>
 </figure>
 ## The Execution Leak: Why Your Live Profit Factor Shrinks
 
