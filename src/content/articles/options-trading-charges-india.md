@@ -37,7 +37,7 @@ Every options trade in India carries some combination of these six charges. Here
 | 3 | Exchange transaction charges | NSE: ₹35.03 per lakh (0.03503%); BSE Sensex/Bankex: ₹3,250 per crore (Oct-2024 figure) | Both | Both legs |
 | 4 | SEBI turnover fee | ₹10 per crore (0.0001%) | Both | Both legs |
 | 5 | Stamp duty | 0.003% of premium turnover | Both | **Buy side only** |
-| 6 | GST | 18% on (brokerage + exchange transaction charges) | Both | Both legs |
+| 6 | GST | 18% on (brokerage + exchange transaction charges + SEBI turnover fee) | Both | Both legs |
 
 Two rules underpin everything: **all charges are computed on premium turnover, never on notional value**, and **there are no DP (depository) charges in F&O** — that's an equity-delivery concept that doesn't apply here.
 
@@ -65,7 +65,7 @@ The exchanges charge a percentage of premium turnover on both the buy and sell s
 
 - **SEBI turnover fee:** ₹10 per crore of premium turnover (0.0001%), on both sides. Tiny, but always there.
 - **Stamp duty:** 0.003% of premium turnover, on the **buy side only**. This is the mirror image of STT: where STT hits the sale, stamp duty hits the purchase.
-- **GST:** 18%, charged only on **brokerage + exchange transaction charges**. STT and stamp duty sit outside GST — you do not pay GST on either.
+- **GST:** 18%, charged only on **brokerage + exchange transaction charges + the SEBI turnover fee**. STT and stamp duty sit outside GST — you do not pay GST on either.
 
 ## Option buyers vs option sellers: what differs and why
 
@@ -91,7 +91,7 @@ Brokerage, exchange transaction charges, and the SEBI fee apply to both legs for
 | SEBI turnover fee | 0.0001% × ₹6,500 | ₹0.01 |
 | Stamp duty (buy side) | 0.003% × ₹6,500 | ₹0.20 |
 | STT | None on purchase | ₹0.00 |
-| GST | 18% × (₹20.00 + ₹2.28) | ₹4.01 |
+| GST | 18% × (₹20.00 + ₹2.28 + ₹0.01) | ₹4.01 |
 | **Buy leg total** | | **₹26.49** |
 
 ### Sell leg (exit)
@@ -103,7 +103,7 @@ Brokerage, exchange transaction charges, and the SEBI fee apply to both legs for
 | SEBI turnover fee | 0.0001% × ₹6,500 | ₹0.01 |
 | Stamp duty | None on sale | ₹0.00 |
 | STT on sale of option | 0.15% × ₹6,500 | ₹9.75 |
-| GST | 18% × (₹20.00 + ₹2.28) | ₹4.01 |
+| GST | 18% × (₹20.00 + ₹2.28 + ₹0.01) | ₹4.01 |
 | **Sell leg total** | | **₹36.04** |
 
 ### Round-trip total
@@ -131,7 +131,7 @@ There it is: **₹62.53** — the headline figure from the top of this article. 
 | SEBI turnover fee | 0.0001% × ₹9,750 | ₹0.01 |
 | STT on sale of option | 0.15% × ₹9,750 | ₹14.63 |
 | Stamp duty | None on sale | ₹0.00 |
-| GST | 18% × (₹20.00 + ₹3.42) | ₹4.22 |
+| GST | 18% × (₹20.00 + ₹3.42 + ₹0.01) | ₹4.22 |
 | **Sell leg total** | | **₹42.26** |
 
 ### Buy-back leg (exit for the writer)
@@ -143,7 +143,7 @@ There it is: **₹62.53** — the headline figure from the top of this article. 
 | SEBI turnover fee | 0.0001% × ₹9,750 | ₹0.01 |
 | Stamp duty (buy side) | 0.003% × ₹9,750 | ₹0.29 |
 | STT | None on purchase | ₹0.00 |
-| GST | 18% × (₹20.00 + ₹3.42) | ₹4.22 |
+| GST | 18% × (₹20.00 + ₹3.42 + ₹0.01) | ₹4.22 |
 | **Buy-back leg total** | | **₹27.93** |
 
 ### Round-trip total: **₹70.20**
@@ -215,7 +215,7 @@ Two rates apply. On the **sale of an option**, STT is 0.15% of the premium (rais
 
 ### Which trading charges are the same at every broker?
 
-Almost everything except brokerage. STT, exchange transaction charges (0.03553% of premium on NSE), the SEBI turnover fee (₹10 per crore), stamp duty, and GST (18% on brokerage + exchange + SEBI charges) are set by the government, exchanges, and regulators — your broker cannot change them. Only the brokerage itself varies: the discount-broker norm is a flat ~₹20 per executed order, while full-service brokers may charge a percentage.
+Almost everything except brokerage. STT, exchange transaction charges (0.03503% of premium on NSE), the SEBI turnover fee (₹10 per crore), stamp duty, and GST (18% on brokerage + exchange + SEBI charges) are set by the government, exchanges, and regulators — your broker cannot change them. Only the brokerage itself varies: the discount-broker norm is a flat ~₹20 per executed order, while full-service brokers may charge a percentage.
 
 ### What happens to charges if I let my option expire?
 
