@@ -1,0 +1,104 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "How to Detect Overfitting in Trading Strategy (Before It Costs You Real Money)",
+      "description": "How to detect overfitting in a trading strategy: five tests — the cliff test, the landscape test, the dice-count, walk-forward testing, and the rationale test.",
+      "author": {
+        "@type": "Person",
+        "name": "Kaizen"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Monks Of Market",
+        "url": "https://monksofmarket.com"
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://monksofmarket.com/articles/how-to-detect-overfitting-in-trading-strategy/"
+      },
+      "datePublished": "2026-10-13",
+      "inLanguage": "en-IN"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is overfitting in trading?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Overfitting — often called curve fitting — is tuning a strategy's rules and parameters so tightly to one historical dataset that they capture that dataset's noise instead of a repeatable edge. The practice-test analogy: the strategy memorized the answers to one specific past paper instead of learning the subject. The result is a beautiful backtest with no predictive power — it tells you what worked on that data, not what will work next."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I know if my backtest is overfit?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Run the warning signs as a checklist, not a verdict: a suspiciously smooth equity curve with no real drawdowns; an edge that exists only at one precise parameter value; in-sample numbers that dazzle while out-of-sample numbers collapse; a strategy that works on exactly one asset or timeframe; more tuned parameters than the trade count can support; most of the profit coming from two or three trades; and no logical market reason for the rules. Tick three or more, and run the five tests in the article above. For the trade-count math behind \"too few trades,\" see the evidence contract."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the parameter-cliff test?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The parameter-cliff test — the signature detection test in this article — works like this: take every parameter the optimizer tuned and nudge each one ±10–20%, re-running the backtest at each step. A robust edge degrades gracefully, like a flat-topped hill. An overfit edge falls off a cliff — one exact value works and the neighbors collapse. As a working practitioner rule of thumb, profit factor should not collapse below ~1.2 on a ±10% shift; an edge that needs exactly 17.3 and dies at 20 is a confession, not an edge. (Profit factor itself is the metric, not the lesson — the profit factor guide covers it.)"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is walk-forward testing?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Walk-forward testing means optimizing a strategy on an initial window of data, locking the parameters, testing the locked strategy unchanged on the next unseen slice, then rolling both windows forward and chaining the out-of-sample segments together. At every point, the strategy only ever saw data that was genuinely its future — the closest thing to real trading a backtest can produce. Practitioners softly read the efficiency (out-of-sample ÷ in-sample): roughly 70%+ is strong, ~50–70% acceptable, below ~30–50% likely overfit. And the hard rule: peek at the test slice to tweak the rules, and the test is void."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How many strategies can I test before the winner stops meaning anything?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "There is no fixed number — there is a rising bar. Every variant you tried and discarded counts against the winner, like dice rolls you are not allowed to hide. As a practitioner rule of thumb: if you tried ~100 variants, the winner needs an observed Sharpe of at least ~2.5 to mean anything; ~10 tries → ~1.8; one pre-registered hypothesis → ~1.0 earns its nominal weight. The formal version, a 2014-era peer-reviewed study (the Deflated Sharpe Ratio), asks: given N trials, what is the probability the true Sharpe is actually positive? And pre-registration — writing the hypothesis down before touching the data — is what makes your count of N honest; see the evidence contract."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "My Sharpe ratio is 3 — is my strategy amazing?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Maybe — but practitioner consensus says a Sharpe that good is suspicious first and amazing second. Far more often, a 3+ Sharpe on a retail backtest means one of three things: the strategy is overfit, the trade count is too small for the number to mean anything, or costs were ignored (a backtest Sharpe computed on gross returns in Indian F&O, where STT and spreads bite, is a laboratory number — our charges guide shows the real stack). Run the cliff test and the dice-count before celebrating. For what Sharpe actually measures, see real expectancy."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is backtest overfitting vs look-ahead bias?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Overfitting is fitting to past noise — the strategy learned the wrong lesson from history, so the backtest is honest about what the rules did but the rules are useless going forward. Look-ahead bias is using future information — the strategy cheated, so the backtest shows what the rules would have done if they could see tomorrow. The classic retail example is a repainting indicator that redraws past values, producing perfectly timed historical signals that could never have been traded live. Both make the backtest lie, in different directions: overfitting lies about the future, look-ahead bias lies about the past."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can a simple strategy with few parameters still be overfit?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Parameter count is only one source of fitting — the other is selection. A two-rule strategy is no defense if you ran hundreds of simple variants and kept the winner; that winner is the luckiest draw of the pile, and the dice-count test (Test 3) catches it. A simple strategy can also be overfit by being tuned to one short or one-regime sample, which no parameter count can fix. The defense is the honest trial count: pre-register the hypothesis before touching the data (N = 1) so the selection step never happens."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why does my strategy work on NIFTY but not on BANKNIFTY?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Treat it as a warning sign, not a verdict. The usual explanation is single-asset fitting: the rules memorized the quirks of one instrument's history — its typical volatility, its intraday rhythm, its specific reactions to news — rather than capturing a repeatable market behavior. The cross-asset check from Test 5 is the cheap way to find out: an edge that is real tends to show some consistency across similar instruments. There is one honest exception: a rule with a genuine market reason to be asset-specific (say, a structure unique to how NIFTY weekly options are priced). If you cannot name that reason, the difference is probably fitting, not edge."
+          }
+        }
+      ]
+    }
+  ]
+}
