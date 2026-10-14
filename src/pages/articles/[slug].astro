@@ -16,6 +16,7 @@ import howmanytradesSchema from './article-schema-howmanytrades.json';
 import backtestedSchema from './article-schema-backtested.json';
 import realexpectancySchema from './article-schema-realexpectancy.json';
 import overfittingSchema from './article-schema-overfitting.json';
+import montecarloSchema from './article-schema-montecarlo.json';
 
 export async function getStaticPaths() {
   const articles = await getCollection('articles');
@@ -43,6 +44,7 @@ const schemaData = slug === 'options-trading-charges-india' ? optionsSchema
   : slug === 'why-backtested-strategies-fail-in-live-trading' ? backtestedSchema
   : slug === 'how-to-calculate-real-expectancy' ? realexpectancySchema
   : slug === 'how-to-detect-overfitting-in-trading-strategy' ? overfittingSchema
+  : slug === 'monte-carlo-simulation-for-traders' ? montecarloSchema
   : cryptoSchema;
 const schemaHtml = '<script type="application/ld+json">' + JSON.stringify(schemaData) + '</script' + '>';
 
@@ -76,6 +78,8 @@ const toolCta = slug === 'options-trading-charges-india'
   ? { href: '/tools/what-if-simulator/', label: 'Simulate your expectancy in the what-if simulator' }
   : slug === 'how-to-detect-overfitting-in-trading-strategy'
   ? { href: '/tools/what-if-simulator/', label: 'Run the honest sample in the simulator' }
+  : slug === 'monte-carlo-simulation-for-traders'
+  ? { href: '/tools/what-if-simulator/', label: 'Run your trade list through the fan' }
   : { href: '/tools/crypto-futures/', label: 'Calculate your futures costs' };
 ---
 
