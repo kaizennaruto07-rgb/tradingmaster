@@ -1,0 +1,124 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import FaqAccordion from '../../components/FaqAccordion.astro';
+import faqsData from './faqs-risk-of-ruin.json';
+import EmailSignup from '../../components/EmailSignup.astro';
+import faqData from './faq-riskofruin.json';
+const schemaHtml = '<script type="application/ld+json">' + JSON.stringify(faqData) + '</script' + '>';
+---
+
+<Layout title="Risk of Ruin Calculator — Will Your Strategy Survive? | Monks Of Market" description="Enter win rate, payoff and risk per trade — get your probability of ruin, survival odds and maximum safe size. Free, runs in your browser." current="tools" schema={schemaHtml}>
+<style>
+  .run-btn{display:block;width:100%;margin-top:18px;height:52px;border:0;border-radius:12px;background:var(--accent);color:#fff;font:700 15px/1 var(--sans);cursor:pointer;letter-spacing:.01em}
+  .run-btn:hover{filter:brightness(1.08)}
+  .run-btn:disabled{opacity:.6;cursor:wait}
+  .run-meta{margin-top:8px;font:600 10px/1.6 var(--mono);color:var(--muted);letter-spacing:.08em;text-transform:uppercase}
+  .chart-wrap{padding:6px 10px 0;border-top:1px solid var(--line)}
+  .chart-wrap svg{display:block;width:100%;height:auto}
+  .share-box{padding:16px 19px;border-top:1px solid var(--line)}
+  .share-box textarea{width:100%;min-height:74px;resize:vertical;border:1px solid var(--line);border-radius:10px;background:var(--bg);color:var(--ink);padding:10px 12px;font:400 12.5px/1.6 var(--sans)}
+  .share-row{display:flex;gap:10px;align-items:center;margin-top:10px}
+  .copy-btn{border:1px solid var(--line);background:var(--surface-2);border-radius:9px;padding:9px 14px;cursor:pointer;font:700 12px/1 var(--sans);color:var(--ink)}
+  .copy-btn:hover{border-color:var(--accent)}
+  .copy-msg{font-size:12px;color:var(--accent)}
+  .nosim{padding:26px 19px;color:var(--muted);font-size:13.5px;line-height:1.7}
+  .sim-note{display:flex;gap:8px;align-items:start}
+  .slider-row{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:6px}
+  .slider-row output{font:700 13px/1 var(--mono);color:var(--accent)}
+  input[type="range"]{width:100%;accent-color:var(--accent);height:28px;cursor:pointer}
+  .seg-row{display:flex;gap:8px;flex-wrap:wrap;margin-top:8px}
+  .seg-btn{border:1px solid var(--line);background:var(--surface-2);border-radius:9px;padding:9px 14px;cursor:pointer;font:700 12.5px/1 var(--sans);color:var(--ink)}
+  .seg-btn:hover{border-color:var(--accent)}
+  .seg-btn.active{background:var(--accent);border-color:var(--accent);color:#fff}
+  .solver-box{margin:0 19px;padding:14px 16px;border:1px solid var(--accent);border-radius:12px;background:color-mix(in srgb, var(--accent) 8%, transparent)}
+  .solver-box strong{display:block;font-size:14.5px;line-height:1.5;margin-bottom:4px}
+  .solver-box span{font-size:12.5px;color:var(--muted);line-height:1.6}
+  .field-label{margin-bottom:2px}
+</style>
+<section class="tool-page" id="tool-ror">
+    <div class="shell">
+      <a class="back-link" href="/tools/">← All tools</a>
+      <header class="tool-header"><div><div class="eyebrow">Tool 04 · Risk of ruin</div><h1>What is your probability of blowing up?</h1><p class="tool-lead">Enter your strategy's win rate, payoff and risk per trade. The calculator returns your classical risk of ruin, cross-checks it against 1,000 Monte Carlo futures, and tells you the maximum size that keeps ruin under 1%. Free, in your browser, no signup.</p></div></header>
+      <div class="board-wrap">
+        <div class="calculator">
+          <div class="input-card" data-reveal="left">
+            <div class="card-head"><div><h3>Your strategy's numbers</h3><p>Be honest here — the formula is only as truthful as the inputs. Use net figures after costs where you can.</p></div><button class="preset-btn" id="rExample" type="button">Load example</button></div>
+            <div class="grid-2">
+              <div class="field"><div class="slider-row"><label for="rWinRate">Win rate</label><output id="rWinRateVal" for="rWinRate">45%</output></div><input id="rWinRate" type="range" min="10" max="90" step="1" value="45" aria-label="Win rate percent"></div>
+              <div class="field"><div class="slider-row"><label for="rRisk">Risk per trade</label><output id="rRiskVal" for="rRisk">1.0%</output></div><input id="rRisk" type="range" min="0.25" max="10" step="0.25" value="1" aria-label="Risk per trade percent"></div>
+              <div class="field"><label for="rWinR">Average win</label><div class="control with-suffix"><input id="rWinR" type="number" min="0.1" step="0.1" value="1.5"><span class="suffix">R</span></div></div>
+              <div class="field"><label for="rLossR">Average loss</label><div class="control with-suffix"><input id="rLossR" type="number" min="0.1" step="0.1" value="1"><span class="suffix">R</span></div></div>
+              <div class="field"><label for="rCapital">Starting capital</label><div class="control with-suffix"><input id="rCapital" type="number" min="1000" step="1000" value="100000"><span class="suffix">₹</span></div></div>
+              <div class="field"><span class="field-label" id="rTradesLabel">Trades to project</span><div class="seg-row" role="group" aria-labelledby="rTradesLabel"><button class="seg-btn" type="button" data-trades="100">100</button><button class="seg-btn active" type="button" data-trades="500">500</button><button class="seg-btn" type="button" data-trades="1000">1000</button></div></div>
+            </div>
+            <div class="field" style="margin-top:14px"><span class="field-label" id="rRrLabel">Reward : risk preset</span><div class="seg-row" role="group" aria-labelledby="rRrLabel"><button class="seg-btn" type="button" data-rr="1:1">1:1</button><button class="seg-btn active" type="button" data-rr="1.5:1">1.5:1</button><button class="seg-btn" type="button" data-rr="2:1">2:1</button><button class="seg-btn" type="button" data-rr="3:1">3:1</button></div></div>
+            <div class="verified-note" style="margin-top:16px"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="10" width="16" height="10" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg><span>Classical fixed-fractional model: each trade risks the % you set of <em>current</em> capital. The formula assumes a constant win rate and payoff forever — markets don't oblige, so treat the number as a lower bound on danger, not a promise of safety. 1 R = one unit of risk.</span></div>
+            <button class="run-btn" id="rRunBtn" type="button">Calculate risk of ruin</button>
+            <div class="run-meta" id="rRunMeta">Classical formula + 1,000 Monte Carlo futures · runs in your browser</div>
+            <div class="validation" id="rValidation"></div>
+          </div>
+          <aside class="result-card" aria-live="polite" data-reveal="right">
+            <noscript><div class="nosim">This calculator needs JavaScript — it evaluates the classical risk-of-ruin formula and runs 1,000 Monte Carlo simulations live in your browser, and there is no server to do it for you.</div></noscript>
+            <div class="pnl-duo">
+              <div class="pnl-cell target"><div class="result-kicker">Probability of ruin</div><div class="result-big" id="rRuinPct" style="font-size:clamp(26px,7vw,46px)">—</div></div>
+              <div class="pnl-cell stop"><div class="result-kicker">Survival probability</div><div class="result-big" id="rSurvival" style="font-size:clamp(22px,6.4vw,42px)">—</div></div>
+            </div>
+            <div style="padding:14px 0 4px"><div class="solver-box"><strong id="rSolver">—</strong><span id="rSolverNote"></span></div></div>
+            <div class="chart-wrap">
+              <div class="result-kicker" style="padding:14px 6px 4px">Ruin probability vs risk per trade</div>
+              <svg id="rCurve" role="img" aria-label="Chart of ruin probability rising as risk per trade increases from 0.25 to 10 percent, with a marker at your current risk"></svg>
+            </div>
+            <div class="chart-wrap">
+              <div class="result-kicker" style="padding:14px 6px 4px">1,000 Monte Carlo equity curves</div>
+              <svg id="rFan" role="img" aria-label="Fan chart of simulated equity curves showing P10, P50 and P90 paths"></svg>
+            </div>
+            <div class="result-grid">
+              <div class="result-item"><span>Classical risk of ruin</span><strong id="rClassical">—</strong></div>
+              <div class="result-item"><span>MC effective-ruin (90%+ DD)</span><strong id="rMcRuin">—</strong></div>
+              <div class="result-item"><span>Median worst drawdown</span><strong id="rMedDD">—</strong></div>
+              <div class="result-item"><span>Edge per trade</span><strong id="rEdge">—</strong></div>
+              <div class="result-item"><span>Simulated futures</span><strong>1,000</strong></div>
+              <div class="result-item"><span>Sizing model</span><strong>Fixed-fractional</strong></div>
+            </div>
+            <div class="share-box">
+              <div class="result-kicker" style="margin-bottom:10px">Share your result</div>
+              <textarea id="rShare" readonly aria-label="Copy-pasteable risk of ruin summary"></textarea>
+              <div class="share-row"><button class="copy-btn" id="rCopyBtn" type="button">Copy summary</button><span class="copy-msg" id="rCopyMsg"></span></div>
+            </div>
+            <div class="result-foot"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="12" r="9"/><path d="M12 10v6m0-9h.01"/></svg><span class="sim-note"><span>Educational tool — not financial advice. The model assumes a constant edge and ignores brokerage, taxes and slippage, so treat every number as optimistic. <a href="/disclaimer/">Read the disclaimer</a>.</span></span></div>
+          </aside>
+        </div>
+      </div>
+      <div class="tool-guide" data-reveal>
+        <h2>The formula behind the number</h2>
+        <p>Let <strong>p</strong> be your win probability and <strong>b</strong> your payoff ratio (average win ÷ average loss, in risk units). Your edge per trade is <strong>E = p·b − (1−p)</strong>. If E is zero or negative, eventual ruin is 100% — the mathematics of gambler's ruin says no position size can save a strategy with no edge. If E is positive, risk of ruin is <strong>((1−E)/(1+E))^N</strong>, where <strong>N</strong> is your account divided by risk per trade: the number of risk units you hold. More units, more survival.</p>
+        <h3>Why size matters more than it feels like</h3>
+        <p>N sits in the exponent. Double your risk per trade and you halve N — and the ruin probability doesn't double, it compounds upward. That is why the curve above stays near zero for small sizes and then bends almost vertically: each extra percent of risk buys disproportionately more danger. The solver finds the exact point where your curve crosses the 1% line.</p>
+        <h2>A worked example</h2>
+        <p>The calculator loads with this scenario: ₹1,00,000 starting capital, 45% win rate, 1.5R average win against 1R average loss, 1% risked per trade, 500 trades projected.</p>
+        <div class="guide-example"><div class="lineitems">
+          <div class="lineitem"><span>Edge per trade</span><b>0.45 × 1.5 − 0.55 = +0.125R</b></div>
+          <div class="lineitem"><span>Risk units in the account</span><b>100 ÷ 1 = 100</b></div>
+          <div class="lineitem"><span><strong>Classical risk of ruin</strong></span><b>≈ 0%</b></div>
+          <div class="lineitem"><span><strong>Survival probability</strong></span><b>≈ 100%</b></div>
+          <div class="lineitem"><span><strong>Max size for ruin ≤ 1%</strong></span><b>≈ 5.5% per trade</b></div>
+          <div class="lineitem"><span>Monte Carlo cross-check (median worst drawdown)</span><b>≈ 15.6%</b></div>
+        </div></div>
+        <p>Now change only the risk per trade to 10% — same strategy, same edge. Ruin jumps to about 1.7%, and the solver's ceiling drops toward that 10%. Nothing about the strategy changed; the size did. That single experiment is the whole argument for calculating ruin before sizing up.</p>
+        <h3>Why two ruin numbers?</h3>
+        <p>The classical number is exact but assumes an infinite horizon and a perfectly constant edge. The Monte Carlo cross-check simulates 1,000 finite futures (your chosen trade count) and reports the share suffering a 90%+ drawdown — labelled effective-ruin because fixed-fractional equity never quite reaches zero. The two should roughly agree; when they disagree, respect the higher one.</p>
+        <FaqAccordion faqs={faqsData} /><div class="tool-cta" style="margin-top:44px;padding:28px;border:1px solid var(--line);border-radius:16px;background:var(--surface)">
+          <h3 style="margin:0 0 8px">Read the mathematics behind ruin</h3>
+          <p style="margin:0 0 16px;color:var(--muted);font-size:14px">The calculator gives you <em>your</em> number. The article explains <em>why</em> ruin behaves the way it does — the formula, the intuition, and how professionals use it to size.</p>
+          <a href="/articles/risk-of-ruin-trading/" class="copy-btn" style="text-decoration:none;display:inline-block">Read the risk of ruin guide →</a>
+        </div>
+        <EmailSignup
+          variant="tool"
+          heading="Get new tools first"
+          subtext="We launch a new calculator every 10 days. Be the first to try them."
+        />
+      </div>
+    </div>
+  </section>
+  <script src="/js/ror-calc.js" is:inline slot="page-script"></script>
+</Layout>
