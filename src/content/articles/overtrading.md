@@ -298,7 +298,7 @@ Two boundaries, stated plainly — because a protocol sold as a cure becomes the
 
 ## Where the week takes you next
 
-Overtrading is what C-game looks like on the trade log — tonight's A-game/C-game framework is the identity upgrade that runs the protocol above without negotiating with it. Tomorrow's tilt piece covers the broader emotional-decision spiral this behavior sits inside, and the FOMO article covers the mirror image — the pain of the missed move ("didn't take it") versus this article's "took too many."
+Overtrading is what C-game looks like on the trade log — [tonight's A-game/C-game framework](/articles/c-game-to-a-game-signature-framework/) is the identity upgrade that runs the protocol above without negotiating with it. Tomorrow's tilt piece covers the broader emotional-decision spiral this behavior sits inside, and the FOMO article covers the mirror image — the pain of the missed move ("didn't take it") versus this article's "took too many."
 
 ## Frequently Asked Questions
 
