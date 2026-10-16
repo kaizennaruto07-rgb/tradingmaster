@@ -21,6 +21,7 @@ import papertradingSchema from './article-schema-papertrading.json';
 import givebackSchema from './article-schema-giveback.json';
 import revengeSchema from './article-schema-revenge.json';
 import overtradingSchema from './article-schema-overtrading.json';
+import cgameSchema from './article-schema-cgame.json';
 
 export async function getStaticPaths() {
   const articles = await getCollection('articles');
@@ -53,6 +54,7 @@ const schemaData = slug === 'options-trading-charges-india' ? optionsSchema
   : slug === 'why-traders-give-back-profits' ? givebackSchema
   : slug === 'revenge-trading' ? revengeSchema
   : slug === 'overtrading' ? overtradingSchema
+  : slug === 'c-game-to-a-game-signature-framework' ? cgameSchema
   : cryptoSchema;
 const schemaHtml = '<script type="application/ld+json">' + JSON.stringify(schemaData) + '</script' + '>';
 
@@ -96,6 +98,8 @@ const toolCta = slug === 'options-trading-charges-india'
   ? { href: '/tools/what-if-simulator/', label: 'Stress-test the revenge circuit in the simulator' }
   : slug === 'overtrading'
   ? { href: '/tools/options-cost/', label: 'Price your own boredom tax' }
+  : slug === 'c-game-to-a-game-signature-framework'
+  ? { href: '/tools/risk-of-ruin/', label: 'Check your C-game ruin risk' }
   : { href: '/tools/crypto-futures/', label: 'Calculate your futures costs' };
 ---
 
