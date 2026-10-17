@@ -12,7 +12,7 @@ keywords: ["options trading charges india", "STT on options", "options brokerage
 
 ## The short answer: what you'll actually pay on an options trade
 
-Here's the headline number: **buying and selling one NIFTY option lot (premium ₹100, one lot of 65 shares) costs roughly ₹63 in total charges — ₹26.49 on the buy leg and ₹36.04 on the sell leg.** That's about ₹0.96 per share just to get in and out. The option has to move in your favour by that much before you've made a single rupee of profit.
+Here's the headline number: **buying and selling one NIFTY option lot (premium ₹100, one lot of 65 shares) costs roughly ₹63 in total charges — ₹26.53 on the buy leg and ₹36.08 on the sell leg.** That's about ₹0.96 per share just to get in and out. The option has to move in your favour by that much before you've made a single rupee of profit.
 
 This article breaks down every charge line by line, shows the exact maths for both **buying** and **selling** an option, and explains why most traders underestimate what they're really paying.
 
@@ -24,7 +24,7 @@ Most traders look at one number: brokerage. A discount broker advertises "₹20 
 
 That is the advertised-brokerage trap. On a typical options round trip, brokerage is the single biggest line item — but it's only about 60% of the total bill. The rest comes from four charges the broker doesn't set and can't waive: **Securities Transaction Tax (STT), exchange transaction charges, SEBI turnover fee, and stamp duty**, plus **GST** on some of them. None of these show up in the broker's marketing. All of them come out of your P&L.
 
-The other trap is assuming these are negligible. On a small option premium they are not. Paying ₹62.53 on ₹13,000 of round-trip premium turnover is roughly 0.48% of the trade — paid in full whether you win or lose.
+The other trap is assuming these are negligible. On a small option premium they are not. Paying ₹62.61 on ₹13,000 of round-trip premium turnover is roughly 0.48% of the trade — paid in full whether you win or lose.
 
 ## The six options trading charges, explained one by one
 
@@ -34,7 +34,7 @@ Every options trade in India carries some combination of these six charges. Here
 |---|--------|------|----------|-----------|
 | 1 | Brokerage | Flat ~₹20 per executed order (discount-broker norm) | Both buyer and seller | Both legs |
 | 2 | STT (Securities Transaction Tax) | 0.15% of premium on sale; 0.15% of intrinsic value on exercise | Seller (sale) / purchaser (exercise) | Sale leg only |
-| 3 | Exchange transaction charges | NSE: ₹35.03 per lakh (0.03503%); BSE Sensex/Bankex: ₹3,250 per crore (Oct-2024 figure) | Both | Both legs |
+| 3 | Exchange transaction charges | NSE: ₹35.53 per lakh (0.03553%); BSE Sensex/Bankex: ₹3,250 per crore (Oct-2024 figure) | Both | Both legs |
 | 4 | SEBI turnover fee | ₹10 per crore (0.0001%) | Both | Both legs |
 | 5 | Stamp duty | 0.003% of premium turnover | Both | **Buy side only** |
 | 6 | GST | 18% on (brokerage + exchange transaction charges + SEBI turnover fee) | Both | Both legs |
@@ -58,7 +58,7 @@ So STT follows whoever is selling premium or exercising — not whoever opens th
 
 The exchanges charge a percentage of premium turnover on both the buy and sell sides:
 
-- **NSE:** ₹35.03 per lakh of premium turnover — that's 0.03503%.
+- **NSE:** ₹35.53 per lakh of premium turnover — that's 0.03553%.
 - **BSE (Sensex/Bankex options):** ₹3,250 per crore of premium turnover — the last verified figure is from October 2024. A cut to this rate has been reported for 2026 but is **unverified**, so use the Oct-2024 figure and **check the current BSE circular** before trading.
 
 ### SEBI turnover fee, stamp duty, and GST
@@ -87,34 +87,34 @@ Brokerage, exchange transaction charges, and the SEBI fee apply to both legs for
 | Charge | Calculation | Amount |
 |--------|-------------|--------|
 | Brokerage | Flat per order | ₹20.00 |
-| NSE transaction charge | 0.03503% × ₹6,500 | ₹2.28 |
+| NSE transaction charge | 0.03553% × ₹6,500 | ₹2.31 |
 | SEBI turnover fee | 0.0001% × ₹6,500 | ₹0.01 |
 | Stamp duty (buy side) | 0.003% × ₹6,500 | ₹0.20 |
 | STT | None on purchase | ₹0.00 |
-| GST | 18% × (₹20.00 + ₹2.28 + ₹0.01) | ₹4.01 |
-| **Buy leg total** | | **₹26.49** |
+| GST | 18% × (₹20.00 + ₹2.31 + ₹0.01) | ₹4.02 |
+| **Buy leg total** | | **₹26.53** |
 
 ### Sell leg (exit)
 
 | Charge | Calculation | Amount |
 |--------|-------------|--------|
 | Brokerage | Flat per order | ₹20.00 |
-| NSE transaction charge | 0.03503% × ₹6,500 | ₹2.28 |
+| NSE transaction charge | 0.03553% × ₹6,500 | ₹2.31 |
 | SEBI turnover fee | 0.0001% × ₹6,500 | ₹0.01 |
 | Stamp duty | None on sale | ₹0.00 |
 | STT on sale of option | 0.15% × ₹6,500 | ₹9.75 |
-| GST | 18% × (₹20.00 + ₹2.28 + ₹0.01) | ₹4.01 |
-| **Sell leg total** | | **₹36.04** |
+| GST | 18% × (₹20.00 + ₹2.31 + ₹0.01) | ₹4.02 |
+| **Sell leg total** | | **₹36.08** |
 
 ### Round-trip total
 
 | | Amount |
 |--|--------|
-| Buy leg | ₹26.49 |
-| Sell leg | ₹36.04 |
-| **Total cost of the round trip** | **₹62.53** |
+| Buy leg | ₹26.53 |
+| Sell leg | ₹36.08 |
+| **Total cost of the round trip** | **₹62.61** |
 
-There it is: **₹62.53** — the headline figure from the top of this article. STT on the sale leg (₹9.75) is the single biggest non-brokerage charge. Spread across 65 shares, your cost is ₹62.53 ÷ 65 = **₹0.96 per share**. The option must move at least ₹0.96 in your favour before you break even.
+There it is: **₹62.61** — the headline figure from the top of this article. STT on the sale leg (₹9.75) is the single biggest non-brokerage charge. Spread across 65 shares, your cost is ₹62.61 ÷ 65 = **₹0.96 per share**. The option must move at least ₹0.96 in your favour before you break even.
 
 *Figures rounded to paise; totals may differ by a paisa either way.*
 
@@ -127,34 +127,34 @@ There it is: **₹62.53** — the headline figure from the top of this article. 
 | Charge | Calculation | Amount |
 |--------|-------------|--------|
 | Brokerage | Flat per order | ₹20.00 |
-| NSE transaction charge | 0.03503% × ₹9,750 | ₹3.42 |
+| NSE transaction charge | 0.03553% × ₹9,750 | ₹3.46 |
 | SEBI turnover fee | 0.0001% × ₹9,750 | ₹0.01 |
 | STT on sale of option | 0.15% × ₹9,750 | ₹14.63 |
 | Stamp duty | None on sale | ₹0.00 |
-| GST | 18% × (₹20.00 + ₹3.42 + ₹0.01) | ₹4.22 |
-| **Sell leg total** | | **₹42.26** |
+| GST | 18% × (₹20.00 + ₹3.46 + ₹0.01) | ₹4.23 |
+| **Sell leg total** | | **₹42.32** |
 
 ### Buy-back leg (exit for the writer)
 
 | Charge | Calculation | Amount |
 |--------|-------------|--------|
 | Brokerage | Flat per order | ₹20.00 |
-| NSE transaction charge | 0.03503% × ₹9,750 | ₹3.42 |
+| NSE transaction charge | 0.03553% × ₹9,750 | ₹3.46 |
 | SEBI turnover fee | 0.0001% × ₹9,750 | ₹0.01 |
 | Stamp duty (buy side) | 0.003% × ₹9,750 | ₹0.29 |
 | STT | None on purchase | ₹0.00 |
-| GST | 18% × (₹20.00 + ₹3.42 + ₹0.01) | ₹4.22 |
-| **Buy-back leg total** | | **₹27.93** |
+| GST | 18% × (₹20.00 + ₹3.46 + ₹0.01) | ₹4.23 |
+| **Buy-back leg total** | | **₹27.99** |
 
-### Round-trip total: **₹70.20**
+### Round-trip total: **₹70.32**
 
 | | Amount |
 |--|--------|
-| Sell leg | ₹42.26 |
-| Buy-back leg | ₹27.93 |
-| **Total cost of the round trip** | **₹70.20** |
+| Sell leg | ₹42.32 |
+| Buy-back leg | ₹27.99 |
+| **Total cost of the round trip** | **₹70.32** |
 
-That's ₹70.20 ÷ 65 = **₹1.08 per share**. The writer breaks even only if the buy-back premium is at least ₹1.08 below the sale premium (₹148.92 or lower against a ₹150 sale). Two lessons here: the writer pays STT up front on entry (₹14.63 — the biggest single non-brokerage charge in this trade), and because charges scale with premium, a higher-premium option costs more in absolute rupees than the ₹100 example — even though the structure is identical.
+That's ₹70.32 ÷ 65 = **₹1.08 per share**. The writer breaks even only if the buy-back premium is at least ₹1.08 below the sale premium (₹148.92 or lower against a ₹150 sale). Two lessons here: the writer pays STT up front on entry (₹14.63 — the biggest single non-brokerage charge in this trade), and because charges scale with premium, a higher-premium option costs more in absolute rupees than the ₹100 example — even though the structure is identical.
 
 ## True breakeven: how costs change which trades are worth taking
 
@@ -164,11 +164,11 @@ From the two worked examples:
 
 | | Buyer (₹100 premium) | Writer (₹150 premium) |
 |--|--|--|
-| Round-trip charges | ₹62.53 | ₹70.20 |
+| Round-trip charges | ₹62.61 | ₹70.32 |
 | Cost per share | ₹0.96 | ₹1.08 |
 | Breakeven premium move | +₹0.96 (exit ≥ ₹100.96) | −₹1.08 (buy-back ≤ ₹148.92) |
 
-Put it in profit terms: if the buyer sells the ₹100 option at ₹120, the gross profit is (120 − 100) × 65 = ₹1,300, but the **net profit is ₹1,300 − ₹62.53 = ₹1,237.47**. The smaller the move, the more that gap matters — a ₹0.50 favourable move shows a "profit" on the screen but is a loss after charges.
+Put it in profit terms: if the buyer sells the ₹100 option at ₹120, the gross profit is (120 − 100) × 65 = ₹1,300, but the **net profit is ₹1,300 − ₹62.61 = ₹1,237.39**. The smaller the move, the more that gap matters — a ₹0.50 favourable move shows a "profit" on the screen but is a loss after charges.
 
 This is where an **options breakeven calculator** earns its keep: plug in the premium, lot size, and exchange before you trade, and it tells you the real number the trade has to beat. Anything that can't clear that number isn't a trade — it's a donation.
 
@@ -192,7 +192,7 @@ Also note the framework limits: SEBI's F&O framework sets minimum contract sizes
 
 ## Key takeaways: the risk-first mindset
 
-- A typical one-lot NIFTY option round trip costs **~₹63 in charges** (₹26.49 to buy, ₹36.04 to sell at ₹100 premium) — know this number before you trade, not after.
+- A typical one-lot NIFTY option round trip costs **~₹63 in charges** (₹26.53 to buy, ₹36.08 to sell at ₹100 premium) — know this number before you trade, not after.
 - Brokerage is the advertised cost; **STT, exchange charges, SEBI fee, stamp duty, and GST** make up the rest. The broker's headline number is not your cost.
 - STT hits the **sale** leg (0.15% of premium); stamp duty hits the **buy** leg (0.003%). Buyers and writers therefore pay different totals for the same premium.
 - All charges are computed on **premium turnover, never notional**. There are no DP charges in F&O.
@@ -203,7 +203,7 @@ Also note the framework limits: SEBI's F&O framework sets minimum contract sizes
 
 ### How much does it cost to trade one NIFTY options lot in India?
 
-Buying and selling one NIFTY option lot at a ₹100 premium (lot size 65) costs roughly **₹63 in total charges** — ₹26.49 on the buy leg and ₹36.04 on the sell leg. That is about ₹0.96 per share just to get in and out. The option must move in your favour by at least that much before you have made a single rupee of profit. Your exact number varies with the premium and your broker's plan, so estimate it before every trade.
+Buying and selling one NIFTY option lot at a ₹100 premium (lot size 65) costs roughly **₹63 in total charges** — ₹26.53 on the buy leg and ₹36.08 on the sell leg. That is about ₹0.96 per share just to get in and out. The option must move in your favour by at least that much before you have made a single rupee of profit. Your exact number varies with the premium and your broker's plan, so estimate it before every trade.
 
 ### Do I pay STT when buying options?
 
@@ -215,7 +215,7 @@ Two rates apply. On the **sale of an option**, STT is 0.15% of the premium (rais
 
 ### Which trading charges are the same at every broker?
 
-Almost everything except brokerage. STT, exchange transaction charges (0.03503% of premium on NSE), the SEBI turnover fee (₹10 per crore), stamp duty, and GST (18% on brokerage + exchange + SEBI charges) are set by the government, exchanges, and regulators — your broker cannot change them. Only the brokerage itself varies: the discount-broker norm is a flat ~₹20 per executed order, while full-service brokers may charge a percentage.
+Almost everything except brokerage. STT, exchange transaction charges (0.03553% of premium on NSE), the SEBI turnover fee (₹10 per crore), stamp duty, and GST (18% on brokerage + exchange + SEBI charges) are set by the government, exchanges, and regulators — your broker cannot change them. Only the brokerage itself varies: the discount-broker norm is a flat ~₹20 per executed order, while full-service brokers may charge a percentage.
 
 ### What happens to charges if I let my option expire?
 
