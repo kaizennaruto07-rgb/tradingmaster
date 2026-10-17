@@ -1,0 +1,144 @@
+---
+import { getCollection, render } from 'astro:content';
+import Layout from '../../layouts/Layout.astro';
+import EmailSignup from '../../components/EmailSignup.astro';
+import optionsSchema from './article-schema-options.json';
+import cryptoSchema from './article-schema-crypto.json';
+import riskofruinSchema from './article-schema-riskofruin.json';
+import expectancySchema from './article-schema-expectancy.json';
+import winrateSchema from './article-schema-winrate.json';
+import breakevenSchema from './article-schema-breakeven.json';
+import thirtySchema from './article-schema-30percent.json';
+import positionsizingSchema from './article-schema-positionsizing.json';
+import profitfactorSchema from './article-schema-profitfactor.json';
+import strategyworksSchema from './article-schema-strategyworks.json';
+import howmanytradesSchema from './article-schema-howmanytrades.json';
+import backtestedSchema from './article-schema-backtested.json';
+import realexpectancySchema from './article-schema-realexpectancy.json';
+import overfittingSchema from './article-schema-overfitting.json';
+import montecarloSchema from './article-schema-montecarlo.json';
+import papertradingSchema from './article-schema-papertrading.json';
+import givebackSchema from './article-schema-giveback.json';
+import revengeSchema from './article-schema-revenge.json';
+import overtradingSchema from './article-schema-overtrading.json';
+import cgameSchema from './article-schema-cgame.json';
+import tiltSchema from './article-schema-tilt.json';
+
+export async function getStaticPaths() {
+  const articles = await getCollection('articles');
+  return articles.map((article) => ({
+    params: { slug: article.id.replace(/\.md$/, '') },
+    props: { article },
+  }));
+}
+
+const { article } = Astro.props;
+const { Content } = await render(article);
+
+// Select the right schema based on slug
+const slug = article.id.replace(/\.md$/, '');
+const schemaData = slug === 'options-trading-charges-india' ? optionsSchema
+  : slug === 'risk-of-ruin-trading' ? riskofruinSchema
+  : slug === 'what-is-trading-expectancy' ? expectancySchema
+  : slug === 'win-rate-vs-risk-reward' ? winrateSchema
+  : slug === 'break-even-win-rate' ? breakevenSchema
+  : slug === 'profitable-with-30-percent-win-rate' ? thirtySchema
+  : slug === 'position-sizing' ? positionsizingSchema
+  : slug === 'profit-factor' ? profitfactorSchema
+  : slug === 'how-to-know-if-trading-strategy-works' ? strategyworksSchema
+  : slug === 'how-many-trades-to-validate-a-strategy' ? howmanytradesSchema
+  : slug === 'why-backtested-strategies-fail-in-live-trading' ? backtestedSchema
+  : slug === 'how-to-calculate-real-expectancy' ? realexpectancySchema
+  : slug === 'how-to-detect-overfitting-in-trading-strategy' ? overfittingSchema
+  : slug === 'monte-carlo-simulation-for-traders' ? montecarloSchema
+  : slug === 'paper-trading-vs-real-trading' ? papertradingSchema
+  : slug === 'why-traders-give-back-profits' ? givebackSchema
+  : slug === 'revenge-trading' ? revengeSchema
+  : slug === 'overtrading' ? overtradingSchema
+  : slug === 'c-game-to-a-game-signature-framework' ? cgameSchema
+  : slug === 'tilt-in-trading' ? tiltSchema
+  : cryptoSchema;
+const schemaHtml = '<script type="application/ld+json">' + JSON.stringify(schemaData) + '</script' + '>';
+
+const description = article.data.meta_description || article.data.description || '';
+const dateStr = article.data.date.toLocaleDateString('en-IN', { day: 'numeric', month: 'long', year: 'numeric' });
+
+// Related tool CTA
+const toolCta = slug === 'options-trading-charges-india'
+  ? { href: '/tools/options-cost/', label: 'Calculate your options costs' }
+  : slug === 'risk-of-ruin-trading'
+  ? { href: '/tools/risk-of-ruin/', label: 'Calculate your risk of ruin' }
+  : slug === 'what-is-trading-expectancy'
+  ? { href: '/tools/what-if-simulator/', label: 'Simulate your expectancy' }
+  : slug === 'win-rate-vs-risk-reward'
+  ? { href: '/tools/what-if-simulator/', label: 'Simulate your win rate & risk-reward' }
+  : slug === 'break-even-win-rate'
+  ? { href: '/tools/what-if-simulator/', label: 'Test your breakeven in the simulator' }
+  : slug === 'profitable-with-30-percent-win-rate'
+  ? { href: '/tools/what-if-simulator/', label: 'Simulate your 30% win-rate system' }
+  : slug === 'position-sizing'
+  ? { href: '/tools/what-if-simulator/', label: 'Test your sizing in the simulator' }
+  : slug === 'profit-factor'
+  ? { href: '/tools/options-cost/', label: 'Calculate your real per-trade cost' }
+  : slug === 'how-to-know-if-trading-strategy-works'
+  ? { href: '/tools/what-if-simulator/', label: 'Stress-test your strategy in the simulator' }
+  : slug === 'how-many-trades-to-validate-a-strategy'
+  ? { href: '/tools/what-if-simulator/', label: 'Stress-test your sample in the simulator' }
+  : slug === 'why-backtested-strategies-fail-in-live-trading'
+  ? { href: '/tools/what-if-simulator/', label: 'Stress-test your backtest in the simulator' }
+  : slug === 'how-to-calculate-real-expectancy'
+  ? { href: '/tools/risk-of-ruin/', label: 'Check your ruin probability' }
+  : slug === 'how-to-detect-overfitting-in-trading-strategy'
+  ? { href: '/tools/what-if-simulator/', label: 'Run the honest sample in the simulator' }
+  : slug === 'monte-carlo-simulation-for-traders'
+  ? { href: '/tools/risk-of-ruin/', label: 'Size from ruin, not hope' }
+  : slug === 'paper-trading-vs-real-trading'
+  ? { href: '/tools/what-if-simulator/', label: 'Test your go-live size in the simulator' }
+  : slug === 'why-traders-give-back-profits'
+  ? { href: '/tools/what-if-simulator/', label: 'Stress-test your finish line in the simulator' }
+  : slug === 'revenge-trading'
+  ? { href: '/tools/what-if-simulator/', label: 'Stress-test the revenge circuit in the simulator' }
+  : slug === 'overtrading'
+  ? { href: '/tools/options-cost/', label: 'Price your own boredom tax' }
+  : slug === 'c-game-to-a-game-signature-framework'
+  ? { href: '/tools/risk-of-ruin/', label: 'Check your C-game ruin risk' }
+  : slug === 'tilt-in-trading'
+  ? { href: '/tools/what-if-simulator/', label: 'Stress-test your worst days in the simulator' }
+  : { href: '/tools/crypto-futures/', label: 'Calculate your futures costs' };
+---
+
+<Layout
+  title={`${article.data.title} · Monks Of Market`}
+  description={description}
+  current="articles"
+  schema={schemaHtml}
+  ogType="article"
+>
+  <article class="article-page">
+    <div class="shell">
+      <div class="tool-header">
+        <div class="eyebrow">Monks Of Market · Article</div>
+        <h1>{article.data.title}</h1>
+        <p class="tool-lead">{description}</p>
+        <div class="article-card-meta">
+          <span>By {article.data.author}</span>
+          <span>{dateStr}</span>
+        </div>
+      </div>
+      <div class="article-body">
+        <Content />
+      </div>
+      <EmailSignup
+        variant="article"
+        formId="9999729"
+        uid="8b81f75b9e"
+        heading="Get the next breakdown first"
+        subtext="One exceptional article per day. No spam, unsubscribe anytime."
+      />
+      <div class="article-cta">
+        <a class="btn btn-primary" href={toolCta.href}>{toolCta.label} <span>→</span></a>
+        <a class="btn btn-secondary" href="/articles/">All articles</a>
+      </div>
+    </div>
+  </article>
+</Layout>
