@@ -1,0 +1,110 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import FaqAccordion from '../../components/FaqAccordion.astro';
+import faqsData from './faqs-position-size.json';
+import EmailSignup from '../../components/EmailSignup.astro';
+import faqData from './faq-positionsize.json';
+const schemaHtml = '<script type="application/ld+json">' + JSON.stringify(faqData) + '</script' + '>';
+---
+
+<Layout title="Position Size Calculator — How Many Shares Can You Buy? | Monks Of Market" description="Enter account size, risk per trade, entry and stop-loss — get your position size in shares, position value and capital deployed. Cost-aware, INR, free." current="tools" schema={schemaHtml}>
+<style>
+  .run-btn{display:block;width:100%;margin-top:18px;height:52px;border:0;border-radius:12px;background:var(--accent);color:#fff;font:700 15px/1 var(--sans);cursor:pointer;letter-spacing:.01em}
+  .run-btn:hover{filter:brightness(1.08)}
+  .share-box{padding:16px 19px;border-top:1px solid var(--line)}
+  .share-box textarea{width:100%;min-height:74px;resize:vertical;border:1px solid var(--line);border-radius:10px;background:var(--bg);color:var(--ink);padding:10px 12px;font:400 12.5px/1.6 var(--sans)}
+  .share-row{display:flex;gap:10px;align-items:center;margin-top:10px}
+  .copy-btn{border:1px solid var(--line);background:var(--surface-2);border-radius:9px;padding:9px 14px;cursor:pointer;font:700 12px/1 var(--sans);color:var(--ink)}
+  .copy-btn:hover{border-color:var(--accent)}
+  .copy-msg{font-size:12px;color:var(--accent)}
+  .nosim{padding:26px 19px;color:var(--muted);font-size:13.5px;line-height:1.7}
+  .slider-row{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:6px}
+  .slider-row output{font:700 13px/1 var(--mono);color:var(--accent)}
+  input[type="range"]{width:100%;accent-color:var(--accent);height:28px;cursor:pointer}
+  .chart-wrap{padding:6px 10px 0;border-top:1px solid var(--line)}
+  .chart-wrap svg{display:block;width:100%;height:auto}
+  .ror-tie{margin:0 19px;padding:14px 16px;border:1px solid var(--accent);border-radius:12px;background:color-mix(in srgb, var(--accent) 8%, transparent);font-size:13px;line-height:1.65}
+  .ror-tie a{color:var(--accent);font-weight:700}
+  .zero-note{display:none;margin:12px 19px 0;padding:12px 14px;border:1px solid var(--danger,#ff6b6b);border-radius:10px;font-size:12.5px;line-height:1.6;color:var(--ink)}
+  .check-row{display:flex;gap:10px;align-items:center;margin-top:14px;font-size:13.5px}
+  .check-row input{width:18px;height:18px;accent-color:var(--accent);cursor:pointer}
+  .field-label{margin-bottom:2px}
+</style>
+<section class="tool-page" id="tool-psize">
+    <div class="shell">
+      <a class="back-link" href="/tools/">← All tools</a>
+      <header class="tool-header"><div><div class="eyebrow">Tool 05 · Position sizing</div><h1>How many shares can you actually buy?</h1><p class="tool-lead">Enter your account, the risk per trade, entry and stop. The calculator converts the risk budget into an exact share count — floored, cost-aware, and honest about what the stop can afford. Free, in your browser, no signup.</p></div></header>
+      <div class="board-wrap">
+        <div class="calculator">
+          <div class="input-card" data-reveal="left">
+            <div class="card-head"><div><h3>Your trade's numbers</h3><p>Risk first, size second. The stop distance decides everything — enter it honestly.</p></div><button class="preset-btn" id="pExample" type="button">Load example</button></div>
+            <div class="grid-2">
+              <div class="field"><label for="pAccount">Account size</label><div class="control with-suffix"><input id="pAccount" type="number" min="1000" step="1000" value="100000"><span class="suffix">₹</span></div></div>
+              <div class="field"><div class="slider-row"><label for="pRisk">Risk per trade</label><output id="pRiskVal" for="pRisk">1.0%</output></div><input id="pRisk" type="range" min="0.25" max="5" step="0.25" value="1" aria-label="Risk per trade percent"></div>
+              <div class="field"><label for="pEntry">Entry price</label><div class="control with-suffix"><input id="pEntry" type="number" min="0.05" step="0.05" value="250"><span class="suffix">₹</span></div></div>
+              <div class="field"><label for="pStop">Stop-loss price</label><div class="control with-suffix"><input id="pStop" type="number" min="0.05" step="0.05" value="240"><span class="suffix">₹</span></div></div>
+              <div class="field"><label for="pBrok">Brokerage per order</label><div class="control with-suffix"><input id="pBrok" type="number" min="0" step="1" value="20"><span class="suffix">₹</span></div></div>
+              <div class="field"><span class="field-label">&nbsp;</span><label class="check-row"><input id="pCostAware" type="checkbox" checked><span>Subtract brokerage from the risk budget (cost-aware sizing)</span></label></div>
+            </div>
+            <div class="verified-note" style="margin-top:16px"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="10" width="16" height="10" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg><span>Fixed risk budget per trade: shares = (risk budget − round-trip brokerage) ÷ stop distance, floored to whole shares. The model prices a long position — stop below entry. Costs beyond brokerage (STT, stamp duty, slippage) are not in the budget, so treat the share count as a ceiling.</span></div>
+            <button class="run-btn" id="pRunBtn" type="button">Calculate position size</button>
+            <div class="validation" id="pValidation"></div>
+          </div>
+          <aside class="result-card" aria-live="polite" data-reveal="right">
+            <noscript><div class="nosim">This calculator needs JavaScript — it converts your risk budget into a share count live in your browser, and there is no server to do it for you.</div></noscript>
+            <div class="pnl-duo">
+              <div class="pnl-cell target"><div class="result-kicker">Position size</div><div class="result-big" id="pShares" style="font-size:clamp(26px,7vw,46px)">—</div></div>
+              <div class="pnl-cell stop"><div class="result-kicker">Position value</div><div class="result-big" id="pValue" style="font-size:clamp(22px,6.4vw,42px)">—</div></div>
+            </div>
+            <div class="zero-note" id="pZeroNote" role="alert"></div>
+            <div style="padding:14px 0 4px"><div class="ror-tie" id="pRorTie">—</div></div>
+            <div class="chart-wrap">
+              <div class="result-kicker" style="padding:14px 6px 4px">Shares vs stop distance — same risk, tighter stop, bigger size</div>
+              <svg id="pCurve" role="img" aria-label="Chart showing position size falling as stop distance widens, with a marker at your current stop"></svg>
+            </div>
+            <div class="result-grid">
+              <div class="result-item"><span>Risk amount</span><strong id="pRiskAmt">—</strong></div>
+              <div class="result-item"><span>Stop distance</span><strong id="pDist">—</strong></div>
+              <div class="result-item"><span>Capital deployed</span><strong id="pDeployed">—</strong></div>
+              <div class="result-item"><span>Risk budget after costs</span><strong id="pEffRisk">—</strong></div>
+            </div>
+            <div class="share-box">
+              <div class="result-kicker" style="margin-bottom:10px">Share your result</div>
+              <textarea id="pShare" readonly aria-label="Copy-pasteable position size summary"></textarea>
+              <div class="share-row"><button class="copy-btn" id="pCopyBtn" type="button">Copy summary</button><span class="copy-msg" id="pCopyMsg"></span></div>
+            </div>
+            <div class="result-foot"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="12" r="9"/><path d="M12 10v6m0-9h.01"/></svg><span class="sim-note"><span>Educational tool — not financial advice. Sizing assumes your stop is honoured exactly; gaps and slippage make real exits worse. <a href="/disclaimer/">Read the disclaimer</a>.</span></span></div>
+          </aside>
+        </div>
+      </div>
+      <div class="tool-guide" data-reveal>
+        <h2>The formula behind the number</h2>
+        <p>Position sizing answers one question: <strong>how much of this trade can my risk budget afford?</strong> The budget is fixed first — account × risk per trade. Then the stop distance prices the shares: <strong>shares = risk budget ÷ (entry − stop)</strong>, rounded down, because you cannot buy a fraction of a share and rounding up would breach the budget. Brokerage comes out of the same budget: at ₹20 per order, the round trip takes ₹40 off the risk before a single share is counted.</p>
+        <h3>Why the stop decides the size</h3>
+        <p>The curve above is a hyperbola, and that shape is the whole lesson. Halve your stop distance and the same risk budget buys twice the shares; double it and you get half. Traders who "risk 1%" while deploying 80% of their account are not breaking the risk rule — they are running a stop so wide that 1% costs 80% of the account to express. The risk number was honest; the size was not.</p>
+        <h2>A worked example</h2>
+        <p>The calculator loads with this scenario: ₹1,00,000 account, 1% risk, entry ₹250, stop ₹240, ₹20 brokerage per order, cost-aware sizing on.</p>
+        <div class="guide-example"><div class="lineitems">
+          <div class="lineitem"><span>Risk budget</span><b>₹1,00,000 × 1% = ₹1,000</b></div>
+          <div class="lineitem"><span>Less round-trip brokerage</span><b>₹1,000 − ₹40 = ₹960 effective</b></div>
+          <div class="lineitem"><span>Stop distance</span><b>₹250 − ₹240 = ₹10</b></div>
+          <div class="lineitem"><span><strong>Position size</strong></span><b>⌊960 ÷ 10⌋ = 96 shares</b></div>
+          <div class="lineitem"><span><strong>Position value</strong></span><b>96 × ₹250 = ₹24,000</b></div>
+          <div class="lineitem"><span>Capital deployed</span><b>24% of the account</b></div>
+        </div></div>
+        <p>Turn the cost-aware toggle off and the answer becomes 100 shares — four phantom shares bought with money the brokerage had already taken. On small accounts that 4% silent over-risk compounds across hundreds of trades.</p>
+        <FaqAccordion faqs={faqsData} /><div class="tool-cta" style="margin-top:44px;padding:28px;border:1px solid var(--line);border-radius:16px;background:var(--surface)">
+          <h3 style="margin:0 0 8px">Read the full position-sizing guide</h3>
+          <p style="margin:0 0 16px;color:var(--muted);font-size:14px">The calculator gives you <em>your</em> number. The guide goes deeper — the ₹-and-shares method, how professionals scale size with volatility, and the mistakes that silently inflate risk.</p>
+          <a href="/articles/calculate-position-size/" class="copy-btn" style="text-decoration:none;display:inline-block">Read the position size guide →</a>
+        </div>
+        <EmailSignup
+          variant="tool"
+          heading="Get new tools first"
+          subtext="We launch a new calculator every 10 days. Be the first to try them."
+        />
+      </div>
+    </div>
+  </section>
+  <script src="/js/position-size-calc.js" is:inline slot="page-script"></script>
+</Layout>
