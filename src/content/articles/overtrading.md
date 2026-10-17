@@ -151,19 +151,19 @@ Here's the article's original move: don't just feel the overtrading — measure 
 |---|---|---|
 | STT | 0.15% on sell premium | Sell side only |
 | STT (on exercise of ITM options — not a sale) | 0.15% of intrinsic value | On exercise only |
-| NSE transaction charge | 0.03503% of premium turnover | Both sides |
+| NSE transaction charge | 0.03553% of premium turnover | Both sides |
 | Stamp duty | 0.003% | Buy side only |
 | SEBI turnover fee | ₹10 per crore | Both sides |
 | GST | 18% on brokerage + exchange charges + SEBI fee | Both sides |
 | Brokerage | e.g. ₹20 per executed order | Illustrative — plans vary |
 
-So overtrading bleeds twice: once on the P&L, once on fees. To see the bleed in one number, take the verified statutory round-trip of **₹62.53** from the worked NIFTY-option trade in our [net-expectancy article](/articles/how-to-calculate-real-expectancy/) — that's a real priced example, not a fresh invention. Now do the arithmetic on unauthorized trades only:
+So overtrading bleeds twice: once on the P&L, once on fees. To see the bleed in one number, take the verified statutory round-trip of **₹62.61** from the worked NIFTY-option trade in our [net-expectancy article](/articles/how-to-calculate-real-expectancy/) — that's a real priced example, not a fresh invention. Now do the arithmetic on unauthorized trades only:
 
-- 3 extra trades a day × ₹62.53 ≈ **₹188/day → ~₹3,750/month**
-- 5 extra trades a day × ₹62.53 ≈ **₹313/day → ~₹6,250/month**
-- 10 extra trades a day × ₹62.53 ≈ **₹625/day → ~₹12,500/month**
+- 3 extra trades a day × ₹62.61 ≈ **₹188/day → ~₹3,760/month**
+- 5 extra trades a day × ₹62.61 ≈ **₹313/day → ~₹6,250/month**
+- 10 extra trades a day × ₹62.61 ≈ **₹626/day → ~₹12,500/month**
 
-Monthly figures assume ~20 trading days per month. And note what ₹62.53 actually is: the statutory round trip of a worked NIFTY-option trade (lot size 65, bought at ₹100 premium) — a NIFTY-option example, not a universal number.
+Monthly figures assume ~20 trading days per month. And note what ₹62.61 actually is: the statutory round trip of a worked NIFTY-option trade (lot size 65, bought at ₹100 premium) — a NIFTY-option example, not a universal number.
 
 That's the boredom tax *before* the P&L — the stack collected on trades your plan never authorized. Run your own numbers through our [options-cost calculator](/tools/options-cost/): price your actual instrument and size, multiply by your unauthorized-trade count, and look at the monthly figure. That number is what "just one more trade" actually costs.
 
@@ -186,7 +186,7 @@ And the P&L side matters more than the fees, in the way one sharp line puts it: 
 <text x="225" y="132" text-anchor="middle" fill="#f2f7f4" font-size="11.5">&lt;30% win rate*</text>
 <text x="40" y="278" fill="#92a59c" font-size="10.5">*illustrative framing — measure YOUR gap:</text>
 <text x="40" y="294" fill="#92a59c" font-size="10.5">tag your trades for 30 days</text>
-<text x="340" y="84" fill="#f2f7f4" font-size="12.5" font-weight="600">₹62.53 statutory round trip</text>
+<text x="340" y="84" fill="#f2f7f4" font-size="12.5" font-weight="600">₹62.61 statutory round trip</text>
 <text x="340" y="102" fill="#92a59c" font-size="11">worked NIFTY-option example — lot 65, ₹100 premium</text>
 <rect x="340" y="116" width="176" height="52" rx="6" fill="#e0b36a" opacity="0.9"/>
 <rect x="516" y="116" width="50" height="52" rx="6" fill="#d98c8c" opacity="0.9"/>
@@ -195,7 +195,7 @@ And the P&L side matters more than the fees, in the way one sharp line puts it: 
 <text x="428" y="147" text-anchor="middle" fill="#1d2b26" font-size="11" font-weight="700">brokerage ₹40</text>
 <text x="541" y="147" text-anchor="middle" fill="#1d2b26" font-size="10" font-weight="700">STT</text>
 <text x="618" y="147" text-anchor="middle" fill="#1d2b26" font-size="10" font-weight="700">GST</text>
-<text x="340" y="196" fill="#92a59c" font-size="10.5">STT 0.15% on sell premium · NSE 0.03503% both sides · stamp 0.003% buy side</text>
+<text x="340" y="196" fill="#92a59c" font-size="10.5">STT 0.15% on sell premium · NSE 0.03553% both sides · stamp 0.003% buy side</text>
 <text x="340" y="212" fill="#92a59c" font-size="10.5">SEBI ₹10/crore · GST 18% on brokerage + exchange + SEBI · brokerage ₹20/order (illustrative)</text>
 <text x="340" y="228" fill="#92a59c" font-size="10.5">fee schedule verified 2026-10-15</text>
 <line x1="40" y1="330" x2="640" y2="330" stroke="#2a3a34" stroke-width="1"/>
