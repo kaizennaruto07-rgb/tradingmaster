@@ -137,7 +137,7 @@ Reverse compounding: the same compounding that grows an account when you risk a 
 And every one of those revenge attempts pays the Indian cost stack again. This is the part nobody feels in the moment but the ledger always feels later:
 
 - **STT: 0.15% of the premium** on the options sell leg (effective since Budget 2026, April 1, 2026) — and 0.15% of intrinsic value if you hold ITM to expiry. Options buyers pay no STT on entry, only when selling or settling. It is 0.15% of the premium, not of contract value.
-- **Exchange transaction charges:** roughly 0.03503% of premium on **both** the buy and the sell leg for equity options (per NSE's revised schedule, effective March 1, 2026).
+- **Exchange transaction charges:** roughly 0.03553% of premium on **both** the buy and the sell leg for equity options (per NSE's revised schedule, effective March 1, 2026).
 - **SEBI turnover fee** (₹10 per crore) plus **18% GST** on brokerage and charges.
 
 Three revenge attempts = three rounds of the stack, stacked on top of three rounds of oversized risk. If you want the honest mirror of what each attempt actually costs, the options-cost calculator on this site will show it trade by trade — run one revenge attempt through it and read the fee row before you ever take one.
