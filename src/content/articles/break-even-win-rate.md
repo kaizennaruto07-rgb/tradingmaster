@@ -128,15 +128,15 @@ Fee figures below are as of **2026-10-06** (verified 2026-10-06); broker fee pag
 | Brokerage (flat ₹20 per executed order at discount brokers, e.g. a discount broker's charges page) | ₹20.00 | ₹20.00 |
 | STT: 0.15% on sell-side options premium; buy side nil (raised from 0.10% by Budget 2026, effective 2026-04-01) | — | ₹5.91 |
 | Stamp duty: 0.003% on buy side | ₹0.11 | — |
-| Transaction charges (NSE): 0.03503% of premium | ₹1.31 | ₹1.38 |
+| Transaction charges (NSE): 0.03553% of premium | ₹1.33 | ₹1.40 |
 | SEBI charges: ₹10/crore | ≈ ₹0.00 | ≈ ₹0.00 |
 | GST: 18% on (brokerage + transaction + SEBI charges) | ₹3.84 | ₹3.85 |
-| **Subtotal per side** | **₹25.26** | **₹31.14** |
-| **Round-trip fees** | **₹56.40** | |
+| **Subtotal per side** | **₹25.28** | **₹31.16** |
+| **Round-trip fees** | **₹56.44** | |
 
-That is ₹56.40 of certain cost on every round trip — **1.5% of the ₹3,750 notional**. Then comes the one cost no fee table will give you: **slippage**. There is no authoritative figure for typical Indian intraday-scalper slippage, so treat any number here as your own labeled assumption. Assume ₹0.50 per unit per side on a 25-unit lot: ₹25.00 per round trip, or 0.7% of notional. Substitute your own measured slippage — the arithmetic works identically.
+That is ₹56.44 of certain cost on every round trip — **1.5% of the ₹3,750 notional**. Then comes the one cost no fee table will give you: **slippage**. There is no authoritative figure for typical Indian intraday-scalper slippage, so treat any number here as your own labeled assumption. Assume ₹0.50 per unit per side on a 25-unit lot: ₹25.00 per round trip, or 0.7% of notional. Substitute your own measured slippage — the arithmetic works identically.
 
-**Total round-trip cost c = ₹56.40 + ₹25.00 = ₹81.40 ≈ 2.2% of notional.**
+**Total round-trip cost c = ₹56.44 + ₹25.00 = ₹81.44 ≈ 2.2% of notional.**
 
 Feed it into the formula with a = b = 5%:
 
