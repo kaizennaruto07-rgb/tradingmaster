@@ -35,7 +35,7 @@ Giveback, revenge trading, overtrading, tilt, FOMO — the week treated them as 
 - **Giveback** is the *win-side* face. A winning streak floods you with the urge to keep playing, and you hand the morning's profits back to the afternoon. This week's first chapter mapped it in full: [why traders give back profits](/articles/why-traders-give-back-profits/).
 - **Revenge trading** is the *loss-side* face. A red day becomes a debt the market "owes" you, and the recovery trades get bigger and sloppier. This week's second chapter built the loss protocol for it: [how to stop revenge trading after a loss](/articles/revenge-trading/).
 - **Overtrading** is what C-game *looks like on the trade log*. When the emotions are hard to see in real time, the broker statement shows them: too many trades, sizes that drift, setups that weren't setups. [The overtrading chapter](/articles/overtrading/) is your same-week sibling — one line of map, not a re-teach.
-- **Tilt** is the *broad framework* face — the full emotional-decision spiral, of which revenge is one branch. It gets its own framework article next; for today, it is enough to know it wears your C-game face.
+- **Tilt** is the *broad framework* face — the full emotional-decision spiral, of which revenge is one branch. It gets [its own framework article](/articles/tilt-in-trading/) next; for today, it is enough to know it wears your C-game face.
 - **FOMO** is the *chasing face* — the compulsion to enter moves that are already gone. The fifth face gets its own chapter tomorrow; for today, note that it, too, is C-game with a different mask.
 
 Each article in this week's curriculum owns its circuit. This article owns what sits above them: the identity system — your signature — that short-circuits whichever face appears.
@@ -322,7 +322,7 @@ Professionals build a system where their worst days are survivable and their bes
 
 You don't rise to the level of your A-game. You survive to the level of your C-game.
 
-The week ends with a trader who has a map, an audit, and an interrupt protocol — not just five warnings. Tomorrow the week's last two faces get their own chapters: tilt, the broad emotional-decision framework, and FOMO, the chasing face. And further ahead, your state score finds its permanent home in a full trading journal — the metrics chapter that turns all of this into a system you can measure.
+The week ends with a trader who has a map, an audit, and an interrupt protocol — not just five warnings. Tomorrow the week's last two faces get their own chapters: [tilt](/articles/tilt-in-trading/), the broad emotional-decision framework, and FOMO, the chasing face. And further ahead, your state score finds its permanent home in a full trading journal — the metrics chapter that turns all of this into a system you can measure.
 
 ## Frequently asked questions
 
