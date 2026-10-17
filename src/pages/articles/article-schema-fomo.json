@@ -1,0 +1,88 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "How to Stop FOMO Trading: The Chased-Entry Tax and the System That Beats It",
+      "description": "Learn how to stop FOMO trading with the priced FOMO tax, the resistance ledger, and a pre-session prevention system built for Indian F&O options traders.",
+      "author": {
+        "@type": "Person",
+        "name": "Kaizen"
+      },
+      "datePublished": "2026-10-17",
+      "inLanguage": "en-IN",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://monksofmarket.com/articles/fomo-trading/"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Monks Of Market",
+        "url": "https://monksofmarket.com/"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is FOMO in trading?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "FOMO in trading is the fear of missing out applied to markets: the pressure to enter a trade because others appear to be profiting and you are not in it. It shows up as rushed entries, larger-than-planned positions, and exits driven by the need to \"be in\" rather than by analysis. Psychologist Przybylski et al. (2013) defined the underlying emotion as \"a pervasive apprehension that others might be having rewarding experiences from which one is absent\" \u2014 trading just attaches it to a live price feed."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why does FOMO happen?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Three feeders, usually running together: herd behaviour (when the group is buying, staying out feels riskier than entering), seeing only the winners (social media and group chats show profits, never the losses or the tops bought), and regret (watching a run after skipping it hurts, so you buy the next one to avoid the feeling). Underneath all three, the brain registers a missed gain like a loss \u2014 so sitting out physically hurts, and the entry feels like relief."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why do missed trades hurt more than they should?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Loss aversion extends to missed opportunities. The well-established principle (Kahneman & Tversky, 1979) is that losses loom roughly twice as large as equivalent gains \u2014 and one trading-psychology source, ChartGuys, frames the extension this way: the brain processes a missed gain similarly to an actual loss. A stock running 50% without you doesn't register as neutral capital preservation; it registers as 50% you \"lost.\" That framing is interpretive, not settled neuroscience \u2014 but it explains why willpower loses: you're not fighting an idea, you're fighting a perceived loss."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I stop FOMO trading?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "With a prevention system decided before the session, not willpower during the green candle: a pre-session watchlist (only watchlisted names get trades), alerts instead of staring at charts, if/then entry rules written before the move, the delay rule (a missed setup gets a defined re-entry level or gets tagged missed), fixed sizing, and a daily trade cap \u2014 any single checklist \"no\" means no trade. Add the resistance ledger: log every urge, acted or resisted, and review your resistance win rate monthly."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is FOMO the same as greed?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Greed is wanting more from a position you already hold \u2014 it corrupts your *exit* by moving targets further out. FOMO is wanting *in* because others are in \u2014 it corrupts your *entry* by inflating price, skipping the checklist, and oversizing. Both abandon the plan, but at opposite ends of the trade."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can FOMO ever be useful?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The feeling is data; the chase is the mistake. The professional's version of the same adrenaline is anticipation \u2014 FOMO with a plan: price approaching *your* pre-marked level is a signal to prepare (check the checklist, confirm size, set the alert), not to enter. Same feeling, opposite plumbing. Convert the adrenaline into checklist-readiness and the reflex starts working for you."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does social media fuel FOMO?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Through hype cycles (viral \"next big stock\" posts), echo chambers (communities that drown out critical analysis), and influencer culture (success stories without the risks). The feed functions as a survivorship filter: you see every winner and none of the losers, manufacturing the false impression that everyone profits except you. Mute the hype accounts and P&L-screenshot groups during market hours \u2014 curate your information diet, or it curates your entries."
+          }
+        }
+      ]
+    }
+  ]
+}
