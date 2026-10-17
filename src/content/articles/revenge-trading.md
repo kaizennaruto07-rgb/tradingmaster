@@ -212,7 +212,7 @@ This is also the live example of a broken ledger from [the net-expectancy articl
 
 Two boundary lines, drawn once so this article never swallows its neighbors:
 
-- **Revenge trading is one form of tilt** — specifically the post-loss recovery form. Tilt is the family this belongs to, and the full framework arrives in the tilt article later this week. Think of it this way: tilt is the weather; revenge trading is one specific storm inside it.
+- **Revenge trading is one form of tilt** — specifically the post-loss recovery form. Tilt is the family this belongs to, and the full framework arrives in [the tilt article](/articles/tilt-in-trading/) later this week. Think of it this way: tilt is the weather; revenge trading is one specific storm inside it.
 - **Revenge is one of overtrading's three triggers.** The other two are boredom and overconfidence — and tomorrow morning's article on overtrading maps all three. Revenge is the one that costs the most per episode, because it pairs frequency with size inflation.
 
 Everything else this article touched in passing belongs elsewhere: the size mechanics are owned by [position sizing](/articles/position-sizing/), the sequence's endpoint by [risk of ruin](/articles/risk-of-ruin-trading/), the ledger by expectancy and the journal. This article owns one circuit: the debt delusion and the protocol that breaks it.
