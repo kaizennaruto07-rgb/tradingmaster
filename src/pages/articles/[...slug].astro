@@ -23,6 +23,7 @@ import revengeSchema from './article-schema-revenge.json';
 import overtradingSchema from './article-schema-overtrading.json';
 import cgameSchema from './article-schema-cgame.json';
 import tiltSchema from './article-schema-tilt.json';
+import fomoSchema from './article-schema-fomo.json';
 
 export async function getStaticPaths() {
   const articles = await getCollection('articles');
@@ -57,6 +58,7 @@ const schemaData = slug === 'options-trading-charges-india' ? optionsSchema
   : slug === 'overtrading' ? overtradingSchema
   : slug === 'c-game-to-a-game-signature-framework' ? cgameSchema
   : slug === 'tilt-in-trading' ? tiltSchema
+  : slug === 'fomo-trading' ? fomoSchema
   : cryptoSchema;
 const schemaHtml = '<script type="application/ld+json">' + JSON.stringify(schemaData) + '</script' + '>';
 
@@ -104,6 +106,8 @@ const toolCta = slug === 'options-trading-charges-india'
   ? { href: '/tools/risk-of-ruin/', label: 'Check your C-game ruin risk' }
   : slug === 'tilt-in-trading'
   ? { href: '/tools/what-if-simulator/', label: 'Stress-test your worst days in the simulator' }
+  : slug === 'fomo-trading'
+  ? { href: '/tools/options-cost/', label: 'Price your own FOMO tax' }
   : { href: '/tools/crypto-futures/', label: 'Calculate your futures costs' };
 ---
 
