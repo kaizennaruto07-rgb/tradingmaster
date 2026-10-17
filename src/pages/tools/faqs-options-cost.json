@@ -25,7 +25,7 @@
   },
   {
     "q": "How much does it cost to trade one NIFTY options lot in India?",
-    "a": "On the fee schedule locked into this page, one NIFTY lot (65 units) bought at a ₹100 premium and sold at ₹120 on NSE costs <strong>₹65.04 all-in</strong>: ₹40 brokerage (₹20 per executed order), <strong>₹11.70 STT</strong> at 0.15% of the sell premium, ₹5.01 exchange charges at 0.03503% per side, ₹0.02 SEBI turnover fee (₹10 per crore), ₹0.20 stamp duty at 0.003% on the buy side, and ₹8.11 GST at 18%. The trade's ₹1,300 gross profit therefore lands as <strong>₹1,234.96 net</strong>. The fixed ₹40 brokerage dominates the bill on a single lot; every other charge scales with premium turnover, so enter your own premiums in the calculator above for your lot size and strike."
+    "a": "On the fee schedule locked into this page, one NIFTY lot (65 units) bought at a ₹100 premium and sold at ₹120 on NSE costs <strong>₹65.12 all-in</strong>: ₹40 brokerage (₹20 per executed order), <strong>₹11.70 STT</strong> at 0.15% of the sell premium, ₹5.08 exchange charges at 0.03553% per side, ₹0.02 SEBI turnover fee (₹10 per crore), ₹0.20 stamp duty at 0.003% on the buy side, and ₹8.12 GST at 18%. The trade's ₹1,300 gross profit therefore lands as <strong>₹1,234.88 net</strong>. The fixed ₹40 brokerage dominates the bill on a single lot; every other charge scales with premium turnover, so enter your own premiums in the calculator above for your lot size and strike."
   },
   {
     "q": "Do I pay STT when buying options?",
@@ -37,6 +37,6 @@
   },
   {
     "q": "Which trading charges are the same at every broker?",
-    "a": "STT, exchange transaction charges, the SEBI turnover fee and stamp duty are fixed by the government, the exchange and the regulator, so they are identical no matter where you trade — on this schedule: STT <strong>0.15%</strong> of sell premium, NSE exchange charges <strong>0.03503%</strong> per side, SEBI <strong>₹10 per crore</strong>, stamp duty <strong>0.003%</strong> on the buy side. GST at <strong>18%</strong> is also uniform, applied to brokerage plus exchange and SEBI charges. The charge that genuinely differs between brokers is brokerage itself — a flat <strong>₹20 per order</strong> at discount brokers such as Zerodha, but often a percentage of premium at full-service firms — along with extras like auto square-off or call-and-trade fees. Compare brokers on the brokerage line; every other line of the bill is already fixed."
+    "a": "STT, exchange transaction charges, the SEBI turnover fee and stamp duty are fixed by the government, the exchange and the regulator, so they are identical no matter where you trade — on this schedule: STT <strong>0.15%</strong> of sell premium, NSE exchange charges <strong>0.03553%</strong> per side, SEBI <strong>₹10 per crore</strong>, stamp duty <strong>0.003%</strong> on the buy side. GST at <strong>18%</strong> is also uniform, applied to brokerage plus exchange and SEBI charges. The charge that genuinely differs between brokers is brokerage itself — a flat <strong>₹20 per order</strong> at discount brokers such as Zerodha, but often a percentage of premium at full-service firms — along with extras like auto square-off or call-and-trade fees. Compare brokers on the brokerage line; every other line of the bill is already fixed."
   }
 ]
