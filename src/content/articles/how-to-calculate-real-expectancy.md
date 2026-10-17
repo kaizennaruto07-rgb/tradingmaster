@@ -91,19 +91,19 @@ Take one NIFTY lot (lot size 65, in force from the January 2026 series) bought a
 | Charge | Buy leg (₹) | Sell leg (₹) |
 |---|---|---|
 | Brokerage (flat, per executed order) | 20.00 | 20.00 |
-| NSE transaction charge (0.03503% of premium turnover) | 2.28 | 2.28 |
+| NSE transaction charge (0.03553% of premium turnover) | 2.31 | 2.31 |
 | SEBI fee (₹10 per crore) | 0.01 | 0.01 |
 | Stamp duty (0.003%, buy side only) | 0.20 | — |
 | STT (0.15% of premium, sell side; effective 1 April 2026) | — | 9.75 |
-| GST (18% on brokerage + SEBI + transaction charges) | 4.01 | 4.01 |
-| **Leg total** | **26.50** | **36.05** |
+| GST (18% on brokerage + SEBI + transaction charges) | 4.02 | 4.02 |
+| **Leg total** | **26.54** | **36.09** |
 
-**Round trip: ₹62.53 — about ₹0.96 per share.** (Leg totals are rounded to the paisa; the round-trip figure uses unrounded values.) Note what sits where: stamp duty hits only the entry, STT only the exit, and GST applies to brokerage, SEBI and transaction charges — not to STT or stamp duty. On top of this sit the two costs no schedule can quote: **slippage** and the **bid-ask spread** — both are estimates and must be treated as assumptions, never as verified figures. An illustrative assumption of ₹0.25/share combined slippage and spread would add about ₹16.25 to the round trip, pushing the all-in cost near ₹79. Before your strategy earns a rupee, the trade is roughly ₹63–79 underwater.
+**Round trip: ₹62.61 — about ₹0.96 per share.** (Leg totals are rounded to the paisa; the round-trip figure uses unrounded values.) Note what sits where: stamp duty hits only the entry, STT only the exit, and GST applies to brokerage, SEBI and transaction charges — not to STT or stamp duty. On top of this sit the two costs no schedule can quote: **slippage** and the **bid-ask spread** — both are estimates and must be treated as assumptions, never as verified figures. An illustrative assumption of ₹0.25/share combined slippage and spread would add about ₹16.25 to the round trip, pushing the all-in cost near ₹79. Before your strategy earns a rupee, the trade is roughly ₹63–79 underwater.
 
 <figure class="article-visual" data-reveal>
 <svg viewBox="0 0 680 470" role="img" aria-label="Gross-to-net expectancy waterfall: each Indian trading cost subtracts from gross edge until only the net expectancy remains." class="viz">
 <text x="340" y="28" text-anchor="middle" fill="#f2f7f4" font-size="15" font-weight="700">The &#8377;60 gross edge walks the cost stack&#8230;</text>
-<text x="340" y="48" text-anchor="middle" fill="#92a59c" font-size="12">&#8230;and limps out as &#8722;&#8377;18.78 net. Thin edges don&#8217;t survive the stack.</text>
+<text x="340" y="48" text-anchor="middle" fill="#92a59c" font-size="12">&#8230;and limps out as &#8722;&#8377;18.86 net. Thin edges don&#8217;t survive the stack.</text>
 <line x1="90" y1="293.8" x2="640" y2="293.8" stroke="#2a3a34" stroke-width="1.5"/>
 <text x="84" y="297" text-anchor="end" fill="#92a59c" font-size="11">&#8377;0</text>
 <rect class="bar-grow-v" x="100" y="78.4" width="46" height="215.4" fill="#14d991" fill-opacity="0.85"/>
@@ -115,39 +115,39 @@ Take one NIFTY lot (lot size 65, in force from the January 2026 series) bought a
 <text x="181" y="70" text-anchor="middle" fill="#ff4f65" font-size="11" font-weight="700">&#8722;40</text>
 <text x="181" y="402" text-anchor="middle" fill="#f2f7f4" font-size="11">Broker-</text>
 <text x="181" y="416" text-anchor="middle" fill="#f2f7f4" font-size="11">age</text>
-<line x1="204" y1="238.3" x2="216" y2="238.3" stroke="#6b7b74" stroke-width="1" stroke-dasharray="3,3"/>
-<rect class="bar-grow-v" x="216" y="222" width="46" height="16.3" fill="#ff4f65" fill-opacity="0.80"/>
-<text x="239" y="214" text-anchor="middle" fill="#ff4f65" font-size="11" font-weight="700">&#8722;4.55</text>
+<line x1="204" y1="238.6" x2="216" y2="238.6" stroke="#6b7b74" stroke-width="1" stroke-dasharray="3,3"/>
+<rect class="bar-grow-v" x="216" y="222" width="46" height="16.6" fill="#ff4f65" fill-opacity="0.80"/>
+<text x="239" y="214" text-anchor="middle" fill="#ff4f65" font-size="11" font-weight="700">&#8722;4.62</text>
 <text x="239" y="402" text-anchor="middle" fill="#f2f7f4" font-size="11">NSE</text>
 <text x="239" y="416" text-anchor="middle" fill="#f2f7f4" font-size="11">charge</text>
-<line x1="262" y1="238.4" x2="274" y2="238.4" stroke="#6b7b74" stroke-width="1" stroke-dasharray="3,3"/>
-<rect class="bar-grow-v" x="274" y="238.3" width="46" height="0.1" fill="#ff4f65" fill-opacity="0.80"/>
+<line x1="262" y1="238.6" x2="274" y2="238.6" stroke="#6b7b74" stroke-width="1" stroke-dasharray="3,3"/>
+<rect class="bar-grow-v" x="274" y="238.6" width="46" height="0.1" fill="#ff4f65" fill-opacity="0.80"/>
 <text x="297" y="230" text-anchor="middle" fill="#ff4f65" font-size="11" font-weight="700">&#8722;0.02</text>
 <text x="297" y="402" text-anchor="middle" fill="#f2f7f4" font-size="11">SEBI</text>
 <text x="297" y="416" text-anchor="middle" fill="#f2f7f4" font-size="11">fee</text>
-<line x1="320" y1="239.1" x2="332" y2="239.1" stroke="#6b7b74" stroke-width="1" stroke-dasharray="3,3"/>
-<rect class="bar-grow-v" x="332" y="238.4" width="46" height="0.7" fill="#ff4f65" fill-opacity="0.80"/>
+<line x1="320" y1="239.3" x2="332" y2="239.3" stroke="#6b7b74" stroke-width="1" stroke-dasharray="3,3"/>
+<rect class="bar-grow-v" x="332" y="238.6" width="46" height="0.7" fill="#ff4f65" fill-opacity="0.80"/>
 <text x="355" y="230" text-anchor="middle" fill="#ff4f65" font-size="11" font-weight="700">&#8722;0.20</text>
 <text x="355" y="402" text-anchor="middle" fill="#f2f7f4" font-size="11">Stamp</text>
 <text x="355" y="416" text-anchor="middle" fill="#f2f7f4" font-size="11">duty</text>
-<line x1="378" y1="274.1" x2="390" y2="274.1" stroke="#6b7b74" stroke-width="1" stroke-dasharray="3,3"/>
-<rect class="bar-grow-v" x="390" y="239.1" width="46" height="35" fill="#ff4f65" fill-opacity="0.80"/>
+<line x1="378" y1="274.3" x2="390" y2="274.3" stroke="#6b7b74" stroke-width="1" stroke-dasharray="3,3"/>
+<rect class="bar-grow-v" x="390" y="239.3" width="46" height="35" fill="#ff4f65" fill-opacity="0.80"/>
 <text x="413" y="231" text-anchor="middle" fill="#ff4f65" font-size="11" font-weight="700">&#8722;9.75</text>
 <text x="413" y="402" text-anchor="middle" fill="#f2f7f4" font-size="11">STT</text>
-<line x1="436" y1="302.9" x2="448" y2="302.9" stroke="#6b7b74" stroke-width="1" stroke-dasharray="3,3"/>
-<rect class="bar-grow-v" x="448" y="274.1" width="46" height="28.8" fill="#ff4f65" fill-opacity="0.80"/>
-<text x="471" y="266" text-anchor="middle" fill="#ff4f65" font-size="11" font-weight="700">&#8722;8.02</text>
+<line x1="436" y1="303.2" x2="448" y2="303.2" stroke="#6b7b74" stroke-width="1" stroke-dasharray="3,3"/>
+<rect class="bar-grow-v" x="448" y="274.3" width="46" height="28.9" fill="#ff4f65" fill-opacity="0.80"/>
+<text x="471" y="266" text-anchor="middle" fill="#ff4f65" font-size="11" font-weight="700">&#8722;8.04</text>
 <text x="471" y="402" text-anchor="middle" fill="#f2f7f4" font-size="11">GST</text>
-<line x1="494" y1="361.3" x2="506" y2="361.3" stroke="#6b7b74" stroke-width="1" stroke-dasharray="3,3"/>
-<rect class="bar-grow-v" x="506" y="302.9" width="46" height="58.4" fill="#ff4f65" fill-opacity="0.80"/>
+<line x1="494" y1="361.5" x2="506" y2="361.5" stroke="#6b7b74" stroke-width="1" stroke-dasharray="3,3"/>
+<rect class="bar-grow-v" x="506" y="303.2" width="46" height="58.3" fill="#ff4f65" fill-opacity="0.80"/>
 <text x="529" y="295" text-anchor="middle" fill="#ff4f65" font-size="11" font-weight="700">&#8722;16.25</text>
 <text x="529" y="402" text-anchor="middle" fill="#f2f7f4" font-size="11">Slippage</text>
 <text x="529" y="416" text-anchor="middle" fill="#f2f7f4" font-size="11">+ spread</text>
-<rect class="bar-grow-v" x="564" y="293.8" width="46" height="67.4" fill="#ff4f65"/>
-<text x="587" y="378" text-anchor="middle" fill="#ff4f65" font-size="12" font-weight="700">&#8722;&#8377;18.78</text>
+<rect class="bar-grow-v" x="564" y="293.8" width="46" height="67.7" fill="#ff4f65"/>
+<text x="587" y="378" text-anchor="middle" fill="#ff4f65" font-size="12" font-weight="700">&#8722;&#8377;18.86</text>
 <text x="587" y="402" text-anchor="middle" fill="#f2f7f4" font-size="11" font-weight="700">Net</text>
 <text x="587" y="416" text-anchor="middle" fill="#f2f7f4" font-size="11" font-weight="700">expectancy</text>
-<text x="340" y="448" text-anchor="middle" fill="#92a59c" font-size="11">Verified statutory stack: &#8377;62.53 round trip + &#8377;16.25 illustrative slippage/spread = &#8377;78.78 per trade</text>
+<text x="340" y="448" text-anchor="middle" fill="#92a59c" font-size="11">Verified statutory stack: &#8377;62.61 round trip + &#8377;16.25 illustrative slippage/spread = &#8377;78.86 per trade</text>
 </svg>
 </figure>
 
@@ -155,7 +155,7 @@ Take one NIFTY lot (lot size 65, in force from the January 2026 series) bought a
 
 Now the reveal. Take a strategy with a genuine but thin gross edge: 35% win rate, average win 2R, average loss 1R. Gross expectancy = (0.35 × 2) − (0.65 × 1) = 0.70 − 0.65 = **+0.05R per trade**. A small green number — the kind backtests hand out freely.
 
-Now pay the stack. Suppose total friction — the statutory stack plus an illustrative slippage-and-spread allowance — runs 0.08R per trade. (To ground that: at an initial risk of ₹800 per trade, the verified ₹62.53 round trip alone is about 0.078R — the assumption is the risk size, not the schedule figure.) Net expectancy = 0.05 − 0.08 = **−0.03R per trade**. The sign flipped. The strategy didn't change. Nobody made a mistake in the entries. The backtest's green number was simply gross, and the account pays net.
+Now pay the stack. Suppose total friction — the statutory stack plus an illustrative slippage-and-spread allowance — runs 0.08R per trade. (To ground that: at an initial risk of ₹800 per trade, the verified ₹62.61 round trip alone is about 0.078R — the assumption is the risk size, not the schedule figure.) Net expectancy = 0.05 − 0.08 = **−0.03R per trade**. The sign flipped. The strategy didn't change. Nobody made a mistake in the entries. The backtest's green number was simply gross, and the account pays net.
 
 This is not hypothetical fear. A recent independent backtest audit (public repo, ~226 implementations of 46 retail trading concepts on NIFTY/BANKNIFTY) found no validated edge; its intraday long-option bots were net-negative in a one-year holdout after full statutory costs. The research is third-party, not ours — but it confirms the mechanism this section teaches: **the stack is a fixed tax per trade, so it hurts thin edges most — and retail scalpers live exactly there.**
 
@@ -358,7 +358,7 @@ Profit factor (gross profit ÷ gross loss) is an efficiency ratio; expectancy (n
 
 ### Do I subtract brokerage and taxes when calculating expectancy?
 
-Yes — this is the article's central move. Gross expectancy is the laboratory number; net expectancy (after brokerage, STT, exchange charges, stamp duty, SEBI fee, GST, plus slippage and spread) is the account's number. On a worked NIFTY option trade, the verified statutory round trip is ₹62.53 before slippage — and that fixed tax per trade can flip a thin +0.05R gross edge into a −0.03R net loss. Subtract costs as their own term; never fold them into the averages. One line on income tax: tax on F&O profits is computed annually on your net income and is NOT subtracted per trade — your per-trade net expectancy is what feeds the tax return, not the other way round.
+Yes — this is the article's central move. Gross expectancy is the laboratory number; net expectancy (after brokerage, STT, exchange charges, stamp duty, SEBI fee, GST, plus slippage and spread) is the account's number. On a worked NIFTY option trade, the verified statutory round trip is ₹62.61 before slippage — and that fixed tax per trade can flip a thin +0.05R gross edge into a −0.03R net loss. Subtract costs as their own term; never fold them into the averages. One line on income tax: tax on F&O profits is computed annually on your net income and is NOT subtracted per trade — your per-trade net expectancy is what feeds the tax return, not the other way round.
 
 ### How do I convert expectancy per trade into monthly income?
 
