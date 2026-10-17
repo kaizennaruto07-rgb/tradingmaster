@@ -136,9 +136,9 @@ We priced the full statutory stack line by line in [chapter 1](/articles/how-to-
 <g font-size="11.5" fill="#f2f7f4">
 <rect x="40" y="162" width="12" height="12" fill="#f2a33c"/><text x="60" y="172">Brokerage &#8212; &#8377;20 per order &#215; 2 = &#8377;40</text>
 <rect x="40" y="186" width="12" height="12" fill="#d98a2b"/><text x="60" y="196">STT &#8212; 0.15% on sell premium = &#8377;8.25</text>
-<rect x="40" y="210" width="12" height="12" fill="#14d991"/><text x="60" y="220">Exchange charge &#8212; 0.03503%/side = &#8377;3.68</text>
+<rect x="40" y="210" width="12" height="12" fill="#14d991"/><text x="60" y="220">Exchange charge &#8212; 0.03553%/side = &#8377;3.73</text>
 <rect x="40" y="234" width="12" height="12" fill="#0fa371"/><text x="60" y="244">Stamp duty + SEBI fee = &#8377;0.16</text>
-<rect x="360" y="162" width="12" height="12" fill="#92a59c"/><text x="380" y="172">GST &#8212; 18% on brokerage + exchange + SEBI = &#8377;7.86</text>
+<rect x="360" y="162" width="12" height="12" fill="#92a59c"/><text x="380" y="172">GST &#8212; 18% on brokerage + exchange + SEBI = &#8377;7.87</text>
 <rect x="360" y="186" width="12" height="12" fill="url(#hatch-spread)" stroke="#f2a33c"/><text x="380" y="196">Bid-ask spread = &#8377;50 <tspan fill="#92a59c">(illustrative)</tspan></text>
 <rect x="360" y="210" width="12" height="12" fill="url(#hatch-slip)" stroke="#e5484d"/><text x="380" y="220">Slippage &#8377;0.50/leg &#215; 2 = &#8377;50 <tspan fill="#92a59c">(illustrative)</tspan></text>
 </g>
