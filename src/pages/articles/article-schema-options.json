@@ -23,7 +23,7 @@
      "name": "How much does it cost to trade one NIFTY options lot in India?",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "Buying and selling one NIFTY option lot at a ₹100 premium (lot size 65) costs roughly ₹63 in total charges — ₹26.49 on the buy leg and ₹36.04 on the sell leg. That is about ₹0.96 per share just to get in and out. The option must move in your favour by at least that much before you have made a single rupee of profit."
+      "text": "Buying and selling one NIFTY option lot at a ₹100 premium (lot size 65) costs roughly ₹63 in total charges — ₹26.53 on the buy leg and ₹36.08 on the sell leg. That is about ₹0.96 per share just to get in and out. The option must move in your favour by at least that much before you have made a single rupee of profit."
      }
     },
     {
@@ -47,7 +47,7 @@
      "name": "Which trading charges are the same at every broker?",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "Almost everything except brokerage. STT, exchange transaction charges (0.03503% of premium on NSE), the SEBI turnover fee (₹10 per crore), stamp duty, and GST (18% on brokerage + exchange transaction + SEBI charges) are set by the government, exchanges, and regulators — your broker cannot change them. Only the brokerage itself varies: the discount-broker norm is a flat ~₹20 per executed order."
+      "text": "Almost everything except brokerage. STT, exchange transaction charges (0.03553% of premium on NSE), the SEBI turnover fee (₹10 per crore), stamp duty, and GST (18% on brokerage + exchange transaction + SEBI charges) are set by the government, exchanges, and regulators — your broker cannot change them. Only the brokerage itself varies: the discount-broker norm is a flat ~₹20 per executed order."
      }
     },
     {
