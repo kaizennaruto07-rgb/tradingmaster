@@ -269,7 +269,7 @@ That is the whole review. Ten minutes, and it is the engine of the inchworm law:
 
 The charges are not why C-game days lose money — the bad decisions are. The charges are just the receipt.
 
-One unplanned NIFTY-option round trip costs ~₹62.53 in total charges — the worked figure from our net-expectancy chapter ([how to calculate real expectancy](/articles/how-to-calculate-real-expectancy/)).
+One unplanned NIFTY-option round trip costs ~₹62.61 in total charges — the worked figure from our net-expectancy chapter ([how to calculate real expectancy](/articles/how-to-calculate-real-expectancy/)).
 
 Now price the deviation *afternoon* as a whole. A classic C-game afternoon — three revenge re-entries, two oversized FOMO chases, one "just one more" after the loss budget — is five or six unplanned round trips. That's **₹300–₹375 in guaranteed charges alone**, paid before the market moves a single point in your favour. One afternoon. Guaranteed drag. The decisions caused the loss; the charges just documented it. Price it once and the inchworm math gets personal.
 
@@ -285,21 +285,21 @@ The week has already given you the tools to see the full picture, one line each.
 <text x="340" y="100" text-anchor="middle" fill="#92a59c" font-size="11" font-weight="700">C-GAME RECEIPT</text>
 <line x1="190" y1="114" x2="490" y2="114" stroke="#2a3a34" stroke-width="1" stroke-dasharray="5 4"/>
 <text x="190" y="140" fill="#f2f7f4" font-size="11.5">Revenge re-entry #1</text>
-<text x="490" y="140" text-anchor="end" fill="#92a59c" font-size="11.5">&#8377;62.53</text>
+<text x="490" y="140" text-anchor="end" fill="#92a59c" font-size="11.5">&#8377;62.61</text>
 <text x="190" y="164" fill="#f2f7f4" font-size="11.5">Revenge re-entry #2</text>
-<text x="490" y="164" text-anchor="end" fill="#92a59c" font-size="11.5">&#8377;62.53</text>
+<text x="490" y="164" text-anchor="end" fill="#92a59c" font-size="11.5">&#8377;62.61</text>
 <text x="190" y="188" fill="#f2f7f4" font-size="11.5">Revenge re-entry #3</text>
-<text x="490" y="188" text-anchor="end" fill="#92a59c" font-size="11.5">&#8377;62.53</text>
+<text x="490" y="188" text-anchor="end" fill="#92a59c" font-size="11.5">&#8377;62.61</text>
 <text x="190" y="212" fill="#f2f7f4" font-size="11.5">Oversized FOMO chase #1</text>
-<text x="490" y="212" text-anchor="end" fill="#92a59c" font-size="11.5">&#8377;62.53</text>
+<text x="490" y="212" text-anchor="end" fill="#92a59c" font-size="11.5">&#8377;62.61</text>
 <text x="190" y="236" fill="#f2f7f4" font-size="11.5">Oversized FOMO chase #2</text>
-<text x="490" y="236" text-anchor="end" fill="#92a59c" font-size="11.5">&#8377;62.53</text>
+<text x="490" y="236" text-anchor="end" fill="#92a59c" font-size="11.5">&#8377;62.61</text>
 <text x="190" y="260" fill="#f2f7f4" font-size="11.5">'Just one more' past the loss budget</text>
-<text x="490" y="260" text-anchor="end" fill="#92a59c" font-size="11.5">&#8377;62.53</text>
+<text x="490" y="260" text-anchor="end" fill="#92a59c" font-size="11.5">&#8377;62.61</text>
 <line x1="190" y1="278" x2="490" y2="278" stroke="#2a3a34" stroke-width="1" stroke-dasharray="5 4"/>
 <text x="190" y="306" fill="#f2f7f4" font-size="12.5" font-weight="700">TOTAL — guaranteed charges</text>
 <text x="490" y="306" text-anchor="end" fill="#e0b36a" font-size="13" font-weight="700">&#8776; &#8377;300–&#8377;375</text>
-<text x="340" y="328" text-anchor="middle" fill="#92a59c" font-size="10.5">(6 &#215; &#8377;62.53 = &#8377;375.18)</text>
+<text x="340" y="328" text-anchor="middle" fill="#92a59c" font-size="10.5">(6 &#215; &#8377;62.61 = &#8377;375.66)</text>
 <line x1="190" y1="344" x2="490" y2="344" stroke="#2a3a34" stroke-width="1" stroke-dasharray="5 4"/>
 <text x="340" y="368" text-anchor="middle" fill="#92a59c" font-size="11">paid before the market moves a single point in your favour</text>
 <text x="340" y="440" text-anchor="middle" fill="#f2f7f4" font-size="12.5" font-weight="600">The decisions caused the loss — the charges just documented it.</text>
@@ -310,7 +310,7 @@ The week has already given you the tools to see the full picture, one line each.
 
 Honesty first — this framework is a behavioural safeguard, not a profit strategy. It will not make a bad strategy profitable, it will not produce returns, and it will not fix a plan that has no edge. What it does is narrower and more valuable: it keeps the worst version of you from destroying the work of the best version of you.
 
-Three more caveats. The traffic-light size rules, the euphoria size cut, the physical interrupt, and process P&L are **practitioner conventions** — habits many experienced traders report using — not laws, and not medical or psychological advice. Second, fee figures change: STT itself changed in April 2026, and exchange schedules move. The ₹62.53 worked figure cited above was verified as of October 2026; re-check before you rely on it. Third, the charges section priced the *cost* of deviation trades — never mistake that for the *cause* of C-game losses. The cause is the behaviour; the charges are just the receipt.
+Three more caveats. The traffic-light size rules, the euphoria size cut, the physical interrupt, and process P&L are **practitioner conventions** — habits many experienced traders report using — not laws, and not medical or psychological advice. Second, fee figures change: STT itself changed in April 2026, and exchange schedules move. The ₹62.61 worked figure cited above was verified as of October 2026; re-check before you rely on it. Third, the charges section priced the *cost* of deviation trades — never mistake that for the *cause* of C-game losses. The cause is the behaviour; the charges are just the receipt.
 
 ## The identity upgrade: survive to the level of your C-game
 
