@@ -116,7 +116,7 @@ Giveback for the day: ₹35,700. You didn't lose ₹35,700 to the market in some
 
 Do this for two weeks and a pattern emerges: giveback days cluster after the biggest mornings. The peak is the number nobody writes down. Start writing it down.
 
-The "trades between them" column has a second use — your costs. Run those seven extra trades through an options-cost calculator and watch what "just one more" actually paid in STT, exchange charges, brokerage, and GST. The ledger is the behavior; the calculator is the honest mirror of what it cost. (The full journaling system — and where the ledger lives inside it — arrives in our trading-journal article.)
+The "trades between them" column has a second use — your costs. Run those seven extra trades through an options-cost calculator and watch what "just one more" actually paid in STT, exchange charges, brokerage, and GST. The ledger is the behavior; the calculator is the honest mirror of what it cost. (The full journaling system — and where the ledger lives inside it — arrives in [our trading-journal article](/articles/trading-journal-what-to-track-beyond-pnl/).)
 
 <figure class="article-visual" data-reveal>
 <svg viewBox="0 0 680 560" role="img" aria-label="Example giveback ledger: intraday peak of ₹42,500 vs close of ₹6,800, with the trades between them listed." class="viz">
