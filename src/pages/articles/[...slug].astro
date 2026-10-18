@@ -24,6 +24,7 @@ import overtradingSchema from './article-schema-overtrading.json';
 import cgameSchema from './article-schema-cgame.json';
 import tiltSchema from './article-schema-tilt.json';
 import fomoSchema from './article-schema-fomo.json';
+import tradingjournalSchema from './article-schema-tradingjournal.json';
 
 export async function getStaticPaths() {
   const articles = await getCollection('articles');
@@ -59,6 +60,7 @@ const schemaData = slug === 'options-trading-charges-india' ? optionsSchema
   : slug === 'c-game-to-a-game-signature-framework' ? cgameSchema
   : slug === 'tilt-in-trading' ? tiltSchema
   : slug === 'fomo-trading' ? fomoSchema
+  : slug === 'trading-journal-what-to-track-beyond-pnl' ? tradingjournalSchema
   : cryptoSchema;
 const schemaHtml = '<script type="application/ld+json">' + JSON.stringify(schemaData) + '</script' + '>';
 
@@ -108,6 +110,8 @@ const toolCta = slug === 'options-trading-charges-india'
   ? { href: '/tools/what-if-simulator/', label: 'Stress-test your worst days in the simulator' }
   : slug === 'fomo-trading'
   ? { href: '/tools/options-cost/', label: 'Price your own FOMO tax' }
+  : slug === 'trading-journal-what-to-track-beyond-pnl'
+  ? { href: '/tools/options-cost/', label: 'Run your trades through the cost calculator' }
   : { href: '/tools/crypto-futures/', label: 'Calculate your futures costs' };
 ---
 
