@@ -161,7 +161,7 @@ Tilt's unique contribution to this week's toolkit is **detection** — the two-l
 
 The post-loss half of any response — the cooldown, the two-consecutive-loss stop, halving size on return — **IS** the loss-side protocol: [how to stop revenge trading after a loss](/articles/revenge-trading/). The A+ re-entry filter — only A+ setups after a bad stretch — **IS** the pre-trade checklist from [the overtrading chapter](/articles/overtrading/).
 
-What belongs to tilt specifically is the trigger line: **any two signals from either scan layer = circuit breaker, minimum 30-minute pause.** And the debrief that keeps detection honest — five minutes, three questions: what did I feel, which rule bent, what locks next time. Tag the tilt trade; those tags feed your C-game card in [the signature framework](/articles/c-game-to-a-game-signature-framework/) and the journal metrics chapter coming Oct 18 AM.
+What belongs to tilt specifically is the trigger line: **any two signals from either scan layer = circuit breaker, minimum 30-minute pause.** And the debrief that keeps detection honest — five minutes, three questions: what did I feel, which rule bent, what locks next time. Tag the tilt trade; those tags feed your C-game card in [the signature framework](/articles/c-game-to-a-game-signature-framework/) and the [journal metrics chapter](/articles/trading-journal-what-to-track-beyond-pnl/) (Oct 18 AM).
 
 <figure class="article-visual" data-reveal>
 <svg viewBox="0 0 680 520" role="img" aria-label="Tilt detection protocol: detect, audit, trigger, respond via sibling chapters, debrief." class="viz">
@@ -242,7 +242,7 @@ Look back at the week and see the structure, because it is now one structure.
 
 #31 showed you what **winning** does to you. #33 showed you what **losing** does to you. #35 showed you **the mechanism** that repeats both. #39 showed you **the framework** you are building to replace the chaos. Tilt is the single state that produces the C-game behavior behind all of it — and the detection protocol is the single system that protects all of it.
 
-One line of homework, and it arrives the morning after tomorrow: start tagging your tilt trades. In the journal article coming up in this series (Oct 18 AM), the emotional-tag ledger turns those tags into the most expensive reading material you own — the ledger of your own tilt. Read it monthly. It will tell you which rung of the circuit is yours.
+One line of homework, and it arrives the morning after tomorrow: start tagging your tilt trades. In [the journal article](/articles/trading-journal-what-to-track-beyond-pnl/) (Oct 18 AM), the emotional-tag ledger turns those tags into the most expensive reading material you own — the ledger of your own tilt. Read it monthly. It will tell you which rung of the circuit is yours.
 
 And one line on the shelf, because practitioner wisdom deserves a source list: the standard trading-psychology bookshelf per futureshive's verified list — Mark Douglas's *Trading in the Zone*, Jared Tendler's *The Mental Game of Trading*, Brett Steenbarger's work, and Lefèvre's *Reminiscences of a Stock Operator*. One line, no more — this series is the system; the books are the library behind it.
 
