@@ -271,7 +271,7 @@ The plan layer — the part the Mirror owns: plan-followed yes/no, planned vs ac
 
 Your P&L tells you where you ended up. Your journal tells you whether the journey is repeatable. But there is one question the journal alone cannot answer — the hardest one: **is what your journal measures actually edge, or is it luck wearing a costume?**
 
-The journal is the instrument. Tonight's article reads the verdict.
+The journal is the instrument. [Tonight's article](/articles/trading-edge-vs-luck/) reads the verdict.
 
 ---
 
