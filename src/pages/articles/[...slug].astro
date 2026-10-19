@@ -67,6 +67,7 @@ const schemaData = slug === 'options-trading-charges-india' ? optionsSchema
   : slug === 'trading-edge-vs-luck' ? edgeluckSchema
   : slug === 'maximum-drawdown' ? maxdrawdownSchema
   : slug === 'recovery-factor' ? recoveryfactorSchema
+  // recovery-factor wired 2026-10-19 PM (schema + CTA below)
   : cryptoSchema;
 const schemaHtml = '<script type="application/ld+json">' + JSON.stringify(schemaData) + '</script' + '>';
 
