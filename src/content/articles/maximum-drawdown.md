@@ -322,7 +322,7 @@ And borrow the prop-firm discipline — without copying their rules. Prop firms 
 
 Maximum drawdown is not trivia and it is not a trophy stat. It is a **sizing input**. [The position-sizing framework already taught the risk budget; MDD is how you reality-check it](/articles/position-sizing/): if the strategy's historical MDD is 25%, are you sized so that a repeat — plus the sample-luck margin — does not end you? If the honest answer is no, the fix is the size, not the strategy.
 
-The companion ratio comes tomorrow: the **Recovery Factor — net profit divided by maximum drawdown** — which asks whether the pain was worth it. That is tomorrow's article. The recovery-math deep dive lives at Trading Drawdown: The Mathematics of Recovery, and the risk-adjusted-return lens — the Sharpe Ratio for retail traders — follows after.
+The companion ratio comes tomorrow: the **Recovery Factor — net profit divided by maximum drawdown** — which asks whether the pain was worth it. That is [tomorrow's article](/articles/recovery-factor/). The recovery-math deep dive lives at Trading Drawdown: The Mathematics of Recovery, and the risk-adjusted-return lens — the Sharpe Ratio for retail traders — follows after.
 
 So the close is simple. Maximum drawdown is the price of admission your strategy charges you. The question was never whether the price exists — it always does. The question is whether you can afford to keep paying it, in rupees, in months underwater, and in discipline. Measure it honestly, add what it hides, test whether you can sit through it, and size accordingly.
 
