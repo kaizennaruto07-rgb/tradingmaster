@@ -297,7 +297,7 @@ Filter, not verdict. Filter, not optimizer.
 
 A chronically low recovery factor — below 3 after a serious sample, after costs, measured on the harsher drawdown definition — is the quantitative half of the quit decision. The pain is priced wrong. You are paying too much scar per rupee of profit, and the number is telling you so in the flattest language available.
 
-But recovery factor doesn't tell you *when* to quit. That is a protocol question, and tomorrow morning's article on when to quit a strategy teaches the full protocol. What tonight's metric does is tell you whether quitting is a question worth asking — and it's the question that matters most when the number is low.
+But recovery factor doesn't tell you *when* to quit. That is a protocol question, and tomorrow morning's article on [when to quit a strategy](/articles/when-to-quit-a-strategy/) teaches the full protocol. What tonight's metric does is tell you whether quitting is a question worth asking — and it's the question that matters most when the number is low.
 
 The framework you now have:
 
@@ -305,7 +305,7 @@ The framework you now have:
 - **[Profit factor](/articles/profit-factor/)** told you the engine works. RF told you whether the ride was survivable.
 - **Real expectancy** — [how to calculate it](/articles/how-to-calculate-real-expectancy/) — prices your profit per trade. Recovery factor prices your profit per unit of worst pain. Different questions, both necessary.
 - **[Risk of ruin](/articles/risk-of-ruin-trading/)** prices the one thing RF ignores: whether the account survives at all.
-- Tomorrow: the Sharpe ratio annualizes and normalizes what RF leaves time-dependent, and the quit protocol turns tonight's evidence into a decision.
+- Tomorrow: the Sharpe ratio annualizes and normalizes what RF leaves time-dependent, and [the quit protocol](/articles/when-to-quit-a-strategy/) turns tonight's evidence into a decision.
 
 Keep the receipt. Read the scar. And when the number is low, ask the question it is asking you.
 
