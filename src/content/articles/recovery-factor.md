@@ -227,7 +227,7 @@ This one is subtler, and the confusion is understandable. Both ratios have maxim
 
 Read the table's last row twice, because it is the operational difference. A recovery factor of 6.0 over three years and 6.0 over fifteen years is the same number on two completely different systems — the same profit, earned in one-sixth the time, is a different achievement wearing the same costume. The Calmar ratio divides by time; the recovery factor doesn't. So the Calmar ratio is comparable across periods. The recovery factor is not.
 
-That means the RF-vs-Calmar question has a one-line answer: **Calmar is the annualized, time-normalized sibling. RF is the total-pain-receipt. Never compare recovery factors across different test windows.** The Calmar-and-Sharpe deep dive belongs to the Sharpe ratio article; the time-frame distinction is ours.
+That means the RF-vs-Calmar question has a one-line answer: **Calmar is the annualized, time-normalized sibling. RF is the total-pain-receipt. Never compare recovery factors across different test windows.** The Calmar-and-Sharpe deep dive belongs to the [Sharpe ratio article](/articles/sharpe-ratio-for-retail-traders/); the time-frame distinction is ours.
 
 ## The Sample-Length Lie: Your Recovery Factor Is a Function of Your Test Window
 
@@ -305,7 +305,7 @@ The framework you now have:
 - **[Profit factor](/articles/profit-factor/)** told you the engine works. RF told you whether the ride was survivable.
 - **Real expectancy** — [how to calculate it](/articles/how-to-calculate-real-expectancy/) — prices your profit per trade. Recovery factor prices your profit per unit of worst pain. Different questions, both necessary.
 - **[Risk of ruin](/articles/risk-of-ruin-trading/)** prices the one thing RF ignores: whether the account survives at all.
-- Tomorrow: the Sharpe ratio annualizes and normalizes what RF leaves time-dependent, and [the quit protocol](/articles/when-to-quit-a-strategy/) turns tonight's evidence into a decision.
+- Tomorrow: the [Sharpe ratio](/articles/sharpe-ratio-for-retail-traders/) annualizes and normalizes what RF leaves time-dependent, and [the quit protocol](/articles/when-to-quit-a-strategy/) turns tonight's evidence into a decision.
 
 Keep the receipt. Read the scar. And when the number is low, ask the question it is asking you.
 
