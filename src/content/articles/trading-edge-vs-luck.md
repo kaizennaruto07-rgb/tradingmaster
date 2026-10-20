@@ -265,7 +265,7 @@ Grade the tally monthly. Two numbers matter: the ratio of edge trades to luck tr
 
 ## Where to go next: the survival cluster
 
-This article ends where the next cluster begins. Once you know how to check whether your edge is real, the Oct 19–20 survival articles take over: [maximum drawdown](/articles/maximum-drawdown/) (how deep the worst verified losing stretch goes), recovery factor (what it costs to climb back), when to quit a strategy (the difference between an inconclusive verdict and a dead one), and Sharpe (how much return you get per unit of the risk you took). Verification tells you whether the engine exists; the survival cluster tells you whether the engine gets you home.
+This article ends where the next cluster begins. Once you know how to check whether your edge is real, the Oct 19–20 survival articles take over: [maximum drawdown](/articles/maximum-drawdown/) (how deep the worst verified losing stretch goes), recovery factor (what it costs to climb back), [when to quit a strategy](/articles/when-to-quit-a-strategy/) (the difference between an inconclusive verdict and a dead one), and Sharpe (how much return you get per unit of the risk you took). Verification tells you whether the engine exists; the survival cluster tells you whether the engine gets you home.
 
 ## Risk, honest limits, and what this article cannot do
 
