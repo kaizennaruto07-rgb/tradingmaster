@@ -305,7 +305,7 @@ Here is the protocol nobody gives you. A strategy fails this test not when its m
 
 One texture of drawdown that global MDD articles never mention: in Indian intraday F&O, drawdowns concentrate into hours, not months. A swing trader's 15% drawdown unfolds over weeks with time to think; an intraday options trader can carve out the same percentage between 9:15 and 3:30, decision after decision, with no pause button. And every rupee of that drawdown paid the charge stack on the way down: STT at **0.15% on the sell premium** (and 0.15% on exercised ITM options), plus the NSE equity-options charge of **0.03553% per side all-in** (per NSE circular NSE/FA/73061, effective March 1, 2026). Drawdown in Indian F&O is not just equity foregone — it is equity foregone *plus* the transaction-cost stack on every losing trade that dug the hole. Size your intraday risk budget with that texture in mind: the hole is always slightly deeper than the price action alone suggests.
 
-Losing streaks are one of the main engines that dig these holes — the probability machinery behind streaks gets its own treatment: How Losing Streaks Affect Trading Accounts.
+Losing streaks are one of the main engines that dig these holes — the probability machinery behind streaks gets its own treatment: [How Losing Streaks Affect Trading Accounts](/articles/how-losing-streaks-affect-trading-accounts/).
 
 ## How to Reduce Maximum Drawdown
 
