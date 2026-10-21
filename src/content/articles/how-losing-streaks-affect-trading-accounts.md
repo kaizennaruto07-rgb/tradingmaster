@@ -228,7 +228,7 @@ Then layer on the Indian cost stack, because every losing trade bleeds a little 
 
 The arithmetic is unforgiving in one direction: recovery is asymmetric. Losing 10% needs +11.1% to get back; losing 30% needs +42.9%; losing 50% needs +100%. The ₹2-lakh table above shows it in the flesh — the 5%-risk trader's 40.1% hole demands a 67% climb-out. Every percentage point of drawdown you *avoid* during the streak is a disproportionate amount of recovery work you never have to do.
 
-That is the whole financial damage: streaks convert to drawdown, and drawdown is expensive to escape. The full mathematics of recovery — and how the climb-out actually works trade by trade — is the subject of the companion piece published this evening, *Trading Drawdown: The Mathematics of Recovery* (Oct 21 PM). Tonight's article owns the recovery math; here is the one line that matters before it: **the deeper the hole, the faster the required recovery grows.**
+That is the whole financial damage: streaks convert to drawdown, and drawdown is expensive to escape. The full mathematics of recovery — and how the climb-out actually works trade by trade — is the subject of the companion piece, [Trading Drawdown: The Mathematics of Recovery](/articles/trading-drawdown-mathematics-of-recovery/). Tonight's article owns the recovery math; here is the one line that matters before it: **the deeper the hole, the faster the required recovery grows.**
 
 The account-level consequence of streaks — how deep a drawdown can go — is measured by [maximum drawdown](/articles/maximum-drawdown), and the speed of your climb-out is [recovery factor](/articles/recovery-factor)'s domain.
 
@@ -409,7 +409,7 @@ Because random results arrive in clusters — that is what randomness looks like
 
 ### How long does it take to recover from a losing streak?
 
-It is asymmetric — the deeper the hole, the faster the required recovery grows (−10% needs +11.1% back; −50% needs +100%). The full trade-by-trade recovery treatment is in this evening's companion piece, *Trading Drawdown: The Mathematics of Recovery* (Oct 21 PM).
+It is asymmetric — the deeper the hole, the faster the required recovery grows (−10% needs +11.1% back; −50% needs +100%). The full trade-by-trade recovery treatment is in the companion piece, [Trading Drawdown: The Mathematics of Recovery](/articles/trading-drawdown-mathematics-of-recovery/).
 
 ### Do losing streaks mean the market owes me a win?
 
