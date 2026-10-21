@@ -31,6 +31,7 @@ import recoveryfactorSchema from './article-schema-recoveryfactor.json';
 import whenquitSchema from './article-schema-whenquit.json';
 import sharpeSchema from './article-schema-sharpe.json';
 import losingstreaksSchema from './article-schema-losingstreaks.json';
+import drawdownSchema from './article-schema-drawdown.json';
 
 export async function getStaticPaths() {
   const articles = await getCollection('articles');
@@ -73,6 +74,7 @@ const schemaData = slug === 'options-trading-charges-india' ? optionsSchema
   : slug === 'when-to-quit-a-strategy' ? whenquitSchema
   : slug === 'sharpe-ratio-for-retail-traders' ? sharpeSchema
   : slug === 'how-losing-streaks-affect-trading-accounts' ? losingstreaksSchema
+  : slug === 'trading-drawdown-mathematics-of-recovery' ? drawdownSchema
   // recovery-factor wired 2026-10-19 PM (schema + CTA below)
   : cryptoSchema;
 const schemaHtml = '<script type="application/ld+json">' + JSON.stringify(schemaData) + '</script' + '>';
@@ -137,6 +139,8 @@ const toolCta = slug === 'options-trading-charges-india'
   ? { href: '/tools/what-if-simulator/', label: 'Stress-test your Sharpe in the simulator' }
   : slug === 'how-losing-streaks-affect-trading-accounts'
   ? { href: '/tools/what-if-simulator/', label: 'Stress-test your streaks in the simulator' }
+  : slug === 'trading-drawdown-mathematics-of-recovery'
+  ? { href: '/tools/risk-of-ruin/', label: 'Check your drawdown against ruin' }
   : { href: '/tools/crypto-futures/', label: 'Calculate your futures costs' };
 ---
 
