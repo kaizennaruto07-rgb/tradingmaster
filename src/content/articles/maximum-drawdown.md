@@ -255,7 +255,7 @@ Losses and gains are not symmetric, because gains compound on a smaller base. On
 | 50% | **100.00% — double the remaining capital** |
 | 75% | **300.00%** |
 
-A 50% drawdown does not need a 50% gain to heal. It needs you to *double* what is left. At 75%, you need to quadruple the remainder. The curve bends upward brutally past 30% — which is half the reason the 20% sanity line exists. The full recovery mathematics, with worked recovery paths, belongs to its own deep dive: Trading Drawdown: The Mathematics of Recovery.
+A 50% drawdown does not need a 50% gain to heal. It needs you to *double* what is left. At 75%, you need to quadruple the remainder. The curve bends upward brutally past 30% — which is half the reason the 20% sanity line exists. The full recovery mathematics, with worked recovery paths, belongs to its own deep dive: [Trading Drawdown: The Mathematics of Recovery](/articles/trading-drawdown-mathematics-of-recovery/).
 
 ## The Tradeability Test: A Protocol for Deciding Whether You Can Survive a Strategy
 
@@ -322,7 +322,7 @@ And borrow the prop-firm discipline — without copying their rules. Prop firms 
 
 Maximum drawdown is not trivia and it is not a trophy stat. It is a **sizing input**. [The position-sizing framework already taught the risk budget; MDD is how you reality-check it](/articles/position-sizing/): if the strategy's historical MDD is 25%, are you sized so that a repeat — plus the sample-luck margin — does not end you? If the honest answer is no, the fix is the size, not the strategy.
 
-The companion ratio comes tomorrow: the **Recovery Factor — net profit divided by maximum drawdown** — which asks whether the pain was worth it. That is [tomorrow's article](/articles/recovery-factor/). The recovery-math deep dive lives at Trading Drawdown: The Mathematics of Recovery, and the risk-adjusted-return lens — the [Sharpe ratio for retail traders](/articles/sharpe-ratio-for-retail-traders/) — completes the tripod.
+The companion ratio comes tomorrow: the **Recovery Factor — net profit divided by maximum drawdown** — which asks whether the pain was worth it. That is [tomorrow's article](/articles/recovery-factor/). The recovery-math deep dive lives at [Trading Drawdown: The Mathematics of Recovery](/articles/trading-drawdown-mathematics-of-recovery/), and the risk-adjusted-return lens — the [Sharpe ratio for retail traders](/articles/sharpe-ratio-for-retail-traders/) — completes the tripod.
 
 So the close is simple. Maximum drawdown is the price of admission your strategy charges you. The question was never whether the price exists — it always does. The question is whether you can afford to keep paying it, in rupees, in months underwater, and in discipline. Measure it honestly, add what it hides, test whether you can sit through it, and size accordingly.
 
@@ -348,7 +348,7 @@ A 10–20% band is the sanity range for active retail strategies: below 10% for 
 
 ### Why is a 50% drawdown so dangerous?
 
-The recovery asymmetry — the table in the section above shows why: a 50% fall needs +100% to come back, a gain compounded on a halved base. Beyond the math, deep drawdowns degrade decision quality — the strain starts rewriting your rules before the numbers recover. The full recovery mathematics is covered in Trading Drawdown: The Mathematics of Recovery.
+The recovery asymmetry — the table in the section above shows why: a 50% fall needs +100% to come back, a gain compounded on a halved base. Beyond the math, deep drawdowns degrade decision quality — the strain starts rewriting your rules before the numbers recover. The full recovery mathematics is covered in [Trading Drawdown: The Mathematics of Recovery](/articles/trading-drawdown-mathematics-of-recovery/).
 
 ### What is the difference between drawdown and max drawdown?
 
