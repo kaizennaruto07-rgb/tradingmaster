@@ -1,0 +1,104 @@
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@context": "https://schema.org",
+   "@type": "Article",
+   "headline": "Trading Drawdown: The Mathematics of Recovery",
+   "description": "How much must you gain to recover from a drawdown in trading? The d/(1−d) recovery formula, an exact ₹2,00,000 table, time-to-climb math, and a protocol.",
+   "author": {
+    "@type": "Person",
+    "name": "Kaizen"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "name": "Monks Of Market",
+    "url": "https://monksofmarket.com/"
+   },
+   "datePublished": "2026-10-21",
+   "inLanguage": "en-IN",
+   "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://monksofmarket.com/articles/trading-drawdown-mathematics-of-recovery/"
+   }
+  },
+  {
+   "@context": "https://schema.org",
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "What is a drawdown in trading?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "A drawdown is the peak-to-trough decline in your account equity from the most recent account peak, expressed as a percentage: (Peak − Trough) ÷ Peak × 100. It is distinct from a loss: a loss is realized on a single closed trade, while a drawdown is the aggregate decline over a period, includes floating/unrealized declines, and is a temporary state that ends only when a new peak is made."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How much do I need to gain to recover from a drawdown?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Required gain % = Drawdown % ÷ (100% − Drawdown %) × 100, because the recovery is earned on the smaller remaining base. See the article's exact table for the full 5%→90% ladder. The anchor example: a 20% drawdown (₹2,00,000 peak → ₹1,60,000 trough) requires ₹40,000 re-earned on the ₹1,60,000 base = exactly +25%."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Why does a 50% loss need a 100% gain to recover?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Because the fall is measured from the peak and the climb is measured from the hole. A ₹2,00,000 account at a 50% drawdown sits at ₹1,00,000 — halved. To return to ₹2,00,000 it must earn ₹1,00,000 on a ₹1,00,000 base, which is +100%. Halved capital must double. The asymmetry steepens from there: 70% down needs 233.33% back; 90% down needs 900%."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What is a good drawdown in trading?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "In recovery terms: intraday traders should treat anything approaching 10% as the reassess zone; swing traders can operate in the 10–20% band with discipline; 20% is the retail sanity threshold — past it, both the recovery math and decision quality degrade, and most professionals stop at 15–20%. Prop-firm hard limits (8–12% total) are the strictest version of the same discipline. See the article's ladder for the full framing."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How long does it take to recover from a drawdown?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Expected trades to recover ≈ required gain % ÷ expectancy per trade, then divide by your trades per week. The article's worked illustration: a 30% drawdown (required gain 42.86%) with a 45%-win / 1.75:1 / 1.25%-risk system (EV 0.296875%/trade) needs ≈144 trades — roughly 36 weeks at 4 trades per week. Illustration, not forecast — expectancy is an average, not a guarantee; variance means the realized climb can be far shorter or far longer than the expectation."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What is the difference between drawdown and maximum drawdown?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Drawdown is ANY temporary dip from a peak; maximum drawdown is the LARGEST peak-to-trough decline in the period — MDD explained in full here."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What should I do when my account is in a drawdown?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Follow a pre-committed protocol: at 5% drawdown cut risk per trade in half; at 10% halve size and review the system; at 15–20% stop trading and run a full audit. Keep a daily loss limit as your intraday circuit breaker. Run a tilt check at every rung (Tilt in Trading), and if the audit suggests the system itself is broken rather than unlucky, follow When to Quit a Strategy."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How do I know if a drawdown is normal or my strategy is broken?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "That is the variance-vs-breakdown question, and it has its own complete guide: When to Quit a Strategy owns the diagnosis signals and is not re-taught here. The short version: normal variance matches what your system's own history says its losing stretches look like; a broken system shows losses the history can't explain. The protocol's Rung 3 — stop and audit with the terminal closed — exists to force exactly this call."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Can drawdowns be avoided completely?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "No — manage them, don't try to avoid them. Position sizing, stop losses, and the size-down protocol keep drawdowns shallow; nothing keeps them at zero. And remember the tax on the climb: every drawdown pays the transaction-cost stack on both the fall and the recovery (NSE equity-options 0.03553%/side all-in; STT 0.15% on exercised ITM options and sell-premium) — which is why prevention math always beats recovery math."
+     }
+    }
+   ]
+  }
+ ]
+}
