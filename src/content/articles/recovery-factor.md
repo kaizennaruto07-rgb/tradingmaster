@@ -281,7 +281,7 @@ The hard rule, stated once and worth memorizing: **never compare recovery factor
 
 Recovery factor is a filter, not a verdict. Here are its four blind spots, stated plainly — and the fifth rule about how to use it.
 
-**1. It says nothing about time underwater.** A 25% dip recovered in a week and a 25% dip that took two years to climb out of can carry the same recovery factor. It is not the same strategy. The first one tested your discipline for a week. The second one tested whether you would still be trading it at all. The math of getting back out of a hole — what recovery actually costs — is its own subject; the drawdown recovery math covers it.
+**1. It says nothing about time underwater.** A 25% dip recovered in a week and a 25% dip that took two years to climb out of can carry the same recovery factor. It is not the same strategy. The first one tested your discipline for a week. The second one tested whether you would still be trading it at all. The math of getting back out of a hole — what recovery actually costs — is its own subject; [the drawdown recovery math](/articles/trading-drawdown-mathematics-of-recovery/) covers it.
 
 **2. It says nothing about profit concentration.** One monster trade can inflate the numerator and drag the whole ratio up with it. Remove the single best trade and some systems become lottery tickets wearing a strategy's clothes. Always check what the number looks like without the outliers.
 
