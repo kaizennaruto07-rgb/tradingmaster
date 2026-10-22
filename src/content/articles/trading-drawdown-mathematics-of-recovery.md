@@ -334,7 +334,7 @@ This is why prevention math beats recovery math. The cheapest drawdown is the on
 
 A dedicated drawdown recovery calculator (enter your peak, your trough, your system's expectancy, and get the climb mapped in trades and weeks) is planned as part of a later tool cluster. Until it ships, the formula and the three steps above are the honest version — no black box, nothing hidden.
 
-**So: how do you make sure the next drawdown is smaller?** That is the question for tomorrow morning — *The 3-Day Rule* — and the sizing answer to the depth question lives in position sizing, because the depth of every drawdown is decided before it begins, in the size of the trades that dug it.
+**So: how do you make sure the next drawdown is smaller?** That is the question for tomorrow morning — [*The 3-Day Rule*](/articles/the-3-day-rule/) — and the sizing answer to the depth question lives in position sizing, because the depth of every drawdown is decided before it begins, in the size of the trades that dug it.
 
 ---
 
