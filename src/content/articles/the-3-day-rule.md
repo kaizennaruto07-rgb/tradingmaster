@@ -290,7 +290,7 @@ This article's rule is the trader's cousin of that idea, pointed at a different 
 
 The 3-day rule protects you during the storm. It does nothing to make the storm smaller. A trader who needs the circuit breaker every month has a system problem, not a discipline problem — and no circuit breaker substitutes for the system itself.
 
-That's tomorrow's article: building your first trading system from scratch — edge, expectancy, validation, and the risk rules that make breakers like this one a rarely-used safety net instead of a monthly ritual. The 3-day rule is a component of a system. Tomorrow we build the system.
+That's tomorrow's article: [building your first trading system from scratch](/articles/building-your-first-trading-system/) — edge, expectancy, validation, and the risk rules that make breakers like this one a rarely-used safety net instead of a monthly ritual. The 3-day rule is a component of a system. Tomorrow we build the system.
 
 The trader who walks away on the third red day is the trader who gets to come back on the sixth. Sign the contract tonight. Protect the account. Come back calm.
 
