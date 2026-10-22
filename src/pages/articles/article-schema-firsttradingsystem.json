@@ -1,0 +1,80 @@
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Article",
+   "headline": "Building Your First Trading System: The Complete Guide for Indian Retail Traders",
+   "description": "How to build your first trading system: 7-module blueprint, five-line protocol, validation ladder with acceptance numbers, and the Indian charges-aware build.",
+   "author": {
+    "@type": "Person",
+    "@name": "Kaizen"
+   },
+   "datePublished": "2026-10-22",
+   "publisher": {
+    "@type": "Organization",
+    "@name": "Monks Of Market"
+   }
+  },
+  {
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "What are the components of a trading system?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Seven modules cover a first system: market selection, market direction, setup, entry timing, protective stop, taking profits, and money management. Every module gets exactly one written rule — a component without a rule is a wish. The full blueprint with example rule shapes is in the system blueprint section above."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What is the difference between a trading strategy and a trading system?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "A strategy is the idea — when to enter. A system is the full machine: the idea plus risk rules, exit rules, a testing protocol, journaling, and a review cadence. The strategy is one ingredient; the system is the kitchen. A strategy without a clean exit rule is not a system — it's a hope."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How long does it take to build a trading system?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "The framework — the blueprint and the five-line protocol — can be written in days. Validation is the slow part: experienced practitioners commonly describe a 3–6 month sequence of backtesting plus paper trading before live capital. Anyone promising a weekend build is selling the weekend, not the system."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How many trades do I need before I know if my system works?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "At least 50 logged trades before judging anything — practitioner consensus, because below that sample size results are statistically noise. Those 50 trades must include losing streaks and choppy regimes, not just the good weeks, and they must all be taken under the written rules — discretionary or improvised trades do not count toward the sample."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What is the biggest mistake when building a trading system?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Skipping the exits: jumping from setup straight to the entry trigger with no predetermined stop or profit plan. Without exits decided in advance, every losing trade becomes an emotional decision. The upside-down pyramid is the correction — risk and exit rules sit at the top of the importance stack, entries at the bottom."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How do I backtest my first trading system?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Walk your written rules manually across 12–24 months of charts (deeper is better — up to 3–5 years across bull, chop, and drawdown phases), record every setup the rules fire, benchmark against buy-and-hold on the same symbol, change one variable at a time, and put real costs and slippage on every simulated trade. Watch for overfitting: rules tuned to one regime die in the next."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Can I build a trading system without coding?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes. Blank paper, a chart, and written rules are the entire toolkit: identify when the good moments to buy and sell were, note what the conditions were at those moments, write the rules, then test them. Code comes later, if ever."
+     }
+    }
+   ]
+  }
+ ]
+}
