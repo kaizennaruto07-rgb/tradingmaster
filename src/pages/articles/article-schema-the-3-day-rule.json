@@ -1,0 +1,96 @@
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Article",
+   "headline": "The 3-Day Rule: A Circuit Breaker for Consecutive Losing Days",
+   "description": "Three consecutive red days? Take three market days away from the screens. The complete 3-day rule protocol — trigger, break, and staged return ladder.",
+   "author": {
+    "@type": "Person",
+    "@name": "Kaizen"
+   },
+   "datePublished": "2026-10-22",
+   "publisher": {
+    "@type": "Organization",
+    "@name": "Monks Of Market"
+   }
+  },
+  {
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "What is the 3-day rule in trading?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "After three consecutive losing days, take a mandatory three-day break from trading — three market days off, no live positions, review only. It is a pre-committed circuit breaker: you sign the rule while calm so it binds you when you're tilted. Note the investor variant: some investors use \"3-day rule\" to mean waiting three days before buying a stock that dropped hard — same family (imposed distance), different problem."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Should you stop trading after a losing streak?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "If you're a discretionary trader whose decision quality degrades under emotional load — yes. Three red days is the point where loss-aversion compounding, tilt, and revenge/overtrading loops typically ignite. The break interrupts the emotional feedback loop and protects the account from tilt-driven damage. Systematic traders with valid stop-outs are the honest exception — for them, skipping trades is the deviation."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How many consecutive losses before you stop trading?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Three tiers: intraday, most experienced traders end the session after 2–4 consecutive full-stop losses (three is the common landing point); at the day level, three consecutive red days triggers the 3-day rule — three market days off. The daily-loss-limit tier (dollar-based, intraday) and the 3-day rule (day-count based, multi-day) stack: the loss limit ends the session, the 3-day rule ends the stretch."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How long should a trading break be?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Minimum 24 hours after three consecutive losses; the 3-day rule takes three full market days (review-only). A full reset needs distance, not a nap — one weekend rarely discharges three red days of emotional charge. Market days are trading days: NSE holidays don't count as break days."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What should you do during a trading break?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Day 1: complete distance — no charts, no scanning, no paper trading. Day 2: structured review — log all three days' trades and answer three questions (did I follow my rules? were the setups valid? bad process or bad luck?), separating poor executions from valid statistical stop-outs. Day 3: check whether the market regime changed, then run 2–3 calm demo trades to verify clean execution."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How do you know when to return to trading?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Use the staged return ladder: review-only → demo-verified (2–3 clean paper trades) → half size live (0.2–0.5% risk for a few sessions) → full size only when execution is clean across sessions. One green day doesn't end probation; one red day at half size restarts it. Full size is earned back with evidence, not hope."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Why can't I stop trading after losing?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "The state-machine problem: the calm version of you writes the plan, and a different, emotionally flooded version executes it under pressure. That future self won't be persuaded in the moment — which is why the rule must be pre-committed, written down physically, witnessed by someone, and ideally made structural (a calendar block, the app deleted for three days). You don't negotiate with the tilted self; you bind them in advance."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Does the 3-day rule apply to systematic or algo traders?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "No — and that's stated honestly. A backtested system with positive expectancy doesn't care about streaks; if all three red days were clean, rule-following executions, skipping the next trades is itself the deviation. The rule protects discretionary decision quality. It cannot improve a process with no discretion in it."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Is a 3-day break different from a daily loss limit?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes. The daily loss limit is dollar-based and intraday — it protects the *day*. The 3-day rule is day-count based and multi-day — it protects the *week and the month*. They stack: the loss limit ends the session, the 3-day rule ends the stretch. And every avoided revenge trade saves real friction: using the locked Indian figures — NSE equity-options: 0.03553%/side all-in (Rs. 3,553/crore = Rs. 3,503 transaction charge + Rs. 50 IPFT, per NSE circular NSE/FA/73061 eff Mar 1, 2026); STT: 0.15% on the sell premium (sell-side); Nifty lot size: 65 (w.e.f. 28-Oct-2025, per NSE/FAOP/70616) — a single Nifty option revenge round trip (₹200 premium × 65 lot) costs ~₹29 in exchange-level charges alone (₹19.50 STT on the sell leg + ~₹9.24 NSE both sides), before brokerage and GST."
+     }
+    }
+   ]
+  }
+ ]
+}
