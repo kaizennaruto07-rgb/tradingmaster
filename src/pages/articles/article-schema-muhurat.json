@@ -1,0 +1,105 @@
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Article",
+   "headline": "Muhurat Trading 2026: Date, Timings, and How the Session Works (Official NSE/BSE Schedule)",
+   "description": "Muhurat Trading 2026 is on Sunday, 8 November 2026, 2:20–3:30 PM IST. Full official NSE/BSE schedule, CAS explained, segments open, and settlement basics.",
+   "author": {
+    "@type": "Person",
+    "@name": "Kaizen"
+   },
+   "datePublished": "2026-10-23",
+   "publisher": {
+    "@type": "Organization",
+    "@name": "Monks Of Market"
+   }
+  },
+  {
+   "@context": "https://schema.org",
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "What is Muhurat trading?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Muhurat trading is a special 70-minute trading session held on Diwali's Laxmi Pujan day — in 2026, Sunday 8 November — so investors can mark the start of the new Samvat year (Vikram Samvat 2083) with an auspicious first trade on NSE and BSE. Every trade placed is a real trade with real settlement."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "When is Muhurat trading 2026, and what are the timings?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Muhurat Trading 2026 is on Sunday, 8 November 2026. Official schedule (IST) per NSE circular NSE/CMTR/76941 and BSE notice 20261019-9 (both 19-Oct-2026): block deals 1:50–2:05 PM; pre-open 2:05–2:20 PM; main session 2:20–3:30 PM (CAS securities close 3:15 PM); closing auction 3:15–3:35 PM; post-close 3:50–4:00 PM; trade modification cut-off 4:15 PM."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Is Muhurat trading compulsory?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "No. Participation is entirely optional — if you don't log in, nothing happens to your account or holdings."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Do I need a separate demat or trading account for Muhurat trading?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "No. Your existing active demat and trading account works; you only need funds in the account and to place orders within the session timings."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Can I trade futures and options during Muhurat trading?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes. Equity futures & options are open during the Muhurat session, along with equity, currency derivatives, commodity derivatives, and SLB, with normal margins and rules applying."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Does the settlement process differ from a regular trading day?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "No. Standard T+1 settlement applies: shares bought are credited by T+1 evening, sellers receive funds on T+1. Around the 2026 session: Sun 8 Nov (Muhurat), Mon 9 Nov (normal trading), Tue 10 Nov (closed, Diwali-Balipratipada), trading resumes Wed 11 Nov."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How much money do I need to participate?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "There is no regulatory minimum investment; investors commonly place small token trades. Practical limits are the share price and normal brokerage charges, and normal circuit filters apply."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Are brokerage charges the same during Muhurat trading?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes. Charges are the same as a regular trading day under your normal brokerage plan. Reference figures: STT 0.15% sell-side on equity delivery, NSE equity-options transaction charges 0.03553% per side all-in."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Is Muhurat trading guaranteed to be profitable?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "No. The session's significance is traditional and symbolic; press coverage has not framed it as being about immediate profitability, and the short window can heighten volatility."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What happens if I miss the Muhurat session?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Nothing bad — you only miss the symbolic window. The next regular trading day is Monday, 9 November 2026."
+     }
+    }
+   ]
+  }
+ ]
+}
