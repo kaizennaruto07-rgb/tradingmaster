@@ -284,6 +284,6 @@ Nothing bad. You miss the symbolic window, and that's all — there is no penalt
 
 ## Next in this series
 
-This article is the first of a four-part Muhurat Trading series. The companion pieces are 'The History of Muhurat Trading: From 1957 to Today'; 'Muhurat Trading for Beginners: Should You Actually Buy?'; and 'After the Muhurat Hour: Settlement, Charges, and the Holiday Gap'.
+This article is the first of a four-part Muhurat Trading series. The companion pieces are [The History of Muhurat Trading: From 1957 to Today](/articles/muhurat-trading-history/); 'Muhurat Trading for Beginners: Should You Actually Buy?'; and 'After the Muhurat Hour: Settlement, Charges, and the Holiday Gap'.
 
 *Risk disclosure: all securities trading involves risk of loss, including the possible loss of your entire capital. Intraday positions in the Muhurat session must be squared off before the close — a 70-minute window leaves no room to recover from a wrong order. Nothing here is investment advice; participate only with money you can afford to risk.*
