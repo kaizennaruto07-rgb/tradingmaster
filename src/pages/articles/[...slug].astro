@@ -35,6 +35,7 @@ import losingstreaksSchema from './article-schema-losingstreaks.json';
 import drawdownSchema from './article-schema-drawdown.json';
 import threedaySchema from './article-schema-the-3-day-rule.json';
 import firstsystemSchema from './article-schema-firsttradingsystem.json';
+import muhuratSchema from './article-schema-muhurat.json';
 
 export async function getStaticPaths() {
   const articles = await getCollection('articles');
@@ -80,6 +81,7 @@ const schemaData = slug === 'options-trading-charges-india' ? optionsSchema
   : slug === 'trading-drawdown-mathematics-of-recovery' ? drawdownSchema
   : slug === 'the-3-day-rule' ? threedaySchema
   : slug === 'building-your-first-trading-system' ? firstsystemSchema
+  : slug === 'muhurat-trading-2026' ? muhuratSchema
   // recovery-factor wired 2026-10-19 PM (schema + CTA below)
   : cryptoSchema;
 const schemaHtml = '<script type="application/ld+json">' + JSON.stringify(schemaData) + '</script' + '>';
@@ -150,6 +152,8 @@ const toolCta = slug === 'options-trading-charges-india'
   ? { href: '/tools/what-if-simulator/', label: 'Stress-test your losing days in the simulator' }
   : slug === 'building-your-first-trading-system'
   ? { href: '/tools/what-if-simulator/', label: 'Stress-test your new system in the simulator' }
+  : slug === 'muhurat-trading-2026'
+  ? { href: '/tools/risk-of-ruin/', label: 'Check your symbolic sizing against ruin' }
   : { href: '/tools/crypto-futures/', label: 'Calculate your futures costs' };
 ---
 
