@@ -273,7 +273,7 @@ If the protocol says "buy," here's the practical flow on Sunday, November 8, 202
 
 1. **Before the session:** log in to your broker's app, confirm funds are in the trading account, and pull up your one pre-researched stock or ETF. Decide your limit price in advance — not in the moment.
 2. **During the session (2:20–3:30 PM IST):** place a single limit order at your decided price. One order, one purchase. Do not chase if it doesn't fill — an unfilled limit order in a thin session is a normal outcome, not a failure.
-3. **After the session:** confirm the order status in the app. Note that standard charges apply on the trade, exactly as on a normal day — the detailed charges and settlement breakdown is covered in our upcoming settlement article.
+3. **After the session:** confirm the order status in the app. Note that standard charges apply on the trade, exactly as on a normal day — the detailed charges and settlement breakdown is covered in our [settlement article](/articles/muhurat-trading-settlement-charges/).
 4. **If your account isn't ready:** don't rush KYC or fund transfers on the day. As noted in the checklist, opening an account days before Diwali may not complete in time — and a rushed account opening is a bad first trade before you've even traded. Watch this year instead.
 
 ## Journal the Entry: Make the Session Your First Page
@@ -351,6 +351,6 @@ Either way, remember the thesis: **auspicious is not a strategy — but intentio
 
 ## Next in this series
 
-This article is the third of a four-part Muhurat Trading series. The companion pieces are [Muhurat Trading 2026: Date, Timings, and How the Session Works](/articles/muhurat-trading-2026/) and [The History of Muhurat Trading: From 1957 to Today](/articles/muhurat-trading-history/); the final part — 'After the Muhurat Hour: Settlement, Charges, and the Holiday Gap' — follows tonight.
+This article is the third of a four-part Muhurat Trading series. The companion pieces are [Muhurat Trading 2026: Date, Timings, and How the Session Works](/articles/muhurat-trading-2026/) and [The History of Muhurat Trading: From 1957 to Today](/articles/muhurat-trading-history/); the final part — ['After the Muhurat Hour: Settlement, Charges, and the Holiday Gap'](/articles/muhurat-trading-settlement-charges/) — is live.
 
 *Risk disclosure: all securities trading involves risk of loss, including the possible loss of your entire capital. A 70-minute festival session leaves no room to recover from a wrong order — which is exactly why this guide insists on small, planned, limit-order participation. Nothing here is investment advice; participate only with money you can afford to risk.*
