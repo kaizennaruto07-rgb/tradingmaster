@@ -215,7 +215,7 @@ Settlement is standard T+1, identical to a regular trading day. Shares you buy o
 
 The days around the session run like this: Sunday 8 November is the Muhurat session, Monday 9 November is a normal trading day, Tuesday 10 November the market is closed for Diwali-Balipratipada, and trading resumes on Wednesday 11 November.
 
-The detailed mechanics — how T+1 interacts with the holiday gap, what the T1-holding display in your broker's app means, and the full charge breakdown for the session — belong to a companion article in this series on settlement, charges, and the holiday gap. What you need here: the session settles normally, and the only quirk in the calendar is the Tuesday closure.
+The detailed mechanics — how T+1 interacts with the holiday gap, what the T1-holding display in your broker's app means, and the full charge breakdown for the session — belong to [a companion article in this series on settlement, charges, and the holiday gap](/articles/muhurat-trading-settlement-charges/). What you need here: the session settles normally, and the only quirk in the calendar is the Tuesday closure.
 
 ## Should you buy during Muhurat trading?
 
@@ -264,7 +264,7 @@ Yes. Equity futures & options are open during the Muhurat session, per the excha
 
 ### Does the settlement process differ from a regular trading day?
 
-No. Muhurat trades settle on the standard T+1 cycle: shares bought on the session day are credited to your demat account by T+1 evening, and sellers receive funds on T+1. The calendar around this year's session: Sunday 8 November (Muhurat session), Monday 9 November (normal trading day), Tuesday 10 November (market closed for Diwali-Balipratipada), trading resumes Wednesday 11 November. A companion article in this series covers the settlement mechanics, charges, and the holiday gap in full.
+No. Muhurat trades settle on the standard T+1 cycle: shares bought on the session day are credited to your demat account by T+1 evening, and sellers receive funds on T+1. The calendar around this year's session: Sunday 8 November (Muhurat session), Monday 9 November (normal trading day), Tuesday 10 November (market closed for Diwali-Balipratipada), trading resumes Wednesday 11 November. A [companion article in this series](/articles/muhurat-trading-settlement-charges/) covers the settlement mechanics, charges, and the holiday gap in full.
 
 ### How much money do I need to participate?
 
@@ -284,6 +284,6 @@ Nothing bad. You miss the symbolic window, and that's all — there is no penalt
 
 ## Next in this series
 
-This article is the first of a four-part Muhurat Trading series. The companion pieces are [The History of Muhurat Trading: From 1957 to Today](/articles/muhurat-trading-history/); ['Muhurat Trading for Beginners: Should You Actually Buy?'](/articles/muhurat-trading-beginners/); and 'After the Muhurat Hour: Settlement, Charges, and the Holiday Gap'.
+This article is the first of a four-part Muhurat Trading series. The companion pieces are [The History of Muhurat Trading: From 1957 to Today](/articles/muhurat-trading-history/); ['Muhurat Trading for Beginners: Should You Actually Buy?'](/articles/muhurat-trading-beginners/); and ['After the Muhurat Hour: Settlement, Charges, and the Holiday Gap'](/articles/muhurat-trading-settlement-charges/).
 
 *Risk disclosure: all securities trading involves risk of loss, including the possible loss of your entire capital. Intraday positions in the Muhurat session must be squared off before the close — a 70-minute window leaves no room to recover from a wrong order. Nothing here is investment advice; participate only with money you can afford to risk.*
