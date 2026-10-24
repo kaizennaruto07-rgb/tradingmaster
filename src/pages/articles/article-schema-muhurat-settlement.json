@@ -1,0 +1,105 @@
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Article",
+   "headline": "After Muhurat Trading: Settlement, Charges, and the Holiday Gap (2026)",
+   "description": "Muhurat Trading 2026 settlement: Sun Nov 8 trades settle T+1 on Mon Nov 9, normal-day charges, Tue Nov 10 holiday gap. Timeline, charge stack, worked example.",
+   "datePublished": "2026-10-24",
+   "author": {
+    "@type": "Person",
+    "name": "Kaizen"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "name": "Monks Of Market"
+   }
+  },
+  {
+   "@context": "https://schema.org",
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "When will shares bought during Muhurat Trading 2026 settle?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Shares bought in the Muhurat session on Sunday, November 8, 2026 settle on Monday, November 9, 2026, under the standard T+1 cycle. The NSE Clearing November 2026 settlement calendars explicitly map 08-Nov-26 trades to 09-Nov-26 settlement."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Is the stock market closed after Diwali 2026?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Monday, November 9 is not closed — it is a normal trading day and the T+1 settlement date. The trading holiday is Tuesday, November 10, 2026 (Diwali–Balipratipada), when both NSE and BSE are shut. Most older articles claiming the market stays closed \"the day after Diwali\" are stale for 2026."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Are brokerage charges different in Muhurat trading?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "No. Brokerage, STT, exchange transaction charges, SEBI charges, GST, and stamp duty are identical to a normal trading day. The session is treated as a regular trading day for settlement and regulatory obligations; there is no Muhurat-specific discount in 2026."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Do stock brokers charge extra during Muhurat trading?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "No. Standard brokerage and exchange charges apply — no extra fees, no special levies for the session. As the worked example above shows, a ₹1,00,000 delivery round trip costs roughly ₹222 in statutory charges plus the broker-dependent DP charge."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Can we sell in Muhurat trading, or only buy?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Both. Buying and selling are fully allowed during the Muhurat session, across the confirmed segments (NSE equity, equity derivatives, currency derivatives, commodity derivatives, EGR, SLB; BSE equity, commodity derivatives, EGR, RFQ) — the session is not buy-only."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What happens to intraday positions when the Muhurat session ends?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "They are squared off before the session ends — typically around 10 minutes before the 3:30 PM close, broker-dependent. Intraday (MIS) positions cannot be carried overnight, regardless of the next day being a trading day. Intraday trades carry normal-day charges, including STT of 0.025% on the sell side."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Is F&O trading allowed during Muhurat trading?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes. Both NSE and BSE announced 2026 Muhurat sessions for derivatives segments — NSE covers equity derivatives, currency derivatives, commodity derivatives, and SLB; BSE covers equity, commodity derivatives, EGR, and RFQ (per the October 19, 2026 announcements). Note the Nifty weekly expiry is shifted to Monday, November 9 because Tuesday, November 10 is a holiday."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Is Muhurat trading only symbolic?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "The *intent* is symbolic — a ceremonial, auspicious start to the new Samvat year. But the trades are fully real: standard T+1 settlement, standard charges, standard risk. Shares reach your demat account and money leaves your bank exactly as on any other trading day."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Can I sell my Muhurat-session shares on Monday, November 9?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Generally yes, as a BTST-style sale — but only where your broker permits it, and never for T2T or MTF stocks. Broker policies vary (some brokers don't allow BTST at all), and standard short-delivery/auction-penalty risk applies. Check your broker before assuming. A Monday sale settles T+1 on Wednesday, November 11, after the Tuesday holiday."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What happens after Muhurat trading ends?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "After the 4:15 PM trade-modification cutoff, the clearing process runs like any other day: intraday positions are squared off, delivery trades enter T+1 settlement (completing Monday, November 9), standard charges are levied, and Monday is a normal trading day — followed by the Tuesday, November 10 trading holiday."
+     }
+    }
+   ]
+  }
+ ]
+}
