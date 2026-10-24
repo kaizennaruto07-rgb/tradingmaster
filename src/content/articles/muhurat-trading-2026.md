@@ -167,7 +167,7 @@ This is also why realistic expectations matter. A 70-minute session gives a stra
 
 ## Trades are real, not symbolic
 
-This deserves emphasis because the symbolism can mislead: **every Muhurat trade is a real trade with real settlement obligations.** Your demat account is debited or credited. T+1 settlement applies exactly as on a normal day. Brokerage and statutory charges — including STT of 0.15% on the sell side for delivery trades — are levied on every trade, including the token symbolic ones.
+This deserves emphasis because the symbolism can mislead: **every Muhurat trade is a real trade with real settlement obligations.** Your demat account is debited or credited. T+1 settlement applies exactly as on a normal day. Brokerage and statutory charges — including STT of 0.1% on both the buy and sell sides for delivery trades — are levied on every trade, including the token symbolic ones.
 
 Treat a ₹1,000 symbolic buy the way you'd treat any other buy: check the charges, confirm the order details, and don't place it at a market price in a thinly traded stock where the spread is wide.
 
@@ -203,7 +203,7 @@ Treat a ₹1,000 symbolic buy the way you'd treat any other buy: check the charg
 <rect x="506" y="184" width="150" height="70" rx="8" fill="#1b2421" stroke="#92a59c" stroke-width="1.5"/>
 <text x="581" y="208" text-anchor="middle" fill="#f2f7f4" font-size="12" font-weight="700">Wed 11 Nov</text>
 <text x="581" y="232" text-anchor="middle" fill="#92a59c" font-size="10">trading resumes</text>
-<text x="340" y="288" text-anchor="middle" fill="#92a59c" font-size="11">STT of 0.15% on the sell side for delivery trades applies to every trade —</text>
+<text x="340" y="288" text-anchor="middle" fill="#92a59c" font-size="11">STT of 0.1% on both sides for delivery trades applies to every trade —</text>
 <text x="340" y="308" text-anchor="middle" fill="#92a59c" font-size="11">including the token symbolic ones. Treat a ₹1,000 ceremonial buy like any buy.</text>
 <text x="340" y="344" text-anchor="middle" fill="#e8b64c" font-size="12" font-weight="700">Don't market-order a thinly traded stock where the spread is wide.</text>
 <text x="340" y="366" text-anchor="middle" fill="#92a59c" font-size="10">Full charge breakdown and the holiday-gap settlement mechanics get their own article in this series.</text>
@@ -272,7 +272,7 @@ There is no regulatory minimum investment — investors commonly place small tok
 
 ### Are brokerage charges the same during Muhurat trading?
 
-Yes. Brokerage and statutory charges during the Muhurat session are the same as on a regular trading day under your normal brokerage plan. For reference, the standing charge figures on equity delivery trades are STT of 0.15% on the sell side, and NSE equity-options transaction charges of 0.03553% per side all-in. (Brokers may occasionally run one-off promos around the session, but the default rule is: normal plan, normal charges.)
+Yes. Brokerage and statutory charges during the Muhurat session are the same as on a regular trading day under your normal brokerage plan. For reference, the standing charge figures on equity delivery trades are STT of 0.1% on both the buy and sell sides, and NSE equity-options transaction charges of 0.03553% per side all-in. (Brokers may occasionally run one-off promos around the session, but the default rule is: normal plan, normal charges.)
 
 ### Is Muhurat trading guaranteed to be profitable?
 
