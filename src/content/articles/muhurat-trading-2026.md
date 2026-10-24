@@ -221,7 +221,7 @@ The detailed mechanics — how T+1 interacts with the holiday gap, what the T1-h
 
 The short answer: participation is optional, and the decision is personal rather than financial. Press coverage of this year's announcement has treated the session's significance as traditional and symbolic rather than about immediate profitability — and the compressed window can actually heighten volatility. Seventy minutes of thin, sentiment-driven trading is not a strategy.
 
-If you do participate, treat it as a ceremonial first trade for the new Samvat year: small size, liquid stocks, and full awareness that you're paying real brokerage and charges on the trade. A companion article in this series — a beginner's guide to whether you should actually buy during Muhurat trading — takes this question apart in full, including how to size a symbolic trade without letting symbolism turn into an oversized position.
+If you do participate, treat it as a ceremonial first trade for the new Samvat year: small size, liquid stocks, and full awareness that you're paying real brokerage and charges on the trade. A companion article in this series — [a beginner's guide to whether you should actually buy during Muhurat trading](/articles/muhurat-trading-beginners/) — takes this question apart in full, including how to size a symbolic trade without letting symbolism turn into an oversized position.
 
 ## Risks and limitations to know before you trade
 
@@ -284,6 +284,6 @@ Nothing bad. You miss the symbolic window, and that's all — there is no penalt
 
 ## Next in this series
 
-This article is the first of a four-part Muhurat Trading series. The companion pieces are [The History of Muhurat Trading: From 1957 to Today](/articles/muhurat-trading-history/); 'Muhurat Trading for Beginners: Should You Actually Buy?'; and 'After the Muhurat Hour: Settlement, Charges, and the Holiday Gap'.
+This article is the first of a four-part Muhurat Trading series. The companion pieces are [The History of Muhurat Trading: From 1957 to Today](/articles/muhurat-trading-history/); ['Muhurat Trading for Beginners: Should You Actually Buy?'](/articles/muhurat-trading-beginners/); and 'After the Muhurat Hour: Settlement, Charges, and the Holiday Gap'.
 
 *Risk disclosure: all securities trading involves risk of loss, including the possible loss of your entire capital. Intraday positions in the Muhurat session must be squared off before the close — a 70-minute window leaves no room to recover from a wrong order. Nothing here is investment advice; participate only with money you can afford to risk.*
