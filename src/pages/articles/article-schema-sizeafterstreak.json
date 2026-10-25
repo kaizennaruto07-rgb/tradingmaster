@@ -1,0 +1,104 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "How to Size Positions After a Losing Streak",
+      "description": "How to size positions after a losing streak: step down 1% to 0.5% to 0.25% to halt, with a worked ₹2,00,000 example and the rule for earning full size back.",
+      "author": {
+        "@type": "Person",
+        "@name": "Kaizen"
+      },
+      "datePublished": "2026-10-25",
+      "publisher": {
+        "@type": "Organization",
+        "@name": "Monks Of Market"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Should I reduce position size after a losing streak?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. On this ladder, mechanically: halve your risk per trade to 0.5% after 3 consecutive losses, quarter it to 0.25% after 5, and halt live trading after 7. The decision is made before the streak, not during it, so you are following a rule rather than negotiating with yourself after each loss."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much should I reduce position size after consecutive losses?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "From a 1% baseline, cut to 0.5% after 3 consecutive losses and to 0.25% after 5 consecutive losses. On a ₹2,00,000 account with a ₹500 entry and a ₹490 stop, that means going from 200 shares to 100 shares, then to 50 shares at the starting equity. Live, risk% is on current equity: after three losses, 0.5% of ₹1,94,059.80 is about ₹970, or 97 shares. The entry and stop do not change; only the share count moves."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How many consecutive losses before I should stop trading for the day?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Live trading halts after 7 consecutive losses, or after −3R in a day, or after −6R in a week — whichever comes first. At the halt, live trading stops and only paper or demo trading and review continue. There is no \"just one more at quarter size\" exception. The way back is 5 consecutive rule-following paper/demo trades, then live resumes at the quarter rung, stepping up normally; paper trades do not count toward the live step-up count."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Should I increase position size after losses to recover faster?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Increasing size after losses to recover faster is the core anti-pattern this article warns against: it is sizing up at the exact moment when judgement is worst, and doubling risk after each loss turns an ordinary five-loss streak into a commitment of 31% of the original account across those five trades. The ladder sizes down during a streak, never up."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "When can I go back to normal position size after a losing streak?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "One rung at a time, and only after 3 consecutive rule-following trades at your current rung. From 0.25%, that earns a move to 0.5%; from 0.5%, another 3 consecutive rule-following trades earn a return to the 1% baseline. A single win never earns a return to full size, and a win that broke your rules does not count toward the 3 trades at all. After a halt, the return starts with 5 consecutive rule-following paper/demo trades and live resumption at the quarter rung; paper trades do not count toward the live step-up count."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What position size should I use during a losing streak?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The size the streak count puts you on: 1% at baseline, 0.5% after 3 consecutive losses, 0.25% after 5 consecutive losses, and no live size at all after the halt trigger. Work it through the formula — position size = (account × risk%) ÷ stop distance — so on the ₹2,00,000 starting illustration the rungs are 200, 100, and 50 shares for the ₹500 entry and ₹490 stop, with risk% always on current equity at trade time."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much drawdown do consecutive losses actually cause?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "On the compounded basis used throughout this article — each loss as a percentage of then-current equity — seven straight losses at full 1% size take a ₹2,00,000 account to ₹1,86,413.07, a loss of ₹13,586.93 or 6.79%. On the ladder, the same seven losses take it to ₹1,91,164.63, a loss of ₹8,835.37 or 4.42%. The ladder saves ₹4,751.56, entirely from the smaller sizes on losses four through seven."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I know if a losing streak means my strategy is broken?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "You do not know from the streak alone — that is what the diagnosis fork is for. Measure rule-following over your last 10–20 trades: 80% or more rule-following points to the variance lane, under 70% points to the execution lane, and the middle 70–80% band means re-measure after the next 10 trades, stay at the current rung meanwhile, and step down only if the consecutive-loss count triggers it. Either way, do not declare the strategy broken before a 30-trade sample. Size down first, diagnose second."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is risking 1% per trade enough to survive a losing streak?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "1% is the baseline that makes this ladder work, not a guarantee of survival. At 1%, seven straight losses cost 6.79% compounded at full size, and the ladder cuts that to 4.42% — survivable damage from a bad run, but not a promise. No risk percentage guarantees survival or profit; what 1% plus the ladder gives you is bounded damage and clean execution data while you diagnose the streak."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Should I stop trading completely after a losing streak, or trade smaller?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Trade smaller first. The default response to a losing streak is the ladder: halve, then quarter your size, and keep trading small while you diagnose. Stop live trading completely only at the halt trigger — 7 consecutive losses, −3R in a day, or −6R in a week — at which point you switch to paper or demo trading and review: 5 consecutive rule-following paper/demo trades, then live resumes at the quarter rung, stepping up normally. Paper trades do not count toward the live step-up count."
+          }
+        }
+      ]
+    }
+  ]
+}
