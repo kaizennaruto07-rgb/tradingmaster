@@ -5,6 +5,8 @@
   const usdt=n=>'USDT '+new Intl.NumberFormat('en-US',{minimumFractionDigits:2,maximumFractionDigits:2}).format(Number.isFinite(n)?n:0);
     const amt=n=>new Intl.NumberFormat('en-US',{minimumFractionDigits:2,maximumFractionDigits:2}).format(Number.isFinite(n)?n:0);
     const fixed=(n,d=2)=>Number.isFinite(n)?n.toFixed(d):(0).toFixed(d);
+    const fmtUnits=(n,unit)=>{if(!Number.isFinite(n))return '0';const dec=Math.min(10,((String(unit).split('.')[1]||'').length)+4);let s=n.toFixed(dec).replace(/\.?0+$/,'');return s===''||s==='-0'?'0':s;};
+    const assetLabel=()=>{const el=$('cAsset');if(!el)return 'units';const s=(el.value||'').trim().toUpperCase().replace(/[^A-Z0-9]/g,'').slice(0,10);return s||'units';};
     const paise=n=>Math.round((n+Number.EPSILON)*100)/100;
 function cryptoCalc(){
     const account=num('cAccount'),riskPct=num('cRisk'),entry=num('cEntry'),stop=num('cStop'),target=num('cTarget'),lev=num('cLeverage'),unitPerContract=num('cContract');
@@ -28,6 +30,8 @@ function cryptoCalc(){
     const units=notional/entry;
     const contracts=units/unitPerContract;
     const naiveContracts=budget/(Math.abs(stop-entry)*unitPerContract);
+    const naiveUnits=naiveContracts*unitPerContract;
+    const asset=assetLabel();
     const naiveNotional=naiveContracts*unitPerContract*entry;
     const entryBase=notional*entryRate,entryGst=entryBase*.18;
     const exitNotional=notional*targetExitRatio;
@@ -44,14 +48,14 @@ function cryptoCalc(){
     const rr=netStop<0?net/(-netStop):0;
     const entryFriction=entryRate*1.18,exitFriction=exitRate*1.18+(tdsOn?.01:0);
     const breakEvenRatio=dir===1?((1+entryFriction+fundingRatio)/(1-exitFriction)-1):(1-(1-entryFriction-fundingRatio)/(1+exitFriction));
-    $('cNet').innerHTML='<span class="unit">USDT</span>'+amt(net);$('cNet').className='result-big '+(net>=0?'good':'bad');$('cNotional').textContent=usdt(notional);$('cContracts').textContent=fixed(contracts,4)+' contracts';$('cMargin').textContent=usdt(notional/lev);$('cBudget').textContent=usdt(budget);$('cRound').textContent=usdt(round);
+    $('cNet').innerHTML='<span class="unit">USDT</span>'+amt(net);$('cNet').className='result-big '+(net>=0?'good':'bad');$('cNotional').textContent=usdt(notional);$('cContracts').textContent=fixed(contracts,4)+' contracts';$('cUnits').textContent=fmtUnits(units,unitPerContract)+' '+asset;$('cMargin').textContent=usdt(notional/lev);$('cBudget').textContent=usdt(budget);$('cRound').textContent=usdt(round);
     $('cGross').textContent=usdt(gross);$('cNetStop').innerHTML='<span class="unit">USDT</span>'+amt(netStop);$('cNetStop').className='result-big '+(netStop>=0?'good':'bad');$('cRR').textContent=netStop<0?fixed(rr,2)+' : 1':'—';$('cBE').textContent=fixed(Math.max(0,breakEvenRatio)*100,3)+'%';
     $('cEntryBase').textContent=usdt(entryBase);$('cEntryGst').textContent=usdt(entryGst);$('cEntryTotal').textContent=usdt(entryBase+entryGst);$('cExitBase').textContent=usdt(exitBase);$('cExitGst').textContent=usdt(exitGst);$('cExitTotal').textContent=usdt(exitBase+exitGst);$('cStopExitTotal').textContent=usdt(stopExitBase+stopExitGst);$('cFundingCost').textContent=(funding<0?'−':'')+usdt(Math.abs(funding));$('cTdsCost').textContent=usdt(tds);
-    $('cContractsNaive').textContent=fixed(naiveContracts,4)+' contracts';$('cNotionalNaive').textContent=usdt(naiveNotional);
+    $('cContractsNaive').textContent=fixed(naiveContracts,4)+' contracts';$('cUnitsNaive').textContent=fmtUnits(naiveUnits,unitPerContract)+' '+asset;$('cNotionalNaive').textContent=usdt(naiveNotional);
   }
-  ['cAccount','cRisk','cEntry','cStop','cTarget','cContract','cLeverage','cEntryType','cExitType','cFunding','cHours','cTds'].forEach(id=>$(id).addEventListener('input',cryptoCalc));
+  ['cAccount','cRisk','cEntry','cStop','cTarget','cContract','cAsset','cLeverage','cEntryType','cExitType','cFunding','cHours','cTds'].forEach(id=>$(id).addEventListener('input',cryptoCalc));
   document.querySelectorAll('input[name="cDir"]').forEach(x=>x.addEventListener('change',cryptoCalc));
-  $('cryptoExample').addEventListener('click',()=>{$('cAccount').value=10000;$('cRisk').value=1;$('cEntry').value=108000;$('cStop').value=107000;$('cTarget').value=111000;$('cContract').value=0.001;$('cLeverage').value=10;$('cEntryType').value='0.05';$('cExitType').value='0.05';$('cFunding').value=0.01;$('cHours').value=8;$('cTds').checked=false;cryptoCalc()});
+  $('cryptoExample').addEventListener('click',()=>{$('cAccount').value=10000;$('cRisk').value=1;$('cEntry').value=108000;$('cStop').value=107000;$('cTarget').value=111000;$('cContract').value=0.001;$('cAsset').value='BTC';$('cLeverage').value=10;$('cEntryType').value='0.05';$('cExitType').value='0.05';$('cFunding').value=0.01;$('cHours').value=8;$('cTds').checked=false;cryptoCalc()});
 
     cryptoCalc();
 })();
