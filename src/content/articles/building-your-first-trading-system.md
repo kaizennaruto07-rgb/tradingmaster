@@ -314,7 +314,7 @@ And the closing line of the whole operating manual: a system without a written k
 
 This was the last brick of the foundation. Part 1 gave you every component; this article assembled them into the measurement machine. What it does *not* decide is when to scale, or how the machine behaves under stress — because a system that passes the ladder in calm conditions still needs to survive losing streaks, regime changes, and its own parameter drift.
 
-That is the next cluster: stress-testing the machine you just built. The first upgrade the new system earns is learning [how to size positions after a losing streak](/articles/how-to-size-positions-after-a-losing-streak/) — followed by the Kelly criterion, drawdown recovery math, and walk-forward testing. The machine is built. Now we find out how much punishment it can take.
+That is the next cluster: stress-testing the machine you just built. The first upgrade the new system earns is learning [how to size positions after a losing streak](/articles/how-to-size-positions-after-a-losing-streak/) — followed by [the Kelly criterion](/articles/kelly-criterion-calculator-for-traders/), drawdown recovery math, and walk-forward testing. The machine is built. Now we find out how much punishment it can take.
 
 ## Frequently asked questions
 
