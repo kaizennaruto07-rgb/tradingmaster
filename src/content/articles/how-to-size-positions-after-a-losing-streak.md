@@ -252,7 +252,7 @@ A final limitation: a 50% loss needs a 100% gain to recover, so the damage a str
 
 Giving back wins is a different problem from losing streaks, and it is treated separately in [why traders give back their profits](/articles/why-traders-give-back-profits/); do not conflate the two.
 
-One last scope note: Kelly sizing answers a different question — how big to bet given your edge — and it gets its own treatment elsewhere. It is not the streak ladder, and the two should not be mixed.
+One last scope note: [Kelly sizing](/articles/kelly-criterion-calculator-for-traders/) answers a different question — how big to bet given your edge — and it gets its own treatment elsewhere. It is not the streak ladder, and the two should not be mixed.
 
 ## Frequently Asked Questions
 
