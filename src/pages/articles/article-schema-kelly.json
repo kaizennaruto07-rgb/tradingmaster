@@ -1,0 +1,105 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "Kelly Criterion Calculator for Traders",
+      "description": "Calculate the Kelly criterion from win rate and payoff ratio, with a ₹2,00,000 worked example, share conversion, and fractional Kelly guidance for traders.",
+      "author": {
+        "@type": "Person",
+        "@name": "Kaizen"
+      },
+      "datePublished": "2026-10-25",
+      "publisher": {
+        "@type": "Organization",
+        "@name": "Monks Of Market"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is the Kelly criterion in trading?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Kelly criterion is a formula that gives the fraction of your trading account to risk on each trade, based on the strategy's own win rate and average win-to-loss ratio, in order to maximise long-run logarithmic growth for a repeated edge. It sizes risk from measured statistics rather than from a borrowed fixed percentage. Full Kelly is the theoretical maximum-growth fraction; in practice it is used as a ceiling, with fractional Kelly traded instead."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do you calculate the Kelly criterion?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Use Kelly % = W − [(1 − W) ÷ R], where W is your win rate as a decimal and R is your average win divided by your average loss, both measured from your own closed trade history. For example, W = 0.60 and R = 1.5 gives 0.60 − (0.40 ÷ 1.5) = 33.33% full Kelly, or 16.67% at half Kelly and 8.33% at quarter Kelly. Multiply the fraction by your account size for the rupee risk amount, then divide by your per-share stop distance for shares."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is a good Kelly percentage for a retail trader?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "There is no single \"good\" Kelly percentage that applies to everyone. The survivable default is fractional Kelly — half or quarter of the full figure — combined with a fixed-risk cap, with the exact fraction set by how confident you are in your inputs and how much drawdown you can tolerate. The less certain the inputs, the smaller the fraction. A trader with a short history or a changing regime should stay at the smaller end, and let the fixed-risk cap bind first."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why is full Kelly considered too risky?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Three reasons: inputs are estimated from finite samples, so estimation error overstates the true edge and leads to over-betting; the single-bet formula does not size simultaneous or correlated positions; and full-Kelly swings are deep enough to break discipline before the mathematics pays off. Fractional Kelly directly addresses all three by cutting the stake, leaving room for input error, and producing a ride a trader can actually stay with."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is half Kelly / fractional Kelly, and which fraction should I use?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Fractional Kelly means trading a fraction of the full Kelly percentage — half Kelly trades 50% of f\\*, quarter Kelly trades 25% of f\\*. As the standard textbook result, half Kelly retains approximately 75% of full Kelly's long-run growth while roughly halving volatility (the size of the swings). Quarter Kelly gives up more growth again, but at much lower drawdowns than half Kelly. Choose half Kelly when inputs are reasonably well measured and drawdown tolerance is moderate; choose quarter Kelly — or a fixed-risk cap below it — when inputs are newer, less certain, or the strategy is still proving itself."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does a negative Kelly percentage mean?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A zero or negative Kelly result means the measured win rate and payoff ratio show no edge. Do not trade that system, and do not try to \"size it anyway\" at a smaller fraction. Fix the strategy, test whether a genuine edge exists on fresh data, or discard it. No position size turns a system with no edge into a profitable one."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How many trades do I need before I can trust my Kelly inputs?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "As the prescription of this article, use at least 50–100 trades from one consistent strategy before trusting the inputs, and re-check every 50–100 trades or quarterly. This is a recommended discipline, not a verified statistical threshold — even at 100 trades, a small sample still carries wide uncertainty. Below the floor, treat any Kelly figure as indicative at best, and size under your fixed-risk rule instead."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does the Kelly criterion work for options / intraday trading?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The formula can be applied wherever a win rate and an average win and loss can be honestly measured from actual trade history, including intraday trading. But trading wins and losses are not clean, fixed-odds binary bets: options expiry, gap risk, leverage, and changing volatility all break the tidy assumptions behind the formula. That makes fractional Kelly and a fixed-risk cap more important for options and intraday trading, not less — and no options-specific success rate should be assumed. If the win rate and averages cannot be honestly measured for the instrument and timeframe in question, Kelly should not be used for it."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Kelly criterion vs fixed 2% risk — which is better?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Neither wins in all cases. Kelly is better when you have a well-measured, stable edge and want the size to reflect that edge. A fixed 2% rule is better when inputs are uncertain, trades are correlated, or regimes are changing, because it caps survival risk regardless of what the edge appears to be. The strongest practical rule combines them: fractional Kelly as the ceiling, fixed risk as the cap, and the smaller rupee amount as the trade's risk."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I convert a Kelly percentage into a number of shares?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Divide the rupee risk amount by your per-share stop distance, and floor the result to whole shares. For example, a quarter-Kelly risk of ₹16,667 with a ₹50 per-share stop gives ₹16,667 ÷ ₹50 = 333.33, or 333 shares. Kelly defines how many rupees to risk; the stop distance converts that risk into shares. Without a defined stop, there is no conversion — and no trade on Kelly grounds."
+          }
+        }
+      ]
+    }
+  ]
+}
