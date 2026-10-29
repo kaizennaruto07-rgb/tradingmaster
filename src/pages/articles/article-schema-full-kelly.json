@@ -1,0 +1,105 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "Why Full Kelly Bankrupts Retail Traders",
+      "description": "Why full Kelly bankrupts retail traders: betting the optimal fraction on estimated win rates is systematic overbetting. Learn the trap and the survival ladder.",
+      "author": {
+        "@type": "Person",
+        "@name": "Kaizen"
+      },
+      "datePublished": "2026-10-26",
+      "publisher": {
+        "@type": "Organization",
+        "@name": "Monks Of Market"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Because of the shape of the growth curve. Half Kelly keeps about 75% of full-Kelly log growth under the standard c(2−c) result, at roughly half the swings — the top of the growth curve is flat, but the variance curve is steep. Giving up a quarter of theoretical growth buys a large reduction in drawdowns and in the emotional pressure that causes quitting. There is also a conditional safety-margin argument, and the condition is the whole point: half Kelly on an inflated estimate lands at or below true Kelly ONLY when the true edge is at least half the estimated edge. In the article's central case that condition holds — the true edge is exactly half the estimate, so half Kelly on the 33.33% estimate is 16.67%, exactly true Kelly. But when the true edge is less than half the estimate, even half Kelly overbets: in the second check, half of the inflated 25% estimate is 12.5%, which is 1.5× the 8.33% truth — past the peak, not on the safe side of it."
+          },
+          "name": "Why do professional traders use half Kelly instead of full Kelly?"
+        },
+        {
+          "@type": "Question",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Kelly requires a positive edge, meaning the win rate times the payoff outweighs the loss rate — not a win rate above 50%. The counterexample proves it: W = 0.45, R = 1.5 gives Kelly of 0.45 − (0.55 ÷ 1.5) = 8.33%, a positive fraction, despite a sub-50% win rate, because the wins are large enough to compensate. Conversely, a win rate above 50% with a poor payoff can give zero or negative Kelly. Judge the edge, not the win rate alone: positive edge, positive fraction; no edge, no trade."
+          },
+          "name": "Does the Kelly criterion require a win rate above 50%?"
+        },
+        {
+          "@type": "Question",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "You overbet — mechanically, not metaphorically. The article's central example shows a 10-point overestimate (60% estimated versus 50% true, at R = 1.5) doubling the bet to 2× true Kelly, where idealised expected growth hits zero. A second check shows a 10-point error at a smaller true edge (55% versus 45%, at R = 1.5) producing a 3.0× true-Kelly bet, into negative-growth territory. The penalty grows fast past the peak: a little overbetting costs a little growth, but further overbetting costs growth steeply while variance keeps rising. That asymmetry is why overestimating is far more dangerous than underestimating, and why fractional Kelly — which shrinks estimation-error overbetting by design, though it cannot guarantee you stay on the safe side of the peak — is the standard defence."
+          },
+          "name": "What happens if you overestimate your win rate when using Kelly?"
+        },
+        {
+          "@type": "Question",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, through the practical channels, not because the formula mathematically guarantees ruin. In theory, fractional betting of current capital cannot hit exactly zero. In practice, a real edge sized at full Kelly on estimated inputs produces drawdowns of half the account as a normal outcome; margin or leverage can force an exit mid-drawdown; correlated positions can stack into one giant bet; and quitting at the bottom turns a temporary loss permanent. Any one of those channels can end a strategy that had a genuine edge. The defence is the survival ladder: fraction, cap, correlation budget, re-estimation, and the negative-Kelly rule, applied as one system."
+          },
+          "name": "Can full Kelly bankrupt you even if your strategy has a real edge?"
+        },
+        {
+          "@type": "Question",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No — and for many retail traders it is the right working size. Quarter Kelly keeps 43.75% of full-Kelly log growth under the standard c(2−c) result, which is a substantial share of the growth at a small fraction of the variance. It is the appropriate fraction when the sample is small (under 100 trades), the system is new, or the trader has not yet lived through a real drawdown with it. 'Too conservative' assumes the goal is maximum theoretical growth; the real goal is survival long enough for a real edge to compound. A trader who survives at quarter Kelly beats a trader who quits at full Kelly, regardless of what the growth curves promised."
+          },
+          "name": "Is quarter Kelly too conservative?"
+        },
+        {
+          "@type": "Question",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Do not trust Kelly inputs from fewer than 50–100 trades, and re-check them every 50–100 trades, or quarterly, or after a clear regime change, whichever comes first. Present that plainly for what it is: a practitioner working rule, not a statistical theorem. Even at 100 trades, the win-rate standard error at p = 0.5 is still roughly 5 percentage points — which means even a 'validated' sample leaves material estimation error, and that remaining error is itself an argument for fractional Kelly rather than full Kelly. Below 50 trades, the error is large enough to double or triple the true Kelly fraction, as the article's worked examples show. More trades help, but no realistic retail sample makes Kelly inputs exact; the fraction, not the sample size, is what ultimately absorbs the error."
+          },
+          "name": "How many trades do you need before trusting Kelly inputs?"
+        },
+        {
+          "@type": "Question",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Only if it is applied to total correlated exposure, not per leg. Sizing each correlated leg separately stacks the bet: under perfect correlation, three legs at a '33% Kelly' risk each are roughly 99% exposure to one outcome. The fix is a correlation budget — group positions that will plausibly move together, size the group as one Kelly bet, and split the group's budget across the legs. Under partial correlation the stacking is smaller than the perfect-correlation extreme but still greater than a single leg, so the budget rule applies generally, not only to identical positions. If you cannot identify which open positions are correlated, you cannot know what fraction of Kelly you are truly betting, and that alone justifies a smaller fraction."
+          },
+          "name": "Does Kelly work if your trades are correlated?"
+        },
+        {
+          "@type": "Question",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Kelly gives you a rupee risk fraction — a percentage of capital to risk on the trade. Position size is how many shares, lots, or contracts that risk translates into, and it depends on the distance to your stop-loss: divide the rupee risk by the stop distance to get the position. A ₹33,340 risk with a ₹100 stop distance is 333 shares; the same risk with a ₹500 stop distance is about 67 shares. Kelly defines the risk; the stop defines the size. Confusing the two — treating the Kelly percentage as a share count, or sizing shares without a stop — is a fast route to risking far more than the formula intended."
+          },
+          "name": "What is the difference between Kelly risk and position size?"
+        },
+        {
+          "@type": "Question",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Affordability does not change the overbetting mechanics: an estimated 33.33% bet on a 16.67% truth is still 2× true Kelly whether the account holds ₹2,00,000 or ₹20,000. The practical channels still bite, too — margin calls do not care that the account was affordable, correlated legs still stack, and quitting at the bottom still turns a temporary loss permanent. A small account is a reason for a smaller fraction, not for full Kelly: the stakes feel trivial until the drawdown arrives, and by then the fraction, not the affordability, decides whether the trader survives. If the money is genuinely affordable to lose, the rational response is to treat it as tuition at a survivable fraction — half or quarter Kelly under a hard cap — not to spend it faster at full Kelly."
+          },
+          "name": "Is full Kelly safe if I only risk a small account I can afford to lose?"
+        },
+        {
+          "@type": "Question",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Fixed 1% is a hard cap independent of your estimated edge: it risks the same fraction whether your edge is strong, weak, or unmeasured. Kelly is a ceiling computed from your estimated edge: it rises with a stronger measured edge and falls to zero when there is no edge. The survival ladder uses both, with the cap overriding any Kelly output above it. Used alone, fixed 1% ignores what your system actually justifies; used alone, Kelly trusts estimates that are always noisy. Together, they cover each other's weakness: Kelly adapts the ceiling to the edge, and the fixed cap stops any estimate — however flattering — from producing a ruinous bet."
+          },
+          "name": "How is Kelly different from risking a fixed 1% per trade?"
+        }
+      ]
+    }
+  ]
+}
