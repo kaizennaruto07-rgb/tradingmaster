@@ -318,7 +318,7 @@ It is worth stating the limits plainly, because sizing formulas invite over-clai
 
 **Kelly does not predict the next trade, remove drawdowns, or guarantee profit.** Even a correctly calculated fractional Kelly size will lose on many individual trades and will go through drawdowns. What it offers, when inputs are honest and the fraction is kept well below the ceiling, is a disciplined link between how good the edge measures up to be and how much of the account each trade puts at risk. That discipline — not any promise of returns — is the value.
 
-For readers who want to see the failure side of this story in full, a separate follow-up, Why Full Kelly Bankrupts Retail Traders, will examine blow-up mechanics in depth. This article's job is the working mathematics; the discipline above is what keeps that mathematics survivable.
+For readers who want to see the failure side of this story in full, a separate follow-up, [Why Full Kelly Bankrupts Retail Traders](/articles/why-full-kelly-bankrupts-retail-traders/), examines blow-up mechanics in depth. This article's job is the working mathematics; the discipline above is what keeps that mathematics survivable.
 
 ## Frequently Asked Questions
 
