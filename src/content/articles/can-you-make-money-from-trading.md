@@ -308,7 +308,7 @@ No. Even consistently profitable traders have losing days and losing months. A t
 
 Daily profit targets are dangerous because they pressure traders into taking trades their plan does not justify. Professionals judge results over quarters, not days, and a trader who claims to profit every day is either lying or has too short a record to know better.
 
-### Why do most traders lose money?
+### [Why do most traders lose money?](/articles/why-do-most-traders-lose-money-in-india/)
 
 Most traders lose money for a short list of repeatable reasons: they risk too much per trade, trade without stop-losses, overtrade out of boredom or revenge, ignore costs, and judge strategies on tiny samples.
 
