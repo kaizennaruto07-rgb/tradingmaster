@@ -41,6 +41,7 @@ import muhuratBeginnersSchema from './article-schema-muhurat-beginners.json';
 import muhuratSettlementSchema from './article-schema-muhurat-settlement.json';
 import sizeAfterStreakSchema from './article-schema-sizeafterstreak.json';
 import kellySchema from './article-schema-kelly.json';
+import fullKellySchema from './article-schema-full-kelly.json';
 import canYouMakeMoneySchema from './article-schema-can-you-make-money-from-trading.json';
 import whatIsTradingSchema from './article-schema-what-is-trading-and-how-does-it-work.json';
 import earn1000Schema from './article-schema-how-to-earn-1000-rupees-per-day-from-trading.json';
@@ -96,6 +97,7 @@ const schemaData = slug === 'options-trading-charges-india' ? optionsSchema
   : slug === 'muhurat-trading-settlement-charges' ? muhuratSettlementSchema
   : slug === 'how-to-size-positions-after-a-losing-streak' ? sizeAfterStreakSchema
   : slug === 'kelly-criterion-calculator-for-traders' ? kellySchema
+  : slug === 'why-full-kelly-bankrupts-retail-traders' ? fullKellySchema
   : slug === 'can-you-make-money-from-trading' ? canYouMakeMoneySchema
   : slug === 'what-is-trading-and-how-does-it-work' ? whatIsTradingSchema
   : slug === 'how-to-earn-1000-rupees-per-day-from-trading' ? earn1000Schema
@@ -182,6 +184,8 @@ const toolCta = slug === 'options-trading-charges-india'
   ? { href: '/tools/position-size/', label: 'Calculate your streak-adjusted size' }
   : slug === 'kelly-criterion-calculator-for-traders'
   ? { href: '/tools/position-size/', label: 'Calculate your position size' }
+  : slug === 'why-full-kelly-bankrupts-retail-traders'
+  ? { href: '/tools/risk-of-ruin/', label: 'Calculate your risk of ruin' }
   : slug === 'can-you-make-money-from-trading'
   ? { href: '/tools/risk-of-ruin/', label: 'Calculate your risk of ruin' }
   : slug === 'what-is-trading-and-how-does-it-work'
