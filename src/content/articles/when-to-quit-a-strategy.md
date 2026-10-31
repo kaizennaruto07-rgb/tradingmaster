@@ -261,7 +261,7 @@ None of the retail blogs ranking for this topic cover the Indian cost stack. It 
 The locked figures:
 
 - **STT on sale of options: 0.15%** (raised from 0.10%, effective 1 April 2026 via the Finance Act 2026; sell-side premium STT). STT on exercised ITM options is also 0.15% (raised from 0.125%). Futures sale STT is 0.05%.
-- **NSE equity-options all-in charge: 0.03553% per side** — ₹3,553 per crore of premium turnover (₹3,503 transaction charge + ₹50 IPFT contribution), per NSE circular NSE/FA/73061, effective 1 March 2026. This is the total-outflow figure traders actually pay; do not use the superseded 0.03503% component-only figure.
+- **NSE equity-options all-in charge: 0.03553% per side** — ₹3,553 per crore of premium turnover (₹3,552.99 transaction charge + ₹0.01 IPFT contribution), per NSE circular NSE/FA/73061, effective 1 March 2026. This is the total-outflow figure traders actually pay; do not use the superseded 0.03503% component-only figure.
 - **Nifty lot size: 65** (revised from 75, effective 28-Oct-2025).
 
 A quick illustration of why this matters for the quit decision. Suppose you sell one lot of Nifty options and collect ₹30,000 in premium. The STT on the sale side alone is 0.15% × ₹30,000 = **₹45**. The NSE all-in charge at 0.03553% is roughly **₹10.66 per side** — about ₹21 round-trip before brokerage, stamp duty, SEBI charges, and GST. Against a small edge — say 0.1R per trade on a ₹2,000 risk, or ₹200 of expected value per trade — a ~₹66+ round-trip cost stack is not a rounding error. It is a third of your edge, gone before the market moves.
