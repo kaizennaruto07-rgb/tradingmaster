@@ -131,7 +131,7 @@ Here is the full charge stack for equity delivery, with verified rates (2026):
 | GST | 18% on (brokerage + transaction charges + SEBI charges) (verified 2026-10-24) | Buy + sell |
 | DP charge | ₹13–25 per scrip + 18% GST, broker-dependent (verified 2026-10-24) | Sell leg only (delivery debit) |
 
-For derivatives context: futures sell-side STT is **0.05%** from April 1, 2026 (Finance Act 2026; NSE circular NSE/FATAX/73524 dated 31-Mar-2026) — not 0.02%. Options sell-side STT is 0.15% of premium, and exercised ITM options carry 0.15% STT on intrinsic value (Budget 2026). The NSE equity-options transaction charge is 0.03553% per side all-in (₹3,553/crore = ₹3,503 transaction + ₹50 IPFT; NSE circular NSE/FA/73061, effective March 1, 2026). Our [options trading charges reference](/articles/options-trading-charges-india/) carries the full F&O stack.
+For derivatives context: futures sell-side STT is **0.05%** from April 1, 2026 (Finance Act 2026; NSE circular NSE/FATAX/73524 dated 31-Mar-2026) — not 0.02%. Options sell-side STT is 0.15% of premium, and exercised ITM options carry 0.15% STT on intrinsic value (Budget 2026). The NSE equity-options transaction charge is 0.03553% per side all-in (₹3,553/crore = ₹3,552.99 transaction + ₹0.01 IPFT; NSE circular NSE/FA/73061, effective March 1, 2026). Our [options trading charges reference](/articles/options-trading-charges-india/) carries the full F&O stack.
 
 <svg viewBox="0 0 680 360" role="img" aria-label="Muhurat Trading 2026 charge stack for a Rs 1,00,000 delivery round trip: STT, stamp duty, transaction charge, SEBI fee, GST" class="viz">
 <text x="340" y="28" text-anchor="middle" fill="#f2f7f4" font-size="16" font-weight="700">The &#8377;1,00,000 round trip: &#8377;222.48 in statutory charges</text>
