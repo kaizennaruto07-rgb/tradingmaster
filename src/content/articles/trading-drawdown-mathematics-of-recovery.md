@@ -326,7 +326,7 @@ One distinction to keep clean: **drawdown is ANY temporary dip from a peak; maxi
 
 Here is what no global drawdown calculator mentions: **every trade on the fall AND the climb pays the Indian cost stack.** The recovery climb is taxed.
 
-Quoted verbatim from the locked figures: NSE equity-options: 0.03553%/side all-in (Rs. 3,553/crore = Rs. 3,503 transaction charge + Rs. 50 IPFT, per NSE circular NSE/FA/73061 eff Mar 1, 2026); STT 0.15% on exercised ITM options and sell-premium; Nifty lot size 65 (w.e.f. 28-Oct-2025 per NSE/FAOP/70616).
+Quoted verbatim from the locked figures: NSE equity-options: 0.03553%/side all-in (Rs. 3,553/crore = Rs. 3,552.99 transaction charge + Rs. 0.01 IPFT, per NSE circular NSE/FA/73061 eff Mar 1, 2026); STT 0.15% on exercised ITM options and sell-premium; Nifty lot size 65 (w.e.f. 28-Oct-2025 per NSE/FAOP/70616).
 
 Think about what that means for the 144-trade climb in the illustration above. Each of those recovery trades pays exchange transaction charges on both legs, and any exercised ITM option pays 0.15% STT. The required 42.86% is the *gross* climb — your system has to earn that *plus* the cost stack just to touch the old peak. A drawdown in India is therefore always deeper than the table says, by roughly the cost of every trade it takes to get out.
 
