@@ -59,7 +59,7 @@ Every journal field for P&L and R must be computed **net of costs**, or the jour
 
 - **Brokerage:** flat ₹20 per order at discount brokers (₹40 round trip per trade).
 - **STT:** 0.15% on the sale of option contracts (premium) — and 0.15% of intrinsic value on *exercised* ITM options, both effective 1 April 2026 per Budget 2026 (raised from 0.10% and 0.125%).
-- **NSE exchange charges:** 0.03553% per side on options premium turnover — the *total outflow* line (₹3,553 per crore: ₹3,503 transaction charge + ₹50 IPFT contribution), effective 1 March 2026 per NSE circular NSE/FA/73061. Always use the total outflow line, not the transaction-charge component alone.
+- **NSE exchange charges:** 0.03553% per side on options premium turnover — the *total outflow* line (₹3,553 per crore: ₹3,552.99 transaction charge + ₹0.01 IPFT contribution), effective 1 March 2026 per NSE circular NSE/FA/73061. Always use the total outflow line, not the transaction-charge component alone.
 - **Stamp duty:** buy side only — 0.003% for options (₹300 per crore).
 - **SEBI turnover fee:** ₹10 per crore of turnover.
 - **GST:** 18% on brokerage + exchange charges + SEBI fee (not on trade value).
