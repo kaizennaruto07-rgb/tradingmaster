@@ -87,7 +87,7 @@
      "name": "Is a 3-day break different from a daily loss limit?",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "Yes. The daily loss limit is dollar-based and intraday — it protects the *day*. The 3-day rule is day-count based and multi-day — it protects the *week and the month*. They stack: the loss limit ends the session, the 3-day rule ends the stretch. And every avoided revenge trade saves real friction: using the locked Indian figures — NSE equity-options: 0.03553%/side all-in (Rs. 3,553/crore = Rs. 3,503 transaction charge + Rs. 50 IPFT, per NSE circular NSE/FA/73061 eff Mar 1, 2026); STT: 0.15% on the sell premium (sell-side); Nifty lot size: 65 (w.e.f. 28-Oct-2025, per NSE/FAOP/70616) — a single Nifty option revenge round trip (₹200 premium × 65 lot) costs ~₹29 in exchange-level charges alone (₹19.50 STT on the sell leg + ~₹9.24 NSE both sides), before brokerage and GST."
+      "text": "Yes. The daily loss limit is dollar-based and intraday — it protects the *day*. The 3-day rule is day-count based and multi-day — it protects the *week and the month*. They stack: the loss limit ends the session, the 3-day rule ends the stretch. And every avoided revenge trade saves real friction: using the locked Indian figures — NSE equity-options: 0.03553%/side all-in (Rs. 3,553/crore = Rs. 3,552.99 transaction charge + Rs. 0.01 IPFT, per NSE circular NSE/FA/73061 eff Mar 1, 2026); STT: 0.15% on the sell premium (sell-side); Nifty lot size: 65 (w.e.f. 28-Oct-2025, per NSE/FAOP/70616) — a single Nifty option revenge round trip (₹200 premium × 65 lot) costs ~₹29 in exchange-level charges alone (₹19.50 STT on the sell leg + ~₹9.24 NSE both sides), before brokerage and GST."
      }
     }
    ]
