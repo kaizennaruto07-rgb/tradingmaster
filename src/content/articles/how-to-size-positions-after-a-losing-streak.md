@@ -99,7 +99,7 @@ The ladder saves ₹4,751.56 over seven straight losses (₹1,91,164.63 − ₹1
 
 For the full mathematics of what a drawdown then takes to recover, see [Trading Drawdown: The Mathematics of Recovery](/articles/trading-drawdown-mathematics-of-recovery/).
 
-The same ladder scales to any account size: the percentages are the protocol, not the rupee figures, so a smaller account follows the same rungs. Small-account sizing gets its own dedicated treatment elsewhere; nothing about this ladder depends on the ₹2,00,000 figure.
+The same ladder scales to any account size: the percentages are the protocol, not the rupee figures, so a smaller account follows the same rungs. [Small-account sizing](/articles/position-sizing-for-small-accounts/) gets its own dedicated treatment here; nothing about this ladder depends on the ₹2,00,000 figure.
 
 <figure class="article-visual" data-reveal>
 <svg viewBox="0 0 680 340" role="img" aria-label="Equity path over seven straight losses on a ₹2,00,000 account: full 1% size falls to ₹1,86,413.07, a 6.79% loss, while the ladder falls only to ₹1,91,164.63, a 4.42% loss — saving ₹4,751.56." class="viz">
