@@ -1,0 +1,105 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "Position Sizing for Small Accounts: The ₹ Math, the Round-Down Rule, and When to Skip a Trade",
+      "description": "Position sizing for small accounts: the ₹ formula, 1% risk, round-down and skip-trade rules, with examples for ₹25,000, ₹50,000 and ₹1,00,000 accounts.",
+      "author": {
+        "@type": "Person",
+        "@name": "Kaizen"
+      },
+      "datePublished": "2026-10-26",
+      "publisher": {
+        "@type": "Organization",
+        "@name": "Monks Of Market"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Use the same formula as any account, then round down. Risk budget = account × risk% (at 1%, a ₹50,000 account gives ₹500). Risk per share = entry price − stop price (₹400 − ₹380 = ₹20). Shares = floor(₹500 ÷ ₹20) = 25 shares. The formula does not change for a small account; the rounding-down step and the occasional skip matter more, because whole shares and small budgets make fractions and zero-share results common."
+          },
+          "name": "How do I calculate position size for a small account?"
+        },
+        {
+          "@type": "Question",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "This article recommends 1% per trade as its default guideline. It is a risk guideline, not a guarantee of profit or survival. The reason for keeping it small is the compounded streak maths: 10 straight losses at 1% risk compound to about a 9.6% drawdown, while the same streak at 10% risk compounds to about a 65.1% drawdown, needing roughly 186% growth on the remainder to break even."
+          },
+          "name": "How much should I risk per trade with a small account?"
+        },
+        {
+          "@type": "Question",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It feels small, and that feeling is the trap. Raising risk because ₹250 or ₹500 looks insignificant is how small accounts become smaller: the account is small, not the rule. A small risk budget still produces real share counts — 25 shares in both the ₹25,000 and ₹50,000 examples — and it is what lets the account survive the losing streaks that every trader faces."
+          },
+          "name": "Is the 1% rule too conservative for a small account?"
+        },
+        {
+          "@type": "Question",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "For delivery trading, the technical minimum is the price of one share: there is no fixed exchange minimum beyond being able to buy a share. As practical guidance — not a regulation or exchange rule — one source suggests a learning range of ₹10,000–₹50,000 for delivery and swing trading. Futures and options are not a starting point for small accounts, because lot sizes and margins make them capital-heavy."
+          },
+          "name": "What is the minimum capital needed to start trading in India?"
+        },
+        {
+          "@type": "Question",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Round down to whole shares, always. A result of 13.33 shares becomes 13 shares, because rounding up would breach the risk budget. If the result is below one share — for example, a ₹100 risk budget against ₹150 risk per share — the result is zero shares: skip the trade or re-plan it around a tighter valid stop. Never widen the risk budget to make a fractional or zero-share result fit."
+          },
+          "name": "What if the formula gives me a fraction of a share?"
+        },
+        {
+          "@type": "Question",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Use the same risk every trade, not the same share count. Share counts vary because stop distances vary: the ₹50,000 example gives 25 shares at ₹20 risk per share, while the ₹1,00,000 example gives 100 shares at ₹10 risk per share. Fix the risk percentage, let the stop distance set the share count, and the position size will differ from trade to trade by design."
+          },
+          "name": "Should I use the same position size for every trade?"
+        },
+        {
+          "@type": "Question",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No — leverage changes the margin posted, not the loss at the stop. A position sized to risk ₹500 at its stop still risks ₹500 at that stop whether leverage is used or not, provided the stop fills. The caveat matters: if the price gaps past the stop, or if higher leverage brings liquidation closer to the entry price and the position is liquidated before the stop, the realised loss can be larger than planned. Leverage must never be used to take a size the risk budget cannot afford."
+          },
+          "name": "Does leverage change my position size?"
+        },
+        {
+          "@type": "Question",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "There is no universal deployment cap to quote; the answer comes from the article's own worked maths. The ₹50,000 example deploys ₹10,000 (20% of the account) for 1% risk, while the ₹25,000 example deploys ₹12,500 (50%) for the same 1% risk. Deployment therefore has to be checked separately from risk on every trade, with a short checklist of questions per trade: how much capital is left free after this deployment? How concentrated is the account in this one name? Can the account fund the full position value, not just the planned loss? If any of those answers is uncomfortable, that is the prompt to take a second look — not a cap, but a check."
+          },
+          "name": "How much of my small account should one trade deploy?"
+        },
+        {
+          "@type": "Question",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Skip it when the formula gives zero shares at a valid stop. The worked case is a ₹10,000 account at 1% risk — a ₹100 risk budget — facing a setup with ₹150 risk per share: floor(₹100 ÷ ₹150) = 0 shares, so the trade cannot be taken at that stop. The alternatives are to skip it or to find a tighter valid stop the setup genuinely supports. Widening the risk budget to fit the trade is not a valid alternative."
+          },
+          "name": "When should I skip a trade because my account is too small?"
+        },
+        {
+          "@type": "Question",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "In rupee terms, it increases automatically: 1% of a larger account is a larger amount, so the same rule produces larger risk budgets and larger share counts as the account grows. Any further increase in the risk percentage itself is behaviour-based guidance, not a threshold to pass: consistent use of the sizing rule, stops set before sizing, rounding down every time, and skipping unaffordable trades. No streak count, win-rate gate, or balance milestone is set here, because none was verified as a rule."
+          },
+          "name": "When can I increase my position size as my account grows?"
+        }
+      ]
+    }
+  ]
+}
