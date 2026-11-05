@@ -1,0 +1,104 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "How Much to Risk Per Trade to Pass a Prop Firm Challenge",
+      "description": "How much to risk per trade in a prop firm challenge? Risk 0.5% by default, 1% at most, sized backward from the daily loss limit, with worked examples.",
+      "author": {
+        "@type": "Person",
+        "@name": "Kaizen"
+      },
+      "datePublished": "2026-10-27",
+      "publisher": {
+        "@type": "Organization",
+        "@name": "Monks Of Market"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How much should I risk per trade in a prop firm challenge?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Risk 0.5% of the account per trade as the default, and 1% as the ceiling. This is a derived guideline, not a firm rule: on a typical 4–5% daily loss limit, at 0.5%, 8 losses reach a 4% limit and 10 reach a 5% limit; at 1%, 4 reach a 4% limit and 5 reach a 5% limit. Size backward from the daily limit, and add a personal daily stop at half the firm's limit."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Should I risk more to pass faster?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Risking more converts a survivable streak into a failed challenge. At 2% per trade on a $100,000 account with a $5,000 daily limit, three losses breach the day. At about 1.67% — a third of the daily budget — three full losses also reach the daily limit. Passing comes from steady accumulation over many days, not from a single oversized day, and minimum trading days and consistency rules reinforce that design."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the difference between the daily loss limit and the maximum drawdown?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The daily loss limit is the most you may lose in one trading day — typically 4–5% in forex-style challenges — and it resets each day. The maximum drawdown is the most you may lose in total — typically 10–12% — and it does not reset. The daily limit binds first because it is smaller and a single bad day can reach it long before the total floor is threatened. The full decode belongs to the companion drawdown article."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is trailing drawdown vs static drawdown — and why does trailing hurt more?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A static drawdown floor is fixed at the starting balance. A trailing drawdown floor rises with the account's peak balance, so you can be in overall profit and still breach by giving back the trailing amount from the peak — for example, a $50,000 account with a $2,500 trailing drawdown that peaks at $52,000 has a floor of $49,500. Trailing hurts more because winning runs tighten, rather than loosen, the room you have left. Trailing measurement varies by firm, so verify your firm's basis."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How many losing trades in a row can I survive at 0.5% risk?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "On the $100,000 example with a 5% daily limit ($5,000) and a 10% maximum drawdown ($10,000), 10 consecutive losses at 0.5% ($500 per trade) reach the daily limit, and 20 reach the maximum drawdown — under the convention that a loss reaching the limit counts as a breach. With a personal daily stop at half the firm's limit ($2,500), you would stop yourself after 5 consecutive losses, before either firm floor is touched. For the probability mathematics of losing streaks, see the losing-streak articles."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Should I stop trading for the day after hitting half the daily limit?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes — that is exactly what the personal daily stop is for. On a $5,000 daily limit, stop at $2,500 in losses for the day. The point is to end the day on your own terms, with the account alive, rather than continuing under pressure until the firm's floor ends the challenge. The stop only works if you honour it; it will not enforce itself."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is a prop firm consistency rule, and how does it change my sizing?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "At some firms, a consistency rule caps one day's share of total profit, often in the 30–50% range where such a rule exists. It changes sizing by removing the reward for a single huge day: on an 8% target with a 30% cap, only 2.4% is the maximum countable profit from one day, so steady, repeatable days count more toward passing than one oversized win. Enforcement varies — hard breach, soft breach delaying passing or payout, or no rule at all — so check your firm's current terms."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What happens if I breach a rule — is the challenge over immediately?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Typically, breaching a daily loss limit or maximum drawdown ends the challenge attempt immediately at most firms. Some futures firms instead treat a daily-limit hit as a lockout for the rest of the day. Consistency-rule breach consequences vary by firm — some treat a breach as a delay to passing or payout, others as a failure of the evaluation, and some firms have no consistency rule at all — so check your firm's current terms. Because enforcement varies, your firm's current terms are the only authoritative answer for your account."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Should I reduce risk after a winning run on a trailing-drawdown account?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, consider it — as a sizing constraint, not a new rule. On a trailing account, a winning run raises the floor, so the distance from your current equity back to the floor shrinks even though you are in profit. Reducing risk after a winning run preserves the room you have left instead of risking a give-back that breaches the trailing floor. The full trailing mechanics are covered in the companion drawdown article."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I size a forex / futures position from my risk budget?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "For forex, divide your risk dollars by (stop distance in pips × pip value per lot) and round down to whole lots. For futures, divide your risk dollars by (tick value × stop distance in ticks) and round down to whole or micro contracts. In both cases the risk dollars going into the formula are already capped by the 0.5% default / 1% ceiling and by your personal daily stop, and correlated positions on the same thesis count as one exposure."
+          }
+        }
+      ]
+    }
+  ]
+}
