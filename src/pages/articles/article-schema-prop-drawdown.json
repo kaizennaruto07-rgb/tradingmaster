@@ -1,0 +1,104 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "Prop Firm Drawdown Rules, Decoded",
+      "description": "Prop firm drawdown rules decoded: daily vs maximum drawdown, static vs trailing floors, soft vs hard breaches, and what a breach costs before you trade.",
+      "author": {
+        "@type": "Person",
+        "@name": "Kaizen"
+      },
+      "datePublished": "2026-10-27",
+      "publisher": {
+        "@type": "Organization",
+        "@name": "Monks Of Market"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is the difference between daily drawdown and maximum drawdown?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Daily caps losses within one day (typically 4–5%) and resets daily; maximum caps losses over the account's life (typically 6–12%) and never resets within an account's life. Either can end the day or the account. See \"The two floors, side by side\" — the daily limit tends to bind first on a bad day, as a tendency from the relative sizes, not a measured statistic."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is trailing drawdown, and why is it more dangerous than static?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Trailing sets the floor at peak minus the limit, never moving back down, so profits tighten room instead of widening it. See \"Static vs trailing\" and the $108,000 peak illustration: a static floor leaves a growing buffer, while a trailing floor raises the bar after every good run."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the difference between intraday trailing and end-of-day trailing drawdown?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Intraday moves the floor on every tick of unrealised profit, including unbanked peaks; end-of-day moves it only on the closing balance. See \"Intraday trailing vs end-of-day trailing\" for the wording tells (\"live/real-time\" vs \"end-of-day/closing balance\")."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does the drawdown floor move down if I lose money?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. A trailing floor never moves back down on losses, and a static floor never moves at all. See \"Trailing drawdown\" — losses only bring you closer to the floor, unless a firm-specific lock has already stopped the floor climbing."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I be profitable overall and still breach a trailing drawdown?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. See the labelled 6% trailing illustration: peak $108,000, floor $101,520, pullback to $101,500 fails while still up 1.5% overall. Under trailing, distance from peak matters, not just profitability."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do open (floating) losses count toward the drawdown limit?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "At most firms, yes, under the equity-based model — a wick through the floor ends the account even if price reverses. A minority of balance-based models count only closed trades. See \"Do floating losses count?\" and confirm your firm's measurement before trading."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What happens when I breach the daily loss limit — soft vs hard?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It varies by firm and segment: hard closure ends the account, while a soft breach (mainly some futures models) closes positions and locks trading until the next session, with the account surviving. Never assume soft — confirm your exact account type and stage. See \"Soft vs hard breach.\""
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What happens when I breach maximum drawdown on a funded account?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The funded account is closed immediately — hard closure is the norm for maximum drawdown. In general you do not owe trading losses beyond the challenge fee already paid, for ordinary losses (not legal advice; contracts vary). Whether accrued profits or pending payouts survive varies by contract and must be confirmed. See \"What a breach costs.\""
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I calculate my remaining drawdown room before a trade?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Balance-based: balance − floor − open floating loss. Equity-based: equity − floor, with no second subtraction (floating loss is already in equity). Check daily and maximum rooms separately; the tighter governs. See \"How to calculate your remaining drawdown room\" — the balance-based example there is $5,000 room minus $1,200 open loss = $3,800."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I choose between a static and a trailing drawdown account?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Choose on give-back tolerance and verified mechanics, not marketing. Static suits traders who want profits to build a permanent buffer; trailing demands tight give-back discipline. Tie-breaker: if you cannot state your firm's measurement, lock, and breach consequence in writing, do not choose trailing. See \"Choosing between a static and a trailing drawdown account.\""
+          }
+        }
+      ]
+    }
+  ]
+}
