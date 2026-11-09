@@ -49,6 +49,7 @@ import threeFiveSevenSchema from './article-schema-what-is-the-3-5-7-rule-in-tra
 import whyLoseSchema from './article-schema-why-do-most-traders-lose-money-in-india.json';
 import smallAccountsSchema from './article-schema-small-accounts.json';
 import propRiskSchema from './article-schema-prop-risk.json';
+import propDrawdownSchema from './article-schema-prop-drawdown.json';
 
 export async function getStaticPaths() {
   const articles = await getCollection('articles');
@@ -108,6 +109,7 @@ const schemaData = slug === 'options-trading-charges-india' ? optionsSchema
   : slug === 'why-do-most-traders-lose-money-in-india' ? whyLoseSchema
   : slug === 'position-sizing-for-small-accounts' ? smallAccountsSchema
   : slug === 'how-much-to-risk-per-trade-to-pass-a-prop-firm-challenge' ? propRiskSchema
+  : slug === 'prop-firm-drawdown-rules-decoded' ? propDrawdownSchema
   // recovery-factor wired 2026-10-19 PM (schema + CTA below)
   : cryptoSchema;
 const schemaHtml = '<script type="application/ld+json">' + JSON.stringify(schemaData) + '</script' + '>';
@@ -205,6 +207,8 @@ const toolCta = slug === 'options-trading-charges-india'
   : slug === 'position-sizing-for-small-accounts'
   ? { href: '/tools/position-size/', label: 'Calculate your position size' }
   : slug === 'how-much-to-risk-per-trade-to-pass-a-prop-firm-challenge'
+  ? { href: '/tools/position-size/', label: 'Calculate your position size' }
+  : slug === 'prop-firm-drawdown-rules-decoded'
   ? { href: '/tools/position-size/', label: 'Calculate your position size' }
   : { href: '/tools/crypto-futures/', label: 'Calculate your futures costs' };
 ---
