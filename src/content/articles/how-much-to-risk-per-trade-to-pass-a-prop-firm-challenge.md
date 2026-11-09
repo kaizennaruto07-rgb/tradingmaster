@@ -61,7 +61,7 @@ A **static drawdown** floor is fixed at the starting balance. If the account sta
 
 A **trailing drawdown** floor rises with the account's peak balance. If the account peaks at $52,000 on a $50,000 account with a $2,500 trailing drawdown, the floor rises to $49,500. That means a trader can be in overall profit and still breach — by giving back the trailing amount from the peak.
 
-Trailing mechanics vary by firm: some trail intraday on equity, others trail only on end-of-day closed balance, and some lock the floor at breakeven once the account returns to its starting balance. This section uses trailing drawdown only as a sizing constraint. The full decode — daily versus maximum drawdown, trailing mechanics, and equity-high traps — belongs to the companion article on prop firm drawdown rules, and is not repeated here.
+Trailing mechanics vary by firm: some trail intraday on equity, others trail only on end-of-day closed balance, and some lock the floor at breakeven once the account returns to its starting balance. This section uses trailing drawdown only as a sizing constraint. The full decode — daily versus maximum drawdown, trailing mechanics, and equity-high traps — belongs to [the companion article on prop firm drawdown rules](/articles/prop-firm-drawdown-rules-decoded/), and is not repeated here.
 
 ## Sizing backward from the daily limit: prop firm risk per trade on a $100,000 account
 
@@ -242,7 +242,7 @@ No. Risking more converts a survivable streak into a failed challenge. At 2% per
 
 ### What is the difference between the daily loss limit and the maximum drawdown?
 
-The daily loss limit is the most you may lose in one trading day — typically 4–5% in forex-style challenges — and it resets each day. The maximum drawdown is the most you may lose in total — typically 10–12% — and it does not reset. The daily limit binds first because it is smaller and a single bad day can reach it long before the total floor is threatened. The full decode belongs to the companion drawdown article.
+The daily loss limit is the most you may lose in one trading day — typically 4–5% in forex-style challenges — and it resets each day. The maximum drawdown is the most you may lose in total — typically 10–12% — and it does not reset. The daily limit binds first because it is smaller and a single bad day can reach it long before the total floor is threatened. The full decode belongs to [the companion drawdown article](/articles/prop-firm-drawdown-rules-decoded/).
 
 ### What is trailing drawdown vs static drawdown — and why does trailing hurt more?
 
@@ -266,7 +266,7 @@ Typically, breaching a daily loss limit or maximum drawdown ends the challenge a
 
 ### Should I reduce risk after a winning run on a trailing-drawdown account?
 
-Yes, consider it — as a sizing constraint, not a new rule. On a trailing account, a winning run raises the floor, so the distance from your current equity back to the floor shrinks even though you are in profit. Reducing risk after a winning run preserves the room you have left instead of risking a give-back that breaches the trailing floor. The full trailing mechanics are covered in the companion drawdown article.
+Yes, consider it — as a sizing constraint, not a new rule. On a trailing account, a winning run raises the floor, so the distance from your current equity back to the floor shrinks even though you are in profit. Reducing risk after a winning run preserves the room you have left instead of risking a give-back that breaches the trailing floor. The full trailing mechanics are covered in [the companion drawdown article](/articles/prop-firm-drawdown-rules-decoded/).
 
 ### How do I size a forex / futures position from my risk budget?
 
