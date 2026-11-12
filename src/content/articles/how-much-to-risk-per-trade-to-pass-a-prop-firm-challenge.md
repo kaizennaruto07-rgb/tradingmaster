@@ -226,7 +226,7 @@ Finally, a challenge fee is money at risk, and funded-account terms — payouts,
 
 ### Challenge fees and profit splits — in brief
 
-Challenge fees and profit splits exist and affect the economics of any attempt — a fee paid to enter is at risk if the challenge fails, and the split determines what share of later profits the trader keeps. The full economics — including fees, splits, refunds, and the expected value of attempts — belongs to the companion article on whether prop firms are worth it, and no fee figure for prop accounts is invented here.
+Challenge fees and profit splits exist and affect the economics of any attempt — a fee paid to enter is at risk if the challenge fails, and the split determines what share of later profits the trader keeps. The full economics — including fees, splits, refunds, and the expected value of attempts — belongs to [the companion article on whether prop firms are worth it](/articles/are-prop-firms-worth-it-the-traders-math/), and no fee figure for prop accounts is invented here.
 
 For the streak mathematics behind surviving consecutive losses, see the [losing-streak articles](/articles/how-losing-streaks-affect-trading-accounts); this article uses only the losses-to-breach counts derived above and does not re-derive full streak-probability tables.
 
