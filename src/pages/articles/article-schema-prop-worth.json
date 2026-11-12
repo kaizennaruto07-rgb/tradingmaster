@@ -1,0 +1,104 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "Are Prop Firms Worth It? The Trader's Math",
+      "description": "Are prop firms worth it? Run the expected-value math: the full fee stack, honest pass rates, and the conditional payout — before you pay for a challenge.",
+      "author": {
+        "@type": "Person",
+        "@name": "Kaizen"
+      },
+      "datePublished": "2026-10-28",
+      "publisher": {
+        "@type": "Organization",
+        "@name": "Monks Of Market"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Are prop firms worth it for beginners?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Not as a starting point — and the cost comparison makes the reason concrete. One fully-costed attempt on this article's illustrative stack is $300, and the attributed pass rates (roughly 5–15%) mean a beginner should expect to pay that several times before any payout. The cheaper classroom is forward testing plus a small personal account, where the same sizing mistake costs a small loss instead of a $300 fee."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What percentage of traders actually pass a prop firm challenge?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Keep the three datasets separate, and remember none is audited: FPFX Tech via Finance Magnates, September 2024, put funded-account attainment at 14% of traders; Track360, July 2026, showed a 12.3% blended pass rate; commonly cited first-attempt figures sit at 5–10%. The practical takeaway is the complement — roughly 85–95% of attempts do not end in a funded account — and the denominator warning: only around 45% of the funded group in the FPFX dataset went on to receive a payout."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much money can you realistically make with a prop firm?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "There is no number to quote here, and that absence is the answer. No audited average income exists, so any figure a sales page gives you is either a nominal balance, a best month, or a payout before fees. The only honest personal calculation is your own ledger: approved cash payouts received, minus every fee in the stack. Until you have both sides of that subtraction, you have a hope, not an income."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do prop firms actually pay out profits?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Some do, but only through both gates. In the FPFX dataset, around 45% of funded accounts received at least one payout — about 7% of all challengers. That is why the diligence order in this article puts payout evidence first: a firm that cannot show verifiable payouts from real traders fails the test that matters, whatever its split headline promises."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do prop firms make money if traders lose?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "In the common simulated model, mostly from evaluation fees — that is the arithmetic inference from the model's structure, not a published revenue statement. Trader losses on a simulated balance are virtual, so payouts to winners are the firm's real cost and fees are its real revenue. Low pass rates are therefore predictable from the model itself, which is why payout reliability, not the split, is the number to diligence."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What percentage of prop firm traders are actually profitable?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Only the payout-conditional figures are measurable: about 7% of all challengers received a payout in the FPFX dataset (14% funded × around 45% of the funded receiving a payout). Broader long-term profitability percentages rest on single-source estimates with no audited methodology, so this article states none as fact. A page that quotes one without a dataset, a date, and a denominator is marketing, not measurement."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is the evaluation fee worth it — how do I calculate expected value?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Work it in four steps. (1) Total your all-in fee — on this article's illustrative stack, $300. (2) Estimate your honest P(pass) from forward testing under challenge-like limits, using the block method above. (3) Multiply: P(pass) × P(reaching a payout | pass) × post-split cash received, then subtract the all-in fee. (4) Compare against break-even. On the article's numbers — 20% pass chance, 45% payout-conditional, $500 post-split cash — that is (0.20 × 0.45 × $500) − $300 = −$255 per attempt. The position size calculator and risk of ruin calculator can help with the sizing and survival inputs behind your pass chance."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Prop firm vs personal account: which makes more money?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Use a two-question shortcut. Do you have a tested edge? Do you lack capital? Yes to both points toward a prop attempt; yes to only one points the other way. Capital without an edge is best kept in a personal account, and an edge with capital keeps the full upside by staying personal. The table above is the detail; the two questions are the decision."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How many attempts does it take to pass a prop firm challenge?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Budget for several, and price them fully costed. The FPFX lifecycle context (about three attempts, roughly $800 total spend, 2024 dataset, attributed and softened) matches the article's budgeting advice: three $300 all-in attempts cost $900, and at a 20% pass chance give a 48.8% chance of at least one pass. That is a planning range from one dataset, not a promise — your count will vary with your edge and sizing."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What hidden fees do prop firms charge beyond the challenge fee?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Resets, activation on funding, platform and data fees, and payout conditions such as minimum withdrawals and processing terms — totalling $300 on this article's illustrative stack ($150 challenge + $100 reset + $50 activation/platform allowance). Add one more flag the headline range misses: subscription and instant-funding models can sit outside the $40–$500 evaluation-fee range and recur monthly. Pull every item from the firm's current terms before you pay, and run the equation on the total, never the headline."
+          }
+        }
+      ]
+    }
+  ]
+}
