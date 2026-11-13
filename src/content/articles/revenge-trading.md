@@ -1,7 +1,7 @@
 ---
-title: "How to Stop Revenge Trading After a Loss: The Loss-Side Protocol"
-description: "Revenge trading after a loss feels like collecting a debt the market owes you. The debt delusion, the revenge-sequence math that turns one ₹2,000 stop into a ₹12,000 afternoon, and the four-part pre-commitment loss protocol that breaks the circuit."
-meta_description: "A pre-commitment loss protocol to stop revenge trading: cooldown, session stop, halved size, and a re-entry checklist — mechanical rules, not willpower."
+title: "How to Stop Revenge Trading After a Loss (4-Rule Protocol)"
+description: "One ₹2,000 stop becomes a ₹12,000 afternoon when chased. A 4-part protocol stops revenge trading: cooldown, session stop, half size, re-entry checklist."
+meta_description: "One ₹2,000 stop becomes a ₹12,000 afternoon when chased. A 4-part protocol stops revenge trading: cooldown, session stop, half size, re-entry checklist."
 date: 2026-10-15
 author: Kaizen
 tag: "Trading psychology"
@@ -16,7 +16,7 @@ keywords: ["how to stop revenge trading", "revenge trading", "stop revenge tradi
 
 How do you stop revenge trading after a loss? With a contract you write before the session, not with willpower during it: a mandatory cooldown after any loss, a session stop after two consecutive losses or at your daily loss budget, halved position size when you return, and a re-entry checklist where every plan criterion must be met.
 
-This morning's article covered [what winning does to you — the giveback trap](/articles/why-traders-give-back-profits/). That was the win side: dopamine, the impulse to press size upward while it feels good, and a pre-set finish line that protects profits from you. Tonight is the mirror. The loss side runs on different fuel — the feeling that the loss is a debt the market owes you — and it needs a different system: not a finish line, but a circuit breaker. One contrast paragraph is all they share. The rest of this article stays on the loss side.
+This morning's article covered [what winning does to you — the giveback trap](/articles/why-traders-give-back-profits/). That was the win side: dopamine, the urge to press size up while it feels good, and a pre-set finish line that protects your profits from you. Tonight is the mirror image. The loss side runs on different fuel — the feeling that the loss is a debt the market owes you — and it needs a different system: not a finish line, a circuit breaker. That's the whole contrast. The rest of this article stays on the loss side.
 
 <figure class="article-visual" data-reveal>
 <svg viewBox="0 0 680 360" role="img" aria-label="Win-side vs loss-side pair map: the win side runs on a winner, presses size, and needs a finish line; the loss side runs on a loss, chases a recovery trade, and needs a circuit breaker. Both share one principle: decide before the session, not during it." class="viz">
@@ -46,11 +46,11 @@ This morning's article covered [what winning does to you — the giveback trap](
 
 ## What Revenge Trading Actually Is (and Why the Market Doesn't Owe You the Money Back)
 
-Revenge trading is the attempt to recover a loss quickly with a new, usually larger, often unplanned position. The first trade honored your plan and your stop. The next trade does not.
+Revenge trading is trying to win a loss back fast, with a new position that is usually larger and almost never planned. The first trade honoured your plan and your stop. The next one doesn't.
 
 The mechanism is a one-line delusion: **the loss gets filed in your head as a debt the market owes you, and every new trade becomes "collection."** It is not really about the setup on the screen. It is about the loss behind you.
 
-The consensus from trader journals is consistent: revenge sequences multiply the original loss far more often than they restore it. That is practitioner consensus — the mechanics of it make it almost inevitable, as you will see in the math below — not a lab result. The market does not know your trade exists. It has no debt to settle.
+Trader journals agree on one thing: revenge sequences multiply the original loss far more often than they restore it. That's practitioner consensus, not a lab result — and the maths below shows why it's almost inevitable. The market doesn't know your trade exists. It owes you nothing.
 
 <figure class="article-visual" data-reveal>
 <svg viewBox="0 0 680 380" role="img" aria-label="The debt-delusion circuit: a planned loss gets filed as a debt the market owes, the brain marks it for collection, and an unplanned larger recovery trade feeds a new loss back into the loop. The circuit breaks only when the loss is accepted, not collected." class="viz">
@@ -91,7 +91,7 @@ The protocol is the point of this article, not a psychology lecture — so here 
 - **Illusion of control:** the belief that you can force the market to comply — that more effort, more screen time, or a bigger position can make it give the money back.
 - **Sunk cost fallacy:** the loss already taken must be "earned back." The unrecoverable money keeps steering the next decision.
 
-Once these activate, instinct overwrites the system. That is exactly why the fix cannot be "think clearly while this is happening." The fix has to be mechanical — decided before the session, executed while impaired.
+Once those four switch on, instinct runs the desk. That's why the fix can't be 'think clearly while this is happening.' It has to be mechanical — decided before the session, executed while impaired.
 
 ## The Revenge-Sequence Math: How One ₹2,000 Loss Becomes a ₹12,000 Afternoon
 
@@ -180,7 +180,7 @@ This protocol is a behavioral safeguard, not a profit strategy. It cannot guaran
 
 ### Sign It Before the Session: Filling in Your Own Numbers
 
-The circuit-breaker numbers are yours, not the rulebook's. Fifteen or thirty minutes? A 3% daily budget or 2%? Half size for three trades or five? There is no universal answer, and anyone selling you one is selling something. The right numbers are the ones you will actually obey when your hands are shaking.
+The circuit-breaker numbers are yours, not the rulebook's. Fifteen or thirty minutes? A 3% daily budget or 2%? Half size for three trades or five? There is no universal answer — anyone selling you one is selling something. The right numbers are the ones you'll actually obey when your hands are shaking.
 
 Fill them in before the market opens. Sign it — a real signature, on paper or in your notes app. A contract you wrote while calm is the only authority that outranks you while impaired. The ethos of pre-commitment is the same principle behind a pre-session plan; this contract is its loss-side edition.
 
@@ -202,18 +202,18 @@ One honest "no" anywhere ends the trade.
 
 ## The Revenge Ledger: Tag Your Revenge Trades and Let the Win Rate Kill the Delusion
 
-Feelings argue. Ledgers do not. Here is the instrument: tag every trade you take within your cooldown window, after a loss, or above your size rule with one tag — **REVENGE**. Then compute the win rate of that tag.
+Feelings argue. Ledgers don't. Here's the instrument: tag every trade you take inside your cooldown window, after a loss, or above your size rule with one tag — **REVENGE**. Then compute that tag's win rate.
 
 The sharpest illustration of why comes from practitioner data: trading journal Thrive reports, in its explicitly labeled sample data, that revenge trades run at a 22% win rate. That is *their* reported sample — not our finding, not research, and not a universal statistic. But it points at the exercise that kills the delusion: your own revenge tag, with your own number, computed from your own trades. Argued feelings lose to a ledger every time.
 
-This is also the live example of a broken ledger from [the net-expectancy article](/articles/how-to-calculate-real-expectancy/) — revenge trades are what a negative-expectancy tag looks like in the wild. And the full journaling method, including emotional tagging, belongs to the trading-journal article coming later this week — tag the trades now, and that article will tell you what to do with them.
+This is also the live example of a broken ledger from [the net-expectancy article](/articles/how-to-calculate-real-expectancy/) — revenge trades are what a negative-expectancy tag looks like in the wild. The full journaling method, emotional tagging included, lives in [the trading-journal article](/articles/trading-journal-what-to-track-beyond-pnl/) — tag the trades now, and that article shows you what to do with them.
 
 ## Where Revenge Trading Sits: One Form of Tilt, One Trigger of Overtrading
 
 Two boundary lines, drawn once so this article never swallows its neighbors:
 
-- **Revenge trading is one form of tilt** — specifically the post-loss recovery form. Tilt is the family this belongs to, and the full framework arrives in [the tilt article](/articles/tilt-in-trading/) later this week. Think of it this way: tilt is the weather; revenge trading is one specific storm inside it.
-- **Revenge is one of overtrading's three triggers.** The other two are boredom and overconfidence — and tomorrow morning's article on overtrading maps all three. Revenge is the one that costs the most per episode, because it pairs frequency with size inflation.
+- **Revenge trading is one form of tilt** — specifically the post-loss recovery form. Tilt is the family this belongs to, and the full framework lives in [the tilt article](/articles/tilt-in-trading/). Think of it this way: tilt is the weather; revenge trading is one specific storm inside it.
+- **Revenge is one of overtrading's three triggers.** The other two are boredom and overconfidence — and the [overtrading article](/articles/overtrading/) maps all three. Revenge is the one that costs the most per episode, because it pairs frequency with size inflation.
 
 Everything else this article touched in passing belongs elsewhere: the size mechanics are owned by [position sizing](/articles/position-sizing/), the sequence's endpoint by [risk of ruin](/articles/risk-of-ruin-trading/), the ledger by expectancy and the journal. This article owns one circuit: the debt delusion and the protocol that breaks it.
 
@@ -232,9 +232,9 @@ The protocol's entire purpose is to stop trading. That is the feature, not a bug
 
 This morning's giveback and tonight's revenge trading are the same failure wearing opposite clothes: **a refusal to accept what just happened.** On the win side, you cannot accept that the win is over, so you keep playing until the market takes it back. On the loss side, you cannot accept that the loss is real, so you keep collecting a debt the market never agreed to.
 
-Both are fixed the same way: by decisions made **before** the session, not during it. The finish line for the win side; the circuit breaker for the loss side. The principle is one — decide before, not during — and the circuits are two.
+Both get fixed the same way: by decisions made **before** the session, not during it. A finish line for the win side; a circuit breaker for the loss side. One principle — decide before, not during — and two circuits.
 
-Tomorrow morning brings the neighbor: overtrading, the mechanism revenge trading shares with boredom and overconfidence. Tonight, sign the contract.
+The neighbor is [overtrading](/articles/overtrading/) — the mechanism revenge trading shares with boredom and overconfidence. Tonight, sign the contract.
 
 ## Frequently Asked Questions
 
