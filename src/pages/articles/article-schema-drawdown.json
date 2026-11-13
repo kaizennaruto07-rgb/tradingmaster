@@ -4,8 +4,8 @@
   {
    "@context": "https://schema.org",
    "@type": "Article",
-   "headline": "Trading Drawdown: The Mathematics of Recovery",
-   "description": "How much must you gain to recover from a drawdown in trading? The d/(1−d) recovery formula, an exact ₹2,00,000 table, time-to-climb math, and a protocol.",
+   "headline": "Drawdown Recovery: How Much Gain to Get Back to Even?",
+   "description": "A 20% drawdown needs a 25% gain to recover; a 50% drawdown needs 100%. The exact formula, the full 5%–90% table, the time-to-climb math, and a protocol.",
    "author": {
     "@type": "Person",
     "name": "Kaizen"
