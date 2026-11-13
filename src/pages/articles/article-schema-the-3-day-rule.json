@@ -3,8 +3,8 @@
  "@graph": [
   {
    "@type": "Article",
-   "headline": "The 3-Day Rule: A Circuit Breaker for Consecutive Losing Days",
-   "description": "Three consecutive red days? Take three market days away from the screens. The complete 3-day rule protocol — trigger, break, and staged return ladder.",
+   "headline": "The 3-Day Rule: Stop Trading After 3 Losing Days",
+   "description": "Three red days in a row? Step away for three market days — no live trades, review only. The trigger, the break protocol, and the staged return to full size.",
    "author": {
     "@type": "Person",
     "@name": "Kaizen"
