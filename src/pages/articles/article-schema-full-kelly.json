@@ -3,8 +3,8 @@
   "@graph": [
     {
       "@type": "Article",
-      "headline": "Why Full Kelly Bankrupts Retail Traders",
-      "description": "Why full Kelly bankrupts retail traders: betting the optimal fraction on estimated win rates is systematic overbetting. Learn the trap and the survival ladder.",
+      "headline": "Why Full Kelly Bankrupts Traders: The 33% Bet That Blows Up",
+      "description": "A 10-point win-rate error doubles your Kelly bet to 2× true Kelly. The 4 mechanisms that bankrupt retail traders — and the 5-rung ladder that stops them.",
       "author": {
         "@type": "Person",
         "@name": "Kaizen"
