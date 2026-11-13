@@ -1,7 +1,7 @@
 ---
-title: "Sharpe Ratio for Retail Traders: Calculate It, Judge It, and Never Trust It Alone"
-description: "Sharpe ratio for Indian retail traders: calculate it from your ledger using the RBI 91-day T-bill and net-of-cost returns, judge tiers, spot blind spots."
-meta_description: "Sharpe ratio for Indian retail traders: calculate it from your ledger using the RBI 91-day T-bill and net-of-cost returns, judge tiers, spot blind spots."
+title: "Sharpe Ratio: Calculate It, Judge It, Never Trust It Alone"
+description: "Sharpe = excess return ÷ volatility. Calculate it from your own ledger with the RBI 91-day T-bill, judge the tiers — and spot the three blind spots."
+meta_description: "Sharpe = excess return ÷ volatility. Calculate it from your own ledger with the RBI 91-day T-bill, judge the tiers — and spot the three blind spots."
 date: 2026-10-20
 author: Kaizen
 tag: "Trading mathematics · Risk management"
@@ -14,11 +14,11 @@ keywords: ["sharpe ratio", "how to calculate sharpe ratio", "what is a good shar
 
 A Sharpe ratio on a screenshot is a claim. A Sharpe ratio from your own ledger is an audit — but the auditor has blind spots.
 
-Here is the trustworthy answer to "what is a Sharpe ratio" in one line: it is **what your strategy earned above the risk-free rate, divided by how bumpy the ride was**. A trustworthy Sharpe for an Indian retail trader comes from your own trade ledger — net-of-cost period returns, minus the RBI 91-day T-bill rate, mean divided by standard deviation, annualized with ×√252. Judge it against rough tiers (below 1 = weak, 1–2 = good, 2–3 = very good, 3+ = suspect, not stellar), and never trust it alone, because it punishes good volatility, leans on a tidy bell-curve view of the world, and ignores the order your returns arrived in.
+Here's the trustworthy answer to "what is a Sharpe ratio" in one line: it's **what your strategy earned above the risk-free rate, divided by how bumpy the ride was**. A trustworthy Sharpe for an Indian retail trader comes from your own trade ledger — net-of-cost period returns, minus the RBI 91-day T-bill rate, mean divided by standard deviation, annualized with ×√252. Judge it against rough tiers (below 1 = weak, 1–2 = good, 2–3 = very good, 3+ = suspect, not stellar), and never trust it alone, because it punishes good volatility, leans on a tidy bell-curve view of the world, and ignores the order your returns arrived in.
 
 Start where most retail traders actually meet this number: in marketing, not in a ledger. A tipster advertises a Sharpe of 2.9. Your broker dashboard, looking at the same kind of account, shows 1.8 — while another platform shows 1.2 for the same trades. Those are not three different strategies. They are three different sets of inputs: a different risk-free rate, gross returns instead of net-of-cost returns, a different period construction, a flattering window. Internal comparisons and published research document gaps of 20–65% between computed Sharpe figures for the same strategy (the platform-discrepancy section below explains why, and where each end of that range comes from).
 
-The auditor's rule follows from that gap: **the only Sharpe that counts is the one you can reproduce from your own ledger.** If you cannot rebuild the numerator, the denominator, and the annualization from your trades — after every Indian cost — the number on the dashboard is not yours to trust, however precise it looks. This article teaches you to run that audit yourself, judge the result honestly, and know exactly where even an honest auditor cannot see.
+The auditor's rule follows from that gap: **the only Sharpe that counts is the one you can reproduce from your own ledger.** If you can't rebuild the numerator, the denominator, and the annualization from your trades — after every Indian cost — the number on the dashboard isn't yours to trust, however precise it looks. This article teaches you to run that audit yourself, judge the result honestly, and know exactly where even an honest auditor can't see.
 
 <figure class="article-visual" data-reveal>
 <svg viewBox="0 0 680 470" role="img" aria-label="Comparison card showing three advertised Sharpe ratios, 2.9, 1.8 and 1.2, for the same trades beside one ledger-computed ratio of 1.67, with only the ledger number marked reproducible." class="viz">
@@ -56,7 +56,7 @@ Forget the academic wrapping. William F. Sharpe introduced this in 1966 as the "
 
 > **Sharpe ratio = (mean per-period return − risk-free rate) ÷ standard deviation of per-period returns**
 
-Numerator: your average excess return per period — what you earned above what you'd have gotten risk-free. Denominator: the standard deviation of those same per-period returns — the wobble. Divide the two and you get a **dimensionless** number: return per unit of bumpiness. Higher is better, but only within the honest input discipline and blind spots this article covers.
+Numerator: your average excess return per period — what you earned above what you'd have gotten risk-free. Denominator: the standard deviation of those same per-period returns — the wobble. Divide the two and you get a **dimensionless** number: return per unit of bumpiness. Higher is better — but only within the honest input discipline and blind spots this article covers.
 
 <figure class="article-visual" data-reveal>
 <svg viewBox="0 0 680 380" role="img" aria-label="Formula anatomy card: Sharpe ratio equals mean excess return divided by standard deviation, with each part labeled in plain words." class="viz">
@@ -111,7 +111,7 @@ Your risk-free rate must be the rate *you* could actually earn risk-free: the **
 
 ### Returns Must Be Net of Indian Costs
 
-This is where most retail Sharpe ratios become fiction. The numerator must be built from **net** returns — after the full Indian cost stack: brokerage, STT, exchange transaction charges, stamp duty, and GST. Costs shave a nearly constant amount off your per-period mean while leaving the wobble roughly unchanged — so computing on gross returns quietly inflates your Sharpe.
+This is where most retail Sharpe ratios become fiction. The numerator must be built from **net** returns — after the full Indian cost stack: brokerage, STT, exchange transaction charges, stamp duty, and GST. Costs shave a nearly constant amount off your per-period mean while leaving the wobble roughly unchanged — so gross returns quietly inflate your Sharpe.
 
 For NSE equity options, use the locked charge of **0.03553% per side, all-in** (NSE circular NSE/FA/73061, effective 2026-03-01).
 
@@ -149,7 +149,7 @@ Here is the assumption, stated plainly: the √N scaling assumes your per-period
 
 Run this on any strategy, backtest, or tipster's track record. Five steps, no software required:
 
-1. **Export your trade ledger** — date, instrument, buy/sell prices, quantities, and charges per trade.
+1. **Export your [trade ledger](/articles/trading-journal-what-to-track-beyond-pnl/)** — date, instrument, buy/sell prices, quantities, and charges per trade.
 2. **Build the per-period net-return series.** Group net P&L (after every cost in the Indian stack) by day, week, or month, and express each period's result as a percentage of the capital at the start of that period.
 3. **Subtract the period risk-free rate.** T-bill annual rate ÷ 252 for daily periods, ÷ 12 for monthly. This turns returns into *excess* returns.
 4. **Take mean ÷ standard deviation** of the excess series. Mean is the numerator; standard deviation (sample basis) is the denominator.
@@ -193,9 +193,9 @@ For context: long-run diversified buy-and-hold portfolios typically sit around *
 </svg>
 </figure>
 
-Above 3.0, be suspicious first: a Sharpe that high, sustained on a retail backtest, rarely survives an honest audit — the full breakdown of why belongs to the [overfitting checklist](/articles/how-to-detect-overfitting-in-trading-strategy/), not to celebration here.
+Above 3.0, be suspicious first: a Sharpe that high, sustained on a retail backtest, rarely survives an honest audit — the full breakdown of why belongs to the [overfitting checklist](/articles/how-to-detect-overfitting-in-trading-strategy/), not to celebration.
 
-**The track-record rule:** a Sharpe estimate's reliability depends on sample size. With roughly 36 monthly observations, the standard error of an estimated Sharpe of 1.0 is about **0.2** (Lo, 2002) — meaning short track records cannot distinguish skill from noise.
+**The track-record rule:** a Sharpe estimate's reliability depends on [sample size](/articles/how-many-trades-to-validate-a-strategy/). With roughly 36 monthly observations, the standard error of an estimated Sharpe of 1.0 is about **0.2** (Lo, 2002) — meaning short track records can't distinguish skill from noise.
 
 Practitioner convention: treat **~36 months as the minimum** and prefer 60+. A Sharpe of 1.4 measured over four months is an audit with too little evidence; measured over four years, it starts to become evidence.
 
@@ -252,13 +252,13 @@ The companion metric is the **Sortino ratio** (Frank A. Sortino, early 1990s): e
 
 ### Blind Spot 2: It Assumes a Normal, Well-Behaved World
 
-Sharpe leans on a roughly symmetric, bell-curve view of returns. Real retail returns have fat tails — and option selling is the classic case. A short-option strategy collecting steady premium prints a gorgeous Sharpe right up until the one tail event lands (the "steamroller" problem: steady income, then the one bad day). The ratio cannot see the tail coming, because mean and standard deviation say nothing about rare, large losses.
+Sharpe leans on a roughly symmetric, bell-curve view of returns. Real retail returns have fat tails — and option selling is the classic case. A short-option strategy collecting steady premium prints a gorgeous Sharpe right up until the one tail event lands (the "steamroller" problem: steady income, then the one bad day). The ratio can't see the tail coming, because mean and standard deviation say nothing about rare, large losses.
 
 The companions are [maximum drawdown](/articles/maximum-drawdown/) and [recovery factor](/articles/recovery-factor/): how deep the pain can go, and how fast the strategy digs out. A Sharpe of 2 with a 40% drawdown history is a different animal than a Sharpe of 2 that never dipped past 8%.
 
 ### Blind Spot 3: It Ignores the Order of Your Returns
 
-Two equity curves can share an identical Sharpe while their losses arrive in a completely different order — one spread thinly across the year, the other clustered into a single deep drawdown. Mean and standard deviation do not know *when* the losses happened, so the ratio cannot tell the livable path from the one that triggers margin calls or makes a trader quit. That sequencing point is the whole blind spot here; the full treatment of return order belongs to the [Monte Carlo simulation guide](/articles/monte-carlo-simulation-for-traders/), which owns that problem.
+Two equity curves can share an identical Sharpe while their losses arrive in a completely different order — one spread thinly across the year, the other clustered into a single deep drawdown. Mean and standard deviation don't know *when* the losses happened, so the ratio can't tell the livable path from the one that triggers margin calls or makes a trader quit. That sequencing point is the whole blind spot here; the full treatment of return order belongs to the [Monte Carlo simulation guide](/articles/monte-carlo-simulation-for-traders/), which owns that problem.
 
 ## The 5-Metric Triage: Never Judge a Strategy on Sharpe Alone
 
@@ -307,7 +307,7 @@ Retail traders mostly meet Sharpe ratios in marketing, not in ledgers. The Sharp
 
 - **Annualization tricks:** using the wrong √N for the period length, or scaling up without disclosing the serial-correlation assumption — Lo (2002) showed that alone can inflate the number by up to 65%.
 - **Cherry-picked windows:** starting the measurement right after the strategy's worst drawdown, or ending it at a peak, moves the mean and the wobble in the ratio's favour. Pair any single-window Sharpe with rolling-window results before you believe it.
-- **The leverage illusion:** doubling position size doubles both excess return and volatility, so Sharpe is unchanged by leverage — the ratio stays put while tail risk and ruin probability grow. Anyone selling a leveraged product's Sharpe as proof of genius is selling arithmetic.
+- **The leverage illusion:** doubling [position size](/articles/position-sizing/) doubles both excess return and volatility, so Sharpe is unchanged by leverage — the ratio stays put while tail risk and ruin probability grow. Anyone selling a leveraged product's Sharpe as proof of genius is selling arithmetic.
 
 For the general backtest-bias catalogue, see the [overfitting checklist](/articles/how-to-detect-overfitting-in-trading-strategy/) — it owns that list, and this article does not repeat it. When a marketed number looks too good, run the 5-step ledger method on it first.
 
@@ -319,7 +319,7 @@ Around the tripod stands the backtest discipline: the [overfitting checklist](/a
 
 Next step: the system-building guide will make Sharpe **one acceptance gate** in the strategy checklist — never the whole gate.
 
-You are the auditor now — and an auditor who knows their own blind spots is the only kind worth trusting.
+You're the auditor now — and an auditor who knows their own blind spots is the only kind worth trusting.
 
 ## Sharpe Ratio FAQ
 
