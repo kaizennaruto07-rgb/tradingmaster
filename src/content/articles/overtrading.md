@@ -1,7 +1,7 @@
 ---
-title: "Overtrading: How to Know You're Doing It and How to Stop"
-description: "Overtrading means taking trades your plan never authorized. The 5 diagnostic signs that reveal it, the boredom tax priced in rupees through the Indian cost stack, and the two-box protocol — risk box, persistence box, trade cap, and the hard 3-loss rule — that stops it."
-meta_description: "Overtrading bleeds you twice — once on the P&L, once on fees. The 5 diagnostic signs, the boredom tax priced in ₹, and the two-box protocol that stops it."
+title: "How to Stop Overtrading: The ₹3,760/Month Boredom Tax"
+description: "3 extra trades a day cost ~₹3,760 a month in fees alone — before the P&L. The 5 signs you are overtrading, and the two-box protocol that stops it."
+meta_description: "3 extra trades a day cost ~₹3,760 a month in fees alone — before the P&L. The 5 signs you are overtrading, and the two-box protocol that stops it."
 date: 2026-10-16
 author: Kaizen
 tag: "Trading psychology"
@@ -70,13 +70,13 @@ Read that again: experience doesn't cure overtrading. It just teaches you fancie
 
 Overtrading is not "trading too much" by someone else's number. It's taking trades your plan doesn't authorize. That definition matters, because the number alone misleads: the same reported dataset found that scalpers — averaging 47 trades a day — had overtrading in their top-five problems far less often than day traders averaging 17 a day. Overtrading is measured against *your own rhythm*, not a fixed count. A scalper taking 47 planned trades is following a plan. A swing trader taking their fourth boredom trade of a quiet afternoon is overtrading.
 
-This is chapter three of our Psychology week. The two chapters before it built the two emotional circuits — the win side ([why winners give back their profits](/articles/why-traders-give-back-profits/)) and the loss side ([revenge trading](/articles/revenge-trading/)). This article names the shared behavior both of them sometimes use: unauthorized trades. And it runs on one line: **the market doesn't pay you for activity — it pays you for accuracy.**
+The two chapters before it built the two emotional circuits — the win side ([why winners give back their profits](/articles/why-traders-give-back-profits/)) and the loss side ([revenge trading](/articles/revenge-trading/)). This article names the shared behavior both of them sometimes use: unauthorized trades. And it runs on one line: **the market doesn't pay you for activity — it pays you for accuracy.**
 
 ## The three triggers behind almost every overtrading day
 
-Nearly every overtrading day traces back to one of three triggers — and almost never a fourth. Two of them are the circuits you've already met this week. The third is the one nobody talks about honestly.
+Nearly every overtrading day traces back to one of three triggers — and almost never a fourth. Two of them are circuits you've already met. The third is the one nobody talks about honestly.
 
-Underneath all three runs the same mechanism: placing a trade is rewarding in itself, whether or not it makes money. The act of clicking buy or sell behaves like a reward signal to the brain's dopamine system — the anticipation of an uncertain outcome is the hook, not the profit. (This is the working analogy this article uses: a simplified model of the mechanism, but it fits what the data shows.) That's why all three triggers feel productive while they're draining you.
+Underneath all three runs the same mechanism: placing a trade is rewarding in itself, whether or not it makes money. The act of clicking buy or sell behaves like a reward signal to the brain's dopamine system — the anticipation of an uncertain outcome is the hook, not the profit. (That's the working analogy this article uses: a simplified model, but it fits what the data shows.) That's why all three triggers feel productive while they're draining you.
 
 <figure class="article-visual" data-reveal>
 <svg viewBox="0 0 680 400" role="img" aria-label="Diagram of the three triggers that cause overtrading: boredom, the post-loss recovery spiral, and overconfidence after a win." class="viz">
@@ -116,7 +116,7 @@ This is the trigger nobody admits to. Not the losing-streak spiral, not the winn
 
 Ask yourself the confrontation question, honestly: **am I trading to make money — or to soothe an emotional void?**
 
-The market is not entertainment. When you open a trade because the silence of a flat NIFTY afternoon feels unbearable, you are not executing a plan — you are paying the cost stack to watch candles move. Boredom trading is overtrading without a motive, and it's the most common trigger of all, because the market is boring most of the time and every flat hour is an invitation.
+The market is not entertainment. When you open a trade because the silence of a flat NIFTY afternoon feels unbearable, you're not executing a plan — you're paying the cost stack to watch candles move. Boredom trading is overtrading without a motive, and it's the most common trigger of all, because the market is boring most of the time and every flat hour is an invitation.
 
 ### 2. The post-loss recovery spiral
 
@@ -138,7 +138,7 @@ Forget self-diagnosis by feeling. Run this checklist against your last two weeks
 4. **You keep trading after a big win or a big loss.** Continuing past either extreme is the signature of the two emotional circuits: the recovery spiral or the overconfidence wave.
 5. **Your worst results cluster on your highest-trade-count days.** Pull up your ledger, group your days by trade count, and look. If the high-count days are the red days, you don't have a strategy problem on those days — you have an authorization problem.
 
-The definitive test is the tag. For the next month, mark every trade in your journal as either **strategy** (your plan authorized it) or **exogenous** (outside the plan). Then compare the win rates. One sample-size rule: don't judge the gap until you've tagged at least ~20–30 trades — swing traders may need two months of data to get there. Anything smaller is noise, not a verdict. The gap between those two numbers is your diagnosis — and, as you'll see in the next section, your tax bill. The journal mechanics for this metric belong to [our trading journal article](/articles/trading-journal-what-to-track-beyond-pnl/) — this is the forward link, not the method.
+The definitive test is the tag. For the next month, mark every trade in your journal as either **strategy** (your plan authorized it) or **exogenous** (outside the plan). Then compare the win rates. One sample-size rule: don't judge the gap until you've tagged at least ~20–30 trades — swing traders may need two months of data to get there. Anything smaller is noise, not a verdict. The gap between those two numbers is your diagnosis — and, as you'll see in the next section, your tax bill. The journal mechanics for this metric belong to [our trading journal article](/articles/trading-journal-what-to-track-beyond-pnl/).
 ## The boredom tax, measured and priced in rupees
 
 Here's the article's original move: don't just feel the overtrading — measure it, then price it.
@@ -167,7 +167,7 @@ Monthly figures assume ~20 trading days per month. And note what ₹62.61 actual
 
 That's the boredom tax *before* the P&L — the stack collected on trades your plan never authorized. Run your own numbers through our [options-cost calculator](/tools/options-cost/): price your actual instrument and size, multiply by your unauthorized-trade count, and look at the monthly figure. That number is what "just one more trade" actually costs.
 
-And the P&L side matters more than the fees, in the way one sharp line puts it: the real damage from overtrading is rarely the red on the unauthorized trades themselves — it's the capital and confidence that aren't there anymore when the next genuine setup finally arrives. The tax compounds in the most expensive way possible: it takes both your money and your ability to use it well.
+And the P&L side matters more than the fees: the real damage from overtrading is rarely the red on the unauthorized trades themselves — it's the capital and confidence that aren't there anymore when the next genuine setup finally arrives. The tax compounds in the most expensive way possible: it takes both your money and your ability to use it well.
 
 <figure class="article-visual" data-reveal>
 <svg viewBox="0 0 680 470" role="img" aria-label="Illustration of the overtrading boredom tax: strategy vs exogenous trade win rates and the Indian cost stack in rupees per extra trade." class="viz">
@@ -208,7 +208,7 @@ And the P&L side matters more than the fees, in the way one sharp line puts it: 
 
 ## The two-box protocol: the system that stops it
 
-A protocol is not a list of tips — it's an ordered system where each piece does a job the others can't. Here is the full assembly, in the order you set it up.
+A protocol is not a list of tips — it's an ordered system where each piece does a job the others can't. Here's the full assembly, in the order you set it up.
 
 <figure class="article-visual" data-reveal>
 <svg viewBox="0 0 680 480" role="img" aria-label="The two-box protocol card: risk box, persistence box, trade cap, pre-trade checklist, scheduled windows, and the hard 3-loss rule." class="viz">
@@ -257,7 +257,7 @@ This is the rule that kills the "one last trade" mentality at its root. That men
 
 ### The daily trade cap, set below YOUR slip point
 
-There is no universal number of trades per day — remember the scalpers taking 47 planned trades a day without it counting as overtrading. Your cap comes from your own ledger, using the same method the trade-tracking dataset's reported analysis uses: group your results by how many trades you'd already taken that day, and find the count where your per-trade results start to slip. Then set your daily cap **below** that count — before the session, in writing.
+There's no universal number of trades per day — remember the scalpers taking 47 planned trades a day without it counting as overtrading. Your cap comes from your own ledger: group your results by how many trades you'd already taken that day, and find the count where your per-trade results start to slip. Then set your daily cap **below** that count — before the session, in writing.
 
 That cap is your boredom tax ceiling. The day's authorized trades get taken; everything after the cap is unauthorized by definition.
 
@@ -277,6 +277,8 @@ Three consecutive losses, and the session ends. No exceptions, no "but the setup
 
 **Trade count flexes with the regime. The loss stop never does.**
 
+Why three? Because short losing runs are the normal weather of any system — the streak tables are in [How Losing Streaks Affect Trading Accounts](/articles/how-losing-streaks-affect-trading-accounts/).
+
 Two rigidity notes, because this rule is deliberately blunt. First, it overrides strategy-compliant trades too: a perfect A+ setup at loss number four waits for tomorrow — the rule stops working the first time you negotiate with it, and that is the whole point. Second, because the rule is this rigid, the session window above has to be defined up front; a 3-loss rule with no defined session can strand valid setups on the wrong side of an arbitrary cutoff, so name the window before the first trade.
 ## The enforcement rails: the 30-minute cooldown and the trigger-tagged journal
 
@@ -284,7 +286,7 @@ A protocol without enforcement is decoration. Two rails keep it honest.
 
 **The 30-minute cooldown.** After any losing trade: step away, chart closed, thirty minutes, no screens. Not five minutes, not "I'll just watch." The cooldown exists because the post-loss recovery spiral — trigger two — does its best work in the minutes right after the loss, when the emotional debt is freshest and the plan is weakest. Thirty minutes of distance is the cheapest risk management you'll ever buy. Like the 3-loss rule, the cooldown is rigid by design — a setup that appears at minute twelve still waits. Flexibility in the first thirty minutes is exactly where the spiral re-enters.
 
-**The trigger-tagged journal.** Every trade gets its trigger tagged in the journal: strategy or exogenous, and if exogenous — which of the three triggers paid for it? Boredom, recovery, or overconfidence. Over weeks, these tags reveal your personal trigger map: the hours, the market conditions, the emotional states where your authorization breaks down. The exogenous-trade metric and the full journaling method are covered in [our trading journal article](/articles/trading-journal-what-to-track-beyond-pnl/) — that's where the metric lives; here it's the enforcement rail.
+**The trigger-tagged journal.** Every trade gets its trigger tagged in the journal: strategy or exogenous, and if exogenous — which of the three triggers paid for it? Boredom, recovery, or overconfidence. Over weeks, these tags reveal your personal trigger map: the hours, the market conditions, the emotional states where your authorization breaks down. The exogenous-trade metric and the full journaling method are covered in [our trading journal article](/articles/trading-journal-what-to-track-beyond-pnl/) — that's where the metric lives. Here it's the enforcement rail.
 
 This is the same honest-protocol ethos as our [paper trading vs real trading](/articles/paper-trading-vs-real-trading/) piece: systems you can verify beat intentions you can't.
 
@@ -298,7 +300,7 @@ Two boundaries, stated plainly — because a protocol sold as a cure becomes the
 
 ## Where the week takes you next
 
-Overtrading is what C-game looks like on the trade log — [tonight's A-game/C-game framework](/articles/c-game-to-a-game-signature-framework/) is the identity upgrade that runs the protocol above without negotiating with it. [Tomorrow's tilt piece](/articles/tilt-in-trading/) covers the broader emotional-decision spiral this behavior sits inside, and [the FOMO article](/articles/fomo-trading/) covers the mirror image — the pain of the missed move ("didn't take it") versus this article's "took too many."
+Overtrading is what C-game looks like on the trade log — the [A-game/C-game framework](/articles/c-game-to-a-game-signature-framework/) is the identity upgrade that runs the protocol above without negotiating with it. [Tilt in Trading](/articles/tilt-in-trading/) covers the broader emotional-decision spiral this behavior sits inside, and [the FOMO article](/articles/fomo-trading/) covers the mirror image — the pain of the missed move ("didn't take it") versus this article's "took too many."
 
 ## Frequently Asked Questions
 
