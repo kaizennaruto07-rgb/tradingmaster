@@ -1,7 +1,7 @@
 ---
-title: "How to Calculate Real Expectancy of a Trading Strategy (Gross vs Net, With the Indian Cost Stack)"
-description: "Your backtest reports one number; your account keeps another. Learn both ways to calculate trading expectancy — the weighted-average formula and the net-profit-per-trade shortcut — then walk a real NIFTY option trade through the full Indian cost stack, where a +0.05R edge flips to a −0.03R loss. Plus the honesty-ledger rules for what counts as a trade, and how to turn per-trade expectancy into monthly money."
-meta_description: "Calculate real trading expectancy: the two-method cross-check, the Indian gross-vs-net cost stack, and the honesty-ledger rules that make the number real."
+title: "How to Calculate Trading Expectancy (Net, After Costs)"
+description: "A +0.05R gross edge flips to −0.03R net after Indian costs. Two ways to calculate real expectancy — and the honesty ledger that keeps the number real."
+meta_description: "A +0.05R gross edge flips to −0.03R net after Indian costs. Two ways to calculate real expectancy — and the honesty ledger that keeps the number real."
 date: 2026-10-13
 author: Kaizen
 tag: "Trading mathematics · Validation"
@@ -12,13 +12,13 @@ keywords: ["how to calculate real expectancy trading", "honest expectancy calcul
 
 > **Educational disclaimer:** This article is for education only and is not financial advice. Trading involves substantial risk of loss. Nothing here tells you whether your strategy will work — it teaches you how to measure what your strategy actually earns, after the costs you cannot trade around.
 
-Yesterday's chapter ended with an uncomfortable question. Your backtest reported a number — say, a handsome expectancy per trade. But the [four gaps between the lab and the field](/articles/why-backtested-strategies-fail-in-live-trading/) silently taxed that number, and your account kept a different one. The question hanging in the air: *so how do I calculate the number that's actually real?*
+Your backtest reported a number — say, a handsome expectancy per trade. But the [four gaps between the lab and the field](/articles/why-backtested-strategies-fail-in-live-trading/) quietly taxed it, and your account kept a different one. So how do you calculate the number that's actually real?
 
-The thesis is one line: **every strategy has two expectancies — the gross one the backtest reports, and the net one the account keeps.** This chapter is not the formula tutorial — [Chapter 1 taught what expectancy measures and how to build it from your journal](/articles/what-is-trading-expectancy/). This chapter teaches only the honest-calculation mechanics: two ways to compute the number and force them to agree, the Indian cost stack that decides whether the number is gross or net, the bookkeeping ledger that decides whether the sample deserves the math, and how to translate the result into monthly money. [Chapter 2's three-question verdict](/articles/how-to-know-if-trading-strategy-works/) is the framework this number feeds into.
+One line sums it up: **every strategy has two expectancies — the gross one the backtest reports, and the net one the account keeps.** [Chapter 1 taught what expectancy measures and how to build it from your journal](/articles/what-is-trading-expectancy/) — this chapter is the honest-calculation mechanics: two ways to compute the number and force them to agree, the Indian cost stack that decides gross or net, the ledger that decides whether the sample deserves the math, and how to turn the result into monthly money. [Chapter 2's three-question verdict](/articles/how-to-know-if-trading-strategy-works/) is the framework this number feeds into.
 
 ## Two ways to compute it — and the identity that checks your bookkeeping
 
-Expectancy is the expected value of one trade: the average money one trade of your system makes or loses, once costs are in. There are two ways to compute it, and they are not approximations of each other — they are the same number wearing two different suits. That is exactly why you should always compute both.
+Expectancy is the expected value of one trade: the average money one trade of your system makes or loses, once costs are in. The two ways to compute it aren't approximations of each other — they're the same number in two different suits. That's exactly why you should always compute both.
 
 ### Way 1: the weighted formula, in one line and one rule
 
@@ -26,11 +26,11 @@ The formula: **Expectancy = (win rate × average win) − (loss rate × average 
 
 **The bookkeeping rule:** average loss enters the formula as a **positive magnitude**. The minus sign in the formula already does the subtracting. Write the loss as negative (say, −₹2,000) *and* keep the minus sign, and you subtract a negative — adding the loss back to your wins. On a 60-trade log with a real expectancy of ₹480, that one sign error fabricates ₹2,880: six times the real number, invented by a minus sign.
 
-Don't rely on willpower — bake the rule into your spreadsheet. Never type the averages by hand: **use AVERAGEIF on wins and losses separately** — `AVERAGEIF(result_range, ">0")` for the average win, `ABS(AVERAGEIF(result_range, "<0"))` for the average loss. That one recipe enforces the positive-magnitude rule automatically.
+Don't rely on willpower — bake the rule into your spreadsheet. Never type the averages by hand: **use AVERAGEIF on wins and losses separately** — `AVERAGEIF(result_range, ">0")` for the average win, `ABS(AVERAGEIF(result_range, "<0"))` for the average loss. That one recipe enforces the rule automatically.
 
 ### Way 2: net profit ÷ number of closed trades
 
-Forget win rates. Add up the net result of every closed trade — wins positive, losses negative, breakevens and scratches as zero — and divide by the total number of trades. That is it.
+Forget win rates. Add up the net result of every closed trade — wins positive, losses negative, breakevens and scratches as zero — and divide by the total number of trades. That's it.
 
 One explicit rule before the arithmetic: **only closed trades — never open positions.** Unrealized P&L is not an observation, and an open position in the sample mixes a maybe into the average.
 
@@ -82,7 +82,7 @@ Pull your last 50+ closed trades. Compute expectancy both ways — the weighted 
 
 ## Gross vs net: the Indian cost stack that your backtest ignored
 
-Here is the central move of this chapter. The expectancy you just computed is **gross** — the laboratory number, before the market's tax collectors take their cut. Your account keeps the **net** number. On Indian options, the gap between the two is not a rounding error; it is a fixed tax per trade, and it falls hardest on exactly the thin edges retail traders tend to run.
+Here's the central move of this chapter. The expectancy you just computed is **gross** — the laboratory number, before the market's tax collectors take their cut. Your account keeps the **net** number. On Indian options, the gap isn't a rounding error; it's a fixed tax per trade, and it falls hardest on exactly the thin edges retail traders tend to run.
 
 ### The cost stack on one NIFTY option trade
 
@@ -157,7 +157,7 @@ Now the reveal. Take a strategy with a genuine but thin gross edge: 35% win rate
 
 Now pay the stack. Suppose total friction — the statutory stack plus an illustrative slippage-and-spread allowance — runs 0.08R per trade. (To ground that: at an initial risk of ₹800 per trade, the verified ₹62.61 round trip alone is about 0.078R — the assumption is the risk size, not the schedule figure.) Net expectancy = 0.05 − 0.08 = **−0.03R per trade**. The sign flipped. The strategy didn't change. Nobody made a mistake in the entries. The backtest's green number was simply gross, and the account pays net.
 
-This is not hypothetical fear. A recent independent backtest audit (public repo, ~226 implementations of 46 retail trading concepts on NIFTY/BANKNIFTY) found no validated edge; its intraday long-option bots were net-negative in a one-year holdout after full statutory costs. The research is third-party, not ours — but it confirms the mechanism this section teaches: **the stack is a fixed tax per trade, so it hurts thin edges most — and retail scalpers live exactly there.**
+This isn't hypothetical fear. A recent independent backtest audit (public repo, ~226 implementations of 46 retail trading concepts on NIFTY/BANKNIFTY) found no validated edge; its intraday long-option bots were net-negative in a one-year holdout after full statutory costs. The research is third-party, not ours — but it confirms the mechanism: **the stack is a fixed tax per trade, so it hurts thin edges most — and retail scalpers live exactly there.**
 
 ### Subtract costs as their own term — never fold them into the averages
 
@@ -173,7 +173,7 @@ For slippage, don't guess twice: log fill vs signal price on your next 30 trades
 
 ## The honesty ledger: what counts as a trade
 
-Two formulas and a cost stack are worthless if the sample you feed them is dishonest. Four ledger rules decide whether your input sample is honest before the number means anything. The first three are one-liners serving the formula above; the skipped-signals rule is the one almost no trading article teaches, so this chapter teaches it in full.
+Two formulas and a cost stack are worthless if the sample you feed them is dishonest. Four ledger rules decide whether your input sample is honest before the number means anything. The first three are one-liners; the skipped-signals rule is the one almost no trading article teaches, so this chapter teaches it in full.
 
 **Closed trades only.** Open positions never enter either method — unrealized P&L is not an observation. (The mirror of the Way 2 rule.)
 
@@ -183,13 +183,13 @@ Two formulas and a cost stack are worthless if the sample you feed them is disho
 
 ### Skipped signals must be logged
 
-A strategy you trade selectively is not the strategy you measured. Every signal your system fired that you skipped — because it "didn't feel right," because you were at lunch, because the previous trade was still open — is selection bias in disguise. The measured expectancy belongs to the trades you *took*, but the skipped ones are precisely where your fear or your schedule intervened, and intervention is the part of the system you are not measuring. Log the skip with a one-word reason. If the skipped signals would have won, your measured expectancy understates the system and your discipline is the edge leak. If they would have lost, your measured number is flattered and your skipping is unmeasured alpha. Either way: unlogged skips make the sample a story, not data.
+A strategy you trade selectively isn't the strategy you measured. Every signal your system fired that you skipped — because it "didn't feel right," because you were at lunch, because the previous trade was still open — is selection bias in disguise. The measured expectancy belongs to the trades you *took*, but the skipped ones are exactly where your fear or your schedule intervened — and intervention is the part of the system you're not measuring. Log the skip with a one-word reason. If the skipped signals would have won, your measured expectancy understates the system and your discipline is the edge leak. If they would have lost, your measured number is flattered and your skipping is unmeasured alpha. Either way: unlogged skips make the sample a story, not data.
 
-One line on the bigger honesty question: even a cleanly kept sample can be overfit — curve-fit to noise in the testing window — which is exactly why the sample you measured must be honest *first*, before asking whether it generalizes. That question gets its own chapter, on overfitting, next in the protocol.
+One line on the bigger honesty question: even a cleanly kept sample can be overfit — curve-fit to noise in the testing window — which is exactly why the sample you measured must be honest *first*, before asking whether it generalizes. That question gets its own chapter, [on overfitting](/articles/how-to-detect-overfitting-in-trading-strategy/), next in the protocol.
 
 ### The test to run
 
-Audit your trade log against the four ledger rules before you trust the number from sections 1 and 2: are only closed trades in the sample? Are breakevens and scratches in the count as zeros? Are skipped signals logged with reasons? Was initial risk flat across the window? Any "no" means your expectancy is a rumor with good formatting. Fix the ledger, recompute.
+Audit your [trade log](/articles/trading-journal-what-to-track-beyond-pnl/) against the four ledger rules before you trust the number from sections 1 and 2: are only closed trades in the sample? Are breakevens and scratches in the count as zeros? Are skipped signals logged with reasons? Was initial risk flat across the window? Any "no" means your expectancy is a rumor with good formatting. Fix the ledger, recompute.
 
 ## Expectancy vs profit factor: the one distinction that matters
 
@@ -216,7 +216,7 @@ Compute both profit factor and expectancy on your log. If they tell the same sto
 
 ## From per-trade to per-month: turning expectancy into money
 
-A per-trade number is an abstraction. Money arrives per month. The translation is one multiplication — plus two honesty rules: use your realistic frequency, and remember the average says nothing about the path.
+A per-trade number is an abstraction. Money arrives per month. The translation is one multiplication — plus two honesty rules: use your realistic frequency, and remember the average says nothing about [the path](/articles/monte-carlo-simulation-for-traders/).
 
 ### Net expectancy × honest frequency = expected money
 
@@ -318,7 +318,7 @@ Translate your net expectancy into monthly money at your *honest* trade frequenc
 
 ## The honest limit: expectancy is silent on the path
 
-An average tells you where you land. It tells you nothing about whether you survive the trip. Three failure modes, all compatible with a genuinely positive expectancy — each a bridge, not a re-teach:
+An average tells you where you land. It says nothing about whether you survive the trip. Three failure modes, all compatible with a genuinely positive expectancy — each a bridge, not a re-teach:
 
 1. **The sample was too small.** Variance dominates small samples — the [sample-size chapter](/articles/how-many-trades-to-validate-a-strategy/) owns this evidence contract. The measured edge may be noise wearing a green shirt.
 2. **The costs weren't in the math.** Gross, not net — section 2's lesson. A +0.05R laboratory edge that pays 0.08R in friction is a −0.03R loser, and it loses *reliably*.
@@ -328,7 +328,7 @@ To put a scale on the third failure mode, take a publicly published 10,000-run s
 
 ### Risk disclosure: what expectancy can never promise
 
-This is mandatory, and it is not decoration. **Trading can lose capital** — the per-month translation above is an expectation, not a schedule. **Options are leveraged instruments whose premia decay with time (theta)**; a positive expectancy computed on clean fills still faces gap risk and time decay you never modeled. Treat the headline carefully, but the direction is unambiguous: roughly **9 in 10 individual F&O traders lose money** (SEBI's study of individual F&O participation, covering approximately the three years to FY24). Expectancy is a long-run average, never a guarantee — and the average only pays the traders who are still in the game when it arrives. Two bridge lines for later chapters: Kelly-style and fixed-fractional sizing only make sense *after* expectancy is established — sizing on a negative or thin expectancy accelerates losses, it doesn't recover them. And our [What-If simulator](/tools/what-if-simulator/) prices the *path*, not the per-trade number: it measures sequence risk on an existing sample — it does not validate the edge.
+This is mandatory, not decoration. **Trading can lose capital** — the per-month translation above is an expectation, not a schedule. **Options are leveraged instruments whose premia decay with time (theta)**; a positive expectancy computed on clean fills still faces gap risk and time decay you never modeled. Treat the headline carefully, but the direction is unambiguous: roughly **9 in 10 individual F&O traders lose money** (SEBI's study of individual F&O participation, covering approximately the three years to FY24). Expectancy is a long-run average, never a guarantee — and the average only pays the traders who are still in the game when it arrives. Two bridge lines for later chapters: Kelly-style and fixed-fractional sizing only make sense *after* expectancy is established — sizing on a negative or thin expectancy accelerates losses, it doesn't recover them. And our [What-If simulator](/tools/what-if-simulator/) prices the *path*, not the per-trade number: it measures sequence risk on an existing sample — it does not validate the edge.
 
 ### The test to run
 
