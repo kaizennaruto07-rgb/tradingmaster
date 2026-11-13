@@ -1,7 +1,7 @@
 ---
 title: "Why Traders Give Back Their Profits (and How to Stop)"
-description: "Most losing days begin as winning days — success itself impairs judgment. The three circuits of giveback (recency-inflated size, the house-money illusion, no finish line), the giveback ledger that measures it, and the pre-session finish-line protocol that stops it."
-meta_description: "Why do traders give back their profits? Three circuits — inflated size, the house-money illusion, no finish line — and the giveback ledger that stops it."
+description: "Most losing days begin as winning days. Three circuits cause giveback — inflated size, house-money illusion, no finish line — and a finish line stops them."
+meta_description: "Most losing days begin as winning days. Three circuits cause giveback — inflated size, house-money illusion, no finish line — and a finish line stops them."
 date: 2026-10-15
 author: Kaizen
 tag: "Trading psychology"
@@ -12,13 +12,13 @@ keywords: ["why traders give back profits", "trading giveback", "house money eff
 
 > **Educational disclaimer:** This article is for education only and is not financial advice. Trading involves substantial risk of loss. Nothing here guarantees results — it teaches you to measure giveback honestly and to build a pre-session finish-line system so winning mornings don't become losing days.
 
-Most of your worst trading days began as good ones. That is not a coincidence, and it is not bad luck. It is the most under-discussed pattern in retail trading: **the biggest losing days usually begin as winning days — because success itself impairs judgment.**
+Most of your worst trading days began as good ones. That's not a coincidence, and it's not bad luck. It's the most under-discussed pattern in retail trading: **the biggest losing days usually begin as winning days — because success itself impairs judgment.**
 
 Think about your last giveback day. The morning went well. Two winners, maybe three. Then something shifted. The trades got bigger, looser, faster — and by 3:30 PM you were staring at a day's P&L that had handed back almost everything the morning had earned. Losses get blamed on the market. Wins get blamed on nothing. That's why this article exists.
 
-A trading writer once shared a story from his firm's risk manager: a trader sat on a roughly £990,000 day, one tick away from the round-million mark, and pressed for one final scalp to get there. He ended the day flat. The story is third-hand — it belongs to the writer who told it, not to verified reporting — but every trader who has lived a giveback day recognizes the shape of it. The target stops being "trade well" and becomes "a little more."
+A trading writer once shared a story from his firm's risk manager: a trader sat on a roughly £990,000 day, one tick away from the round-million mark, and pressed for one final scalp to get there. He ended the day flat. The story is third-hand — it belongs to the writer who told it, not to verified reporting — but every trader who has lived a giveback day recognises the shape of it. The target stops being 'trade well' and becomes 'a little more.'
 
-This is the opener of our psychology week — the **win side** of the pair. (The loss side — what losing does to you — gets its own article tonight.)
+This is the opener of our psychology week — the **win side** of the pair. (The loss side — what losing does to you — is [revenge trading](/articles/revenge-trading/).)
 
 Giveback is not one problem. It is three circuits running at once:
 
@@ -85,7 +85,7 @@ Economists Richard Thaler and Eric Johnson named this in 1990: after a prior gai
 
 Here's how it feels on a trading desk: your starting capital is *real* money. You guard it. But the ₹24,000 you booked before lunch? That feels like the market's money. Risking it feels different from risking your own — so the same trader who would never take a random ₹24,000-risk trade happily takes five loose ₹5,000-risk trades on profits he booked two hours ago.
 
-The accounting truth, and the fix: **every rupee in the account is the same rupee.** The ledger doesn't know which rupees are "yours" and which are "the house's." That distinction exists only in your head, and it is the most expensive fiction a winning trader tells.
+The accounting truth, and the fix: **every rupee in the account is the same rupee.** The ledger doesn't know which rupees are 'yours' and which are 'the house's.' That distinction exists only in your head, and it's the most expensive fiction a winning trader tells.
 
 Learn the contrast line, because you'll need it all afternoon:
 
@@ -96,11 +96,11 @@ One behavioral note: some traders seem to carry an invisible profit ceiling — 
 
 ## Circuit three: the session has no finish line
 
-Most giveback days were never going to end at a chosen moment. No stop time was set. No daily target was defined. The plan covered entries, stops, and size — but said nothing about *when to stop*. So the session stays open until something stops it: usually the market, handing back everything.
+Most giveback days were never going to end at a chosen moment. No stop time was set. No daily target was defined. The plan covered entries, stops, and size — but said nothing about *when to stop*. So the session stays open until something stops it: usually the market, handing everything back.
 
 This is where the infamous "just one more" trade lives. The morning closed green at 1 PM. By 2:45 the trader is on trade number nine, each one justified in the moment, each one a little looser than the last. On NSE, every one of those extras pays the full cost stack (more on that below) — the trades are both psychologically loose *and* structurally expensive.
 
-Note what overtrading is here: it's **one mechanism of giveback** — more trades, at bigger size, after the win. The full anatomy of overtrading gets its own article tomorrow; what matters today is that it starts where the finish line should have been.
+Note what overtrading is here: it's **one mechanism of giveback** — more trades, at bigger size, after the win. [The full anatomy of overtrading](/articles/overtrading/) gets its own article; what matters today is that it starts where the finish line should have been.
 
 ## The giveback ledger: measure the peak-to-close distance
 
@@ -193,7 +193,7 @@ Some traders add a closure ritual — a sentence written in the journal at the f
 
 ## In India, giveback days bleed twice
 
-Here's the part nobody in the retail-psychology conversation says: on NSE, every extra "just one more" trade doesn't just risk capital — it pays the full statutory stack. Giveback days bleed twice: once from the losing trades, once from the *cost* of the trades that produced them.
+Here's the part nobody in the retail-psychology conversation says: on NSE, every extra 'just one more' trade doesn't just risk capital — it pays the full statutory stack. Giveback days bleed twice: once from the losing trades, once from the *cost* of the trades that produced them.
 
 Figures as verified on **2026-10-14** (they're time-sensitive — the Finance Minister acknowledged the ongoing debate over STT and related taxes on 2026-10-13, so treat them as current, not permanent):
 
@@ -205,7 +205,7 @@ Run the math on a giveback afternoon: five extra option round-trips at ₹5,000 
 
 ## Win side vs loss side: giveback is today's story, revenge is tonight's
 
-One explicit contrast, because this week is built as a pair: **giveback is what winning does to you** — the urge to keep going when things are working, booked profit spent like house money, size inflating on a winning morning. **Revenge trading is what losing does** — a different failure, with different circuits, and it gets its own full article tonight. Same family, opposite triggers. Don't confuse them, because they need different systems: the win-side system is a finish line; the loss-side system is a different animal entirely.
+One explicit contrast, because this week is built as a pair: **giveback is what winning does to you** — the urge to keep going when things are working, booked profit spent like house money, size inflating on a winning morning. **Revenge trading is what losing does** — a different failure, with different circuits, and it gets [its own full article](/articles/revenge-trading/). Same family, opposite triggers. Don't confuse them: they need different systems — a finish line for the win side, a different animal entirely for the loss side.
 
 <figure class="article-visual" data-reveal>
 <svg viewBox="0 0 680 470" role="img" aria-label="Win-side vs loss-side pair map: giveback circuits on the winning side, revenge trading on the losing side, shared human psychology in the middle." class="viz">
@@ -247,7 +247,7 @@ And the week's promise, because psychology articles usually get this backwards: 
 
 A finish line is a risk rule, not a profit rule. It caps your upside days too — the day you would have run ₹42,500 to ₹80,000 ends at the finish line, and the ledger will show it. That's the price. Nobody gets the best days without occasionally paying for them; the system buys you *fewer worst days*, not *only best days*.
 
-The ledger measures behavior, not edge. A broken strategy still bleeds with perfect discipline — giveback days are also, in expectancy terms, the *costs* of the win, and a full net-expectancy calculation (our how-to-calculate-real-expectancy piece) is what tells you whether the system itself deserves your money. No journal metric fixes a strategy that was never validated.
+The ledger measures behaviour, not edge. A broken strategy still bleeds with perfect discipline — giveback days are also, in expectancy terms, the *costs* of the win, and a full net-expectancy calculation ([our how-to-calculate-real-expectancy piece](/articles/how-to-calculate-real-expectancy/)) is what tells you whether the system itself deserves your money. No journal metric fixes a strategy that was never validated.
 
 And the background honesty: SEBI's FY26 study (published August 2026) found 87.7% of individual equity-derivatives traders incurred net losses. Giveback isn't a personal failing — it's the default. Systems are how you opt out.
 
@@ -267,6 +267,6 @@ The test: is this trade's size, setup, and stop identical to what your written p
 
 ## What comes next this week
 
-Today you got the win side. Tonight: revenge trading — the loss side of the pair. Tomorrow: overtrading, the mechanism both sides share.
+Today you got the win side. Next: [revenge trading](/articles/revenge-trading/) — the loss side of the pair — and [overtrading](/articles/overtrading/), the mechanism both sides share.
 
 The trader who walks away at the finish line is the trader who gets to come back tomorrow. Protect the edge. Come back tomorrow.
