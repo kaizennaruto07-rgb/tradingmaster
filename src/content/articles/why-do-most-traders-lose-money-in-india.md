@@ -1,7 +1,7 @@
 ---
-title: "Why Do Most Traders Lose Money in India? The Real Reasons (and the Exact Fixes)"
-description: "SEBI's data says roughly 9 out of 10 individual F&O traders lose money. The reasons are not what most articles claim — here are the nine real causes, each with a specific, numbered fix."
-meta_description: "Why do most traders lose money in India? SEBI's F&O data, the nine real causes, and exact fixes: position sizing, daily loss limits, overtrading, options decay, and costs."
+title: "Why Do Most Traders Lose Money in India? 9 Causes, 9 Fixes"
+description: "SEBI says 9 in 10 F&O traders lose money. The 9 real causes — oversizing, overtrading, options decay, costs — each with a specific, numbered fix."
+meta_description: "SEBI says 9 in 10 F&O traders lose money. The 9 real causes — oversizing, overtrading, options decay, costs — each with a specific, numbered fix."
 date: 2026-10-29
 author: Kaizen
 tag: "Trading psychology · Risk"
@@ -112,7 +112,7 @@ This is revenge trading, and it has a recognizable signature: trades taken immed
 - **Step 1.** Set a daily loss limit of 2–3% of your account. On ₹1,00,000, that is ₹2,000–₹3,000. Write it down before the market opens.
 - **Step 2.** The moment the limit is hit, stop trading for the day. Not "one more trade to recover." Stop.
 - **Step 3.** Make the rule enforceable. Many brokers offer a kill-switch feature that blocks further orders for the session — turn it on. A rule that depends on willpower at the worst moment of the day is not a rule.
-- **Step 4.** After any stop-out, wait at least 15–30 minutes before the next trade, and write one line in your journal about what happened. The pause breaks the emotional chain; the journal entry makes the pattern visible over weeks.
+- **Step 4.** After any stop-out, wait at least 15–30 minutes before the next trade, and write one line in [your journal](/articles/trading-journal-what-to-track-beyond-pnl/) about what happened. The pause breaks the emotional chain; the journal entry makes the pattern visible over weeks.
 
 A trader who never has a catastrophic day does not need a miraculous strategy. They need a ceiling on bad days, enforced automatically.
 
@@ -130,7 +130,7 @@ The full breakdown is in [overtrading](/articles/overtrading/).
 
 ### The fix: a hard cap on trades per day
 
-- **Step 1.** Cap yourself at 3 trades per day to start. If you cannot find 3 genuine setups that match your written plan, take fewer. Fewer is fine.
+- **Step 1.** Cap yourself at 3 trades per day to start. If you cannot find 3 genuine setups that match [your written plan](/articles/building-your-first-trading-system/), take fewer. Fewer is fine.
 - **Step 2.** Define a "setup" in writing before the market opens: instrument, trigger, entry, stop, target. If a trade does not match the written definition, it does not count as a setup — it counts as a violation.
 - **Step 3.** Track your trades per day for a month. Most traders who do this discover that their profit comes from their first few trades and their losses come from everything after. The data, not discipline lectures, is what convinces them to cut frequency.
 - **Step 4.** If you trade intraday, decide in advance whether you are an intraday trader at all. Holding a position overnight without a plan is not a strategy change — it is refusing to accept a loss.
