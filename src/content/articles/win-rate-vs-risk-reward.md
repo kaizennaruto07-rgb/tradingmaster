@@ -1,7 +1,7 @@
 ---
-title: "Win Rate vs Risk-Reward in Trading: Which One Actually Makes You Money?"
-description: "Win rate or risk-reward — which makes you money? Six worked pairings, a one-line breakeven check, streak math and a journal framework for Indian traders."
-meta_description: "Win rate or risk-reward — which makes you money? Six worked pairings, a one-line breakeven check, streak math and a journal framework for Indian traders."
+title: "Win Rate vs Risk-Reward: 60% Wins Can Still Lose Money"
+description: "A 60% win rate lost ₹1,000 over 100 trades; a 40% win rate made ₹6,000. Six worked pairings, the one-line breakeven check, streak math, and a journal framework."
+meta_description: "A 60% win rate lost ₹1,000 over 100 trades; a 40% win rate made ₹6,000. Six worked pairings, the one-line breakeven check, streak math, and a journal framework."
 date: 2026-10-05
 author: Kaizen
 tag: "Trading mathematics · Win rate"
@@ -12,9 +12,9 @@ keywords: ["win rate vs risk reward trading", "what win rate to be profitable", 
 
 Ask ten traders which matters more — winning often or winning big — and you'll get a fight, not an answer. The "win rate is king" camp will show you their 75% green screenshots. The "risk-reward is everything" camp will show you one monster 1:5 trade. Both are showing you half an equation and calling it the whole thing.
 
-So here's the short answer, and we'll prove it line by line: **neither win rate nor risk-reward wins on its own. What makes you money is how the two combine.** A 90% win rate can bleed an account dry. A 30% win rate can build one. The difference is the other half of the pair.
+So here's the short answer: **neither win rate nor risk-reward wins on its own. What makes you money is how the two combine.** A 90% win rate can bleed an account dry. A 30% win rate can build one. The difference is the other half of the pair.
 
-Don't believe it yet? Take this hypothetical illustration: same risk, same 100 trades, same Rs 100 on the line every trade:
+Don't believe it yet? Same risk, same 100 trades, same Rs 100 on the line every trade:
 
 - **70% win rate at 1:1** risk-reward → **+Rs 4,000**
 - **40% win rate at 1:3** risk-reward → **+Rs 6,000**
@@ -30,7 +30,7 @@ Every trade you take has two independent properties: **how often** you're right,
 
 Think of it like a shop. Win rate is the number of customers walking in; risk-reward is the profit margin on each sale. A shop with a thousand customers buying at a loss goes bankrupt faster than a shop with a hundred customers buying at a healthy margin. Volume without margin is just expensive noise.
 
-Traders resist this because the two numbers *feel* like they should trade off cleanly — "if I win less often, I just need bigger winners." Sometimes that's true. But it isn't automatic, and the math has strict thresholds. A 40% win rate needs at least a 1:1.5 ratio just to survive. A 60% win rate at 1:0.5 is already dead on arrival. The rest of this article gives you the tools to check any pairing you actually run — before costs, after costs, and in the mirror of your own psychology.
+Traders resist this because the two numbers *feel* like they should trade off cleanly — "if I win less often, I just need bigger winners." Sometimes that's true. But it isn't automatic, and the math has strict thresholds. A 40% win rate needs at least a 1:1.5 ratio just to survive. A 60% win rate at 1:0.5 is already dead on arrival. The rest of this article gives you the tools to check any pairing you actually run — before costs, after costs, and against your own psychology.
 
 ---
 
@@ -44,7 +44,7 @@ Here's what it hides:
 2. **It says nothing about costs.** Brokerage, STT, GST, and slippage get deducted from the real money you keep, never from the headline percentage.
 3. **It says nothing about how wins and losses cluster.** Ten losses in a row and ten wins in a row are identical in the win-rate column. They are not identical to your psychology, your drawdown, or your margin account. (The streak math coming up will sting a little.)
 
-Traders overvalue being right because being right *feels* good. Every green tick is a small hit of validation; every red trade is a small verdict on your judgment. A high win rate strategy gives you that hit constantly, even while the account drains quietly in the background. Low win rate strategies do the opposite: they punish your ego on 60–70% of your days and pay you for it. Most people can't choose the second path — which is precisely why understanding it is an edge.
+Traders overvalue being right because being right *feels* good. Every green tick is a small hit of validation; every red trade is a small verdict on your judgment. A high win rate strategy gives you that hit constantly, even while the account drains quietly in the background. Low win rate strategies do the opposite: they punish your ego on 60–70% of your days and pay you for it. Most people can't choose the second path — which is exactly why understanding it is an edge.
 
 **Bottom line:** win rate measures frequency. Frequency without payoff size is a vanity metric.
 
@@ -56,7 +56,7 @@ Traders overvalue being right because being right *feels* good. Every green tick
 
 Because here's the thing nobody tells beginners: **the ratio is geometry, not a forecast.** Drawing a 1:3 plan on a chart says absolutely nothing about whether price actually reaches that target. The geometry is a plan for *how you'll get paid if you're right*. It is not a claim about *how often you'll be right*. Every time you widen a target to get a prettier ratio, you're implicitly claiming you'll be right less often — whether you admit it or not.
 
-Which brings us to the **dishonest ratio**: the targets pasted absurdly far away so the trade *looks* like a genius 1:4. We've all seen these chart posts — entry marked here, stop tucked tight underneath, and a target two resistance levels above that price has never touched in this expiry. The ratio is real arithmetic. The numerator is invented. A ratio you will never actually collect is decoration, not risk management.
+Which brings us to the **dishonest ratio**: targets pasted absurdly far away so the trade *looks* like a genius 1:4. We've all seen these chart posts — entry marked here, stop tucked tight underneath, and a target two resistance levels above that price has never touched in this expiry. The ratio is real arithmetic. The numerator is invented. A ratio you will never actually collect is decoration, not risk management.
 
 Honest R:R has three requirements: the stop is where your idea is *wrong*, the target is where the idea has *actually been proven* before (a real level, not a round number with ambition), and both survive slippage and spread on your instrument. Anything else is a ratio that exists only on the screenshot.
 
@@ -119,11 +119,11 @@ These are illustrative figures, not anyone's actual results — the point is the
 
 Two composite, illustrative profiles — common archetypes in Indian markets — both realistic in structure:
 
-**The 90% scalper** (illustrative composite, not a real person). He trades Bank Nifty options intraday, grabs Rs 20–30 premiums, books fast, feels like a machine. His wins are tiny; his stops, on the days the market gaps or a position goes against him, are full-sized. Nine Rs 30 wins barely cover two-and-a-half Rs 100 losses — and once brokerage, STT, and slippage join, they don't cover even that. His equity curve is a slow staircase down interrupted by confident screenshots. He doesn't have a strategy problem. He has a *pairing* problem: his ratio can't pay for his (rare but full-sized) losses.
+**The 90% scalper** (illustrative composite, not a real person). He trades Bank Nifty options intraday, grabs Rs 20–30 premiums, books fast, feels like a machine. His wins are tiny; his stops, on the days the market gaps or a position goes against him, are full-sized. Nine Rs 30 wins barely cover two-and-a-half Rs 100 losses — and once brokerage, STT, and slippage join, they don't cover even that. His equity curve is a slow staircase down interrupted by confident screenshots. He doesn't have a strategy problem. He has a *pairing* problem: his ratio can't pay for his rare but full-sized losses.
 
 **The 30% trend follower** (illustrative composite, not a real person). She loses most trades — small, planned, boring losses. Then one trend pays 3R and erases a week of red. Her equity curve looks like a saw blade that climbs. She has survived what the scalper hasn't: the boredom and self-doubt of losing most of the time.
 
-And surviving is the operative word, because low-win-rate trading comes with a brutal companion: **losing streaks**. Assuming trade outcomes are independent with a fixed win rate (a simplification — real markets have regimes and correlations, so treat this as a planning figure, not a forecast), probability says that at a **30% win rate**, a 10-loss streak across 100 trades has roughly a **58% chance** of happening — better than even odds. (Computed by exact dynamic programming over all possible outcome sequences, cross-checked by Monte Carlo simulation, October 2026.)
+And surviving is the operative word, because low-win-rate trading comes with a brutal companion: **[losing streaks](/articles/how-losing-streaks-affect-trading-accounts/)**. Assuming trade outcomes are independent with a fixed win rate (a simplification — real markets have regimes and correlations, so treat this as a planning figure, not a forecast), probability says that at a **30% win rate**, a 10-loss streak across 100 trades has roughly a **58% chance** of happening — better than even odds. (Computed by exact dynamic programming over all possible outcome sequences, cross-checked by Monte Carlo simulation, October 2026.)
 
 Let that land: if you run a 30%-win-rate strategy, you are more likely than not to hit a 10-loss streak in any 100-trade stretch — and near-certain to face one across a trading career. Your position sizing, your capital, and your mental health all have to survive that before the math ever gets to pay you. Many traders pick a low-win-rate/high-R strategy on paper and abandon it at the bottom of exactly this streak — locking in the pain and missing the payoff. The pairing demands resilience as a skill, not just as a virtue. For the full probability treatment — how streak length scales with win rate, trade count, and what it means for survival math — see our guide to [risk of ruin](/articles/risk-of-ruin-trading/).
 
@@ -241,7 +241,7 @@ Let that land: if you run a 30%-win-rate strategy, you are more likely than not 
 
 ## The one-line breakeven check: flip the question around
 
-Every ratio has a minimum win rate below which it cannot make money. The full breakeven table lives in our [expectancy guide](/articles/what-is-trading-expectancy/) — but for day-to-day decisions, the flipped form is handier: **minimum R:R = (1 ÷ win rate) − 1.** A 30% win rate needs at least 1:2.33 to break even (1 ÷ 0.30 − 1 = 2.33). Run your win rate through it, check your ratio clears it with margin for costs, and you're done. The deep derivation and edge cases are coming next in this series (Article #4, Break-Even Win Rate).
+Every ratio has a minimum win rate below which it cannot make money. The full breakeven table lives in our [expectancy guide](/articles/what-is-trading-expectancy/) — but for day-to-day decisions, the flipped form is handier: **minimum R:R = (1 ÷ win rate) − 1.** A 30% win rate needs at least 1:2.33 to break even (1 ÷ 0.30 − 1 = 2.33). Run your win rate through it, check your ratio clears it with margin for costs, and you're done. The deep derivation and edge cases live in our [Break-Even Win Rate guide](/articles/break-even-win-rate/).
 
 ---
 
@@ -293,7 +293,7 @@ The Indian context makes this concrete. SEBI's F&O profitability study (released
 Two practical consequences:
 
 1. **Compute your pairing on net numbers.** For options traders, our [options trading charges guide](/articles/options-trading-charges-india/) breaks down the Indian cost stack; futures traders should account for funding and fees similarly using the [cost calculators on our tools page](/tools/).
-2. **Size your rupee risk to survive the streak math.** The 30%-win-rate trader who risks 5% per trade and hits the better-than-even 10-loss streak is down ~40% before the strategy ever gets to work (1 − 0.95^10 = 0.4013). Your per-trade rupee risk must be small enough that the expected worst streak is an annoyance, not an account-ender. The math of surviving drawdowns is its own subject — see our guide to [risk of ruin](/articles/risk-of-ruin-trading/).
+2. **[Size your rupee risk](/articles/position-sizing/) to survive the streak math.** The 30%-win-rate trader who risks 5% per trade and hits the better-than-even 10-loss streak is down ~40% before the strategy ever gets to work (1 − 0.95^10 = 0.4013). Your per-trade rupee risk must be small enough that the expected worst streak is an annoyance, not an account-ender. The math of surviving drawdowns is its own subject — see our guide to [risk of ruin](/articles/risk-of-ruin-trading/).
 
 ---
 
@@ -319,7 +319,7 @@ And the standing disclosure for everything in this section: leveraged F&O can lo
 
 ## Your decision framework: evaluate the pair in your own journal
 
-Enough theory. Here's the practical close — how to judge your own trading:
+Enough theory. Here's how to judge your own trading:
 
 **Step 1: Journal 30–50 real trades.** Not backtests, not paper trades — real ones, with entry, stop, target, exit price, and costs. Thirty is the minimum for the numbers to mean anything; fifty is better.
 
