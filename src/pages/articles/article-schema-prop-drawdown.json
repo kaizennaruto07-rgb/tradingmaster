@@ -3,8 +3,8 @@
   "@graph": [
     {
       "@type": "Article",
-      "headline": "Prop Firm Drawdown Rules, Decoded",
-      "description": "Prop firm drawdown rules decoded: daily vs maximum drawdown, static vs trailing floors, soft vs hard breaches, and what a breach costs before you trade.",
+      "headline": "Prop Firm Drawdown Rules: Daily, Max & Trailing Explained",
+      "description": "Daily drawdown is 4–5% and resets; max drawdown is 6–12% and never resets. A trailing floor rises with your peak — you can be up 1.5% and still fail.",
       "author": {
         "@type": "Person",
         "@name": "Kaizen"
