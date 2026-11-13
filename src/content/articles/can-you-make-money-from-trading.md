@@ -1,7 +1,7 @@
 ---
-title: "Can You Make Money From Trading? The Honest Answer, With the Math"
-description: "Can you make money from trading? Yes, some traders do — but SEBI's data says over 9 in 10 F&O traders lose money. Learn the expectancy math, position-sizing rules, and realistic monthly income figures before you risk capital."
-meta_description: "Can you make money from trading? Yes, some traders do — but SEBI's data says over 9 in 10 F&O traders lose money. Learn the expectancy math, position-sizing rules, and realistic monthly income figures before you risk capital."
+title: "Can You Make Money From Trading? The Honest Answer"
+description: "Yes, some traders do — but SEBI's data says over 91% of F&O traders lose money. The expectancy math, the 1% rule, and realistic monthly income, with numbers."
+meta_description: "Yes, some traders do — but SEBI's data says over 91% of F&O traders lose money. The expectancy math, the 1% rule, and realistic monthly income, with numbers."
 date: 2026-10-27
 author: Kaizen
 tag: "Trading basics · Risk"
@@ -14,7 +14,7 @@ keywords: ["can you make money from trading", "can beginners make money from tra
 
 Yes, you can make money from trading. Some traders do it consistently, year after year, and treat it as a business.
 
-But here is the number that should sit next to that yes: in India, SEBI's study found that over 91% of individual traders in equity futures and options lost money in FY2024-25, with aggregate net losses of about ₹1,05,603 crore. A separate SEBI study found 93% lost money across FY2022 to FY2024.
+But here is the number that should sit next to that yes: in India, SEBI's study found that [over 91% of individual traders in equity futures and options lost money](/articles/why-do-most-traders-lose-money-in-india/) in FY2024-25, with aggregate net losses of about ₹1,05,603 crore. A separate SEBI study found 93% lost money across FY2022 to FY2024.
 
 So the honest answer has three parts, and this article covers all three with numbers:
 
@@ -73,7 +73,7 @@ The difference is not skill. It is survival math, and it is the single most unde
 
 ### The two numbers that decide everything
 
-- **Expectancy:** how much each trade makes or loses you on average, over many trades.
+- **[Expectancy](/articles/how-to-calculate-real-expectancy/):** how much each trade makes or loses you on average, over many trades.
 - **Risk of ruin:** the probability that a losing streak wipes out your account before your edge pays off.
 
 A trader with positive expectancy but reckless sizing still goes broke. A trader with modest expectancy and disciplined sizing can compound slowly for years. If you want to check your own numbers, the [risk of ruin calculator](/tools/risk-of-ruin/) on this site runs the same math, and the [risk of ruin guide](/articles/risk-of-ruin-trading/) explains it in full.
@@ -122,7 +122,7 @@ Notice what this example proves: income follows from expectancy multiplied by fr
 
 ## Position Sizing: The Rule That Keeps You Alive Long Enough to Profit
 
-Expectancy decides whether you should make money. Position sizing decides whether you are still in the game when it happens.
+Expectancy decides whether you should make money. [Position sizing](/articles/position-sizing/) decides whether you are still in the game when it happens.
 
 ### The 1% rule, stated plainly
 
