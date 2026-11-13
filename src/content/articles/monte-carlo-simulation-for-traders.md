@@ -1,7 +1,7 @@
 ---
-title: "Monte Carlo Simulation for Traders: What It Is, How It Works, and How to Size From It"
-description: "A backtest is one roll of the dice. Monte Carlo simulation in trading re-deals your trade list a thousand times — bootstrap, order-shuffle, execution honesty — and the fan it builds tells you the ruin probability, the drawdown distribution, and the position size you can actually survive. Indian NIFTY worked example inside."
-meta_description: "A backtest is one roll of the dice. Monte Carlo simulation in trading rolls it a thousand times — here's what the fan tells you and how to set size from it."
+title: "Monte Carlo Simulation Trading: Ruin, Drawdown & Sizing"
+description: "A backtest is one roll of the dice. Re-deal your trades 1,000 times — the fan shows your ruin probability, drawdown range, and the size you can survive."
+meta_description: "A backtest is one roll of the dice. Re-deal your trades 1,000 times — the fan shows your ruin probability, drawdown range, and the size you can survive."
 date: 2026-10-14
 author: Kaizen
 tag: "Trading mathematics · Strategy validation"
@@ -14,11 +14,11 @@ keywords: ["monte carlo simulation trading", "monte carlo simulation for traders
 
 ## Your Backtest Is One Roll of the Dice. Monte Carlo Rolls It a Thousand Times.
 
-What does Monte Carlo simulation in trading actually tell you? It tells you what your strategy's future could *plausibly* look like — not one path, but a thousand of them. A backtest shows you a single sequence: the exact order your winners and losers happened to fall in, with all the drawdowns and streaks that one particular order produced. Monte Carlo takes that same trade-by-trade list and re-deals it — shuffles the order, skips a few trades, nudges the execution — thousands of times, and builds a distribution of equity curves from every reshuffled version.
+What does Monte Carlo simulation in trading actually tell you? What your strategy's future could *plausibly* look like — not one path, but a thousand of them. A backtest shows you a single sequence: the exact order your winners and losers happened to fall in, with all the drawdowns and streaks that one particular order produced. Monte Carlo takes that same trade-by-trade list and re-deals it — shuffles the order, skips a few trades, nudges the execution — thousands of times, and builds a distribution of equity curves from every reshuffled version.
 
-From that distribution, you get the two things a backtest can never give you: the probability your account ever sinks past a ruin threshold *you* define, and the range of drawdowns you should honestly expect instead of the single drawdown number your backtest happened to print. That's the whole idea behind Monte Carlo simulation vs backtesting — the backtest drew one ordering of history; Monte Carlo draws a thousand.
+From that distribution, you get the two things a backtest can never give you: the probability your account ever sinks past a ruin threshold *you* define, and the range of [drawdowns](/articles/maximum-drawdown/) you should honestly expect instead of the single drawdown number your backtest happened to print. That's the whole idea behind Monte Carlo simulation vs backtesting — the backtest drew one ordering of history; Monte Carlo draws a thousand.
 
-This matters because the order of your trades decides whether a strategy survives, not just its average. Two traders can run an identical strategy with identical expectancy and get wildly different accounts — one catches losers early and quits, the other catches winners early and feels invincible. Your backtest is one roll of those dice. Monte Carlo rolls them a thousand times so you can see the full shape of your luck before you trade real money on it.
+This matters because the order of your trades decides whether a strategy survives, not just its average. Two traders can run an identical strategy with identical expectancy and end up with wildly different accounts — one catches losers early and quits, the other catches winners early and feels invincible. Your backtest is one roll of those dice. Monte Carlo rolls them a thousand times so you can see the full shape of your luck before you trade real money on it.
 
 <figure class="article-visual" data-reveal>
 <svg viewBox="0 0 680 410" role="img" aria-label="One highlighted backtest equity curve overlaid on a faint cloud of one thousand resampled paths, with a dashed ruin line at a 30 percent account loss" class="viz">
@@ -62,7 +62,7 @@ This matters because the order of your trades decides whether a strategy survive
 
 Here's the quotable version: **Monte Carlo simulation in trading is a resampling technique. It takes your strategy's actual trade-by-trade results and re-deals them — shuffling the order, skipping trades, varying execution — thousands of times to build a distribution of plausible equity curves. It doesn't predict your future. It prices your uncertainty.**
 
-That "doesn't predict" part is the load-bearing wall. Monte Carlo can't tell you whether your strategy has an edge. It assumes the edge is whatever your trade list shows, and then asks: *given these trades, how bad could the ride get?* If the trade list is honest — out-of-sample, costs included, no cherry-picking — the fan of curves is an honest picture of sequence risk: the risk that bad timing, not a bad strategy, is what takes you out.
+That "doesn't predict" part is the load-bearing wall. Monte Carlo can't tell you whether your strategy has an edge. It assumes the edge is whatever your trade list shows, then asks: *given these trades, how bad could the ride get?* If the trade list is honest — out-of-sample, costs included, no cherry-picking — the fan of curves is an honest picture of sequence risk: the risk that bad timing, not a bad strategy, is what takes you out.
 
 Now compare it directly with backtesting. A backtest answers "what did this sample do, in the exact order it happened?" Monte Carlo answers "what could this sample do, across every order it could have happened in?" The backtest is a single realized history. The fan is the set of alternate histories consistent with your data. You need both — the backtest for the edge, the fan for the survivability.
 
@@ -76,11 +76,11 @@ There are three standard ways to re-deal your trade list, and an honest simulati
 
 3. **Execution-honesty layer.** Real trading is messier than the spreadsheet. Randomly drop a small percentage of trades (you won't take them all — you'll be away, distracted, or frozen), and randomize the fill on each trade by a few basis points of slippage. This stops the fan from inheriting the backtest's perfect-execution fantasy.
 
-Now the blunt part — the garbage-in rule: **Monte Carlo is only as honest as the sample you feed it.** If your trade list is overfit, cherry-picked, or backtest-only (no out-of-sample), then all a thousand paths are fantasies — garbage in, garbage out, multiplied a thousand times. A thousand beautifully drawn curves on top of a curve-fitted sample is just a well-decorated lie. Feed the fan only honest, out-of-sample trades; if you're unsure your sample qualifies, read [how to detect overfitting in a trading strategy](/articles/how-to-detect-overfitting-in-trading-strategy/) first, and check [how many trades it takes to validate a strategy](/articles/how-many-trades-to-validate-a-strategy/) before you resample a sample that's too small to mean anything.
+Now the blunt part — the garbage-in rule: **Monte Carlo is only as honest as the sample you feed it.** If your trade list is overfit, cherry-picked, or backtest-only (no out-of-sample), then all a thousand paths are fantasies — garbage in, garbage out, multiplied a thousand times. A thousand beautifully drawn curves on a curve-fitted sample is just a well-decorated lie. Feed the fan only honest, out-of-sample trades; if you're unsure your sample qualifies, read [how to detect overfitting in a trading strategy](/articles/how-to-detect-overfitting-in-trading-strategy/) first, and check [how many trades it takes to validate a strategy](/articles/how-many-trades-to-validate-a-strategy/) before you resample a sample too small to mean anything.
 
 ## How Many Simulations Do You Actually Need?
 
-Practitioners often use **1,000 simulations as the working standard** — enough paths that your percentile estimates (median, P10/P90, ruin probability) settle down instead of jumping around between runs. For serious studies where tail estimates really matter, 10,000 is the common choice. A quick ~100-path run gives you a rough read, but don't quote its tail numbers as gospel.
+Practitioners often use **1,000 simulations as the working standard** — enough paths for your percentile estimates (median, P10/P90, ruin probability) to settle down instead of jumping around between runs. For serious studies where tail estimates really matter, 10,000 is the common choice. A quick ~100-path run gives you a rough read, but don't quote its tail numbers as gospel.
 
 The reason is statistical, not moral: each simulation is one sample from the distribution, and more samples mean your *estimates converge* — the ruin probability stops wobbling and homes in on a stable value. More simulations never make the strategy better. They just stop the measuring instrument from shaking.
 
@@ -92,9 +92,9 @@ The fan chart looks like a funnel of curves. Here's how to read it without fooli
 
 **Ruin probability — but define ruin first.** Monte Carlo can't compute "probability of ruin" until you define ruin, because ruin is a personal decision, not a statistic. Pick the line you'd actually stop trading at: losing 30% of the account, say, or 50%. Then read off what fraction of paths cross that line. Practitioners often use around **5% as roughly acceptable** and treat **more than 10% as a reason to avoid or resize** — those are third-party rules of thumb, not our data, and they only mean anything attached to a threshold you've genuinely committed to.
 
-**The drawdown distribution — plural, not singular.** Your backtest gives you one max drawdown number. The fan gives you a *distribution* of max drawdowns: the median path's worst drawdown, the 90th-percentile path's worst drawdown, and everything between. This is what does the real psychological work. Knowing that your backtest's 8% drawdown is actually the *lucky* outcome — that a third of plausible paths draw down twice as far — is what stops you from quitting a working strategy at exactly the wrong moment.
+**The drawdown distribution — plural, not singular.** Your backtest gives you one max drawdown number. The fan gives you a *distribution* of max drawdowns: the median path's worst, the 90th-percentile path's worst, and everything between. This is what does the real psychological work. Knowing your backtest's 8% drawdown is actually the *lucky* outcome — that a third of plausible paths draw down twice as far — is what stops you from quitting a working strategy at exactly the wrong moment.
 
-**Max loss streaks.** The fan also shows the distribution of consecutive losers. If the 90th-percentile path strings together 11 losers in a row and you've never mentally rehearsed 11, you'll panic when it happens live. Monte Carlo lets you rehearse it on paper first.
+**Max loss streaks.** The fan also shows the distribution of [consecutive losers](/articles/how-losing-streaks-affect-trading-accounts/). If the 90th-percentile path strings together 11 losers in a row and you've never mentally rehearsed 11, you'll panic when it happens live. Monte Carlo lets you rehearse it on paper first.
 
 As a one-line corroboration: the same edge you're feeding into the fan should also show up as a healthy profit factor — [profit factor](/articles/profit-factor/) and expectancy are the inputs, Monte Carlo is the stress test on top.
 
@@ -108,7 +108,7 @@ Let's make this concrete with an illustrative example — round figures, assumpt
 
 **What the fan said.** Run those same trades through 1,000 order-shuffled, execution-honest simulations and the picture changes: the *median* path's max drawdown is around 14% — nearly double the backtest. The 90th-percentile path draws down around 26%, with loss streaks stretching to 11 in a row. The probability of ever touching the 30%-account-loss ruin threshold? Roughly 4% — just under the line practitioners often treat as acceptable.
 
-Read that again: the backtest's 8% drawdown was *fortunate* — the 90th percentile is far worse. The edge is identical in both readings. What changed is only the order the trades arrived in, which is pure luck. If you're trading this strategy at 1% risk per trade, you are not preparing for an 8% drawdown. You are preparing for a 26% one — and deciding in advance whether you can survive it.
+Read that again: the backtest's 8% drawdown was *fortunate* — the 90th percentile is far worse. The edge is identical in both readings. Only the order the trades arrived in changed, and that's pure luck. If you're trading this strategy at 1% risk per trade, you're not preparing for an 8% drawdown. You're preparing for a 26% one — and deciding in advance whether you can survive it.
 
 <figure class="article-visual" data-reveal>
 <svg viewBox="0 0 680 440" role="img" aria-label="Fan chart showing the P10 to P90 band around the median equity curve over a year of simulated trading, with the backtest single path drawn bold for contrast and a dashed ruin line" class="viz">
@@ -145,7 +145,7 @@ Read that again: the backtest's 8% drawdown was *fortunate* — the 90th percent
 
 ## The Size Dial: Monte Carlo's Real Payoff
 
-Everything so far was diagnosis. This is the payoff — the reason Monte Carlo earns its place in a trader's toolkit. Run the fan again at different risk-per-trade levels, and watch what happens to the ruin profile:
+Everything so far was diagnosis. This is the payoff — the reason Monte Carlo earns its place in a trader's toolkit. Run the fan again at different risk-per-trade levels and watch what happens to the ruin profile:
 
 | Risk per trade | Ruin probability (30% account loss, illustrative) | Median max drawdown | 90th-percentile max drawdown |
 |---|---|---|---|
@@ -156,7 +156,7 @@ Everything so far was diagnosis. This is the payoff — the reason Monte Carlo e
 
 These are illustrative numbers, not universal constants — your strategy's fan will differ. But the *shape* is universal, and it's the nonlinear trap: **doubling your size multiplies your severe-drawdown odds by far more than it lifts your expected return.** Expected returns scale roughly linearly with size; drawdowns and ruin scale convexly. At 3% risk per trade, nearly a third of plausible paths cross your ruin line — same edge, same strategy, different funeral.
 
-So the Monte Carlo way to choose size is: **pick the largest risk per trade whose ruin profile you can genuinely survive** — the worst plausible path included, not the median one. If a 48% drawdown at 2% risk would make you abandon the strategy (and for most traders it would), then 2% is not your size, whatever the returns table promises.
+So the Monte Carlo way to choose size is: **pick the largest risk per trade whose ruin profile you can genuinely survive** — the worst plausible path included, not the median one. If a 48% drawdown at 2% risk would make you abandon the strategy (and for most traders it would), then 2% isn't your size, whatever the returns table promises.
 
 Two links carry this further without re-teaching: [position sizing](/articles/position-sizing/) covers the mechanics of translating a chosen percentage into actual lots, and [risk of ruin in trading](/articles/risk-of-ruin-trading/) shows the closed-form math that Monte Carlo agrees with — the simulation is the intuitive, visual sibling of that formula.
 
@@ -197,7 +197,7 @@ Two links carry this further without re-teaching: [position sizing](/articles/po
 
 ## What Monte Carlo Cannot Do
 
-Be clear-eyed about the limits, because they're exactly where traders get hurt:
+Be clear-eyed about the limits — they're exactly where traders get hurt:
 
 - **It cannot rescue an overfit sample.** Garbage in, garbage out — times a thousand. If your edge came from curve-fitting, Monte Carlo prices the sequence risk of a mirage. The verdict framework at [how to know if your trading strategy works](/articles/how-to-know-if-trading-strategy-works/) is the gate before the fan, not after.
 - **It cannot predict regime shifts.** The fan assumes your sample represents the future. If volatility regimes change, if the market structure shifts, if costs or STT rules move again — the fan is priced on a world that no longer exists. All simulation answers are conditional: *if the future resembles the sample*.
