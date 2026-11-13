@@ -3,8 +3,8 @@
   "@graph": [
     {
       "@type": "Article",
-      "headline": "How Much to Risk Per Trade to Pass a Prop Firm Challenge",
-      "description": "How much to risk per trade in a prop firm challenge? Risk 0.5% by default, 1% at most, sized backward from the daily loss limit, with worked examples.",
+      "headline": "Prop Firm Risk Per Trade: 0.5% Default, 1% Max",
+      "description": "Risk 0.5% per trade in a prop firm challenge, 1% at most. Sized backward from the 4–5% daily loss limit, with a $100,000 worked example and a personal stop.",
       "author": {
         "@type": "Person",
         "@name": "Kaizen"
