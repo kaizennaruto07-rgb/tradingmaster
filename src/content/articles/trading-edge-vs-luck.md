@@ -1,7 +1,7 @@
 ---
-title: "Trading Edge vs Luck: How to Know If Your Profits Are Real"
-description: "Luck rules every short streak; a real trading edge shows only across hundreds of trades. The mirror test, four edge families, and the five-point protocol."
-meta_description: "Luck rules every short streak; a real trading edge shows only across hundreds of trades. The mirror test, four edge families, and the five-point protocol."
+title: "Trading Edge vs Luck: How to Tell Real Profits From Luck"
+description: "Luck rules every short streak; a real edge shows only across hundreds of trades. The mirror test, four edge families, and the five-point verification check."
+meta_description: "Luck rules every short streak; a real edge shows only across hundreds of trades. The mirror test, four edge families, and the five-point verification check."
 date: 2026-10-18
 author: Kaizen
 tag: "Strategy validation · Trading psychology"
@@ -24,7 +24,7 @@ A coin flip wins sometimes. A broken strategy wins sometimes. A lucky guess wins
 
 This is the base rate problem of trading: randomness produces streaks, and across enough traders flipping coins, somebody's first year looks like genius. Your job is not to deny that luck exists. Your job is to demand evidence that something *other* than luck is producing your results — and to keep demanding it even while you are winning, especially while you are winning.
 
-The honest answer, up front: luck and skill are not competitors. They are roommates on different schedules. Luck dominates any single trade and any short streak. Skill — a real trading edge — only shows up across hundreds of trades. If your sample is small, you cannot tell them apart. And anyone who claims they can from 30 trades is selling something.
+The honest answer, up front: luck and skill aren't competitors. They're roommates on different schedules. Luck dominates any single trade and any short streak. Skill — a real trading edge — only shows up across hundreds of trades. If your sample is small, you can't tell them apart. And anyone who claims they can from 30 trades is selling something.
 
 ## What a trading edge actually is (and what it is not)
 
@@ -78,9 +78,9 @@ Edges come in four families. Knowing which family you are shopping in keeps you 
 
 ### The retail-achievable hierarchy: which edges you can actually build
 
-Here's the honest hierarchy, offered as practitioner judgment rather than research: most retail traders cannot buy speed, cannot buy private information, and rarely out-analyze professionals. What you *can* build is narrower — and that is not bad news, because narrower is testable.
+Here's the honest hierarchy, offered as practitioner judgment rather than research: most retail traders can't buy speed, can't buy private information, and rarely out-analyze professionals. What you *can* build is narrower — and that's not bad news, because narrower is testable.
 
-You can build **one** well-backtested analytical edge: a single pattern, a single setup, with written rules, tested across hundreds of trades. You can build a behavioural edge: discipline about size, costs, and when to sit out. You can — and should — build the discipline to keep your costs low, because as you'll see below, the Indian cost stack is itself an anti-edge that eats anything weak.
+You can build **one** well-backtested analytical edge: a single pattern, a single setup, with written rules, tested across hundreds of trades. You can build a behavioural edge: discipline about [size](/articles/position-sizing/), costs, and when to sit out. You can — and should — build the discipline to keep your costs low, because as you'll see below, the Indian cost stack is itself an anti-edge that eats anything weak.
 
 The two edges a retail trader can realistically build are also the two that are hardest to fool yourself about. You either have the written rule or you don't. You either took the trade your plan called for or you didn't. The families you *can't* build are exactly the ones where self-deception is cheapest.
 
@@ -100,7 +100,7 @@ The consequence is asymmetric and expensive: crediting skill for wins inflates o
 
 This is the counter-intuitive center of the whole article, so read it twice: **a win from an untested process is more dangerous than a loss.**
 
-A loss contains information. It stings, and the sting makes you review. A lucky win contains no information — but your brain treats it as a lesson anyway. The win reinforces the untested process. Confidence inflates. Position size grows. Discipline you never actually needed gets dropped. You are now trading bigger on a process that was never verified, and the market has not yet sent the invoice.
+A loss contains information. It stings, and the sting makes you review. A lucky win contains no information — but your brain treats it as a lesson anyway. The win reinforces the untested process. Confidence inflates. Position size grows. Discipline you never actually needed gets dropped. You're now trading bigger on a process that was never verified, and the market hasn't yet sent the invoice.
 
 The framing here follows analytical commentary on the psychology of winning trades (reported by the source, verified 2026-10-18): confirmation bias latches onto the win, reward circuitry pushes toward riskier trades, and the illusion of control credits analysis for what was really a lucky coincidence. The point stands on its own even without the neuroscience: nothing teaches "keep doing what you're doing" like money, and money does not check your homework.
 
@@ -130,7 +130,7 @@ This connects directly to the win-side psychology in [Why Traders Give Back Thei
 
 ### The mirror test: write the WHY before you celebrate
 
-Here is the behavioural habit that defeats the mirror. Before you celebrate any win, write down *why* it worked — in one sentence, in your journal, while the P&L is still on the screen.
+Here's the behavioural habit that defeats the mirror. Before you celebrate any win, write down *why* it worked — in one sentence, in your journal, while the P&L is still on the screen.
 
 - If the reason is in your written plan ("broke out of the range on rising volume, entry and stop exactly as rule 3 defines"), the win belongs in the edge column.
 - If the reason is not in your plan ("saw it moving and jumped in," "a friend's tip," "just felt strong"), the win was luck wearing a costume. Log it in the luck column. Be grateful for the money and suspicious of the lesson.
@@ -143,7 +143,7 @@ Now the core of the article. Luck is a brilliant faker — it fakes confidence, 
 
 ### 1. A written, testable rule
 
-If a computer cannot trade your strategy, your strategy cannot be tested. "I buy when momentum feels strong" is not a rule — it is a mood. A rule is precise enough to be written down and handed to someone else: entry trigger, stop-loss, target, position size, and the exact conditions under which you stay out.
+If a computer can't trade your strategy, your strategy can't be tested. "I buy when momentum feels strong" isn't a rule — it's a mood. A rule is precise enough to be written down and handed to someone else: entry trigger, stop-loss, target, position size, and the exact conditions under which you stay out.
 
 "Trust me, I know it when I see it" is the sound of luck asking not to be checked. The written rule is the minimum price of admission to everything that follows. No rule, no verification, no edge claim. If you don't have a written rule yet, start with the rule-writing template in [the trading journal article](/articles/trading-journal-what-to-track-beyond-pnl/) before you touch the rest of this protocol. One practitioner puts the gate bluntly: it is entirely possible to make money in the market while trading badly — and if you have not done the verification work (an objective, backtested edge, written rules, a business plan with drawdown stops, practiced execution), then you have just been lucky. That is practitioner opinion, not research — but it is honest opinion, and worth sitting with.
 
@@ -165,7 +165,7 @@ That sounds tiny. It isn't. Take a trader flipping a fair coin on options with �
 
 This is why "edge after all costs" is not a footnote in the definition of an edge — it is the definition. A strategy that is break-even before costs has *negative* expectancy after them. And note the asymmetry: costs are certain on every trade; your edge is statistical and uncertain. Certainty beats probability, every single round trip.
 
-Want to see what the no-edge game actually costs *you*, in rupees, for your own trading? Price it honestly with [our options cost calculator](/tools/options-cost/) — run your typical trade size through it and look at what the stack takes before your edge even gets a vote. The full net-expectancy calculation — edge after everything — is the job of our upcoming November article, *Net Expectancy: Your Edge After Everything*; this article owns the protocol, that one owns the arithmetic. And for the maths of expectancy with costs worked end to end, see [how to calculate real expectancy](/articles/how-to-calculate-real-expectancy/).
+Want to see what the no-edge game actually costs *you*, in rupees, for your own trading? Price it honestly with [our options cost calculator](/tools/options-cost/) — run your typical trade size through it and look at what the stack takes before your edge even gets a vote. The full net-expectancy calculation — edge after everything — is the job of our upcoming article, *Net Expectancy: Your Edge After Everything*; this article owns the protocol, that one owns the arithmetic. And for the maths of expectancy with costs worked end to end, see [how to calculate real expectancy](/articles/how-to-calculate-real-expectancy/).
 
 ### 5. The full distribution — the worst drawdown, not the luckiest equity curve
 
@@ -216,7 +216,7 @@ That gives you four possible verdicts, not two:
 - **Inconclusive** — the results could easily have been produced by chance. The sample cannot yet tell skill apart from luck.
 - **Not enough data to even ask** — under ~100 trades, you aren't testing anything; you're warming up.
 
-"Inconclusive" is the verdict most traders get, and it is the most honest one in trading. It is not a failure. It means exactly one thing: **keep tracking, the same way, with more trades.** (The "inconclusive" framing is adopted from an edge-testing tool's editorial framing — honest intuition, not standard statistical terminology; used here with that attribution, verified 2026-10-18.)
+"Inconclusive" is the verdict most traders get, and it's the most honest one in trading. It isn't a failure. It means exactly one thing: **keep tracking, the same way, with more trades.** (The "inconclusive" framing is adopted from an edge-testing tool's editorial framing — honest intuition, not standard statistical terminology; used here with that attribution, verified 2026-10-18.)
 
 Why does this matter so much? Remember the opening simulation: on pure chance, with costs, the *median* outcome drifts down while a handful of traders look like legends. Your year-one brilliance has a published precedent — in a simulation where nobody had any edge at all.
 
@@ -259,8 +259,8 @@ Grade the tally monthly. Two numbers matter: the ratio of edge trades to luck tr
 
 ### What to do with each verdict: positive edge, negative edge, inconclusive
 
-- **Positive edge → keep tracking, size only from the written plan.** The verification says the edge is real; it does not say how big it is or when it will erode. Size comes from the plan, never from confidence. Confidence is the mirror talking.
-- **Negative edge → stop risking capital (paper-trade only) while you rebuild.** If your verified expectancy is negative, every additional live trade is just paying the cost stack faster. Run your numbers through [the risk-of-ruin calculator](/tools/risk-of-ruin/) to see what a negative edge does to survival odds; run your strategy through [the What-If simulator](/tools/what-if-simulator/) — its fan chart modeled your strategy's trades, but the question this article asks is whether those trades were edge or luck.
+- **Positive edge → keep tracking, size only from the written plan.** The verification says the edge is real; it doesn't say how big it is or when it will erode. Size comes from the plan, never from confidence. Confidence is the mirror talking.
+- **Negative edge → stop risking capital (paper-trade only) while you rebuild.** If your verified expectancy is negative, every additional live trade just pays the cost stack faster. Run your numbers through [the risk-of-ruin calculator](/tools/risk-of-ruin/) to see what a negative edge does to [survival odds](/articles/risk-of-ruin-trading/); run your strategy through [the What-If simulator](/tools/what-if-simulator/) — its fan chart modeled your strategy's trades, but the question this article asks is whether those trades were edge or luck.
 - **Inconclusive → the normal state.** Do not size up. Do not change the rule mid-sample (that resets the count). Keep tracking the same way with more trades, across more market conditions. Inconclusive is not a verdict against you; it is the market declining to answer yet.
 
 ## Where to go next: the survival cluster
