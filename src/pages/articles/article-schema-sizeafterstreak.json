@@ -3,8 +3,8 @@
   "@graph": [
     {
       "@type": "Article",
-      "headline": "How to Size Positions After a Losing Streak",
-      "description": "How to size positions after a losing streak: step down 1% to 0.5% to 0.25% to halt, with a worked ₹2,00,000 example and the rule for earning full size back.",
+      "headline": "How to Size Positions After a Losing Streak: The Ladder",
+      "description": "Step down 1% to 0.5% to 0.25% to halt — the losing-streak sizing ladder, with a worked ₹2,00,000 example and the exact rule for earning full size back.",
       "author": {
         "@type": "Person",
         "@name": "Kaizen"
