@@ -3,8 +3,8 @@
  "@graph": [
   {
    "@type": "Article",
-   "headline": "Options Trading Charges in India (2026): The Complete Cost Breakdown With a Real Worked Trade",
-   "description": "How much does an options trade really cost in India? STT, brokerage, exchange fees, GST and stamp duty explained with a rupee-by-rupee NIFTY trade example.",
+   "headline": "Options Trading Charges in India: ₹63 for One NIFTY Lot (2026)",
+   "description": "One NIFTY lot at ₹100 premium costs ~₹63 in total charges. Every line of the bill — STT, brokerage, exchange fees, GST, stamp duty — and the true breakeven.",
    "author": {
     "@type": "Person",
     "name": "Kaizen"
