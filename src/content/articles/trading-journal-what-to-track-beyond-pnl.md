@@ -1,7 +1,7 @@
 ---
-title: "Trading Journal: What to Track Beyond P&L (The Ledger, the Mirror, the Microscope)"
-description: "What to track in a trading journal beyond P&L: the 8 ledger fields, plan-followed yes/no, process score, net R after Indian costs, and the Sunday review ritual."
-meta_description: "What to track in a trading journal beyond P&L: the 8 ledger fields, plan-followed yes/no, process score, net R after Indian costs, and the Sunday review ritual."
+title: "Trading Journal: What to Track Beyond P&L (8 Fields)"
+description: "Your broker statement is a scoreboard, not an instrument. Track 8 ledger fields, plan-followed, process score and net R — then a 30-minute Sunday review."
+meta_description: "Your broker statement is a scoreboard, not an instrument. Track 8 ledger fields, plan-followed, process score and net R — then a 30-minute Sunday review."
 date: 2026-10-18
 author: Kaizen
 tag: "Strategy validation · Journaling"
@@ -12,17 +12,17 @@ keywords: ["what to track in a trading journal", "trading journal beyond pnl", "
 
 Every Indian retail trader has a spreadsheet that records entry, exit, and profit. Almost none of them can answer the only question that matters: **is my trading repeatable, or did I just get lucky?**
 
-That question is what a trading journal is actually for — and it is why most journals fail. A journal that logs only what the broker statement already tells you is a scoreboard, not an instrument. Below is the instrument: what to track in a trading journal beyond P&L, organized as three layers.
+That's what a trading journal is actually for — and it's why most journals fail. A journal that logs only what the broker statement already tells you is a scoreboard, not an instrument. Below is the instrument: what to track in a trading journal beyond P&L, organised as three layers.
 
-**The short answer:** track 8 non-negotiable ledger fields (date/time, instrument, direction, entry/stop/target/exit, size, result in R, net P&L, setup name from a fixed list), plus the fields most traders skip — whether you followed your plan, your execution score, planned vs actual R:R, the rule you broke and what it cost you in ₹ *and* in R, your emotional state, a screenshot, the session and time of day, and the valid setups you missed. Then review it every Sunday in 30 minutes. The structure that holds all of it: the **Ledger** (what happened), the **Mirror** (what you did), and the **Microscope** (why it keeps happening).
+**The short answer:** track 8 non-negotiable ledger fields — date/time, instrument, direction, entry/stop/target/exit, size, result in R, net P&L, setup name from a fixed list — plus the fields most traders skip: whether you followed your plan, your execution score, planned vs actual R:R, the rule you broke and what it cost you in ₹ *and* in R, your emotional state, a screenshot, the session and time of day, and the valid setups you missed. Then review it every Sunday in 30 minutes. The structure that holds all of it: the **Ledger** (what happened), the **Mirror** (what you did), and the **Microscope** (why it keeps happening).
 
 ## The P&L lie: your statement is a scoreboard, not an instrument
 
-Your broker statement tells you where you ended up. It cannot tell you whether the journey is repeatable — and it hides two lies every trader must learn to see through.
+Your broker statement tells you where you ended up. It can't tell you whether the journey is repeatable — and it hides two lies every trader must learn to see through.
 
-**Lie one: gross P&L is a fiction.** A trade that grossed ₹3,250 did not make you ₹3,250. It paid brokerage, STT, exchange charges, stamp duty, SEBI fee, and GST — and on smaller trades, those fixed costs eat a much larger share of the R you thought you earned. A journal that records gross R is measuring fiction. (The Indian cost truth has its own section below.)
+**Lie one: gross P&L is a fiction.** A trade that grossed ₹3,250 didn't make you ₹3,250. It paid brokerage, STT, exchange charges, stamp duty, SEBI fee, and GST — and on smaller trades, those fixed costs eat a much larger share of the R you thought you earned. A journal that records gross R is measuring fiction. (The Indian cost truth has its own section below.)
 
-**Lie two: outcomes lie.** A winning trade taken off-plan is a *failure that paid you* — it taught you that breaking rules gets rewarded, which is the most expensive lesson a trader can learn. A losing trade taken exactly on-plan is data, not a mistake. If your journal records outcomes but not process, it will reward you for the behavior that eventually blows up accounts.
+**Lie two: outcomes lie.** A winning trade taken off-plan is a *failure that paid you* — it taught you that breaking rules gets rewarded, which is the most expensive lesson a trader can learn. A losing trade taken exactly on-plan is data, not a mistake. If your journal records outcomes but not process, it will reward you for the behaviour that eventually blows up accounts.
 
 The thesis, stated plainly: **your P&L tells you where you ended up; your journal tells you whether the journey is repeatable — and whether you, not the market, are the variable.**
 
@@ -150,7 +150,7 @@ One line, while you're in the Mirror: rule breaks are ruin in disguise — run y
 
 ### Layer 3 — the Microscope: why it keeps happening
 
-The Microscope zooms out: patterns across dozens of trades. This is where the journal earns its keep.
+The Microscope zooms out to patterns across dozens of trades. This is where the journal earns its keep.
 
 - **Emotional state — before, during, after.** Not a diary entry: three quick fields per trade. "Calm / neutral / urgent" before entry, "patient / anxious / numb" during, "satisfied / regretful / relieved" after. These fields connect directly to our psychology articles — [tilt](/articles/tilt-in-trading/), [FOMO](/articles/fomo-trading/), [revenge trading](/articles/revenge-trading/), and [overtrading](/articles/overtrading/) — one link each, because those chapters own the mechanics and this one owns the measurement.
 - **Session and time of day.** Morning session vs afternoon, expiry day vs normal day. You may discover your 9:15–10:30 trades carry the account and your 2:00 PM trades burn it. The journal is the only place that pattern exists.
@@ -221,7 +221,7 @@ By day 90, logging takes minutes per trade and the journal runs itself. The mist
 
 ## The Sunday 30-minute review ritual: three questions that turn entries into edges
 
-Logging without reviewing is hoarding. Once a week — 30 minutes on the weekend, a practitioner-standard cadence from the journaling literature — sit with the journal and answer exactly three questions:
+Logging without reviewing is hoarding. Once a week — 30 minutes on the weekend, the practitioner-standard cadence — sit with the journal and answer exactly three questions:
 
 1. **Which setup paid?** Sort by setup. Your best setup by net R, your worst, and the one you traded most. Trade more of the first, less of the last.
 2. **Which rule broke?** Read every crime report from the week. Which rule broke most often, why, and what did it cost in total ₹ and R? One broken rule costing −6R in a week is a strategy-independent emergency.
@@ -233,7 +233,7 @@ The journal is also three things beyond itself: the **out-of-sample diary** that
 
 ## What a trading journal cannot do (the honest limitations)
 
-A journal improves *process visibility*. It never guarantees profit, and journaling a bad strategy only documents the losses faster — with better formatting. Three honest limits:
+A journal improves *process visibility*. It never guarantees profit — journaling a bad strategy only documents the losses faster, with better formatting. Three honest limits:
 
 - **A journal cannot fix an unvalidated strategy.** If your setups have negative expectancy, perfect journaling gives you perfect records of a system that deserves no capital. Measure first, then trust.
 - **Practitioner heuristics are not research.** The ~85% process-score threshold, the weekly 30-minute review cadence, and the 90-day adoption frame in this article come from practitioner journaling systems and this article's own editorial framework — not from peer-reviewed findings. Use them as scaffolding, not science.
@@ -269,9 +269,9 @@ The plan layer — the part the Mirror owns: plan-followed yes/no, planned vs ac
 
 ## Tonight: the instrument hands off to the verdict
 
-Your P&L tells you where you ended up. Your journal tells you whether the journey is repeatable. But there is one question the journal alone cannot answer — the hardest one: **is what your journal measures actually edge, or is it luck wearing a costume?**
+Your P&L tells you where you ended up. Your journal tells you whether the journey is repeatable. But there's one question the journal alone can't answer — the hardest one: **is what your journal measures actually edge, or is it luck wearing a costume?**
 
-The journal is the instrument. [Tonight's article](/articles/trading-edge-vs-luck/) reads the verdict.
+The journal is the instrument. [The edge-vs-luck article](/articles/trading-edge-vs-luck/) reads the verdict.
 
 ---
 
