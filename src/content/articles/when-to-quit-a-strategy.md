@@ -1,7 +1,7 @@
 ---
-title: "When to Quit a Strategy: How to Tell a Broken System From a Normal Drawdown"
-description: "Drawdown or broken? Use the three-numbers quit contract, rolling expectancy across 30–50 trades, and the retire-vs-adjust rule to decide with evidence."
-meta_description: "Drawdown or broken? Use the three-numbers quit contract, rolling expectancy across 30–50 trades, and the retire-vs-adjust rule to decide with evidence."
+title: "When to Quit a Trading Strategy: Broken System vs Drawdown"
+description: "Drawdown or broken? The three-numbers quit contract, rolling expectancy across 30–50 trades, and the retire-vs-adjust rule — decided before the pain."
+meta_description: "Drawdown or broken? The three-numbers quit contract, rolling expectancy across 30–50 trades, and the retire-vs-adjust rule — decided before the pain."
 date: 2026-10-20
 author: Kaizen
 tag: "Trading mathematics · Risk management"
@@ -10,13 +10,13 @@ keywords: ["when to quit a trading strategy", "how to know if a trading strategy
 
 *By Kaizen · 20 October 2026 · Monks Of Market*
 
-Every trader has asked the question in the red months: is this just a drawdown, or is my strategy actually broken? Most answer it with their stomach. They quit a perfectly good system because the pain got loud — or they nurse a dead one for another year because they refuse to believe the evidence.
+Every trader has asked the question in the red months: is this just a drawdown, or is my strategy actually broken? Most answer it with their stomach. They quit a perfectly good system because the pain got loud — or nurse a dead one for another year because they refuse to believe the evidence.
 
-Both mistakes are the same disease: deciding without a protocol. This article gives you one: a way to separate a broken system from a normal drawdown using your own numbers, before the pain or the pride makes the decision for you.
+Both mistakes are the same disease: deciding without a protocol. This article gives you one: a way to separate a broken system from a normal drawdown using your own numbers — before the pain or the pride makes the decision for you.
 
 ## Dead or Drawdown? The Answer in Three Numbers
 
-Here is the short answer, up front: **a strategy is dead when it breaks its own historical bounds.** Not when it hurts. Not when you're bored of it. When it does something it has never done before, in the wrong direction, across three specific numbers:
+Here's the short answer, up front: **a strategy is dead when it breaks its own historical bounds.** Not when it hurts. Not when you're bored of it. When it does something it has never done before, in the wrong direction, across three specific numbers:
 
 1. **Max historical drawdown depth** — the deepest peak-to-trough loss your own trade history has ever produced.
 2. **Max drawdown duration** — the longest your account has ever stayed underwater before making a new high.
@@ -24,15 +24,15 @@ Here is the short answer, up front: **a strategy is dead when it breaks its own 
 
 If your live trading breaks one of these bounds meaningfully, the system is no longer behaving like the system you tested. That does not *prove* it is broken — no statistic can, and more on that caveat shortly — but it is the pre-agreed trigger that forces you to stop, evaluate, and either retire the system or find a genuine structural explanation for the breach.
 
-Notice what this does not include: how you feel. Your feelings about a drawdown are real, but they are also guaranteed to be worst exactly when the data says "normal." Write the three numbers in a calm month. Execute them in a bad one.
+Notice what this doesn't include: how you feel. Your feelings about a drawdown are real, but they're also guaranteed to be worst exactly when the data says "normal." Write the three numbers in a calm month. Execute them in a bad one.
 
 ## Why Most Traders Get Quitting Wrong in Both Directions
 
 This is the part nobody wants to hear: there are two failure modes, and most traders cycle between both.
 
-**Error one: quitting a live system too early.** A strategy with a real edge can produce a disproportionate share of its annual return in a handful of weeks — particularly for systems with fat-tailed return distributions (trend, breakout) — and spend long stretches underwater in between. That lumpiness is not a universal fact about every system (a high-win-rate mean-reversion scalper pays out very differently), but the general point holds: quitting at the bottom of a normal drawdown is how traders spend their careers funding their brokers — they pay the drawdown, then miss the recovery. As the companion piece on [recovery factor](/articles/recovery-factor/) puts it, the drawdown is the price of admission; walking away before the show starts is just paying admission for nothing.
+**Error one: quitting a live system too early.** A strategy with a real edge can produce a disproportionate share of its annual return in a handful of weeks — particularly for systems with fat-tailed return distributions (trend, breakout) — and spend long stretches underwater in between. That lumpiness is not a universal fact about every system (a high-win-rate mean-reversion scalper pays out very differently), but the general point holds: quitting at the bottom of a normal drawdown is how traders spend their careers funding their brokers: they pay the drawdown, then miss the recovery. As the companion piece on [recovery factor](/articles/recovery-factor/) puts it, the drawdown is the price of admission; walking away before the show starts is just paying admission for nothing.
 
-**Error two: keeping a dead system too long.** Sunk-cost pride, fear of admitting the backtest was fantasy, the hope that "it worked in 2023." Every month you run a genuinely decayed system, you're not just losing money — you're losing the opportunity to be running something that works, and you're collecting evidence that teaches you nothing.
+**Error two: keeping a dead system too long.** Sunk-cost pride, fear of admitting [the backtest was fantasy](/articles/why-backtested-strategies-fail-in-live-trading/), the hope that "it worked in 2023." Every month you run a genuinely decayed system, you're not just losing money — you're losing the opportunity to be running something that works, and you're collecting evidence that teaches you nothing.
 
 <figure class="article-visual" data-reveal>
 <svg viewBox="0 0 680 400" role="img" aria-label="Two-column cost table comparing type-I error, quitting a live system too early, with type-II error, nursing a dead system too long." class="viz">
@@ -63,7 +63,7 @@ This is the part nobody wants to hear: there are two failure modes, and most tra
 </svg>
 </figure>
 
-The entire rest of this article is machinery for making the type-I error and the type-II error both unlikely. Not impossible — unlikely.
+The entire rest of this article is machinery for making both errors unlikely. Not impossible — unlikely.
 
 ## The Quit Contract: Your Three Numbers, Written Before the Drawdown
 
@@ -81,7 +81,7 @@ Here is what a finished contract looks like, so you are not filling in blanks bl
 
 **Example contract — My max historical drawdown depth: 11.4% | duration: 63 trading days | longest losing streak: 8 trades — breach rule: 25% beyond any of these.** That means this trader stops the system at roughly a 14.25% drawdown, ~79 trading days underwater, or a 10-loss streak — and runs the post-mortem before doing anything else.
 
-One important honesty line before you write yours: if your history is under ~100 trades, treat your bounds as provisional — see Limitations. Young-system bounds get breached by normality itself; the contract still works, but your breach margin should be wider and your verdicts more tentative until the history deepens.
+One important honesty line before you write yours: if your history is [under ~100 trades](/articles/how-many-trades-to-validate-a-strategy/), treat your bounds as provisional — see Limitations. Young-system bounds get breached by normality itself; the contract still works, but your breach margin should be wider and your verdicts more tentative until the history deepens.
 
 Two discipline points separate a protocol from a suggestion:
 
@@ -123,7 +123,7 @@ Two discipline points separate a protocol from a suggestion:
 
 This is the primary quit trigger, and it comes straight from the three numbers. If your system has never, in its entire tested and live history, lost more than 12% peak-to-trough, and it is now down 18%, it is behaving like something that is not the system you bought. Stop it. Run the post-mortem.
 
-But the honest caveat, and it matters: **a new all-time maximum drawdown will eventually happen to ANY stationary system.** Expected maximum drawdown grows with sample length — the more trades you take, the deeper the worst one you will eventually see. So "breaking bounds" is a *decision trigger*, not proof of breakdown. It says: this is now unusual enough that trading through it on faith is no longer defensible. You stop and demand evidence, in both directions — evidence it broke, or evidence it hasn't.
+But the honest caveat — and it matters: **a new all-time maximum drawdown will eventually happen to ANY stationary system.** Expected maximum drawdown grows with sample length — the more trades you take, the deeper the worst one you will eventually see. So "breaking bounds" is a *decision trigger*, not proof of breakdown. It says: this is now unusual enough that trading through it on faith is no longer defensible. You stop and demand evidence, in both directions — evidence it broke, or evidence it hasn't.
 
 That framing protects you from both errors at once. The trigger catches you before pride keeps you in too long; the "trigger, not verdict" discipline stops panic from quitting a live system too early.
 
@@ -139,7 +139,7 @@ To build the two windows: take your most recent 60 trades, split them at the mid
 
 The math backs this up. Take a strategy with a 40–60% baseline win rate. A single 30-trade window running 15 percentage points below baseline has about a 5% chance of happening by pure noise (computed via the normal approximation to binomial sampling error, 2026-10-19). Uncomfortable, but common. Now take *two non-overlapping* 30-trade windows, both 15+ points below baseline: the chance of that under no real change is roughly 0.22–0.25% — about 1 in 400. That is no longer noise. That is a signal worth acting on.
 
-In plain terms: one bad 30-trade stretch can be luck; two bad stretches in a row, on separate blocks of trades, almost never is.
+In plain terms: one bad 30-trade stretch can be luck; two bad stretches in a row, on separate blocks, almost never is.
 
 A sharper illustration: a win rate collapsing from 50% to 30% measured over 100+ trades has roughly a 0.003% chance (z ≈ 4) of happening by chance if nothing actually changed. That is not variance. That is a different system.
 
@@ -156,7 +156,7 @@ Beyond win rate and expectancy, look at *how* the trades are losing. Two structu
 - **Average losing trade growing in R terms.** If your historical losers averaged −1.0R and your recent losers average −1.4R, something has changed in your execution or your market.
 - **Winners' realized R-multiples underperforming history.** If your system used to produce winners at +1.8R average and now they stall at +1.1R, the payoff side of the expectancy equation is decaying — even if the win rate looks fine.
 
-But here is the crucial diagnostic step most traders skip: **drifting losers are usually an execution problem, not a strategy problem.** Growing average losses in R terms most commonly come from stop-loss violations — moving stops, widening stops, "giving it room." That is slippage in your discipline, not decay in the market. Before you retire the system, audit your recent trades: did the losers that grew in size actually execute the plan, or did you override it? Check your journal's plan-followed field first (see the [journaling instrument](/articles/trading-journal-what-to-track-beyond-pnl/)).
+But here's the crucial diagnostic step most traders skip: **drifting losers are usually an execution problem, not a strategy problem.** Growing average losses in R terms most commonly come from stop-loss violations — moving stops, widening stops, "giving it room." That's slippage in your discipline, not decay in the market. Before you retire the system, audit your recent trades: did the losers that grew in size actually execute the plan, or did you override it? Check your journal's plan-followed field first (see the [journaling instrument](/articles/trading-journal-what-to-track-beyond-pnl/)).
 
 If execution was clean and the R-distribution has still shifted — losers bigger, winners smaller, plan followed faithfully — that is genuine evidence of decay. The takeaway: execution problems are fixable and the system survives; distribution decay with clean execution means the market changed or the edge is gone.
 
@@ -236,7 +236,7 @@ This is the question the drawdown eventually forces: fix the system, or kill it?
 
 **Adjust only when you can name the specific structural change that justifies the adjustment.** "The market now gaps through my stop level regularly since the lot-size change, so I'm moving entries to the first 15-minute close" is a structural justification. "I'm going to try a 20-period moving average instead of 50 because the last three months would have looked better" is not — that is hunting for a parameter that would have dodged the drawdown, which is fitting to noise.
 
-And the boundary that goes with it: **never adjust parameters mid-drawdown.** Parameter changes made on a losing stretch are optimized on pain, not on evidence. If the system needs structural surgery, you retire it from live trading first, do the work calmly on fresh data, and reintroduce it only with forward-test evidence. Adjusting a live, bleeding system is how you turn a bad quarter into a backtest-fitted fantasy that fails worse.
+And the boundary that goes with it: **never adjust parameters mid-drawdown.** Parameter changes made on a losing stretch are tuned on pain, not on evidence. If the system needs structural surgery, you retire it from live trading first, do the work calmly on fresh data, and reintroduce it only with forward-test evidence. Adjusting a live, bleeding system is how you turn a bad quarter into a backtest-fitted fantasy that fails worse.
 
 The mirror-image trap: **adjusting when you should have retired.** If no structural change justifies the surgery — if the honest answer is "the market just doesn't reward this anymore and I don't know why" — that is retirement, not adjustment. A parameter tweak you can't defend structurally is noise-fitting with extra steps.
 
@@ -244,7 +244,7 @@ One more distinction worth making, borrowed from the overfitting literature (see
 
 ## Archive, Don't Delete: The Retirement Protocol
 
-Retired does not mean deleted. Markets cycle; volatility regimes return; a setup that starved in a quiet range can feast when volume comes back. So the answer to "can a retired setup work again?" is genuinely yes — but only under a protocol, not a hope:
+Retired doesn't mean deleted. Markets cycle; volatility regimes return; a setup that starved in a quiet range can feast when volume comes back. So the answer to "can a retired setup work again?" is genuinely yes — but only under a protocol, not a hope:
 
 1. **Write the post-mortem.** One page: what the system did, what changed, what the three numbers looked like at retirement, and why you retired it (decay, regime, execution failure, or was-never-real).
 2. **Set a re-examination date.** Six to twelve months out. Not "when I feel like it" — a date on your calendar.
