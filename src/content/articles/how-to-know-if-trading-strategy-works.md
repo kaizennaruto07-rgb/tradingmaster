@@ -1,7 +1,7 @@
 ---
-title: "How to Know If Your Trading Strategy Actually Works: The 3-Question Verdict"
-description: "Learn how to validate a trading strategy: the 3-question verdict — net edge after Indian F&O costs, trustworthy sample, survivability. Full validation protocol."
-meta_description: "Learn how to validate a trading strategy: the 3-question verdict — net edge after Indian F&O costs, trustworthy sample, survivability. Full validation protocol."
+title: "How to Know If Your Trading Strategy Works: 3 Questions"
+description: "A strategy works only if three things hold: a real edge after costs, a trustworthy sample, and streaks you can survive. The 3-question verdict and tests."
+meta_description: "A strategy works only if three things hold: a real edge after costs, a trustworthy sample, and streaks you can survive. The 3-question verdict and tests."
 date: 2026-10-10
 author: Kaizen
 tag: "Strategy validation · Validation"
@@ -10,11 +10,11 @@ keywords: ["how to know if trading strategy works", "how to validate a trading s
 
 *Educational content only — not financial advice. Trading involves risk of loss.*
 
-You've been trading a strategy for two months. Some weeks it prints money. This week it has taken five losses in a row, and a thought you don't say out loud keeps circling: *what if the strategy never worked, and I just got lucky at the start?*
+You've traded a strategy for two months. Some weeks it prints money. This week it's taken five losses in a row, and a thought you don't say out loud keeps circling: *what if the strategy never worked, and I just got lucky at the start?*
 
-That question — how do I know if my trading strategy actually works — is the most important question in retail trading, and almost nobody answers it in an honest way. What most traders have instead of an answer is a mood. Green weeks mean "it works." A drawdown means "it's broken." Neither is a verdict; both are weather reports.
+That question — how do I know if my trading strategy actually works — is the most important question in retail trading, and almost nobody answers it honestly. What most traders have instead of an answer is a mood. Green weeks mean "it works." A drawdown means "it's broken." Neither is a verdict. Both are weather reports.
 
-A verdict is a number, computed after costs, from a sample you committed to before you started. This article is the protocol for reaching one — three questions, asked in order, each with a test to run. It also opens the second week of this series: the later chapters deepen each step, so this page stays the one-page validation protocol you can return to.
+A verdict is a number — computed after costs, from a sample you committed to before you started. This article is the protocol for reaching one: three questions, asked in order, each with a test to run. It also opens the second week of this series: the later chapters deepen each step, so this page stays the one-page validation protocol you can return to.
 
 ## The Short Answer: One Verdict, Asked in the Right Order
 
@@ -56,17 +56,17 @@ The order matters when you test a trading strategy. There is no point asking whe
 
 ## The Uncomfortable Truth: Most Strategies Were Never Tested — They Were Interrupted
 
-Here's the pattern that plays out in thousands of Indian trading accounts: a retail trader backtests (or informally paper-trades) a strategy for a few weeks. It works. They go live with real capital. Three weeks later the strategy hits a losing streak the math said was likely — five, six, seven losses in a row — and they kill the strategy at the worst possible moment, during a normal drawdown.
+Here's the pattern playing out in thousands of Indian trading accounts: a retail trader backtests (or informally paper-trades) a strategy for a few weeks. It works. They go live with real capital. Three weeks later the strategy hits a losing streak the math said was likely — five, six, seven losses in a row — and they kill it at the worst possible moment, during a normal drawdown.
 
 Then they find a new strategy. And repeat.
 
-The tragedy isn't that they tested badly. It's that they never reached the end of a test at all. **Most strategies that get abandoned were never fully tested — they were cut off mid-drawdown, before the pre-committed sample was complete.** The verdict was never delivered because the trial was interrupted. A losing streak feels like proof the strategy is broken, but a losing streak is exactly what a working strategy looks like sometimes. Later in this article you'll see the exact math: a 40%-win-rate strategy over 100 trades has a **68.9% chance** of at least one 7-trade losing streak. The drawdown that makes people quit is the drawdown the math said was likely.
+The tragedy isn't bad testing. It's that they never reached the end of a test at all. **Most strategies that get abandoned were never fully tested — they were cut off mid-drawdown, before the pre-committed sample was complete.** The verdict was never delivered because the trial was interrupted. A losing streak feels like proof the strategy is broken, but a losing streak is exactly what a working strategy looks like sometimes. Later in this article you'll see the exact math: a 40%-win-rate strategy over 100 trades has a **68.9% chance** of at least one 7-trade losing streak. The drawdown that makes people quit is the drawdown the math said was likely.
 
 The fix for this isn't willpower or "conviction." It's a contract: decide the sample size, the pass/fail criteria, and the stop rule **before** testing begins — then honour the contract through the streaks. That's the discipline this protocol is built around.
 
 ## Question 1 — Is There an Edge? Net Expectancy After Indian F&O Costs
 
-Question 1 is the verdict itself, and the verdict is expectancy — the average expected profit or loss per trade — recomputed on **net** P&L after every cost. The expectancy formula is:
+Question 1 is the verdict itself, and the verdict is expectancy — the average profit or loss per trade — recomputed on **net** P&L after every cost. The expectancy formula is:
 
 **Expectancy = (Win Rate × Average Win) − (Loss Rate × Average Loss)**
 
@@ -96,7 +96,7 @@ Take a strategy with a 35% win rate, average win ₹2,000, average loss ₹800. 
 
 Looks healthy. Now subtract the ~₹59 option round-trip cost (₹5,000-premium assumption): **+₹121 net per trade.** Still positive — this strategy survives costs.
 
-But watch the trap flip. A strategy with gross expectancy of just +₹40 per trade — on the same small option trades — nets roughly **−₹19 per trade** after costs. That's not a small deduction; that's a guaranteed loser wearing a profitable-looking mask. No amount of confidence, discipline, or "conviction" can fix a strategy whose gross expectancy sits below its per-trade cost. The backtest lied because it never paid the toll.
+But watch the trap flip. A strategy with gross expectancy of just +₹40 per trade — on the same small option trades — nets roughly **−₹19 per trade** after costs. That's not a small deduction. That's a guaranteed loser wearing a profitable-looking mask. No amount of confidence, discipline, or "conviction" can fix a strategy whose gross expectancy sits below its per-trade cost. The backtest lied because it never paid the toll.
 
 The general principle is the article's core line: **net expectancy = gross expectancy minus all-in round-trip cost. Any strategy with gross expectancy below its per-trade cost is a guaranteed loser.** The same trap applies to profit factor — a gross profit factor of 1.3 that becomes 0.95 after costs is the same fiction in different clothing (see the after-cost variant discussion in our [profit factor guide](/articles/profit-factor/)).
 
@@ -146,9 +146,9 @@ Question 1's pass criteria: **net expectancy clearly above zero by the working r
 
 ## Question 2 — Can I Trust the Verdict? The Four Checks
 
-A positive net expectancy from question 1 is a *claim*. Question 2 asks whether the claim is trustworthy. Four checks, kept short — each is a full chapter later this week:
+A positive net expectancy from question 1 is a *claim*. Question 2 asks whether the claim is trustworthy. Four checks, kept short — each covered in depth in its own article:
 
-**1. Trade count.** As a community convention (not a law of nature), 100 logged trades is the common minimum for a first verdict; 100–400 is the typical quoted range for detecting an edge; thin edges (profit factor around 1.1) can need 1,000+ trades before they're statistically detectable. But here's the real point — and the heart of this article: **decide the number before you start testing.** A verdict you can trust is a verdict with no moving goalposts. The deep version of trade counts and statistical power lands tomorrow in our sample-size chapter (#17, Oct 11).
+**1. Trade count.** As a community convention (not a law of nature), 100 logged trades is the common minimum for a first verdict; 100–400 is the typical quoted range for detecting an edge; thin edges (profit factor around 1.1) can need 1,000+ trades before they're statistically detectable. But here's the real point — and the heart of this article: **decide the number before you start testing.** A verdict you can trust is a verdict with no moving goalposts. The deep version of trade counts and statistical power is our [sample-size chapter](/articles/how-many-trades-to-validate-a-strategy/).
 
 **2. Out-of-sample check.** Develop the strategy on one portion of historical data, then evaluate it on a separate, untouched portion it was never fitted to — a common convention is a 70/30 in-sample/out-of-sample split. If performance collapses from in-sample to out-of-sample, that's the classic signature of overfitting: the strategy memorised the past instead of learning something the future respects.
 
@@ -160,7 +160,7 @@ A positive net expectancy from question 1 is a *claim*. Question 2 asks whether 
 - **an unnaturally smooth equity curve** — real strategies have drawdowns; a perfect curve is usually a fitted one;
 - **rules with no market rationale** — if you can't explain *why* a rule should work in plain words, you probably curve-fitted it.
 
-The overfitting deep-dive — including the parameter-cliff test — lands on Oct 14 (#19).
+The [overfitting deep-dive](/articles/how-to-detect-overfitting-in-trading-strategy/) — including the parameter-cliff test — is its own chapter.
 
 One more concept, kept deliberately light: the conventional "is this just luck?" bar in statistical practice is a **t-statistic around 2** — roughly, the mean net P&L per trade divided by its variability, scaled by the square root of the trade count. You don't need to learn t-tests for this article; the intuition is enough: the result must be big enough, relative to its noise and sample size, that luck is an unlikely explanation. #17 goes deeper.
 
@@ -216,7 +216,7 @@ The streaks that make traders quit aren't anomalies — they're randomness behav
 - A **50%-win-rate** strategy over 100 trades has a **17.0% chance** of at least one 8-trade streak; over 200 trades that rises to **32.0%**.
 - A **35%-win-rate** strategy over 100 trades has a **36.8% chance** of at least one 10-trade streak.
 
-Read that again. More than two-thirds of 40%-win-rate strategies will print a 7-loss streak in their first 100 trades. Every one of those traders will feel — with total sincerity — that "something broke." Nothing broke. The contract said this was likely; the math gave it a ~69% chance.
+Read that again. More than two-thirds of 40%-win-rate strategies will print a 7-loss streak in their first 100 trades. Every one of those traders will feel — with total sincerity — that "something broke." Nothing broke. The contract said this was likely. The math gave it a ~69% chance.
 
 Question 3's components, briefly — each links out to a Week-1 chapter rather than repeating the derivation here:
 
@@ -255,7 +255,7 @@ Question 3's components, briefly — each links out to a Week-1 chapter rather t
 
 ## Backtest vs Forward Test vs Live: What Each One Actually Proves
 
-The backtest vs forward test confusion is constant. Here's the clean separation — each gets a short definition here, and the failure modes between them get their full chapter on Oct 12 (#20):
+The backtest vs forward test confusion is constant. Here's the clean separation — each gets a short definition here, and the failure modes between them get their full chapter in [why backtests fail live](/articles/why-backtested-strategies-fail-in-live-trading/):
 
 - **Backtesting** uses historical data. It proves your *logic* is testable and — if you're honest about costs — whether it would have made money. It proves nothing about your *execution*.
 - **Forward (paper) testing** uses live market conditions with no capital at risk. It proves you can actually follow the rules in real time, through real boredom and real streaks. It is a bridge between backtest and live trading — not the verdict itself.
