@@ -1,7 +1,7 @@
 ---
-title: "How to Size Positions After a Losing Streak"
-description: "How to size positions after a losing streak: step down 1% to 0.5% to 0.25% to halt, with a worked ₹2,00,000 example and the rule for earning full size back."
-meta_description: "How to size positions after a losing streak: step down 1% to 0.5% to 0.25% to halt, with a worked ₹2,00,000 example and the rule for earning full size back."
+title: "How to Size Positions After a Losing Streak: The Ladder"
+description: "Step down 1% to 0.5% to 0.25% to halt — the losing-streak sizing ladder, with a worked ₹2,00,000 example and the exact rule for earning full size back."
+meta_description: "Step down 1% to 0.5% to 0.25% to halt — the losing-streak sizing ladder, with a worked ₹2,00,000 example and the exact rule for earning full size back."
 date: 2026-10-25
 author: Kaizen
 tag: "Trading mathematics · Risk management"
@@ -10,13 +10,13 @@ keywords: ["how to size positions after a losing streak", "position size after l
 
 *By Kaizen · 25 October 2026 · Monks Of Market*
 
-You are mid-streak, and the question in front of you is not theoretical. It is practical, and it is about the very next trade: what size do I trade now?
+You're mid-streak, and the question in front of you isn't theoretical. It's practical, and it's about the very next trade: what size do I trade now?
 
-This article answers that question with a protocol. It is a ladder you decide before the streak, write down, and follow mechanically while the streak is running. It tells you when to cut size, by how much, when to stop live trading altogether, and — the part most advice skips — exactly how you earn full size back.
+This article answers that question with a protocol. It's a ladder you decide before the streak, write down, and follow mechanically while the streak is running. It tells you when to cut size, by how much, when to stop live trading altogether, and — the part most advice skips — exactly how you earn full size back.
 
 ## The Short Answer: Step Down on a Ladder, Step Back Up One Rung at a Time
 
-Here is the whole protocol for how to size positions after a losing streak, up front:
+Here's the whole protocol, up front:
 
 | Situation | Risk per trade | What you do |
 |---|---|---|
@@ -25,32 +25,32 @@ Here is the whole protocol for how to size positions after a losing streak, up f
 | After 5 consecutive losses | 0.25% of account | Quarter your size |
 | After 7 consecutive losses, or −3R in a day, or −6R in a week | 0% (halt) | Stop live trading; paper trading and review only |
 
-And here is the way back up, which matters just as much as the way down:
+And here's the way back up, which matters just as much as the way down:
 
 - Move up **one rung at a time**, and only after **3 consecutive rule-following trades** at your current rung.
 - Wins and well-executed losses both count toward those 3 trades. What is being proved is execution, not luck.
 - Never jump two rungs. Never return to full size on the back of a single win.
 - After a halt, the return starts differently: **5 consecutive rule-following paper/demo trades** first, then live trading resumes at the **quarter rung**, stepping up normally from there. Paper trades do **not** count toward the live step-up count.
 
-Counting the streak itself needs one explicit rule, because the word "consecutive" alone leaves it implied. **A win resets the consecutive-loss count to zero**, whatever rung you are on. A breakeven trade — one exited at entry, with no profit and no loss — is not a loss, so it does not add to the count, but it does not reset the count either: the count holds where it was until the next win resets it or the next loss adds to it. A scratch trade therefore cannot be used to dodge a step-down. Keep the two counts separate: the loss count is about outcomes, so a loss counts toward the streak whether or not it followed your rules; the step-up count is about execution, so only rule-following trades count toward it, and a rule-breaking trade resets the step-up count at the current rung.
+Counting the streak itself needs one explicit rule, because the word 'consecutive' alone leaves it implied. **A win resets the consecutive-loss count to zero**, whatever rung you're on. A breakeven trade — one exited at entry, with no profit and no loss — isn't a loss, so it doesn't add to the count, but it doesn't reset the count either: the count holds where it was until the next win resets it or the next loss adds to it. A scratch trade therefore can't be used to dodge a step-down. Keep the two counts separate: the loss count is about outcomes, so a loss counts toward the streak whether or not it followed your rules; the step-up count is about execution, so only rule-following trades count toward it, and a rule-breaking trade resets the step-up count at the current rung.
 
-Two things about this ladder need to be stated plainly. First, it is a protocol to follow, not a proven optimum. No study has established that 3, 5, and 7 are the mathematically best thresholds, or that 3 rule-following trades is the ideal step-up sample. These are decision rules chosen to be clear enough to follow under pressure. Second, the promise of the ladder is survival plus clean execution data, not faster recovery and not profitability. It caps how much a streak can cost you while you work out what is actually going wrong. It does not promise to make you profitable.
+Two things about this ladder need stating plainly. First, it's a protocol to follow, not a proven optimum. No study has established that 3, 5, and 7 are the mathematically best thresholds, or that 3 rule-following trades is the ideal step-up sample. These are decision rules chosen to be clear enough to follow under pressure. Second, the promise of the ladder is survival plus clean execution data, not faster recovery and not profitability. It caps how much a streak can cost you while you work out what's actually going wrong. It doesn't promise to make you profitable.
 
 One piece of context before the detail: losing streaks are normal, even for sound strategies. That conclusion is borrowed from the longer treatment of [how losing streaks affect trading accounts](/articles/how-losing-streaks-affect-trading-accounts/), which owns the streak mathematics; this article does not re-derive it. The streak itself is not the verdict. How you size through it is the decision you control.
 
 ## Why the Trigger Is Consecutive Losses, Not Drawdown Percentage
 
-There is a reasonable alternative protocol that triggers on drawdown percentage instead of loss count: cut size in half at a 5% account decline, pause at 10%, and reassess the strategy at 15%. That is a useful guardrail, and it is compatible with this ladder. But it is not the primary trigger here, for one reason: a streak can be shallow in percentage terms and still be the moment execution breaks.
+There's a reasonable alternative protocol that triggers on drawdown percentage instead of loss count: cut size in half at a 5% account decline, pause at 10%, and reassess the strategy at 15%. That's a useful guardrail, and it's compatible with this ladder. But it isn't the primary trigger here, for one reason: a streak can be shallow in percentage terms and still be the moment execution breaks.
 
-Five consecutive losses at 1% risk each cost roughly 5% compounded. By a drawdown trigger alone, you would only just be reaching the first cut at the point where the streak is already five deep — and where the real danger, revenge sizing and tilt, is at its worst. The consecutive-loss count catches the behavioural danger earlier, because it measures what is actually happening trade by trade: repeated losses in a row, each one tempting you to change something.
+Five consecutive losses at 1% risk each cost roughly 5% compounded. By a drawdown trigger alone, you'd only just be reaching the first cut at the point where the streak is already five deep — and where the real danger, revenge sizing and tilt, is at its worst. The consecutive-loss count catches the behavioural danger earlier, because it measures what's actually happening trade by trade: repeated losses in a row, each one tempting you to change something.
 
-The two triggers answer different questions. The loss count asks, "is my execution under pressure right now?" The drawdown percentage asks, "how much has the account actually fallen?" Use the count as the trigger for sizing decisions, and keep the drawdown tiers as a backstop. If you ever hit a 10% decline, pause regardless of where you are on the ladder. The ladder is the primary protocol; the drawdown tiers are the safety net underneath it.
+The two triggers answer different questions. The loss count asks, 'is my execution under pressure right now?' The drawdown percentage asks, 'how much has the account actually fallen?' Use the count as the trigger for sizing decisions, and keep the drawdown tiers as a backstop. If you ever hit a 10% decline, pause regardless of where you are on the ladder. The ladder is the primary protocol; the drawdown tiers are the safety net underneath it.
 
 ## The Worked Example: A ₹2,00,000 Account, 200 / 100 / 50 Shares
 
 The prerequisite, stated once: position size = (account × risk%) ÷ stop distance. Risk% is the loss if the trade is stopped out, not the capital deployed. The full method, including how to apply it across setups, lives in the [position sizing](/articles/position-sizing/) guide; here it is applied at each rung of the ladder.
 
-One denominator rule governs every rung, and it is stated here so the table and the equity path below cannot be read two ways: **risk% at each rung is calculated on your current equity at the time of the trade, not frozen at the starting account.** The table that follows is the starting illustration, at the starting ₹2,00,000 equity. Take a 1% baseline. That is ₹2,000 of risk per trade. Take a single example trade: entry ₹500, stop ₹490, so ₹10 of risk per share.
+One denominator rule governs every rung, and it's stated here so the table and the equity path below can't be read two ways: **risk% at each rung is calculated on your current equity at the time of the trade, not frozen at the starting account.** The table that follows is the starting illustration, at the starting ₹2,00,000 equity. Take a 1% baseline. That's ₹2,000 of risk per trade. Take a single example trade: entry ₹500, stop ₹490, so ₹10 of risk per share.
 
 | Rung | Risk % | Risk per trade | Shares |
 |---|---|---|---|
@@ -58,7 +58,7 @@ One denominator rule governs every rung, and it is stated here so the table and 
 | After 3 consecutive losses | 0.5% | ₹1,000 | 100 |
 | After 5 consecutive losses | 0.25% | ₹500 | 50 |
 
-The arithmetic is straightforward: ₹2,00,000 × 1% = ₹2,000, and ₹2,000 ÷ ₹10 per share = 200 shares. At the half rung, ₹2,00,000 × 0.5% = ₹1,000, giving 100 shares. At the quarter rung, ₹2,00,000 × 0.25% = ₹500, giving 50 shares. Notice what does not change: the entry and the stop. Only the share count moves, because the share count is the output of the formula, not an input you choose.
+The arithmetic is straightforward: ₹2,00,000 × 1% = ₹2,000, and ₹2,000 ÷ ₹10 per share = 200 shares. At the half rung, ₹2,00,000 × 0.5% = ₹1,000, giving 100 shares. At the quarter rung, ₹2,00,000 × 0.25% = ₹500, giving 50 shares. Notice what doesn't change: the entry and the stop. Only the share count moves, because the share count is the output of the formula, not an input you choose.
 
 Reconciliation, so the table and live trading agree: the table shows the rungs at the starting equity, but live trading sizes off current equity. After three losses, equity is ₹1,94,059.80 (see the path below), so the half rung is 0.5% of ₹1,94,059.80, which is about ₹970 — giving 97 shares at ₹10 of risk per share, not 100. The rung percentages never change; the rupee budget shrinks as equity falls, and the share count follows it. The 7-loss path below already uses this current-equity basis throughout, so the two sections are consistent.
 
@@ -95,7 +95,7 @@ Total loss: ₹13,586.93, or 6.79% of the starting account.
 
 Total loss: ₹8,835.37, or 4.42% of the starting account.
 
-The ladder saves ₹4,751.56 over seven straight losses (₹1,91,164.63 − ₹1,86,413.07). That is the whole point in one number: the first three losses cost the same on both paths, because the ladder has not stepped down yet. The savings come entirely from losses four through seven, where the ladder is trading at half and then quarter size. The ladder does not prevent losses. It makes the later losses in a streak smaller, which is exactly when a trader is most likely to be trading badly.
+The ladder saves ₹4,751.56 over seven straight losses (₹1,91,164.63 − ₹1,86,413.07). That's the whole point in one number: the first three losses cost the same on both paths, because the ladder hasn't stepped down yet. The savings come entirely from losses four through seven, where the ladder is trading at half and then quarter size. The ladder doesn't prevent losses. It makes the later losses in a streak smaller, which is exactly when a trader is most likely to be trading badly.
 
 For the full mathematics of what a drawdown then takes to recover, see [Trading Drawdown: The Mathematics of Recovery](/articles/trading-drawdown-mathematics-of-recovery/).
 
@@ -120,15 +120,15 @@ The same ladder scales to any account size: the percentages are the protocol, no
 
 ## The Step-Up Ladder: How You Earn Full Size Back
 
-Reducing position size after a losing streak is the easy half of the problem. Every trader knows they should trade smaller after losses. The hard half is the return: when, exactly, do you go back to normal size? Without a rule, the answer is usually "after the next win" — and that is how a streak that ended turns into a new streak at full size.
+Reducing position size after a losing streak is the easy half of the problem. Every trader knows they should trade smaller after losses. The hard half is the return: when, exactly, do you go back to normal size? Without a rule, the answer is usually 'after the next win' — and that's how a streak that ended turns into a new streak at full size.
 
-The rule here is mechanical. Suppose you are at the quarter rung, 0.25% risk per trade. You stay there until you have completed 3 consecutive rule-following trades at that rung. A rule-following trade is one where you followed your plan: the entry, the stop, and the exit all matched what you wrote down before the trade. A win that broke your rules does not count. A loss executed exactly to plan does count, because it proves the execution is back even though the outcome was not.
+The rule here is mechanical. Suppose you're at the quarter rung, 0.25% risk per trade. You stay there until you've completed 3 consecutive rule-following trades at that rung. A rule-following trade is one where you followed your plan: the entry, the stop, and the exit all matched what you wrote down before the trade. A win that broke your rules doesn't count. A loss executed exactly to plan does count, because it proves the execution is back even though the outcome wasn't.
 
-Once you have those 3 trades, you move up one rung — from 0.25% to 0.5%. Then the count restarts: 3 more consecutive rule-following trades at 0.5% before you return to the 1% baseline. Any trade that breaks your rules resets the count at the current rung. There is no shortcut and no partial credit for a good week.
+Once you have those 3 trades, you move up one rung — from 0.25% to 0.5%. Then the count restarts: 3 more consecutive rule-following trades at 0.5% before you return to the 1% baseline. Any trade that breaks your rules resets the count at the current rung. There's no shortcut and no partial credit for a good week.
 
-This rule is deliberately positioned between two looser and stricter variants you may come across. One variant lets you step up after three wins, or after a net gain of +2R. That version is looser on the wrong dimension: it counts wins, and wins can come from luck. Our rule is stricter than that one, because it demands rule-following rather than winning. Another variant demands ten consecutive rule-following trades, then a stage at 75% of normal size, before full size returns. That version is stricter on sample size, and in practice many traders will not follow a rule that long — a rule nobody follows protects nobody. Three rule-following trades per rung is enough to prove the execution is back, and small enough that a trader will actually follow it. That is the justification, stated honestly: it is a judgement about followability, not a measured optimum.
+This rule sits deliberately between two variants you may come across. One lets you step up after three wins, or after a net gain of +2R. That version is looser on the wrong dimension: it counts wins, and wins can come from luck. Our rule is stricter than that one, because it demands rule-following rather than winning. Another variant demands ten consecutive rule-following trades, then a stage at 75% of normal size, before full size returns. That version is stricter on sample size, and in practice many traders won't follow a rule that long — a rule nobody follows protects nobody. Three rule-following trades per rung is enough to prove the execution is back, and small enough that a trader will actually follow it. That is the justification, stated honestly: it's a judgement about followability, not a measured optimum.
 
-This is also why the ladder must be pre-written, not decided mid-streak. Deciding your size while you are losing is deciding under the exact emotional conditions the ladder exists to protect you from. That is the connection to [tilt in trading](/articles/tilt-in-trading/): tilt is what happens when sizing decisions get made in the heat of a streak, and a pre-written ladder removes the decision from that moment entirely.
+This is also why the ladder must be pre-written, not decided mid-streak. Deciding your size while you're losing is deciding under the exact emotional conditions the ladder exists to protect you from. That's the connection to [tilt in trading](/articles/tilt-in-trading/): tilt is what happens when sizing decisions get made in the heat of a streak, and a pre-written ladder removes the decision from that moment entirely.
 
 The halt has its own return path, different from the rung-to-rung step-up above: after a halt, five paper trades come first and live trading resumes at the quarter rung. That rule is set out in full in Anti-Pattern 5 and in the protocol card below.
 
@@ -149,9 +149,9 @@ The halt has its own return path, different from the rung-to-rung step-up above:
 
 ## Size Down First, Diagnose Second: The Diagnosis Fork
 
-The ladder and the diagnosis run in parallel, and the order matters: size down first, diagnose second. Stepping down is automatic. It is not a verdict on your strategy, and it does not require you to know yet whether the streak is bad luck or bad trading. You step down because the count says so, and you diagnose while trading small, where further losses cost less and the data you collect is cleaner.
+The ladder and the diagnosis run in parallel, and the order matters: size down first, diagnose second. Stepping down is automatic. It's not a verdict on your strategy, and it doesn't require you to know yet whether the streak is bad luck or bad trading. You step down because the count says so, and you diagnose while trading small, where further losses cost less and the data you collect is cleaner.
 
-The diagnosis itself uses one measure: your rule-following percentage over the last 10–20 trades. Go through the journal trade by trade and mark each one as rule-following or not, honestly. Then:
+The diagnosis itself uses one measure: your rule-following percentage over the last 10–20 trades. Go through the [journal](/articles/trading-journal-what-to-track-beyond-pnl/) trade by trade and mark each one as rule-following or not, honestly. Then:
 
 | Rule-following over last 10–20 trades | Lane | What it means |
 |---|---|---|
@@ -159,9 +159,9 @@ The diagnosis itself uses one measure: your rule-following percentage over the l
 | 70–80% | — | No label is assigned to this middle band. Re-measure rule-following after the next 10 trades. Meanwhile, stay at the current rung — do not step down further on the diagnosis alone; step down only if the consecutive-loss count triggers it. |
 | Under 70% | Execution lane | The problem is execution, not the strategy. The fixes are process fixes: pre-trade checklists, fewer setups, a pause rule — not a new strategy. |
 
-One further guardrail: do not declare the strategy broken on fewer than 30 trades. A 30-trade sample is the minimum before any verdict on the strategy itself. Switching strategies mid-streak, before that sample exists, destroys the very data the diagnosis needs. The ladder buys you the time to reach 30 trades without the streak doing fatal damage in the meantime.
+One further guardrail: don't declare the strategy broken on fewer than 30 trades. A 30-trade sample is the minimum before any verdict on the strategy itself. Switching strategies mid-streak, before that sample exists, destroys the very data the diagnosis needs. The ladder buys you the time to reach 30 trades without the streak doing fatal damage in the meantime.
 
-Note what the diagnosis fork does not do: it does not tell you to stop trading at the first sign of trouble. Trading smaller on the ladder is the default. Stopping live trading completely is reserved for the halt trigger, covered below.
+Note what the diagnosis fork doesn't do: it doesn't tell you to stop trading at the first sign of trouble. Trading smaller on the ladder is the default. Stopping live trading completely is reserved for the halt trigger, covered below.
 
 ## Anti-Pattern 1: Martingale, or Doubling Up to Win It Back
 
@@ -177,35 +177,35 @@ A subtler way to break the ladder is to keep trading 200 shares by moving the st
 
 At the genuine setup stop of ₹490, each share risks ₹10, so the half-rung budget of ₹1,000 buys exactly 100 shares. Move the stop to ₹480 and each share risks ₹20. Kept at 200 shares, the trade now risks 200 × ₹20 = ₹4,000 — four times the ₹1,000 half-rung budget, or 2% of the starting account instead of 0.5%. That is a widening in the true sense: the stop moved away from the entry, the risk per share doubled, and holding the share count fixed multiplied the total risk.
 
-The stop is set by the chart and the setup, not by the desired share count. The share count is the output of (account × risk%) ÷ stop distance. If the chart genuinely puts the stop at ₹480, the rung still rules the shares: ₹1,000 ÷ ₹20 = 50 shares at the half rung, not 200. If the setup's stop does not fit the rung you are on, the correct responses are to take fewer shares or to skip the trade. Moving the stop to fit the shares is the ladder in reverse.
+The stop is set by the chart and the setup, not by the desired share count. The share count is the output of (account × risk%) ÷ stop distance. If the chart genuinely puts the stop at ₹480, the rung still rules the shares: ₹1,000 ÷ ₹20 = 50 shares at the half rung, not 200. If the setup's stop doesn't fit the rung you're on, the correct responses are to take fewer shares or to skip the trade. Moving the stop to fit the shares is the ladder in reverse.
 
 ## Anti-Pattern 3: Switching Strategy Mid-Streak
 
-Mid-streak is the worst moment to change strategies, for a reason that follows directly from the diagnosis fork: you have no data yet. A strategy switch resets your sample to zero. The 30 trades you needed for a verdict now have to be collected all over again, under a new set of rules you have not tested, while you are already frustrated.
+Mid-streak is the worst moment to change strategies, for a reason that follows directly from the diagnosis fork: you have no data yet. A strategy switch resets your sample to zero. The 30 trades you needed for a verdict now have to be collected all over again, under a new set of rules you haven't tested, while you're already frustrated.
 
-The urge to switch is understandable — it feels like doing something. But "doing something" here means abandoning the sample that would tell you whether anything was actually wrong. The ladder exists precisely to buy time for that sample: trade small, follow the existing rules, collect the 30 trades, and then judge. If the verdict after 30 trades is that the strategy is broken, change it then, deliberately, with the data in front of you. Changing it at loss number six is not a decision. It is a reaction.
+The urge to switch is understandable — it feels like doing something. But 'doing something' here means abandoning the sample that would tell you whether anything was actually wrong. The ladder exists precisely to buy time for that sample: trade small, follow the existing rules, collect the 30 trades, and then judge. If the verdict after 30 trades is that the strategy is broken, change it then, deliberately, with the data in front of you. Changing it at loss number six isn't a decision. It's a reaction.
 
 ## Anti-Pattern 4: Jumping Straight Back to Full Size After One Win
 
-This is the single most common step-up failure, and the core warning of this article. You have stepped down to half size. You take a good trade at half size and it wins. The relief is enormous, and the temptation is to go straight back to full size on the next trade — after all, the streak is over, is it not?
+This is the single most common step-up failure, and the core warning of this article. You've stepped down to half size. You take a good trade at half size and it wins. The relief is enormous, and the temptation is to go straight back to full size on the next trade — after all, the streak is over, is it not?
 
-One win proves nothing about execution. A win can come from a setup you chased, a stop you moved, or a market that bailed out a bad entry. Returning to full size on one win means the next loss — which may come immediately — lands at full size, before you have any evidence that your execution is actually back. Worse, if that full-size loss starts a new streak, you are back on the ladder having learned nothing.
+One win proves nothing about execution. A win can come from a setup you chased, a stop you moved, or a market that bailed out a bad entry. Returning to full size on one win means the next loss — which may come immediately — lands at full size, before you have any evidence that your execution is actually back. Worse, if that full-size loss starts a new streak, you're back on the ladder having learned nothing.
 
-The step-up rule exists for this exact moment. Three consecutive rule-following trades, one rung at a time. A single win is not three trades, and a win that broke the rules is not a rule-following trade at all. If the rule feels slow, that is the point: the slowness is what separates a return to full size from a relapse into full size.
+The step-up rule exists for this exact moment. Three consecutive rule-following trades, one rung at a time. A single win isn't three trades, and a win that broke the rules isn't a rule-following trade at all. If the rule feels slow, that is the point: the slowness is what separates a return to full size from a relapse into full size.
 
 ## Anti-Pattern 5: Trading Through the Halt Trigger
 
-The halt is the ladder's last rung, not a suggestion. After 7 consecutive losses, or −3R in a day, or −6R in a week, live trading stops. What continues is paper or demo trading and review — going through the journal, checking rule-following, and working out which lane of the diagnosis fork you are in.
+The halt is the ladder's last rung, not a suggestion. After 7 consecutive losses, or −3R in a day, or −6R in a week, live trading stops. What continues is paper or demo trading and review — going through the journal, checking rule-following, and working out which lane of the diagnosis fork you're in.
 
-"Just one more at quarter size" is not an exception to the halt. It is the halt being ignored, and it is usually said at the exact moment when judgement is worst. The halt trigger is valuable precisely because it is not discretionary: it fires on a count, not on a feeling about whether you have learned your lesson. A related pause rule worth knowing alongside it is [the 3-day rule](/articles/the-3-day-rule/), the compatible pause after three red days — a different trigger for a different situation, but the same principle: the pause is decided in advance, not negotiated mid-streak.
+"Just one more at quarter size" isn't an exception to the halt. It is the halt being ignored, and it's usually said at the exact moment when judgement is worst. The halt trigger is valuable precisely because it isn't discretionary: it fires on a count, not on a feeling about whether you've learned your lesson. A related pause rule worth knowing alongside it is [the 3-day rule](/articles/the-3-day-rule/), the compatible pause after three red days — a different trigger for a different situation, but the same principle: the pause is decided in advance, not negotiated mid-streak.
 
-If you find yourself arguing with the halt trigger, that argument is itself information. It means the streak has reached the point where live decisions should not be trusted, which is exactly what the trigger is for.
+If you find yourself arguing with the halt trigger, that argument is itself information. It means the streak has reached the point where live decisions shouldn't be trusted, which is exactly what the trigger is for.
 
 The way back from a halt is fixed, not negotiated. After a halt, complete **5 consecutive rule-following paper/demo trades**. Those paper trades prove execution is back, but they do **not** count toward the live step-up count — the live count starts fresh when live trading resumes. Live trading resumes at the **quarter rung** (0.25% on the 1% baseline; a quarter of your own baseline if yours differs), not at half size and not at the baseline. From there, step up normally: 3 consecutive rule-following live trades at the quarter rung earn the half rung, then 3 more earn the baseline. If a paper trade breaks your rules, the paper count restarts. If a live trade after resumption breaks your rules, the live step-up count restarts at the quarter rung.
 
 ## One Line on Costs: Smaller Size Does Not Shrink Percentage Charges
 
-One line of cost honesty, because it is easy to misunderstand what stepping down actually saves: percentage charges do not shrink with position size — smaller trades cap the loss per trade, but they do not make costs disappear (for scale, NSE equity-options charges run at 0.03553%/side all-in). Stepping down limits what a stopped-out trade costs you in market loss; it does not reduce the percentage the market's plumbing takes.
+One line of cost honesty, because it's easy to misunderstand what stepping down actually saves: percentage charges don't shrink with position size — smaller trades cap the loss per trade, but they don't make costs disappear (for scale, NSE equity-options charges run at 0.03553%/side all-in). Stepping down limits what a stopped-out trade costs you in market loss; it doesn't reduce the percentage the market's plumbing takes.
 
 ## The One-Page Protocol Card
 
@@ -242,7 +242,7 @@ This is the whole protocol on one card. Screenshot it, print it, tape it to the 
 
 ## Risks and Limitations
 
-Trading involves the risk of loss of capital. This ladder reduces the size of losses during a streak; it does not prevent losses, and it does not guarantee profit or survival. A trader can follow the ladder perfectly and still lose money, because the underlying trades can simply be wrong, and because no sizing rule fixes a strategy without an edge. Nothing in this article is a promise of recovery speed or profitability — the promise is only survival plus clean execution data, and even that depends on actually following the rules.
+Trading involves the risk of loss of capital. This ladder reduces the size of losses during a streak; it doesn't prevent losses, and it doesn't guarantee profit or survival. A trader can follow the ladder perfectly and still lose money, because the underlying trades can simply be wrong, and because no sizing rule fixes a strategy without an edge. Nothing in this article is a promise of recovery speed or profitability — the promise is only survival plus clean execution data, and even that depends on actually following the rules.
 
 Leveraged instruments carry additional risk: futures and options can lose more than the initial outlay, and options carry expiry risk, meaning a correct view can still lose money if the timing is wrong. The ladder's percentages apply to risk per trade, but leverage changes how fast a stopped-out trade can move against you, so the same 1% budget demands extra care in leveraged products.
 
