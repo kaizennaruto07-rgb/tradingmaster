@@ -1,7 +1,7 @@
 ---
-title: "Position Sizing for Small Accounts: The ₹ Math, the Round-Down Rule, and When to Skip a Trade"
-description: "Position sizing for small accounts: the ₹ formula, 1% risk, round-down and skip-trade rules, with examples for ₹25,000, ₹50,000 and ₹1,00,000 accounts."
-meta_description: "Position sizing for small accounts: the ₹ formula, 1% risk, round-down and skip-trade rules, with examples for ₹25,000, ₹50,000 and ₹1,00,000 accounts."
+title: "Position Sizing for Small Accounts: Risk 1%, Size from Stop"
+description: "On a ₹50,000 account, 1% risk is ₹500 — a ₹20 stop gives 25 shares. The ₹ formula, round-down rule and skip-trade rule for ₹25,000–₹1,00,000 accounts."
+meta_description: "On a ₹50,000 account, 1% risk is ₹500 — a ₹20 stop gives 25 shares. The ₹ formula, round-down rule and skip-trade rule for ₹25,000–₹1,00,000 accounts."
 date: 2026-10-26
 author: Kaizen
 tag: "Trading mathematics · Risk management"
@@ -10,19 +10,19 @@ keywords: ["position sizing for small accounts", "position size small account", 
 
 *By Kaizen · 26 October 2026 · Monks Of Market*
 
-A small account does not need a different formula. It needs the same formula applied more strictly, because a small account has less room to absorb a sizing mistake. This article works through that formula in rupees, with the rounding rule and the skip rule that matter most when capital is limited.
+A small account does not need a different formula. It needs the same formula applied more strictly, because a small account has less room to absorb a sizing mistake. Here is that formula in rupees — with the rounding rule and the skip rule that matter most when capital is limited.
 
 ## Position sizing for a small account: risk 1%, size from your stop
 
-How do you size positions correctly when your account is small, so that one trade or one losing streak cannot wipe you out? Start from your stop, not from how many shares you want to own.
+How do you size positions when your account is small, so one trade or one losing streak cannot wipe you out? Start from your stop, not from how many shares you want to own.
 
-This article recommends risking 1% of your account on a trade as its default guideline. Calculate your risk budget as account × risk%, divide it by the distance between your entry price and your stop price, and round the result down to whole shares. That gives you: Shares = floor[(Account × Risk%) ÷ (Entry − Stop)].
+This article recommends risking 1% of your account per trade as its default. Risk budget = account × risk%. Divide it by the distance between entry and stop, and round down to whole shares. That gives you: Shares = floor[(Account × Risk%) ÷ (Entry − Stop)].
 
-Three problems make this harder for small accounts than for large ones. The rest of this article takes them in turn: the formula often gives a fraction of a share, and Indian cash-segment shares are bought in whole shares; 1% can feel so small that traders raise their risk to 5% or 10%; and a trade that risks only 1% can still tie up a large share of the account in one stock. The general method is explained in the [Position Sizing article](/articles/position-sizing/); this article applies it specifically to small accounts.
+Three problems make this harder for small accounts than for large ones. The formula often gives a fraction of a share, and Indian cash-segment shares are bought in whole shares. 1% can feel so small that traders raise their risk to 5% or 10%. And a trade risking only 1% can still tie up a large share of the account in one stock. The general method is explained in the [Position Sizing article](/articles/position-sizing/); this article applies it specifically to small accounts.
 
 ## The small-account trap: why small accounts blow up on sizing, not on entries
 
-Entries get most of the attention, but sizing is what usually turns an ordinary losing streak into a blown account. A trader can be wrong on several trades in a row and still be in the game if each loss is small. The same streak at a large risk per trade does far more damage, because losses compound: each loss shrinks the account that the next loss is taken from.
+Entries get most of the attention, but sizing is what usually turns an ordinary [losing streak](/articles/how-losing-streaks-affect-trading-accounts/) into a blown account. You can be wrong several trades in a row and still be in the game if each loss is small. The same streak at large risk per trade does far more damage, because losses compound: each loss shrinks the account the next loss is taken from.
 
 The compounded figures make the difference concrete (arithmetic recomputation, 2026-10-25):
 
@@ -31,7 +31,7 @@ The compounded figures make the difference concrete (arithmetic recomputation, 2
 | 1% | ≈ 9.6% |
 | 10% | ≈ 65.1% |
 
-These are not the loose approximations sometimes quoted as "10 losses = 10%" or "10 losses = 100%". Compounded, 10 losses at 1% leave the account down about 9.6%, while 10 losses at 10% leave it down about 65.1% — a drawdown that needs roughly 186% growth on the remaining capital just to get back to breakeven. That is why the "1% feels too small" feeling is dangerous: raising risk because the rupee amount looks insignificant is how small accounts become smaller. The account is small, not the rule.
+These are not the loose approximations sometimes quoted as "10 losses = 10%" or "10 losses = 100%". Compounded, 10 losses at 1% leave the account down about 9.6%, while 10 losses at 10% leave it down about 65.1% — a drawdown that needs roughly 186% growth on the remaining capital just to get back to breakeven. That is why "1% feels too small" is dangerous: raising risk because the rupee amount looks insignificant is how small accounts become smaller. The account is small, not the rule.
 
 If you want to see what a losing streak does to an account at different risk levels, try the [Risk of Ruin Calculator](/tools/risk-of-ruin/). The [Risk of Ruin article](/articles/risk-of-ruin-trading/) explains why small per-trade risk is what keeps a small account alive through losing streaks.
 
@@ -39,11 +39,11 @@ If you want to see what a losing streak does to an account at different risk lev
 
 ### Set the stop from the setup — before you size
 
-The stop is not chosen to make the share count come out nicely. It is the price at which the setup is wrong, fixed from the setup itself before any sizing maths happens.
+The stop is not chosen to make the share count come out nicely. It is the price at which the setup is wrong, fixed from the setup itself — before any sizing maths happens.
 
-Take one clearly hypothetical example, not a real trade: a trader plans to buy at ₹400 because the price has broken above that level, and the setup would be invalidated by a fall back below ₹380, the recent swing low. The stop is therefore ₹380, and the risk per share is ₹400 − ₹380 = ₹20. That distance — ₹20 — is what goes into the formula. What the trader must never do is tighten the stop artificially to inflate the share count: moving the stop to ₹390, for instance, would halve the risk per share to ₹10 and double the share count, but ₹390 is not where the setup is invalidated, so the trade would be stopped out by ordinary movement that leaves the original setup intact. A stop moved to manufacture shares is not a valid stop, and sizing from it is not position sizing.
+Take one clearly hypothetical example, not a real trade: you plan to buy at ₹400 because the price has broken above that level, and the setup fails if price falls back below ₹380, the recent swing low. The stop is therefore ₹380, and the risk per share is ₹400 − ₹380 = ₹20. That distance — ₹20 — is what goes into the formula. Never tighten the stop artificially to inflate the share count: moving the stop to ₹390 would halve the risk per share to ₹10 and double the shares, but ₹390 is not where the setup fails — so ordinary movement would stop you out while the original setup stays intact. A stop moved to manufacture shares is not a valid stop, and sizing from it is not position sizing.
 
-The formula has three inputs, and each one must be decided before you size the trade:
+The formula has three inputs. Decide each one before you size the trade:
 
 - **Risk budget** = account × risk%. At 1% risk, a ₹50,000 account has a ₹500 risk budget.
 - **Risk per share** = entry price − stop price. If you enter at ₹400 with a stop at ₹380, the risk per share is ₹20.
@@ -80,21 +80,21 @@ To try the maths on your own numbers, use the [Position Size Calculator](/tools/
 
 The stop must be a real, valid stop, set from the trade setup before you size the position. Never widen the stop — or the risk budget — to fit a share count you would prefer. If the stop distance changes, the share count changes; the risk budget does not.
 
-The formula also sizes the *planned* loss at the stop, not a guaranteed maximum loss. A stop-loss order does not guarantee execution at the stop price. If the price gaps past the stop, or if slippage occurs, the realised loss can be larger than the planned risk. The formula is a risk-management tool, not loss protection and never a guarantee of profit.
+The formula sizes the *planned* loss at the stop, not a guaranteed maximum. A stop-loss order does not guarantee execution at the stop price. If price gaps past the stop, or slippage occurs, the realised loss can be larger than the planned risk. The formula manages risk; it is not loss protection, and never a guarantee of profit.
 
-One hypothetical illustration — not a real trade, and not a typical outcome — shows how large that difference can be. Take the ₹50,000 example above: 25 shares bought at ₹400 with a stop at ₹380, for a planned loss of 25 × ₹20 = ₹500 if the stop is hit. If the price gaps past the stop and the first available exit is ₹360 instead, the realised loss is 25 × (₹400 − ₹360) = 25 × ₹40 = ₹1,000 — double the planned ₹500, from the same 25 shares. That is why the planned loss is a plan, not a cap.
+One hypothetical illustration — not a real trade, and not a typical outcome — shows how large that gap can be. Take the ₹50,000 example above: 25 shares bought at ₹400 with a stop at ₹380, for a planned loss of 25 × ₹20 = ₹500 if the stop is hit. If the price gaps past the stop and the first available exit is ₹360 instead, the realised loss is 25 × (₹400 − ₹360) = 25 × ₹40 = ₹1,000 — double the planned ₹500, from the same 25 shares. That is why the planned loss is a plan, not a cap.
 
-Full Kelly sizing is covered in separate articles in this series and is not re-derived here.
+[Full Kelly sizing](/articles/kelly-criterion-calculator-for-traders/) is covered in separate articles in this series and is not re-derived here.
 
 ## Risk vs deployment: how 1% risk can still mean 50% of your capital in one stock
 
 Risk and deployment are two different numbers, and confusing them is a specifically small-account mistake.
 
-Risk is what you lose if the stop is hit. Deployment is the capital tied up in the position while the trade is open. In the table above, the ₹25,000 account risks only ₹250 (1%) but deploys ₹12,500 (50% of the account) in a single stock. The ₹50,000 account risks ₹500 (1%) and deploys ₹10,000 (20%). In both cases the risk is the same 1%, but the capital committed is very different — because a tight stop with a high share price can require a large position value to risk a small amount.
+Risk is what you lose if the stop is hit. Deployment is the capital tied up while the trade is open. In the table above, the ₹25,000 account risks only ₹250 (1%) but deploys ₹12,500 — 50% of the account — in a single stock. The ₹50,000 account risks ₹500 (1%) and deploys ₹10,000 (20%). In both cases the risk is the same 1%, but the capital committed is very different — because a tight stop with a high share price can require a large position value to risk a small amount.
 
-That matters for two practical reasons. First, a large deployment in one stock leaves little capital free for anything else, and for delivery trades it concentrates the account in a single name. Second, deployment is what you must actually be able to fund: the position value has to fit in the account, even though the planned loss is only 1%. The examples above illustrate the distinction; they do not set a maximum deployment rule, and no universal deployment cap is claimed in this article. Before judging a trade as "small" because its risk is 1%, check both numbers: the rupees at risk if the stop hits, and the rupees deployed.
+That matters for two practical reasons. First, a large deployment in one stock leaves little capital free for anything else, and for delivery trades it concentrates the account in a single name. Second, deployment is what you must actually fund: the position value has to fit in the account, even though the planned loss is only 1%. The examples above illustrate the distinction; they do not set a maximum deployment rule, and no universal deployment cap is claimed in this article. Before judging a trade as "small" because its risk is 1%, check both numbers: the rupees at risk if the stop hits, and the rupees deployed.
 
-Open trades also add up — something the single-trade framing hides. Consider a hypothetical ₹50,000 account holding two trades at once, each sized at 1%: the first is the table's ₹50,000 example — ₹500 of risk deploying ₹10,000 (25 shares at ₹400 with a ₹380 stop) — and the second risks the same ₹500 on a ₹500 entry with a ₹490 stop, giving 50 shares (₹500 ÷ ₹10) and deploying ₹25,000. Added together, the account carries ₹500 + ₹500 = ₹1,000 of risk, which is 2% of the account, and ₹10,000 + ₹25,000 = ₹35,000 deployed, which is 70% of the account. Neither trade breaks the 1% rule on its own, but together they are a 2%-risk, 70%-deployed account. Always add open trades together before judging risk or deployment.
+Open trades add up too — something the single-trade framing hides. Consider a hypothetical ₹50,000 account holding two trades at once, each sized at 1%: the first is the table's ₹50,000 example — ₹500 of risk deploying ₹10,000 (25 shares at ₹400 with a ₹380 stop) — and the second risks the same ₹500 on a ₹500 entry with a ₹490 stop, giving 50 shares (₹500 ÷ ₹10) and deploying ₹25,000. Added together, the account carries ₹500 + ₹500 = ₹1,000 of risk, which is 2% of the account, and ₹10,000 + ₹25,000 = ₹35,000 deployed, which is 70% of the account. Neither trade breaks the 1% rule on its own, but together they are a 2%-risk, 70%-deployed account. Always add open trades together before judging risk or deployment.
 
 <figure class="article-visual" data-reveal>
 <svg viewBox="0 0 680 340" role="img" aria-label="Risk versus capital deployed: the 25,000 rupee account risks 250 rupees, 1 percent, but deploys 12,500 rupees, 50 percent, while the 50,000 rupee account risks 500 rupees, 1 percent, but deploys 10,000 rupees, 20 percent." class="viz">
@@ -111,11 +111,11 @@ Open trades also add up — something the single-trade framing hides. Consider a
 
 ## Rounding down and the skip-trade rule: when the formula gives you a fraction — or zero shares
 
-Indian cash-segment shares are bought in whole shares, so a fractional result must be rounded down, never up. Rounding up breaches the risk budget by definition: it buys more risk than the budget allows.
+Indian cash-segment shares are bought in whole shares, so a fractional result must be rounded down, never up. Rounding up breaches the risk budget by definition — it buys more risk than the budget allows.
 
 Take a small illustration (arithmetic recomputation, 2026-10-25): a ₹100 risk budget divided by ₹7.50 risk per share gives 13.33 shares. The correct size is 13 shares, which puts ₹97.50 at risk — under the ₹100 budget. Rounding up to 14 shares would put ₹105 at risk, over budget.
 
-Sometimes the formula gives zero shares, and that is an answer, not an error. Worked in full: a ₹10,000 account at 1% risk has a ₹100 risk budget. A setup with ₹150 risk per share cannot be taken at that stop with even one share, because floor(₹100 ÷ ₹150) = 0 shares. The correct responses are to skip the trade, or to find a tighter *valid* stop that the setup genuinely supports. What you must never do is widen the risk budget to fit the trade. Skipping a trade your account cannot afford is position sizing working as intended, not a missed opportunity.
+Sometimes the formula gives zero shares. That is an answer, not an error. Worked in full: a ₹10,000 account at 1% risk has a ₹100 risk budget. A setup with ₹150 risk per share cannot be taken at that stop with even one share, because floor(₹100 ÷ ₹150) = 0 shares. The correct responses are to skip the trade, or to find a tighter *valid* stop that the setup genuinely supports. What you must never do is widen the risk budget to fit the trade. Skipping a trade your account cannot afford is position sizing working as intended, not a missed opportunity.
 
 <figure class="article-visual" data-reveal>
 <svg viewBox="0 0 680 360" role="img" aria-label="Skip trade flowchart: risk budget divided by risk per share gives whole shares, a fraction rounded down, or zero shares — and zero shares means skip the trade." class="viz">
@@ -131,7 +131,7 @@ Sometimes the formula gives zero shares, and that is an answer, not an error. Wo
 
 ## Costs on a small risk budget: why charges must be checked, not ignored
 
-Charges matter disproportionately when the risk budget is only ₹250 to ₹1,000. A charge that looks trivial on a large account eats a visible share of a small risk budget, and it comes out of the trade's outcome whether or not it was planned for. No charge figure is stated in this section, because none is asserted here — what follows is a method you run on your own broker's figures, not a figure to copy.
+Charges matter disproportionately when the risk budget is only ₹250 to ₹1,000. A charge that looks trivial on a large account eats a visible share of a small risk budget — and it comes out of the trade's outcome whether or not you planned for it. No charge figure is stated in this section, because none is asserted here — what follows is a method you run on your own broker's figures, not a figure to copy.
 
 Run it before sizing, in three steps, for the exact trade type you are about to place:
 
@@ -141,22 +141,22 @@ Run it before sizing, in three steps, for the exact trade type you are about to 
 
 Delivery and intraday also change the sizing picture itself, not just the charges. A delivery trade is funded with the full position value and carries overnight gap exposure: the price can reopen well past the stop, as the gap illustration above shows. An intraday trade uses margin or leverage, so less capital is posted upfront, and the position does not carry overnight — but leverage does not change the loss at the stop, and it never justifies sizing by the margin posted instead of by the risk budget.
 
-The decision rule follows from the comparison. If charges take a material bite out of a small risk budget, the trade needs a tighter valid stop that the setup genuinely supports, or it needs to be skipped. It never justifies a bigger risk budget: widening the budget to absorb charges is the same error as widening it to fit a share count. A trade that only works if you pretend charges do not exist is a trade sized on incomplete maths.
+The decision rule follows. If charges take a material bite out of a small risk budget, the trade needs a tighter valid stop the setup genuinely supports, or it needs to be skipped. It never justifies a bigger risk budget: widening the budget to absorb charges is the same error as widening it to fit a share count. A trade that only works if you pretend charges do not exist is sized on incomplete maths.
 
 ## The scale-up ladder: when your position size is allowed to grow
 
-Size grows in two ways, and only one of them needs a decision.
+Size grows in two ways. Only one of them needs a decision.
 
 First, as the account grows, 1% automatically grows in rupee terms. A ₹25,000 account risking 1% risks ₹250 per trade; if that account grows to ₹50,000, the same 1% rule risks ₹500 per trade, and the share counts in the table above rise with it. No separate decision to "increase size" is needed for the rupee risk to rise — the formula does it on its own.
 
-Second, any further step-up in the risk percentage itself is earned by behaviour, not by hitting a balance number. The ladder here is guidance, not a rule with thresholds: consistent application of the sizing rule, stops set before sizing, rounding down every time, and skipping trades the account cannot afford. There are no streak counts, win-rate gates, or balance milestones in this ladder, and none should be read into it. If the sizing, stop, and skip rules are not being followed consistently, the account is not ready for more risk per trade — whatever its balance says. And if they are being followed, the rupee risk is already growing with the account at the same percentage.
+Second, any step-up in the risk percentage itself is earned by behaviour, not by hitting a balance number. The ladder here is guidance, not a rule with thresholds: consistent application of the sizing rule, stops set before sizing, rounding down every time, and skipping trades the account cannot afford. There are no streak counts, win-rate gates, or balance milestones in this ladder, and none should be read into it. If the sizing, stop, and skip rules are not being followed consistently, the account is not ready for more risk per trade — whatever its balance says. If they are being followed, the rupee risk is already growing with the account at the same percentage.
 
 That behaviour standard can be made self-checkable without inventing a threshold. As guidance only — not a pass mark, and not a rule — run this short review checklist over your recent trades:
 
 - Was the stop set from the setup before sizing, every time?
 - Was the share count rounded down, every time?
 - Were unaffordable trades skipped rather than forced?
-- Were there no revenge or conviction overrides, where risk was raised after a loss or because a setup felt certain?
+- Were there no [revenge](/articles/revenge-trading/) or conviction overrides, where risk was raised after a loss or because a setup felt certain?
 
 One workable habit, again as guidance only, is a short review against this checklist at the end of each week, looking back over that week's trades. The checklist tells you whether the behaviour standard is being met; it does not set a number of clean weeks, a win rate, or a balance that unlocks more risk, because none of those is claimed here.
 
@@ -164,15 +164,15 @@ One workable habit, again as guidance only, is a short review against this check
 
 The formula does not prevent three failure modes, because all three override it.
 
-**Conviction sizing** is raising risk because a setup "feels certain". Certainty does not change the stop maths: a wider risk budget on a confident trade still loses that larger amount if the stop is hit, and confidence is not an input in the formula.
+**Conviction sizing** is raising risk because a setup "feels certain". Certainty does not change the stop maths: a wider risk budget on a confident trade still loses that larger amount if the stop is hit — and confidence is not an input in the formula.
 
-**Revenge sizing** is raising risk after a loss to win it back quickly. The compounded losing-streak maths shows why this accelerates drawdown: at 10% risk per trade, 10 straight losses compound to about a 65.1% drawdown, needing roughly 186% growth on what remains just to break even. Raising risk after losses pushes an account towards that column of the table, not away from it.
+**Revenge sizing** is raising risk after a loss to win it back quickly. The compounded losing-streak maths shows why: at 10% risk per trade, 10 straight losses compound to about a 65.1% drawdown, needing roughly 186% growth on what remains just to break even. Raising risk after losses pushes an account towards that column of the table, not away from it.
 
-**Leverage-as-sizing** is using leverage to take a size the risk budget cannot afford. Leverage changes the margin posted, not the loss at the stop — and that holds only if the stop actually fills and liquidation does not occur first. Higher leverage moves liquidation closer to the entry price, so a leveraged position can be liquidated before the stop, making the realised loss larger than planned. Leverage is not a way to make a small account tradeable at a size its risk budget cannot afford.
+**Leverage-as-sizing** is using leverage to take a size the risk budget cannot afford. Leverage changes the margin posted, not the loss at the stop — and that holds only if the stop actually fills and liquidation does not happen first. Higher leverage moves liquidation closer to the entry price, so a leveraged position can be liquidated before the stop, making the realised loss larger than planned. Leverage is not a way to make a small account tradeable at a size its risk budget cannot afford.
 
 ## Risks and limitations: what position sizing cannot protect you from
 
-Position sizing manages how much is at risk on a trade. It does not remove risk, and it is not a guarantee of profit.
+Position sizing manages how much is at risk on a trade. It does not remove risk, and it guarantees no profit.
 
 Trading can lose capital, including the full amount risked on a trade. A stop-loss order does not guarantee execution at the stop price: gaps and slippage can make realised losses larger than the planned risk. Leveraged positions can be liquidated before the stop is reached, making losses larger still. Futures and options are not a starting point for small accounts, because lot sizes and margins make them capital-heavy; that is practical guidance, not a regulatory prohibition. Nothing in this article is a stock recommendation, and the worked examples are hypothetical arithmetic illustrations, not real trades.
 
