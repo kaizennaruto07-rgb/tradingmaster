@@ -1,7 +1,7 @@
 ---
-title: "Position Sizing in Trading: How Much Should You Risk Per Trade? (Indian Trader's Guide)"
-description: "Position sizing formula explained with Indian rupee examples: the 1% rule, NSE lot sizes, fractional Kelly, and step-by-step calculations for Indian traders."
-meta_description: "Position sizing formula explained with Indian rupee examples: the 1% rule, NSE lot sizes, fractional Kelly, and step-by-step calculations for Indian traders."
+title: "How Much to Risk Per Trade? Position Sizing Formula"
+description: "Risk 1% per trade — on ₹1,00,000 that is ₹1,000. The position sizing formula, the stop-first rule, NSE lot sizes, and fractional Kelly, worked in rupees."
+meta_description: "Risk 1% per trade — on ₹1,00,000 that is ₹1,000. The position sizing formula, the stop-first rule, NSE lot sizes, and fractional Kelly, worked in rupees."
 date: 2026-10-08
 author: Kaizen
 tag: "Trading mathematics · Position sizing"
@@ -14,9 +14,9 @@ keywords: ["position sizing", "how much should i risk per trade", "position sizi
 
 You found a setup. You know your entry, your stop, your target. One question remains, and it decides whether this trade is a controlled cost or a gamble: **how many do I buy?**
 
-Most beginners answer that question last, with whatever feels right — a round 100 shares, one lot because that's what everyone trades, or "all in" because the setup looks good. That habit, repeated, is what turns a strategy with a perfectly good edge into a wrecked account. This article gives you the arithmetic that replaces the habit.
+Most beginners answer that question last, with whatever feels right — a round 100 shares, one lot because that's what everyone trades, or "all in" because the setup looks good. Repeat that habit and a strategy with a perfectly good edge becomes a wrecked account. This article gives you the arithmetic that replaces the habit.
 
-This is the practical payoff of the whole Week 1 math series. [Risk of ruin](/articles/risk-of-ruin-trading/) showed you that ruin rises steeply with position size regardless of edge. [Expectancy](/articles/what-is-trading-expectancy/) gave you the profit-per-trade number. [Win rate and risk-reward](/articles/win-rate-vs-risk-reward/) gave you its two halves. Position sizing is where all of it gets converted into a number you type into your order ticket.
+This is the practical payoff of the whole Week 1 math series. [Risk of ruin](/articles/risk-of-ruin-trading/) showed you ruin rises steeply with position size, regardless of edge. [Expectancy](/articles/what-is-trading-expectancy/) gave you the profit-per-trade number. [Win rate and risk-reward](/articles/win-rate-vs-risk-reward/) gave you its two halves. Position sizing is where all of it becomes a number you type into your order ticket.
 
 ---
 
@@ -32,7 +32,7 @@ Each input has a job:
 - **Entry Price − Stop-Loss Price** — the per-unit distance you're risking. How many rupees each share (or each lot-unit) costs you if the stop is hit. Use the absolute distance — direction doesn't matter.
 - **Divide the first by the second** — and you get the quantity that turns exactly your risk budget into a real trade.
 
-That's the whole thing. No mystery, no secret. And there's one load-bearing rule about how you use it, which gets its own section below: the stop is fixed first, from the chart; the size is derived from the stop. Never the other way around.
+That's the whole thing. No mystery, no secret. And there's one load-bearing rule about how you use it — its own section below: the stop is fixed first, from the chart; the size is derived from the stop. Never the other way around.
 
 One refinement before you trust any number above: estimate your round-trip cost per share (brokerage + exchange charges + stamp duty + GST), add it to the stop distance before dividing, and size on that. The worked examples below keep the arithmetic clean by showing gross distance — your real sizing uses net.
 
@@ -47,7 +47,7 @@ Take a concrete trade. Your account has Rs 1,00,000. You risk 1% per trade. You'
 | 3. Position size | Rs 1,000 ÷ Rs 10 | **100 shares** |
 | 4. Check | 100 × Rs 10 = Rs 1,000 | Matches the budget |
 
-Under one condition — no gap, no slippage — the loss is exactly 1%. Not "about 1%." Exactly 1%. The formula's promise is that precise, **under one condition: no gap, no slippage** — slippage being your stop order filling at a worse price than you set. A stop order filled normally in a liquid market costs you the plan. An overnight gap past your stop, or a thinly traded stock that skips your price, can make the real loss larger than the calculated one. Sizing controls the plan; it can't repeal the market. (The [limitations section](#limitations-and-risks-what-the-formula-cannot-protect-you-from) spells out the gap caveat once, properly.)
+Under one condition — no gap, no slippage — the loss is exactly 1%. Not "about 1%." Exactly 1%. Slippage means your stop order filling at a worse price than you set. A stop order filled normally in a liquid market costs you the plan. An overnight gap past your stop, or a thinly traded stock that skips your price, can make the real loss larger than the calculated one. Sizing controls the plan; it can't repeal the market. (The [limitations section](#limitations-and-risks-what-the-formula-cannot-protect-you-from) spells out the gap caveat once, properly.) Want the number without the hand math? Our free [position size calculator](/tools/position-size/) runs this exact formula — account, risk%, entry, stop — and rounds down for you.
 
 <figure class="article-visual" data-reveal>
 <svg viewBox="0 0 680 500" role="img" aria-label="Worked position sizing calculation table on a Rs 1,00,000 account showing how Rs 1,000 risk budget and Rs 10 per-share risk give 100 shares" class="viz">
@@ -88,12 +88,12 @@ Under one condition — no gap, no slippage — the loss is exactly 1%. Not "abo
 
 ## What position sizing actually is (and what it is not)
 
-Position sizing is **variance control**, not a profit engine. It answers one question — "how much of my capital rides on this one idea?" — and leaves everything else alone.
+Position sizing is **variance control**, not a profit engine. It answers one question — "how much of my capital rides on this one idea?" — and leaves the rest alone.
 
 What it does:
 
 - **Caps the damage of any single trade** to a number you chose in advance, while calm.
-- **Controls drawdown depth** — the peak-to-trough fall in your account balance during a losing run — which decides whether you survive long enough for your edge to work. See [risk of ruin](/articles/risk-of-ruin-trading/) — ruin rises steeply with position size, regardless of how good your strategy is.
+- **Controls [drawdown](/articles/trading-drawdown-mathematics-of-recovery/) depth** — the peak-to-trough fall in your account balance during a losing run — which decides whether you survive long enough for your edge to work. See [risk of ruin](/articles/risk-of-ruin-trading/) — ruin rises steeply with position size, regardless of how good your strategy is.
 - **Auto-scales your risk with your capital** (when you use the standard method below), so losses shrink your size automatically — the opposite of revenge trading.
 
 What it does *not* do:
@@ -107,7 +107,7 @@ Internalize this before the methods: sizing is the difference between a loss you
 
 ## Rule 1: the stop comes first — size is calculated AFTER the stop, never before
 
-The most common process-order mistake in retail trading looks innocent: pick a quantity ("100 shares feels right"), then squeeze the stop to fit whatever risk budget you have left. The formula becomes:
+The most common process-order mistake in retail trading looks innocent: pick a quantity — "100 shares feels right" — then squeeze the stop to fit whatever risk budget you have left. The formula becomes:
 
 > quantity first → stop = whatever keeps the loss under Rs 1,000
 
@@ -119,7 +119,7 @@ The correct order is non-negotiable:
 2. **Choose your risk%** — your standing rule (see the next sections).
 3. **Calculate size last**, from the formula above.
 
-Sometimes the arithmetic will answer "zero" — the honest output the [Rs 3 stop problem](#the-rs-3-stop-problem-when-the-formula-says-you-cannot-afford-this-trade) is built on. "You cannot afford this trade at this stop" is a complete, correct answer. It means the setup's risk doesn't fit your account, and the right response is to skip it or find a setup whose stop does fit — not to move the stop.
+Sometimes the arithmetic answers "zero" — the honest output the [Rs 3 stop problem](#the-rs-3-stop-problem-when-the-formula-says-you-cannot-afford-this-trade) is built on. "You cannot afford this trade at this stop" is a complete, correct answer. It means the setup's risk doesn't fit your account, and the right response is to skip it or find a setup whose stop does fit — not to move the stop.
 
 One practical way to fix the stop first: size it from volatility, not from your budget. A common approach is the **ATR multiple** — place the stop 1.5× to 2× the Average True Range below/above your entry, so the stop breathes with the instrument's normal movement instead of getting clipped by everyday noise. The stop still comes from the market (volatility structure, in this case) — the account budget never touches it. Only after the ATR stop is placed does the formula convert it into a quantity.
 
@@ -159,7 +159,7 @@ The method behind the rule is called **fixed fractional sizing**: you risk the s
 - Win, account grows → the rupee value of your 1% grows with it, so winning streaks compound faster.
 - Lose, account shrinks → the rupee value of your 1% shrinks with it, so losing streaks decelerate automatically.
 
-That second property is the quiet genius. Fixed fractional is **anti-martingale**: losses make you smaller, not bigger. Compare that to the revenge trader's instinct — double up after a loss, which is martingale thinking and a documented path to the [ruin math in Article #1](/articles/risk-of-ruin-trading/). Fixed fractional does the opposite by construction, no willpower required.
+That second property is the quiet genius. Fixed fractional is **anti-martingale**: losses make you smaller, not bigger. Compare that with the revenge trader's instinct — double up after a loss. That's martingale thinking, and a documented path to the [ruin math in Article #1](/articles/risk-of-ruin-trading/). Fixed fractional does the opposite by construction. No willpower required.
 
 At 10 consecutive losses at 1% risk, by the way, you're down about 9.6% (1 − 0.99^10 = 0.0956) — annoying, recoverable, and exactly the kind of survivable drawdown the rule exists to produce.
 
@@ -374,7 +374,7 @@ The flip side is equally important: a *good* strategy with reckless sizing dies 
 
 **Sizing to account size instead of risk%.** "I have Rs 5 lakh, so Rs 10,000 a trade is fine" — that's 2%, stated as if the account size justifies it. The account size is irrelevant; the streak math in the survivability table doesn't care how big the account is. Choose the %, then let the rupees follow.
 
-**Forgetting costs.** Every round trip pays brokerage, exchange charges, GST, stamp duty — and, since Budget 2026 (effective 1 April 2026), higher STT on F&O: **0.05% on futures sales** (up from 0.02%), **0.15% on options premium sales** (up from 0.10%), and **0.15% on exercised in-the-money options** (profitable options settled at expiry; up from 0.125%). These come out of your real money, so your *net* payoff per trade is smaller than the chart suggests — which quietly raises the bar your sizing has to clear. Size on net numbers, never paper ones.
+**Forgetting costs.** Every round trip pays [brokerage, exchange charges, GST, stamp duty](/articles/options-trading-charges-india/) — and, since Budget 2026 (effective 1 April 2026), higher STT on F&O: **0.05% on futures sales** (up from 0.02%), **0.15% on options premium sales** (up from 0.10%), and **0.15% on exercised in-the-money options** (profitable options settled at expiry; up from 0.125%). These come out of your real money, so your *net* payoff per trade is smaller than the chart suggests — which quietly raises the bar your sizing has to clear. Size on net numbers, never paper ones.
 
 **Treating intraday margin as risk capacity.** Margin lets you carry a bigger notional; it does not raise the loss you can afford. The Rs 3,42,657 short on a Rs 1,00,000 account is still a Rs 1,000-risk trade — and a margin call waiting to happen if anything goes wrong.
 
