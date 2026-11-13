@@ -1,7 +1,7 @@
 ---
 title: "The History of Muhurat Trading: From 1957 to Today"
-description: "Tracing muhurat trading from Chopda Pujan ledger rituals to the BSE's 1957 formalisation and today's nationwide electronic session — the full story."
-meta_description: "Tracing muhurat trading from Chopda Pujan ledger rituals to the BSE's 1957 formalisation and today's nationwide electronic session — the full story."
+description: "Muhurat trading began in 1957, but the ritual is older. From Chopda Pujan ledgers to BSE’s first session and NSE’s nationwide screen — fact vs folklore."
+meta_description: "Muhurat trading began in 1957, but the ritual is older. From Chopda Pujan ledgers to BSE’s first session and NSE’s nationwide screen — fact vs folklore."
 date: 2026-10-23
 author: Kaizen
 tag: "Muhurat trading · Indian markets"
@@ -12,9 +12,9 @@ keywords: ["muhurat trading history", "when did muhurat trading start", "history
 
 Every Diwali, Indian markets open for one special session — held not for liquidity or volume, but for an auspicious beginning. That session is Muhurat trading, and its history is the story of an old account-book ritual that became a market event.
 
-The arc of that story runs through five eras: centuries of Chopda Pujan, when merchants blessed fresh ledgers at Diwali; the Bombay Stock Exchange's formalisation of the custom in 1957; the National Stock Exchange carrying it nationwide when it began operations in 1994 (incorporated 1992); derivatives joining the session in the 2000s; and today's era, in which retail participation has surged with trading apps.
+That story runs through five eras: centuries of Chopda Pujan, when merchants blessed fresh ledgers at Diwali; the BSE formalising the custom in 1957; the NSE carrying it nationwide when it began operations in 1994 (incorporated 1992); derivatives joining in the 2000s; and today, when retail participation has surged with trading apps.
 
-This is that history, told straight — with what is documented separated from what is folklore, because this tradition has accumulated both.
+This is that history, told straight — documented fact separated from folklore, because this tradition has accumulated plenty of both.
 
 <svg viewBox="0 0 680 300" role="img" aria-label="Timeline of muhurat trading history from Chopda Pujan rituals through 1957 BSE formalisation to the modern NSE electronic session." class="viz">
 <text x="340" y="26" text-anchor="middle" fill="#f2f7f4" font-size="16" font-weight="700">Muhurat trading: five eras, one ritual</text>
@@ -53,15 +53,15 @@ This is that history, told straight — with what is documented separated from w
 
 ## Where Muhurat Trading Came From: The 1957 Origin Story
 
-**When did muhurat trading start?** The short answer: the first official session was held in 1957, on the Bombay Stock Exchange (BSE). The longer answer: the exchange didn't invent anything that year — it formalised a ritual the trading communities of Bombay had been practising at Diwali for generations. Brokers were already exchanging symbolic first trades and opening new ledgers when the lamps were lit; the BSE's decision turned that informal custom into an official exchange event.
+**When did muhurat trading start?** Short answer: the first official session was held in 1957, on the Bombay Stock Exchange (BSE). Longer answer: the exchange didn't invent anything that year — it formalised a ritual Bombay's trading communities had practised at Diwali for generations. Brokers were already exchanging symbolic first trades and opening new ledgers when the lamps were lit; the BSE's decision turned that informal custom into an official exchange event.
 
-There is no surviving primary circular from 1957 documenting that first session — a fact worth stating plainly. The 1957 origin is established by breadth: a broad consensus of secondary sources (market publishers, clearing records, and exchange-history write-ups) agrees on it. It is the one date every account of the tradition shares.
+No primary circular from 1957 survives documenting that first session — worth stating plainly. The 1957 origin is established by breadth: a broad consensus of secondary sources (market publishers, clearing records, and exchange-history write-ups) agrees on it. It is the one date every account of the tradition shares.
 
-One coincidence from that same year is worth noting, precisely because it is only a coincidence: 1957 is also the year the BSE received its first recognition under the Securities Contracts (Regulation) Act. No source connects the two events, and we claim no causal link. They simply share a year — fittingly, the year the BSE's old customs began meeting its modern institutional form.
+One coincidence from that same year is worth noting precisely because it is only a coincidence: 1957 is also the year the BSE received its first recognition under the Securities Contracts (Regulation) Act. No source connects the two events, and we claim no causal link. They simply share a year — fittingly, the year the BSE's old customs began meeting its modern institutional form.
 
 ## Before 1957: Chopda Pujan and the Diwali Fiscal New Year
 
-To understand why an exchange holds a trading session on Diwali, you have to understand Chopda Pujan — the ritual from which the session descends.
+To understand why an exchange holds a trading session on Diwali, you first have to understand Chopda Pujan — the ritual the session descends from.
 
 ### What Chopda Pujan Actually Is
 
@@ -102,23 +102,23 @@ To understand why an exchange holds a trading session on Diwali, you have to und
 <text x="340" y="360" text-anchor="middle" fill="#92a59c" font-size="11">The ledger was the business &#8212; blessing it renewed the commercial year.</text>
 </svg>
 
-This was never decoration layered on top of business. For merchant communities, the ledger *was* the business, and blessing it was the annual renewal of the commercial year. Muhurat trading is the stock-exchange descendant of that act — the ritual opening of a new year of trading, wearing a market's clothes.
+This was never decoration on top of business. For merchant communities, the ledger *was* the business — blessing it was the annual renewal of the commercial year. Muhurat trading is the stock-exchange descendant of that act — the ritual opening of a new year of trading, wearing a market's clothes.
 
 ### Why Diwali Is the Occasion: The Samvat New Year
 
 For India's trading communities, Diwali is not just the festival of lights — it is the fiscal new year. Merchant accounts were traditionally anchored to Kartik Pratipada, the day after Diwali, and the Vikram Samvat calendar that merchants follow was established in 57 BCE. Gujarati New Year — Bestu Varas — falls the day after Diwali. (For reference: Samvat 2083 begins in November 2026.)
 
-So a trading session at Diwali is, in merchant logic, exactly right: it is the market's way of writing the first entry in the new year's chopda. The session's timing on Laxmi Pujan — this year, Sunday 8 November 2026 — places it at the most auspicious day of the trading year, the day Lakshmi, goddess of wealth and prosperity, is worshipped.
+So a trading session at Diwali is, in merchant logic, exactly right — the market's way of writing the first entry in the new year's chopda. The session's timing on Laxmi Pujan — this year, Sunday 8 November 2026 — places it at the most auspicious day of the trading year, the day Lakshmi, goddess of wealth and prosperity, is worshipped.
 
 ### Informal Diwali Trades Between Brokers
 
-Before any exchange printed a schedule, the custom existed in cruder form: in trading centres like Bombay, brokers and traders exchanged symbolic first trades at Diwali, alongside the sweets, the diyas, and the opening of the new ledgers at their brokerage houses. Bombay was the centre that eventually formalised the custom — but it was not necessarily the only one where it lived: the Calcutta Stock Exchange's own Muhurat tradition is very old too — a CSE official claimed in 2013 that the exchange had never missed a Muhurat session since its 1908 inception — which suggests the custom ran in parallel at other trading centres as well. Think of 1957 not as invention but as institutionalisation — the moment a community custom crossed the threshold of the exchange and became a market fixture.
+Before any exchange printed a schedule, the custom existed in cruder form: in trading centres like Bombay, brokers and traders exchanged symbolic first trades at Diwali — alongside the sweets, the diyas, and the opening of new ledgers at their brokerage houses. Bombay was the centre that eventually formalised the custom — but it was not necessarily the only one where it lived: the Calcutta Stock Exchange's own Muhurat tradition is very old too — a CSE official claimed in 2013 that the exchange had never missed a Muhurat session since its 1908 inception — which suggests the custom ran in parallel at other trading centres as well. Think of 1957 not as invention but as institutionalisation: the moment a community custom crossed the exchange's threshold and became a market fixture.
 
 ## 1957: BSE Formalises the Ritual
 
 The Bombay Stock Exchange is Asia's oldest exchange, and its own origin story rhymes with the tradition it would later formalise. It began in the 1850s as informal trading under a banyan tree near Bombay's Town Hall — Gujarati and Parsi brokers gathering in the open — and was formally constituted on 9 July 1875 as the Native Share & Stock Brokers' Association.
 
-Against that backdrop, 1957's decision is easy to read: an exchange born from merchant customs gave the merchants' Diwali custom an official slot. The first formalised Muhurat session took the informal practice — the symbolic first trade, the lamp-lit brokerage, the blessing of the new year's accounts — and put it inside exchange hours. What changed was not the meaning but the frame: a ledger ritual became a market event, recorded in the exchange's books rather than just the community's.
+Against that backdrop, the 1957 decision reads easily: an exchange born from merchant customs gave the merchants' Diwali custom an official slot. The first formalised Muhurat session took the informal practice — the symbolic first trade, the lamp-lit brokerage, the blessing of the new year's accounts — and put it inside exchange hours. What changed wasn't the meaning but the frame: a ledger ritual became a market event, recorded in the exchange's books, not just the community's.
 
 That makes the title's arc literal: since 1957, the BSE has conducted Muhurat trading every Diwali — an unbroken chain of annual sessions stretching nearly seven decades to the present.
 
@@ -126,7 +126,7 @@ That makes the title's arc literal: since 1957, the BSE has conducted Muhurat tr
 
 The next chapter belongs to the National Stock Exchange. NSE was incorporated in November 1992 and commenced operations in 1994 — wholesale debt markets on 30 June 1994 and equities on 3 November 1994. As the exchange came online, it adopted the Muhurat tradition.
 
-Here precision matters, because broker write-ups often say "NSE has held Muhurat trading since 1992." That is shorthand for the incorporation year; the accurate statement is that NSE adopted the tradition when it began operations. The effect was transformative regardless of the exact first year: the session moved from the trading floor to the screen, from a Bombay broker community to a nationwide electronic market. The ritual adapted without losing its shape — lamps were still lit at brokerages, sweets were still shared, but the orders now travelled on fibre instead of being shouted across a ring. This is also the era when "history of muhurat trading in india" stopped being only Bombay's story.
+Precision matters here, because broker write-ups often say "NSE has held Muhurat trading since 1992." That's shorthand for the incorporation year — the accurate statement is that NSE adopted the tradition when it began operations. The effect was transformative either way: the session moved from the trading floor to the screen, from a Bombay broker community to a nationwide electronic market. The ritual adapted without losing its shape: lamps still lit at brokerages, sweets still shared — but the orders now travelled on fibre instead of being shouted across a ring. This is also the era when "history of muhurat trading in india" stopped being only Bombay's story.
 
 <svg viewBox="0 0 680 360" role="img" aria-label="The 1992–94 transition of muhurat trading from the BSE trading floor to nationwide electronic NSE trading." class="viz">
 <text x="340" y="26" text-anchor="middle" fill="#f2f7f4" font-size="16" font-weight="700">1992&#8211;94: the ritual crosses over</text>
@@ -167,9 +167,9 @@ Here precision matters, because broker write-ups often say "NSE has held Muhurat
 
 ## 2000s Onward: Derivatives Join the Tradition
 
-The tradition grew with the market's own expansion. The anchors are verified exchange milestones: NSE's derivatives segment commenced on 12 June 2000, and currency derivatives followed in August 2008. Over these decades, what had begun as an equity-session ritual opened its doors to the newer segments — and today the Muhurat session spans equity, F&O, currency, and MCX commodities.
+The tradition grew with the market itself. The anchors are verified exchange milestones: NSE's derivatives segment commenced on 12 June 2000, currency derivatives followed in August 2008. Over these decades, what had begun as an equity-session ritual opened its doors to the newer segments — and today the Muhurat session spans equity, F&O, currency, and MCX commodities.
 
-A caveat, stated once and clearly: the dates above are when those segments were launched on the exchange. Sources confirm today's multi-segment Muhurat session; they do not document the exact year each segment first participated in it. We will not pretend the record says more than it does.
+One caveat, stated clearly: the dates above are when those segments launched on the exchange. Sources confirm today's multi-segment Muhurat session; they do not document the exact year each segment first participated in it. We will not pretend the record says more than it does.
 
 <svg viewBox="0 0 680 380" role="img" aria-label="Diagram of muhurat trading segment expansion from equity to F&O, currency and commodity segments." class="viz">
 <text x="340" y="26" text-anchor="middle" fill="#f2f7f4" font-size="16" font-weight="700">The session's coverage expands</text>
@@ -193,13 +193,13 @@ A caveat, stated once and clearly: the dates above are when those segments were 
 
 ## Today: The Online-Platform Era
 
-The most recent transformation is also the most visible: the arrival of online brokerages and trading apps turned a broker-community ritual into mass retail participation. Where Diwali trades were once exchanged within the broker communities of trading centres like Bombay, they are now placed from phones across the country — often as a single symbolic order, a token buy held as the year's first trade.
+The most recent transformation is also the most visible: online brokerages and trading apps turned a broker-community ritual into mass retail participation. Where Diwali trades were once exchanged inside the broker communities of trading centres like Bombay, they're now placed from phones across the country — often a single symbolic order, a token buy held as the year's first trade.
 
 The 2026 session is the latest proof of the tradition's flexibility: held on Sunday 8 November 2026 (Laxmi Pujan), it is only the second consecutive afternoon session, per the exchange circulars. In 2025, a 1:45–2:45 PM slot had been the first departure from a decades-long evening pattern; 2026 continues the new shape. If you want the full session mechanics, block-deal and pre-open timings, and how the day actually works, our flagship guide to this year's session covers them in detail — [Muhurat Trading 2026: Date, Timings, and How the Session Works](/articles/muhurat-trading-2026/).
 
 ## Folklore vs. Fact: The Tales Traders Tell
 
-No tradition this old escapes folklore, and Muhurat trading has a famous one: the story that Marwaris traditionally *sold* on Diwali (so that money would not enter the house on the festival day) while Gujaratis *bought* (to welcome wealth in). It is a neat story. **There is no data to support it.** As one honest account of the tradition puts it: "Although there is no data to support this, in current times, it no longer holds." Presenting it as fact is a trap some sources fall into; we won't.
+No tradition this old escapes folklore, and Muhurat trading has a famous one: the story that Marwaris traditionally *sold* on Diwali — so money would not enter the house on the festival day — while Gujaratis *bought*, to welcome wealth in. Neat story. **There is no data to support it.** As one honest account of the tradition puts it: "Although there is no data to support this, in current times, it no longer holds." Presenting it as fact is a trap some sources fall into; we won't.
 
 The honest ledger looks like this:
 
@@ -238,9 +238,9 @@ The honest ledger looks like this:
 
 ## Why the Session Survived: An Honest Frame
 
-Why did this survive — from ledgers to trading floors to phones — when so many other customs did not? Because it sits at the intersection of sentiment and ceremony. It marks the opening of the trading year the way merchants have always marked it: with an auspicious first entry. The trades placed in the session are real trades, executed on a real exchange, at real prices.
+Why did this survive — from ledgers to trading floors to phones — when so many other customs didn't? Because it sits at the intersection of sentiment and ceremony. It marks the opening of the trading year the way merchants have always marked it: with an auspicious first entry. The trades placed in the session are real trades, executed on a real exchange, at real prices.
 
-But — and this is the point on which the whole tradition must be read honestly — the session's returns are ordinary market returns. A symbolic first trade placed at an auspicious hour carries no statistical edge; sentiment is not a strategy. If anything, the ceremonial trade deserves *more* discipline, not less: a single token order still benefits from [proper position sizing](/articles/risk-of-ruin-trading/) — a "lucky" trade is still a trade — and from remembering that [one auspicious session has no expectancy](/articles/what-is-trading-expectancy/) to speak of. For the practical questions this raises — whether to participate, what to consider before placing that first order, and how settlement and charges work on a special session — see our companion pieces ([the beginners guide](/articles/muhurat-trading-beginners/) is live, and [the settlement explainer](/articles/muhurat-trading-settlement-charges/) is live; timings and mechanics live in the [2026 flagship guide](/articles/muhurat-trading-2026/)).
+But — and this is the point the whole tradition must be read on, honestly — the session's returns are ordinary market returns. A symbolic first trade at an auspicious hour carries no statistical edge; [sentiment is not a strategy](/articles/fomo-trading/). If anything, the ceremonial trade deserves *more* discipline, not less: a single token order still benefits from [proper position sizing](/articles/position-sizing/) — a "lucky" trade is still a trade — and from remembering that [one auspicious session has no expectancy](/articles/what-is-trading-expectancy/) to speak of. For the practical questions this raises — whether to participate, what to consider before placing that first order, and how settlement and charges work on a special session — see our companion pieces ([the beginners guide](/articles/muhurat-trading-beginners/) is live, and [the settlement explainer](/articles/muhurat-trading-settlement-charges/) is live; timings and mechanics live in the [2026 flagship guide](/articles/muhurat-trading-2026/)).
 
 Muhurat trading endures not as a source of guaranteed prosperity — it was never that — but as the market's Diwali ritual: the year's first entry in the chopda, written together, one lamp at a time.
 
