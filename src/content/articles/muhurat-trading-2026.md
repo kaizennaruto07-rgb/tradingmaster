@@ -1,7 +1,7 @@
 ---
 title: "Muhurat Trading 2026: Date, Timings, and How the Session Works (Official NSE/BSE Schedule)"
-description: "Muhurat Trading 2026 is on Sunday, 8 November 2026, 2:20–3:30 PM IST. Full official NSE/BSE schedule, CAS explained, segments open, and settlement basics."
-meta_description: "Muhurat Trading 2026 is on Sunday, 8 November 2026, 2:20–3:30 PM IST. Full official NSE/BSE schedule, CAS explained, segments open, and settlement basics."
+description: "Muhurat Trading 2026: Sunday 8 Nov, 2:20-3:30 PM IST. The official NSE/BSE schedule, the new CAS closing auction, and what you can trade in 70 minutes."
+meta_description: "Muhurat Trading 2026: Sunday 8 Nov, 2:20-3:30 PM IST. The official NSE/BSE schedule, the new CAS closing auction, and what you can trade in 70 minutes."
 date: 2026-10-23
 author: Kaizen
 tag: "Muhurat trading · Indian markets"
@@ -19,21 +19,21 @@ keywords: ["muhurat trading 2026", "muhurat trading date 2026", "muhurat trading
 - **Segments open:** equity, equity futures & options, currency derivatives, commodity derivatives, and securities lending & borrowing (SLB).
 - **Settlement:** standard T+1, exactly like a regular trading day.
 
-That's the entire core answer. The rest of this article walks through the full stage-by-stage schedule, explains this year's big change (the Closing Auction Session), and covers what you can and can't do in the 70-minute window.
+That's the core answer. The rest walks through the schedule stage by stage, explains this year's big change — the Closing Auction Session — and covers what you can and can't do in 70 minutes.
 
 ## Warning: many pages still show the wrong timings
 
 Before anything else, one important correction. Muhurat trading traditionally happens in the evening, and much of what you'll find online still reflects that expectation: some pages still display the old 6:00–7:15 PM "expected schedule," while others quietly recycled last year's figures as 2026 timings. **Both are wrong.** The official 2026 session is an afternoon session — 2:20 PM to 3:30 PM IST — the same afternoon slot as 2025.
 
-The practical lesson: when you see Muhurat timings anywhere, check them against the two official circulars above, not against last year's article or a page that never updated its "expected schedule." An evening-slot expectation is the most common way to arrive at the market at the wrong hour — or to miss the window entirely.
+The lesson: whenever you see Muhurat timings, check them against the two official circulars above — not last year's article, not a page that never updated its "expected schedule." Expecting an evening slot is the easiest way to turn up at the wrong hour, or miss the window entirely.
 
 One more practical nudge: re-check the circulars or your broker's announcement on the morning of 8 November.
 
 ## What is Muhurat trading?
 
-Muhurat means "auspicious time." Once a year, on Diwali's Laxmi Pujan day, India's stock exchanges hold a short special trading session so investors can mark the new Samvat year — and the Chopda Pujan tradition of opening fresh account ledgers — with a symbolic first trade. Traders and investors buy shares (often in token quantities) as a gesture of prosperity for the year ahead.
+Muhurat means "auspicious time." Once a year, on Diwali's Laxmi Pujan day, India's exchanges hold a short special session so you can mark the new Samvat year — and the Chopda Pujan tradition of opening fresh ledgers — with a symbolic first trade. Traders and investors buy shares (often in token quantities) as a gesture of prosperity for the year ahead.
 
-The tradition began on the Bombay Stock Exchange in 1957 and was adopted by the NSE in 1992; a companion article in this series covers the full story of Muhurat trading from 1957 to today.
+The tradition began on the Bombay Stock Exchange in 1957 and was adopted by the NSE in 1992; a [companion article in this series](/articles/muhurat-trading-history/) covers the full story of Muhurat trading from 1957 to today.
 
 ## The official 2026 session schedule, stage by stage
 
@@ -56,7 +56,7 @@ Every timing below is from NSE/CMTR/76941 (Ref 149/2026) and BSE 20261019-9, bot
 
 Illiquid scrips trade in periodic call auctions (2:25–3:10 PM) rather than continuous trading.
 
-Read it the way it unfolds. From 1:50 PM the exchanges accept block deals. The pre-open runs from 2:05 to 2:20 PM in four distinct phases — you can enter limit and market orders for the first five minutes, limit orders only for the next five, then orders match between 2:15 and 2:17 PM, followed by a buffer before the main session opens at 2:20 PM. Continuous trading then runs until 3:30 PM for most securities. The post-close window (3:50–4:00 PM) lets you place orders at the closing price, and brokers have until 4:15 PM to modify trades.
+Here's how the day unfolds. From 1:50 PM the exchanges accept block deals. The pre-open runs from 2:05 to 2:20 PM in four distinct phases — you can enter limit and market orders for the first five minutes, limit orders only for the next five, then orders match between 2:15 and 2:17 PM, followed by a buffer before the main session opens at 2:20 PM. Continuous trading then runs until 3:30 PM for most securities. The post-close window (3:50–4:00 PM) lets you place orders at the closing price, and brokers have until 4:15 PM to modify trades.
 
 <svg viewBox="0 0 680 500" role="img" aria-label="Muhurat Trading 2026 session timeline: block deals 1:50 to 2:05 PM, pre-open 2:05 to 2:20 PM, main session 2:20 to 3:30 PM with CAS securities stopping at 3:15 PM, closing auction 3:15 to 3:35 PM, post-close 3:50 to 4:00 PM, trade modification cut-off 4:15 PM." class="viz">
 <text x="340" y="30" text-anchor="middle" fill="#f2f7f4" font-size="16" font-weight="700">Muhurat Trading 2026 — the full session, stage by stage</text>
@@ -98,7 +98,7 @@ Read it the way it unfolds. From 1:50 PM the exchanges accept block deals. The p
 
 ## Closing auction explained: why some stocks stop trading at 3:15, not 3:30
 
-This is the newest — and most misunderstood — part of this year's session. The Closing Auction Session (CAS) went live on 3 August 2026 (under a SEBI circular of 16 January 2026), which makes the 8 November 2026 Muhurat session **the first Muhurat session since CAS was introduced**. Here's what it means for your orders.
+This is the newest part of this year's session — and the most misunderstood. The Closing Auction Session (CAS) went live on 3 August 2026 (under a SEBI circular of 16 January 2026), which makes the 8 November 2026 Muhurat session **the first Muhurat session since CAS was introduced**. Here's what it means for your orders.
 
 CAS applies to F&O-linked stocks in the equity cash segment. For those stocks:
 
@@ -108,7 +108,7 @@ CAS applies to F&O-linked stocks in the equity cash segment. For those stocks:
 
 Non-F&O stocks are unaffected for now — they keep trading until 3:30 PM and still settle their closing price on VWAP.
 
-Two things to note. First, if you hold a large-cap stock and see its quote freeze at 3:15 PM on Muhurat day, nothing is broken — that's the closing auction taking over. Second, the circular's values — 3:15 to 3:35 PM for closing auction activities, with CAS transition allowed until 3:50 PM — are the authoritative ones; broker write-ups sometimes paraphrase these timings (for instance, splitting out an order-entry sub-phase).
+Two things worth knowing. First, if your large-cap stock's quote freezes at 3:15 PM on Muhurat day, nothing is broken — that's the closing auction taking over. Second, the circular's values — 3:15 to 3:35 PM for closing auction activities, with CAS transition allowed until 3:50 PM — are the authoritative ones; broker write-ups sometimes paraphrase these timings (for instance, splitting out an order-entry sub-phase).
 
 <svg viewBox="0 0 680 420" role="img" aria-label="Closing auction session comparison: non-CAS securities trade continuously 2:20 to 3:30 PM with the closing price set by 30-minute VWAP, while CAS securities (F&O-linked stocks) stop continuous trading at 3:15 PM and get their official closing price from the 3:15 to 3:35 PM closing auction." class="viz">
 <text x="340" y="30" text-anchor="middle" fill="#f2f7f4" font-size="16" font-weight="700">Two ways the Muhurat day closes</text>
@@ -151,7 +151,7 @@ Per the exchange circulars, the 2026 Muhurat session covers the equity segment, 
 
 ### What you can do in the 70-minute window
 
-Operationally, the session works like a compressed regular trading day. You can:
+Operationally, it works like a compressed regular trading day. You can:
 
 - Place market and limit orders through your normal broker terminal — no separate account or special setup.
 - Trade intraday, buy for delivery, or trade F&O contracts within the session window.
@@ -167,9 +167,9 @@ This is also why realistic expectations matter. A 70-minute session gives a stra
 
 ## Trades are real, not symbolic
 
-This deserves emphasis because the symbolism can mislead: **every Muhurat trade is a real trade with real settlement obligations.** Your demat account is debited or credited. T+1 settlement applies exactly as on a normal day. Brokerage and statutory charges — including STT of 0.1% on both the buy and sell sides for delivery trades — are levied on every trade, including the token symbolic ones.
+Worth saying plainly, because the symbolism can mislead: **every Muhurat trade is a real trade with real settlement obligations.** Your demat account is debited or credited. T+1 settlement applies exactly as on a normal day. Brokerage and statutory charges — including STT of 0.1% on both the buy and sell sides for delivery trades — are levied on every trade, including the token symbolic ones.
 
-Treat a ₹1,000 symbolic buy the way you'd treat any other buy: check the charges, confirm the order details, and don't place it at a market price in a thinly traded stock where the spread is wide.
+Treat a ₹1,000 symbolic buy like any other buy: check the charges, confirm the order details, and never place it at market price in a thinly traded stock, where the spread is wide.
 
 <svg viewBox="0 0 680 400" role="img" aria-label="Muhurat Trading 2026 settlement flow: trade on Muhurat day settles on T+1, shares credited to demat and funds received by the seller, with the surrounding calendar showing Sunday 8 November as the session, Monday 9 November normal trading, Tuesday 10 November closed, and trading resuming Wednesday 11 November." class="viz">
 <text x="340" y="30" text-anchor="middle" fill="#f2f7f4" font-size="16" font-weight="700">Settlement: standard T+1, like any trading day</text>
@@ -219,15 +219,15 @@ The detailed mechanics — how T+1 interacts with the holiday gap, what the T1-h
 
 ## Should you buy during Muhurat trading?
 
-The short answer: participation is optional, and the decision is personal rather than financial. Press coverage of this year's announcement has treated the session's significance as traditional and symbolic rather than about immediate profitability — and the compressed window can actually heighten volatility. Seventy minutes of thin, sentiment-driven trading is not a strategy.
+Short answer: participation is optional, and the call is personal, not financial. Press coverage has treated the session as traditional and symbolic, not a profit opportunity — and the compressed window can actually heighten volatility. Seventy minutes of thin, sentiment-driven trading is not a strategy.
 
-If you do participate, treat it as a ceremonial first trade for the new Samvat year: small size, liquid stocks, and full awareness that you're paying real brokerage and charges on the trade. A companion article in this series — [a beginner's guide to whether you should actually buy during Muhurat trading](/articles/muhurat-trading-beginners/) — takes this question apart in full, including how to size a symbolic trade without letting symbolism turn into an oversized position.
+If you do take part, treat it as a ceremonial first trade for the new Samvat year: [small size](/articles/position-sizing-for-small-accounts/), liquid stocks, and eyes open — you're paying real brokerage and charges on it. A companion article in this series — [a beginner's guide to whether you should actually buy during Muhurat trading](/articles/muhurat-trading-beginners/) — takes this question apart in full, including how to size a symbolic trade without letting symbolism turn into an oversized position.
 
 ## Risks and limitations to know before you trade
 
-- **No guaranteed profits.** Nothing about an auspicious day changes a stock's risk. The idea that the session is somehow safer or luckier than any other trading day is a myth — keep your position sizing honest.
+- **No guaranteed profits.** Nothing about an auspicious day changes a stock's risk. The idea that the session is somehow safer or luckier than any other day is a myth — keep your [position sizing](/articles/position-sizing/) honest.
 - **Lower volume can mean wider spreads.** The session is shorter and thinner than a normal day. Thin order books mean the price you see may not be the price you get, especially in less-liquid stocks. Use limit orders.
-- **No room to recover from mistakes.** A fat-fingered order at 3:25 PM leaves you five minutes. In a normal session you'd have the rest of the day.
+- **No room to recover from mistakes.** A fat-fingered order at 3:25 PM leaves you five minutes. On a normal day you'd have hours.
 - **Normal rules apply.** Circuit filters, exchange surveillance, and your broker's risk management are all live. The market won't suspend its safeguards for the occasion.
 - **Intraday must square off.** Carry-over doesn't work when the session ends at 3:30 PM — plan your exit before you enter, and know your own ruin threshold before a 70-minute window ever tests it. Our piece on [risk of ruin in trading](/articles/risk-of-ruin-trading/) is worth reading before any compressed session.
 
