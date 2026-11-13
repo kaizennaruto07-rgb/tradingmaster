@@ -1,7 +1,7 @@
 ---
-title: "Why Backtested Strategies Fail in Live Trading: The 5 Gaps Between the Lab and the Field"
-description: "Your backtest was honest — live is a different world. Learn the 5 gaps (execution, cost, data, regime, the trader) and the tests to run before risking capital."
-meta_description: "Your backtest was honest — live is a different world. Learn the 5 gaps (execution, cost, data, regime, the trader) and the tests to run before risking capital."
+title: "Why Backtested Strategies Fail Live: 5 Gaps & Tests"
+description: "Your backtest filled every order at the signal price — live does not. The 5 gaps (execution, cost, data, regime, you) and the tests to run for each."
+meta_description: "Your backtest filled every order at the signal price — live does not. The 5 gaps (execution, cost, data, regime, you) and the tests to run for each."
 date: 2026-10-12
 author: Kaizen
 tag: "Strategy validation · Backtesting"
@@ -15,7 +15,7 @@ You ran the backtest. It showed a smooth equity curve, a healthy profit factor, 
 
 Here is the short answer: **your backtest was probably honest, and it still told you a fiction.** A backtest is a laboratory. Live trading is the field. The backtest filled your orders at the exact signal price, instantly, at zero slippage, with costs roughly estimated, on clean adjusted data, in one market regime, while following the rules with robotic perfection. Live trading gives you none of that.
 
-This is chapter 3 of the validation week — the execution chapter. [In the first chapter](/articles/how-to-know-if-trading-strategy-works/) you got the verdict framework: the pre-registration contract a strategy must pass before you trust it. [In the second chapter](/articles/how-many-trades-to-validate-a-strategy/) you got the evidence contract: the honest sample size a backtest needs before its numbers mean anything. This chapter prices the five ways reality taxes that evidence — even when the backtest itself was honest and well-sized. Every section below ends with **the test to run** — the same protocol format as the earlier chapters, so the week reads as one diagnostic sequence.
+This is chapter 3 of the validation week — the execution chapter. [Chapter 1](/articles/how-to-know-if-trading-strategy-works/) gave you the verdict framework: the pre-registration contract a strategy must pass before you trust it. [Chapter 2](/articles/how-many-trades-to-validate-a-strategy/) gave you the evidence contract: the honest sample size a backtest needs before its numbers mean anything. This chapter prices the five ways reality taxes that evidence — even when the backtest itself was honest and well-sized. Every section below ends with **the test to run** — the same protocol format as the earlier chapters, so the week reads as one diagnostic sequence.
 
 <figure class="article-visual" data-reveal>
 <svg viewBox="0 0 680 470" role="img" aria-label="Diagram of the five gaps between backtest laboratory conditions and live trading reality." class="viz">
@@ -56,9 +56,9 @@ This is chapter 3 of the validation week — the execution chapter. [In the firs
 
 ## Gap 1: The execution gap — you filled at the signal price; the market filled you at its price
 
-A backtest's most invisible lie is the fill. Most retail backtests assume your order filled at the exact price the signal appeared, instantly, in full, with zero slippage and no overnight gaps. Live trading imposes different fills, latency between signal and execution, partial fills and rejections, and gaps that skip over your orders entirely. Practitioner modeling guides put typical execution slippage at roughly 0.1–0.5% per trade for ordinary conditions, and 0.05–0.30% for liquid instruments — treat those as heuristics, not constants, because slippage is strategy- and liquidity-dependent.
+A backtest's most invisible lie is the fill. Most retail backtests assume your order filled at the exact signal price, instantly, in full — zero slippage, no overnight gaps. Live trading imposes different fills, latency between signal and execution, partial fills and rejections, and gaps that skip over your orders entirely. Practitioner modeling guides put typical execution slippage at roughly 0.1–0.5% per trade for ordinary conditions, and 0.05–0.30% for liquid instruments — treat those as heuristics, not constants, because slippage is strategy- and liquidity-dependent.
 
-There is a deeper layer here. In live markets you are not trading against a passive historical dataset. **You are trading against opponents.** Your orders tend to fill most easily exactly when conditions favor the counterparty — you get the clean fill when someone else is happy to take the other side, and you get the slip when the market is running away from your price. The backtest was a rehearsal against a recording. Live is the performance, against an audience that reacts to you. Some execution noise cancels out; the part that doesn't is the part that costs you money systematically.
+There's a deeper layer. Live, you're not trading against a passive historical dataset. **You're trading against opponents.** Your orders tend to fill most easily exactly when conditions favor the counterparty — you get the clean fill when someone else is happy to take the other side, and you get the slip when the market is running away from your price. The backtest was a rehearsal against a recording. Live is the performance, against an audience that reacts to you. Some execution noise cancels out; the part that doesn't is the part that costs you money systematically.
 
 **The test to run:** pad every backtest with realistic slippage on *every* trade — entries, exits, and stops — using conservative estimates for the instruments you actually trade. Then reconcile your real fills against the assumption for the first twenty trades live. If you consistently fill worse, your edge is smaller than the backtest said.
 
@@ -104,7 +104,7 @@ For Indian traders, the frame is immediate: expiry-week gaps, overnight event ri
 
 ## Gap 2: The cost gap — live costs are bigger and hide where the backtest ignored them
 
-The backtest estimated costs — a flat brokerage number, maybe a percentage for charges. Live costs are larger, and they arrive where the backtest never looked: exchange transaction charges, SEBI turnover fees, stamp duty, GST stacked on top of those, and the bid-ask spread you pay every time you cross it. In Indian F&O, this stack is not a rounding error.
+The backtest estimated costs — a flat brokerage number, maybe a percentage for charges. Live costs are bigger, and they land where the backtest never looked: exchange charges, SEBI fees, stamp duty, GST stacked on top, and the bid-ask spread you pay every time you cross it. In Indian F&O, this stack is not a rounding error.
 
 We priced the full statutory stack line by line in [chapter 1](/articles/how-to-know-if-trading-strategy-works/) — brokerage, STT, exchange transaction charges, stamp duty, SEBI fee, GST — so this chapter will not re-derive it. The compact result for the standard example (buy one NIFTY lot of 50 at ₹100 premium, exit at ₹110, ₹500 gross): **buy leg ≈ ₹25.86, sell leg ≈ ₹34.16** — about ₹60 of statutory friction on the round trip. All figures were verified against official charge schedules on 2026-10-12. One honest line before we move on: statutory charge schedules can be revised, so check the current official schedule before relying on the exact rupee figures.
 
@@ -158,7 +158,7 @@ The statutory stack is the part your backtest *might* have modeled. The costs th
 
 **The ITM-expiry STT trap, as it applies to backtests.** A backtest that holds a long option into expiry prices the trade at settlement value — it never pays the STT on intrinsic value that a live exercised ITM option actually owes ([the trap itself is stated in chapter 1](/articles/how-to-know-if-trading-strategy-works/)). If your backtest holds through expiry, its winning trades are overstated by exactly the cost it ignored.
 
-Add a modest spread and ₹0.50 slippage per leg to the statutory ≈₹60 and total friction approaches **₹150–160** — nearly a third of the ₹500 gross move. Carry this away: for the typical NIFTY option round trip in the worked example, full friction lands around ₹150–160 — use that as your mental per-trade floor.
+Add a modest spread and ₹0.50 slippage per leg to the statutory ≈₹60 and total friction approaches **₹150–160** — nearly a third of the ₹500 gross move. Carry this away: for a typical NIFTY option round trip, full friction lands around ₹150–160. Use that as your mental per-trade floor.
 
 And frequency: none of these numbers hurt once. A strategy that trades 5 times a day pays the stack 5 times a day.
 
@@ -236,7 +236,7 @@ The honest caveat, stated plainly: this test proves *robustness to cost uncertai
 
 ## Gap 3: The data gap — the backtest read clean history; you trade messy reality
 
-The backtest used complete, survivorship-cleaned, adjusted historical data. Live data is messy: feeds drop ticks, adjustments arrive late, your broker's vendor revises bars after the fact — and your live signal path may differ from the backtest's signal path. The indicator you coded in your backtesting library and the indicator running on your live charting platform can disagree on edge cases: different smoothing, different handling of incomplete bars, a rounding difference in the data feed. If the live path fires signals the backtest never saw, you are not trading your backtest's strategy. You are trading a cousin of it.
+The backtest used complete, survivorship-cleaned, adjusted historical data. Live data is messy: feeds drop ticks, adjustments arrive late, your broker's vendor revises bars after the fact — and the signal path you trade live may differ from the one you backtested. The indicator you coded in your backtesting library and the indicator running on your live charting platform can disagree on edge cases: different smoothing, different handling of incomplete bars, a rounding difference in the data feed. If the live path fires signals the backtest never saw, you are not trading your backtest's strategy. You are trading a cousin of it.
 
 **The test to run:** build the live signal path separately — on the actual platform and data feed you will trade with — and run it side-by-side with the backtest's signals on the same historical days. Reconcile every disagreement before trusting either. Minimum-viable version: for one week, log every signal your live platform fires and compare it against what your backtest said should fire on those same days. Any disagreement is the data gap, priced in one sentence.
 
@@ -293,7 +293,7 @@ Treat these as one practitioner's framework, not a peer-reviewed standard. But u
 
 The fifth gap is the one nobody prices, and it is you. The backtest followed the rules perfectly: it took every signal, honored every stop, never skipped an entry because the last three lost, never widened a stop because "it might come back," never revenge-traded after a drawdown. The backtest had no fear, no fatigue, no ego. You do.
 
-The realistic failures are unglamorous: skipping the valid setup after two losers (and skipping exactly the winner that would have paid for them), moving the stop "just a little wider" on the trade that becomes the month's biggest loss, doubling size to "make it back." The strategy the backtest validated and the strategy you actually traded are two different strategies — and only one of them has the backtest's numbers.
+The realistic failures are unglamorous: skipping the valid setup after two losers — skipping exactly the winner that would have paid for them — moving the stop "just a little wider" on the trade that becomes the month's biggest loss, doubling size to "make it back." The strategy the backtest validated and the strategy you actually traded are two different strategies — and only one of them has the backtest's numbers.
 
 **The test to run:** forward-test at tiny size — or on paper — for long enough to produce a meaningful sample, and log your *deviations* from the plan, not just your P&L. Skipped entries, moved stops, sized-up trades: count them. If your deviation rate is high, the strategy has not failed — the operator has. Fix the operator before adding capital. (The full paper-vs-real bridge comes in the series' later chapter; treat this test as its audition.)
 
@@ -351,9 +351,9 @@ No. A backtest replays history — fast, but it carries all four structural gaps
 
 ## What comes next: pricing the real number
 
-The backtest told you what was possible. These five gaps tell you what was real. Once you have priced them — padded the fills, stacked the costs, reconciled the data, calibrated the degradation, measured your own deviations — one number remains: the expectancy that actually reaches your account.
+The backtest told you what was possible. These five gaps tell you what was real. Once you've priced them — padded the fills, stacked the costs, reconciled the data, calibrated the degradation, measured your own deviations — one number remains: the expectancy that actually reaches your account.
 
-Tomorrow, #23 calculates exactly that: real expectancy, the number these five gaps have been eating. Then the week continues: #19 gives overfitting a detection toolkit — how to tell a memorized backtest from a live edge; #22 stress-tests the strategy with Monte Carlo simulation; and #30 builds the paper-vs-real bridge for the operator gap.
+Tomorrow, #23 calculates exactly that: [real expectancy](/articles/how-to-calculate-real-expectancy/), the number these five gaps have been eating. Then the week continues: #19 gives [overfitting](/articles/how-to-detect-overfitting-in-trading-strategy/) a detection toolkit — how to tell a memorized backtest from a live edge; #22 stress-tests the strategy with [Monte Carlo simulation](/articles/monte-carlo-simulation-for-traders/); and #30 builds the paper-vs-real bridge for the operator gap.
 
 ---
 
