@@ -1,7 +1,7 @@
 ---
-title: "Maximum Drawdown in Trading: How to Calculate It, What It Hides, and Whether You Can Survive It"
-description: "Maximum drawdown is the worst peak-to-trough fall a strategy ever endured. Formula, an original ₹ worked example, acceptable bands, and the tradeability test."
-meta_description: "Maximum drawdown is the worst peak-to-trough fall a strategy ever endured. Formula, an original ₹ worked example, acceptable bands, and the tradeability test."
+title: "Maximum Drawdown: Formula, Good Levels & Survival Test"
+description: "Maximum drawdown is the worst peak-to-trough fall your strategy took. Formula, a ₹ worked example, acceptable bands — and whether you can sit through it."
+meta_description: "Maximum drawdown is the worst peak-to-trough fall your strategy took. Formula, a ₹ worked example, acceptable bands — and whether you can sit through it."
 date: 2026-10-19
 author: Kaizen
 tag: "Trading mathematics · Risk management"
@@ -16,9 +16,9 @@ Every strategy evaluation secretly dodges one question: how bad can it get, real
 
 **Maximum drawdown (MDD) is the largest peak-to-trough decline in your account equity over a period, measured from the running peak — not from where you started.** If your account climbs to ₹5,00,000, then falls to ₹4,25,000 before reaching a new high, that is a 15% drawdown. The maximum drawdown is simply the largest such decline in the record: the historical worst case, the deepest pain the strategy ever inflicted.
 
-The thesis of this piece: **maximum drawdown is the one number that tells you what a strategy actually costs you to trade.** Returns ask "how much did I make?" Maximum drawdown asks "how much pain would I have felt getting there?" Everything else in strategy evaluation is optional; this number is not.
+The thesis of this piece: **maximum drawdown is the one number that tells you what a strategy actually costs you to trade.** Returns ask "how much did I make?" Maximum drawdown asks "how much pain would I have felt getting there?" Everything else in strategy evaluation is optional. This number isn't.
 
-Here is the gut-check that makes the frame real. A strategy shows 30% annual returns with a 60% maximum drawdown. Sounds fine on a spreadsheet. Now translate it: could you watch your ₹1,00,000 account become ₹40,000 — on the way to the promised returns — without touching the system, without changing a rule, without quitting? If the honest answer is no, the 30% return was never yours. The return was a rumour; the drawdown was the price.
+Here's the gut-check that makes the frame real. A strategy shows 30% annual returns with a 60% maximum drawdown. Sounds fine on a spreadsheet. Now translate it: could you watch your ₹1,00,000 account become ₹40,000 — on the way to the promised returns — without touching the system, without changing a rule, without quitting? If the honest answer is no, the 30% return was never yours. The return was a rumour; the drawdown was the price.
 
 Expectancy and maximum drawdown are the two halves of evaluation. [Expectancy tells you whether the strategy works; maximum drawdown tells you whether you can survive trading it](/articles/how-to-calculate-real-expectancy/). And if expectancy is the strategy's engine, drawdown is ruin's slower cousin — [ruin is the absorbing edge you never return from; maximum drawdown is the pain you walk through before you reach it](/articles/risk-of-ruin-trading/).
 
@@ -28,7 +28,7 @@ The formula is simple:
 
 **MDD = (Peak − Trough) ÷ Peak × 100**
 
-Measured for every peak-to-trough decline before the next new high; the largest result is the maximum drawdown. Equity-based, marked to market — meaning open positions count, not just closed trades. A number computed on closed trades only is a different, flattering number. Before trusting any reported figure, check which basis your broker's report or strategy tool uses: the research behind this article notes that TradingView reports drawdown against initial capital, while MetaTrader 5 distinguishes balance from equity.
+Measured for every peak-to-trough decline before the next new high; the largest result is the maximum drawdown. Equity-based, marked to market — open positions count, not just closed trades. A number computed on closed trades only is a different, flattering number. Before trusting any reported figure, check which basis your broker's report or strategy tool uses: the research behind this article notes that TradingView reports drawdown against initial capital, while MetaTrader 5 distinguishes balance from equity.
 
 Here is how you actually compute it, on an Indian equity trading account:
 
@@ -110,13 +110,13 @@ The account later recovers, runs up, and reaches a new peak of ₹8,00,000. Then
 </svg>
 </figure>
 
-This is the eyeball trap: the deepest-looking dip in rupees is not always the one threatening the account. Percentages are measured against the peak they fell from, so a later, larger rupee loss on a bigger base can be gentler than an earlier, smaller one. Whenever you compare two drawdowns — two strategies, two periods, two accounts — always ask: percent of *which* peak?
+This is the eyeball trap: the deepest-looking dip in rupees isn't always the one threatening the account. Percentages are measured against the peak they fell from, so a later, larger rupee loss on a bigger base can be gentler than an earlier, smaller one. Whenever you compare two drawdowns — two strategies, two periods, two accounts — always ask: percent of *which* peak?
 
 ## Why Maximum Drawdown Is Measured From the Peak, Not From Where You Started
 
-This is the counter-intuitive engine of the whole concept. Maximum drawdown is always measured from the **highest peak** — the high-water mark — never from your starting balance. Once equity climbs above where you began, the original balance becomes irrelevant to the measurement.
+This is the counter-intuitive engine of the whole concept. Maximum drawdown is always measured from the **highest peak** — the high-water mark — never from your starting balance. Once equity climbs above where you began, the original balance stops mattering to the measurement.
 
-Why? Because the risk you *felt* is measured against what you had, not what you started with. If your ₹2,00,000 account grows to ₹8,00,000 and then falls to ₹6,40,000, the drawdown is 20% — a fifth of your capital gone — even though you are still "up" 220% from the start. Measuring from the starting balance would call this a *gain*, which understates the risk actually experienced to the point of meaninglessness.
+Why? Because the risk you *felt* is measured against what you had, not what you started with. If your ₹2,00,000 account grows to ₹8,00,000 and then falls to ₹6,40,000, the drawdown is 20% — a fifth of your capital gone — even though you're still "up" 220% from the start. Measuring from the starting balance would call this a *gain*, which understates the risk actually experienced to the point of meaninglessness.
 
 The corollary is sharp: **two traders with identical P&L can report very different maximum drawdowns from curve shape alone.** The trader who fell 20% from a peak after a long run-up reports 20%. The trader who never had the run-up and lost 20% straight from the start also reports 20% — but their lived experience was entirely different. Peak-not-start is honest about the run-up case; starting-balance math flatters it.
 
@@ -131,7 +131,7 @@ One warning about quoted numbers: platforms compute drawdown on different bases 
 
 ## What Maximum Drawdown Hides
 
-Here is the spine of this article, and the part no definition glossary gives you. Maximum drawdown is brutally honest about one thing — the deepest loss that *happened* — and silent about three things that matter just as much. Treat these three as decision inputs, not trivia. (This grouping is the article's analysis; the three limits themselves are well established.)
+Here's the spine of this article, and the part no definition glossary gives you. Maximum drawdown is brutally honest about one thing — the deepest loss that *happened* — and silent about three things that matter just as much. Treat these three as decision inputs, not trivia. (This grouping is the article's analysis; the three limits themselves are well established.)
 
 <figure class="article-visual" data-reveal>
 <svg viewBox="0 0 680 400" role="img" aria-label="Three dials showing what maximum drawdown hides: frequency of the pain, duration underwater, and sample luck — none of which the headline number tells you." class="viz">
@@ -171,9 +171,9 @@ Here is the spine of this article, and the part no definition glossary gives you
 </svg>
 </figure>
 
-**1. Frequency — how often the pain visits.** Consider two strategies, both with 25% maximum drawdown. One hit a single 25% drawdown in five years. The other hit five separate 20–25% drawdowns. Same headline number, completely different lived experience. The first asks you to endure one crisis; the second asks you to survive a lifestyle. MDD reports the depth of the worst visit and tells you nothing about how many visits there were.
+**1. Frequency — how often the pain visits.** Take two strategies, both with 25% maximum drawdown. One hit a single 25% drawdown in five years. The other hit five separate 20–25% drawdowns. Same headline number, completely different lived experience. The first asks you to endure one crisis; the second asks you to survive a lifestyle. MDD reports the depth of the worst visit and tells you nothing about how many visits there were.
 
-**2. Duration underwater — how long recovery took.** A 25% drawdown that recovers in three weeks is a scare. The same 25% drawdown that takes eighteen months to claw back to the high-water mark is a different animal: eighteen months of trading while underwater, paying attention, staying disciplined, with the account still not back where it was. Time-to-new-high is the hidden cost of every drawdown, and the MDD number never mentions it.
+**2. Duration underwater — how long recovery took.** A 25% drawdown that recovers in three weeks is a scare. The same 25% drawdown that takes eighteen months to claw back to the high-water mark is a different animal: eighteen months of trading while underwater, paying attention, staying disciplined, with the account still not back where it was. Time-to-new-high is the hidden cost of every drawdown — and the MDD number never mentions it.
 
 **3. Sample luck — whether the worst that happened is the worst that could happen.** A backtest or a track record shows one ordering of trades; the same trades in a different order can produce a deeper drawdown. And adding time to a record can only deepen the MDD, never lighten it — so whatever number your strategy reports today is, strictly speaking, the *mildest* version of its worst. What does the full distribution of possible worst cases look like? [That is exactly what a Monte Carlo simulation estimates — the recorded MDD is the floor, the simulation shows how much deeper the floor could go](/articles/monte-carlo-simulation-for-traders/).
 
@@ -259,7 +259,7 @@ A 50% drawdown does not need a 50% gain to heal. It needs you to *double* what i
 
 ## The Tradeability Test: A Protocol for Deciding Whether You Can Survive a Strategy
 
-Here is the protocol nobody gives you. A strategy fails this test not when its maximum drawdown is "too high" in the abstract, but when **its historical MDD exceeds what you can sit through without breaking the system.** The test is a pre-commitment device: you run it before the losing streak, so the streak cannot rewrite it.
+Here's the protocol nobody gives you. A strategy fails this test not when its maximum drawdown is "too high" in the abstract, but when **its historical MDD exceeds what you can sit through without breaking the system.** The test is a pre-commitment device: you run it before the losing streak, so the streak can't rewrite it.
 
 <figure class="article-visual" data-reveal>
 <svg viewBox="0 0 680 560" role="img" aria-label="The tradeability test: six pre-commitments — get the number, add the hidden trio, translate it into rupees, run the tilt check, write it on paper, and size so a repeat doesn't end you." class="viz">
@@ -285,7 +285,7 @@ Here is the protocol nobody gives you. A strategy fails this test not when its m
 <rect x="40" y="392" width="600" height="66" rx="10" fill="#2a3a34" stroke="#3a4d46"/>
 <rect x="60" y="414" width="22" height="22" rx="5" fill="none" stroke="#8fd6a0" stroke-width="2"/>
 <text x="96" y="422" fill="#f2f7f4" font-weight="700">5. Write it on paper</text>
-<text x="96" y="444" fill="#92a59c" font-size="11">Your maximum acceptable drawdown — decided calm, written down, treated as a system rule.</text>
+<text x="96" y="444" fill="#92a59c" font-size="11">Your [maximum acceptable drawdown](/articles/when-to-quit-a-strategy/) — decided calm, written down, treated as a system rule.</text>
 <rect x="40" y="470" width="600" height="66" rx="10" fill="#2a3a34" stroke="#8fd6a0" stroke-width="2"/>
 <rect x="60" y="492" width="22" height="22" rx="5" fill="none" stroke="#8fd6a0" stroke-width="2"/>
 <text x="96" y="500" fill="#f2f7f4" font-weight="700">6. Size so a repeat doesn't end you</text>
@@ -295,7 +295,7 @@ Here is the protocol nobody gives you. A strategy fails this test not when its m
 </figure>
 
 1. **Get the number.** What is the strategy's historical maximum drawdown, measured properly (equity-based, from the running peak)? If nobody can give you this number, you do not have a strategy — you have a hope.
-2. **Add the hidden trio.** How often did drawdowns of that scale occur? How long did recovery take each time? Was the sample long enough to trust?
+2. **Add the hidden trio.** How often did drawdowns of that scale occur? How long did recovery take each time? Was the [sample long enough](/articles/how-many-trades-to-validate-a-strategy/) to trust?
 3. **Translate it into rupees.** If your account is ₹3,00,000 and the historical MDD is 25%, write this down: *"I am signing up to watch this account fall to ₹2,25,000, possibly more than once, possibly for months."*
 4. **Run the tilt check.** Now the hard question: at that point — down ₹75,000, underwater for the fourth month — do you still take every signal exactly as written? [MDD is where tilt begins: every drawdown deep enough to trigger tilt is a drawdown the backtest never modeled](/articles/tilt-in-trading/). A backtest assumes perfect execution through the worst of it. If you cannot promise perfect execution through the worst of it, the backtest's MDD is understated.
 5. **Write the number on paper, before the streak.** This is the pre-commitment: your maximum acceptable drawdown, decided in calm, written down, and treated as a system rule. [This is the paper-trading ethos — decide what you will tolerate before real money makes the decision for you](/articles/paper-trading-vs-real-trading/).
@@ -303,7 +303,7 @@ Here is the protocol nobody gives you. A strategy fails this test not when its m
 
 ### The Indian intraday-F&O circuit
 
-One texture of drawdown that global MDD articles never mention: in Indian intraday F&O, drawdowns concentrate into hours, not months. A swing trader's 15% drawdown unfolds over weeks with time to think; an intraday options trader can carve out the same percentage between 9:15 and 3:30, decision after decision, with no pause button. And every rupee of that drawdown paid the charge stack on the way down: STT at **0.15% on the sell premium** (and 0.15% on exercised ITM options), plus the NSE equity-options charge of **0.03553% per side all-in** (per NSE circular NSE/FA/73061, effective March 1, 2026). Drawdown in Indian F&O is not just equity foregone — it is equity foregone *plus* the transaction-cost stack on every losing trade that dug the hole. Size your intraday risk budget with that texture in mind: the hole is always slightly deeper than the price action alone suggests.
+One texture of drawdown that global MDD articles never mention: in Indian intraday F&O, drawdowns concentrate into hours, not months. A swing trader's 15% drawdown unfolds over weeks with time to think; an intraday options trader can carve out the same percentage between 9:15 and 3:30, decision after decision, with no pause button. And every rupee of that drawdown paid the charge stack on the way down: STT at **0.15% on the sell premium** (and 0.15% on exercised ITM options), plus the NSE equity-options charge of **0.03553% per side all-in** (per NSE circular NSE/FA/73061, effective March 1, 2026). Drawdown in Indian F&O isn't just equity foregone — it's equity foregone *plus* the transaction-cost stack on every losing trade that dug the hole. Size your intraday risk budget with that texture in mind: the hole is always slightly deeper than the price action alone suggests.
 
 Losing streaks are one of the main engines that dig these holes — the probability machinery behind streaks gets its own treatment: [How Losing Streaks Affect Trading Accounts](/articles/how-losing-streaks-affect-trading-accounts/).
 
