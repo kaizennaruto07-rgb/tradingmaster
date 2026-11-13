@@ -1,7 +1,7 @@
 ---
-title: "Paper Trading vs Real Trading: Why Paper Profits Disappear With Real Money — and the Honest Go-Live Protocol"
-description: "On a simulator you test the logic; with real money you test the trader. Why paper profits vanish live — execution fiction and the psychological switch — plus the honest go-live protocol: one written plan, real size, costs ON, 20–50 trades at ~90% adherence, streak plans, pre-committed size and kill-switches, and the reconciliation rule for after go-live."
-meta_description: "Paper trading vs real trading: why paper profits vanish with real money, when you are ready to go live, and how small to start — the honest go-live protocol."
+title: "Paper Trading vs Real Trading: Why Paper Profits Vanish"
+description: "Paper profits vanish live for two reasons: fake fills and the psychological switch. The honest go-live protocol: one plan, real size, costs ON, 20–50 trades."
+meta_description: "Paper profits vanish live for two reasons: fake fills and the psychological switch. The honest go-live protocol: one plan, real size, costs ON, 20–50 trades."
 date: 2026-10-14
 author: Kaizen
 tag: "Strategy validation · Trading psychology"
@@ -18,7 +18,7 @@ On a simulator, you test the logic. With real money, you test the trader. That d
 
 This is the sixth and final chapter of the Week 2 Validation sequence at Monks Of Market, and the last gate before real money. The earlier chapters built the machine: **Article #16** gave the verdict framework — the decision paper trading must serve. **Article #17** set the evidence contract and what counts as enough evidence. **Article #20** exposed the backtest's laboratory fiction. **Article #23** did the honest calculation. **Article #19** warned about overfitting. **Article #22** ran the thousand simulated paths. This chapter asks the one question none of those could: can *you* — the trader, not the strategy — hold up under real conditions?
 
-The bottom line, up front: go live only when the honest-protocol checklist later in this article is satisfied and documented in your log. Never go live because paper profits looked good. Never go live because you "feel ready."
+The bottom line, up front: go live only when the honest-protocol checklist later in this article is satisfied and documented in your log. Never go live because paper profits looked good. Never go live because you 'feel ready.'
 
 <figure class="article-visual" data-reveal>
 <svg viewBox="0 0 680 592" role="img" aria-label="Validation ladder diagram showing six validation chapters leading through the paper trading gate to live trading" class="viz">
@@ -123,21 +123,21 @@ On paper, you fill at the quoted price. Live, you pay the liquidity price. That 
 
 A market buy order pays the ask. A market sell order receives the bid. The bid-ask spread is a real cost on every live trade, and a simulator that fills you at mid-price or at the last traded price simply never charges it. A triggered stop-loss becomes a market order, and in a gap or a fast market it can fill away from the trigger price — your stop was a line on a chart, but the fill was whatever the market offered when the order arrived. A market order larger than the quantity available at the best price walks the book, filling at successively worse prices across price levels — partial fills at prices you never planned for.
 
-Then there are the fills that never happen on paper at all. A limit order that never fills because price never reached it. An order rejected for margin, quantity, or a circuit filter. On a simulator, these frictions are often absent entirely, so the plan looks smoother than it is.
+Then there are the fills that never happen on paper at all. A limit order that never fills because price never reached it. An order rejected for margin, quantity, or a circuit filter. On a simulator, these frictions are often absent entirely — so the plan looks smoother than it is.
 
 And then there are costs. Many simulators default to ignoring costs — or model them loosely — so paper results can be flattered relative to live results. The honest protocol later in this article corrects this by turning costs ON with real Indian cost math.
 
-Put that friction together and the conclusion follows: a marginally profitable paper strategy can become marginally unprofitable live once execution friction and costs are included. That conclusion follows from the cost and execution facts in this article, not from a study result — but it is why thin paper edges deserve suspicion, not celebration.
+Put that friction together and the conclusion follows: a marginally profitable paper strategy can become marginally unprofitable live once execution friction and costs are included. That follows from the cost and execution facts in this article, not from a study result — but it's why thin paper edges deserve suspicion, not celebration.
 
 ### The psychological switch: the strategy does not change, the trader does
 
 The second engine is the one no simulator can model. Fear, greed, ego, and expectations change the trader while the strategy stays identical. The same setups, the same rules, the same chart — a different human sitting in front of them.
 
-On paper, a drawdown is a number. Live, it is money you could have spent, a red day you have to explain to yourself, a streak that makes you want to *do something*. That is when the failure modes appear: moving a stop because the loss feels too close, sizing up after a win because confidence feels like evidence, skipping a signal because the last one hurt. The strategy did not change. The trader did.
+On paper, a drawdown is a number. Live, it's money you could have spent, a red day you have to explain to yourself, a streak that makes you want to *do something*. That's when the failure modes appear: moving a stop because the loss feels too close, sizing up after a win because confidence feels like evidence, skipping a signal because the last one hurt. The strategy didn't change. The trader did.
 
-This is the standard practitioner and behavioural explanation for the paper-to-live gap — not a neuroscience finding, and not a measured causal claim. But it is the explanation that fits what traders actually report: the plan survives contact with the market, and then the trader stops following the plan.
+This is the standard practitioner and behavioural explanation for the paper-to-live gap — not a neuroscience finding, and not a measured causal claim. But it's the explanation that fits what traders actually report: the plan survives contact with the market, and then the trader stops following the plan.
 
-It is also the bridge into what comes next. The validation ladder ends with this article; the psychology chapters begin with **Article #31**, on giving back profits. Paper trading cannot teach you to sit through a real drawdown — because nothing is at stake. What it *can* do is prove, in writing, whether you followed the plan when following it was easy. That proof is worth having before money makes it hard.
+It's also the bridge into what comes next. The validation ladder ends with this article; the psychology chapters begin with [Article #31, on giving back profits](/articles/why-traders-give-back-profits/). Paper trading can't teach you to sit through a real drawdown — because nothing is at stake. What it *can* do is prove, in writing, whether you followed the plan when following it was easy. That proof is worth having before money makes it hard.
 
 ## The size trap: the same strategy, different account survival
 
@@ -152,7 +152,7 @@ A common pattern: a trader paper-trades a plan risking 2% per trade, then goes l
 
 **Compounding assumption, stated explicitly:** risk is a fixed fraction of *current* (shrinking) capital each trade; each loss equals exactly the risked fraction; the table includes no costs, slippage, or partial fills. The formula is remaining capital = (1 − r)⁵. At 2%: 0.98⁵ = 0.903921. At 10%: 0.90⁵ = 0.590490. Rounded, that is roughly 9.6% versus roughly 41% — but the precise figures above are the ones to use. (If risk were a fixed amount based on *original* capital, five losses would be 10% and 50% instead. That is a different assumption, and not the one used here.)
 
-The 2% trader survives five straight losses with the account — and the plan — intact. The 10% trader has lost more than two-fifths of the account on the same five losses, and is now trading under the kind of pressure that produces the psychological switch. Paper did not lie about the strategy. The trader changed the risk.
+The 2% trader survives five straight losses with the account — and the plan — intact. The 10% trader has lost more than two-fifths of the account on the same five losses, and is now trading under the kind of pressure that produces the psychological switch. Paper didn't lie about the strategy. The trader changed the risk.
 
 The fix is sizing discipline. Position sizing and the 1%-rule are covered in full in **Article #8** — but the size trap is why the go-live size in the protocol below is pre-committed, not improvised.
 
@@ -184,11 +184,11 @@ The fix is sizing discipline. Position sizing and the 1%-rule are covered in ful
 
 Competence, not a calendar. That is the whole protocol in four words.
 
-Waiting "until you feel ready" is avoidance — advice, not a finding — but it matches what the checklist below is designed to prevent. The moment of feeling ready never reliably arrives, and waiting for it is its own way of never going live.
+Waiting 'until you feel ready' is avoidance — advice, not a finding — but it matches what the checklist below is designed to prevent. The moment of feeling ready never reliably arrives, and waiting for it is its own way of never going live.
 
 Every readiness number in this section is practitioner consensus with a wide published range — attribute it that way, because that is what it is. A common practitioner bar is described below; other protocols demand more, up to 100–200 trades or 3–6 months. None of this is our research, a study, or a standard, and none of it guarantees anything. It is a checklist for deciding whether you have evidence — not a certificate.
 
-One more boundary, stated once: paper trading will not catch an overfit sample either. If the plan was fitted to noise, paper-trading it just replays the noise in real time. Overfitting is covered in **Article #19**.
+One more boundary, stated once: paper trading won't catch an overfit sample either. If the plan was fitted to noise, paper-trading it just replays the noise in real time. Overfitting is covered in **Article #19**.
 
 <figure class="article-visual" data-reveal>
 <svg viewBox="0 0 680 522" role="img" aria-label="Checklist of the honest go-live protocol for paper trading, from one written plan through costs on to pre-committed kill-switch rules" class="viz">
@@ -239,7 +239,7 @@ To be precise about the mechanism: percentages are scale-free in pure arithmetic
 
 ### Costs ON: the Indian paper-trader's hidden subsidy, corrected
 
-Many simulators default to ignoring costs. That is not a universal claim — some model costs well — but it is common enough that the correction must be deliberate: turn costs ON, and compute them with real cost math. Until you do, Indian paper results are structurally flattered, because the cost stack that live trading charges on every trade is missing from the paper ledger.
+Many simulators default to ignoring costs. That's not a universal claim — some model costs well — but it's common enough that the correction must be deliberate: turn costs ON, and compute them with real cost math. Until you do, Indian paper results are structurally flattered, because the cost stack that live trading charges on every trade is missing from the paper ledger.
 
 The verified rates below were checked on 2026-10-14. STT rates are effective 1 April 2026 (Budget 2026-27). NSE exchange charges are effective 1 March 2026. Rates change; check the current schedule before you trade, and treat anything below as a snapshot with its verification date attached.
 
@@ -268,7 +268,7 @@ The practical correction is simple: run your paper log through real cost math �
 
 A common practitioner bar is: **20–50 logged trades on that one plan, with costs enabled, at roughly 90% rule adherence, sizing at the same amounts you intend to trade live.** State it exactly that way — a common practitioner bar — because that is what it is. Other protocols demand more, up to 100–200 trades or 3–6 months of paper trading. There is no study validating ~90% adherence as a threshold, and no authority sets 20–50 trades as a requirement. The range is wide; the honest version admits it.
 
-What the bar is really testing is not the trade count. It is whether you can point to a log and show: one plan, real size, costs on, rules followed almost every time. A log of 30 trades with 90% adherence and costs enabled is evidence. A log of 200 trades with no costs, a fantasy balance, and rules bent whenever they hurt is not.
+What the bar is really testing isn't the trade count. It's whether you can point to a log and show: one plan, real size, costs on, rules followed almost every time. A log of 30 trades with 90% adherence and costs enabled is evidence. A log of 200 trades with no costs, a fantasy balance, and rules bent whenever they hurt is not.
 
 **Adherence, defined.** Adherence = trades following every rule ÷ total paper trades. A rule break is any deviation from the written plan: entering a setup the plan excludes, skipping a valid signal, moving a stop, changing size mid-trade, or trading outside the plan's instruments or hours. A fill that lands slightly away from the planned price because the market moved is execution noise, not a rule break — the rule was the signal, the size, and the stop; the fill was the market's. Worked example: 30 paper trades, 27 followed every rule, 3 broke one — adherence is 27 ÷ 30 = 90%.
 
@@ -292,7 +292,7 @@ And the pre-committed live size: decided now, in writing, before real money arri
 
 ### Pre-committed kill-switch rules: the categories, not one universal number
 
-Kill-switch rules are pre-committed halts that stop trading when a predefined threshold is breached. They exist for one reason: pre-commitment removes the in-the-moment decision that tilt and revenge trading exploit. You decide the halt before trading, when you are calm — never mid-session, when you are not.
+Kill-switch rules are pre-committed halts that stop trading when a predefined threshold is breached. They exist for one reason: pre-commitment removes the in-the-moment decision that tilt and revenge trading exploit. You decide the halt before trading, when you're calm — never mid-session, when you're not.
 
 The categories to pre-commit, with your own thresholds set before trading:
 
@@ -322,13 +322,13 @@ Monte Carlo simulation (**Article #22**) checks whether the *number* is robust a
 
 ## The handoff: going live small, reconciling, and knowing when to stop
 
-Going live is not the end of validation. It is the start of the part paper trading could never do — and the part competing guides mostly omit. What you do *after* going live matters as much as the go-live bar itself.
+Going live isn't the end of validation. It's the start of the part paper trading could never do — and the part competing guides mostly omit. What you do *after* going live matters as much as the go-live bar itself.
 
 ### Go live small — and expect friction to appear
 
 Go live at the smallest real size the 1%-rule allows. The 1%-rule — risk no more than about 1% of account equity on any single trade — is a widely used risk-budgeting guideline, not a law, regulation, or guarantee. It controls drawdown speed, not profitability: a negative-expectancy strategy still loses with small size, only more slowly. At 1% risk per trade, five straight losses cost 4.90% of capital (1 − 0.99⁵ = 0.0490), under the same compounding assumption as the size-trap table — fixed fraction of current shrinking capital, each loss equal to the risked fraction, no costs or slippage. Small size buys you time to learn. It does not create edge.
 
-And expect friction to appear. Results often get worse before they stabilise, because live trading adds the one variable the simulator could never supply: real money, real fills, real psychology. That is an expectation, not a law — some traders' live results match or beat paper over a short window by luck. But the honest framing is that the first live weeks are where the missing variable arrives, and the plan should be judged on whether it survives that arrival, not on whether the first week is green. The education paper trading cannot give you begins the day real money is on the line, and a small live account is where that education is cheapest.
+And expect friction to appear. Results often get worse before they stabilise, because live trading adds the one variable the simulator could never supply: real money, real fills, real psychology. That's an expectation, not a law — some traders' live results match or beat paper over a short window by luck. But the honest framing is that the first live weeks are where the missing variable arrives, and the plan should be judged on whether it survives that arrival, not on whether the first week is green. The education paper trading can't give you begins the day real money is on the line, and a small live account is where that education is cheapest.
 
 ### Reconcile live vs backtest: a persistent gap is a modelling error, not bad luck
 
@@ -343,7 +343,7 @@ The rule, made operational:
 
 Worked example (illustrative figures): over the same 30 trades, the backtest predicted +₹450 net P&L per trade; live delivered +₹280 per trade after costs. The gap is ₹170 per trade — about 38% below predicted — past the 25% trigger, so the model gets reviewed. If the gap is still there at the next review, it is persistent, and the fix is in the model, not in your confidence.
 
-If live results sit stubbornly below what the backtest predicted, something in the model was wrong: a cost left out, a fill assumption too generous, a market regime the backtest never saw. That is a modelling problem, and it is fixed by correcting the model, not by trying harder or believing more.
+If live results sit stubbornly below what the backtest predicted, something in the model was wrong: a cost left out, a fill assumption too generous, a market regime the backtest never saw. That's a modelling problem, and it's fixed by correcting the model, not by trying harder or believing more.
 
 Two qualifications keep the rule honest. First, a short-term gap alone proves nothing — variance explains short gaps; persistence is the signal. Second, reconciliation is a discipline, not an empirical finding: a protocol for staying honest, not a proven law. The backtest gaps themselves are covered in **Article #20**, and what counts as enough evidence is covered in **Article #17**.
 
@@ -408,7 +408,7 @@ Paper trading cannot teach staked drawdown behaviour, real-liquidity execution, 
 
 Small size limits drawdown speed. It does not turn a losing plan into a winning one: a negative-expectancy strategy still loses with small size, only more slowly — and the honest protocol is designed to surface that fact cheaply, not to hide it.
 
-Two pitfalls deserve naming. First, overtrading with no risk on paper: when nothing is at stake, it is easy to trade far more often than the plan allows, and to mistake activity for evidence. That pitfall is covered in **Article #35**, on overtrading. Second, the honest log is required: every fill logged as if it cost you, every rule break journaled, because the log is the evidence the go-live bar stands on. The journal deep-dive is in **Article #44**.
+Two pitfalls deserve naming. First, overtrading with no risk on paper: when nothing is at stake, it's easy to trade far more often than the plan allows, and to mistake activity for evidence. That pitfall is covered in [Article #35, on overtrading](/articles/overtrading/). Second, the honest log is required: every fill logged as if it cost you, every rule break journaled, because the log is the evidence the go-live bar stands on. The journal deep-dive is in [Article #44](/articles/trading-journal-what-to-track-beyond-pnl/).
 
 ## The validation ladder ends here — the first live drawdown is where giveback begins
 
