@@ -3,8 +3,8 @@
  "@graph": [
   {
    "@type": "Article",
-   "headline": "Building Your First Trading System: The Complete Guide for Indian Retail Traders",
-   "description": "How to build your first trading system: 7-module blueprint, five-line protocol, validation ladder with acceptance numbers, and the Indian charges-aware build.",
+   "headline": "How to Build Your First Trading System (7 Modules)",
+   "description": "A trading system is a measurement machine, not an entry signal. Build yours: 7-module blueprint, five-line protocol, validation ladder with acceptance numbers.",
    "author": {
     "@type": "Person",
     "@name": "Kaizen"
