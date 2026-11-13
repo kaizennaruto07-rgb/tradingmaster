@@ -3,8 +3,8 @@
   "@graph": [
     {
       "@type": "Article",
-      "headline": "Are Prop Firms Worth It? The Trader's Math",
-      "description": "Are prop firms worth it? Run the expected-value math: the full fee stack, honest pass rates, and the conditional payout — before you pay for a challenge.",
+      "headline": "Are Prop Firms Worth It? The EV Math Says Mostly No",
+      "description": "Only ~7% of challengers ever get a payout. Run the EV math first: 20% pass × 45% payout chance × $500, minus a $300 all-in fee = −$255 per attempt.",
       "author": {
         "@type": "Person",
         "@name": "Kaizen"
