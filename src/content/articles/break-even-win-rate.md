@@ -1,7 +1,7 @@
 ---
-title: "Break-Even Win Rate Formula: The Real Number Your Strategy Must Beat (With Indian Trading Costs)"
-description: "Break even win rate formula: 1 ÷ (1 + R:R) — but costs change it. Compute your real breakeven with Indian F&O costs and the planned-vs-realized worksheet."
-meta_description: "Break even win rate formula: 1 ÷ (1 + R:R) — but costs change it. Compute your real breakeven with Indian F&O costs and the planned-vs-realized worksheet."
+title: "Break-Even Win Rate Formula: 1:1 Needs 72%, Not 50%"
+description: "The textbook formula says a 1:1 setup breaks even at 50% wins. With Indian F&O costs, it is 72%. The with-costs formula, the full table, and the worksheet."
+meta_description: "The textbook formula says a 1:1 setup breaks even at 50% wins. With Indian F&O costs, it is 72%. The with-costs formula, the full table, and the worksheet."
 date: 2026-10-06
 author: Kaizen
 tag: "Trading mathematics · Breakeven"
@@ -10,9 +10,9 @@ keywords: ["break even win rate formula", "breakeven win rate calculator", "what
 
 *Educational content only — not financial advice. Trading involves risk of loss.*
 
-Every trading strategy has a number it must beat. Fall below it, and you lose money — no matter how confident you felt about the entries. That number is the **break-even win rate**: the minimum win rate a strategy needs, given its average win and average loss, to stop bleeding.
+Every strategy has a number it must beat. Fall below it and you lose money — however confident you felt about the entries. That number is the **break-even win rate**: the minimum win rate, given your average win and average loss, that stops the bleeding.
 
-Most traders have seen the textbook break even win rate formula. Far fewer have computed the version that includes their actual trading costs — and that is the only version that matters. This article gives you both, plus the worksheet that turns the number into something you can act on: comparing your *planned* breakeven against your *realized* breakeven from your own trade history.
+Most traders have seen the textbook formula. Far fewer have computed the version that includes their actual trading costs — and that is the only version that matters. This article gives you both, plus the worksheet that turns the number into something you can act on: comparing your *planned* breakeven against your *realized* breakeven from your own trade history.
 
 The conceptual ground — how win rate and risk-reward relate — was mapped in our companion piece, [Win Rate vs Risk-Reward](/articles/win-rate-vs-risk-reward/). This article is the workshop: here you compute your own two breakeven numbers and the gap between them.
 
@@ -26,7 +26,7 @@ The honest answer: there is no single number. The break-even win rate depends on
 
 where R:R is your average win divided by your average loss. A strategy with bigger wins relative to its losses needs a lower win rate to survive; a strategy whose wins barely cover its losses needs a high one.
 
-That is the entire pre-costs picture. Everything else in this article is about what this simple formula leaves out — and how much that omission costs you.
+That is the whole pre-costs picture. Everything else here is about what this simple formula leaves out — and what that omission costs you.
 
 ### The Textbook Table (Before Costs)
 
@@ -42,7 +42,7 @@ Before costs, the formula produces this reference table. Treat it as a starting 
 | 1 : 4 | 20.0% |
 | 1 : 5 | 16.7% |
 
-So the **break even win rate for a 1:2** setup is 33.3%, and the **break even win rate for a 1:3** setup is 25% — *before* costs. These are the numbers every breakeven win rate calculator hands you. They are also the numbers that will quietly lose you money, because no Indian retail trader actually trades at zero cost.
+So the **break even win rate for a 1:2** setup is 33.3%, and the **break even win rate for a 1:3** setup is 25% — *before* costs. These are the numbers every breakeven win rate calculator hands you. They are also the numbers that will quietly lose you money, because no Indian retail trader trades at zero cost.
 
 One caution: this table assumes your average win and average loss are stable. If your position size varies wildly, or you scale out of positions at multiple levels, the simple breakeven arithmetic stops being exact — at that point you want expectancy, which we cover in [What Is Trading Expectancy?](/articles/what-is-trading-expectancy/).
 
@@ -52,11 +52,11 @@ The full derivation of the win-rate/R:R relationship lives in [Win Rate vs Risk-
 
 ## Why the Textbook 50% Is a Lie Once Costs Exist
 
-Here is the statistic that should change how every scalper thinks. Take a 1:1 trader whose targets and stops sit 0.5% apart. The textbook says they need a 50% win rate to break even. But once a modest 0.07% round-trip cost (brokerage, spread, slippage) is included, the real breakeven win rate is **57%** — not 50%. Tighten the levels to 0.25%, and the real breakeven jumps to **64%**.
+Here is the number that should change how every scalper thinks. Take a 1:1 trader whose targets and stops sit 0.5% apart. The textbook says they need a 50% win rate to break even. But once a modest 0.07% round-trip cost (brokerage, spread, slippage) is included, the real breakeven win rate is **57%** — not 50%. Tighten the levels to 0.25%, and the real breakeven jumps to **64%**.
 
 A 5-minute-chart scalper who "needs 50%" is actually losing money at 54%.
 
-One mandatory caveat before anyone copies these numbers into a trading plan: the 0.07% round-trip figure is an **illustrative assumption** from a publicly shared with-costs derivation in an open-source worked example — not measured Indian retail trading data. It exists to demonstrate the shape of the math, not to describe your costs. Your own numbers come from the Indian cost stack below — and as you will see, they can be far worse than 0.07%.
+One caveat before anyone copies these numbers into a trading plan: the 0.07% round-trip figure is an **illustrative assumption** from a publicly shared with-costs derivation in an open-source worked example — not measured Indian retail trading data. It exists to demonstrate the shape of the math, not to describe your costs. Your own numbers come from the Indian cost stack below — and as you will see, they can be far worse than 0.07%.
 
 ### The derivation
 
@@ -166,7 +166,7 @@ A note on the exercised-options corner of the stack: if you hold an in-the-money
 
 ## The Flipped Question: What R:R Do You Need at Your Win Rate?
 
-"What win rate do I need to be profitable?" is the question traders type into search boxes — and it is slightly the wrong question. It asks the formula to predict from your plan. The sharper question runs the other way: *you already know your win rate from your journal — what risk-reward ratio must your setups average to keep that win rate profitable?*
+"What win rate do I need to be profitable?" is the question traders type into search boxes — and it is slightly the wrong question. It asks the formula to predict from your plan. The sharper question runs the other way: *you already know your win rate from [your journal](/articles/trading-journal-what-to-track-beyond-pnl/) — what risk-reward ratio must your setups average to keep that win rate profitable?*
 
 Invert the breakeven identity and you get:
 
@@ -184,7 +184,7 @@ So a trader with a journaled 30% win rate needs setups averaging at least **1:2.
 | 50% | 1 : 1.00 |
 | 60% | 1 : 0.67 |
 
-Use this as a sanity filter on your trade log: if your journaled win rate is 40% but your average realized risk-reward is 1:1.2, the arithmetic says the strategy cannot work — before you have paid a rupee of brokerage. No amount of entry-timing refinement fixes a combination that fails the flipped test.
+Use this as a sanity filter on your trade log: if your journaled win rate is 40% but your average realized risk-reward is 1:1.2, the arithmetic says the strategy cannot work — before you've paid a rupee of brokerage. No amount of entry-timing refinement fixes a combination that fails the flipped test.
 
 <figure class="article-visual" data-reveal>
 <svg viewBox="0 0 680 452" role="img" aria-label="Break-even win rate curve showing the profitable zone above the line and the bleed zone below, across risk-reward ratios" class="viz">
@@ -282,7 +282,7 @@ Second, computing from realized numbers only works if your journal records scrat
 
 ## Breakeven Is a Threshold, Not a Forecast
 
-A 25% breakeven at 1:3 tells you what your strategy *must achieve*. It says nothing about whether your entries *actually reach* a 1:3 target at that frequency. This is the delusion the breakeven table quietly enables: a trader picks a wide target on paper, reads "25%," and feels the strategy is validated — when the table cannot know anything about their setups' reachability.
+A 25% breakeven at 1:3 tells you what your strategy *must achieve*. It says nothing about whether your entries *actually reach* a 1:3 target at that frequency. This is the delusion the breakeven table quietly enables: a trader picks a wide target on paper, reads "25%," and feels validated — when the table cannot know anything about their setups' reachability.
 
 The formula is a threshold your results must clear, not a forecast of what they will be. The forecast comes from your journal. Choosing 1:3 does not *create* a 25% breakeven for your trading; it creates a 25% breakeven *if* your realized average win is genuinely three times your realized average loss — which, per the previous section, it usually is not.
 
@@ -320,7 +320,7 @@ Use this as a standing journal rule — the article's own five-zone version, tun
 - **Breakeven zone (within ±1 point):** you are working for the broker. Fees and slippage own the outcome.
 - **Below breakeven:** losing. Change the strategy, the costs, or both — not your confidence.
 
-The ~5-point line deserves emphasis: anything under about five points of margin means ordinary variance, not bad trading, can put you underwater. And this is exactly where the bridge to [Risk of Ruin](/articles/risk-of-ruin-trading/) stands — thin margins plus losing streaks are the ruin path. A strategy can have a positive expectancy and still die to a drawdown its thin margin could not absorb.
+The ~5-point line deserves emphasis: anything under about five points of margin means ordinary variance, not bad trading, can put you underwater. And this is exactly where the bridge to [Risk of Ruin](/articles/risk-of-ruin-trading/) stands — thin margins plus losing streaks are the ruin path. A strategy can have a positive expectancy and still die to a [drawdown](/articles/maximum-drawdown/) its thin margin could not absorb.
 
 ---
 
