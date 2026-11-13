@@ -1,7 +1,7 @@
 ---
-title: "What Is the 3-5-7 Rule in Trading?"
-description: "The 3-5-7 rule caps single-trade risk at 3%, total open risk at 5%, and targets winners of 7%. Learn the honest definition, the math, and how to apply it tomorrow."
-meta_description: "The 3-5-7 rule caps single-trade risk at 3%, total open risk at 5%, and targets winners of 7%. Learn the honest definition, the math, and how to apply it tomorrow."
+title: "What Is the 3-5-7 Rule in Trading? 3%, 5%, 7% Explained"
+description: "The 3-5-7 rule caps risk at 3% per trade, 5% total open risk, and targets 7% winners. The honest definition, the survival math, and how to apply it."
+meta_description: "The 3-5-7 rule caps risk at 3% per trade, 5% total open risk, and targets 7% winners. The honest definition, the survival math, and how to apply it."
 date: 2026-10-28
 author: Kaizen
 tag: "Trading mathematics · Risk management"
@@ -66,7 +66,7 @@ It is in having a cap at all — a point this article returns to at the end.
 
 ## Why the 3-5-7 rule works: the survival math
 
-Losing streaks are not a possibility in trading. They are a certainty.
+[Losing streaks](/articles/how-losing-streaks-affect-trading-accounts/) are not a possibility in trading. They are a certainty.
 
 Every trader, good or bad, eventually takes 10 losses in a row. The only question is what that streak costs.
 
@@ -181,7 +181,7 @@ Underestimating it costs you an account.
 
 ## 3-5-7 vs the 1% rule: which should a beginner use?
 
-The 1% rule is the older, stricter cousin: risk no more than 1% of your account on any single trade. Here is how the two compare.
+The [1% rule](/articles/position-sizing/) is the older, stricter cousin: risk no more than 1% of your account on any single trade. Here is how the two compare.
 
 | | 1% rule | 3-5-7 rule |
 |---|---|---|
@@ -244,7 +244,7 @@ Copy this into your trading journal and run through it before the market opens:
 - [ ] Total open risk checked against the 5% cap before each new entry.
 - [ ] Target is at least 2 times the risk; otherwise the trade is skipped.
 - [ ] Session stop set: stop trading after 3 consecutive losses, or at the daily loss limit, whichever comes first.
-- [ ] No averaging down, no stop-widening, no revenge trades — all three are rule violations, not judgment calls.
+- [ ] No averaging down, no stop-widening, no [revenge trades](/articles/revenge-trading/) — all three are rule violations, not judgment calls.
 
 ## Walk through a bad day: how the caps work together
 
