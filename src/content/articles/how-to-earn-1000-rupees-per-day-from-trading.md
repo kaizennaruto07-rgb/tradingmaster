@@ -1,6 +1,6 @@
 ---
-title: "How to Earn ₹1,000 Per Day From Trading: Is It Realistic?"
-description: "Can you really earn ₹1,000 per day from trading? The honest math: what capital it takes, what costs eat, and why a fixed daily target is the trap."
+title: "How to Earn ₹1,000 Per Day From Trading? Honest Math"
+description: "₹1,000 a day needs ₹1,00,000 earning 1% every day — and no trader does. What capital it really takes, what costs eat, and why a daily target is the trap."
 date: 2026-10-28
 author: Kaizen
 ---
@@ -180,7 +180,7 @@ The mechanism is simple and brutal:
 - On slow days, the market offers nothing worth trading. The target does not care. So the trader trades anyway.
 - A forced trade is usually a low-quality trade. Low-quality trades lose more often.
 - The loss puts the trader behind target. Behind target, the trader increases size or takes a second, worse trade to "catch up".
-- That is revenge trading wearing a productivity costume.
+- That is [revenge trading](/articles/revenge-trading/) wearing a productivity costume.
 
 Now flip it. Replace the rupee target with process targets you fully control:
 
@@ -208,7 +208,7 @@ A beginner's first months have a different job: don't lose the account while bui
 - **Months 3–6:** Trade tiny real capital with strict rules. Expect small losses and small wins. The goal is rule-following, not profit.
 - **After that:** Scale up only after several consistent months. Consistency means months, not a lucky week.
 
-Beginners who skip this sequence usually arrive at the same place: an account small enough that ₹1,000 a day needs an impossible percentage, traded with leverage, until a normal losing streak ends it. The market charges tuition either way. Paper trading charges it in time.
+Beginners who skip this sequence usually arrive at the same place: an account small enough that ₹1,000 a day needs an impossible percentage, traded with leverage, until a normal [losing streak](/articles/how-losing-streaks-affect-trading-accounts/) ends it. The market charges tuition either way. Paper trading charges it in time.
 
 Real trading with a daily target charges it in capital.
 
