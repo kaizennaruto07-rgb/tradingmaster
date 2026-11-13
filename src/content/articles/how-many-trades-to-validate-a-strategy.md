@@ -1,7 +1,7 @@
 ---
-title: "How Many Trades to Validate a Trading Strategy? The Evidence Contract"
-description: "How many trades prove a strategy works? The witness ladder — 100, 200–500, 1,000+ — plus the independence rule, retail power analysis and the frequency trap."
-meta_description: "How many trades prove a strategy works? The witness ladder — 100, 200–500, 1,000+ — plus the independence rule, retail power analysis and the frequency trap."
+title: "How Many Trades to Validate a Strategy? 100 Minimum"
+description: "100 trades is the floor — a hypothesis, not a verdict. 200–500 supports a risk decision; 1,000+ proves a small edge. Ladder, independence rule, calendar math."
+meta_description: "100 trades is the floor — a hypothesis, not a verdict. 200–500 supports a risk decision; 1,000+ proves a small edge. Ladder, independence rule, calendar math."
 date: 2026-10-11
 author: Kaizen
 tag: "Strategy validation · Statistics"
@@ -12,9 +12,9 @@ keywords: ["how many trades to validate a trading strategy", "how many trades to
 
 Every trader asks for a number. "How many trades do I need before I can trust my strategy?" The internet answers with a ladder: 30… 50… 100. None of them tell you *why*.
 
-Here's the honest answer: **the trade count is not a number, it's a contract with evidence.** You pick a number of trades *before* you test — 100 as an early hypothesis, 200–500 before a serious risk decision, 1,000+ to prove a small edge — and the contract has four clauses: what each tier proves, that every trade actually counts, that your edge is big enough to be seen, and that you've budgeted the calendar time to collect the trades.
+Here's the honest answer: **the trade count isn't a number, it's a contract with evidence.** You pick a number of trades *before* you test — 100 as an early hypothesis, 200–500 before a serious risk decision, 1,000+ to prove a small edge — and the contract has four clauses: what each tier proves, that every trade actually counts, that your edge is big enough to be seen, and that you've budgeted the calendar time to collect them.
 
-This is the second chapter of the validation protocol. In [the previous article](/articles/how-to-know-if-trading-strategy-works/), we built the verdict framework: the pre-registration contract (you write your rules down *before* you test, not after you find something that looks good), the three-question verdict hierarchy, and the rule that 100 trades is the floor of a verdict. That floor was deliberately shallow — this article explains the statistics underneath it.
+This is the second chapter of the validation protocol. In [the previous article](/articles/how-to-know-if-trading-strategy-works/), we built the verdict framework: the pre-registration contract (write your rules down *before* you test, not after you find something that looks good), the three-question verdict hierarchy, and the rule that 100 trades is the floor of a verdict. That floor was deliberately shallow — this article explains the statistics underneath it.
 
 By the end, you'll have a four-line evidence contract and a testing protocol that fits your trading style — whether you scalp 40 times a week or swing-trade 3 times a month.
 
@@ -22,7 +22,7 @@ By the end, you'll have a four-line evidence contract and a testing protocol tha
 
 ## The short answer: 100, 200–500, or 1,000+ — pick your number before you test
 
-The most important sentence in this article: **decide the number before you start testing.** That's the pre-registration contract from [the verdict framework](/articles/how-to-know-if-trading-strategy-works/) — and it matters twice here. If you keep adding trades until the results look good, you aren't validating a strategy, you're shopping for one. Write your number down, run the tests, and let the contract do its job.
+The most important sentence in this article: **decide the number before you start testing.** That's the pre-registration contract from [the verdict framework](/articles/how-to-know-if-trading-strategy-works/) — and it matters twice here. If you keep adding trades until the results look good, you aren't validating a strategy. You're shopping for one. Write your number down, run the tests, and let the contract do its job.
 
 The number you pick depends on what decision you're making. Not all evidence is equal, and the statistics give us three clean tiers.
 
@@ -68,7 +68,7 @@ Think of trades as witnesses in a trial. One witness is a rumor. A dozen is a st
 
 The math behind those bands is standard statistics — nothing proprietary, nothing secret. At 95% confidence, the uncertainty on a win-rate estimate shrinks with the square root of the trade count: the number of trades needed to reach a given precision follows n ≈ (1.96 ÷ (2 × desired band))² — the band sits in the denominator, which is why precision is expensive. That square-root law is the first contract clause to internalize: **halving your uncertainty costs four times the trades.**
 
-And here's the corollary most traders miss: the ladder counts *independent* trades. One hundred trades that all saw the same market condition are not one hundred witnesses. Which brings us to the second clause.
+And here's the corollary most traders miss: the ladder counts *independent* trades. One hundred trades that all saw the same market condition aren't one hundred witnesses. Which brings us to the second clause.
 
 ## Not every trade counts: the independence rule
 
@@ -124,7 +124,7 @@ Now the part nobody in the retail blogosphere explains, and it's the one that ch
 
 Your edge has a *size*. Your sample has a *count*. The question power analysis asks is: **is the count big enough to notice the size?**
 
-Put it in trader terms. Your strategy earns, say, +0.1R per trade on average ([expectancy](/articles/what-is-trading-expectancy/) is the edge number entering this math — we take it as an input here, we don't compute it). But each individual trade swings around that average — call that noise ±1R per trade. The signal (0.1R) is buried inside the noise (1R). Every extra trade lets you average down the noise — the noise shrinks with √n — while the signal stays constant.
+Put it in trader terms. Your strategy earns, say, +0.1R per trade on average ([expectancy](/articles/what-is-trading-expectancy/) is the edge number entering this math — we take it as an input here, we don't compute it). But each trade swings around that average — call that noise ±1R per trade. The signal (0.1R) is buried inside the noise (1R). Every extra trade averages the noise down — it shrinks with √n — while the signal stays constant.
 
 The one-line formula: **t = (average trade result) ÷ (noise ÷ √n).** When t crosses about 2, the edge is statistically visible at 95% confidence. Run the numbers:
 
@@ -176,7 +176,7 @@ This is also where [profit factor](/articles/profit-factor/) enters the picture:
 
 ### A caution about t-tests
 
-One paragraph of honesty, courtesy of a recent experiment: a t-test asks "did this sample make money?", **not** "did the strategy predict anything?" A recent trading-statistics experiment ran thousands of simulated markets where *nothing was predictable* and found standard t-tests still cried "edge" far more often than their promised 5% false-positive rate in some market shapes. A shuffled-placebo test — comparing your strategy against randomized versions of itself — stayed honest at ~5%. The lesson: passing a t-test proves your sample made money. It does not prove your rules predicted the market. And one more discipline note: testing 11 variations and keeping the best is 11 tests, not 1 — the overfitting deep-dive lands in a later chapter, but count your tests honestly from day one.
+One paragraph of honesty, courtesy of a recent experiment: a t-test asks "did this sample make money?", **not** "did the strategy predict anything?" A recent trading-statistics experiment ran thousands of simulated markets where *nothing was predictable* and found standard t-tests still cried "edge" far more often than their promised 5% false-positive rate in some market shapes. A shuffled-placebo test — comparing your strategy against randomized versions of itself — stayed honest at ~5%. The lesson: passing a t-test proves your sample made money. It does not prove your rules predicted the market. And one more discipline note: testing 11 variations and keeping the best is 11 tests, not 1 — the [overfitting deep-dive](/articles/how-to-detect-overfitting-in-trading-strategy/) lands in a later chapter, but count your tests honestly from day one.
 
 ## The two opposite mistakes small samples cause
 
@@ -404,7 +404,7 @@ The fix is the same for both, and it's two steps:
 
 ## One paragraph on overfitting (the full test lives in the next chapter)
 
-The only thing worse than too few trades is too many *tweaks*. Every parameter you adjust, every filter you add after seeing the results, spends some of your sample's credibility — a backtest that tested 50 combinations and kept the best didn't run one test, it ran fifty, and its glowing results may just be the luckiest draw from a large bucket. The one-paragraph version ends here; the full multiple-testing correction and the parameter-cliff test belong to the overfitting chapter — the evidence contract assumes your rules were written before the test began.
+The only thing worse than too few trades is too many *tweaks*. Every parameter you adjust, every filter you add after seeing the results, spends some of your sample's credibility. A backtest that tested 50 combinations and kept the best didn't run one test — it ran fifty — and its glowing results may just be the luckiest draw from a large bucket. The one-paragraph version ends here; the full multiple-testing correction and the parameter-cliff test belong to the overfitting chapter — the evidence contract assumes your rules were written before the test began.
 
 ## What a simulator can and cannot tell you
 
@@ -412,7 +412,7 @@ You may have noticed our [What-If Trade Simulator](/tools/what-if-simulator/) is
 
 But hold the honest disclaimer firmly: **the simulator measures sequence risk on your existing sample — it cannot validate the edge.** It answers "what if this sample played out in a different order?" It cannot answer "is this sample big and independent enough to trust?" That second question is this article's contract, and no simulation creates evidence that was never collected.
 
-Tomorrow's chapter closes the loop from the other side: why even a properly-sized, pre-registered backtest's numbers lie to you live — slippage, execution leak, costs — and how to account for it. The protocol continues.
+The companion chapter closes the loop from the other side: why even a properly-sized, pre-registered [backtest's numbers lie to you live](/articles/why-backtested-strategies-fail-in-live-trading/) — slippage, execution leak, costs — and how to account for it. The protocol continues.
 
 ## Frequently Asked Questions
 
@@ -447,6 +447,6 @@ Every tweak after seeing results spends some of the sample's credibility — tes
 3. **Size the sample to the edge.** Small edges need big samples (t = edge × √n ÷ noise), and Indian costs shrink the after-cost edge — which multiplies the evidence burden. Compute expectancy [the right way](/articles/what-is-trading-expectancy/) and feed the *after-cost* number into the math.
 4. **Budget the calendar, not just the count.** A swing trader's 100 trades is years of history — backtest for depth, forward-test the last 30–50 for confirmation.
 
-Sign the contract. Run the trades. Let variance make its noise — you'll know the difference between noise and a verdict, because you decided what a verdict looks like before the first trade fired.
+Sign the contract. Run the trades. Let variance make its noise. You'll know the difference between noise and a verdict — because you decided what a verdict looks like before the first trade fired.
 
 *The validation protocol continues tomorrow: why your backtest's numbers lied to you anyway — and how to price the lie before you go live.*
