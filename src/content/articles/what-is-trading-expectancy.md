@@ -1,7 +1,7 @@
 ---
-title: "What Is Trading Expectancy? A Complete Guide"
-description: "What is trading expectancy? The expectancy formula in trading, how to calculate expectancy from your trade journal, and why win rate and gross numbers lie."
-meta_description: "What is trading expectancy? The expectancy formula in trading, how to calculate expectancy from your trade journal, and why win rate and gross numbers lie."
+title: "Trading Expectancy: Formula, Examples & Good Values"
+description: "Expectancy is what each trade is worth on average — win ₹800 half the time, lose ₹400, and it is +₹200 a trade. Formula, R-multiples, and the 61% cost trap."
+meta_description: "Expectancy is what each trade is worth on average — win ₹800 half the time, lose ₹400, and it is +₹200 a trade. Formula, R-multiples, and the 61% cost trap."
 date: 2026-10-04
 author: Kaizen
 tag: "Trading mathematics · Edge"
@@ -16,13 +16,13 @@ Trading expectancy answers one question: **on average, how much does each of you
 
 If your expectancy is +₹200, then over a large number of trades, every trade you take is "worth" ₹200 of profit on average. If it is −₹50, every trade costs you ₹50 on average, and nothing else you do — better timing, nicer charts, more screen time — will fix that.
 
-It can be measured in money (rupees, USDT) or in R-multiples — units of your average risk. Both mean the same thing:
+Measure it in money (rupees, USDT) or in R-multiples — units of your average risk. Both mean the same thing:
 
 - **Expectancy = average profit or loss per trade.**
 
 One-line example: you win ₹800 on half your trades and lose ₹400 on the other half. Your expectancy is (0.5 × 800) − (0.5 × 400) = ₹200 per trade.
 
-That's it. No mystery. And yet most traders never compute it, because they confuse "I win a lot" with "I make money." Expectancy is the number that settles that argument.
+That's it. No mystery. And yet most traders never compute it — they confuse "I win a lot" with "I make money." Expectancy settles that argument.
 
 ## The Expectancy Formula (and the R-Multiple Version That Makes It Simple)
 
@@ -63,7 +63,7 @@ Read that as: every trade you take is worth two-tenths of your risk unit in expe
 
 ## Why a 60% Win Rate Can Still Lose You Money (Expectancy Beats Win Rate)
 
-Win rate is the most overrated number in trading. Here's why, using Tharp's marble-game thought experiment: imagine two games.
+Win rate is the most overrated number in trading. Here's why — Tharp's marble-game thought experiment. Imagine two games.
 
 - **Game A:** you win 60% of the time, but the game's design gives you an expectancy of only 20 cents per play.
 - **Game B:** you win only 36% of the time, but the expectancy is 78 cents per play.
@@ -175,7 +175,7 @@ Win 40% of the time? You need (1 / 0.40) − 1 = **1.5R** average wins just to b
 
 ## How to Calculate Expectancy From Your Own Trade Journal (Step by Step)
 
-A trading expectancy calculator is nothing more than this formula applied to your own data. Here's how to calculate expectancy in trading, by hand:
+A trading expectancy calculator is just this formula applied to your own data. Here's how to calculate expectancy in trading, by hand:
 
 1. **Collect a block of trades** — the more, the better (see the sample-size section below). Same system, same rules, no cherry-picking.
 2. **Split winners from losers.** Count them. Win rate = wins ÷ total trades.
@@ -183,7 +183,7 @@ A trading expectancy calculator is nothing more than this formula applied to you
 4. **Average your losses.** Add up all losing amounts, divide by the number of losses. Keep it a positive number — the formula subtracts it.
 5. **Plug into the formula:** (Win Rate × Avg Win) − (Loss Rate × Avg Loss).
 
-Two assumptions are baked into this formula. First, **independence**: it assumes each trade is its own event. Three NIFTY calls entered the same morning are not three independent trades — they're one correlated cluster wearing a costume. Compute expectancy per system-sample, not per correlated burst. Second, **uniform sizing**: R-multiple math assumes you risked the same amount on every trade. If your journal has ₹500 risks mixed with ₹2,000 risks, the R-based number is distorted — size uniformly during the sample, or normalise before averaging.
+Two assumptions are baked into this formula. First, **independence** — each trade is its own event. Three NIFTY calls entered the same morning are not three independent trades — they're one correlated cluster wearing a costume. Compute expectancy per system-sample, not per correlated burst. Second, **uniform sizing**: R-multiple math assumes you risked the same amount on every trade. If your journal has ₹500 risks mixed with ₹2,000 risks, the R-based number is distorted — size uniformly during the sample, or normalise before averaging.
 
 **Worked example:** You pull 50 trades from your journal. 19 are winners averaging +2.1R; 31 are losers averaging −1R. Win rate = 19/50 = 38%.
 
@@ -233,7 +233,7 @@ Say your system averages +2R gross wins and −1R gross losses, winning 40% — 
 - **Small positive expectancy (say, +0.05R to +0.2R):** survivable in theory, brutal in practice. The edge is real but the variance is savage — long losing streaks, deep drawdowns, and long flat stretches are guaranteed. You need iron discipline and small risk per trade, or the edge never gets to compound.
 - **Strong positive expectancy (+0.3R and up):** a genuine business. Still subject to every caveat in the next section.
 
-A related number worth knowing is **profit factor** — gross profit divided by gross loss. Above 1.0 means an edge (you made more than you lost); around 1.5 or higher is the practitioner convention for "solid" (not a statistical threshold, just what experienced system traders look for). Profit factor and expectancy tell the same story from different angles: expectancy is per-trade, profit factor is aggregate.
+A related number worth knowing is **[profit factor](/articles/profit-factor/)** — gross profit divided by gross loss. Above 1.0 means an edge (you made more than you lost); around 1.5 or higher is the practitioner convention for "solid" (not a statistical threshold, just what experienced system traders look for). Profit factor and expectancy tell the same story from different angles: expectancy is per-trade, profit factor is aggregate.
 
 ## The Catch: Positive Expectancy Does Not Guarantee Profit (Risk of Ruin)
 
@@ -241,7 +241,7 @@ This is the sentence that matters most in this article: **positive expectancy is
 
 Expectancy is an average over many trades. It says nothing about the *order* those trades arrive in. Ten losers in a row at the start will ruin a small account before the average ever gets to assert itself — and streaks far longer than your gut expects are normal, not anomalous, for positive-expectancy systems.
 
-The following ruin figures are an **illustrative simulation only, not universal laws** — they apply to one specific system (55% win rate, 1.5R average win) over a fixed trade count, and different systems, risk sizes, and trade counts produce different numbers:
+The ruin figures below are an **illustrative simulation only, not universal laws** — they apply to one specific system (55% win rate, 1.5R average win) over a fixed trade count. Different systems, risk sizes and trade counts produce different numbers:
 
 | Risk per trade | Illustrative risk of ruin |
 |---|---|
@@ -262,7 +262,7 @@ There is **no authoritative number** for this. Any site that gives you one as a 
 - **200–300 trades:** reliable enough to size real money around, if the market regime held.
 - **500+ trades:** confident — you've likely seen more than one market mood.
 
-Two warnings. First, historical expectancy is **backward-looking and regime-dependent**: a system tuned on a trending year can have its expectancy evaporate in a choppy one. That's curve-fitting, and it's how backtests lie. Second, watch outliers: **one 5R winner in a 30-trade sample contributes 5/30 ≈ 0.17R of expectancy all by itself.** Remove it and the "edge" may vanish — which is exactly the outlier check from the journal section, and why small samples are treacherous. A 10-trade winning run inside a negative-expectancy system is noise with a confident voice.
+Two warnings. First, historical expectancy is **backward-looking and regime-dependent**: a system tuned on a trending year can have its expectancy evaporate in a choppy one. That's [curve-fitting](/articles/how-to-detect-overfitting-in-trading-strategy/), and it's how backtests lie. Second, watch outliers: **one 5R winner in a 30-trade sample contributes 5/30 ≈ 0.17R of expectancy all by itself.** Remove it and the "edge" may vanish — which is exactly the outlier check from the journal section, and why small samples are treacherous. A 10-trade winning run inside a negative-expectancy system is noise with a confident voice.
 
 ## The Expectancy Journal Checklist
 
@@ -279,7 +279,7 @@ Run this against your journal before you trust the number:
 
 ## What to Do Next: Improve It, Validate It, Size Around It
 
-You know your expectancy (or you will, after the journal exercise). Three levers can raise it:
+You know your expectancy now — or you will, once you've run the journal exercise. Three levers can raise it:
 
 1. **Raise your average win** — push it from 2R toward 3R and the break-even win rate drops from 33% to 25% (see the table above). Same win rate, far more room to breathe.
 2. **Raise your win rate** — filter out low-quality setups, but watch the trade-off: at 40% wins you need 1.5R just to break even, so don't let your average R slip below that line while you do it.
@@ -287,7 +287,7 @@ You know your expectancy (or you will, after the journal exercise). Three levers
 
 Then **validate before you size up**: forward-test on paper or in small size, run the system through the [What-If Trade Simulator](/tools/what-if-simulator/) to see the distribution of outcomes your expectancy implies, and check the [risk of ruin](/articles/risk-of-ruin-trading/) math for whatever risk-per-trade you're considering.
 
-Finally, **size positions around it**. A modest expectancy with conservative sizing compounds; a strong expectancy with reckless sizing ruins. Expectancy decays silently — the most common way edges die. Recompute every 50-100 trades, or after any regime shift, and compare against your original number. If it's drifting down, the market changed or you did. And remember the drawdown recovery math, because you will need it: a −50% drawdown requires a **+100%** gain just to get back to even (see the [drawdown recovery math](/articles/risk-of-ruin-trading/)). That asymmetry is the strongest argument there is for protecting your downside while your edge does its work.
+Finally, **[size your positions](/articles/position-sizing/) around it**. A modest expectancy with conservative sizing compounds. A strong expectancy with reckless sizing ruins. Expectancy decays silently — the most common way edges die. Recompute every 50-100 trades, or after any regime shift, and compare against your original number. If it's drifting down, the market changed or you did. And remember the drawdown recovery math, because you will need it: a −50% drawdown requires a **+100%** gain just to get back to even (see the [drawdown recovery math](/articles/risk-of-ruin-trading/)). That asymmetry is the strongest argument there is for protecting your downside while your edge does its work.
 
 ---
 
