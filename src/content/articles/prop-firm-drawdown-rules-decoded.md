@@ -1,7 +1,7 @@
 ---
-title: "Prop Firm Drawdown Rules, Decoded"
-description: "Prop firm drawdown rules decoded: daily vs maximum drawdown, static vs trailing floors, soft vs hard breaches, and what a breach costs before you trade."
-meta_description: "Prop firm drawdown rules decoded: daily vs maximum drawdown, static vs trailing floors, soft vs hard breaches, and what a breach costs before you trade."
+title: "Prop Firm Drawdown Rules: Daily, Max & Trailing Explained"
+description: "Daily drawdown is 4–5% and resets; max drawdown is 6–12% and never resets. A trailing floor rises with your peak — you can be up 1.5% and still fail."
+meta_description: "Daily drawdown is 4–5% and resets; max drawdown is 6–12% and never resets. A trailing floor rises with your peak — you can be up 1.5% and still fail."
 date: 2026-10-27
 author: Kaizen
 tag: "Trading mathematics · Risk management"
@@ -10,15 +10,15 @@ keywords: ["prop firm drawdown rules", "prop firm daily drawdown", "prop firm ma
 
 *By Kaizen · 27 October 2026 · Monks Of Market*
 
-Many accounts end not on one bad idea but on a misunderstood rule — usually a drawdown rule — discovered at the exact moment it ended the account.
+Most accounts don't end on one bad idea. They end on a misunderstood rule — usually a drawdown rule — discovered at the exact moment it killed the account.
 
-That is understandable. In ordinary trading, "drawdown" is a loose word for how far an account has fallen from its peak. At a prop firm, it is not loose at all. It is a set of hard floors, each with its own size, its own reset behaviour, and its own consequence. Cross one, and the account can be gone — even if the trade that crossed it later turns around.
+That's understandable. In ordinary trading, "drawdown" is a loose word for how far an account has fallen from its peak. At a prop firm, it's nothing of the sort. It's a set of hard floors, each with its own size, its own reset behaviour, and its own consequence. Cross one and the account can be gone — even if the trade that crossed it later turns around.
 
-This article decodes those rules before your first trade. It is a companion to the October 27 morning article on risk per trade to pass a challenge: that article sizes backward from the daily limit; this one explains the limits themselves.
+This article decodes those rules before your first trade. It's the companion to the October 27 morning article on risk per trade to pass a challenge: that one sizes backward from the daily limit; this one explains the limits themselves.
 
 ## Drawdown at a prop firm is not one rule: it is two floors plus a moving floor
 
-Here is the whole decoder in one paragraph. A prop-firm account is governed by **two independent floors**: a **daily loss limit** and a **maximum drawdown**. Either floor, breached on its own, can end the day or the account. On top of that, the maximum floor may be **static** (fixed in place) or **trailing** (rising with your account's peak, and never moving back down). And the consequence of a breach may be **hard** (the account closes immediately) or, in some cases, **soft** (trading pauses until the next session).
+Here's the whole decoder in one paragraph. A prop-firm account is governed by **two independent floors**: a **daily loss limit** and a **maximum drawdown**. Breach either one on its own and you can lose the day — or the account. On top of that, the maximum floor may be **static** (fixed in place) or **trailing** (rising with your account's peak, never moving back down). And a breach may be **hard** (the account closes immediately) or, in some cases, **soft** (trading pauses until the next session).
 
 Before your first trade, you need three answers from your firm's current published rules:
 
@@ -26,13 +26,13 @@ Before your first trade, you need three answers from your firm's current publish
 2. **Does the floor move, and on what measurement** — is the maximum floor static or trailing, and if trailing, does it move on every intraday tick, on the end-of-day close, or on balance?
 3. **Is a breach a hard fail or a soft stop?** — does breaching close the account, or pause trading?
 
-Everything else — how you size, how you pace a challenge, and whether a particular challenge is worth taking at all — follows from those three answers. The rest of this article works through each one, on one consistent worked example, so you can see exactly how the floors behave.
+Everything else — how you size, how you pace a challenge, whether a particular challenge is worth taking at all — follows from those three answers. The rest of this article works through each one on a single worked example, so you can see exactly how the floors behave.
 
 A note on figures throughout: firm rules change, and published figures are snapshots, not permanent rulebooks. This article therefore uses published ranges — a daily loss limit typically 4–5%, a maximum drawdown typically 6–12% — and a single worked example to show the mechanics. Always confirm the exact figures in your firm's current published rules before you trade. No firm publishes a verified breakdown of what share of traders fail by drawdown, so this article quotes no such statistic; drawdown failure is described here as the mechanism the rules are built to produce, not as a measured failure rate.
 
 ## The two floors, side by side: daily loss limit vs maximum drawdown
 
-Think of the two floors as two tripwires at different heights. The daily tripwire sits closer to where you are trading today. The maximum tripwire sits further away, but it never moves out of the way — and once you cross it, there is no second chance on that account.
+Think of the two floors as two tripwires at different heights. The daily tripwire sits closer to where you're trading today. The maximum tripwire sits further away, but it never moves out of the way — cross it once and there's no second chance on that account.
 
 | | Daily loss limit | Maximum drawdown |
 |---|---|---|
@@ -51,9 +51,9 @@ The daily limit usually binds first on a bad day. That is a tendency, not a meas
 
 ### The maximum drawdown: typically 6–12%, never resets within an account's life, and ends the account outright
 
-The maximum drawdown caps how far the account can fall from its reference point over its entire life — evaluation or funded account alike. Published figures typically sit at 6–12% of account size. Unlike the daily limit, it never resets within an account's life. A new day, a new week, or a profitable run does not restore maximum-drawdown room you have already used. Losses only shrink that room; under a static floor, profits widen the buffer above it.
+The [maximum drawdown](/articles/maximum-drawdown/) caps how far the account can fall from its reference point over its entire life — evaluation or funded account alike. Published figures typically sit at 6–12% of account size. Unlike the daily limit, it never resets within an account's life. A new day, a new week, or a profitable run does not restore maximum-drawdown room you have already used. Losses only shrink that room; under a static floor, profits widen the buffer above it.
 
-That permanence is what makes the maximum floor the more dangerous of the two over a long challenge. The daily floor forgives you tomorrow. The maximum floor does not forgive you at all.
+That permanence is what makes the maximum floor the more dangerous of the two over a long challenge. The daily floor forgives you tomorrow. The maximum floor never forgives you.
 
 One clarification on "never resets": it applies within an account's life. Whether a funded account starts with a fresh floor or carries the evaluation floor forward varies by firm and stage rules, and must be confirmed per firm — do not assume either transition. The table and sections above describe life within one account, not the transition between stages.
 
@@ -78,7 +78,7 @@ Hold those three numbers — $5,000 a day, $90,000 absolute floor, $22,000 buffe
 
 ## Do floating losses count? At most firms, yes — a wick through the floor ends the account
 
-This is the trap that ends accounts that "would have been fine." At most firms, floating — unrealised, open — losses count toward the drawdown floors, not just closed trades. If price wicks through your floor while a position is open, the account ends, even if price reverses minutes later. A triggered breach is not undone by a later recovery.
+This is the trap that ends accounts that "would have been fine." At most firms, floating — unrealised, open — losses count toward the drawdown floors, not just closed trades. If price wicks through your floor while a position is open, the account ends, even if price reverses minutes later. A triggered breach is never undone by a later recovery.
 
 There is a minority exception: some balance-based models count only closed trades. Under such a model, an open position dipping below the floor would not by itself trigger a breach until the loss is realised. That exception is exactly why you must confirm which measurement your firm uses before your first trade. Never assume floating losses do not count — at most firms, they do, and assuming otherwise is how an account ends on a wick.
 
@@ -119,7 +119,7 @@ A trailing floor is defined by the peak, not by the start. The formula is simple
 
 **Trailing floor = highest account peak − trailing limit**
 
-Once the peak rises, the floor rises with it. When the account pulls back, the floor stays where the peak put it. It never moves back down to give you room again. In other words, under a trailing floor, you do not just have to avoid losing too much — you have to avoid giving back too much of what you have already made.
+Once the peak rises, the floor rises with it. When the account pulls back, the floor stays where the peak put it — it never moves back down to give you room again. Under a trailing floor, you don't just have to avoid losing too much. You have to avoid giving back too much of what you've already made.
 
 ## A separate trailing illustration, labelled as a different model: peak $108,000, floor $101,520
 
@@ -131,7 +131,7 @@ $108,000 − 6% of $108,000 ($6,480) = **$101,520**
 
 Now the account pulls back. If it falls to $101,500, it has breached the floor — by just $20 — and the account ends. Yet $101,500 is still $1,500 above the $100,000 starting balance. The trader is **up 1.5% overall and has still failed**.
 
-That is the trailing-floor trap in its purest form: profitability is not safety. Under a trailing floor, the question is never just "am I up?" It is "how far have I fallen from my peak?"
+That's the trailing-floor trap in its purest form: profitability is not safety. Under a trailing floor, the question is never just "am I up?" It's "how far have I fallen from my peak?"
 
 A smaller version of the same trap shows how tight the maths gets. On a $50,000 account with a $2,000 trailing limit, a peak of $53,000 gives a floor of $53,000 − $2,000 = **$51,000**. A give-back of $2,001 from the peak — to $50,999 — breaches the floor, even though the account is still almost at its starting balance.
 
@@ -220,7 +220,7 @@ Stated plainly, a breach costs three things:
 
 On a funded account, one further question must not be left silent: whether accrued profits or pending payouts survive a maximum-drawdown breach varies by contract and must be confirmed — do not assume payouts are kept, and do not assume they are automatically lost. Read your contract for this point specifically before you trade funded.
 
-That cost structure is also why drawdown discipline matters more than any single trade idea. The downside of a breach is not a bad day — it is the loss of the account, the fee, and the time invested in it, with no guarantee of a cheap route back.
+That's also why drawdown discipline matters more than any single trade idea. A breach doesn't cost you a bad day. It costs you the account, the fee, and the time you put into it — with no guarantee of a cheap way back.
 
 ## How to calculate your remaining drawdown room before a trade
 
@@ -260,7 +260,7 @@ Before a single trade, get written answers — from the firm's current published
 
 How to verify, concretely: start on the firm's rules or FAQ page, then check the dashboard account panel for your account's own limits, and check the platform server clock for the rollover time rather than assuming your local midnight. Search for the exact terms "daily loss limit," "trailing drawdown," "equity vs balance," "live/intraday," and "end-of-day" — if a term returns no clear answer for your account type and stage, that answer is not yet verified.
 
-If any answer is unclear, do not trade until it is clear. Every drawdown story that ends badly starts with one of these three questions unanswered.
+If any answer is unclear, don't trade until it is clear. Every drawdown story that ends badly starts with one of these three questions unanswered.
 
 <figure class="article-visual" data-reveal>
 <svg viewBox="0 0 680 340" role="img" aria-label="Pre-first-trade checklist graphic listing three questions: which floor is which, does the floor move and on what measurement, and is a breach a hard fail or a soft stop." class="viz">
@@ -275,17 +275,17 @@ If any answer is unclear, do not trade until it is clear. Every drawdown story t
 
 ## The sizing bridge: your daily limit is your risk budget
 
-The floors decoded here are not abstract. They are your risk budget. The daily limit, in particular, constrains every trade you place that day: the companion article on risk per trade to pass a challenge (the October 27 morning article, referenced here in plain text as it is not yet live) sizes backward from the daily limit, using a 0.5% default and a 1% ceiling for risk per trade. Those figures are framed explicitly as that companion article's derived guideline — a practitioner consensus, not a rule set by any firm or regulator — and they are cited here only as the companion's guideline.
+The floors decoded here are not abstract. They are your risk budget. The daily limit, in particular, constrains every trade you place that day: the [companion article on risk per trade to pass a challenge](/articles/how-much-to-risk-per-trade-to-pass-a-prop-firm-challenge/) sizes backward from the daily limit, using a 0.5% default and a 1% ceiling for risk per trade. Those figures are framed explicitly as that companion article's derived guideline — a practitioner consensus, not a rule set by any firm or regulator — and they are cited here only as the companion's guideline.
 
-That bridge is why this decoder comes first. You cannot size sensibly until you know which floor binds, whether it moves, and what crossing it costs. Once you know the floors, sizing becomes arithmetic: room divided by risk per trade, checked against both floors, before every trade.
+That's why this decoder comes first. You can't size sensibly until you know which floor binds, whether it moves, and what crossing it costs. Once you know the floors, sizing is arithmetic: room divided by risk per trade, checked against both floors, before every trade.
 
 Add one behavioural guardrail on top of the arithmetic — a personal circuit-breaker: stop trading for the day at half the daily room. On the anchor account that means stopping at $2,500 of daily loss, well before the firm's $5,000 floor. A circuit-breaker answers "how to avoid breaching" in behaviour, not just in maths: it leaves a buffer for costs, for a wick, and for the judgement errors that cluster after losses.
 
-For the general sizing maths behind that arithmetic, the live [position-sizing article](/articles/position-sizing/) and the live [risk-of-ruin article](/articles/risk-of-ruin-trading/) cover position sizing and the ruin mathematics of repeated losses. And if you are weighing whether a challenge is worth taking at all, the follow-up article "Are Prop Firms Worth It?" (October 28, referenced here in plain text as it is not yet live) takes up that decision directly.
+For the general sizing maths behind that arithmetic, the live [position-sizing article](/articles/position-sizing/) and the live [risk-of-ruin article](/articles/risk-of-ruin-trading/) cover position sizing and the ruin mathematics of repeated losses. And if you are weighing whether a challenge is worth taking at all, the follow-up article ["Are Prop Firms Worth It?"](/articles/are-prop-firms-worth-it-the-traders-math/) takes up that decision directly.
 
 ## Risks and limitations: what this decoder cannot tell you
 
-This article decodes rule mechanics. It cannot tell you your firm's exact current rules, because those figures are published ranges here (daily typically 4–5%, maximum typically 6–12%), not any named firm's current rulebook, and they change. Lock points, rollover zones, and soft-versus-hard setups vary by firm, stage, and account type. Always read your firm's current published rules for your exact account before trading.
+This article decodes rule mechanics. It can't tell you your firm's exact current rules — the figures here are published ranges (daily typically 4–5%, maximum typically 6–12%), not any named firm's current rulebook, and they change. Lock points, rollover zones, and soft-versus-hard setups vary by firm, stage, and account type. Always read your firm's current published rules for your exact account before trading.
 
 This article is education about rule mechanics. It is not a guarantee of passing any challenge, not a trading recommendation, and not legal advice on any firm's contract. Individual contracts vary, and the general description of breach costs here does not replace reading yours.
 
