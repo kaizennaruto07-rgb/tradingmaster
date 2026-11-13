@@ -1,7 +1,7 @@
 ---
 title: "After Muhurat Trading: Settlement, Charges, and the Holiday Gap (2026)"
-description: "Muhurat Trading 2026 settlement: Sun Nov 8 trades settle T+1 on Mon Nov 9, normal-day charges, Tue Nov 10 holiday gap. Timeline, charge stack, worked example."
-meta_description: "Muhurat Trading 2026 settlement: Sun Nov 8 trades settle T+1 on Mon Nov 9, normal-day charges, Tue Nov 10 holiday gap. Timeline, charge stack, worked example."
+description: "Muhurat Trading 2026 trades settle T+1 on Mon 9 Nov, normal-day charges, Tue 10 Nov a holiday. Full charge stack, worked example, and the BTST question."
+meta_description: "Muhurat Trading 2026 trades settle T+1 on Mon 9 Nov, normal-day charges, Tue 10 Nov a holiday. Full charge stack, worked example, and the BTST question."
 date: 2026-10-24
 author: Kaizen
 tag: "Muhurat trading · Indian markets"
@@ -12,7 +12,7 @@ keywords: ["muhurat trading settlement", "when will shares bought during muhurat
 
 The Muhurat session is one hour. Your ledger doesn't end when it does. Every order that fills between the opening bell on Sunday, November 8 and the trade-modification cutoff at 4:15 PM IST carries full settlement obligations, exactly like a regular trading day: shares move, money moves, and every charge in the normal-day stack applies. The *intent* of Muhurat trading is ceremonial and auspicious. The consequences are financial.
 
-This article answers the questions that start the moment the hour ends: when will your shares and money actually move, what will it cost, can you sell on Monday, and what does the Diwali holiday gap mean for any position you carry.
+This article answers the questions that start the moment the hour ends: when will your shares and money actually move, what will it cost, can you sell on Monday — and what does the Diwali holiday gap mean for any position you carry?
 
 ## The Short Answer: Your Muhurat Trades Are Real Trades
 
@@ -24,7 +24,7 @@ This article answers the questions that start the moment the hour ends: when wil
 
 ## Nov 8 → Nov 9 → Nov 10: The Day-by-Day Timeline
 
-Most ranking pages still claim the market stays closed the day after Diwali. For 2026, that is wrong. The calendar is Sunday session → Monday settlement and trading → Tuesday holiday.
+Most ranking pages still claim the market stays closed the day after Diwali. For 2026, that's wrong. The calendar is Sunday session → Monday settlement and trading → Tuesday holiday.
 
 For reference, the session windows on November 8: main session 2:20–3:30 PM IST (CAS securities close 3:15 PM), block deals 1:50–2:05 PM, pre-open 2:05–2:20 PM, post-close 3:50–4:00 PM, trade-modification cutoff 4:15 PM — per circulars NSE/CMTR/76941 and BSE 20261019-9, both dated 19-Oct-2026. (Full session mechanics live in our [Muhurat Trading 2026 timings guide](/articles/muhurat-trading-2026/).)
 
@@ -66,11 +66,11 @@ For reference, the session windows on November 8: main session 2:20–3:30 PM IS
 
 ### Sunday, Nov 8: The Muhurat Session
 
-Both buying and selling are allowed — Muhurat trading is not buy-only. Confirmed 2026 segments include NSE equity, equity derivatives, currency derivatives, commodity derivatives, EGR, and SLB, and BSE equity, commodity derivatives, EGR, and RFQ (per the October 19 exchange announcements). Once the trade-modification cutoff passes at 4:15 PM, your trades join the clearing pipeline like any other day's trades.
+Both buying and selling are allowed — Muhurat trading is not buy-only. Confirmed 2026 segments include NSE equity, equity derivatives, currency derivatives, commodity derivatives, EGR, and SLB, and BSE equity, commodity derivatives, EGR, and RFQ (per the October 19 exchange announcements). Once the trade-modification cutoff passes at 4:15 PM, your trades join the clearing pipeline like any other day's.
 
 ### Monday, Nov 9: Normal Trading Day and T+1 Settlement Date
 
-November 9 is **not** a holiday on NSE or BSE — it appears on neither exchange's 2026 trading-holiday list nor on NSE Clearing's settlement-holiday list. It is a full working clearing day, and the NSE Clearing November 2026 settlement calendars explicitly map trades executed on 08-Nov-26 to settlement on 09-Nov-26. This is the day shares bought on Sunday are credited toward demat and sale proceeds from Sunday sales are paid out — and it is also the earliest day you can place fresh sell orders on your Muhurat-session holdings in the normal market, subject to the BTST/broker-credit rules below.
+November 9 is **not** a holiday on NSE or BSE — it appears on neither exchange's 2026 trading-holiday list nor NSE Clearing's settlement-holiday list. It is a full working clearing day, and the NSE Clearing November 2026 settlement calendars explicitly map trades executed on 08-Nov-26 to settlement on 09-Nov-26. This is the day shares bought on Sunday are credited toward demat and sale proceeds from Sunday sales are paid out — and it is also the earliest day you can place fresh sell orders on your Muhurat-session holdings in the normal market, subject to the BTST/broker-credit rules below.
 
 ### Tuesday, Nov 10: Trading Holiday (Diwali–Balipratipada)
 
@@ -78,11 +78,11 @@ November 10 is a trading holiday on NSE and BSE across equity and derivatives se
 
 ## How T+1 Settlement Works for a Sunday Session
 
-T+1 means trade date plus one *business* day. Your trade date is Sunday, November 8 — but the exchange is not open on a normal Sunday schedule, so the clearing clock starts from the session itself and settles on the next business day, Monday, November 9.
+T+1 means trade date plus one *business* day. Your trade date is Sunday, November 8 — but the exchange doesn't run a normal Sunday schedule, so the clearing clock starts from the session itself and settles on the next business day, Monday, November 9.
 
 In plain words:
 
-- **Buy shares on Nov 8** → the seller's broker delivers the shares through the clearing corporation, and they are credited toward your demat account on **Monday, Nov 9**. Until then, you hold what the market calls a "T+1 due" entitlement — the shares are yours, they just haven't completed the journey.
+- **Buy shares on Nov 8** → the seller's broker delivers the shares through the clearing corporation, and they're credited toward your demat account on **Monday, Nov 9**. Until then, you hold what the market calls a "T+1 due" entitlement — the shares are yours, they just haven't completed the journey.
 - **Sell shares on Nov 8** → the sale proceeds are credited to your broker account on **Monday, Nov 9** (subject to your broker's own payout schedule).
 - **The Nov 10 holiday changes nothing for Nov 8 trades** — they are already settled on Nov 9. The holiday only affects trades done *on* Nov 9, which settle on Wednesday, Nov 11 (T+1 after the holiday).
 
@@ -117,7 +117,7 @@ In plain words:
 
 ## What a Muhurat Trade Costs: The Full Charge Stack
 
-Are brokerage charges different in Muhurat trading? **No.** Standard charges apply — brokerage, STT, exchange transaction charges, SEBI charges, GST, and stamp duty are identical to any normal trading day. (One-off Diwali brokerage reversals ran in past years as one-time gestures; do not assume any 2026 discount.)
+Are brokerage charges different in Muhurat trading? **No.** Standard charges apply: brokerage, STT, exchange transaction charges, SEBI charges, GST, and stamp duty are identical to any normal trading day. (One-off Diwali brokerage reversals ran in past years as one-time gestures; do not assume any 2026 discount.)
 
 Here is the full charge stack for equity delivery, with verified rates (2026):
 
@@ -181,27 +181,27 @@ A fully computed round trip: buy shares worth ₹1,00,000 in the Muhurat session
 
 **Round-trip statutory cost: ₹118.74 + ₹103.74 = ₹222.48** (excluding DP charge and brokerage). Add the DP debit — e.g., ₹13.50 + 18% GST = ₹15.93 — and a typical round trip lands around **₹238**. Exact figures vary slightly with your broker's DP rate and transaction-charge rounding, so treat this as the honest estimate, not your contract note.
 
-The takeaway for symbolic trading: even a small "token" trade carries a fixed cost floor of roughly ₹220–240 per round trip. If your symbolic buy is small, the charges take a visible bite. Log every rupee — our guide on [what to track beyond P&L in your trading journal](/articles/trading-journal-what-to-track-beyond-pnl/) is built for exactly this.
+The takeaway for symbolic trading: even a small "token" trade carries a fixed cost floor of roughly ₹220–240 per round trip. The smaller your symbolic buy, the bigger the bite the charges take. Log every rupee — our guide on [what to track beyond P&L in your trading journal](/articles/trading-journal-what-to-track-beyond-pnl/) is built for exactly this.
 
 ## Intraday Positions: Squared Off Before the Session Ends
 
-Intraday (MIS) positions taken during the Muhurat session are squared off before the session ends — brokers typically auto-square-off around 10 minutes before the 3:30 PM close. You cannot carry an intraday position overnight, and you cannot "hold it for tomorrow."
+Intraday (MIS) positions taken during the Muhurat session are squared off before the session ends — brokers typically auto-square-off about 10 minutes before the 3:30 PM close. You cannot carry an intraday position overnight, and you cannot "hold it for tomorrow."
 
-Note the 2026 twist: older articles warn that you can't exit the next day because the market stays closed — but for 2026, **tomorrow (November 9) is a normal trading day anyway**. The rule stands regardless: intraday products are pure intraday. If your broker's RMS fails to find a counterparty in the thin 1-hour session, some brokers convert unsquared positions to delivery with full margin implications — one more reason not to size an intraday trade as if it can wait. Muhurat intraday carries normal-day charges: STT 0.025% on the sell side only (unchanged by Budget 2026; verified 2026-10-24).
+Note the 2026 twist: older articles warn you can't exit the next day because the market stays closed — but for 2026, **tomorrow (November 9) is a normal trading day anyway**. The rule stands regardless: intraday products are pure intraday. If your broker's RMS fails to find a counterparty in the thin 1-hour session, some brokers convert unsquared positions to delivery with full margin implications — one more reason not to size an intraday trade as if it can wait. Muhurat intraday carries normal-day charges: STT 0.025% on the sell side only (unchanged by Budget 2026; verified 2026-10-24).
 
 ## Can You Sell Your Muhurat-Session Shares on Monday, Nov 9?
 
-Yes — with a caveat. Shares bought as delivery (CNC) on Sunday, November 8 can generally be sold on Monday, November 9 before demat credit — this is a BTST-style sale (buy today, sell tomorrow, without taking delivery). But this is **broker-dependent**: BTST policies vary across brokers, and at least one major broker has discontinued BTST entirely. It never applies to T2T stocks or MTF (margin-funded) holdings, and the standard BTST risk applies: if the seller fails to deliver your Monday sale on time, you face an auction penalty.
+Yes — with a caveat. Shares bought as delivery (CNC) on Sunday, November 8 can generally be sold on Monday, November 9 before demat credit. That's a BTST-style sale: buy today, sell tomorrow, without taking delivery. But this is **broker-dependent**: BTST policies vary across brokers, and at least one major broker has discontinued BTST entirely. It never applies to T2T stocks or MTF (margin-funded) holdings, and the standard BTST risk applies: if the seller fails to deliver your Monday sale on time, you face an auction penalty.
 
-The honest answer: possible where your broker permits — **check your broker before assuming** (this specific point could not be verified against a 2026 Muhurat-specific broker policy statement, so broker confirmation is the ground truth). If your broker allows it, your Monday sale follows the normal T+1 path and settles Wednesday, November 11, after the Tuesday holiday. And the natural follow-up — can you redeploy those Monday sale proceeds into fresh trades the same day? Sale proceeds from a Monday Nov 9 sale may not be redeployable for fresh trades until the sale settles on Wednesday, Nov 11 — this is broker-dependent, so **check your broker** before planning a Monday redeploy.
+The honest answer: possible where your broker permits — **check your broker before assuming**. This point couldn't be verified against a 2026 Muhurat-specific broker policy statement, so broker confirmation is the ground truth. If your broker allows it, your Monday sale follows the normal T+1 path and settles Wednesday, November 11, after the Tuesday holiday. And the natural follow-up — can you redeploy those Monday sale proceeds into fresh trades the same day? Sale proceeds from a Monday Nov 9 sale may not be redeployable for fresh trades until the sale settles on Wednesday, Nov 11 — this is broker-dependent, so **check your broker** before planning a Monday redeploy.
 
 ## Open F&O Positions Over the Holiday Gap
 
-If you carry F&O positions through the Muhurat weekend, here is what is verified and what is not.
+If you carry F&O positions through the Muhurat weekend, here's what's verified — and what isn't.
 
-**Verified:** positions carry forward from Sunday, November 8 through Monday, November 9 into the Tuesday, November 10 holiday. No mark-to-market settlement happens on the holiday itself — your open positions simply sit, and the market reopens Wednesday, November 11.
+**Verified:** positions carry forward from Sunday, November 8 through Monday, November 9 and into the Tuesday, November 10 holiday. No mark-to-market settlement happens on the holiday itself — your open positions simply sit, and the market reopens Wednesday, November 11.
 
-**Verified and important:** the Nifty weekly expiry that would have fallen on the Tuesday holiday is **shifted to Monday, November 9** (the previous trading day). Anyone holding Nifty weekly contracts into the Muhurat weekend is holding into an expiry day on November 9 — expiry-day volatility applies, and ITM options exercised on expiry attract STT of 0.15% on intrinsic value under Budget 2026. (BSE's Sensex weekly expiry, which falls on Thursday, is unaffected.) This is a leverage and expiry-risk disclosure, not a trading suggestion: expiry-day moves can be sharp, and the shifted expiry compresses your reaction window. A short Nifty weekly carried from Sunday meets expiry at Monday's open as well — the compressed reaction window and expiry-day volatility apply equally to writers.
+**Verified and important:** the Nifty weekly expiry that would have fallen on the Tuesday holiday is **shifted to Monday, November 9** (the previous trading day). Anyone holding Nifty weekly contracts into the Muhurat weekend is holding into an expiry day on November 9 — expiry-day volatility applies, and ITM options exercised on expiry attract STT of 0.15% on intrinsic value under Budget 2026. (BSE's Sensex weekly expiry, which falls on Thursday, is unaffected.) That's a leverage and expiry-risk disclosure, not a trading suggestion: expiry-day moves can be sharp, and the shifted expiry compresses your reaction window. A short Nifty weekly carried from Sunday meets expiry at Monday's open as well — the compressed reaction window and expiry-day volatility apply equally to writers.
 
 **Not verifiable — stated honestly:** no primary source confirms any Muhurat-specific or November-2026-specific margin or holiday-gap treatment from the exchanges. Beyond "positions carry, no MTM on the holiday," the exact margin mechanics are broker/RMS-dependent. The conservative reading: carry a full margin buffer (SPAN + exposure) through the gap, expect gap risk on the November 11 reopen, and confirm the exact treatment with your broker before the session. We will not invent margin numbers here.
 
@@ -211,16 +211,16 @@ If you carry F&O positions through the Muhurat weekend, here is what is verified
 - **Gap risk over the Nov 10 holiday:** no MTM settlement and no exit on Tuesday. Any position open on Monday evening reopens into Wednesday's market.
 - **BTST short-delivery risk:** selling Monday before demat credit is only as safe as your broker's delivery chain. If your Monday sale fails to deliver, the exchange runs an auction — and the penalty can be materially larger than the trade's profit. Check your broker's auction charge schedule before treating this as a small risk.
 - **Thin-session intraday risk:** a 1-hour session can mean wider spreads and weaker liquidity; an unsquared intraday position may be converted by RMS with margin consequences.
-- **Charges on small symbolic trades:** ~₹220–240 round trip on a ₹1,00,000 delivery round trip — proportionally worse the smaller your "token" trade. There are no Muhurat discounts to soften this.
+- **Charges on [small symbolic trades](/articles/position-sizing-for-small-accounts/):** ~₹220–240 round trip on a ₹1,00,000 delivery round trip — proportionally worse the smaller your "token" trade. There are no Muhurat discounts to soften this.
 - **Broker dependence:** BTST availability, DP charge (₹13–25 + GST per scrip), and intraday square-off cutoffs all vary by broker. "Check your broker" is the actual instruction.
 
 If the short ceremonial window is pulling you toward impulsive orders, read our piece on [FOMO trading](/articles/fomo-trading/) before the session — the hour is short by design.
 
 ## Symbolic Intent, Real Ledger
 
-So: is Muhurat trading only symbolic? The *intent* is symbolic — a ceremonial, auspicious start to Samvat 2083. But the trades are fully real: they carry standard settlement obligations, standard charges, and standard risk. Shares hit demat, money leaves the bank, settlement runs the standard T+1 cycle, and every charge applies — identical to any normal trading day.
+So: is Muhurat trading only symbolic? The *intent* is — a ceremonial, auspicious start to Samvat 2083. But the trades are fully real: standard settlement obligations, standard charges, standard risk. Shares hit demat, money leaves the bank, settlement runs the standard T+1 cycle, and every charge applies — identical to any normal trading day.
 
-If you're still weighing whether to place that first symbolic trade, our [Muhurat trading beginner's guide](/articles/muhurat-trading-beginners/) frames the decision. Once you trade, come back here — this timeline and charge stack are what the morning after looks like.
+If you're still weighing that first symbolic trade, our [Muhurat trading beginner's guide](/articles/muhurat-trading-beginners/) frames the decision. Once you trade, come back here — this timeline and charge stack are what the morning after looks like.
 
 ## Frequently Asked Questions
 
