@@ -3,8 +3,8 @@
   "@graph": [
     {
       "@type": "Article",
-      "headline": "Kelly Criterion Calculator for Traders",
-      "description": "Calculate the Kelly criterion from win rate and payoff ratio, with a ₹2,00,000 worked example, share conversion, and fractional Kelly guidance for traders.",
+      "headline": "Kelly Criterion Calculator: Full, Half & Quarter Kelly in ₹",
+      "description": "A 60% win rate at R=1.5 gives 33.33% full Kelly — ₹66,667 on ₹2,00,000. The formula, half and quarter Kelly, and how to turn Kelly % into shares, worked in ₹.",
       "author": {
         "@type": "Person",
         "@name": "Kaizen"
