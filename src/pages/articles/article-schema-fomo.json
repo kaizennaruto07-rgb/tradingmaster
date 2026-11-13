@@ -4,8 +4,8 @@
     {
       "@context": "https://schema.org",
       "@type": "Article",
-      "headline": "How to Stop FOMO Trading: The Chased-Entry Tax and the System That Beats It",
-      "description": "Learn how to stop FOMO trading with the priced FOMO tax, the resistance ledger, and a pre-session prevention system built for Indian F&O options traders.",
+      "headline": "How to Stop FOMO Trading: The ₹2,600 Chased-Entry Tax",
+      "description": "One chased Nifty entry costs ₹2,600 in worse price, a broken 1.5→0.67 R:R, and ₹68.76 in fees. The resistance ledger and 7-step system that stop the chase.",
       "author": {
         "@type": "Person",
         "name": "Kaizen"
