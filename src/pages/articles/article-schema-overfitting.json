@@ -4,8 +4,8 @@
     {
       "@context": "https://schema.org",
       "@type": "Article",
-      "headline": "How to Detect Overfitting in Trading Strategy (Before It Costs You Real Money)",
-      "description": "How to detect overfitting in a trading strategy: five tests — the cliff test, the landscape test, the dice-count, walk-forward testing, and the rationale test.",
+      "headline": "Overfitting in Trading Strategy: 5 Tests to Detect It",
+      "description": "Your backtest shows a 2.8 Sharpe — did it find an edge or memorise the past? Five tests: the cliff, landscape, dice-count, walk-forward, and rationale test.",
       "author": {
         "@type": "Person",
         "name": "Kaizen"
