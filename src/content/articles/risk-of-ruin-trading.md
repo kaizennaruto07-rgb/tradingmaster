@@ -1,7 +1,7 @@
 ---
-title: "Risk of Ruin in Trading: What It Is, How to Calculate It, and How to Survive It"
-description: "Risk of ruin: the probability your account dies before your edge pays. The formula, three worked examples, and the survival rules that keep traders alive."
-meta_description: "Risk of ruin: the probability your account dies before your edge pays. The formula, three worked examples, and the survival rules that keep traders alive."
+title: "Risk of Ruin in Trading: Formula, Examples & Calculator"
+description: "A winning strategy can still kill your account: at 10% risk, ruin is a 54% coin flip. Formula, three worked examples, and sizing rules that keep you alive."
+meta_description: "A winning strategy can still kill your account: at 10% risk, ruin is a 54% coin flip. Formula, three worked examples, and sizing rules that keep you alive."
 date: 2026-10-04
 author: Kaizen
 tag: "Trading mathematics · Risk"
@@ -16,9 +16,9 @@ keywords: ["risk of ruin trading", "risk of ruin calculator", "how to calculate 
 
 Risk of ruin is the probability that your trading account hits zero — or a loss threshold you define as ruin — before a winning strategy has enough trades for its edge to pay off.
 
-Here is the headline takeaway — the entire point of this article: **ruin is controlled by position size, not luck.** Two traders can run the exact same strategy, with the exact same win rate and the exact same entries, and one survives for years while the other blows up in a month. The difference is never the market. It is how much each of them risked per trade.
+Here's the whole article in one line: **ruin is controlled by position size, not luck.** Two traders can run the exact same strategy, with the exact same win rate and the exact same entries, and one survives for years while the other blows up in a month. The difference is never the market. It is how much each of them risked per trade.
 
-Risk of ruin turns that intuition into a number. It answers one question: *given my win rate, my average win versus my average loss, and the fraction of my account I risk on each trade — what are the odds this account eventually dies?* Once you can compute that number, every sizing decision stops being a feeling and becomes arithmetic.
+Risk of ruin turns that gut feeling into a number. It answers one question: *given your win rate, your average win and loss, and the share of your account you risk per trade — what are the odds this account eventually dies?* Once you can compute that, sizing stops being a feeling. It becomes arithmetic.
 
 ### A simple analogy: the coin-flip gambler with a finite wallet
 
@@ -39,7 +39,7 @@ Risk of ruin is computed from three inputs. Label each one before you touch the 
 - **Rp — payoff ratio.** Your average win divided by your average loss. A strategy that wins ₹2,000 on average and loses ₹1,000 on average has Rp = 2 (a 2:1 reward-to-risk).
 - **Risk fraction — the share of your account risked per trade.** Risking 2% per trade means a risk fraction of 0.02, and U = 1 / 0.02 = 50. Think of U as "how many consecutive losses it takes to lose the account" — the number of units your account is divided into.
 
-The formula — the one variant used consistently throughout this article:
+Here's the formula — the one version this article uses throughout:
 
 **A = (W × Rp − L) / (W × Rp + L)**
 
@@ -49,17 +49,17 @@ A is your edge compressed into a single number between −1 and 1. When A is pos
 
 One useful companion number: the **break-even win rate = 1 / (1 + R)**, where R is your reward-to-risk ratio. At 2:1, you break even winning just 1/(1+2) = 33.3% of trades. Anything above that, before costs, is edge.
 
-Notice what is missing from the formula: entries, indicators, timeframes, markets. Risk of ruin does not care *how* you generate your edge. It only cares that the edge exists and how aggressively you bet on it.
+Notice what's missing from the formula: entries, indicators, timeframes, markets. Risk of ruin doesn't care *how* you make your edge. It cares that the edge exists — and how hard you bet on it.
 
 ### Expectancy comes first: negative expectancy cannot be sized away
 
-Before computing ruin, compute expectancy:
+Before computing ruin, compute [expectancy](/articles/what-is-trading-expectancy/):
 
 **Expectancy = (win rate × average win) − (loss rate × average loss)**
 
 This is your expected profit per trade, in rupees. If it is positive, the strategy earns money per trade on average. If it is negative, the strategy loses money per trade on average — and **no position size on earth can fix that.** Look at the formula: with negative expectancy, the numerator of A (W × Rp − L) goes negative, and the whole ruin calculation collapses to 100%. Small bets do not save a losing strategy; they only make it die slower.
 
-This is the order of operations most traders get backwards. They ask "how much should I risk?" before asking "does this make money per trade?" The formula is blunt: positive expectancy is the entry ticket. Position sizing decides whether you survive long enough to collect.
+Most traders get this order backwards. They ask "how much should I risk?" before asking "does this make money per trade?" The formula is blunt: positive expectancy is the entry ticket. Sizing decides whether you survive long enough to collect.
 
 <figure class="article-visual" data-reveal>
 <svg viewBox="0 0 680 300" role="img" aria-label="Trading expectancy breakdown bar chart — average wins vs average losses vs costs per trade" class="viz viz-bars">
@@ -87,7 +87,7 @@ Traders mix up three different things. Keep them separate:
 - **Drawdown** is a *measurement of the past or present*: the peak-to-trough decline of your account, in percent. "I am down 20% from my high" is a drawdown. It is a fact, not a forecast — and a 20% drawdown does not mean your risk of ruin is 20%. The two numbers answer different questions.
 - **Going broke in real life** is the *event itself*, and it is messier than any formula. Margin calls, forced liquidation by your broker, topping up the account mid-drawdown (which the formula does not model), quitting in frustration at −40% — real ruin includes psychology and plumbing the math never sees.
 
-Risk of ruin is the cleanest of the three, which is exactly why you must remember what it leaves out. We will return to that in the limitations section.
+Risk of ruin is the cleanest of the three — which is exactly why you need to remember what it leaves out. The limitations section comes back to that.
 
 ### Why a 50% drawdown is almost ruin: the recovery asymmetry
 
@@ -252,7 +252,7 @@ Look at the shape of that table. It is not linear — it is exponential. Halving
 <figcaption>Same strategy (55% win rate, 1:1). Halving risk per trade crushes ruin exponentially — not linearly.</figcaption>
 </figure>
 
-This is the mathematical reason experienced traders sound almost religious about small position sizes. They are not being timid. They have seen this table. Once risk per trade drops into the low single digits, ruin does not get a little smaller — it falls off a cliff. The expensive direction is the other one: every extra percent of risk buys disproportionately more ruin.
+This is the mathematical reason experienced traders sound almost religious about small [position sizes](/articles/position-sizing/). They are not being timid. They have seen this table. Once risk per trade drops into the low single digits, ruin does not get a little smaller — it falls off a cliff. The expensive direction is the other one: every extra percent of risk buys disproportionately more ruin.
 
 ### Losing streaks are guaranteed; ruin from them is optional
 
@@ -263,7 +263,7 @@ With fixed-percentage sizing, losses compound:
 - At **1% risk per trade**, 10 consecutive losses cost 1 − 0.99^10 ≈ **9.6%** of the account. Painful. Survivable. You keep trading.
 - At **10% risk per trade**, the same 10 losses cost 1 − 0.90^10 ≈ **65%** of the account. You are now in recovery-asymmetry hell, needing ~186% gains to break even — and you are expected to keep executing the strategy flawlessly while staring at that hole.
 
-Same streak. Same strategy. The 1% trader experiences a bad month; the 10% trader experiences an event they may never recover from. **Losing streaks are guaranteed. Ruin from them is a choice you make when you set your size.**
+Same streak. Same strategy. The 1% trader experiences a bad month; the 10% trader experiences an event they may never recover from. **[Losing streaks](/articles/how-losing-streaks-affect-trading-accounts/) are guaranteed. Ruin from them is a choice you make when you set your size.**
 
 <figure class="article-visual" data-reveal>
 <svg viewBox="0 0 640 400" role="img" aria-label="Risk of ruin trading simulation — Monte Carlo equity curve fan showing ruin vs survival paths" class="viz">
@@ -376,7 +376,7 @@ You need about fifty to a hundred of your own trades — live or paper — with 
 
 50 trades gives a rough sketch, not a measurement — this is exactly why the pessimistic rerun is the real number you should trade on.
 
-A spreadsheet does all of this in minutes. And for the longer term: a dedicated **Risk of Ruin calculator is on the Monks Of Market roadmap** — a tool where you will plug in these three inputs and get your number instantly. It is not live yet; the six steps above work with any spreadsheet today.
+A spreadsheet does all of this in minutes. Or skip the spreadsheet: our free [risk of ruin calculator](/tools/risk-of-ruin/) runs the same math instantly — plug in your win rate, payoff and risk per trade and get your number.
 
 ## Frequently Asked Questions
 
