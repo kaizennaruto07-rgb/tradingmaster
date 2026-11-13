@@ -1,7 +1,7 @@
 ---
-title: "Crypto Futures Funding Rates, Explained: What It Actually Costs You to Hold a Leveraged Position"
-description: "Funding a 10,000 USDT perpetual at 10x costs about 3 USDT a day at baseline rates — 9% of margin over a month. How funding works, when it settles in IST, and how to plan the holding cost before you enter."
-meta_description: "Funding a $10,000 crypto perpetual at 10x costs ~3 USDT/day at a 0.01% 8-hour rate. How funding works, when it settles in IST, and how to plan holding costs."
+title: "Crypto Futures Funding Rate: What It Costs to Hold"
+description: "A 10,000 USDT perpetual at 10x costs ~3 USDT a day in funding at baseline rates — 9% of your margin a month. Who pays whom, IST settlement times, and the cap."
+meta_description: "A 10,000 USDT perpetual at 10x costs ~3 USDT a day in funding at baseline rates — 9% of your margin a month. Who pays whom, IST settlement times, and the cap."
 date: 2026-10-03
 author: Kaizen
 tag: "Crypto futures · Funding"
@@ -14,15 +14,15 @@ keywords: ["crypto futures funding rate", "funding rate explained", "Delta Excha
 
 Take a concrete example: you open a 10,000 USDT perpetual futures position at 10x leverage. That is 1,000 USDT of your own margin. If the funding rate holds steady at 0.01% per 8-hour period, you pay **1.00 USDT every 8 hours**, which works out to **3.00 USDT per day**, roughly **90 USDT over 30 days** — about **9% of your margin**, gone to holding costs alone.
 
-One caveat before the math: this is an *illustrative constant-rate scenario*. Real funding rates are recalculated every 8 hours, they change with market conditions, and today's rate is not a forecast of tomorrow's. You cannot lock a rate in.
+One caveat before the math: this is an *illustrative constant-rate scenario*. Real funding rates are recalculated every 8 hours, they change with market conditions, and today's rate is not a forecast of tomorrow's. You can't lock a rate in.
 
-In one line: **funding is a recurring payment exchanged between long and short traders in perpetual futures, charged on your full position size, that keeps the futures price anchored to the spot price.** Everything else in this article is about what that payment actually costs you — and how to plan for it before you enter a trade.
+In one line: **funding is a recurring payment exchanged between long and short traders in perpetual futures, charged on your full position size, that keeps the futures price anchored to the spot price.** The rest of this article is about what that payment actually costs you — and how to plan for it before you enter a trade.
 
 ### A quick rule of thumb: funding is charged on notional, not margin
 
-**Funding is calculated on your full notional position size, not on your margin** — remember this above everything else in this article. On a 10,000 USDT position, you pay funding on 10,000 USDT — even though you only deposited 1,000 USDT of margin at 10x.
+**Funding is calculated on your full notional position size, not on your margin** — remember this above everything else here. On a 10,000 USDT position, you pay funding on 10,000 USDT — even though you only deposited 1,000 USDT of margin at 10x.
 
-Leverage therefore multiplies funding as a percentage of your margin. At 1x, that 3.00 USDT/day is 0.03% of your capital. At 10x, it is 0.3% of your margin *per day* — which is why multi-day leveraged positions bleed quietly. The more leverage you use, the faster funding eats the capital you posted. Whenever you see a funding rate, multiply it by your leverage to feel what it really costs.
+Leverage therefore multiplies funding as a percentage of your margin. At 1x, that 3.00 USDT/day is 0.03% of your capital. At 10x, it's 0.3% of your margin *per day* — which is why multi-day leveraged positions bleed quietly. The more leverage you use, the faster funding eats the capital you posted. Whenever you see a funding rate, multiply it by your leverage to feel what it really costs.
 
 ## What a funding rate is and why perpetuals need one
 
@@ -30,7 +30,7 @@ Traditional futures contracts have an expiry date. At expiry, the futures price 
 
 Funding is the mechanism that keeps them tethered. It is a small recurring payment that transfers value between traders on opposite sides of the market. When perps trade above spot (a premium), the payment flows one way; when they trade below spot (a discount), it flows the other. The direction and size of the payment nudges traders to take positions that pull the perp price back toward spot.
 
-Two things worth being clear about:
+Two things worth getting clear:
 
 - **Funding is peer-to-peer.** Longs pay shorts, or shorts pay longs. The exchange does not take a cut of the payment — it merely calculates and routes it.
 - **Funding is the price of holding, not a fee for trading.** You pay trading fees (maker/taker) when you open and close. Funding is what the open position itself costs you while you keep it alive.
@@ -63,7 +63,7 @@ On Delta Exchange, the funding rate is computed at three fixed times each day:
 | 08:00 | **13:30** | Next 8 hours |
 | 16:00 | **21:30** | Next 8 hours |
 
-So the rate calculated at 05:30 IST covers the next eight hours of your position, then it is recalculated at 13:30 IST, and again at 21:30 IST. When you read a funding rate on the contract's page, you are reading the rate computed at the most recent of these three timestamps. Three cycles per day is also why per-day math in this article multiplies the 8-hour rate by three.
+So the rate calculated at 05:30 IST covers the next eight hours of your position, then it's recalculated at 13:30 IST, and again at 21:30 IST. When you read a funding rate on the contract's page, you're reading the rate computed at the most recent of these three timestamps. Three cycles per day is also why per-day math in this article multiplies the 8-hour rate by three.
 
 ### Delta settles funding continuously, not in one 8-hour charge
 
@@ -73,7 +73,7 @@ The formula per minute is:
 
 > **Payment per minute = Position Value × Funding Rate × 1/480**
 
-(480 is the number of minutes in 8 hours.) Add up 480 of those minute-by-minute payments and you get exactly the full 8-hour charge. In practice this means your funding cost accrues steadily the whole time your position is open — there is no settlement-timestamp trick where you can dodge a payment by closing a minute early, and no free ride for entering a minute after. Hold the position, pay the rate, second by second. This makes the continuous model more honest than discrete settlement — but do **not** assume it is universal. Other exchanges settle in discrete 8-hour chunks, and the behavior differs.
+(480 is the number of minutes in 8 hours.) Add up 480 of those minute-by-minute payments and you get exactly the full 8-hour charge. In practice this means your funding cost accrues steadily the whole time your position is open — there's no settlement-timestamp trick where you can dodge a payment by closing a minute early, and no free ride for entering a minute after. Hold the position, pay the rate, second by second. This makes the continuous model more honest than discrete settlement — but do **not** assume it's universal. Other exchanges settle in discrete 8-hour chunks, and the behavior differs.
 
 ## Worked example: a 10x long held for 1 day, 7 days, and 30 days
 
@@ -92,13 +92,13 @@ The short side is the mirror image: if the rate were −0.01% and you were short
 | 7 days (21 periods) | 21.00 USDT | 2.10% |
 | 30 days (90 periods) | 90.00 USDT | 9.00% |
 
-Look at that last row carefully. After 30 days of holding, funding alone has consumed **9% of your margin** — and the market has not moved against you by even a single tick, nor have you paid any trading fees. The market can move sideways, your trade can be "correct" in direction, and funding still grinds your account down every eight hours. That is the reality of a carrying cost levied on full notional with leverage on top.
+Look at that last row carefully. After 30 days of holding, funding alone has consumed **9% of your margin** — and the market hasn't moved against you by even a single tick, nor have you paid any trading fees. The market can move sideways, your trade can be "correct" in direction, and funding still grinds your account down every eight hours. That's the reality of a carrying cost levied on full notional with leverage on top.
 
 For reference, the rate math itself (verified against Delta's documentation): the funding rate equals the average premium plus a clamped adjustment — `Rate = Avg Premium + clamp(Interest Rate − Avg Premium, 0.05%, −0.05%)`, where the average premium is the 8-hour time-weighted average of `(Mark Price − Index Price) / Index Price`, sampled per minute. Delta's interest rate is 0.01% per 8 hours, so whenever the premium sits between −0.04% and +0.06%, funding is exactly 0.01% per 8 hours — the baseline used above. (The clamp binds outside that band, which is why the flat zone isn't symmetric around zero.)
 
 ### Annualizing the baseline: 10.95% APR, up to ~109.5% at the cap
 
-Extend the baseline over a full year: 0.01% × 3 periods × 365 days = **10.95% APR**. That is the holding cost at baseline rates — already comparable to a personal loan.
+Extend the baseline over a full year: 0.01% × 3 periods × 365 days = **10.95% APR**. That's the holding cost at baseline rates — already comparable to a personal loan.
 
 But 0.01% is not the maximum. Delta caps the funding rate at **0.1% per 8-hour period** (set in May 2024; caps can differ per contract, so check the specific contract's specifications). Annualized at the cap:
 
@@ -108,7 +108,7 @@ Let that number sit with you. In a heated market where everyone is piled into on
 
 ## Funding vs trading fees: when holding costs more than the trade itself
 
-Trading fees are paid once per trade (entry + exit). Funding is paid continuously. So there is always a crossover point: a holding period short enough that fees dominate, and long enough that funding dominates. At the baseline 0.01% per 8 hours on a 10,000 USDT notional:
+Trading fees are paid once per trade (entry + exit). Funding is paid continuously. So there's always a crossover point: a holding period short enough that fees dominate, and long enough that funding dominates. At the baseline 0.01% per 8 hours on a 10,000 USDT notional:
 
 - Cumulative funding overtakes the **taker round-trip cost** after roughly **3.9 days**.
 - It overtakes the **maker round-trip cost** after roughly **1.6 days**.
@@ -127,7 +127,7 @@ Before every leveraged perp trade, run this checklist:
 
 1. **Check the current funding rate** on the contract you are trading — look for it on the contract ticker in Delta's trading terminal — not yesterday's, not last week's.
 2. **Convert it to a per-day cost in USDT** on your actual notional size: `notional × rate × 3`.
-3. **Stress-test at the cap** (0.1% per 8 hours): `notional × 0.001 × 3 × days held`. If the trade cannot survive that, your holding period is too long or your position is too big.
+3. **Stress-test at the cap** (0.1% per 8 hours): `notional × 0.001 × 3 × days held`. If the trade cannot survive that, your holding period is too long or your [position is too big](/articles/position-sizing/).
 4. **Cap your holding period** in the plan itself — decide in advance how many days of funding you are willing to pay, and what triggers an early exit.
 
 Funding is a known cost. Known costs belong in the plan, not in the post-mortem.
@@ -141,9 +141,9 @@ Funding is a known cost. Known costs belong in the plan, not in the post-mortem.
 
 ## Risks and limits: what funding math doesn't tell you
 
-A few things the numbers above do not capture, and you should know them before you trade:
+A few things the numbers above don't capture, and you should know them before you trade:
 
-- **Leverage can wipe capital fast.** All of the math here assumes your position survives. At 10x leverage, a 10% adverse move liquidates the position outright — funding becomes irrelevant when the margin is gone. Leveraged crypto derivatives can lose money fast; your capital is at risk.
+- **Leverage can wipe capital fast.** All of the math here assumes your position survives. At 10x leverage, a 10% adverse move liquidates the position outright — funding becomes irrelevant when the margin is gone. Leveraged crypto derivatives can lose money fast; your capital is at risk. The survival math behind this is in [Risk of Ruin in Trading](/articles/risk-of-ruin-trading/).
 - **Rates change every cycle and cannot be locked in.** There is no way to fix today's funding rate for a future holding period, and no reliable way to predict it. Any plan built on "funding will stay at 0.01%" is a hope, not a plan.
 - **Caps are per-contract and changeable.** The 0.1% cap cited above is Delta's general cap set in May 2024, but exceptions exist across contracts and terms can change. Check the specific contract's specifications before assuming any ceiling.
 - **Tax treatment is uncertain — talk to a CA.** How crypto futures profits and funding payments are taxed in India is disputed: some readings treat them under the 30% virtual-digital-asset regime, others as speculative business income with different set-off and rate implications. This article is not tax advice, and it does not take a side — consult a chartered accountant who understands derivatives before filing. The prevailing interpretation is that the 1% TDS provision (Section 194S) does **not** apply to futures contracts or funding payments, since no transfer of a virtual digital asset occurs — but confirm this with your CA as well.
