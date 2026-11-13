@@ -1,7 +1,7 @@
 ---
-title: "Profit Factor in Trading: What It Is, How to Calculate It, and What a Good One Looks Like"
-description: "Profit factor = gross profit ÷ gross loss. Learn profit factor formula, what a good PF looks like, and how Indian F&O charges drag a 1.35 backtest below 1.0."
-meta_description: "Profit factor = gross profit ÷ gross loss. Learn profit factor formula, what a good PF looks like, and how Indian F&O charges drag a 1.35 backtest below 1.0."
+title: "Profit Factor: Formula, Good Values & the Cost Trap"
+description: "A 1.35 profit factor looks solid — after Indian F&O costs it falls to 0.84. Formula, benchmark bands, and how to compute your real after-cost number."
+meta_description: "A 1.35 profit factor looks solid — after Indian F&O costs it falls to 0.84. Formula, benchmark bands, and how to compute your real after-cost number."
 date: 2026-10-09
 author: Kaizen
 tag: "Trading mathematics · Profit factor"
@@ -11,9 +11,9 @@ keywords: ["profit factor", "profit factor formula", "what is a good profit fact
 *Educational content only — not financial advice. Trading involves risk of loss.*
 
 
-If you have followed the Week 1 arc this far, you already know everything profit factor is made of. Win rate. Average win. Average loss. Costs. Profit factor takes those ingredients and folds them into a single number that tells you how efficiently your trading converts risk into return.
+If you've followed the Week 1 arc this far, you already know every ingredient profit factor is made of. Win rate. Average win. Average loss. Costs. Profit factor folds them into one number: how efficiently your trading converts risk into return.
 
-It is one of the most quoted statistics in strategy marketing — "our system has a profit factor of 3.5!" — and one of the least understood. This article fixes that: the exact definition, a formula error worth watching for, the benchmark bands that separate good from fragile, and the after-cost version of the number that actually decides whether your strategy survives in the Indian market.
+It's one of the most quoted numbers in strategy marketing — "our system has a profit factor of 3.5!" — and one of the least understood. This article fixes that: the exact definition, a formula error to watch for, the benchmark bands that separate good from fragile, and the after-cost version that actually decides whether your strategy survives in India.
 
 ## What Profit Factor Actually Is (and the Formula Error Worth Watching For)
 
@@ -37,11 +37,11 @@ One more check worth building into your habits: some formula boxes online get th
 
 ## The One Equation That Ties Week 1 Together
 
-Here is where the arc converges. Profit factor can be rewritten entirely in terms of numbers you already know from this week's articles:
+Here's where the arc converges. Profit factor can be rewritten entirely in numbers you already know from this week's articles:
 
 **PF = (w × a) ÷ ((1 − w) × b)**
 
-where **w** is your win rate, **a** is your average win, and **b** is your average loss — the same notation the break-even article used.
+where **w** is your win rate, **a** is your average win, and **b** is your average loss — the same notation the [break-even article](/articles/break-even-win-rate/) used.
 
 Why it works: gross profit is just (number of wins × average win), and gross loss is (number of losses × average loss). Divide both by the total number of trades and you get win rate times average win over loss rate times average loss. No new concepts. The same math, reframed.
 
@@ -49,7 +49,7 @@ Let's run the article #5 system through it: 30% win rate, 3:1 average payoff.
 
 PF = (0.30 × 3) ÷ (0.70 × 1) = 0.90 ÷ 0.70 ≈ **1.29**
 
-That system makes +20R per 100 trades — it is genuinely profitable, as that article established, and this number does not contradict that. But 1.29 sits in the marginal band you are about to read about, which is exactly why the honest verdict there was "profitable on paper, fragile after costs." The equation did not change the answer. It just gave you one more way to see it.
+That system makes +20R per 100 trades — genuinely profitable, as that article showed — and this number doesn't contradict that. But 1.29 sits in the marginal band you're about to read, which is exactly why the honest verdict was "profitable on paper, fragile after costs." The equation didn't change the answer. It just gave you one more way to see it.
 
 ## How to Calculate Profit Factor From Your Trade Journal
 
@@ -67,7 +67,7 @@ Let's do it with a realistic Indian F&O example — 100 intraday Nifty option tr
 | Losing trades | 50 losses × ₹444.44 average loss | ₹22,222 |
 | **Gross profit factor** | 30,000 ÷ 22,222 | **1.35** |
 
-That 1.35 is your *gross* PF. It is the headline number most tools and marketing screenshots show you. Keep reading, because it is not the number that matters.
+That 1.35 is your *gross* PF — the headline number most tools and marketing screenshots show you. Keep reading, because it's not the number that matters.
 
 <figure class="article-visual" data-reveal>
 <svg viewBox="0 0 680 500" role="img" aria-label="Profit factor comparison of two 100-trade Indian F&amp;O strategies in rupees, Strategy A vs Strategy B" class="viz">
@@ -192,7 +192,7 @@ One trade turned a losing strategy into a presentable one. This is also why scre
 </figure>
 ## The After-Cost Profit Factor: Your Real Number
 
-This is the signature section of the article, and the reason the gross PF you computed above is a draft, not a verdict.
+This is the section the article is really about — and the reason the gross PF you just computed is a draft, not a verdict.
 
 Every rupee of cost is a rupee added to your gross loss. The net formula, using the break-even article's cost notation (**c** = cost per trade, each win nets a − c, each loss costs b + c):
 
@@ -267,7 +267,7 @@ Here is the practical workflow this number exists for. Do not compute one PF for
 - Compute PF separately for each setup over the same sample minimum (see the FAQ on sample size).
 - Any setup with PF below 1.0 gets removed or fixed — not debated, not averaged into the good ones, not carried by hope.
 
-This is the journaling habit that turns profit factor from a trivia stat into an operating discipline. And it ties straight back to the first article in the arc: killing losing setups is not pessimism, it is survival — the same risk-of-ruin logic that says the blowup always comes from the part of your trading you refused to cut. Read that logic in full in the [risk of ruin article](/articles/risk-of-ruin-trading/).
+This is the [journaling](/articles/trading-journal-what-to-track-beyond-pnl/) habit that turns profit factor from a trivia stat into an operating discipline. And it ties straight back to the first article in the arc: killing losing setups is not pessimism, it is survival — the same risk-of-ruin logic that says the blowup always comes from the part of your trading you refused to cut. Read that logic in full in the [risk of ruin article](/articles/risk-of-ruin-trading/).
 
 ## What Profit Factor Does NOT Tell You
 
@@ -279,7 +279,7 @@ Profit factor is powerful but partial. Four limits worth internalizing:
 
 **3. Only compare similar strategies.** As established above: a scalper's 1.3 and a trend-follower's 1.8 are not comparable numbers. Different timeframes, different risk profiles, different cost structures.
 
-**4. Sample size gates everything.** Minimum **50 trades** before PF means anything; a real baseline needs **100+**. Below 50 is statistical noise — the same reason a 2.0 PF on twelve trades is a story, not a statistic.
+**4. [Sample size](/articles/how-many-trades-to-validate-a-strategy/) gates everything.** Minimum **50 trades** before PF means anything; a real baseline needs **100+**. Below 50 is statistical noise — the same reason a 2.0 PF on twelve trades is a story, not a statistic.
 
 One apparent tension, resolved: the break-even article tells you to check your realized average win and loss over your last 30 closed trades, while this article demands 50–100 for PF. Different purposes, no contradiction. The 30-trade check exists to expose a dishonest breakeven estimate — "am I fooling myself about my averages?" The 50–100-trade rule exists for trusting a PF baseline — "is this number stable enough to act on?" Expose the lie fast; trust the number slow.
 
