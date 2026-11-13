@@ -1,7 +1,7 @@
 ---
-title: "Options Trading Charges in India (2026): The Complete Cost Breakdown With a Real Worked Trade"
-description: "Buying and selling one NIFTY lot at a ₹100 premium costs roughly ₹63 in total charges. Here is every line of the bill — STT, brokerage, exchange fees, GST and stamp duty — and the true breakeven it creates."
-meta_description: "How much does an options trade really cost in India? STT, brokerage, exchange fees, GST and stamp duty explained with a rupee-by-rupee NIFTY trade example."
+title: "Options Trading Charges in India: ₹63 for One NIFTY Lot (2026)"
+description: "One NIFTY lot at ₹100 premium costs ~₹63 in total charges. Every line of the bill — STT, brokerage, exchange fees, GST, stamp duty — and the true breakeven."
+meta_description: "One NIFTY lot at ₹100 premium costs ~₹63 in total charges. Every line of the bill — STT, brokerage, exchange fees, GST, stamp duty — and the true breakeven."
 date: 2026-10-02
 author: Kaizen
 tag: "Indian options · Charges"
@@ -170,7 +170,7 @@ From the two worked examples:
 
 Put it in profit terms: if the buyer sells the ₹100 option at ₹120, the gross profit is (120 − 100) × 65 = ₹1,300, but the **net profit is ₹1,300 − ₹62.61 = ₹1,237.39**. The smaller the move, the more that gap matters — a ₹0.50 favourable move shows a "profit" on the screen but is a loss after charges.
 
-This is where an **options breakeven calculator** earns its keep: plug in the premium, lot size, and exchange before you trade, and it tells you the real number the trade has to beat. Anything that can't clear that number isn't a trade — it's a donation.
+This is where an [options breakeven calculator](/tools/options-cost/) earns its keep: plug in the premium, lot size, and exchange before you trade, and it tells you the real number the trade has to beat. Anything that can't clear that number isn't a trade — it's a donation.
 
 ## Estimate charges before you trade — and re-check what changes
 
@@ -197,7 +197,7 @@ Also note the framework limits: SEBI's F&O framework sets minimum contract sizes
 - STT hits the **sale** leg (0.15% of premium); stamp duty hits the **buy** leg (0.003%). Buyers and writers therefore pay different totals for the same premium.
 - All charges are computed on **premium turnover, never notional**. There are no DP charges in F&O.
 - True breakeven = entry premium ± per-share round-trip cost. A trade that can't clear it is a loss by design.
-- Around 9 in 10 individual F&O traders lose money (SEBI study, ~3 years to FY24). Estimate your costs, size for the worst case, and treat every trade as risk first.
+- Around 9 in 10 individual F&O traders lose money (SEBI study, ~3 years to FY24). Estimate your costs, [size for the worst case](/articles/position-sizing/), and treat every trade as risk first.
 
 ## Frequently Asked Questions
 
