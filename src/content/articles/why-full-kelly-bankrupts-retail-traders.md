@@ -1,7 +1,7 @@
 ---
-title: "Why Full Kelly Bankrupts Retail Traders"
-description: "Why full Kelly bankrupts retail traders: betting the optimal fraction on estimated win rates is systematic overbetting. Learn the trap and the survival ladder."
-meta_description: "Why full Kelly bankrupts retail traders: betting the optimal fraction on estimated win rates is systematic overbetting. Learn the trap and the survival ladder."
+title: "Why Full Kelly Bankrupts Traders: The 33% Bet That Blows Up"
+description: "A 10-point win-rate error doubles your Kelly bet to 2× true Kelly. The 4 mechanisms that bankrupt retail traders — and the 5-rung ladder that stops them."
+meta_description: "A 10-point win-rate error doubles your Kelly bet to 2× true Kelly. The 4 mechanisms that bankrupt retail traders — and the 5-rung ladder that stops them."
 date: 2026-10-26
 author: Kaizen
 tag: "Trading mathematics · Risk management"
@@ -10,27 +10,27 @@ keywords: ["why full kelly bankrupts traders", "full kelly dangerous", "kelly cr
 
 *By Kaizen · 26 October 2026 · Monks Of Market*
 
-Every retail trader who discovers the Kelly criterion has the same first reaction: finally, a formula that tells you the mathematically correct amount to risk. No guessing, no borrowed rules — just your own win rate and payoff ratio, turned into an exact percentage.
+Every retail trader who discovers Kelly has the same first reaction: finally, a formula that tells you the mathematically correct amount to risk. No guessing, no borrowed rules — just your win rate and payoff ratio, turned into an exact percentage.
 
-That reaction is exactly why full Kelly is dangerous. The formula is correct, but only on a condition retail traders almost never meet: it assumes you *know* your win rate and your payoff ratio, while you actually estimate them from a small sample of past trades, in a market that keeps changing, before costs have taken their cut. Betting the full Kelly fraction on those estimates is, in practice, systematic overbetting — and this article shows how it happens, in rupees, and sets out the one system that stops it. It does not re-teach the full Kelly calculation, expectancy, or position-size basics; pointers to those companion pieces appear where they help. Here, the job is narrower and more urgent: the mechanics of that bankruptcy.
+That reaction is exactly why full Kelly is dangerous. The formula is correct, but only on a condition retail traders almost never meet: it assumes you *know* your win rate and payoff ratio. You don't. You estimate them from a small sample of past trades, in a market that keeps changing, before costs have taken their cut. Betting the full fraction on those estimates is systematic overbetting — and this article shows how it happens, in rupees, and the one system that stops it. It does not re-teach the full Kelly calculation, expectancy, or position-size basics; pointers to those companion pieces appear where they help. Here, the job is narrower and more urgent: the mechanics of that bankruptcy.
 
 This is educational content only. The author is not SEBI-registered, nothing here is investment advice, and no sizing rule — Kelly included — guarantees a profit or prevents losses.
 
 ## Full Kelly Bankrupts Retail Traders Because They Bet It on Guessed Numbers
 
-Here is the whole argument in brief. Full Kelly maximises long-run growth only when the win rate (W) and the payoff ratio (R) fed into it are the true, long-run values. A retail trader's W and R are estimates drawn from tens or low hundreds of trades, usually from a backtest or a short live run, usually optimistic because costs, slippage, and losing streaks have been under-counted.
+Here is the whole argument in brief. Full Kelly maximises long-run growth only when W and R are the true, long-run values. A retail trader's W and R are estimates from tens or low hundreds of trades — usually a backtest or a short live run, usually optimistic because costs, slippage and losing streaks were under-counted.
 
-Betting the full Kelly fraction on those estimates therefore means betting more than the true Kelly fraction — and the penalty for overbetting is asymmetric. Bet too little and you grow more slowly; bet too much and growth falls steeply, variance keeps rising, and drawdowns reach a size that ends the strategy in practice, even though the formula itself never mathematically forces an account to zero. That gap — between what the formula guarantees in theory and what happens to a real trader — is the subject of this article.
+Betting the full fraction on those estimates means betting more than the true Kelly fraction — and the penalty is asymmetric. Bet too little and you grow more slowly. Bet too much and growth falls steeply, variance keeps rising, and drawdowns reach a size that ends the strategy in practice — even though the formula itself never forces an account to zero. That gap — between what the formula guarantees in theory and what happens to a real trader — is the subject of this article.
 
-Three practical channels turn a full-Kelly drawdown into a ruined account: margin or leverage that forces an exit mid-drawdown, correlated positions that stack into a single giant bet, and the trader quitting at the bottom of a drawdown and turning a temporary loss into a permanent one. Add estimation error, which puts the trader past the Kelly peak in the first place, and costs, which shrink the true edge below the backtested one, and you have the complete bankruptcy mechanism. None of it requires the strategy to be worthless. A strategy with a real edge, sized at full Kelly on wrong numbers, can still bankrupt its trader.
+Three practical channels turn a full-Kelly drawdown into a ruined account: margin or leverage forcing an exit mid-drawdown, correlated positions stacking into one giant bet, and the trader quitting at the bottom and turning a temporary loss permanent. Add estimation error, which puts the trader past the Kelly peak in the first place, and costs, which shrink the true edge below the backtested one, and you have the complete bankruptcy mechanism. None of it requires the strategy to be worthless. A strategy with a real edge, sized at full Kelly on wrong numbers, can still bankrupt its trader.
 
 ## The Promise That Hooks Traders: 'The Mathematically Optimal Bet Size'
 
-The pitch for full Kelly is genuinely seductive, and it is worth stating fairly before criticising it. Most sizing rules are arbitrary: risk 1% per trade, risk 2% per trade — percentages chosen because they sound prudent, not because your strategy justifies them. Kelly is different. It derives the bet size from your strategy's own statistics. A strong edge justifies a bigger bet; a weak edge justifies a smaller one; no edge justifies no bet at all. That feels like trading grown up — mathematics replacing superstition.
+The pitch for full Kelly is genuinely seductive, and it deserves a fair hearing before the criticism. Most sizing rules are arbitrary: risk 1% per trade, risk 2% per trade — percentages chosen because they sound prudent, not because your strategy justifies them. Kelly is different. It derives the bet size from your strategy's own statistics. A strong edge justifies a bigger bet; a weak edge justifies a smaller one; no edge justifies no bet at all. That feels like trading grown up — mathematics replacing superstition.
 
-The trap is hidden inside the word "optimal". Kelly's optimality proof assumes known inputs, independent bets, and unlimited ability to keep betting through any drawdown. A retail trader has none of those three things. Inputs are estimated, not known. Positions are often correlated, not independent. And the trader's ability to keep betting is limited by margin, by capital, and — most binding of all — by psychology. A proof that assumes away all three constraints cannot be a practical instruction to bet the full fraction.
+The trap hides inside the word "optimal". Kelly's proof assumes known inputs, independent bets, and unlimited ability to keep betting through any drawdown. A retail trader has none of those three. Inputs are estimated, not known. Positions are often correlated, not independent. And the ability to keep betting is limited by margin, capital, and — most binding of all — psychology. A proof that assumes away all three constraints is not a practical instruction to bet the full fraction.
 
-Worse, "optimal" sounds like "safe". It is not. The Kelly fraction is the *maximum* growth point on a curve, not a comfortable middle. At the peak, the growth curve is flat but the variance curve is steep: moving a little past the peak costs little growth at first and then a great deal, while the swings keep getting larger the whole time. The whole point of fractional Kelly — half, quarter — is to step back from the peak, give up a modest slice of theoretical growth, and buy a large reduction in variance. That trade is the best deal in position sizing, and full Kelly refuses it.
+Worse, "optimal" sounds like "safe". It is not. The Kelly fraction is the *maximum* growth point on a curve, not a comfortable middle. At the peak the growth curve is flat but the variance curve is steep: a little past the peak costs little growth at first, then a great deal, while the swings keep getting larger. Fractional Kelly — half, quarter — steps back from the peak, gives up a modest slice of theoretical growth, and buys a large cut in variance. That is the best deal in position sizing, and full Kelly refuses it.
 
 ## The Formula in One Tight Recap: Kelly % = W − [(1 − W) ÷ R]
 
@@ -74,7 +74,7 @@ A note on tools, to avoid confusion: there is no Kelly calculator tool on this s
 
 ## Bankruptcy Mechanism 1: Kelly Criterion Estimation Error Is Overbetting
 
-This is the central mechanism, and it can be stated in plain words without any academic notation. When you stake a fraction of your *estimated* Kelly fraction, what you are really betting — measured against the *true* Kelly fraction — depends on how far your estimate overshoots the truth. If your true edge is only half your estimated edge, then a half-Kelly bet on your estimate is unwittingly a full-Kelly bet on the truth. And a full-Kelly bet on your estimate is unwittingly *twice* Kelly on the truth — past the peak, where expected growth in the idealised model hits zero and then turns negative. Estimation error is not a separate problem from overbetting. Estimation error *is* overbetting.
+This is the central mechanism, and it needs no academic notation. When you stake a fraction of your *estimated* Kelly fraction, what you are really betting — against the *true* Kelly fraction — depends on how far your estimate overshoots the truth. If your true edge is only half your estimated edge, then a half-Kelly bet on your estimate is unwittingly a full-Kelly bet on the truth. And a full-Kelly bet on your estimate is unwittingly *twice* Kelly on the truth — past the peak, where expected growth in the idealised model hits zero and then turns negative. Estimation error is not a separate problem from overbetting. Estimation error *is* overbetting.
 
 Work it with the anchor numbers. Suppose your backtest says W = 0.60, R = 1.5. Your estimated Kelly fraction is 33.33%. But suppose the true, long-run values are W = 0.50, R = 1.5. The true Kelly fraction is 0.50 − (0.50 ÷ 1.5) = 16.67%. By betting your estimated 33.33%, you are betting exactly 2× true Kelly.
 
@@ -89,7 +89,7 @@ Every single trade risks roughly twice what the true edge justifies — about �
 
 At 2× Kelly, the idealised model says expected log growth is zero: the good trades and the bad trades, at that size, cancel out over the long run. That qualifier matters — live trading adds costs and slippage on top, which push growth negative sooner. The practical meaning is stark: a trader with a genuinely profitable strategy (50% wins at R = 1.5 is a real edge) can grind sideways or backwards for months, purely because the bet size was computed from an optimistic estimate.
 
-Why are estimates optimistic so often? Because a backtest flatters. It tends to include the trader's best-behaved market regime, exclude the messy trades that were "obviously" mistakes, and — the subject of Mechanism 4 — count gross wins before costs. And because a win rate from a small sample is noisy: a win rate estimated from around 20 trades can be off by roughly 10 percentage points (about one standard error), which is exactly the size of error that doubled the bet in the example above. The estimation error that bankrupts traders is not a freak blunder. It is the normal size of error from a normal sample.
+Why are estimates optimistic so often? Because a backtest flatters. It keeps your best-behaved market regime, drops the messy trades that were "obviously" mistakes, and — see Mechanism 4 — counts gross wins before costs. And a win rate from a small sample is noisy: from around 20 trades it can be off by roughly 10 percentage points, exactly the error that doubled the bet above. The error that bankrupts traders is not a freak blunder. It is the normal error from a normal sample.
 
 <figure class="article-visual" data-reveal>
 <svg viewBox="0 0 680 300" role="img" aria-label="Overbetting bar chart on a 200,000 rupee account: the estimated 33.33 percent bet risks about 66,660 rupees per trade, while the true 16.67 percent Kelly fraction risks about 33,340 rupees — the estimate bets twice true Kelly." class="viz">
@@ -116,7 +116,7 @@ That is why the professionals' answer to estimation error is not "estimate bette
 
 ## Bankruptcy Mechanism 2: Full Kelly Drawdown Risk Breaks the Trader Before the Math Recovers
 
-Suppose the estimates were right. Suppose the trader really does have a 60% win rate at R = 1.5 and really does bet the correct full Kelly fraction of 33.33%. Is full Kelly safe then? No — and this is the second mechanism. Full-Kelly bet sizes produce drawdowns of half the account as a normal outcome, not a freak event. The mathematics may recover eventually, given infinite capital and infinite patience, but the trader is not infinite in either.
+Suppose the estimates were right. Suppose the trader really has a 60% win rate at R = 1.5 and really bets the correct full Kelly fraction of 33.33%. Is full Kelly safe then? No — and this is the second mechanism. Full-Kelly sizes produce drawdowns of half the account as a normal outcome, not a freak event. The maths may recover eventually, given infinite capital and infinite patience. The trader has neither.
 
 To make the drawdown concrete: on a ₹2,00,000 account, consecutive losses at 33.33% of the remaining capital do this (rounded figures throughout):
 
@@ -136,7 +136,7 @@ The recovery arithmetic shows why a halved account is so hard to climb out of. A
 
 At full-Kelly bet sizes, the path to that halved account is not a slow bleed; it is a handful of large losing trades in a row, each removing a third of what remains. The account does not politely decline. It lurches. And the lurch is where the human breaks.
 
-This is the behavioural channel, and it must be described honestly: it is a mechanism, not a measured statistic. A trader watching a ₹2,00,000 account fall toward ₹1,00,000 on full-Kelly sizing does not experience "a normal drawdown on the path to long-run growth". The trader experiences fear, doubt about whether the edge was ever real, and pressure — sometimes from family, sometimes from margin calls — to stop the bleeding. Quitting at the bottom turns a temporary loss into a permanent one. The mathematics would have recovered; the trader did not survive to see it. Discipline, not arithmetic, is the binding constraint at full Kelly, and full Kelly demands more discipline than almost any retail trader can muster precisely when it is hardest to do so.
+This is the behavioural channel, and it must be described honestly: it is a mechanism, not a measured statistic. A trader watching ₹2,00,000 fall toward ₹1,00,000 on full-Kelly sizing does not experience "a normal drawdown on the path to long-run growth". He experiences fear, doubt about whether the edge was ever real, and pressure — sometimes from family, sometimes from margin calls — to stop the bleeding. [Quitting at the bottom](/articles/when-to-quit-a-strategy/) turns a temporary loss into a permanent one. The mathematics would have recovered; the trader did not survive to see it. Discipline, not arithmetic, is the binding constraint at full Kelly, and full Kelly demands more discipline than almost any retail trader can muster precisely when it is hardest to do so.
 
 That is also why the "small account I can afford to lose" defence fails, as the FAQs explain: affordability does not change the overbetting mechanics, and the quitting channel bites just as hard on a small account. If anything, small accounts invite larger fractions, because the rupee amounts feel trivial — until the drawdown arrives and they do not.
 
@@ -159,7 +159,7 @@ The companion pieces on [risk of ruin](/articles/risk-of-ruin-trading/) and the 
 
 ## Bankruptcy Mechanism 3: Correlated Positions Stack the Bet
 
-Kelly's formula sizes one bet. Retail traders rarely place one bet. They place three positions in related stocks, or two legs of the same options view, or a futures position plus the equity position that hedges it in their head but not in the market — and they size each leg as if it were independent. It is not.
+Kelly's formula sizes one bet. Retail traders rarely place one bet. They hold three positions in related stocks, or two legs of the same options view, or a futures position plus the equity "hedge" that exists in their head but not in the market — and they size each leg as if it were independent. It is not.
 
 Under perfect correlation, three positions each sized at a "33% Kelly" risk are not three independent 33% bets. They are roughly 99% exposure to a single outcome: if the shared driver moves against the trader, all three legs lose together, and the account takes something close to the full combined hit in one move. Under partial correlation the stacking is smaller but still greater than any single leg — the legs do not diversify each other away just because they have different tickers.
 
@@ -167,13 +167,13 @@ Partial correlation is the common retail case, so here is a worked version of it
 
 Before opening any trade, run this grouping test: does it share an index, a sector, or a macro driver with anything already open? If yes to any of the three, the new trade joins that group and shares its budget; it does not get a fresh budget of its own.
 
-This is how a trader who believes they are betting "only" full Kelly on each trade ends up betting several times Kelly on the only risk that matters: the correlated one. The options trader holding three strikes on the same index, the equity trader holding three banks, the futures trader holding the future and its "hedge" in a correlated stock — all are making one large bet while their spreadsheet records three small ones.
+This is how a trader who believes he is betting "only" full Kelly on each trade ends up betting several times Kelly on the only risk that matters: the correlated one. The options trader holding three strikes on the same index, the equity trader holding three banks, the futures trader holding the future and its "hedge" in a correlated stock — all are making one large bet while their spreadsheet records three small ones.
 
 The rule that fixes it is simple to state and requires discipline to follow: apply Kelly to total correlated exposure, not per leg. Group positions that will plausibly move together, size the group as one Kelly bet, and split that group budget across the legs. A correlation budget — a hard ceiling on the combined risk of any correlated group, set before the trades go on — is one rung of the survival ladder below, and it is non-negotiable for anyone trading more than one position at a time. If you cannot say which of your open positions are correlated, you cannot say what fraction of Kelly you are actually betting, and that ignorance alone is a reason to bet a smaller fraction.
 
 ## Bankruptcy Mechanism 4: Costs and Slippage Shrink the True Edge Below the Backtested Edge
 
-Every backtest that feeds Kelly inputs must be net of costs. A win rate and payoff ratio computed on gross prices describe a strategy that does not exist: no real trader collects the gross win or pays only the gross loss. The gap between gross and net is not a rounding error in Indian markets, where several charges stack on every trade.
+Every backtest feeding Kelly inputs must be net of costs. A win rate and payoff ratio computed on gross prices describe a strategy that does not exist: no real trader collects the gross win or pays only the gross loss. In Indian markets, where several [charges](/articles/options-trading-charges-india/) stack on every trade, the gap between gross and net is not a rounding error.
 
 Use the current figures for Indian traders. The NSE equity-options charge is 0.03553% per side all-in (₹3,553 per crore, including the IPFT contribution, per NSE circular NSE/FA/73061 effective 1 March 2026). Delivery STT is 0.1% on both sides. Options sell-side STT is 0.15% and futures sell-side STT is 0.05%, both effective 1 April 2026 under the Finance Act 2026. Brokerage, exchange charges, GST, and SEBI charges sit on top of these, and slippage — the difference between the intended price and the filled price — takes another cut that no fee schedule lists.
 
@@ -184,7 +184,7 @@ Use the current figures for Indian traders. The NSE equity-options charge is 0.0
 | Options sell-side STT | 0.15% |
 | Futures sell-side STT | 0.05% |
 
-The mechanism is straightforward: costs shrink every win and deepen every loss, so the net W and net R are both worse than the gross figures. A strategy that looks like W = 0.60, R = 1.5 gross may be W = 0.55, R = 1.4 net — for illustration only; your net figures will differ by instrument and costs, and no derivation of that particular pair is shown here, so treat it as an illustration of the direction costs push the inputs, not as a computed result. The point stands with the label attached: Kelly computed on the gross numbers overbets the net reality, on top of whatever sampling error already exists. This is why the companion piece on [why backtested strategies fail in live trading](/articles/why-backtested-strategies-fail-in-live-trading/) matters as background: the backtest-to-live gap is not an abstraction, it is a specific, fee-shaped hole in the Kelly inputs.
+The mechanism is straightforward: costs shrink every win and deepen every loss, so net W and net R are both worse than the gross figures. A strategy that looks like W = 0.60, R = 1.5 gross may be W = 0.55, R = 1.4 net — for illustration only; your net figures will differ by instrument and costs, and no derivation of that particular pair is shown here, so treat it as an illustration of the direction costs push the inputs, not as a computed result. The point stands with the label attached: Kelly computed on the gross numbers overbets the net reality, on top of whatever sampling error already exists. This is why the companion piece on [why backtested strategies fail in live trading](/articles/why-backtested-strategies-fail-in-live-trading/) matters as background: the backtest-to-live gap is not an abstraction, it is a specific, fee-shaped hole in the Kelly inputs.
 
 No slippage percentage is quoted here, deliberately: slippage varies by instrument, liquidity, and order type, and inventing a figure would be worse than admitting the range. The rule stands without a number: if your Kelly inputs are not net of every cost you can measure, plus a realistic allowance for the ones you cannot, you are overbetting by construction. Recompute W and R after costs before you compute anything else. The background on computing expectancy net of costs in [how to calculate real expectancy](/articles/how-to-calculate-real-expectancy/) covers the bookkeeping; the sizing conclusion is this article's: gross-input Kelly is overbetting with a spreadsheet's blessing.
 
@@ -200,13 +200,13 @@ Retail "bankruptcy" happens in practice, through channels the theory assumes awa
 2. **Correlated positions stack into one giant bet.** As Mechanism 3 showed, the trader's true exposure can be several times the per-leg Kelly fraction, so a single adverse move does damage no single-leg calculation predicted.
 3. **The trader quits at the bottom.** A drawdown the mathematics would eventually recover from becomes permanent the day the trader stops trading the system — or is forced to stop by capital, margin, or nerve.
 
-That is what "bankrupts" means in this article's title: not a theorem, but a practical outcome produced by Kelly-sized bets on wrong numbers plus one or more of these three channels. The distinction matters for the reader's decisions. If ruin were mathematically guaranteed by the formula, the answer would be to abandon Kelly entirely. Since ruin is practically produced by the channels, the answer is to keep Kelly in its proper place — as a ceiling — and to build the system around it that closes the channels. That system is next.
+That is what "bankrupts" means in this title: not a theorem, but a practical outcome — Kelly-sized bets on wrong numbers plus one or more of these three channels. The distinction matters for the reader's decisions. If ruin were mathematically guaranteed by the formula, the answer would be to abandon Kelly entirely. Since ruin is practically produced by the channels, the answer is to keep Kelly in its proper place — as a ceiling — and to build the system around it that closes the channels. That system is next.
 
-It also matters for what this article does not claim. Nothing here says fractional Kelly is safe in any absolute sense, or that any particular fraction suits any particular trader. Fractions reduce the risk; they do not remove it. A trader with no edge loses money at any fraction, only more slowly at smaller ones — which is why the survival ladder ends with a rule about negative Kelly, not with a smaller bet.
+It also matters for what this article does not claim. Nothing here says fractional Kelly is safe in any absolute sense, or that any particular fraction suits any particular trader. Fractions reduce the risk; they do not remove it. A trader with [no edge](/articles/trading-edge-vs-luck/) loses money at any fraction, only more slowly at smaller ones — which is why the survival ladder ends with a rule about negative Kelly, not with a smaller bet.
 
 ## The Survival Ladder: One System, Not Tips
 
-The fixes for full Kelly fail when they are treated as disconnected tips — "use half Kelly" here, "watch correlation" there — because each fix leaves the other channels open. The survival ladder is one system with five rungs, and it only works as a whole.
+The fixes fail when treated as disconnected tips — "use half Kelly" here, "watch correlation" there — because each fix leaves the other channels open. The survival ladder is one system with five rungs, and it only works as a whole.
 
 | Rung | Rule | Why it exists |
 | --- | --- | --- |
@@ -261,7 +261,7 @@ Already betting at full Kelly? Cut to the ladder size on your next trade — do 
 
 ## Diagnostic: 5 Signs You Are Overbetting
 
-Run this check before your next trade. Any single "yes" is a reason to cut size; two or more mean you are almost certainly past true Kelly already.
+Run this check before your next trade. One "yes" is a reason to cut size. Two or more mean you are almost certainly past true Kelly already.
 
 1. **Your Kelly % sits above your fixed cap.** If the formula's output is larger than the per-trade ceiling you set when you were calm, the formula is not telling you to be brave. It is telling you your inputs are flattering you. The cap wins.
 2. **Your inputs come from fewer than 50 trades.** Below 50–100 trades, the win rate is too noisy for aggressive sizing. A 20-trade backtest can misstate the win rate by roughly 10 points — the exact error that doubled the bet in Mechanism 1. Small sample means small fraction, or no Kelly sizing at all.
@@ -275,11 +275,11 @@ If you answered yes to none of these and you are betting a fraction under a cap,
 
 ## Kelly Is a Ceiling, Not a Target: Half Kelly vs Full Kelly in Practice
 
-Kelly tells you the most you could ever justify betting, never the amount you should bet. That single sentence, kept in mind before every sizing decision, prevents most of the damage this article describes.
+Kelly tells you the most you could ever justify betting — never the amount you should bet. Keep that one sentence in mind before every sizing decision, and you prevent most of the damage this article describes.
 
 Full Kelly bankrupts retail traders not because the formula is broken, but because it is used exactly backwards: as a target to hit, computed from guessed numbers, on correlated positions, before costs, with no cap. Reverse each of those errors and Kelly becomes what it was always best at being — a ceiling. Bet a fraction underneath it. Let the hard cap override it. Budget correlation against it. Re-estimate the inputs behind it every 50–100 trades, or quarterly, or after a clear regime change, whichever comes first. And when it returns zero or negative, do not trade.
 
-Size underneath the ceiling, and let the fraction, the cap, and the re-estimation rule keep you in the game. The traders who last are rarely the ones who bet the most on their best idea. They are the ones whose sizing let them stay in the game long enough for their edge — if it was real — to actually show up. For a final check on whether your chosen size can ruin you before your edge can pay, the [Risk of Ruin Calculator](/tools/risk-of-ruin/) is the natural next step, and the [Position Size Calculator](/tools/position-size/) converts any rupee risk you settle on into an actual position.
+Size underneath the ceiling, and let the fraction, the cap and the re-estimation rule keep you in the game. The traders who last are rarely the ones who bet the most on their best idea. They are the ones whose sizing let them stay in the game long enough for their edge — if it was real — to show up. For a final check on whether your chosen size can ruin you before your edge can pay, the [Risk of Ruin Calculator](/tools/risk-of-ruin/) is the natural next step, and the [Position Size Calculator](/tools/position-size/) converts any rupee risk you settle on into an actual position.
 
 ## Frequently Asked Questions
 
