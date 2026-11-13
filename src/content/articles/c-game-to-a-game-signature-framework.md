@@ -1,7 +1,7 @@
 ---
 title: "C-Game to A-Game: Build Your Signature Trading Framework"
-description: "You've mapped your leaks this week — giveback, revenge, overtrading. Now build the trader who doesn't spring them: write your personal A-game and C-game signature cards, run the traffic-light daily protocol, and raise your C-game floor with the inchworm law."
-meta_description: "Write your A-game and C-game signature cards, raise your C-game floor with the inchworm law, and run a daily protocol that keeps you trading your plan."
+description: "Stop chasing A-game days — make your C-game days less bad. Write your A-game and C-game cards, run the traffic-light audit, and raise your floor weekly."
+meta_description: "Stop chasing A-game days — make your C-game days less bad. Write your A-game and C-game cards, run the traffic-light audit, and raise your floor weekly."
 date: 2026-10-16
 author: Kaizen
 tag: "Trading psychology"
@@ -14,7 +14,7 @@ keywords: ["a game c game trading", "what is c game in trading", "how to get out
 
 Your A-game and your C-game both have a signature. Only one of them is on file with you.
 
-You know your peak self on the charts. You know the focused version of you — patient, planned, out at the stop without drama. But the version of you that takes five extra trades after a loser, the version that doubles size on a "sure thing," the version that re-enters a position you just exited out of sheer frustration — that version has a signature too. A pattern. A set of tells. And you have never written it down.
+You know your peak self on the charts — the focused version of you: patient, planned, out at the stop without drama. But the version of you that takes five extra trades after a loser, the version that doubles size on a 'sure thing,' the version that re-enters a position you just exited out of sheer frustration — that version has a signature too. A pattern. A set of tells. And you've never written it down.
 
 This week you mapped your leaks: the giveback circuit, the revenge circuit, the overtrading circuit. This is the capstone chapter. It answers the question the week was always leading to: *I've seen my failure circuits — how do I build the trader who doesn't spring them?*
 
@@ -22,7 +22,7 @@ This week you mapped your leaks: the giveback circuit, the revenge circuit, the 
 
 The system has two parts, and both are written, not willpower-based.
 
-**Part one is a map.** Two index-card-sized documents in your own words: your **A-game card** (what peak-you actually does — the behaviours, the mental state, the setup discipline) and your **C-game card** (your five personal early-warning signals — the specific mistakes that tell you the bad version of you has taken the terminal). Nobody else can write these for you. A guru's morning routine is not your signature.
+**Part one is a map.** Two index-card-sized documents in your own words: your **A-game card** (what peak-you actually does — the behaviours, the mental state, the setup discipline) and your **C-game card** (your five personal early-warning signals — the specific mistakes that tell you the bad version of you has taken the terminal). Nobody else can write these for you. A guru's morning routine isn't your signature.
 
 **Part two is an operating protocol.** A pre-market traffic-light state audit (green = trade the full plan, yellow = reduced size, red = no trading today). An in-session physical interrupt for the moment your C-game tells appear. A post-session process score that grades execution, not rupees. And a weekly inchworm review that measures one thing only: is this month's C-game less bad than last month's?
 
@@ -30,19 +30,19 @@ Everything below unpacks those two parts — the map, the protocol, and the coun
 
 ## The five faces of one C-game: naming your emotional trading mistakes
 
-Giveback, revenge trading, overtrading, tilt, FOMO — the week treated them as separate chapters because each needed its own article. But they are not five separate problems. They are five faces of **one** C-game: the state in which you stop trading your tested plan and start trading on feeling, urgency, or necessity.
+Giveback, revenge trading, overtrading, tilt, FOMO — the week treated them as separate chapters because each needed its own article. But they aren't five separate problems. They are five faces of **one** C-game: the state where you stop trading your tested plan and start trading on feeling, urgency, or necessity.
 
 - **Giveback** is the *win-side* face. A winning streak floods you with the urge to keep playing, and you hand the morning's profits back to the afternoon. This week's first chapter mapped it in full: [why traders give back profits](/articles/why-traders-give-back-profits/).
 - **Revenge trading** is the *loss-side* face. A red day becomes a debt the market "owes" you, and the recovery trades get bigger and sloppier. This week's second chapter built the loss protocol for it: [how to stop revenge trading after a loss](/articles/revenge-trading/).
 - **Overtrading** is what C-game *looks like on the trade log*. When the emotions are hard to see in real time, the broker statement shows them: too many trades, sizes that drift, setups that weren't setups. [The overtrading chapter](/articles/overtrading/) is your same-week sibling — one line of map, not a re-teach.
-- **Tilt** is the *broad framework* face — the full emotional-decision spiral, of which revenge is one branch. It gets [its own framework article](/articles/tilt-in-trading/) next; for today, it is enough to know it wears your C-game face.
-- **FOMO** is the *chasing face* — the compulsion to enter moves that are already gone. The fifth face gets its own chapter tomorrow; for today, note that it, too, is C-game with a different mask.
+- **Tilt** is the *broad framework* face — the full emotional-decision spiral, of which revenge is one branch. [Its own framework article](/articles/tilt-in-trading/) covers it in full; for today, it's enough to know it wears your C-game face.
+- **FOMO** is the *chasing face* — the compulsion to enter moves that are already gone. [The fifth face gets its own chapter](/articles/fomo-trading/); for today, note that it, too, is C-game with a different mask.
 
 Each article in this week's curriculum owns its circuit. This article owns what sits above them: the identity system — your signature — that short-circuits whichever face appears.
 
 ## The signature map: write your own A-game card and C-game card
 
-Here is why borrowed routines fail: your tells are personal. Another trader's red flags — caffeine and late nights, maybe — may never be yours. The C-game card only works if it reads like *you* wrote it, because you did. Same for the A-game card: peak-you has specific habits, a specific calm, a specific discipline. Describe that, and you have a target your protocol can protect.
+Here's why borrowed routines fail: your tells are personal. Another trader's red flags — caffeine and late nights, maybe — may never be yours. The C-game card only works if it reads like *you* wrote it, because you did. Same for the A-game card: peak-you has specific habits, a specific calm, a specific discipline. Describe that, and you have a target your protocol can protect.
 
 Take an actual index card or one page in your journal for each. The instructions are below; the example fills are written in the reader's voice — yours should sound like you, not like this article.
 
@@ -129,13 +129,13 @@ An example C-game card, in the reader's voice:
 
 ## The inchworm law: raise your C-game floor with the trading inchworm concept
 
-Here is the load-bearing idea of this chapter, and it runs against everything trading social media sells you.
+Here's the load-bearing idea of this chapter, and it runs against everything trading social media sells you.
 
 Picture your performance as a bell curve. On the right edge sits your A-game — your best days, the ones you post about. In the middle, your B-game — ordinary days, plan followed, nothing dramatic. On the left edge, your C-game — your worst days, the ones where the plan goes out the window.
 
-The instinct is to chase the right edge: more A-game days, bigger A-game days. But pulling the front of a bell curve forward without fixing the back end just stretches the curve wider. The range widens, the lows get lower, and eventually the whole thing snaps back. That is what traders call a blow-up: not a failure of talent, a failure of range.
+The instinct is to chase the right edge: more A-game days, bigger A-game days. But pulling the front of a bell curve forward without fixing the back end just stretches the curve wider. The range widens, the lows get lower, and eventually the whole thing snaps back. That's what traders call a blow-up: not a failure of talent, a failure of range.
 
-The improvement move is the opposite. It is called the inchworm law: **don't chase more A-game days — make your C-game days less bad.** Pull the *back* of the bell curve forward. Inchworms move by dragging the rear forward, not by stretching the front.
+The improvement move is the opposite. It's called the inchworm law: **don't chase more A-game days — make your C-game days less bad.** Pull the *back* of the bell curve forward. Inchworms move by dragging the rear forward, not by stretching the front.
 
 <figure class="article-visual" data-reveal>
 <svg viewBox="0 0 680 420" role="img" aria-label="Trading performance bell curve showing the inchworm concept — improving the C-game floor pulls the back end forward." class="viz">
@@ -158,9 +158,9 @@ The improvement move is the opposite. It is called the inchworm law: **don't cha
 
 Three rules make this law operational:
 
-**Rule 1: Compare C-game to C-game, never A-game to C-game.** Looking at your worst day next to your best day only produces shame, which produces worse decisions. The only comparison that matters: *is this month's C-game less bad than last month's?* Compare your C-game across 1, 3, 6, and 12 months. If your worst days are getting less bad, you are moving forward. If they aren't, you haven't found what causes your C-game yet — and finding it is the work.
+**Rule 1: Compare C-game to C-game, never A-game to C-game.** Looking at your worst day next to your best day only produces shame, which produces worse decisions. The only comparison that matters: *is this month's C-game less bad than last month's?* Compare your C-game across 1, 3, 6, and 12 months. If your worst days are getting less bad, you're moving forward. If they aren't, you haven't found what causes your C-game yet — and finding it is the work.
 
-**Rule 2: C-game → B-game, never forced A-game.** Trying to jump straight from a C-game spiral back into peak flow in a single session is rare, and attempting it is dangerous — the frustration of a failed "reset" is exactly how C-game becomes revenge trading ([the loss protocol article](/articles/revenge-trading/) covers that circuit). The realistic move is C-game to **B-game**: regain control, stop the bleeding, trade the rest of the day mechanically or walk away. A-game returns when its conditions are rebuilt — sleep, calm, a fresh session — not when it is forced.
+**Rule 2: C-game → B-game, never forced A-game.** Trying to jump straight from a C-game spiral back into peak flow in a single session is rare, and attempting it is dangerous — the frustration of a failed 'reset' is exactly how C-game becomes revenge trading ([the loss protocol article](/articles/revenge-trading/) covers that circuit). The realistic move is C-game to **B-game**: regain control, stop the bleeding, trade the rest of the day mechanically or walk away. A-game returns when its conditions are rebuilt — sleep, calm, a fresh session — not when it's forced.
 
 **Rule 3: Make the fix small and weekly.** When a C-game mistake appears, the job is not to eliminate it in one heroic session. Pile on too much and you injure the thing you're trying to fix — confidence and motivation crack under overhaul. Make it slightly less bad this week than last week. One signal, one fix, seven days. Boring, consistent — and because it survives contact with reality, it compounds.
 
@@ -218,7 +218,7 @@ Two things that surprise traders about this audit. First: **euphoria is a warnin
 
 Your C-game card lists your tells. The moment you catch one *in the session* — the re-entry, the size creep, the P&L-staring — the protocol is physical, not mental: **stand up, walk away from the terminal, no trading until the state is rebuilt.**
 
-This works because of what is happening in your head. Popular psychology calls it an amygdala hijack — treat that as a metaphor, not neuroscience: under emotional flooding, the part of your brain that reasons gets drowned out by the part that reacts. Logic doesn't reach a hijacked brain. Your body does. Standing up and physically leaving the desk breaks the stimulus loop in a way that arguing with yourself never will.
+This works because of what's happening in your head. Popular psychology calls it an amygdala hijack — treat that as a metaphor, not neuroscience: under emotional flooding, the part of your brain that reasons gets drowned out by the part that reacts. Logic doesn't reach a hijacked brain. Your body does. Standing up and physically leaving the desk breaks the stimulus loop in a way that arguing with yourself never will.
 
 This is a protocol many traders use — not a clinical prescription, and not therapy. Walk for ten minutes. Drink water. Come back only when you can read your C-game card without flinching. If you can't, the session is over, and that is a *successful* decision, not a failed day.
 
@@ -239,7 +239,7 @@ Once a week — Sunday evening, or whatever day closes your trading week — run
 2. **Is this month's C-game less bad than last month's?** The inchworm measurement rule. Compare your worst day this month to your worst day last month. Less bad = progress. Same or worse = you haven't found the cause yet.
 3. **One fix for next week.** Exactly one. Not "fix my psychology" — something like "if I see tell #3 on my C-game card, I stand up immediately." One fix, seven days, then re-measure.
 
-That is the whole review. Ten minutes, and it is the engine of the inchworm law: the back end moves forward one week at a time.
+That's the whole review. Ten minutes, and it's the engine of the inchworm law: the back end moves forward one week at a time.
 
 <figure class="article-visual" data-reveal>
 <svg viewBox="0 0 680 420" role="img" aria-label="Weekly inchworm review chart comparing C-game severity this month versus past months." class="viz">
@@ -271,7 +271,7 @@ The charges are not why C-game days lose money — the bad decisions are. The ch
 
 One unplanned NIFTY-option round trip costs ~₹62.61 in total charges — the worked figure from our net-expectancy chapter ([how to calculate real expectancy](/articles/how-to-calculate-real-expectancy/)).
 
-Now price the deviation *afternoon* as a whole. A classic C-game afternoon — three revenge re-entries, two oversized FOMO chases, one "just one more" after the loss budget — is five or six unplanned round trips. That's **₹300–₹375 in guaranteed charges alone**, paid before the market moves a single point in your favour. One afternoon. Guaranteed drag. The decisions caused the loss; the charges just documented it. Price it once and the inchworm math gets personal.
+Now price the deviation *afternoon* as a whole. A classic C-game afternoon — three revenge re-entries, two oversized FOMO chases, one 'just one more' after the loss budget — is five or six unplanned round trips. That's **₹300–₹375 in guaranteed charges alone**, paid before the market moves a single point in your favour. One afternoon. Guaranteed drag. The decisions caused the loss; the charges just documented it. Price it once and the inchworm maths gets personal.
 
 The week has already given you the tools to see the full picture, one line each. C-game days are the fastest path to ruin — run them through the [risk of ruin](/articles/risk-of-ruin-trading/) lens (or the site's [risk-of-ruin calculator](/tools/risk-of-ruin/), one sobering input at a time). C-game trades are the unmodelled leak in [your real expectancy](/articles/how-to-calculate-real-expectancy/). The [Monte Carlo fan chart](/articles/monte-carlo-simulation-for-traders/) modelled your *plan's* trades — your C-game trades are the trades the simulation never saw (the site's [What-If simulator](/tools/what-if-simulator/) shows this the moment you add unplanned trades). Your [position size](/articles/position-sizing/) must interact with your traffic-light readiness level, not just your account. And the honest self-grading behind all of this shares its ethos with [the honest protocol](/articles/paper-trading-vs-real-trading/).
 
@@ -308,7 +308,7 @@ The week has already given you the tools to see the full picture, one line each.
 
 ## Limitations: what this framework cannot do
 
-Honesty first — this framework is a behavioural safeguard, not a profit strategy. It will not make a bad strategy profitable, it will not produce returns, and it will not fix a plan that has no edge. What it does is narrower and more valuable: it keeps the worst version of you from destroying the work of the best version of you.
+Honesty first — this framework is a behavioural safeguard, not a profit strategy. It won't make a bad strategy profitable, it won't produce returns, and it won't fix a plan that has no edge. What it does is narrower and more valuable: it keeps the worst version of you from destroying the work of the best version of you.
 
 Three more caveats. The traffic-light size rules, the euphoria size cut, the physical interrupt, and process P&L are **practitioner conventions** — habits many experienced traders report using — not laws, and not medical or psychological advice. Second, fee figures change: STT itself changed in April 2026, and exchange schedules move. The ₹62.61 worked figure cited above was verified as of October 2026; re-check before you rely on it. Third, the charges section priced the *cost* of deviation trades — never mistake that for the *cause* of C-game losses. The cause is the behaviour; the charges are just the receipt.
 
@@ -322,7 +322,7 @@ Professionals build a system where their worst days are survivable and their bes
 
 You don't rise to the level of your A-game. You survive to the level of your C-game.
 
-The week ends with a trader who has a map, an audit, and an interrupt protocol — not just five warnings. Tomorrow the week's last two faces get their own chapters: [tilt](/articles/tilt-in-trading/), the broad emotional-decision framework, and FOMO, the chasing face. And further ahead, your state score finds its permanent home in a full trading journal — the metrics chapter that turns all of this into a system you can measure.
+The week ends with a trader who has a map, an audit, and an interrupt protocol — not just five warnings. The week's last two faces have their own chapters: [tilt](/articles/tilt-in-trading/), the broad emotional-decision framework, and [FOMO](/articles/fomo-trading/), the chasing face. And further ahead, your state score finds its permanent home in a full [trading journal](/articles/trading-journal-what-to-track-beyond-pnl/) — the metrics chapter that turns all of this into a system you can measure.
 
 ## Frequently asked questions
 
