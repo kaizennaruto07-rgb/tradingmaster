@@ -1,7 +1,7 @@
 ---
-title: "What Is Trading and How Does It Work? A Beginner's Guide for India"
-description: "What is trading and how does it work? A plain-English beginner's guide: how stock trading works, the four types of trading, how traders earn money, and how to start trading in India."
-meta_description: "What is trading and how does it work? Learn how stock trading works, the four types of trading, trading vs investing, and how beginners start trading in India."
+title: "What Is Trading and How Does It Work? Beginner's Guide"
+description: "Trading means buying and selling to profit from price moves. The 4 trading types, how orders work on NSE/BSE, costs, and how beginners start in India."
+meta_description: "Trading means buying and selling to profit from price moves. The 4 trading types, how orders work on NSE/BSE, costs, and how beginners start in India."
 date: 2026-10-27
 author: Kaizen
 tag: "Trading basics · Beginner"
@@ -88,7 +88,7 @@ A scalper makes many trades a day, each targeting a tiny price move — sometime
 An intraday trader — also called a day trader — opens and closes every position on the same day. Nothing is held overnight, so overnight news cannot hurt an open position. The trade lives and dies within market hours.
 
 - **Time needed:** several hours during the trading session, watching prices and managing open trades.
-- **Watch out for:** overtrading. Because fresh opportunities appear all day, intraday traders are the most tempted to take trades they never planned.
+- **Watch out for:** [overtrading](/articles/overtrading/). Because fresh opportunities appear all day, intraday traders are the most tempted to take trades they never planned.
 - **Best for:** people who can watch the market during trading hours and make quick, rules-based decisions.
 
 ### 3. Swing trading: days to weeks
@@ -104,7 +104,7 @@ A swing trader holds positions for a few days to a few weeks, aiming to capture 
 A positional trader holds for weeks or months, riding a larger trend or theme. This style sits closest to investing, but the intent is different: the position is held for a price move with an exit plan, not for permanent ownership.
 
 - **Time needed:** the least of all four — a few hours a week of review.
-- **Watch out for:** giving back profits. A position that is up 20% can drift back to breakeven over months if there is no plan for when to exit.
+- **Watch out for:** [giving back profits](/articles/why-traders-give-back-profits/). A position that is up 20% can drift back to breakeven over months if there is no plan for when to exit.
 - **Best for:** patient people who want market exposure without daily screen time.
 
 | Style | Typical holding period | Trades per week | Screen time | Biggest beginner trap |
@@ -235,7 +235,7 @@ If any of this sounds discouraging, that is the point. Trading rewards people wh
 
 ## Is Trading Suitable for Beginners?
 
-The honest answer has two halves. Yes, trading is suitable for beginners to **learn** — with small capital, a simulator or paper trading first, and strict risk rules. No, trading is not suitable for beginners as an **income expectation** — not in the first months, and not with money they cannot afford to lose.
+The honest answer has two halves. Yes, trading is suitable for beginners to **learn** — with small capital, a simulator or [paper trading](/articles/paper-trading-vs-real-trading/) first, and strict risk rules. No, trading is not suitable for beginners as an **income expectation** — not in the first months, and not with money they cannot afford to lose.
 
 A sensible learning path looks like this:
 
