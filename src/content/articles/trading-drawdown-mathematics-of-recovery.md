@@ -1,7 +1,7 @@
 ---
-title: "Trading Drawdown: The Mathematics of Recovery"
-description: "How much must you gain to recover from a drawdown in trading? The d/(1−d) recovery formula, an exact ₹2,00,000 table, time-to-climb math, and a protocol."
-meta_description: "How much must you gain to recover from a drawdown in trading? The d/(1−d) recovery formula, an exact ₹2,00,000 table, time-to-climb math, and a protocol."
+title: "Drawdown Recovery: How Much Gain to Get Back to Even?"
+description: "A 20% drawdown needs a 25% gain to recover; a 50% drawdown needs 100%. The exact formula, the full 5%–90% table, the time-to-climb math, and a protocol."
+meta_description: "A 20% drawdown needs a 25% gain to recover; a 50% drawdown needs 100%. The exact formula, the full 5%–90% table, the time-to-climb math, and a protocol."
 date: 2026-10-21
 author: Kaizen
 tag: "Trading mathematics · Risk management"
@@ -14,7 +14,7 @@ A trading drawdown is the peak-to-trough decline in your account equity from its
 
 The fall is measured from the peak; the climb is measured from the hole. Everything in this article follows from that one frame.
 
-This is the recovery manual of the mathematics-of-survival sequence — for the Indian retail trader who is very likely sitting in a loss right now. No motivation, no pep talk. Just the exact formula, the table that makes it visceral in rupees, why the hole gets deeper than your losses, how long the climb takes (illustrated, not promised), and a pre-committed protocol for what to do while you're in the hole.
+This is the recovery manual of the mathematics-of-survival sequence — written for the Indian retail trader who is very likely sitting in a loss right now. No motivation, no pep talk. Just the exact formula, the table that makes it visceral in rupees, why the hole gets deeper than your losses, how long the climb takes (illustrated, not promised), and a pre-committed protocol for what to do while you're in the hole.
 
 ---
 
@@ -47,7 +47,7 @@ Now watch what that does as drawdowns deepen. For a ₹2,00,000 peak account, he
 
 Read the 30% row twice. A 30% drawdown — the kind an options trader can collect in a bad fortnight — demands a 42.86% gain to repair. At 50%, you must *double* your account. At 90%, you need 900%. Notice the cruelty of the curve: the first 20% of loss is expensive, and every rung past 30% is a cliff.
 
-These are the exact computed values, not rounded approximations. Treat them as what they are: the price tag of every drawdown, quoted in full.
+These are the exact computed values, not rounded approximations. That's the price tag of every drawdown, quoted in full.
 
 
 <figure class="article-visual" data-reveal>
@@ -86,7 +86,7 @@ These are the exact computed values, not rounded approximations. Treat them as w
 
 ### The ₹2,00,000 Worked Example: 20% Down, 25% Back
 
-Make it concrete. You peak at ₹2,00,000. A rough patch takes you to ₹1,60,000.
+Make it concrete: you peak at ₹2,00,000, and a rough patch takes you to ₹1,60,000.
 
 - Drawdown = (₹2,00,000 − ₹1,60,000) ÷ ₹2,00,000 × 100 = **20.0%**
 - To recover, you must re-earn ₹40,000 — but your account is no longer ₹2,00,000. It is ₹1,60,000.
@@ -106,7 +106,7 @@ Two details matter. First, it is measured from the peak — *not* from your init
 
 A **loss**, by contrast, is the result of a single closed trade that went negative. A drawdown is the aggregate decline in account equity over a period — driven by position sizing and compounding, not just the win/loss ratio. You can have a 60% win rate and still sit in a deep drawdown if your losers are sized bigger than your winners.
 
-And one boundary: profit given back from a peak — the giveback pattern — has its own guide: [Why Traders Give Back Their Profits](/articles/why-traders-give-back-profits/). This article is about the climb, not the giveback.
+One boundary: profit given back from a peak — the giveback pattern — has its own guide: [Why Traders Give Back Their Profits](/articles/why-traders-give-back-profits/). This article is about the climb, not the giveback.
 
 
 <figure class="article-visual" data-reveal>
@@ -140,7 +140,7 @@ And one boundary: profit given back from a peak — the giveback pattern — has
 
 Two forces deepen a drawdown beyond what the raw losses suggest.
 
-**The first is compounding.** Under fixed-fractional sizing, each loss is taken from a smaller base than the one before — the full derivation is in [How Losing Streaks Affect Trading Accounts](/articles/how-losing-streaks-affect-trading-accounts/), and this article owns the *recovery* side of the math, not the decline side. The point that carries over: losses multiply downward, so a string of ordinary losing trades digs a deeper hole than adding up the individual trade losses would suggest.
+**The first is compounding.** Under fixed-fractional sizing, each loss is taken from a smaller base than the one before — the full derivation is in [How Losing Streaks Affect Trading Accounts](/articles/how-losing-streaks-affect-trading-accounts/). This article owns the *recovery* side of the math, not the decline side. The point that carries over: losses multiply downward, so a string of ordinary losing trades digs a deeper hole than adding up the individual trade losses would suggest.
 
 **The second force is behavioural, and it is yours to refuse.** The moment a trader sees the table above and feels the climb steepening, the most common instinct is to *widen* risk — to "make it back faster" with bigger size. That instinct is [tilt](/articles/tilt-in-trading/): emotion overriding process, usually revenge-shaped. And it is exactly what deepens the hole: bigger size on a smaller base, compounding against you at the steepest part of the recovery curve.
 
@@ -150,7 +150,7 @@ The overtrading-revenge loop — trade, lose, size up, lose bigger, trade again 
 
 ## How Long the Climb Takes: Time-to-Recovery, Illustrated
 
-Here is the money beat of this article: a 30% drawdown doesn't just cost ₹60,000. It costs **weeks of disciplined trading** — and that is the real price.
+Here's the money beat: a 30% drawdown doesn't just cost ₹60,000. It costs **weeks of disciplined trading** — and that is the real price.
 
 The method is simple:
 
@@ -177,7 +177,7 @@ Expectancy per trade is an input here — the EV of your system, covered in full
 - At 3 trades per week: ≈ **48 weeks** (~11 months)
 - At 5 trades per week: ≈ **29 weeks** (~6.7 months)
 
-Say it plainly: eight to eleven months of disciplined execution, at a realistic pace, to climb out of one 30% hole — *if* the system keeps delivering its average the whole way up. That is what a drawdown actually costs. Not ₹60,000. The better part of a year of your trading life.
+Say it plainly: eight to eleven months of disciplined execution, at a realistic pace, to climb out of one 30% hole — *if* the system keeps delivering its average the whole way up. That's what a drawdown actually costs. Not ₹60,000 — the better part of a year of your trading life.
 
 > **Illustration, not forecast — expectancy is an average, not a guarantee; variance means the realized climb can be far shorter or far longer than the expectation.** This is one worked example with one set of inputs, never a promise of recovery speed. Run your own win rate, your own reward-to-risk, your own pace through the same three steps. And if the Rung-3 audit says the system is broken rather than unlucky, this expected-trades math does not apply at all — the answer is the rebuild path, not a steeper climb. (A dedicated drawdown recovery calculator is planned as part of a later tool cluster — until then, the formula above is the honest version.)
 
@@ -207,11 +207,11 @@ Say it plainly: eight to eleven months of disciplined execution, at a realistic 
 
 ## How to Recover From a Drawdown in Trading: The Response Protocol
 
-No global calculator gives you this part — the part that matters when you're actually in the hole. This is a pre-committed protocol: you write these rules when you're calm, so you can follow them when you're not. Adapted for Indian retail, with the family frame this series has built.
+No calculator gives you this part — the part that matters when you're actually in the hole. This is a pre-committed protocol: you write these rules when you're calm, so you can follow them when you're not.
 
 ### Rung 1 — At 5% drawdown: cut risk per trade in half
 
-Cut your risk per trade in half — if you were risking 1.25% per trade, you are now risking ~0.6–0.65%. The system may be fine; the market may be choppy; but you are now climbing, and the climb is measured from a smaller base. Smaller size keeps the hole shallow while you find out what's happening. **Tilt check:** are you already thinking about "making it back"? If yes, that's the signal to slow down, not speed up — see [Tilt in Trading](/articles/tilt-in-trading/).
+Cut your risk per trade in half — if you were risking 1.25% per trade, you are now risking ~0.6–0.65%. The system may be fine; the market may be choppy; but you are now climbing, and the climb is measured from a smaller base. The full step-down ladder after losses is in [how to size positions after a losing streak](/articles/how-to-size-positions-after-a-losing-streak/). Smaller size keeps the hole shallow while you find out what's happening. **Tilt check:** are you already thinking about "making it back"? If yes, that's the signal to slow down, not speed up — see [Tilt in Trading](/articles/tilt-in-trading/).
 
 ### Rung 2 — At 10% drawdown: halve size and review the system
 
@@ -330,11 +330,11 @@ Quoted verbatim from the locked figures: NSE equity-options: 0.03553%/side all-i
 
 Think about what that means for the 144-trade climb in the illustration above. Each of those recovery trades pays exchange transaction charges on both legs, and any exercised ITM option pays 0.15% STT. The required 42.86% is the *gross* climb — your system has to earn that *plus* the cost stack just to touch the old peak. A drawdown in India is therefore always deeper than the table says, by roughly the cost of every trade it takes to get out.
 
-This is why prevention math beats recovery math. The cheapest drawdown is the one you never take — which is tomorrow's question.
+This is why prevention math beats recovery math. The cheapest drawdown is the one you never take.
 
 A dedicated drawdown recovery calculator (enter your peak, your trough, your system's expectancy, and get the climb mapped in trades and weeks) is planned as part of a later tool cluster. Until it ships, the formula and the three steps above are the honest version — no black box, nothing hidden.
 
-**So: how do you make sure the next drawdown is smaller?** That is the question for tomorrow morning — [*The 3-Day Rule*](/articles/the-3-day-rule/) — and the sizing answer to the depth question lives in position sizing, because the depth of every drawdown is decided before it begins, in the size of the trades that dug it.
+**So: how do you make sure the next drawdown is smaller?** That's the question for [*The 3-Day Rule*](/articles/the-3-day-rule/) — and the sizing answer lives in [position sizing](/articles/position-sizing/), because the depth of every drawdown is decided before it begins, in the size of the trades that dug it.
 
 ---
 
