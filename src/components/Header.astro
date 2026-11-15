@@ -11,6 +11,7 @@ const { current = '' } = Astro.props;
     <nav class="top-nav" aria-label="Primary">
       <a class="nav-link" href="/" aria-current={current === 'home' ? 'page' : undefined}>Home</a>
       <a class="nav-link nav-always" href="/articles/" aria-current={current === 'articles' ? 'page' : undefined}>Articles</a>
+      <a class="nav-link" href="/vision/" aria-current={current === 'vision' ? 'page' : undefined}>Vision</a>
       <div class="nav-item" id="toolsNavItem">
         <button class="nav-drop" id="toolsMenuBtn" type="button" aria-haspopup="true" aria-expanded="false" aria-current={current === 'tools' ? 'page' : undefined}>Tools ▾</button>
         <div class="menu-panel" id="toolsMenu" role="menu">
