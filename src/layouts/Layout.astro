@@ -72,7 +72,6 @@ const canonical = new URL(Astro.url.pathname, 'https://monksofmarket.com').href;
   <slot />
   <Footer />
   <script src="/js/shared.js" is:inline></script>
-  <script src="/js/cookie-consent.js" is:inline></script>
   <div id="cookie-banner" class="cookie-banner" hidden role="dialog" aria-live="polite" aria-label="Cookie consent">
     <p>We use cookies to measure traffic and improve Monks Of Market. <a href="/privacy/">Privacy policy</a></p>
     <div class="cookie-actions">
@@ -80,6 +79,7 @@ const canonical = new URL(Astro.url.pathname, 'https://monksofmarket.com').href;
       <button type="button" id="cookie-accept" class="cookie-btn cookie-accept">Accept</button>
     </div>
   </div>
+  <script src="/js/cookie-consent.js" is:inline></script>
   <script src="/js/faq-accordion.js" is:inline defer></script>
   <slot name="page-script" />
 </body>
