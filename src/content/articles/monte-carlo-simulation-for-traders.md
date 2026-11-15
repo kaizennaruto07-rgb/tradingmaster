@@ -20,6 +20,8 @@ From that distribution, you get the two things a backtest can never give you: th
 
 This matters because the order of your trades decides whether a strategy survives, not just its average. Two traders can run an identical strategy with identical expectancy and end up with wildly different accounts — one catches losers early and quits, the other catches winners early and feels invincible. Your backtest is one roll of those dice. Monte Carlo rolls them a thousand times so you can see the full shape of your luck before you trade real money on it.
 
+> **Try it as you read:** run your own numbers through the [Monte Carlo Trading Simulator](/tools/what-if-simulator/) — free in your browser, 1,000 simulated futures from your win rate and payoff.
+
 <figure class="article-visual" data-reveal>
 <svg viewBox="0 0 680 410" role="img" aria-label="One highlighted backtest equity curve overlaid on a faint cloud of one thousand resampled paths, with a dashed ruin line at a 30 percent account loss" class="viz">
 <text x="340" y="28" text-anchor="middle" fill="#f2f7f4" font-size="15" font-weight="700">One backtest. One thousand alternate histories.</text>
@@ -212,7 +214,7 @@ Monte Carlo is step two of four, in this order:
 3. **Size** — choose risk per trade from the ruin curve, largest survivable size.
 4. **Forward/paper test** — confirm the strategy behaves live the way the sample promised. (This evening's follow-up covers paper-vs-real testing in detail.)
 
-Your lab for steps two and three is already on this site: the [What-If Trade Simulator](/tools/what-if-simulator/) runs your own trade list through exactly this fan — P10/P50/P90 bands, ruin probability, drawdown distribution. Run your own trade list through the same fan. One correction, stated plainly: the simulator prices *sequence risk on an existing sample* — it does not validate whether the edge is real. That's step one's job.
+Your lab for steps two and three is already on this site: the [Monte Carlo Trading Simulator](/tools/what-if-simulator/) runs your own trade list through exactly this fan — P10/P50/P90 bands, ruin probability, drawdown distribution. Run your own trade list through the same fan. One correction, stated plainly: the simulator prices *sequence risk on an existing sample* — it does not validate whether the edge is real. That's step one's job.
 
 And a tease for what's next: once you've survived the fan and chosen your size, the next leak isn't ruin — it's giving back open profits. Tomorrow's follow-up is about that.
 
@@ -249,3 +251,7 @@ First define ruin — the account-loss line (say 30%) at which you'd stop tradin
 ### Why do the worst Monte Carlo paths look so much worse than my backtest?
 
 Because your backtest drew one lucky ordering of history. The fan explores orderings where losers cluster early and streaks stretch longer — sequences your sample contains but your single realized order happened to avoid. The worst paths aren't pessimistic; they're the honest price of the same trades dealt in a different order.
+
+### Where can I run a Monte Carlo simulation for free?
+
+Right here on this site — the [Monte Carlo Trading Simulator](/tools/what-if-simulator/) runs your strategy 1,000 times in your browser, free, with no sign-up. Enter your win rate, average win and loss, risk per trade and number of trades, and it shows the median outcome, the P10–P90 bands, the probability of profit and the chance of a 50%+ drawdown.
