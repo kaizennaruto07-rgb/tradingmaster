@@ -7,7 +7,7 @@ import faqData from './faq-whatif.json';
 const schemaHtml = '<script type="application/ld+json">' + JSON.stringify(faqData) + '</script' + '>';
 ---
 
-<Layout title="Monte Carlo Trading Simulator: Test Your Strategy" description="Free Monte Carlo trading simulator: run your strategy 1,000 times in your browser. See median outcome, P10–P90 bands, probability of profit and risk of ruin." current="tools" schema={schemaHtml}>
+<Layout title="Monte Carlo Trading Simulator: Test Your Strategy" description="Estimate your trading returns: free Monte Carlo simulator runs your strategy 1,000 times in your browser. See median return, P10–P90 bands and risk of ruin." current="tools" schema={schemaHtml}>
 <style>
   .run-btn{display:block;width:100%;margin-top:18px;height:52px;border:0;border-radius:12px;background:var(--accent);color:#fff;font:700 15px/1 var(--sans);cursor:pointer;letter-spacing:.01em}
   .run-btn:hover{filter:brightness(1.08)}
@@ -90,14 +90,16 @@ const schemaHtml = '<script type="application/ld+json">' + JSON.stringify(faqDat
         <p>The simulator loads with this scenario: ₹1,00,000 starting capital, 40% win rate, 2R average win against 1R average loss, 1% risked per trade, 500 trades.</p>
         <div class="guide-example"><div class="lineitems">
           <div class="lineitem"><span>Expectancy per trade</span><b>0.4 × 2R − 0.6 × 1R = +0.2R</b></div>
-          <div class="lineitem"><span>Median final capital (P50)</span><b>≈ ₹2.57 L</b></div>
-          <div class="lineitem"><span>Bad-luck outcome (P10)</span><b>≈ ₹1.69 L</b></div>
-          <div class="lineitem"><span>Good-luck outcome (P90)</span><b>≈ ₹3.79 L</b></div>
+          <div class="lineitem"><span>Median final capital (P50)</span><b>≈ ₹2.57 L (+157%)</b></div>
+          <div class="lineitem"><span>Bad-luck outcome (P10)</span><b>≈ ₹1.69 L (+69%)</b></div>
+          <div class="lineitem"><span>Good-luck outcome (P90)</span><b>≈ ₹3.79 L (+279%)</b></div>
           <div class="lineitem"><span><strong>Chance of finishing in profit</strong></span><b>≈ 99.8%</b></div>
           <div class="lineitem"><span><strong>Chance of a 50%+ drawdown</strong></span><b>≈ 0.0%</b></div>
           <div class="lineitem"><span>Median worst drawdown</span><b>≈ 15.7%</b></div>
         </div></div>
         <p>Now change only the win rate to 30% and the payoff to 1:1 — a strategy with negative expectancy (−0.4R per trade). The median future ends near ₹13,000, the chance of profit collapses to ~0%, and every single simulated future suffers a 50%+ drawdown. Same simulator, same honesty: it tells you the strategy is broken <em>before</em> the account does.</p>
+        <h2>Estimate your trading returns — as a range, not a promise</h2>
+        <p>The fan above is also your trading-returns estimate. One "expected return" hides the spread: the same strategy, same win rate, same payoff, finishes 500 trades anywhere from about +69% on an unlucky ordering to about +279% on a lucky one, with the median near +157%. So the honest question is never "what return will I get?" — it is "what range of returns can this strategy produce, and can I live with the bottom of it?" Plug your own win rate, payoff and risk per trade in above, and read the P50 as your typical return and the P10 as the return you must be able to stomach.</p>
         <FaqAccordion faqs={faqsData} /><div class="tool-cta" style="margin-top:44px;padding:28px;border:1px solid var(--line);border-radius:16px;background:var(--surface)">
           <h3 style="margin:0 0 8px">Understand the mathematics behind the bands</h3>
           <p style="margin:0 0 16px;color:var(--muted);font-size:14px">The simulator shows you <em>what</em> can happen. The articles explain <em>why</em> — expectancy, risk of ruin, drawdown recovery and the streaks every trader underestimates.</p>
