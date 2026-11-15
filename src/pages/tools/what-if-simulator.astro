@@ -7,7 +7,7 @@ import faqData from './faq-whatif.json';
 const schemaHtml = '<script type="application/ld+json">' + JSON.stringify(faqData) + '</script' + '>';
 ---
 
-<Layout title="What-If Trade Simulator: Monte Carlo Your Trading Strategy" description="Run your trading strategy 1,000 times in your browser. Monte Carlo simulator shows the median outcome, P10–P90 bands, probability of profit and risk of ruin — before real money is at stake." current="tools" schema={schemaHtml}>
+<Layout title="Monte Carlo Trading Simulator: Test Your Strategy" description="Free Monte Carlo trading simulator: run your strategy 1,000 times in your browser. See median outcome, P10–P90 bands, probability of profit and risk of ruin." current="tools" schema={schemaHtml}>
 <style>
   .run-btn{display:block;width:100%;margin-top:18px;height:52px;border:0;border-radius:12px;background:var(--accent);color:#fff;font:700 15px/1 var(--sans);cursor:pointer;letter-spacing:.01em}
   .run-btn:hover{filter:brightness(1.08)}
@@ -32,7 +32,7 @@ const schemaHtml = '<script type="application/ld+json">' + JSON.stringify(faqDat
 <section class="tool-page" id="tool-whatif">
     <div class="shell">
       <a class="back-link" href="/tools/">← All tools</a>
-      <header class="tool-header"><div><div class="eyebrow">Tool 03 · Monte Carlo simulator</div><h1>What if you ran your strategy 1,000 times?</h1><p class="tool-lead">Your backtest is one lucky ordering of wins and losses. This simulator shuffles the same strategy into 1,000 possible futures — and shows the median outcome, the bad-luck tail, and how often the account blows up. Free, in your browser, no signup.</p></div></header>
+      <header class="tool-header"><div><div class="eyebrow">Tool 03 · Monte Carlo simulator</div><h1>Monte Carlo Trading Simulator</h1><p class="tool-lead">What if you ran your strategy 1,000 times? Your backtest is one lucky ordering of wins and losses. This simulator shuffles the same strategy into 1,000 possible futures — and shows the median outcome, the bad-luck tail, and how often the account blows up. Free, in your browser, no signup.</p></div></header>
       <div class="board-wrap">
         <div class="calculator">
           <div class="input-card" data-reveal="left">
