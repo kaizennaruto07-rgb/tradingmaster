@@ -1,0 +1,179 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout
+  title="Our Vision — Monks Of Market"
+  description="Emotions cost money. Trading is math, not magic. The Monks Of Market vision: a generation of disciplined, cost-aware, mathematically sound traders."
+  current="vision"
+>
+<main class="vision-page">
+    <section class="v-hero">
+      <div class="v-hero-inner shell">
+        <div class="eyebrow">Our vision</div>
+        <h1>The Vision.</h1>
+        <p class="v-hero-sub">Scroll to begin the journey.</p>
+        <a class="v-cue" href="#problem" aria-label="Scroll to begin the journey"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></a>
+      </div>
+      <div class="v-candles" aria-hidden="true">
+        <svg viewBox="0 0 1200 190" preserveAspectRatio="xMidYMax slice">
+          <line x1="0" y1="50" x2="1200" y2="50" stroke="var(--line)" stroke-width="1" stroke-dasharray="3 7"/>
+          <line x1="0" y1="100" x2="1200" y2="100" stroke="var(--line)" stroke-width="1" stroke-dasharray="3 7"/>
+          <line x1="0" y1="150" x2="1200" y2="150" stroke="var(--line)" stroke-width="1" stroke-dasharray="3 7"/>
+          <g stroke-width="2">
+            <line x1="39" y1="106" x2="39" y2="164" stroke="var(--danger)"/><rect x="24" y="118" width="30" height="34" fill="var(--danger)"/>
+            <line x1="105" y1="120" x2="105" y2="174" stroke="var(--danger)"/><rect x="90" y="132" width="30" height="30" fill="var(--danger)"/>
+            <line x1="171" y1="92" x2="171" y2="154" stroke="var(--danger)"/><rect x="156" y="104" width="30" height="38" fill="var(--danger)"/>
+            <line x1="237" y1="104" x2="237" y2="160" stroke="var(--accent)"/><rect x="222" y="116" width="30" height="32" fill="var(--accent)"/>
+            <line x1="303" y1="116" x2="303" y2="168" stroke="var(--danger)"/><rect x="288" y="128" width="30" height="28" fill="var(--danger)"/>
+            <line x1="369" y1="86" x2="369" y2="150" stroke="var(--accent)"/><rect x="354" y="98" width="30" height="40" fill="var(--accent)"/>
+            <line x1="435" y1="96" x2="435" y2="154" stroke="var(--accent)"/><rect x="420" y="108" width="30" height="34" fill="var(--accent)"/>
+            <line x1="501" y1="106" x2="501" y2="158" stroke="var(--danger)"/><rect x="486" y="118" width="30" height="28" fill="var(--danger)"/>
+            <line x1="567" y1="76" x2="567" y2="144" stroke="var(--accent)"/><rect x="552" y="88" width="30" height="44" fill="var(--accent)"/>
+            <line x1="633" y1="84" x2="633" y2="144" stroke="var(--accent)"/><rect x="618" y="96" width="30" height="36" fill="var(--accent)"/>
+            <line x1="699" y1="62" x2="699" y2="134" stroke="var(--accent)"/><rect x="684" y="74" width="30" height="48" fill="var(--accent)"/>
+            <line x1="765" y1="72" x2="765" y2="134" stroke="var(--accent)"/><rect x="750" y="84" width="30" height="38" fill="var(--accent)"/>
+            <line x1="831" y1="52" x2="831" y2="126" stroke="var(--accent)"/><rect x="816" y="64" width="30" height="50" fill="var(--accent)"/>
+            <line x1="897" y1="60" x2="897" y2="124" stroke="var(--accent)"/><rect x="882" y="72" width="30" height="40" fill="var(--accent)"/>
+            <line x1="963" y1="42" x2="963" y2="118" stroke="var(--accent)"/><rect x="948" y="54" width="30" height="52" fill="var(--accent)"/>
+            <line x1="1029" y1="50" x2="1029" y2="116" stroke="var(--accent)"/><rect x="1014" y="62" width="30" height="42" fill="var(--accent)"/>
+            <line x1="1095" y1="32" x2="1095" y2="110" stroke="var(--accent)"/><rect x="1080" y="44" width="30" height="54" fill="var(--accent)"/>
+            <line x1="1161" y1="40" x2="1161" y2="108" stroke="var(--accent)"/><rect x="1146" y="52" width="30" height="44" fill="var(--accent)"/>
+          </g>
+        </svg>
+      </div>
+    </section>
+
+    <section class="shell v-block" id="problem">
+      <div class="v-split">
+        <div data-reveal>
+          <div class="chapter-kicker">01 · The problem</div>
+          <h2 class="v-h2">Emotions <em class="red">cost money.</em></h2>
+          <div class="v-copy">
+            <p>Every day, millions of retail traders enter the market on gut feel, hype and fear — a tip in a group chat, a green candle, a screenshot of someone else's P&amp;L. Without a mathematical framework, that isn't trading. It's gambling with better graphics, and <strong>the house always wins.</strong></p>
+            <p>Worse, the bleed starts before the first charge lands. A trader with no verifiable edge runs <strong>negative expectancy from the opening bell</strong> — the trade is a losing proposition before brokerage even hits. That is the cost of no system, and most traders pay it on every single trade.</p>
+          </div>
+        </div>
+        <div class="v-card" data-reveal="right">
+          <div class="v-card-label">The cost of no system</div>
+          <div class="v-card-big">−EV</div>
+          <p class="v-card-copy">The long-run expectancy of a trader with no mathematical edge — before brokerage.</p>
+          <div class="ev-chips"><span>gut feel</span><span>hype</span><span>fear</span><span class="ev-chip-neg">−EV</span></div>
+        </div>
+      </div>
+      <div class="math-grid" data-reveal>
+        <div class="math-card"><div class="math-card-num">Leak 01</div><h4>Hidden costs</h4><p>STT, GST, stamp duty, exchange charges and funding leave your account quietly, trade after trade. They never appear in the candles — so traders judge every outcome on gross P&amp;L and wonder why the balance tells a smaller story.</p></div>
+        <div class="math-card"><div class="math-card-num">Leak 02</div><h4>Emotional leaks</h4><p>Revenge trading after a red day. Doubling size after a green one. Moving the stop because it "feels close". This is the C-game — your worst trading, on repeat — and it costs more than any fee schedule ever will.</p></div>
+        <div class="math-card"><div class="math-card-num">Leak 03</div><h4>No verifiable edge</h4><p>A strategy is not an edge until the math says so. If you can't state your expectancy in numbers, you don't have a system — you have a habit, and the market charges full price for habits.</p></div>
+      </div>
+    </section>
+
+    <section class="shell v-block v-center" id="mathematics">
+      <div data-reveal>
+        <div class="chapter-kicker">02 · The mathematics</div>
+        <h2 class="v-h2">Trading is <em class="green">math, not magic.</em></h2>
+        <div class="v-copy v-copy-center">
+          <p>The mathematics of trading are absolute. With the right position sizing, risk-to-reward ratios and cost-aware execution, anyone can achieve consistency — because none of it depends on prediction. Three principles decide whether a trader survives long enough for skill to matter:</p>
+        </div>
+      </div>
+      <div class="math-grid" data-reveal>
+        <div class="math-card"><div class="math-card-num">01</div><h4>Position sizing</h4><p>Every position is sized from your risk, not your conviction. A fixed fraction of capital per trade means no single loss can end the game — the math of survival comes before the math of profit.</p></div>
+        <div class="math-card"><div class="math-card-num">02</div><h4>Risk-to-reward ratios</h4><p>Every setup is scored against its reward multiple. You only take trades where the payoff justifies the risk — so a 40% win rate can still print money, because the math says so.</p></div>
+        <div class="math-card"><div class="math-card-num">03</div><h4>Cost-aware execution</h4><p>Every charge is known before entry — STT, brokerage, GST, funding. Net P&amp;L is the only P&amp;L; gross is just the trailer. If the numbers don't survive the bill, the trade doesn't happen.</p></div>
+      </div>
+      <div class="equation-block" data-reveal>
+        <div class="equation-top"><span class="equation-label">The equations</span><span class="equation-live">EVERY TRADE · SOLVED BEFORE ENTRY</span></div>
+        <span class="equation-cap">Expectancy — the edge itself</span>
+        <div class="equation eq-classic" aria-label="edge equals win percent times average win, minus loss percent times average loss, greater than zero">
+          <span class="equation-token eq-net">edge</span><span class="equation-token eq-op">=</span><span class="equation-token">(win% × avg win)</span><span class="equation-token eq-op">−</span><span class="equation-token">(loss% × avg loss)</span><span class="equation-token eq-op">&gt;</span><span class="equation-token eq-zero">0</span>
+        </div>
+        <span class="equation-cap">After costs — the edge you keep</span>
+        <div class="equation" aria-label="net edge equals gross P and L minus all costs, greater than zero">
+          <span class="equation-token eq-net">net edge</span><span class="equation-token eq-op">=</span><span class="equation-token">gross P&amp;L</span><span class="equation-token eq-op">−</span><span class="equation-token eq-cost">all costs</span><span class="equation-token eq-op">&gt;</span><span class="equation-token eq-zero">0</span>
+        </div>
+        <div class="equation-notes">
+          <div><small>edge</small><b>Expectancy per trade, before the bill.</b></div>
+          <div><small>gross p&amp;l</small><b>Price movement before any charge.</b></div>
+          <div><small>all costs</small><b>STT, brokerage, GST, stamp duty, funding.</b></div>
+          <div><small>&gt; 0</small><b>The only verdict a trade may receive.</b></div>
+        </div>
+        <p class="equation-note">A positive edge on paper can still be negative after costs — which is why both lines have to clear zero. If either fails, there is no trade, <strong>only a donation to the venue.</strong> Every Monks Of Market tool runs both, before entry.</p>
+      </div>
+    </section>
+
+    <section class="shell">
+      <article class="chapter chapter-game" data-chapter="C→A" data-reveal>
+        <div class="chapter-kicker">The transformation</div>
+        <h3>Raise the C-game. <em>The A-game follows.</em></h3>
+        <div class="chapter-copy">
+          <p>In <em>The Mental Game of Trading</em>, Jared Tendler describes performance as an inchworm: your trading lives between your <strong>C-game</strong> — how you trade at your worst — and your <strong>A-game</strong> — your very best. Progress isn't pushing the A-game higher. It's dragging the C-game up, inch by inch, until the gap closes.</p>
+          <p>For most traders, the gap is not knowledge. It's the three leaks: costs they never counted, emotions they never priced, and trades whose math was never checked. Remove them, and the floor rises.</p>
+        </div>
+        <div class="game-stage" aria-hidden="true">
+          <div class="game-line a"><i class="game-dot dot-a"></i><span class="game-tag tag-a">A-GAME · YOUR BEST</span></div>
+          <div class="game-line c"><i class="game-dot dot-c"></i><span class="game-tag tag-c">C-GAME · YOUR WORST</span></div>
+          <div class="game-gap"><span>THE GAP</span></div>
+          <div class="game-verdict">Same trader. Same market. <b>Different floor.</b></div>
+        </div>
+        <div class="trait-list">
+          <div class="trait-row"><span class="trait t-c">Ignores costs — judges trades on gross</span><span class="trait-arrow" aria-hidden="true">→</span><span class="trait t-a">Knows every charge before entry</span></div>
+          <div class="trait-row"><span class="trait t-c">Sizes on emotion, hope and hype</span><span class="trait-arrow" aria-hidden="true">→</span><span class="trait t-a">Sizes from risk, never conviction</span></div>
+          <div class="trait-row"><span class="trait t-c">No math — a strategy that "feels right"</span><span class="trait-arrow" aria-hidden="true">→</span><span class="trait t-a">Net-first thinking, expectancy proven</span></div>
+        </div>
+        <p class="game-note">Cost awareness and discipline don't make your best trades better. They make your worst trades survivable — and that is where accounts are actually saved.</p>
+      </article>
+    </section>
+
+    <section class="shell">
+      <article class="chapter chapter-goal" data-chapter="03" data-reveal>
+        <div class="chapter-kicker">03 · The goal</div>
+        <h3>A disciplined <em>generation.</em></h3>
+        <div class="chapter-copy">
+          <p>Our vision is to equip everyday traders with the same risk intelligence used by institutional quants — the position math, the cost accounting, the emotional discipline. We are building a generation of disciplined, cost-aware, mathematically sound traders: traders whose C-game keeps rising until it meets their A-game.</p>
+        </div>
+        <div class="goal-actions"><a class="btn btn-primary" href="/tools/">Open the toolbox <span>→</span></a><a class="btn btn-secondary" href="/about/">About Monks Of Market</a></div>
+        <p class="goal-note">Phase 1 is the foundation: precision tools first, then a growing library of tools and market knowledge — precision compounding.</p>
+      </article>
+    </section>
+  </main>
+</Layout>
+
+<style>
+  .v-hero{position:relative;min-height:calc(100svh - 63px);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:72px 0 250px;overflow:hidden}
+  .v-hero::before{content:"";position:absolute;inset:0;background-image:linear-gradient(color-mix(in srgb,var(--line) 32%,transparent) 1px,transparent 1px),linear-gradient(90deg,color-mix(in srgb,var(--line) 32%,transparent) 1px,transparent 1px);background-size:64px 64px;mask-image:radial-gradient(ellipse 90% 80% at 50% 30%,black,transparent 78%);opacity:.5}
+  .v-hero::after{content:"";position:absolute;top:2%;left:50%;translate:-50% 0;width:640px;height:640px;border-radius:50%;background:radial-gradient(circle,var(--accent-soft),transparent 68%);pointer-events:none}
+  .v-hero-inner{position:relative;z-index:2}
+  .v-hero .eyebrow{justify-content:center}
+  .v-hero .eyebrow::before{display:none}
+  .v-hero h1{margin:20px auto 18px}
+  .v-hero-sub{color:var(--muted);font-size:18px;line-height:1.6;margin:0}
+  .v-cue{display:inline-flex;margin-top:36px;color:var(--muted);animation:cueBob 2.2s ease-in-out infinite}
+  .v-cue:hover{color:var(--accent)}
+  @keyframes cueBob{50%{transform:translateY(7px)}}
+  .v-candles{position:absolute;left:0;right:0;bottom:0;height:210px;z-index:1;mask-image:linear-gradient(to bottom,transparent,black 32%)}
+  .v-candles svg{width:100%;height:100%;display:block}
+  .v-block{padding:96px 0}
+  .v-block + .v-block{border-top:1px solid var(--line)}
+  .v-split{display:grid;grid-template-columns:1.05fr .95fr;gap:64px;align-items:center}
+  .v-h2{font-size:clamp(34px,4.8vw,60px);line-height:1.03;letter-spacing:-.045em;margin:22px 0 0;max-width:20ch}
+  .v-h2 em{font-style:normal}
+  .v-h2 .red{color:var(--danger)}
+  .v-h2 .green{color:var(--accent)}
+  .v-copy{margin-top:24px;max-width:640px;color:var(--muted);font-size:17px;line-height:1.75}
+  .v-copy p{margin:0 0 15px}
+  .v-copy strong{color:var(--ink);font-weight:700}
+  .v-copy-center{margin-inline:auto}
+  .v-center{text-align:center}
+  .v-center .chapter-kicker{justify-content:center}
+  .v-center .chapter-kicker::after{display:none}
+  .v-center .v-h2{margin-inline:auto}
+  .v-center .math-grid{text-align:left}
+  .v-center .equation-block{text-align:left}
+  .v-card{background:linear-gradient(155deg,var(--surface-2),var(--surface));border:1px solid color-mix(in srgb,var(--accent) 26%,var(--line));border-radius:22px;padding:30px 32px;box-shadow:var(--shadow)}
+  .v-card-label{font:600 10px/1 var(--mono);letter-spacing:.16em;text-transform:uppercase;color:var(--accent)}
+  .v-card-big{font:600 64px/1 var(--mono);letter-spacing:-.03em;color:var(--danger);margin:16px 0 12px}
+  .v-card-copy{font-size:14px;color:var(--muted);line-height:1.7;margin:0 0 20px}
+  @media(max-width:900px){.v-split{grid-template-columns:1fr;gap:36px}.v-block{padding:72px 0}}
+  @media(max-width:640px){.v-hero{padding:56px 0 210px;min-height:0}.v-hero-sub{font-size:16px}.v-candles{height:170px}.v-card-big{font-size:52px}.v-block{padding:64px 0}}
+  @media(prefers-reduced-motion:reduce){.v-cue{animation:none}}
+</style>
