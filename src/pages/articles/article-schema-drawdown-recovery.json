@@ -1,0 +1,104 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "Drawdown Recovery Calculator",
+      "description": "Drawdown recovery calculator walkthrough: the gain to recover a loss, trades at your expectancy, and weeks at your pace — worked on one ₹5,00,000 account.",
+      "author": {
+        "@type": "Person",
+        "@name": "Kaizen"
+      },
+      "datePublished": "2026-10-28",
+      "publisher": {
+        "@type": "Organization",
+        "@name": "Monks Of Market"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How much do I need to gain to recover from a 20% loss?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "25% on the trough. On the account in this article, a 20% drawdown from a ₹5,00,000 peak leaves a ₹4,00,000 trough, so ₹1,00,000 must be recovered — and ₹1,00,000 ÷ ₹4,00,000 is 25%."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why does a 50% loss need a 100% gain to break even?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Because the gain is earned on the halved post-loss base. After a 50% loss, only half the peak remains, so doubling what remains is the only way back to the full peak. In general, the required gain is always larger than the loss, because the base it is earned on is always smaller than the peak."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do you calculate the percentage gain needed to recover a loss?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Use the drawdown recovery formula: required gain % = drawdown % ÷ (100 − drawdown %) × 100. For a 20% drawdown: 20 ÷ (100 − 20) × 100 = 25%. Equivalently, with D as the drawdown fraction, the required gain is 1 ÷ (1 − D) − 1."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long does it take to recover from a 30% trading loss?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "There is no generic answer — only a computed one at stated assumptions. On the account in this article, a 30% drawdown from a ₹5,00,000 peak needs ₹1,50,000, a 42.9% gain, and at 0.5R expectancy with 1% trough risk, about 86 trades — about 17 weeks at 5 trades per week, at this assumed pace, before variance. Run your own numbers through the worksheet for your answer."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How many trades does it take to recover from a drawdown?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Rupees needed ÷ expected rupees per trade. On the central example, that is ₹1,00,000 ÷ ₹2,000 = 50 trades. On the 30% rung, it is ₹1,50,000 ÷ ₹1,750 = 85.7, about 86 trades. Both figures are expectations at an assumed pace, before variance — not promises."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Should you increase position size to recover trading losses faster?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. As a mechanism argument, larger size makes the next loss larger in rupees by the same proportion as it makes the next win larger. If the next trade loses, the hole deepens and the recovery need grows, and on an account with a maximum drawdown limit, the remaining room shrinks faster. Improving expectancy, not increasing size, is what shortens the clock."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the drawdown recovery formula?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The full calculator is three formulas in order. Gain needed % = drawdown % ÷ (100 − drawdown %) × 100. Expectancy in R = (win rate × average win in R) − (loss rate × 1R). Expected trades = rupees needed ÷ (expectancy × rupees risked per trade). Expected weeks = expected trades ÷ trades per week, at this assumed pace, before variance."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can a drawdown recovery calculator predict when I will recover?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. It gives an expected trade count and an expected week count at an assumed pace, before variance — not a forecast and not a date. Variance means the realised count can be far longer, and a system whose expectancy changes, or that was never positive, has no reliable recovery date at all."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What if my trading system has no positive expectancy — can I still recover?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Not by running this calculation further. If expectancy is zero or negative, the calculator gives no recovery time in that branch, because dividing rupees needed by zero or negative expected rupees per trade yields no finite, positive answer. Audit the system first: check whether the edge is intact or the drawdown exposed a dead system, and rebuild before planning any climb."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How is drawdown recovery different on a prop firm account with a maximum drawdown limit?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The recovery arithmetic is the same, but it runs against a shrinking allowance: the remaining room under the limit shrinks exactly as the recovery need grows. Check the three-step calculation against the remaining room before planning a climb, and keep all numbers in rupees on your own account rather than assuming any firm's specific limit. No firm names or firm-specific limits are used in this article."
+          }
+        }
+      ]
+    }
+  ]
+}
