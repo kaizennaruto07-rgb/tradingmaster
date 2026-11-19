@@ -179,7 +179,7 @@ Expectancy per trade is an input here — the EV of your system, covered in full
 
 Say it plainly: eight to eleven months of disciplined execution, at a realistic pace, to climb out of one 30% hole — *if* the system keeps delivering its average the whole way up. That's what a drawdown actually costs. Not ₹60,000 — the better part of a year of your trading life.
 
-> **Illustration, not forecast — expectancy is an average, not a guarantee; variance means the realized climb can be far shorter or far longer than the expectation.** This is one worked example with one set of inputs, never a promise of recovery speed. Run your own win rate, your own reward-to-risk, your own pace through the same three steps. And if the Rung-3 audit says the system is broken rather than unlucky, this expected-trades math does not apply at all — the answer is the rebuild path, not a steeper climb. (A dedicated drawdown recovery calculator is planned as part of a later tool cluster — until then, the formula above is the honest version.)
+> **Illustration, not forecast — expectancy is an average, not a guarantee; variance means the realized climb can be far shorter or far longer than the expectation.** This is one worked example with one set of inputs, never a promise of recovery speed. Run your own win rate, your own reward-to-risk, your own pace through the same three steps. And if the Rung-3 audit says the system is broken rather than unlucky, this expected-trades math does not apply at all — the answer is the rebuild path, not a steeper climb. (A dedicated drawdown recovery calculator **tool** is planned as part of a later tool cluster — until then, the [walkthrough](/articles/drawdown-recovery-calculator/) is the honest version.)
 
 
 <figure class="article-visual" data-reveal>
@@ -332,7 +332,7 @@ Think about what that means for the 144-trade climb in the illustration above. E
 
 This is why prevention math beats recovery math. The cheapest drawdown is the one you never take.
 
-A dedicated drawdown recovery calculator (enter your peak, your trough, your system's expectancy, and get the climb mapped in trades and weeks) is planned as part of a later tool cluster. Until it ships, the formula and the three steps above are the honest version — no black box, nothing hidden.
+A dedicated drawdown recovery calculator **tool** (enter your peak, your trough, your system's expectancy, and get the climb mapped in trades and weeks) is planned as part of a later tool cluster. Until it ships, the [walkthrough](/articles/drawdown-recovery-calculator/) above is the honest version — no black box, nothing hidden.
 
 **So: how do you make sure the next drawdown is smaller?** That's the question for [*The 3-Day Rule*](/articles/the-3-day-rule/) — and the sizing answer lives in [position sizing](/articles/position-sizing/), because the depth of every drawdown is decided before it begins, in the size of the trades that dug it.
 
