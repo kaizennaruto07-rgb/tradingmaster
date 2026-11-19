@@ -7,7 +7,8 @@
       "description": "A 50% loss needs a 100% gain because the loss is measured on the peak and the gain on the trough. Learn the recovery formula, table, and depth-budget rule.",
       "author": {
         "@type": "Person",
-        "@name": "Kaizen"
+        "@name": "Kaizen",
+        "url": "https://monksofmarket.com/about/"
       },
       "datePublished": "2026-10-29",
       "publisher": {
@@ -64,6 +65,14 @@
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Mathematically, no — any drawdown under 100% has a finite required gain under D ÷ (1 − D), so recovery is possible in principle. In effect, yes — the size of the climb, the time spent underwater, and account or position limits can make recovery unachievable in practice, and no recovery should ever be promised. At a 100% drawdown the balance is zero, and no gain can recover that."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much gain do I need to recover from a 50% loss?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "100%. A 50% loss needs a 100% gain because the loss is measured on the peak and the gain on the trough."
           }
         }
       ]
