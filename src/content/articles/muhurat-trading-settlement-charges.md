@@ -1,5 +1,5 @@
 ---
-title: "After Muhurat Trading: Settlement, Charges, and the Holiday Gap (2026)"
+title: "After Muhurat Trading: Settlement, Charges & Holiday Gap"
 description: "Muhurat Trading 2026 trades settle T+1 on Mon 9 Nov, normal-day charges, Tue 10 Nov a holiday. Full charge stack, worked example, and the BTST question."
 meta_description: "Muhurat Trading 2026 trades settle T+1 on Mon 9 Nov, normal-day charges, Tue 10 Nov a holiday. Full charge stack, worked example, and the BTST question."
 date: 2026-10-24
