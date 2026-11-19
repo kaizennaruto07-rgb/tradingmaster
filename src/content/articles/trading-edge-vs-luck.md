@@ -133,7 +133,7 @@ This connects directly to the win-side psychology in [Why Traders Give Back Thei
 Here's the behavioural habit that defeats the mirror. Before you celebrate any win, write down *why* it worked — in one sentence, in your journal, while the P&L is still on the screen.
 
 - If the reason is in your written plan ("broke out of the range on rising volume, entry and stop exactly as rule 3 defines"), the win belongs in the edge column.
-- If the reason is not in your plan ("saw it moving and jumped in," "a friend's tip," "just felt strong"), the win was luck wearing a costume. Log it in the luck column. Be grateful for the money and suspicious of the lesson.
+- If the reason is not in your plan ("saw it moving and jumped in," "a friend's tip," "just felt strong"), the win was luck in disguise. Log it in the luck column. Be grateful for the money and suspicious of the lesson.
 
 This habit is the recording instrument for everything this article teaches. It also feeds directly into the journal tally in the verdict loop below — and into the companion article on [the trading journal](/articles/trading-journal-what-to-track-beyond-pnl/), which owns the recording habit itself.
 
