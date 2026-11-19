@@ -22,7 +22,7 @@ Here's the short answer, up front: **a strategy is dead when it breaks its own h
 2. **Max drawdown duration** — the longest your account has ever stayed underwater before making a new high.
 3. **Longest losing streak** — the worst run of consecutive losses in your record.
 
-If your live trading breaks one of these bounds meaningfully, the system is no longer behaving like the system you tested. That does not *prove* it is broken — no statistic can, and more on that caveat shortly — but it is the pre-agreed trigger that forces you to stop, evaluate, and either retire the system or find a genuine structural explanation for the breach.
+If your live trading breaks one of these bounds meaningfully, the system is no longer behaving like the system you tested. The trigger is fixed in advance: break any bound by 20–30% and you stop trading the system. For example: if your system has never, in its entire tested and live history, lost more than 12% peak-to-trough, and it is now down 18%, it is behaving like something that is not the system you bought. That does not *prove* it is broken — no statistic can, and more on that caveat shortly — but it is the pre-agreed trigger that forces you to stop, evaluate, and either retire the system or find a genuine structural explanation for the breach.
 
 Notice what this doesn't include: how you feel. Your feelings about a drawdown are real, but they're also guaranteed to be worst exactly when the data says "normal." Write the three numbers in a calm month. Execute them in a bad one.
 
