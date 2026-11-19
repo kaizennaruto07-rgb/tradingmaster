@@ -12,7 +12,7 @@ keywords: ["why a 50% loss needs a 100% gain", "drawdown asymmetry", "gain neede
 
 Most traders learn this lesson the expensive way: a loss and a gain of the same percentage do not cancel each other out. A 50% loss is not undone by a 50% gain. It needs a 100% gain — the remaining capital has to double.
 
-This is not a quirk of one market, one instrument, or one bad week. It is drawdown asymmetry, plain arithmetic that applies to any account, on NSE, BSE, or anywhere else. Once you see why it happens, it changes how you think about the gain needed to recover a loss — and, more importantly, how much risk you should take on a single trade.
+This is not a quirk of one market, one instrument, or one bad week. It is drawdown asymmetry, plain arithmetic that applies to any account, on NSE, BSE, or anywhere else. Once you see why it happens, it changes how you think about [the gain needed to recover a loss](/articles/drawdown-recovery-calculator/) — and, more importantly, [how much risk you should take on a single trade](/articles/position-sizing/).
 
 ## The Trap in One Sentence: The Loss Is Measured on the Peak, the Recovery Is Earned on the Trough
 
@@ -20,7 +20,7 @@ Here is the whole article in one sentence: the loss is measured on the peak, but
 
 When your account falls, the percentage lost is calculated on the larger, pre-loss balance. When it recovers, the percentage gained is calculated on the smaller, post-loss balance. The rupees you need to get back are fixed by the loss — but the percentage required to earn those rupees back grows, because the base you are earning them on has shrunk.
 
-That single base shift is the entire reason a 50% loss needs a 100% gain. Everything that follows — the formula, the drawdown recovery table, and the sizing rule at the end — is just that sentence worked out in numbers.
+That single base shift is the entire reason a 50% loss needs a 100% gain. Everything that follows — the formula, [the drawdown recovery table](/articles/trading-drawdown-mathematics-of-recovery/), and the sizing rule at the end — is just that sentence worked out in numbers.
 
 ## Why the Bases Are Different: The Base-Shift Intuition in Rupees
 
@@ -117,7 +117,7 @@ The practical point stands regardless of where exactly you place the knee. Below
 
 ## What Maximum Drawdown Really Means: Peak to Trough, Not Deposit to Trough
 
-Before applying the table to your own trading, measure correctly. Maximum drawdown, in its standard sense, is the single worst peak-to-trough decline in an account or strategy — measured from the prior peak, not from the starting deposit.
+Before applying the table to your own trading, measure correctly. [Maximum drawdown](/articles/maximum-drawdown/), in its standard sense, is the single worst peak-to-trough decline in an account or strategy — measured from the prior peak, not from the starting deposit.
 
 That distinction matters. Suppose you deposit Rs 1,00,000, grow the account to a peak of Rs 1,40,000, and then fall to Rs 1,05,000. The peak-to-trough drawdown is 25% (Rs 35,000 lost from the Rs 1,40,000 peak), even though the account is still above its starting deposit. If you measured from the deposit, you would report no drawdown at all — and you would badly underestimate the climb back to the peak, which is 33.3% on the Rs 1,05,000 trough.
 
@@ -220,3 +220,7 @@ The market supplies the same losing run; the risk fraction chooses the depth. Ov
 ### Is a deep drawdown ever truly unrecoverable?
 
 Mathematically, no — any drawdown under 100% has a finite required gain under D ÷ (1 − D), so recovery is possible in principle. In effect, yes — the size of the climb, the time spent underwater, and account or position limits can make recovery unachievable in practice, and no recovery should ever be promised. At a 100% drawdown the balance is zero, and no gain can recover that.
+
+### How much gain do I need to recover from a 50% loss?
+
+100%. A 50% loss needs a 100% gain because the loss is measured on the peak and the gain on the trough.
