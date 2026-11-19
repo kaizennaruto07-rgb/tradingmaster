@@ -181,7 +181,7 @@ MDD without these three is a trophy number, not a decision input. And if you wan
 
 ## What Is a Good Maximum Drawdown? The Acceptable Ladder for Indian Retail Traders
 
-There is no universal "good" number, but there are style-specific bands that experienced risk thinking converges on. Adapted for Indian retail:
+No one number counts as "good" for everyone, but there are style-specific bands that experienced risk thinking converges on. Adapted for Indian retail:
 
 <figure class="article-visual" data-reveal>
 <svg viewBox="0 0 680 400" role="img" aria-label="The acceptable maximum drawdown ladder: below 10% for intraday F&O, 20 to 30% for swing trading, positional judged case by case — with a 20% sanity line." class="viz">
