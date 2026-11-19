@@ -8,7 +8,8 @@
    "description": "A 20% drawdown needs a 25% gain to recover; a 50% drawdown needs 100%. The exact formula, the full 5%–90% table, the time-to-climb math, and a protocol.",
    "author": {
     "@type": "Person",
-    "name": "Kaizen"
+    "name": "Kaizen",
+    "url": "https://monksofmarket.com/about/"
    },
    "publisher": {
     "@type": "Organization",
