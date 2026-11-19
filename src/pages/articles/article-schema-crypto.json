@@ -7,7 +7,8 @@
    "description": "A 10,000 USDT perpetual at 10x costs ~3 USDT a day in funding at baseline rates — 9% of your margin a month. Who pays whom, IST settlement times, and the cap.",
    "author": {
     "@type": "Person",
-    "name": "Kaizen"
+    "name": "Kaizen",
+    "url": "https://monksofmarket.com/about/"
    },
    "datePublished": "2026-10-03",
    "publisher": {
@@ -63,7 +64,7 @@
      "name": "Do funding payments affect my liquidation risk?",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "Yes. Funding is deducted directly from your margin balance, so sustained positive funding steadily erodes your liquidation buffer even if the price does not move. A position that starts with a comfortable distance to liquidation can drift toward it purely from funding drag over days or weeks."
+      "text": "Yes. Funding is deducted directly from your margin balance, so sustained positive funding steadily erodes your liquidation buffer even if the price does not move. A position that starts with a comfortable distance to liquidation can drift toward it purely from funding drag over days or weeks. This is why the article's worked examples convert funding into margin-percentage terms — that is the number that determines survival."
      }
     }
    ]
