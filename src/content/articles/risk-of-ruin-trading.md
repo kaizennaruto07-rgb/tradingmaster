@@ -14,9 +14,9 @@ keywords: ["risk of ruin trading", "risk of ruin calculator", "how to calculate 
 
 ## Risk of Ruin: The Probability Your Account Dies Before Your Edge Pays
 
-Risk of ruin is the probability that your trading account hits zero — or a loss threshold you define as ruin — before a winning strategy has enough trades for its edge to pay off.
+Risk of ruin is the probability that your trading account hits zero — or a loss threshold you define as ruin — before a winning strategy has enough trades for its edge to pay off. At 10% risk per trade, even a winning strategy carries a ~54% chance of ruin.
 
-Here's the whole article in one line: **ruin is controlled by position size, not luck.** Two traders can run the exact same strategy, with the exact same win rate and the exact same entries, and one survives for years while the other blows up in a month. The difference is never the market. It is how much each of them risked per trade.
+The whole article in one line: **ruin is controlled by position size, not luck.** Two traders can run the exact same strategy, with the exact same win rate and the exact same entries, and one survives for years while the other blows up in a month. The difference is never the market. It is how much each of them risked per trade.
 
 Risk of ruin turns that gut feeling into a number. It answers one question: *given your win rate, your average win and loss, and the share of your account you risk per trade — what are the odds this account eventually dies?* Once you can compute that, sizing stops being a feeling. It becomes arithmetic.
 
@@ -39,7 +39,7 @@ Risk of ruin is computed from three inputs. Label each one before you touch the 
 - **Rp — payoff ratio.** Your average win divided by your average loss. A strategy that wins ₹2,000 on average and loses ₹1,000 on average has Rp = 2 (a 2:1 reward-to-risk).
 - **Risk fraction — the share of your account risked per trade.** Risking 2% per trade means a risk fraction of 0.02, and U = 1 / 0.02 = 50. Think of U as "how many consecutive losses it takes to lose the account" — the number of units your account is divided into.
 
-Here's the formula — the one version this article uses throughout:
+The formula, used consistently from here on:
 
 **A = (W × Rp − L) / (W × Rp + L)**
 
@@ -87,7 +87,7 @@ Traders mix up three different things. Keep them separate:
 - **Drawdown** is a *measurement of the past or present*: the peak-to-trough decline of your account, in percent. "I am down 20% from my high" is a drawdown. It is a fact, not a forecast — and a 20% drawdown does not mean your risk of ruin is 20%. The two numbers answer different questions.
 - **Going broke in real life** is the *event itself*, and it is messier than any formula. Margin calls, forced liquidation by your broker, topping up the account mid-drawdown (which the formula does not model), quitting in frustration at −40% — real ruin includes psychology and plumbing the math never sees.
 
-Risk of ruin is the cleanest of the three — which is exactly why you need to remember what it leaves out. The limitations section comes back to that.
+Risk of ruin is the cleanest of the three — which is exactly why you need to remember what it leaves out. The limitations section returns to that.
 
 ### Why a 50% drawdown is almost ruin: the recovery asymmetry
 
@@ -181,7 +181,7 @@ Base = 0.75 / 1.25 = **0.60**
 
 Risk of Ruin = 0.60^20 ≈ **0.0037%**
 
-At 5% risk per trade, this trader's ruin probability is 0.0037% — about 1 in 27,000. Tiny, but not zero. Now watch what happens when the same trader drops to 2% risk (U = 50): 0.60^50 is effectively zero. Same strategy, same market, same leverage — the extra 3% of risk per trade was buying essentially all of the ruin.
+At 5% risk per trade, this trader's ruin probability is 0.0037% — about 1 in 27,000. Tiny, but not zero. Drop the same trader to 2% risk (U = 50) and 0.60^50 is effectively zero. Same strategy, same market, same leverage — the extra 3% of risk per trade was buying essentially all of the ruin.
 
 One crypto-specific note: leverage does not change the formula; it changes your risk fraction, because the fraction is computed on what the stop-loss costs you as a share of equity, not on notional size — which is exactly why leveraged traders must be stricter about sizing, not looser.
 
@@ -197,7 +197,7 @@ Base = 0.9692 / 1.0308 ≈ **0.9402**
 
 Risk of Ruin = 0.9402^10 ≈ **54%**
 
-Read that again: a strategy with a genuine positive edge has a **~54% chance of killing the account** — a coin flip on survival — purely because of 10% position sizing. Now run the *identical* strategy at 2% risk (U = 50): 0.9402^50 ≈ 4.6%. Same edge, same trader, same market. The only thing that changed was the bet size, and ruin fell from a coin flip to under 5%.
+The point, plainly: a strategy with a genuine positive edge has a **~54% chance of killing the account** — a coin flip on survival — purely because of 10% position sizing. Now run the *identical* strategy at 2% risk (U = 50): 0.9402^50 ≈ 4.6%. Same edge, same trader, same market. The only thing that changed was the bet size, and ruin fell from a coin flip to under 5%.
 
 This is the whole article in one example. **Edge is necessary. Sizing is decisive.**
 
@@ -341,7 +341,7 @@ Before anyone risks 17.5% on anything: **full Kelly is notoriously aggressive.**
 
 Kelly connects directly back to this article's machinery: full-Kelly sizing sits at the peak of the growth-vs-ruin curve, and sizing *above* it increases both drawdowns and long-run risk of ruin — more pain for less growth. That is why fractional Kelly and the 1% rule are the same instinct expressed two ways: both deliberately step back from the mathematical maximum to buy survival.
 
-The standard textbook treatment follows Thorp's "The Kelly Criterion in Blackjack, Sports Betting, and the Stock Market" (2006, a chapter in the Handbook of Asset and Liability Management, revisiting his earlier work). The honest summary: Kelly is a ceiling for thinking, not a number to trade. It tells you the largest size that can be justified; wisdom lives well below it.
+Thorp's "The Kelly Criterion in Blackjack, Sports Betting, and the Stock Market" (2006, a chapter in the Handbook of Asset and Liability Management, revisiting his earlier work) is the standard textbook treatment. The honest summary: Kelly is a ceiling for thinking, not a number to trade. It tells you the largest size that can be justified; wisdom lives well below it.
 
 ## Survival Rules From Traders Who Didn't Blow Up
 
@@ -354,7 +354,7 @@ Everything below is **practitioner convention** — habits passed down by trader
 
 ## What the Formula Cannot Tell You: Honest Limitations
 
-> **Read this before you trust any number in this article.**
+> **Before you trust any number here, read this.**
 >
 > - **Stationary, known inputs are assumed.** The formula treats your win rate and payoff ratio as fixed, known constants. In reality you *estimate* them from past trades, and past performance does not guarantee future results. Garbage inputs, garbage probability.
 > - **Trades are assumed independent and identical (iid).** Real trading violates this constantly: markets regime-shift, volatility clusters, your execution degrades after losses, and correlated positions can lose together. The formula sees none of that.
@@ -382,20 +382,25 @@ A spreadsheet does all of this in minutes. Or skip the spreadsheet: our free [ri
 
 ### Is risking 1% per trade enough?
 
-For a strategy with a genuine, solid positive edge, 1% per trade drives the mathematical risk of ruin to effectively zero — the formula's U becomes 100, and the base raised to the 100th power vanishes. But the qualification matters: thin edges survive less comfortably. A 40% win rate at 1.55:1 still has positive expectancy (+0.02 per unit risked) yet carries ~3.8% ruin even at 1% risk. The 1% rule makes survival likely, not certain. The caveats: your expectancy must be real and net of costs, your inputs must describe the future reasonably well, and 1% does not protect you from long, painful drawdowns. It protects the account's *life*, not your comfort.
+For a strategy with a genuine, solid positive edge, 1% per trade drives the mathematical risk of ruin to effectively zero — but thin edges survive less comfortably: a 40% win rate at 1.55:1 still carries ~3.8% ruin even at 1% risk. The 1% rule makes survival likely, not certain — your expectancy must be real and net of costs, and 1% protects the account's *life*, not your comfort.
 
-### What risk of ruin is acceptable?
+### What is a good risk of ruin percentage?
 
-There is no universal answer — only deliberate ones. Some traders adopt <1% as a personal threshold; others tolerate more for small speculative accounts. Make the threshold concrete: size until your *pessimistic-case* number — ruin recomputed with your win rate knocked down and payoff trimmed — clears 1%. The honest approach: compute your number, decide what probability of losing the account you can truly accept, and reduce size until the two agree. An uncomputed risk is not a low risk; it is an unknown one.
+Below 1% is the professional standard. The [Risk of Ruin Calculator](/tools/risk-of-ruin/) solves for the largest risk per trade that keeps your ruin probability at or below 1%. No one answer counts as universal — only deliberate ones: some traders adopt <1% as a personal threshold, others tolerate more for small speculative accounts. Make the threshold concrete: size until your *pessimistic-case* number — ruin recomputed with your win rate knocked down and payoff trimmed — clears 1%.
 
 ### Does leverage change my risk of ruin?
 
-Leverage does not change the formula, but it changes the inputs you feed it. Leverage multiplies how much account equity each price move represents, which raises your *effective* risk fraction per trade. A "2% risk" trade at 10x leverage behaves like a far larger risk fraction if your stop is wide relative to margin. Compute ruin on what you actually stand to lose as a fraction of equity — not on the notional position size.
+Leverage does not change the formula, but it changes the inputs: it multiplies how much account equity each price move represents, raising your *effective* risk fraction per trade. Compute ruin on what you actually stand to lose as a fraction of equity — not on the notional position size.
 
 ### Do trading costs change my risk of ruin?
 
-Yes — directly. Brokerage, STT, exchange charges, GST, and funding all reduce your average win and inflate your average loss, which lowers your payoff ratio and your expectancy. A strategy with thin edge can flip from positive to negative expectancy once costs are counted, and negative expectancy means certain eventual ruin regardless of sizing. Always run the formula on net-of-cost numbers.
+Yes — directly: brokerage, STT, exchange charges, GST, and funding all reduce your average win and inflate your average loss, lowering your payoff ratio and expectancy. A strategy with thin edge can flip from positive to negative expectancy once costs are counted — and negative expectancy means certain eventual ruin regardless of sizing, so always run the formula on net-of-cost numbers.
 
 ### What should I do if I'm already in a deep drawdown?
 
-First, stop and measure: compute your current drawdown and the gain needed to recover (the asymmetry table above). Second, reduce size or pause — trading full size in a deep hole is how drawdowns become ruin. Third, revalidate: recompute your expectancy on recent trades, net of costs. If the edge is gone, the problem is the strategy, not your psychology. And remember the recovery math: the deeper the drawdown, the less room you have for further experiments. This is general education, not personal advice — if losses are affecting your wellbeing or finances, step away and seek appropriate professional help.
+Stop and measure first: compute your current drawdown and the gain needed to recover, then reduce size or pause, and revalidate your expectancy on recent trades, net of costs. If the edge is gone, the problem is the strategy, not your psychology — and if losses are affecting your wellbeing or finances, step away and seek appropriate professional help.
+
+
+### How do I calculate risk of ruin?
+
+From three inputs — win rate (W), payoff ratio (Rp, your average win ÷ average loss), and risk per trade. First compute A = (W × Rp − L) ÷ (W × Rp + L), where L = 1 − W. Then RoR = ((1 − A) ÷ (1 + A))^U, where U = 1 ÷ risk fraction — at 1% risk, U = 100. This article runs the full calculation in three worked examples, or use the free [Risk of Ruin Calculator](/tools/risk-of-ruin/) to do it for you.
