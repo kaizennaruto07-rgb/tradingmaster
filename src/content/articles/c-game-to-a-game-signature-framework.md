@@ -12,7 +12,7 @@ keywords: ["a game c game trading", "what is c game in trading", "how to get out
 
 > **Educational disclaimer:** This article is for education only and is not financial advice. Trading involves substantial risk of loss. The framework below is a behavioural safeguard — it is designed to keep you trading your plan instead of your emotions, not to produce profits.
 
-Your A-game and your C-game both have a signature. Only one of them is on file with you.
+Your C-game has a signature: five personal early-warning signals — the specific mistakes that tell you the bad version of you has taken the terminal. The framework's verdict is counter-intuitive: stop chasing more A-game days; make your C-game days less bad.
 
 You know your peak self on the charts — the focused version of you: patient, planned, out at the stop without drama. But the version of you that takes five extra trades after a loser, the version that doubles size on a 'sure thing,' the version that re-enters a position you just exited out of sheer frustration — that version has a signature too. A pattern. A set of tells. And you've never written it down.
 
