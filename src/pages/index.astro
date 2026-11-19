@@ -1,12 +1,38 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import EmailSignup from '../components/EmailSignup.astro';
+
+const homepageSchema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://monksofmarket.com/#organization",
+      "name": "Monks Of Market",
+      "url": "https://monksofmarket.com/",
+      "logo": "https://monksofmarket.com/og-image.png",
+      "description": "The operating system for understanding, testing and surviving your trading system. Trading mathematics, strategy validation and trader psychology for Indian traders.",
+      "email": "coolmonkfinance@gmail.com",
+      "sameAs": []
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://monksofmarket.com/#website",
+      "url": "https://monksofmarket.com/",
+      "name": "Monks Of Market",
+      "publisher": { "@id": "https://monksofmarket.com/#organization" },
+      "inLanguage": "en-IN"
+    }
+  ]
+};
+const schemaHtml = '<script type="application/ld+json">' + JSON.stringify(homepageSchema) + '</script' + '>';
 ---
 
 <Layout
   title="Monks Of Market — Trading Maths & Tools for Indian Traders"
   description="Free trading calculators and plain-English guides for Indian traders — risk of ruin, expectancy, position sizing, options costs. No tips, no signals."
   current="home"
+  schema={schemaHtml}
 >
 <main>
     <section class="shell hero">
