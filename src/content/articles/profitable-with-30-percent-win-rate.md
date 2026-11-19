@@ -11,7 +11,7 @@ keywords: ["can you be profitable with a 30% win rate", "is 30% win rate good in
 *Educational content only — not financial advice. Trading involves risk of loss.*
 
 
-# Can You Be Profitable With a 30% Win Rate? Yes, at 3:1
+## Can You Be Profitable With a 30% Win Rate? Yes, at 3:1
 
 Three trades out of ten go your way. Seven go against you. Most traders hear that record and quit before asking the question that actually matters: **can you be profitable with a 30% win rate?**
 
@@ -150,7 +150,7 @@ This is the section no competitor writes, because "you need discipline through l
 
 And the expected *worst* run you will live through: about **10–11 losses in a row over 100 trades**, rising to roughly **13 over 250**, **15 over 500 trades**, and ~17 over 1,000. (Several popular articles claim "6–7 over 100 trades, 9 over 500" — that figure was computed with the wrong loss probability. The corrected numbers above are what a true 30% system actually produces.)
 
-Read that again, slowly: **if you run a genuinely profitable 30%-win-rate system for 500 trades, your worst run will most likely be around 15 consecutive losses — and there's nearly a one-in-three chance you'll see 17 or more.** That's not the system breaking. That is the system.
+Slow down on that: **if you run a genuinely profitable 30%-win-rate system for 500 trades, your worst run will most likely be around 15 consecutive losses — and there's nearly a one-in-three chance you'll see 17 or more.** That's not the system breaking. That is the system.
 
 <figure class="article-visual" data-reveal>
 <svg viewBox="0 0 680 430" role="img" aria-label="Expected worst losing streak at a 30 percent win rate over 100, 250, 500 and 1000 trades" class="viz">
@@ -353,6 +353,10 @@ Three usual suspects, in order of likelihood: **(1) your realized R:R is below y
 ### Can you be profitable with a 20% win rate?
 
 Yes, with payoffs above **4:1**. At exactly 20% and 5:1, expectancy is 0.2 × 5 − 0.8 × 1 = **+0.2R per trade** (profitable — the textbook breakeven at 20% is 4:1), so 5:1 or better at 20% is profitable. This is precisely why Paul Tudor Jones uses a 5:1 filter (per his Tony Robbins interview): it lets a 20% hit ratio make money. The same survival math applies — at 20%, the streaks are even longer, so position sizing matters even more.
+
+### Can you be profitable with a 30% win rate?
+
+Yes — at 3:1. With 30 wins and 70 losses over 100 trades, the account still grows ₹40,000, because the breakeven payoff at a 30% win rate is 2.33:1. The catch is the streaks: expect runs of 7, 8, 10 and 12 losses in a row, and Indian costs move the breakeven — the full numbers are in this article.
 
 ---
 
