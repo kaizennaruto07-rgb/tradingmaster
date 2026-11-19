@@ -1,0 +1,72 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "Why a 50% Loss Needs a 100% Gain: The Asymmetry of Drawdown",
+      "description": "A 50% loss needs a 100% gain because the loss is measured on the peak and the gain on the trough. Learn the recovery formula, table, and depth-budget rule.",
+      "author": {
+        "@type": "Person",
+        "@name": "Kaizen"
+      },
+      "datePublished": "2026-10-29",
+      "publisher": {
+        "@type": "Organization",
+        "@name": "Monks Of Market"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Why does a 50% loss need a 100% gain to recover?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Because the loss and the gain are measured on different bases. On a Rs 1,00,000 peak, a 50% loss leaves Rs 50,000, so the Rs 50,000 that must be earned back is 100% of the Rs 50,000 trough. The remaining capital must double. That is drawdown asymmetry in its simplest form: D ÷ (1 − D) with D = 50% gives 100%."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why don't a loss and an equal gain cancel out?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Because equal percentages of different amounts are different rupee amounts. Lose 20% on Rs 1,00,000 and you lose Rs 20,000, leaving Rs 80,000. Gain 20% on Rs 80,000 and you gain only Rs 16,000, leaving Rs 96,000 — still 4% below the peak. In general, a D% loss followed by a D% gain leaves the account D² below the peak, since (1 − D)(1 + D) = 1 − D²."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much gain do I need to recover from a 20% / 30% drawdown?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Use the formula D ÷ (1 − D). A 20% drawdown needs a 25% gain (20 ÷ 80 = 25%). A 30% drawdown needs a 42.9% gain (30 ÷ 70 = 42.9%). Both figures come straight from the drawdown recovery table above, rounded to one decimal place."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is maximum drawdown, and how is it measured?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Maximum drawdown is the single worst peak-to-trough decline, measured from the prior peak — not from the starting deposit. An account that grows to a peak and then falls is measured against that peak, so a 25% peak-to-trough fall can leave the account still above its starting deposit while still requiring a 33.3% gain to get back to the peak."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does risk per trade change how deep a losing streak digs?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The market supplies the same losing run; the risk fraction chooses the depth. Over eight consecutive losses at fixed-fractional risk, 1% risk per trade digs a 7.7% drawdown (8.4% to recover), 2% digs 14.9% (17.5% to recover), 5% digs 33.7% (50.7% to recover), and 10% digs 57.0% (132.3% to recover). Those figures assume no winning trades in the run and no costs, fees, slippage, or gaps."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is a deep drawdown ever truly unrecoverable?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Mathematically, no — any drawdown under 100% has a finite required gain under D ÷ (1 − D), so recovery is possible in principle. In effect, yes — the size of the climb, the time spent underwater, and account or position limits can make recovery unachievable in practice, and no recovery should ever be promised. At a 100% drawdown the balance is zero, and no gain can recover that."
+          }
+        }
+      ]
+    }
+  ]
+}
