@@ -1,5 +1,5 @@
 ---
-title: "Options Trading Charges in India: ₹63 for One NIFTY Lot (2026)"
+title: "Options Trading Charges & STT in India: ₹63 a Lot"
 description: "One NIFTY lot at ₹100 premium costs ~₹63 in total charges. Every line of the bill — STT, brokerage, exchange fees, GST, stamp duty — and the true breakeven."
 meta_description: "One NIFTY lot at ₹100 premium costs ~₹63 in total charges. Every line of the bill — STT, brokerage, exchange fees, GST, stamp duty — and the true breakeven."
 date: 2026-10-02
@@ -8,13 +8,13 @@ tag: "Indian options · Charges"
 keywords: ["options trading charges india", "STT on options", "options brokerage charges", "NIFTY options cost"]
 ---
 
-> **Educational disclaimer:** This article is for education only and is not financial advice. Options trading carries a high risk of loss — never trade with money you can't afford to lose.
+> **Educational disclaimer:** This article is for education only and is not financial advice. Options trading carries a [high risk of loss](/articles/risk-of-ruin-trading/) — never trade with money you can't afford to lose.
 
 ## The short answer: what you'll actually pay on an options trade
 
 Here's the headline number: **buying and selling one NIFTY option lot (premium ₹100, one lot of 65 shares) costs roughly ₹63 in total charges — ₹26.53 on the buy leg and ₹36.08 on the sell leg.** That's about ₹0.96 per share just to get in and out. The option has to move in your favour by that much before you've made a single rupee of profit.
 
-This article breaks down every charge line by line, shows the exact maths for both **buying** and **selling** an option, and explains why most traders underestimate what they're really paying.
+Below: every charge line by line, the exact maths for buying and for selling, and why most traders undercount what they really pay.
 
 *Charge figures verified as of September 2026. Broker fee schedules change — always confirm with your broker's latest schedule before trading.*
 
@@ -28,7 +28,7 @@ The other trap is assuming these are negligible. On a small option premium they 
 
 ## The six options trading charges, explained one by one
 
-Every options trade in India carries some combination of these six charges. Here's the full picture:
+Every options trade in India carries some combination of these six charges:
 
 | # | Charge | Rate | Who pays | Which leg |
 |---|--------|------|----------|-----------|
@@ -39,7 +39,7 @@ Every options trade in India carries some combination of these six charges. Here
 | 5 | Stamp duty | 0.003% of premium turnover | Both | **Buy side only** |
 | 6 | GST | 18% on (brokerage + exchange transaction charges + SEBI turnover fee) | Both | Both legs |
 
-Two rules underpin everything: **all charges are computed on premium turnover, never on notional value**, and **there are no DP (depository) charges in F&O** — that's an equity-delivery concept that doesn't apply here.
+Two rules govern the whole bill: **all charges are computed on premium turnover, never on notional value**, and **there are no DP (depository) charges in F&O** — that's an equity-delivery concept that doesn't apply here.
 
 ### Brokerage — the advertised number
 
@@ -52,7 +52,11 @@ STT has two different treatments for options, and mixing them up is the most com
 - **On the sale of an option:** 0.15% of the premium, paid by the seller. This rate is effective **1 April 2026** (it was 0.10% before). There is **no STT on buying** an option.
 - **On an exercised option:** 0.15% of the intrinsic value, paid by the purchaser. If the option expires worthless, there is no exercise STT.
 
-So STT follows whoever is selling premium or exercising — not whoever opens the trade. Keep this in mind — it's what creates the buyer/writer asymmetry explained below.
+So STT follows whoever is selling premium or exercising — not whoever opens the trade. That split is what makes buyers and writers pay different totals, as the next section shows.
+
+## How to Calculate STT on Options in India
+
+STT on options is a percentage of the premium you sell, not of the contract value: STT = premium × 0.15%. One NIFTY lot at a ₹100 premium is ₹6,500 of premium, so the STT on the sale leg is 0.15% × ₹6,500 = ₹9.75. If the option is exercised instead, STT is 0.15% of the intrinsic value, paid by the purchaser.
 
 ### Exchange transaction charges (NSE and BSE)
 
@@ -114,7 +118,7 @@ Brokerage, exchange transaction charges, and the SEBI fee apply to both legs for
 | Sell leg | ₹36.08 |
 | **Total cost of the round trip** | **₹62.61** |
 
-There it is: **₹62.61** — the headline figure from the top of this article. STT on the sale leg (₹9.75) is the single biggest non-brokerage charge. Spread across 65 shares, your cost is ₹62.61 ÷ 65 = **₹0.96 per share**. The option must move at least ₹0.96 in your favour before you break even.
+The round trip costs **₹62.61** — the headline figure quoted at the top. STT on the sale leg (₹9.75) is the single biggest non-brokerage charge. Spread across 65 shares, your cost is ₹62.61 ÷ 65 = **₹0.96 per share**. The option must move at least ₹0.96 in your favour before you break even.
 
 *Figures rounded to paise; totals may differ by a paisa either way.*
 
@@ -154,7 +158,7 @@ There it is: **₹62.61** — the headline figure from the top of this article. 
 | Buy-back leg | ₹27.99 |
 | **Total cost of the round trip** | **₹70.32** |
 
-That's ₹70.32 ÷ 65 = **₹1.08 per share**. The writer breaks even only if the buy-back premium is at least ₹1.08 below the sale premium (₹148.92 or lower against a ₹150 sale). Two lessons here: the writer pays STT up front on entry (₹14.63 — the biggest single non-brokerage charge in this trade), and because charges scale with premium, a higher-premium option costs more in absolute rupees than the ₹100 example — even though the structure is identical.
+That's ₹70.32 ÷ 65 = **₹1.08 per share**. The writer breaks even only if the buy-back premium is at least ₹1.08 below the sale premium (₹148.92 or lower against a ₹150 sale). Two things to take from that: the writer pays STT up front on entry (₹14.63 — the biggest single non-brokerage charge in this trade), and because charges scale with premium, a higher-premium option costs more in absolute rupees than the ₹100 example — even though the structure is identical.
 
 ## True breakeven: how costs change which trades are worth taking
 
@@ -184,11 +188,11 @@ Costs are knowable before you enter — treat the estimate as part of the trade 
 
 ## Risks and limitations you must accept
 
-Costs are only half the story. The other half is that most options traders lose money — a SEBI study found that **roughly 9 out of 10 individual F&O traders lose money** (figures covering approximately the three years to FY24; treat the headline carefully, but the direction is unambiguous). Understanding charges does not change those odds by itself.
+Charges are only half the picture. The other half is that most options traders lose money — a SEBI study found that **roughly 9 out of 10 individual F&O traders lose money** (figures covering approximately the three years to FY24; treat the headline carefully, but the direction is unambiguous). Understanding charges does not change those odds by itself.
 
 What understanding charges *does* change is your trade selection: it stops you from taking trades that can't win, and it forces honest P&L accounting. It does not guarantee profit, it does not make a strategy safe, and breakeven maths is not a trading signal.
 
-Also note the framework limits: SEBI's F&O framework sets minimum contract sizes in the **₹15–20 lakh** range and one weekly expiry per exchange — options are leveraged instruments by construction, and leverage amplifies losses as readily as gains. This article is educational content, not financial advice, and nothing here should be read as a recommendation to trade.
+The framework itself sets limits too: SEBI's F&O framework sets minimum contract sizes in the **₹15–20 lakh** range and one weekly expiry per exchange — options are leveraged instruments by construction, and leverage amplifies losses as readily as gains. This article is educational content, not financial advice, and nothing here should be read as a recommendation to trade.
 
 ## Key takeaways: the risk-first mindset
 
@@ -197,31 +201,35 @@ Also note the framework limits: SEBI's F&O framework sets minimum contract sizes
 - STT hits the **sale** leg (0.15% of premium); stamp duty hits the **buy** leg (0.003%). Buyers and writers therefore pay different totals for the same premium.
 - All charges are computed on **premium turnover, never notional**. There are no DP charges in F&O.
 - True breakeven = entry premium ± per-share round-trip cost. A trade that can't clear it is a loss by design.
-- Around 9 in 10 individual F&O traders lose money (SEBI study, ~3 years to FY24). Estimate your costs, [size for the worst case](/articles/position-sizing/), and treat every trade as risk first.
+- Around 9 in 10 individual F&O traders [lose money](/articles/why-do-most-traders-lose-money-in-india/) (SEBI study, ~3 years to FY24). Estimate your costs, [size for the worst case](/articles/position-sizing/), and treat every trade as risk first.
 
 ## Frequently Asked Questions
 
 ### How much does it cost to trade one NIFTY options lot in India?
 
-Buying and selling one NIFTY option lot at a ₹100 premium (lot size 65) costs roughly **₹63 in total charges** — ₹26.53 on the buy leg and ₹36.08 on the sell leg. That is about ₹0.96 per share just to get in and out. The option must move in your favour by at least that much before you have made a single rupee of profit. Your exact number varies with the premium and your broker's plan, so estimate it before every trade.
+Buying and selling one NIFTY option lot at a ₹100 premium (lot size 65) costs roughly **₹63 in total charges** — ₹26.53 on the buy leg and ₹36.08 on the sell leg, about ₹0.96 per share. Your exact number varies with the premium and your broker's plan, so estimate it before every trade.
 
 ### Do I pay STT when buying options?
 
-No. STT (Securities Transaction Tax) on options is charged only when you **sell** — 0.15% of the premium, effective 1 April 2026. There is no STT on the buy leg. The mirror image is stamp duty: 0.003% of premium turnover, charged on the **buy side only**. This is why buyers and writers pay different totals for the same premium.
+No. STT on options is charged only when you **sell** — 0.15% of the premium, effective 1 April 2026. Stamp duty is the mirror image: 0.003% of premium turnover, charged on the **buy side only**.
 
 ### What is STT on options trading in India?
 
-Two rates apply. On the **sale of an option**, STT is 0.15% of the premium (raised from 0.10% on 1 April 2026). On an **exercised option**, STT is 0.15% of the intrinsic value, paid by the purchaser. If the option expires worthless, there is no exercise and no exercise STT. These are government rates — identical at every broker.
+Two rates apply: 0.15% of the premium on the **sale of an option**, and 0.15% of the intrinsic value on an **exercised option**, paid by the purchaser. If the option expires worthless, there is no exercise and no exercise STT.
 
 ### Which trading charges are the same at every broker?
 
-Almost everything except brokerage. STT, exchange transaction charges (0.03553% of premium on NSE), the SEBI turnover fee (₹10 per crore), stamp duty, and GST (18% on brokerage + exchange + SEBI charges) are set by the government, exchanges, and regulators — your broker cannot change them. Only the brokerage itself varies: the discount-broker norm is a flat ~₹20 per executed order, while full-service brokers may charge a percentage.
+Almost everything except brokerage: STT, exchange transaction charges (0.03553% of premium on NSE), the SEBI turnover fee (₹10 per crore), stamp duty, and GST (18% on brokerage + exchange + SEBI charges) are set by the government, exchanges, and regulators. Only the brokerage itself varies — the discount-broker norm is a flat ~₹20 per executed order, while full-service brokers may charge a percentage.
 
 ### What happens to charges if I let my option expire?
 
-If the option expires out of the money, it expires worthless — no sale leg, so no sale STT and no brokerage on exit. If it expires in the money and is exercised, STT of 0.15% applies on the intrinsic value, paid by the option holder. For deep in-the-money options this exercise STT can be meaningful, so factor it in before deciding to hold into expiry.
+If the option expires out of the money, it expires worthless — no sale leg, so no sale STT and no brokerage on exit. If it expires in the money and is exercised, STT of 0.15% applies on the intrinsic value, paid by the option holder — for deep in-the-money options this can be meaningful, so factor it in before deciding to hold into expiry.
 
 ### Do intraday and positional option trades pay different charges?
 
-The charge structure is identical — same brokerage, same STT, same exchange and regulatory charges. What differs is the holding cost: positional trades may face overnight margin requirements, and any option held into expiry faces the exercise-STT question above. The per-trade charge math in this article applies to both.
+The charge structure is identical — same brokerage, same STT, same exchange and regulatory charges. What differs is the holding cost: positional trades may face overnight margin requirements, and any option held into expiry faces the exercise-STT question above.
 
+
+### How is STT calculated on options in India?
+
+Multiply the premium by 0.15% on the sale leg — one NIFTY lot at a ₹100 premium is ₹6,500 of premium, so the sale STT is ₹9.75. On an exercised option, STT is 0.15% of the intrinsic value, paid by the purchaser. There is no STT when you buy an option, and none if it expires worthless.
