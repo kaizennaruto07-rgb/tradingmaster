@@ -12,7 +12,7 @@ keywords: ["muhurat trading beginners", "should i buy stocks muhurat trading", "
 
 Every first-timer asks the same question before their first Diwali session: **"Should I actually buy?"** Fair question. It deserves an honest answer — not a festive sales pitch.
 
-The honest answer in one line: **yes, you can buy — but only if you treat the session as a beginning, not a trade.** Auspicious is not a strategy. Intention is.
+The honest answer in one line: **yes, you can buy — but only if you treat the 70-minute session as a beginning, not a trade.** Auspicious is not a strategy. Intention is.
 
 This guide is for first-time investors and beginner traders — zero to one year in the markets — facing their first Muhurat session. Think of it as practical muhurat trading tips for first-time investors: a concrete decision protocol, a pre-session checklist, exactly what you may and may not buy, and how much to risk. And if you decide to do nothing at all — that is also a legitimate answer.
 
