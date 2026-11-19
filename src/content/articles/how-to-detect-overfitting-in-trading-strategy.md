@@ -14,7 +14,7 @@ keywords: ["how to detect overfitting in trading strategy", "curve fitting tradi
 
 Your backtest shows a [2.8 Sharpe](/articles/sharpe-ratio-for-retail-traders/), a smooth equity curve, and returns that would make your salary look like a rounding error. Here's the uncomfortable question: **how do you know the strategy found a real edge — or just memorised the past?**
 
-You can find out before you put real money at risk. Five concrete tests — the cliff test, the landscape test, the dice-count, the walk-forward test, and the rationale test. Pass all five and the strategy still isn't guaranteed to work live — nothing is — but it has survived the standard ways overfit backtests get caught.
+You can find out before you put real money at risk. Five concrete tests catch overfitting in backtesting — the cliff test, the landscape test, the dice-count, the walk-forward test, and the rationale test. Pass all five and the strategy still isn't guaranteed to work live — nothing is — but it has survived the standard ways overfit backtests get caught.
 
 Think of a backtest like a practice exam. A student who actually understands the subject does well on any version of the test. A student who memorised the answer key to *one specific* practice paper scores perfectly on it — then fails the real exam, because the questions moved. **Overfitting is exactly that: rules tuned so tightly to one slice of history that they captured that dataset's noise, not a repeatable edge.**
 
@@ -349,8 +349,8 @@ Open your optimization results as a grid or heatmap. Ignore the winner for a mom
 
 1. Open the full optimization grid — not just the top row, the whole table or heatmap.
 2. Find the winner. Now look at the 20–30 nearest neighbors: are most of them profitable?
-3. If yes — the winner sits on a plateau. Take the plateau's center (a round, unremarkable setting inside the profitable region), not the peak.
-4. If the winner is an island surrounded by red — reject the peak. Either pick the center of the best profitable *cluster*, or accept that the grid has no robust answer.
+3. If yes — the winner sits on a plateau. Take the plateau's centre (a round, unremarkable setting inside the profitable region), not the peak.
+4. If the winner is an island surrounded by red — reject the peak. Either pick the centre of the best profitable *cluster*, or accept that the grid has no robust answer.
 
 ## Test 3 — The dice-count: how many times did you roll the dice?
 
@@ -825,6 +825,10 @@ Yes. Parameter count is only one source of fitting — the other is *selection*.
 ### Why does my strategy work on NIFTY but not on BANKNIFTY?
 
 Treat it as a warning sign, not a verdict. The usual explanation is single-asset fitting: the rules memorized the quirks of one instrument's history — its typical volatility, its intraday rhythm, its specific reactions to news — rather than capturing a repeatable market behavior. The cross-asset check from Test 5 is the cheap way to find out: an edge that is real tends to show *some* consistency across similar instruments. There is one honest exception: a rule with a genuine market reason to be asset-specific (say, a structure unique to how NIFTY weekly options are priced). If you cannot name that reason, the difference is probably fitting, not edge.
+
+### How do I avoid overfitting in backtesting?
+
+Run the five tests in this article before trusting a backtest: the cliff test, the landscape test, the dice-count test, walk-forward testing, and the rationale test. A backtest that passes all five has found an edge; one that fails the cliff test has memorised the past.
 
 ---
 
