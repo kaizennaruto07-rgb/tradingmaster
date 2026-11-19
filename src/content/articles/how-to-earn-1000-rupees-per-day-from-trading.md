@@ -1,6 +1,8 @@
 ---
 title: "How to Earn ₹1,000 Per Day From Trading? Honest Math"
 description: "₹1,000 a day needs ₹1,00,000 earning 1% every day — and no trader does. What capital it really takes, what costs eat, and why a daily target is the trap."
+meta_description: "₹1,000 a day needs ₹1,00,000 earning 1% every day — and no trader does. What capital it really takes, what costs eat, and why a daily target is the trap."
+keywords: ["how to earn 1000 rupees per day from trading", "earn 1000 rupees per day trading", "1000 rupees per day from trading", "how much capital to earn 1000 per day", "daily trading income india"]
 date: 2026-10-28
 author: Kaizen
 ---
@@ -137,7 +139,7 @@ Risk no more than 1% of your capital on any single trade.
 
 This is the number that decides whether you survive. A trader risking 1% can lose ten trades in a row and still have roughly 90% of the account. A trader risking 10% is finished after a normal bad week.
 
-Use a position size calculator to convert that rupee risk into an actual quantity. Guesswork here is how traders accidentally risk five times what they intended. See the position size tool at /tools/position-size/ and the position sizing guide at /articles/position-sizing/.
+Use a [position size calculator](/tools/position-size/) to convert that rupee risk into an actual quantity. Guesswork here is how traders accidentally risk five times what they intended. See the position size tool and the [position sizing guide](/articles/position-sizing/).
 
 ### Step 2: Demand twice what you risk
 
