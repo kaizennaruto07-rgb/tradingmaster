@@ -3,12 +3,13 @@
  "@graph": [
   {
    "@type": "Article",
-   "headline": "After Muhurat Trading: Settlement, Charges, and the Holiday Gap (2026)",
+   "headline": "After Muhurat Trading: Settlement, Charges & Holiday Gap",
    "description": "Muhurat Trading 2026 trades settle T+1 on Mon 9 Nov, normal-day charges, Tue 10 Nov a holiday. Full charge stack, worked example, and the BTST question.",
    "datePublished": "2026-10-24",
    "author": {
     "@type": "Person",
-    "name": "Kaizen"
+    "name": "Kaizen",
+    "url": "https://monksofmarket.com/about/"
    },
    "publisher": {
     "@type": "Organization",
@@ -96,7 +97,7 @@
      "name": "What happens after Muhurat trading ends?",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "After the 4:15 PM trade-modification cutoff, the clearing process runs like any other day: intraday positions are squared off, delivery trades enter T+1 settlement (completing Monday, November 9), standard charges are levied, and Monday is a normal trading day — followed by the Tuesday, November 10 trading holiday."
+      "text": "After the 4:15 PM trade-modification cutoff, the clearing process runs like any other day: intraday positions are squared off, delivery trades enter T+1 settlement (completing Monday, November 9), standard charges are levied, and Monday is a normal trading day — followed by the Tuesday, November 10 trading holiday. Risk disclosure: all securities trading involves risk of loss, including the possible loss of your entire capital. Muhurat trades settle, charge, and carry gap risk exactly like normal-day trades — a one-hour festival session leaves no room to recover from a wrong order. Nothing here is investment advice; participate only with money you can afford to risk."
      }
     }
    ]
