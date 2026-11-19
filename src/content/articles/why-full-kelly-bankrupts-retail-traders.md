@@ -10,7 +10,7 @@ keywords: ["why full kelly bankrupts traders", "full kelly dangerous", "kelly cr
 
 *By Kaizen · 26 October 2026 · Monks Of Market*
 
-Every retail trader who discovers Kelly has the same first reaction: finally, a formula that tells you the mathematically correct amount to risk. No guessing, no borrowed rules — just your win rate and payoff ratio, turned into an exact percentage.
+Risk 1% per trade, risk 2% per trade — percentages chosen because they sound prudent, not because your strategy justifies them. Every retail trader who discovers Kelly has the same first reaction: finally, a formula that replaces those borrowed rules with the mathematically correct amount to risk — just your win rate and payoff ratio, turned into an exact percentage.
 
 That reaction is exactly why full Kelly is dangerous. The formula is correct, but only on a condition retail traders almost never meet: it assumes you *know* your win rate and payoff ratio. You don't. You estimate them from a small sample of past trades, in a market that keeps changing, before costs have taken their cut. Betting the full fraction on those estimates is systematic overbetting — and this article shows how it happens, in rupees, and the one system that stops it. It does not re-teach the full Kelly calculation, expectancy, or position-size basics; pointers to those companion pieces appear where they help. Here, the job is narrower and more urgent: the mechanics of that bankruptcy.
 
