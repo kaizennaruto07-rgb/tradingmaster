@@ -10,11 +10,11 @@ keywords: ["how to know if trading strategy works", "how to validate a trading s
 
 *Educational content only — not financial advice. Trading involves risk of loss.*
 
-You've traded a strategy for two months. Some weeks it prints money. This week it's taken five losses in a row, and a thought you don't say out loud keeps circling: *what if the strategy never worked, and I just got lucky at the start?*
+You've traded a strategy for 2 months. Some weeks it prints money. This week it's taken 5 losses in a row, and a thought you don't say out loud keeps circling: *what if the strategy never worked, and I just got lucky at the start?*
 
 That question — how do I know if my trading strategy actually works — is the most important question in retail trading, and almost nobody answers it honestly. What most traders have instead of an answer is a mood. Green weeks mean "it works." A drawdown means "it's broken." Neither is a verdict. Both are weather reports.
 
-A verdict is a number — computed after costs, from a sample you committed to before you started. This article is the protocol for reaching one: three questions, asked in order, each with a test to run. It also opens the second week of this series: the later chapters deepen each step, so this page stays the one-page validation protocol you can return to.
+A verdict is a number — computed after costs, from a sample you committed to before you started. This article is the protocol for reaching one: 3 questions, asked in order, each with a test to run. It also opens the second week of this series: the later chapters deepen each step, so this page stays the one-page validation protocol you can return to.
 
 ## The Short Answer: One Verdict, Asked in the Right Order
 
@@ -216,7 +216,7 @@ The streaks that make traders quit aren't anomalies — they're randomness behav
 - A **50%-win-rate** strategy over 100 trades has a **17.0% chance** of at least one 8-trade streak; over 200 trades that rises to **32.0%**.
 - A **35%-win-rate** strategy over 100 trades has a **36.8% chance** of at least one 10-trade streak.
 
-Read that again. More than two-thirds of 40%-win-rate strategies will print a 7-loss streak in their first 100 trades. Every one of those traders will feel — with total sincerity — that "something broke." Nothing broke. The contract said this was likely. The math gave it a ~69% chance.
+That bears repeating. More than two-thirds of 40%-win-rate strategies will print a 7-loss streak in their first 100 trades. Every one of those traders will feel — with total sincerity — that "something broke." Nothing broke. The contract said this was likely. The math gave it a ~69% chance.
 
 Question 3's components, briefly — each links out to a Week-1 chapter rather than repeating the derivation here:
 
