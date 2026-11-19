@@ -12,7 +12,7 @@ keywords: ["what to track in a trading journal", "trading journal beyond pnl", "
 
 Every Indian retail trader has a spreadsheet that records entry, exit, and profit. Almost none of them can answer the only question that matters: **is my trading repeatable, or did I just get lucky?**
 
-That's what a trading journal is actually for — and it's why most journals fail. A journal that logs only what the broker statement already tells you is a scoreboard, not an instrument. Below is the instrument: what to track in a trading journal beyond P&L, organised as three layers.
+That's what a trading journal is actually for — and it's why most journals fail. A journal that logs only what the broker statement already tells you is a scoreboard, not an instrument. Below is the instrument: what to track in a trading journal beyond P&L, organised as three layers. This is what to track in a trading journal beyond entry and exit prices: 8 ledger fields, plan-followed, process score and net R.
 
 **The short answer:** track 8 non-negotiable ledger fields — date/time, instrument, direction, entry/stop/target/exit, size, result in R, net P&L, setup name from a fixed list — plus the fields most traders skip: whether you followed your plan, your execution score, planned vs actual R:R, the rule you broke and what it cost you in ₹ *and* in R, your emotional state, a screenshot, the session and time of day, and the valid setups you missed. Then review it every Sunday in 30 minutes. The structure that holds all of it: the **Ledger** (what happened), the **Mirror** (what you did), and the **Microscope** (why it keeps happening).
 
@@ -269,7 +269,7 @@ The plan layer — the part the Mirror owns: plan-followed yes/no, planned vs ac
 
 ## Tonight: the instrument hands off to the verdict
 
-Your P&L tells you where you ended up. Your journal tells you whether the journey is repeatable. But there's one question the journal alone can't answer — the hardest one: **is what your journal measures actually edge, or is it luck wearing a costume?**
+Your P&L tells you where you ended up. Your journal tells you whether the journey is repeatable. But there's one question the journal alone can't answer — the hardest one: **is what your journal measures actually edge, or is it luck in disguise?**
 
 The journal is the instrument. [The edge-vs-luck article](/articles/trading-edge-vs-luck/) reads the verdict.
 
