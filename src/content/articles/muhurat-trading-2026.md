@@ -1,5 +1,5 @@
 ---
-title: "Muhurat Trading 2026: Date, Timings, and How the Session Works (Official NSE/BSE Schedule)"
+title: "Muhurat Trading 2026: Date, Timings & Session Guide"
 description: "Muhurat Trading 2026: Sunday 8 Nov, 2:20-3:30 PM IST. The official NSE/BSE schedule, the new CAS closing auction, and what you can trade in 70 minutes."
 meta_description: "Muhurat Trading 2026: Sunday 8 Nov, 2:20-3:30 PM IST. The official NSE/BSE schedule, the new CAS closing auction, and what you can trade in 70 minutes."
 date: 2026-10-23
