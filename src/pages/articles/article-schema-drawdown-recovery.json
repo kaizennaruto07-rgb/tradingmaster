@@ -7,7 +7,8 @@
       "description": "Drawdown recovery calculator walkthrough: the gain to recover a loss, trades at your expectancy, and weeks at your pace — worked on one ₹5,00,000 account.",
       "author": {
         "@type": "Person",
-        "@name": "Kaizen"
+        "@name": "Kaizen",
+        "url": "https://monksofmarket.com/about/"
       },
       "datePublished": "2026-10-28",
       "publisher": {
@@ -39,7 +40,7 @@
           "name": "How do you calculate the percentage gain needed to recover a loss?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Use the drawdown recovery formula: required gain % = drawdown % ÷ (100 − drawdown %) × 100. For a 20% drawdown: 20 ÷ (100 − 20) × 100 = 25%. Equivalently, with D as the drawdown fraction, the required gain is 1 ÷ (1 − D) − 1."
+            "text": "Use the drawdown recovery formula: required gain % = drawdown % ÷ (100 − drawdown %) × 100. For a 20% drawdown: 20 ÷ (100 − 20) × 100 = 25%."
           }
         },
         {
@@ -47,7 +48,7 @@
           "name": "How long does it take to recover from a 30% trading loss?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "There is no generic answer — only a computed one at stated assumptions. On the account in this article, a 30% drawdown from a ₹5,00,000 peak needs ₹1,50,000, a 42.9% gain, and at 0.5R expectancy with 1% trough risk, about 86 trades — about 17 weeks at 5 trades per week, at this assumed pace, before variance. Run your own numbers through the worksheet for your answer."
+            "text": "There is no generic answer — only a computed one at stated assumptions: on the account in this article, a 30% drawdown from a ₹5,00,000 peak needs ₹1,50,000 (a 42.9% gain), about 86 trades at 0.5R expectancy with 1% trough risk, about 17 weeks at 5 trades per week. Run your own numbers through the worksheet for your answer."
           }
         },
         {
@@ -55,7 +56,7 @@
           "name": "How many trades does it take to recover from a drawdown?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Rupees needed ÷ expected rupees per trade. On the central example, that is ₹1,00,000 ÷ ₹2,000 = 50 trades. On the 30% rung, it is ₹1,50,000 ÷ ₹1,750 = 85.7, about 86 trades. Both figures are expectations at an assumed pace, before variance — not promises."
+            "text": "Rupees needed ÷ expected rupees per trade: on the central example, ₹1,00,000 ÷ ₹2,000 = 50 trades; on the 30% rung, ₹1,50,000 ÷ ₹1,750 = 85.7, about 86 trades. Both figures are expectations — not promises."
           }
         },
         {
@@ -63,7 +64,7 @@
           "name": "Should you increase position size to recover trading losses faster?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "No. As a mechanism argument, larger size makes the next loss larger in rupees by the same proportion as it makes the next win larger. If the next trade loses, the hole deepens and the recovery need grows, and on an account with a maximum drawdown limit, the remaining room shrinks faster. Improving expectancy, not increasing size, is what shortens the clock."
+            "text": "No. Larger size makes the next loss larger in rupees by the same proportion as it makes the next win larger — if the next trade loses, the hole deepens and the recovery need grows. Improving expectancy, not increasing size, is what shortens the clock."
           }
         },
         {
@@ -71,7 +72,7 @@
           "name": "What is the drawdown recovery formula?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "The full calculator is three formulas in order. Gain needed % = drawdown % ÷ (100 − drawdown %) × 100. Expectancy in R = (win rate × average win in R) − (loss rate × 1R). Expected trades = rupees needed ÷ (expectancy × rupees risked per trade). Expected weeks = expected trades ÷ trades per week, at this assumed pace, before variance."
+            "text": "Three formulas in order: gain needed % = drawdown % ÷ (100 − drawdown %) × 100; expectancy in R = (win rate × average win in R) − (loss rate × 1R); expected trades = rupees needed ÷ (expectancy × rupees risked per trade); expected weeks = expected trades ÷ trades per week. The worksheet above works all four on the central example."
           }
         },
         {
@@ -79,7 +80,7 @@
           "name": "Can a drawdown recovery calculator predict when I will recover?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "No. It gives an expected trade count and an expected week count at an assumed pace, before variance — not a forecast and not a date. Variance means the realised count can be far longer, and a system whose expectancy changes, or that was never positive, has no reliable recovery date at all."
+            "text": "No. It gives an expected trade count and an expected week count — not a forecast and not a date. Variance means the realised count can be far longer, and a system whose expectancy changes, or that was never positive, has no reliable recovery date at all."
           }
         },
         {
@@ -87,7 +88,7 @@
           "name": "What if my trading system has no positive expectancy — can I still recover?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Not by running this calculation further. If expectancy is zero or negative, the calculator gives no recovery time in that branch, because dividing rupees needed by zero or negative expected rupees per trade yields no finite, positive answer. Audit the system first: check whether the edge is intact or the drawdown exposed a dead system, and rebuild before planning any climb."
+            "text": "Not by running this calculation further: if expectancy is zero or negative, the calculator gives no recovery time, because dividing rupees needed by zero or negative expected rupees per trade yields no finite, positive answer. Audit the system first — check whether the edge is intact or the drawdown exposed a dead system — and rebuild before planning any climb."
           }
         },
         {
@@ -95,7 +96,15 @@
           "name": "How is drawdown recovery different on a prop firm account with a maximum drawdown limit?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "The recovery arithmetic is the same, but it runs against a shrinking allowance: the remaining room under the limit shrinks exactly as the recovery need grows. Check the three-step calculation against the remaining room before planning a climb, and keep all numbers in rupees on your own account rather than assuming any firm's specific limit. No firm names or firm-specific limits are used in this article."
+            "text": "The recovery arithmetic is the same, but it runs against a shrinking allowance: the remaining room under the limit shrinks exactly as the recovery need grows. Check the three-step calculation against the remaining room before planning a climb, and keep all numbers in rupees on your own account rather than assuming any firm's specific limit."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long does it take to recover from a 20% drawdown?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "About 10 weeks at 5 trades a week. The central example in this article needs 50 trades to recover a 20% drawdown, and 50 trades ÷ 5 trades per week is about 10 weeks. At a different pace the calendar changes; the trade count does not — and every time figure here carries its assumptions, because a time figure without them is a forecast pretending to be arithmetic."
           }
         }
       ]
