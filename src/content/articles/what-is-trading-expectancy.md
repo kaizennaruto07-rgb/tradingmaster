@@ -1,5 +1,5 @@
 ---
-title: "Trading Expectancy: Formula, Examples & Good Values"
+title: "What Is a Good Trading Expectancy? Formula & Bands"
 description: "Expectancy is what each trade is worth on average — win ₹800 half the time, lose ₹400, and it is +₹200 a trade. Formula, R-multiples, and the 61% cost trap."
 meta_description: "Expectancy is what each trade is worth on average — win ₹800 half the time, lose ₹400, and it is +₹200 a trade. Formula, R-multiples, and the 61% cost trap."
 date: 2026-10-04
@@ -183,7 +183,7 @@ A trading expectancy calculator is just this formula applied to your own data. H
 4. **Average your losses.** Add up all losing amounts, divide by the number of losses. Keep it a positive number — the formula subtracts it.
 5. **Plug into the formula:** (Win Rate × Avg Win) − (Loss Rate × Avg Loss).
 
-Two assumptions are baked into this formula. First, **independence** — each trade is its own event. Three NIFTY calls entered the same morning are not three independent trades — they're one correlated cluster wearing a costume. Compute expectancy per system-sample, not per correlated burst. Second, **uniform sizing**: R-multiple math assumes you risked the same amount on every trade. If your journal has ₹500 risks mixed with ₹2,000 risks, the R-based number is distorted — size uniformly during the sample, or normalise before averaging.
+Two assumptions are baked into this formula. First, **independence** — each trade is its own event. Three NIFTY calls entered the same morning are not three independent trades — they're one correlated cluster counted three times. Compute expectancy per system-sample, not per correlated burst. Second, **uniform sizing**: R-multiple math assumes you risked the same amount on every trade. If your journal has ₹500 risks mixed with ₹2,000 risks, the R-based number is distorted — size uniformly during the sample, or normalise before averaging.
 
 **Worked example:** You pull 50 trades from your journal. 19 are winners averaging +2.1R; 31 are losers averaging −1R. Win rate = 19/50 = 38%.
 
@@ -204,13 +204,13 @@ What eats your edge:
 - **Indian options:** brokerage, Securities Transaction Tax (STT), GST on brokerage, exchange/regulatory charges, slippage on stop-market exits — the exact exits retail traders use — and capital gains tax on net profits (STT is paid per trade, but tax on what you keep is part of the real net number). See the full breakdown in [options trading charges in India](/articles/options-trading-charges-india/).
 - **Crypto futures:** trading fees on every fill, funding payments on leveraged positions (charged repeatedly while you hold), and slippage, especially on stop-market exits in fast markets. See [crypto futures funding rates](/articles/crypto-futures-funding-rates/).
 
-A thin edge can be entirely costs. The next two sections prove it with verified numbers.
+A thin edge can be entirely costs. The next two sections show it with verified numbers.
 
 ### Worked Example: Indian Options Expectancy After STT, GST and Brokerage (INR)
 
 Use the locked, verified cost figures (last verified 30 September 2026): STT is **0.15% on sell premium and 0.15% on exercised ITM options** (effective 1 April 2026); NIFTY lot size is **65**. A verified round trade — 50 units bought at ₹100, targeting ₹120 with a ₹90 stop — carries **₹60.98 in total charges** (and nets ₹939.02 at target instead of the gross ₹1,000).
 
-Spread ₹60.98 across the 50 units, and you get roughly ₹1.22 of cost per unit per round trade. One simplification worth stating plainly: STT is 0.15% of the exit premium, so the loss-side exit at ₹90 pays about ₹2.25 less STT than the target-side exit at ₹120 — the flat ₹1.22/unit splits the difference across both sides. The 61% conclusion still stands; this is just honest precision. So a trade with a gross win of +₹20 per unit is really +₹18.78 net; a gross loss of −₹10 is really −₹11.22 net.
+Spread ₹60.98 across the 50 units, and you get roughly ₹1.22 of cost per unit per round trade. One simplification, stated plainly: STT is 0.15% of the exit premium, so the loss-side exit at ₹90 pays about ₹2.25 less STT than the target-side exit at ₹120 — the flat ₹1.22/unit splits the difference across both sides. The 61% conclusion still stands; this is just honest precision. So a trade with a gross win of +₹20 per unit is really +₹18.78 net; a gross loss of −₹10 is really −₹11.22 net.
 
 Take a 40% win-rate system at those numbers:
 
@@ -237,7 +237,7 @@ A related number worth knowing is **[profit factor](/articles/profit-factor/)** 
 
 ## The Catch: Positive Expectancy Does Not Guarantee Profit (Risk of Ruin)
 
-This is the sentence that matters most in this article: **positive expectancy is necessary but NOT sufficient.**
+The sentence to carry out of this section: **positive expectancy is necessary but NOT sufficient.**
 
 Expectancy is an average over many trades. It says nothing about the *order* those trades arrive in. Ten losers in a row at the start will ruin a small account before the average ever gets to assert itself — and streaks far longer than your gut expects are normal, not anomalous, for positive-expectancy systems.
 
@@ -275,7 +275,7 @@ Run this against your journal before you trust the number:
 5. **60+ trades minimum** before treating a positive number as more than a hypothesis ✓
 6. **No curve-fitting** — rules weren't tweaked until the backtest looked good ✓
 7. **Recompute every 50–100 trades**, or after any regime shift ✓
-8. **Correlated clusters counted once** — three NIFTY calls entered the same morning are one trade wearing a costume, not three ✓
+8. **Correlated clusters counted once** — three NIFTY calls entered the same morning are one trade, not three ✓
 
 ## What to Do Next: Improve It, Validate It, Size Around It
 
@@ -294,13 +294,13 @@ Finally, **[size your positions](/articles/position-sizing/) around it**. A mode
 ### Frequently asked questions
 
 **What is a good trading expectancy?**
-There is no universal "good" number — it depends on your risk per trade and trade frequency. As rough practitioner guidance, +0.1R to +0.2R per trade is a workable edge, and +0.3R or more is strong. But a small expectancy with high trade frequency can outperform a large expectancy that trades rarely; what matters is expectancy × number of trades, minus the variance you have to survive along the way.
+No one number counts as "good" for everyone — it depends on your risk per trade and trade frequency. As rough practitioner guidance, +0.1R to +0.2R per trade is a workable edge, and +0.3R or more is strong.
 
 **Can you make money with negative expectancy?**
-No — not over a meaningful number of trades. Negative expectancy means each trade loses money on average, so more trading just loses more. Short lucky streaks can hide it temporarily, which is exactly why the formula exists: to separate the streak from the system.
+No — not over a meaningful number of trades. Negative expectancy means each trade loses money on average, so more trading just loses more; short lucky streaks can hide it temporarily.
 
 **How is expectancy different from profit factor?**
-They describe the same edge differently. Expectancy is average profit per trade (in money or R); profit factor is total gross profit divided by total gross loss. Expectancy tells you what each trade is worth; profit factor tells you the overall ratio. A system with positive expectancy always has a profit factor above 1.0, and vice versa.
+They describe the same edge differently: expectancy is average profit per trade (in money or R), profit factor is total gross profit divided by total gross loss. A system with positive expectancy always has a profit factor above 1.0, and vice versa.
 
 **Is trading expectancy the same as expected value?**
 Effectively yes. "Expected value" is the probability-theory term; "expectancy" is the trading community's name for the same concept — the probability-weighted average outcome per trade. Same math, different room.
