@@ -7,7 +7,8 @@
       "description": "Only ~7% of challengers ever get a payout. Run the EV math first: 20% pass × 45% payout chance × $500, minus a $300 all-in fee = −$255 per attempt.",
       "author": {
         "@type": "Person",
-        "@name": "Kaizen"
+        "@name": "Kaizen",
+        "url": "https://monksofmarket.com/about/"
       },
       "datePublished": "2026-10-28",
       "publisher": {
