@@ -1,5 +1,5 @@
 ---
-title: "Recovery Factor: Was the Pain Worth It? (Formula & Bands)"
+title: "What Is Recovery Factor in Trading? Formula & Bands"
 description: "Recovery factor = net profit ÷ maximum drawdown. What counts as good — demand 3+, comfort at 5+ — and why the number inflates with longer backtests."
 meta_description: "Recovery factor = net profit ÷ maximum drawdown. What counts as good — demand 3+, comfort at 5+ — and why the number inflates with longer backtests."
 date: 2026-10-19
@@ -62,7 +62,7 @@ Look at two backtests. Same account size. Same two-year window. Different system
 
 Strategy A made more money. Strategy B is the better system — on a pain-efficiency basis.
 
-Read that again — it's the whole point of this metric. A's ₹1,00,000 bought you a ₹50,000 scar: every two rupees of profit came with one rupee of worst pain. B's ₹60,000 came with a ₹10,000 scar: six rupees of profit per rupee of worst pain.
+That comparison is the whole point of this metric. A's ₹1,00,000 bought you a ₹50,000 scar: every two rupees of profit came with one rupee of worst pain. B's ₹60,000 came with a ₹10,000 scar: six rupees of profit per rupee of worst pain.
 
 Now add the Indian account texture, because this is where the pain gets real. That ₹50,000 trough in Strategy A was not just paper pain. Drawdown legs pay charges twice: on the way down, as losing positions bleed STT (0.15% on the sell side for exercised ITM options, per Budget 2026, effective April 1, 2026) and NSE equity-options charges (0.03553% per side all-in, including the IPFT contribution, per NSE circular NSE/FA/73061, effective March 1, 2026) — and then again on the recovery trades that clawed it back. Every one of those fight-back trades paid the stack again. The deeper the trough, the more of your recovery profit was already eaten by the machinery before you even saw it.
 
