@@ -121,7 +121,7 @@ The takeaway is structural, not tied to any one fee schedule: **within a few day
 
 The fix is simple to state and worth making a habit: **subtract estimated funding from your gross P&L alongside trading fees, and look at the resulting net P&L at both your target and your stop-loss.** A trade whose gross P&L looks fine but whose net P&L is negative after a week of funding is not a trade you want to discover mid-hold.
 
-The Monks Of Market crypto futures calculator bakes fees into net P&L at target and stop-loss already. When planning a multi-day position, add your funding estimate on top: take the current 8-hour rate, multiply by your notional and by the number of periods you expect to hold, and subtract that from the calculator's net figures.
+The Monks Of Market [crypto futures calculator](/tools/crypto-futures/) bakes fees into net P&L at target and stop-loss already. When planning a multi-day position, add your funding estimate on top: take the current 8-hour rate, multiply by your notional and by the number of periods you expect to hold, and subtract that from the calculator's net figures.
 
 Before every leveraged perp trade, run this checklist:
 
