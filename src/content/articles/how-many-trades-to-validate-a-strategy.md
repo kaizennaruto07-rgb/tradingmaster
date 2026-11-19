@@ -1,5 +1,5 @@
 ---
-title: "How Many Trades to Validate a Strategy? 100 Minimum"
+title: "How Many Trades to Know If a Strategy Works? 100 Minimum"
 description: "100 trades is the floor — a hypothesis, not a verdict. 200–500 supports a risk decision; 1,000+ proves a small edge. Ladder, independence rule, calendar math."
 meta_description: "100 trades is the floor — a hypothesis, not a verdict. 200–500 supports a risk decision; 1,000+ proves a small edge. Ladder, independence rule, calendar math."
 date: 2026-10-11
