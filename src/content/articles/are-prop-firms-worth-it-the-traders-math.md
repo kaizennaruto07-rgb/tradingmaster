@@ -10,7 +10,7 @@ keywords: ["are prop firms worth it", "prop firm worth it", "prop firm expected 
 
 *By Kaizen · 28 October 2026 · Monks Of Market*
 
-A prop firm challenge looks like a bargain at first glance: pay a few hundred dollars, trade a large account, keep most of the profit. The bargain disappears once you price the whole bet instead of the headline fee. The challenge fee is only the entry ticket. Whether that ticket is worth buying depends on three things you can estimate before you pay: what the attempt really costs, how likely you are to pass, and how likely a pass is to turn into cash in your hands.
+A prop firm challenge gives you about a 20% chance of passing — and even then, only about a 45% chance of reaching a payout once funded. Multiply the two gates and a single attempt carries roughly a 9% chance of getting paid. The challenge fee is only the entry ticket; whether that ticket is worth buying depends on three things you can estimate before you pay: what the attempt really costs, how likely you are to pass, and how likely a pass is to turn into cash in your hands.
 
 This article answers that question with one equation, applied consistently from start to finish. No payout screenshots, no promises, no single number dressed up as an industry average. Where a figure comes from a dataset, it's attributed, with its date and its denominator. Where a figure is illustrative, it's labelled as such.
 
