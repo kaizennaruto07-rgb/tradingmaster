@@ -67,57 +67,64 @@ const { Content } = await render(article);
 
 // Select the right schema based on slug
 const slug = article.id.replace(/\.md$/, '');
-const schemaData = slug === 'options-trading-charges-india' ? optionsSchema
-  : slug === 'risk-of-ruin-trading' ? riskofruinSchema
-  : slug === 'what-is-trading-expectancy' ? expectancySchema
-  : slug === 'win-rate-vs-risk-reward' ? winrateSchema
-  : slug === 'break-even-win-rate' ? breakevenSchema
-  : slug === 'profitable-with-30-percent-win-rate' ? thirtySchema
-  : slug === 'position-sizing' ? positionsizingSchema
-  : slug === 'profit-factor' ? profitfactorSchema
-  : slug === 'how-to-know-if-trading-strategy-works' ? strategyworksSchema
-  : slug === 'how-many-trades-to-validate-a-strategy' ? howmanytradesSchema
-  : slug === 'why-backtested-strategies-fail-in-live-trading' ? backtestedSchema
-  : slug === 'how-to-calculate-real-expectancy' ? realexpectancySchema
-  : slug === 'how-to-detect-overfitting-in-trading-strategy' ? overfittingSchema
-  : slug === 'monte-carlo-simulation-for-traders' ? montecarloSchema
-  : slug === 'paper-trading-vs-real-trading' ? papertradingSchema
-  : slug === 'why-traders-give-back-profits' ? givebackSchema
-  : slug === 'revenge-trading' ? revengeSchema
-  : slug === 'overtrading' ? overtradingSchema
-  : slug === 'c-game-to-a-game-signature-framework' ? cgameSchema
-  : slug === 'tilt-in-trading' ? tiltSchema
-  : slug === 'fomo-trading' ? fomoSchema
-  : slug === 'trading-journal-what-to-track-beyond-pnl' ? tradingjournalSchema
-  : slug === 'trading-edge-vs-luck' ? edgeluckSchema
-  : slug === 'maximum-drawdown' ? maxdrawdownSchema
-  : slug === 'recovery-factor' ? recoveryfactorSchema
-  : slug === 'when-to-quit-a-strategy' ? whenquitSchema
-  : slug === 'sharpe-ratio-for-retail-traders' ? sharpeSchema
-  : slug === 'how-losing-streaks-affect-trading-accounts' ? losingstreaksSchema
-  : slug === 'trading-drawdown-mathematics-of-recovery' ? drawdownSchema
-  : slug === 'the-3-day-rule' ? threedaySchema
-  : slug === 'building-your-first-trading-system' ? firstsystemSchema
-  : slug === 'muhurat-trading-2026' ? muhuratSchema
-  : slug === 'muhurat-trading-history' ? muhuratHistorySchema
-  : slug === 'muhurat-trading-beginners' ? muhuratBeginnersSchema
-  : slug === 'muhurat-trading-settlement-charges' ? muhuratSettlementSchema
-  : slug === 'how-to-size-positions-after-a-losing-streak' ? sizeAfterStreakSchema
-  : slug === 'kelly-criterion-calculator-for-traders' ? kellySchema
-  : slug === 'why-full-kelly-bankrupts-retail-traders' ? fullKellySchema
-  : slug === 'can-you-make-money-from-trading' ? canYouMakeMoneySchema
-  : slug === 'what-is-trading-and-how-does-it-work' ? whatIsTradingSchema
-  : slug === 'how-to-earn-1000-rupees-per-day-from-trading' ? earn1000Schema
-  : slug === 'what-is-the-3-5-7-rule-in-trading' ? threeFiveSevenSchema
-  : slug === 'why-do-most-traders-lose-money-in-india' ? whyLoseSchema
-  : slug === 'position-sizing-for-small-accounts' ? smallAccountsSchema
-  : slug === 'how-much-to-risk-per-trade-to-pass-a-prop-firm-challenge' ? propRiskSchema
-  : slug === 'prop-firm-drawdown-rules-decoded' ? propDrawdownSchema
-  : slug === 'are-prop-firms-worth-it-the-traders-math' ? propWorthSchema
-  : slug === 'drawdown-recovery-calculator' ? drawdownRecoverySchema
-  : slug === 'why-a-50-loss-needs-a-100-gain-the-asymmetry-of-drawdown' ? asymmetrySchema
-  // recovery-factor wired 2026-10-19 PM (schema + CTA below)
-  : cryptoSchema;
+// recovery-factor wired 2026-10-19 PM (schema + CTA below)
+const schemaBySlug = {
+  'options-trading-charges-india': optionsSchema,
+  'risk-of-ruin-trading': riskofruinSchema,
+  'what-is-trading-expectancy': expectancySchema,
+  'win-rate-vs-risk-reward': winrateSchema,
+  'break-even-win-rate': breakevenSchema,
+  'profitable-with-30-percent-win-rate': thirtySchema,
+  'position-sizing': positionsizingSchema,
+  'profit-factor': profitfactorSchema,
+  'how-to-know-if-trading-strategy-works': strategyworksSchema,
+  'how-many-trades-to-validate-a-strategy': howmanytradesSchema,
+  'why-backtested-strategies-fail-in-live-trading': backtestedSchema,
+  'how-to-calculate-real-expectancy': realexpectancySchema,
+  'how-to-detect-overfitting-in-trading-strategy': overfittingSchema,
+  'monte-carlo-simulation-for-traders': montecarloSchema,
+  'paper-trading-vs-real-trading': papertradingSchema,
+  'why-traders-give-back-profits': givebackSchema,
+  'revenge-trading': revengeSchema,
+  'overtrading': overtradingSchema,
+  'c-game-to-a-game-signature-framework': cgameSchema,
+  'tilt-in-trading': tiltSchema,
+  'fomo-trading': fomoSchema,
+  'trading-journal-what-to-track-beyond-pnl': tradingjournalSchema,
+  'trading-edge-vs-luck': edgeluckSchema,
+  'maximum-drawdown': maxdrawdownSchema,
+  'recovery-factor': recoveryfactorSchema,
+  'when-to-quit-a-strategy': whenquitSchema,
+  'sharpe-ratio-for-retail-traders': sharpeSchema,
+  'how-losing-streaks-affect-trading-accounts': losingstreaksSchema,
+  'trading-drawdown-mathematics-of-recovery': drawdownSchema,
+  'the-3-day-rule': threedaySchema,
+  'building-your-first-trading-system': firstsystemSchema,
+  'muhurat-trading-2026': muhuratSchema,
+  'muhurat-trading-history': muhuratHistorySchema,
+  'muhurat-trading-beginners': muhuratBeginnersSchema,
+  'muhurat-trading-settlement-charges': muhuratSettlementSchema,
+  'how-to-size-positions-after-a-losing-streak': sizeAfterStreakSchema,
+  'kelly-criterion-calculator-for-traders': kellySchema,
+  'why-full-kelly-bankrupts-retail-traders': fullKellySchema,
+  'can-you-make-money-from-trading': canYouMakeMoneySchema,
+  'what-is-trading-and-how-does-it-work': whatIsTradingSchema,
+  'how-to-earn-1000-rupees-per-day-from-trading': earn1000Schema,
+  'what-is-the-3-5-7-rule-in-trading': threeFiveSevenSchema,
+  'why-do-most-traders-lose-money-in-india': whyLoseSchema,
+  'position-sizing-for-small-accounts': smallAccountsSchema,
+  'how-much-to-risk-per-trade-to-pass-a-prop-firm-challenge': propRiskSchema,
+  'prop-firm-drawdown-rules-decoded': propDrawdownSchema,
+  'are-prop-firms-worth-it-the-traders-math': propWorthSchema,
+  'drawdown-recovery-calculator': drawdownRecoverySchema,
+  'why-a-50-loss-needs-a-100-gain-the-asymmetry-of-drawdown': asymmetrySchema,
+  // crypto-futures-funding-rates previously fell through to the default cryptoSchema; now mapped explicitly
+  'crypto-futures-funding-rates': cryptoSchema,
+};
+const schemaData = schemaBySlug[slug];
+if (!schemaData) {
+  throw new Error(`No article schema mapped for slug: ${slug}`);
+}
 const schemaHtml = '<script type="application/ld+json">' + JSON.stringify(schemaData) + '</script' + '>';
 
 const description = article.data.meta_description || article.data.description || '';
