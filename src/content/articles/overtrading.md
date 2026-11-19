@@ -30,7 +30,7 @@ The same reported dataset found the share of profitable traders falls from 33.0%
 
 One disclosure, placed where it can't be missed: per the source's own account, this dataset is mostly forex, gold and indices accounts — so read these figures as directional evidence about how unauthorized trades behave, not as a finding about Indian equity or options traders. The Indian-priced part of this article is the boredom tax below.
 
-Read that again: experience doesn't cure overtrading. It just teaches you fancier ways to do it. From day 50 onward, it's the most common problem in traders' top five, per that dataset's reported figures. If you're still reading because you're experienced and you're *sure* this isn't you — that's exactly who this article is for.
+The point, plainly: experience doesn't cure overtrading. It just teaches you fancier ways to do it. From day 50 onward, it's the most common problem in traders' top five, per that dataset's reported figures. If you're still reading because you're experienced and you're *sure* this isn't you — that's exactly who this article is for.
 
 <figure class="article-visual" data-reveal>
 <svg viewBox="0 0 680 400" role="img" aria-label="Chart showing profitable-trader share falling as daily trade count rises." class="viz">
@@ -257,7 +257,7 @@ This is the rule that kills the "one last trade" mentality at its root. That men
 
 ### The daily trade cap, set below YOUR slip point
 
-There's no universal number of trades per day — remember the scalpers taking 47 planned trades a day without it counting as overtrading. Your cap comes from your own ledger: group your results by how many trades you'd already taken that day, and find the count where your per-trade results start to slip. Then set your daily cap **below** that count — before the session, in writing.
+No one daily trade count fits everyone — remember the scalpers taking 47 planned trades a day without it counting as overtrading. Your cap comes from your own ledger: group your results by how many trades you'd already taken that day, and find the count where your per-trade results start to slip. Then set your daily cap **below** that count — before the session, in writing.
 
 That cap is your boredom tax ceiling. The day's authorized trades get taken; everything after the cap is unauthorized by definition.
 
@@ -308,7 +308,7 @@ Overtrading is what C-game looks like on the trade log — the [A-game/C-game fr
 Find the daily trade count where your own results start to slip, set a trade cap below it before each session, and write down the reason for every trade before placing it. The full protocol: a max loss per trade and per month sized to your tolerance (the two boxes — when the monthly box is empty, the month is over), the hard 3-loss rule, A+ setups only, and scheduled trading windows with the chart closed outside them. Stop trying to fix it with willpower; systems do what intentions can't.
 
 **How many trades per day is too many?**
-There is no universal number — but the direction of the evidence is clear. In one large trade-tracking dataset's reported analysis of 500,000+ accounts, the share of profitable traders falls from 33.0% among those averaging fewer than 2 trades a day to 15.3% among those averaging 10–15 a day. Your number comes from your own ledger: the count where *your* results slip, not a guru's. Find it, then cap below it.
+No one number counts as universal — but the direction of the evidence is clear. In one large trade-tracking dataset's reported analysis of 500,000+ accounts, the share of profitable traders falls from 33.0% among those averaging fewer than 2 trades a day to 15.3% among those averaging 10–15 a day. Your number comes from your own ledger: the count where *your* results slip, not a guru's. Find it, then cap below it. In this article, 3 extra trades a day cost ~₹3,760 a month in fees alone, before the P&L — set your daily trade cap below your slip point and use the two-box protocol: the risk box and the persistence box.
 
 **What causes overtrading?**
 Three triggers, almost never a fourth: boredom (the fear of stillness — the trade as entertainment), the post-loss recovery spiral (trading to collect an emotional debt), and overconfidence after a win (the afternoon that forgets the morning's plan). Underneath all three, the same mechanism: the act of placing a trade rewards the brain's dopamine system whether or not the trade makes money.
