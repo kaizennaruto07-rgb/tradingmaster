@@ -3,11 +3,12 @@
  "@graph": [
   {
    "@type": "Article",
-   "headline": "Options Trading Charges in India: ₹63 for One NIFTY Lot (2026)",
+   "headline": "Options Trading Charges & STT in India: ₹63 a Lot",
    "description": "One NIFTY lot at ₹100 premium costs ~₹63 in total charges. Every line of the bill — STT, brokerage, exchange fees, GST, stamp duty — and the true breakeven.",
    "author": {
     "@type": "Person",
-    "name": "Kaizen"
+    "name": "Kaizen",
+    "url": "https://monksofmarket.com/about/"
    },
    "datePublished": "2026-10-02",
    "publisher": {
@@ -23,7 +24,7 @@
      "name": "How much does it cost to trade one NIFTY options lot in India?",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "Buying and selling one NIFTY option lot at a ₹100 premium (lot size 65) costs roughly ₹63 in total charges — ₹26.53 on the buy leg and ₹36.08 on the sell leg. That is about ₹0.96 per share just to get in and out. The option must move in your favour by at least that much before you have made a single rupee of profit."
+      "text": "Buying and selling one NIFTY option lot at a ₹100 premium (lot size 65) costs roughly ₹63 in total charges — ₹26.53 on the buy leg and ₹36.08 on the sell leg, about ₹0.96 per share. Your exact number varies with the premium and your broker's plan, so estimate it before every trade."
      }
     },
     {
@@ -31,7 +32,7 @@
      "name": "Do I pay STT when buying options?",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "No. STT (Securities Transaction Tax) on options is charged only when you sell — 0.15% of the premium, effective 1 April 2026. There is no STT on the buy leg. The mirror image is stamp duty: 0.003% of premium turnover, charged on the buy side only."
+      "text": "No. STT on options is charged only when you sell — 0.15% of the premium, effective 1 April 2026. Stamp duty is the mirror image: 0.003% of premium turnover, charged on the buy side only."
      }
     },
     {
@@ -39,7 +40,7 @@
      "name": "What is STT on options trading in India?",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "Two rates apply. On the sale of an option, STT is 0.15% of the premium (raised from 0.10% on 1 April 2026). On an exercised option, STT is 0.15% of the intrinsic value, paid by the purchaser. If the option expires worthless, there is no exercise and no exercise STT. These are government rates — identical at every broker."
+      "text": "Two rates apply: 0.15% of the premium on the sale of an option, and 0.15% of the intrinsic value on an exercised option, paid by the purchaser. If the option expires worthless, there is no exercise and no exercise STT."
      }
     },
     {
@@ -47,7 +48,7 @@
      "name": "Which trading charges are the same at every broker?",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "Almost everything except brokerage. STT, exchange transaction charges (0.03553% of premium on NSE), the SEBI turnover fee (₹10 per crore), stamp duty, and GST (18% on brokerage + exchange transaction + SEBI charges) are set by the government, exchanges, and regulators — your broker cannot change them. Only the brokerage itself varies: the discount-broker norm is a flat ~₹20 per executed order."
+      "text": "Almost everything except brokerage: STT, exchange transaction charges (0.03553% of premium on NSE), the SEBI turnover fee (₹10 per crore), stamp duty, and GST (18% on brokerage + exchange + SEBI charges) are set by the government, exchanges, and regulators. Only the brokerage itself varies — the discount-broker norm is a flat ~₹20 per executed order, while full-service brokers may charge a percentage."
      }
     },
     {
@@ -55,7 +56,7 @@
      "name": "What happens to charges if I let my option expire?",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "If the option expires out of the money, it expires worthless — no sale leg, so no sale STT and no brokerage on exit. If it expires in the money and is exercised, STT of 0.15% applies on the intrinsic value, paid by the option holder."
+      "text": "If the option expires out of the money, it expires worthless — no sale leg, so no sale STT and no brokerage on exit. If it expires in the money and is exercised, STT of 0.15% applies on the intrinsic value, paid by the option holder — for deep in-the-money options this can be meaningful, so factor it in before deciding to hold into expiry."
      }
     },
     {
@@ -63,7 +64,15 @@
      "name": "Do intraday and positional option trades pay different charges?",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "The charge structure is identical — same brokerage, same STT, same exchange and regulatory charges. What differs is the holding cost: positional trades may face overnight margin requirements, and any option held into expiry faces the exercise-STT question."
+      "text": "The charge structure is identical — same brokerage, same STT, same exchange and regulatory charges. What differs is the holding cost: positional trades may face overnight margin requirements, and any option held into expiry faces the exercise-STT question above."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How is STT calculated on options in India?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Multiply the premium by 0.15% on the sale leg — one NIFTY lot at a ₹100 premium is ₹6,500 of premium, so the sale STT is ₹9.75. On an exercised option, STT is 0.15% of the intrinsic value, paid by the purchaser. There is no STT when you buy an option, and none if it expires worthless."
      }
     }
    ]
