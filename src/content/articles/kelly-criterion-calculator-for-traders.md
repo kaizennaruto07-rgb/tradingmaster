@@ -1,5 +1,5 @@
 ---
-title: "Kelly Criterion Calculator: Full, Half & Quarter Kelly in ₹"
+title: "What Is the Kelly Criterion in Trading? Formula & Examples"
 description: "A 60% win rate at R=1.5 gives 33.33% full Kelly — ₹66,667 on ₹2,00,000. The formula, half and quarter Kelly, and how to turn Kelly % into shares, worked in ₹."
 meta_description: "A 60% win rate at R=1.5 gives 33.33% full Kelly — ₹66,667 on ₹2,00,000. The formula, half and quarter Kelly, and how to turn Kelly % into shares, worked in ₹."
 date: 2026-10-25
@@ -20,11 +20,11 @@ That last phrase matters. Kelly maximises growth only if the inputs are right. I
 
 **Full Kelly is a ceiling, never a target. Fractional Kelly — half or quarter — is the survivable default.**
 
-This article walks through the formula step by step, works it completely in rupees on a ₹2,00,000 account, converts the resulting risk percentage into an actual number of shares, and then shows how to use Kelly safely alongside a fixed-risk rule.
+Below: the formula step by step, worked completely in rupees on a ₹2,00,000 account, converted into an actual number of shares, then used safely alongside a fixed-risk rule.
 
 Trading carries risk of loss of capital. No sizing rule, including Kelly, guarantees a profit.
 
-Note: this is a manual calculation walkthrough, not an interactive tool — there is no Kelly calculator tool on this site, and the fill-in worksheet later in this article is the manual substitute.
+Note: this is a manual calculation walkthrough, not an interactive tool — the fill-in worksheet later in the article is the manual substitute.
 
 ## The Question Fixed Rules Cannot Answer: Why 'Risk 2%' Knows Nothing About Your System
 
@@ -58,7 +58,7 @@ Compute both averages **net of brokerage, taxes, and fees**. Gross averages — 
 
 Every closed trade counts. Drop the small losses, or count only your best month, and you flatter W and R — and a flattered input gives an overstated Kelly %. That is the first place Kelly goes wrong, long before any trade is placed.
 
-The result, Kelly %, is the fraction of your account to *risk* on the next trade — the amount you would lose if the stop is hit — not the amount to invest, and not the number of shares to buy. That conversion comes later in this article.
+The result, Kelly %, is the fraction of your account to *risk* on the next trade — the amount you would lose if the stop is hit — not the amount to invest, and not the number of shares to buy. That conversion comes in the shares section below.
 
 There is an equivalent form you may see elsewhere:
 
@@ -77,13 +77,12 @@ Here p is the win probability (the same as W), q = 1 − p, and b is the payoff 
 <text x="340" y="282" text-anchor="middle" fill="#92a59c" font-size="11">The result is rupees at risk, not shares to buy — the stop converts it later.</text>
 </svg>
 </figure>
-*Responsive visual — no content spilling outside frames at any screen size.*
 
 ### What Kelly maximises — and what it does not promise
 
-The criterion was described in 1956 by John Larry Kelly Jr., a researcher at Bell Labs, in an information-theory context, and was later applied to gambling and trading. In trading terms, it gives the fraction that maximises the long-run expected logarithmic growth rate of wealth — in plain language, the long-term compounding rate — for repeated bets with a genuine edge.
+John Larry Kelly Jr., a Bell Labs researcher, described it in 1956 for information theory; gamblers and traders adopted it later. In trading terms, it gives the fraction that maximises the long-run expected logarithmic growth rate of wealth — in plain language, the long-term compounding rate — for repeated bets with a genuine edge.
 
-It does not promise that any single trade will win. It does not promise that the account will grow smoothly. And it does not work if the edge is not real: if the true win rate and payoff ratio are lower than measured, the calculated fraction is too high. Kelly is a growth-maximising formula for a known edge, not a safety device on its own. That distinction drives everything that follows.
+It promises nothing about any single trade, nothing about a smooth climb, and nothing at all if the edge is not real: if the true win rate and payoff ratio are lower than measured, the calculated fraction is too high. Kelly is a growth-maximising formula for a known edge, not a safety device on its own. That distinction drives everything that follows.
 
 ## Step by Step: Calculating Kelly from Your Own Trade History
 
@@ -165,7 +164,6 @@ Notice what the table also shows: a lower win rate can still justify a meaningfu
 <text x="340" y="278" text-anchor="middle" fill="#92a59c" font-size="11">The full-Kelly column shows the ceiling. It is not a recommendation to risk a third of the account.</text>
 </svg>
 </figure>
-*Responsive visual — no content spilling outside frames at any screen size.*
 
 <figure class="article-visual" data-reveal>
 <svg viewBox="0 0 680 340" role="img" aria-label="Rupee risk bars on a 200,000 rupee account: full Kelly 66,667 rupees, half Kelly 33,333 rupees, quarter Kelly 16,667 rupees, with the fixed 2 percent cap of 4,000 rupees shown for scale — the smaller limit always wins." class="viz">
@@ -182,11 +180,10 @@ Notice what the table also shows: a lower win rate can still justify a meaningfu
 <text x="340" y="302" text-anchor="middle" fill="#f2f7f4" font-size="12" font-weight="700">Smaller limit wins: in the main example the trade risks ₹4,000, not ₹33,333.</text>
 </svg>
 </figure>
-*Responsive visual — no content spilling outside frames at any screen size.*
 
 ### Reading the table honestly: why the full-Kelly rupee amount is not the trade size
 
-The full-Kelly column exists in this article so you can see the ceiling and understand where the fractions come from. It is not a recommendation to risk ₹66,667 per trade on a ₹2,00,000 account.
+The full-Kelly column is there so you can see the ceiling and understand where the fractions come from. It is not a recommendation to risk ₹66,667 per trade on a ₹2,00,000 account.
 
 One losing trade at full Kelly removes a third of the account. A short [losing run](/articles/how-losing-streaks-affect-trading-accounts/) at that size does damage a very long winning run must repair — and, just as importantly, it breaks most traders' discipline before the maths has a chance to work. A sizing rule you abandon after three losses is not a sizing rule.
 
@@ -260,7 +257,6 @@ Fractioning is not leaving money on the table. It is paying a measured growth co
 <text x="340" y="302" text-anchor="middle" fill="#f2f7f4" font-size="12" font-weight="700">Idealised model only — but the message survives it: never size above full Kelly.</text>
 </svg>
 </figure>
-*Responsive visual — no content spilling outside frames at any screen size.*
 
 ### Over-betting past full Kelly: growth falls, and 2× Kelly zeroes it in the idealised model
 
@@ -304,7 +300,7 @@ In practice: calculate fractional Kelly (half or quarter) and calculate your fix
 
 When does Kelly add value over fixed risk alone? When you have a genuinely measured edge and honest inputs, Kelly tells you whether your fixed cap is needlessly timid or dangerously generous relative to that edge. When does the fixed cap win outright? When inputs are uncertain, when trades are correlated, when the regime is changing, or when you simply cannot tolerate the swings fractional Kelly still allows. In those cases, the cap is not a failure of Kelly — it is Kelly's ceiling doing its job by staying out of the way of survival.
 
-Kelly also never replaces position limits or correlation control. A ceiling per trade is not a ceiling on total portfolio risk. If three correlated trades are open, their combined risk — not each trade's individual Kelly figure — is what the account actually feels.
+Position limits and correlation control still apply separately. A ceiling per trade is not a ceiling on total portfolio risk. If three correlated trades are open, their combined risk — not each trade's individual Kelly figure — is what the account actually feels.
 
 ## What Kelly Does NOT Do: It Does Not Create Edge, Fix a Losing System, or Survive Bad Inputs
 
@@ -314,9 +310,9 @@ The limits are worth stating plainly, because sizing formulas invite over-claimi
 
 **Kelly does not fix a losing system.** A negative Kelly result is a verdict on the system, not a sizing problem. Tweaking the fraction, widening the stop to fit more shares, or trading more often does not repair a strategy whose measured edge is zero or negative. Fix the strategy or stop trading it.
 
-**Kelly does not survive bad inputs.** Inputs cherry-picked from a winning month, averaged across different strategies, or carried over from another regime give a confidently wrong size — usually an overstated one. Garbage in here is not just a wrong number. It is an over-bet account.
+**Bad inputs break Kelly.** Inputs cherry-picked from a winning month, averaged across different strategies, or carried over from another regime give a confidently wrong size — usually an overstated one. Garbage in here is not just a wrong number. It is an over-bet account.
 
-**Kelly does not predict the next trade, remove drawdowns, or guarantee profit.** Even a correctly calculated fractional Kelly size will lose on many individual trades and will go through drawdowns. What it offers, when inputs are honest and the fraction is kept well below the ceiling, is a disciplined link between how good the edge measures up to be and how much of the account each trade puts at risk. That discipline — not any promise of returns — is the value.
+**And Kelly predicts nothing:** even a correctly calculated fractional Kelly size will lose on many individual trades and will go through drawdowns. What it offers, when inputs are honest and the fraction is kept well below the ceiling, is a disciplined link between how good the edge measures up to be and how much of the account each trade puts at risk. That discipline — not any promise of returns — is the value.
 
 For readers who want to see the failure side of this story in full, a separate follow-up, [Why Full Kelly Bankrupts Retail Traders](/articles/why-full-kelly-bankrupts-retail-traders/), examines blow-up mechanics in depth. This article's job is the working mathematics; the discipline above is what keeps that mathematics survivable.
 
@@ -324,15 +320,15 @@ For readers who want to see the failure side of this story in full, a separate f
 
 ### What is the Kelly criterion in trading?
 
-The Kelly criterion is a formula that gives the fraction of your trading account to risk on each trade, based on the strategy's own win rate and average win-to-loss ratio, in order to maximise long-run logarithmic growth for a repeated edge. It sizes risk from measured statistics rather than from a borrowed fixed percentage. Full Kelly is the theoretical maximum-growth fraction; in practice it is used as a ceiling, with fractional Kelly traded instead.
+Kelly gives the fraction of your account to risk on each trade, from the strategy's own win rate and average win-to-loss ratio, to maximise long-run logarithmic growth for a repeated edge. Full Kelly is the theoretical maximum-growth fraction; in practice it is used as a ceiling, with fractional Kelly traded instead.
 
 ### How do you calculate the Kelly criterion?
 
-Use Kelly % = W − [(1 − W) ÷ R], where W is your win rate as a decimal and R is your average win divided by your average loss, both measured from your own closed trade history. For example, W = 0.60 and R = 1.5 gives 0.60 − (0.40 ÷ 1.5) = 33.33% full Kelly, or 16.67% at half Kelly and 8.33% at quarter Kelly. Multiply the fraction by your account size for the rupee risk amount, then divide by your per-share stop distance for shares.
+Use Kelly % = W − [(1 − W) ÷ R], where W is your win rate as a decimal and R is your average win divided by your average loss, both measured from your own closed trade history. For example, W = 0.60 and R = 1.5 gives 33.33% full Kelly — 16.67% at half Kelly, 8.33% at quarter Kelly — then multiply by account size for the rupee risk amount and divide by per-share stop distance for shares.
 
 ### What is a good Kelly percentage for a retail trader?
 
-There is no single "good" Kelly percentage that applies to everyone. The survivable default is fractional Kelly — half or quarter of the full figure — combined with a fixed-risk cap, with the exact fraction set by how confident you are in your inputs and how much drawdown you can tolerate. The less certain the inputs, the smaller the fraction. A trader with a short history or a changing regime should stay at the smaller end, and let the fixed-risk cap bind first.
+No one Kelly percentage counts as "good" for everyone. The survivable default is fractional Kelly — half or quarter of the full figure — combined with a fixed-risk cap, with the exact fraction set by how confident you are in your inputs and how much drawdown you can tolerate.
 
 ### Why is full Kelly considered too risky?
 
@@ -340,27 +336,27 @@ Three reasons: inputs are estimated from finite samples, so estimation error ove
 
 ### What is half Kelly / fractional Kelly, and which fraction should I use?
 
-Fractional Kelly means trading a fraction of the full Kelly percentage — half Kelly trades 50% of f\*, quarter Kelly trades 25% of f\*. As the standard textbook result, half Kelly retains approximately 75% of full Kelly's long-run growth while roughly halving volatility (the size of the swings). Quarter Kelly gives up more growth again, but at much lower drawdowns than half Kelly. Choose half Kelly when inputs are reasonably well measured and drawdown tolerance is moderate; choose quarter Kelly — or a fixed-risk cap below it — when inputs are newer, less certain, or the strategy is still proving itself.
+Fractional Kelly means trading a fraction of the full Kelly percentage — half Kelly trades 50% of f\*, quarter Kelly trades 25% of f\*. Half Kelly keeps about 75% of full Kelly's long-run growth at roughly half the volatility; quarter Kelly gives up more growth again, but at much lower drawdowns than half Kelly.
 
 ### What does a negative Kelly percentage mean?
 
-A zero or negative Kelly result means the measured win rate and payoff ratio show no edge. Do not trade that system, and do not try to "size it anyway" at a smaller fraction. Fix the strategy, test whether a genuine edge exists on fresh data, or discard it. No position size turns a system with no edge into a profitable one.
+A zero or negative Kelly result means the measured win rate and payoff ratio show no edge. Do not trade that system, and do not try to "size it anyway" — fix the strategy, test for a genuine edge on fresh data, or discard it.
 
 ### How many trades do I need before I can trust my Kelly inputs?
 
-As the prescription of this article, use at least 50–100 trades from one consistent strategy before trusting the inputs, and re-check every 50–100 trades or quarterly. This is a recommended discipline, not a verified statistical threshold — even at 100 trades, a small sample still carries wide uncertainty. Below the floor, treat any Kelly figure as indicative at best, and size under your fixed-risk rule instead.
+Same prescription as the input-discipline section: at least 50–100 trades from one consistent strategy before trusting the inputs, re-checked every 50–100 trades or quarterly. This is a recommended discipline, not a verified statistical threshold — even at 100 trades, a small sample still carries wide uncertainty.
 
 ### Does the Kelly criterion work for options / intraday trading?
 
-The formula can be applied wherever a win rate and an average win and loss can be honestly measured from actual trade history, including intraday trading. But trading wins and losses are not clean, fixed-odds binary bets: options expiry, gap risk, leverage, and changing volatility all break the tidy assumptions behind the formula. That makes fractional Kelly and a fixed-risk cap more important for options and intraday trading, not less — and no options-specific success rate should be assumed. If the win rate and averages cannot be honestly measured for the instrument and timeframe in question, Kelly should not be used for it.
+The formula can be applied wherever a win rate and an average win and loss can be honestly measured from actual trade history, including intraday trading. But options expiry, gap risk, leverage, and changing volatility all break the tidy assumptions behind the formula — so fractional Kelly and a fixed-risk cap matter more for options and intraday trading, not less, and if the win rate and averages cannot be honestly measured, Kelly should not be used for it.
 
 ### Kelly criterion vs fixed 2% risk — which is better?
 
-Neither wins in all cases. Kelly is better when you have a well-measured, stable edge and want the size to reflect that edge. A fixed 2% rule is better when inputs are uncertain, trades are correlated, or regimes are changing, because it caps survival risk regardless of what the edge appears to be. The strongest practical rule combines them: fractional Kelly as the ceiling, fixed risk as the cap, and the smaller rupee amount as the trade's risk.
+Neither wins in all cases: Kelly is better with a well-measured, stable edge; a fixed 2% rule is better when inputs are uncertain, trades are correlated, or regimes are changing. The strongest practical rule combines them: fractional Kelly as the ceiling, fixed risk as the cap, and the smaller rupee amount as the trade's risk.
 
 ### How do I convert a Kelly percentage into a number of shares?
 
-Divide the rupee risk amount by your per-share stop distance, and floor the result to whole shares. For example, a quarter-Kelly risk of ₹16,667 with a ₹50 per-share stop gives ₹16,667 ÷ ₹50 = 333.33, or 333 shares. Kelly defines how many rupees to risk; the stop distance converts that risk into shares. Without a defined stop, there is no conversion — and no trade on Kelly grounds.
+Divide the rupee risk amount by your per-share stop distance, and floor the result to whole shares — the worked example above does exactly this (₹16,667 ÷ ₹50 = 333 shares).
 
 ---
 
