@@ -1,5 +1,5 @@
 ---
-title: "Why Backtested Strategies Fail Live: 5 Gaps & Tests"
+title: "Why Backtested Strategies Fail in Live Trading: 5 Gaps"
 description: "Your backtest filled every order at the signal price — live does not. The 5 gaps (execution, cost, data, regime, you) and the tests to run for each."
 meta_description: "Your backtest filled every order at the signal price — live does not. The 5 gaps (execution, cost, data, regime, you) and the tests to run for each."
 date: 2026-10-12
