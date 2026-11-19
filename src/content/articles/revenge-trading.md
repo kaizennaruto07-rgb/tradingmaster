@@ -180,7 +180,7 @@ This protocol is a behavioral safeguard, not a profit strategy. It cannot guaran
 
 ### Sign It Before the Session: Filling in Your Own Numbers
 
-The circuit-breaker numbers are yours, not the rulebook's. Fifteen or thirty minutes? A 3% daily budget or 2%? Half size for three trades or five? There is no universal answer — anyone selling you one is selling something. The right numbers are the ones you'll actually obey when your hands are shaking.
+The circuit-breaker numbers are yours, not the rulebook's. Fifteen or thirty minutes? A 3% daily budget or 2%? Half size for three trades or five? No one answer counts as universal — anyone selling you one is selling something. The right numbers are the ones you'll actually obey when your hands are shaking.
 
 Fill them in before the market opens. Sign it — a real signature, on paper or in your notes app. A contract you wrote while calm is the only authority that outranks you while impaired. The ethos of pre-commitment is the same principle behind a pre-session plan; this contract is its loss-side edition.
 
@@ -239,7 +239,7 @@ The neighbor is [overtrading](/articles/overtrading/) — the mechanism revenge 
 ## Frequently Asked Questions
 
 **How do I stop revenge trading after a loss?**
-With mechanical rules, not willpower: a mandatory 15–30 minute cooldown after any loss (away from screens), a session stop after 2 consecutive losses or at your daily loss budget, and halved position size when you return. These interrupt the emotional surge before it can dictate action. Willpower is not a system; a pre-commitment contract is.
+With mechanical rules, not willpower: a mandatory 15–30 minute cooldown after any loss (away from screens), a session stop after 2 consecutive losses or at your daily loss budget, and halved position size when you return. These interrupt the emotional surge before it can dictate action. Willpower is not a system; a pre-commitment contract is. One ₹2,000 stop becomes a ₹12,000 afternoon when chased — the protocol breaks that chain before the next trade.
 
 **What is revenge trading?**
 The attempt to recover a loss quickly by entering a new position — frequently larger than normal and often without a valid setup. The defining fact: revenge sequences commonly multiply the original loss and rarely restore it. The loss gets filed mentally as a debt the market owes, and every new trade becomes "collection."
