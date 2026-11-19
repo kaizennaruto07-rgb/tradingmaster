@@ -1,5 +1,5 @@
 ---
-title: "Break-Even Win Rate Formula: 1:1 Needs 72%, Not 50%"
+title: "What Win Rate Do You Need to Be Profitable? 1:1 Needs 72%"
 description: "The textbook formula says a 1:1 setup breaks even at 50% wins. With Indian F&O costs, it is 72%. The with-costs formula, the full table, and the worksheet."
 meta_description: "The textbook formula says a 1:1 setup breaks even at 50% wins. With Indian F&O costs, it is 72%. The with-costs formula, the full table, and the worksheet."
 date: 2026-10-06
@@ -20,7 +20,7 @@ The conceptual ground — how win rate and risk-reward relate — was mapped in 
 
 ## What Win Rate Do You Actually Need to Break Even?
 
-The honest answer: there is no single number. The break-even win rate depends on your average win relative to your average loss:
+The honest answer: no one number counts as the answer. The break-even win rate depends on your average win relative to your average loss:
 
 **Break-Even Win Rate = 1 ÷ (1 + R:R)**
 
@@ -376,7 +376,7 @@ The breakeven win rate formula is **1 ÷ (1 + R:R)**, where R:R is your average 
 
 ### What win rate do I need to be profitable in trading?
 
-There is no single number — it depends on your risk-reward ratio. Before costs: 66.7% at 1:0.5, 50% at 1:1, 40% at 1:1.5, 33.3% at 1:2, 25% at 1:3, 20% at 1:4, 16.7% at 1:5. But the textbook column is not the one you trade against: in our worked Indian options-scalp example, a 1:1 setup that reads 50% in the textbook table needed 72% once brokerage, STT, and slippage were included. The more useful question runs the other way: with your journaled win rate known, the minimum R:R you need is (1 ÷ win rate) − 1 — a 30% win rate needs at least 1:2.33. And every one of these figures rises once Indian brokerage, STT, and slippage are included, so compute the with-costs breakeven from your own numbers.
+No one number counts as the answer — it depends on your risk-reward ratio. Before costs: 66.7% at 1:0.5, 50% at 1:1, 40% at 1:1.5, 33.3% at 1:2, 25% at 1:3, 20% at 1:4, 16.7% at 1:5. But the textbook column is not the one you trade against: in our worked Indian options-scalp example, a 1:1 setup that reads 50% in the textbook table needed 72% once brokerage, STT, and slippage were included. The more useful question runs the other way: with your journaled win rate known, the minimum R:R you need is (1 ÷ win rate) − 1 — a 30% win rate needs at least 1:2.33. And every one of these figures rises once Indian brokerage, STT, and slippage are included, so compute the with-costs breakeven from your own numbers.
 
 ### Is a higher risk-reward ratio always better?
 
