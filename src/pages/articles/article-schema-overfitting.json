@@ -8,7 +8,8 @@
       "description": "Your backtest shows a 2.8 Sharpe — did it find an edge or memorise the past? Five tests: the cliff, landscape, dice-count, walk-forward, and rationale test.",
       "author": {
         "@type": "Person",
-        "name": "Kaizen"
+        "name": "Kaizen",
+        "url": "https://monksofmarket.com/about/"
       },
       "publisher": {
         "@type": "Organization",
@@ -96,6 +97,14 @@
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Treat it as a warning sign, not a verdict. The usual explanation is single-asset fitting: the rules memorized the quirks of one instrument's history — its typical volatility, its intraday rhythm, its specific reactions to news — rather than capturing a repeatable market behavior. The cross-asset check from Test 5 is the cheap way to find out: an edge that is real tends to show some consistency across similar instruments. There is one honest exception: a rule with a genuine market reason to be asset-specific (say, a structure unique to how NIFTY weekly options are priced). If you cannot name that reason, the difference is probably fitting, not edge."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I avoid overfitting in backtesting?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Run the five tests in this article before trusting a backtest: the cliff test, the landscape test, the dice-count test, walk-forward testing, and the rationale test. A backtest that passes all five has found an edge; one that fails the cliff test has memorised the past."
           }
         }
       ]
