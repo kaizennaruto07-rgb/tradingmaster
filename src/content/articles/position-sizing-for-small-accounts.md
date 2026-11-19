@@ -221,7 +221,7 @@ No — leverage changes the margin posted, not the loss at the stop. A position 
 
 ### How much of my small account should one trade deploy?
 
-There is no universal deployment cap to quote; the answer comes from the article's own worked maths. The ₹50,000 example deploys ₹10,000 (20% of the account) for 1% risk, while the ₹25,000 example deploys ₹12,500 (50%) for the same 1% risk. Deployment therefore has to be checked separately from risk on every trade, with a short checklist of questions per trade:
+No one deployment cap counts as universal; the answer comes from the article's own worked maths. The ₹50,000 example deploys ₹10,000 (20% of the account) for 1% risk, while the ₹25,000 example deploys ₹12,500 (50%) for the same 1% risk. Deployment therefore has to be checked separately from risk on every trade, with a short checklist of questions per trade:
 
 - How much capital is left free after this deployment?
 - How concentrated is the account in this one name?
