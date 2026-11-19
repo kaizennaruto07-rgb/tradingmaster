@@ -1,11 +1,21 @@
 ---
 import Layout from '../layouts/Layout.astro';
+
+const visionSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Our Vision",
+  "url": "https://monksofmarket.com/vision/",
+  "about": "Monks Of Market"
+};
+const schemaHtml = '<script type="application/ld+json">' + JSON.stringify(visionSchema) + '</script' + '>';
 ---
 
 <Layout
   title="Our Vision — Monks Of Market"
   description="Emotions cost money. Trading is math, not magic. The Monks Of Market vision: a generation of disciplined, cost-aware, mathematically sound traders."
   current="vision"
+  schema={schemaHtml}
 >
 <main class="vision-page">
     <section class="v-hero">
