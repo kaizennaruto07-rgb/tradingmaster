@@ -79,7 +79,7 @@ Now the proof. Same risk per trade (Rs 100), same 100 trades, no costs yet. Only
 
 Read that table twice. The 40% trader — wrong more often than not — makes the most money. The 60% trader — right most of the time — loses. The 90% trader, the one your group chat would crown as a genius, makes a thin Rs 1,700 on 100 trades, a margin so fragile that real-world costs would erase it entirely (more on that in the costs section).
 
-These are illustrative figures, not anyone's actual results — the point is the structure, not the numbers. The structure says: **net outcome is the product of the pair, never either input alone.** There is no universal "good" win rate and no universal "good" ratio. There are only pairings that pay and pairings that don't.
+These are illustrative figures, not anyone's actual results — the point is the structure, not the numbers. The structure says: **net outcome is the product of the pair, never either input alone.** No one win rate counts as "good" for everyone, and no one ratio does either. There are only pairings that pay and pairings that don't.
 
 <figure class="article-visual" data-reveal>
 <svg viewBox="0 0 680 400" role="img" aria-label="Bar chart comparing net profit or loss across six win-rate and risk-reward pairings over 100 trades" class="viz viz-bars">
@@ -261,7 +261,7 @@ None of this is a character flaw; it's wiring. The practical takeaway is to choo
 
 ## Three trader archetypes, three pairings
 
-There is no universally correct pairing — only pairings that fit different temperaments, instruments, and cost structures. Three common ones in Indian markets:
+No one pairing is universally correct — only pairings that fit different temperaments, instruments, and cost structures. Three common ones in Indian markets:
 
 **1. The scalper — high win rate, low R:R.**
 Lives on Nifty/Bank Nifty options or liquid futures, in and out in minutes. Typical pairing: 65–80% win rate at 1:0.5 to 1:1. This profile **lives or dies on costs and execution** — brokerage, STT, and slippage are a large fraction of each small win, so the textbook breakeven numbers lie to him more than to anyone. One sloppy stop wipes out a morning. Needs: razor execution, low-cost broker, iron discipline on stops.
@@ -350,7 +350,7 @@ Neither in isolation. Focus on their product — expectancy per trade. A high wi
 Yes — if the ratio compensates. A 30% win rate at 1:3 nets +Rs 2,000 per 100 trades at Rs 100 risk (before costs). The catch is survival: at 30%, a 10-loss streak across 100 trades is ~58% likely (assuming independent outcomes), so your position sizing and psychology must withstand long dry spells. Low win rate strategies pay you for enduring discomfort most traders won't.
 
 **What is a good risk-reward ratio for day trading?**
-There is no universal number — start from the breakeven logic instead. Pick the ratio your setups honestly reach, then ask what win rate it demands: at 1:1 you need above 50%, at 1:1.5 above 40%, at 1:2 above 33.3% — all before costs, so real trading needs a margin above those lines (the full table is in our [expectancy guide](/articles/what-is-trading-expectancy/)). The honest answer is the pairing *you* can execute: intraday scalpers typically run 1:0.5 to 1:1 with high win rates, while intraday swing-style traders target 1:1.5 to 1:2. Whatever you choose, compute the ratio on net, after-cost numbers — costs hit small intraday targets hardest — and beware of pasting far-away targets just to claim a big ratio (the dishonest ratio).
+No one number fits everyone — start from the breakeven logic instead. Pick the ratio your setups honestly reach, then ask what win rate it demands: at 1:1 you need above 50%, at 1:1.5 above 40%, at 1:2 above 33.3% — all before costs, so real trading needs a margin above those lines (the full table is in our [expectancy guide](/articles/what-is-trading-expectancy/)). The honest answer is the pairing *you* can execute: intraday scalpers typically run 1:0.5 to 1:1 with high win rates, while intraday swing-style traders target 1:1.5 to 1:2. Whatever you choose, compute the ratio on net, after-cost numbers — costs hit small intraday targets hardest — and beware of pasting far-away targets just to claim a big ratio (the dishonest ratio).
 
 **Why isn't a bigger risk-reward ratio automatically a better trade?**
 Because the ratio is geometry, not a forecast — a 1:5 plan says nothing about whether price reaches the target. Widening the target lowers the probability of reaching it, which usually lowers your win rate by more than the ratio improves. A ratio only has value if the target is a level price realistically reaches *and* your realized win rate clears the breakeven threshold for it.
