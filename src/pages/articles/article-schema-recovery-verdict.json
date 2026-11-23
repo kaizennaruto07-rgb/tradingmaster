@@ -1,0 +1,72 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "Recovery Factor: Will You Make It Back?",
+      "description": "Will your account make it back from a drawdown? Judge the recovery factor, the gain required, the pace and the size — and decide: keep, resize, pause, or reset.",
+      "author": {
+        "@type": "Person",
+        "@name": "Kaizen"
+      },
+      "datePublished": "2026-10-29",
+      "publisher": {
+        "@type": "Organization",
+        "@name": "Monks Of Market"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How long does it take to recover from a trading drawdown?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It depends on three things: how deep the drawdown is, what monthly pace you can honestly assume, and whether your edge after costs is still positive. There is no single answer, and anyone giving you one without those three inputs is guessing. As an illustration only: a 20% drawdown needs a 25% gain, which takes about 7–8 months at a steady 3% a month or about 11 months at a steady 2% a month — each figure only under steady gains with no further losses, and neither is a forecast. If the edge is gone, the answer is not a longer time — it is that recovery at the current setup will not happen."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much gain do I need to recover from a 20% / 30% / 50% loss?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Because the gain is earned on the smaller trough balance, not the original peak, the required gain is always larger than the loss: a 20% loss needs a 25% gain, a 30% loss needs 42.9%, and a 50% loss needs 100%. The one-line reason is D ÷ (1 − D), where D is the drawdown. For the full reasoning, see Why a 50% Loss Needs a 100% Gain: The Asymmetry of Drawdown."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Should I increase my position size to recover faster?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No — not as a shortcut. Increasing size also increases the size of any further loss, and a further loss on the already-reduced base raises the required recovery gain further. It is a risk-amplifying move that can turn a recoverable drawdown into a much deeper one. The honest options are to keep trading at a survivable size, resize down, or pause-and-prove until the edge is confirmed."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the difference between drawdown depth and drawdown duration?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Depth is how far an account fell from its peak, measured in percent. Duration is how long the account stayed below its previous peak before recovering to it. Both must be judged together: a shallow-but-long drawdown suggests a stalled system, while a deep-but-short one suggests a sharp shock that was absorbed quickly. Depth alone cannot tell you which problem you have."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is a good recovery factor, and what does a low one warn me about?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The recovery factor is net profit divided by maximum drawdown. Below 1, net profit has not yet covered the strategy's worst drawdown. A low value warns that the system spends much of its life climbing out of holes rather than making new ground. As a rule of thumb from backtest-reporting practice — not a verified universal standard — above 5 is often described as healthy and below 2 as a warning. For the full explainer, see Recovery Factor."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "When should I stop trying to recover and reset instead?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Reset when the verdict points there: your after-cost edge is no longer positive, the drawdown's depth or duration has passed the trigger you set in advance, or repeated attempts to trade out of it have only deepened the trough. Resetting is not admitting defeat. It is the decision to stop paying for a recovery plan that the numbers say will not work, and to rebuild from a plan you can defend."
+          }
+        }
+      ]
+    }
+  ]
+}
