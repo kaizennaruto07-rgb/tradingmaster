@@ -1,0 +1,105 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "Why Do I Keep Blowing Up My Trading Account? The Repeat Cycle — and the Rules That Break It",
+      "description": "Why do I keep blowing up my trading account? The repeat cycle — loss, revenge, oversize — explained, with five risk rules to fix before your next deposit.",
+      "author": {
+        "@type": "Person",
+        "@name": "Kaizen"
+      },
+      "datePublished": "2026-10-30",
+      "publisher": {
+        "@type": "Organization",
+        "@name": "Monks Of Market"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What does it mean to blow up a trading account?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It means the account can no longer function as a trading account: either it has been wiped out by a sudden forced exit or margin call (the fast blow-up), or it has been ground down by repeated losses until normal position sizes are no longer possible (the slow bleed). The repeat pattern this article addresses is the slow bleed that ends fast."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why do I keep blowing up my trading account?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Because the risk behaviour repeats after every loss while only the money is reset. The cycle runs loss, urge to recover, bigger size or skipped rules, bigger loss, fresh deposit, repeat. A new deposit with the same sizing habits, stop habits, and revenge re-entries produces the same result. Breaking the cycle means changing the risk rules before the next deposit, not after the next loss."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is it my strategy or my risk management that causes blow-ups?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "In repeat blow-ups, it is usually the risk management — the risk per trade, the stop discipline, and the response to losses — rather than the strategy. Switching strategies does not fix oversizing, moved stops, or revenge trading, because those behaviours travel with the trader to the new strategy. Diagnose the behaviour first, using the checklist above, before concluding the strategy is at fault."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much should I risk per trade so I don't blow up?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No risk percentage guarantees you will not blow up, but this article's editorial rule is 1% of the account per trade by default, dropping to 0.5% after 3 consecutive losses. The range most professional sources recommend is 0.5–2% per trade, stated as a practitioner guideline, not a measured optimum. The key is not just the number: it must be fixed outside the session, and every position size must be calculated from it and from the stop before entry."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does leverage cause account blow-ups?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Leverage alone does not define your risk. What matters is how much of the account is lost if the stop — or liquidation — is hit. A trader can be overleveraged at low leverage by risking a large share of the account on one position, and conservatively sized at high leverage by risking about 1%. Judge every trade by its risk per trade, calculated from its stop, not by its leverage number."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why do I revenge trade after a loss, and how do I stop?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Revenge trading happens when a loss is treated as money that must be won back immediately, so the next trade is taken to recover it rather than because the plan called for it. It is usually taken larger and faster than planned, which is why the next loss costs more. The remedy is structural, not willpower: Rule 5 (no recovery-motivated re-entry in the same session — planned trades later in the same session are not banned) plus Rule 3 (a daily loss cap decided before the session). After a recovery-motivated trade, or once the daily cap is hit, the session ends."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How many losing trades in a row does it take to blow up an account?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "There is no universal number — it depends entirely on risk per trade. On a Rs 1,00,000 account, risking 1% of the then-current balance each trade, 5 consecutive losses produce only a 4.9% drawdown. At 10% risk, 10 consecutive losses produce a 65.13% drawdown. At 20% risk, just 3 consecutive losses produce a 48.8% drawdown. That is why the same losing streak destroys one account and barely dents another: the streak is the same, the size is different. For the consecutive-loss context behind these figures, see How Losing Streaks Affect Trading Accounts."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the warning signs I'm about to blow up my account?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Risking more than 5% of the account on a single trade; trades you cannot sleep with open; a few trades deciding the whole week; stops moved mid-trade; size that has grown after a winning streak without a written decision; and any trade taken immediately after a loss to recover it. Any one of these is a reason to stop, check the checklist above, and fix the mechanism it points to before trading again."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I recover after blowing up my trading account?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Recovery, at the level this article covers, starts with fixing the rules before the next deposit: a fixed risk percentage, a hard stop on every trade, a daily loss cap, no adding to losers, and no recovery-motivated re-entries. The five rules above are the recovery starting point. The fuller rebuild that follows is covered separately in After the Blow-Up: A Recovery Protocol, mentioned here in plain text only."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Should I stop trading after blowing up, or fund a new account?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Do not fund a new account until the risk rules are fixed and demonstrable. Funding first repeats the cycle: the same behaviour with fresh money produces the same result. Stop, and start with the self-diagnosis on your last blown account — it points to the one mechanism to fix first. Pausing is not quitting — it is the break-point in the cycle."
+          }
+        }
+      ]
+    }
+  ]
+}
