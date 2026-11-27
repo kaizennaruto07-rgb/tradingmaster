@@ -1,0 +1,121 @@
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Article",
+   "headline": "Stop Loss for Options Trading",
+   "description": "Stop loss for options trading: underlying vs premium stops, theta and the time stop, buyer vs seller stops \u2014 one worked example, one 5-step procedure.",
+   "author": {
+    "@type": "Person",
+    "@name": "Kaizen"
+   },
+   "datePublished": "2026-11-15",
+   "publisher": {
+    "@type": "Organization",
+    "@name": "Monks Of Market"
+   }
+  },
+  {
+   "@context": "https://schema.org",
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "How do I set a stop loss in options trading?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Choose the basis first (underlying or premium), set the level on that basis, add a time stop, size from the stop distance, and decide the management rule in advance. That is the 5-step procedure above. The most common beginner error is starting from a percentage copied from a stock guide instead of from the trade's own invalidation level or the contract's character."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Should my stop loss be based on the underlying price or the option premium?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Use the underlying price for directional trades with a clear invalidation level on the underlying's chart \u2014 it protects the idea. Use the premium when the trade has no clean underlying level, or when capping the rupee loss matters more than the chart level \u2014 it protects the rupees. Never switch bases mid-trade without a reason stated in advance."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What percentage stop loss should I use for options?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "There is no universal percentage. The commonly quoted 50% premium rule of thumb \u2014 exit when half the premium is gone \u2014 is a starting point to test, not a law. Cheaper, faster-decaying contracts need a wider percentage; expensive, slow-decaying contracts can carry a narrower one. A percentage chosen without looking at the contract's decay is a guess dressed as a rule."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Why do I keep getting stopped out of options even when the stock moves my way?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Usually theta or volatility. If the move is too small or too slow, time decay eats more premium than the favourable move adds. If implied volatility falls \u2014 for example, after an event the market was pricing in \u2014 the premium can fall even as the underlying rises. A premium stop fires on the premium, not on the underlying, so it can fire while the directional call was right."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What is a time stop for options, and do I need one as a buyer?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "A time stop is a pre-set date or condition at which you exit if the position has not moved meaningfully in your favour, regardless of profit or loss. Yes, a buyer needs one: without it, theta can consume the position on a flat underlying, and the premium stop eventually fires for a reason that has nothing to do with the trade idea."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How does theta decay affect my stop loss?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Theta shrinks the distance to a premium stop every day, even on flat days. In the carried example, an illustrative Rs 5 per unit of daily theta eats Rs 25 in five days \u2014 nearly half the distance to a 50% premium stop \u2014 without any adverse price move. For an underlying-based stop, theta shrinks the premium that will be recovered when the underlying hits invalidation, so the realised loss can exceed the estimate made at entry."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Should option sellers use a stop loss, and how is it different from a buyer's stop?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes \u2014 more urgently, not less. A buyer's loss is capped at the premium paid even without a stop; a naked seller's loss is open-ended. A seller's stop sits above the entry premium (Rs 180 against a Rs 120 sale in the example) and caps the loss per unit only if it fills. It must be set before entry, because the loss it caps can grow faster than a trader can improvise."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Can I use a trailing stop loss on an options position?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes, on a premium stop: as the premium rises, the stop trails upward, locking in part of the gain. Trail only in the trader's favour, and decide the trailing rule before entry. Never trail a stop downward (for a buyer) or upward (for a seller) to \"give it room\" \u2014 that is widening, not trailing, and it converts a capped loss into an open-ended one."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Why does my option lose value when the market does nothing?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Because time value decays every day, including days the market is closed, and the decay accelerates as expiry approaches. A flat underlying means no new intrinsic value and no offset to the decay, so the premium falls. At-the-money options lose the most in rupee terms; out-of-the-money options lose the most in percentage terms."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Does a stop loss guarantee my exit price on an options trade?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "No. A stop triggers an exit attempt at the stop level; the actual fill depends on what the market is doing at that moment. Gaps, fast moves, volatility crushes, and wide spreads can all produce fills worse than the stop level. Size every trade so the account survives a worse-than-expected fill, not just a perfect one."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How do I size an options trade from my stop loss?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Divide the rupees you are willing to risk on the trade by the stop distance per unit, and floor the result. At Rs 1,000 risk: a Rs 60 premium-stop distance gives 16 units; a Rs 40 underlying-stop distance gives 25 units; a Rs 30 tight-stop distance gives 33 units but fires far more often. If the resulting size or the risk/reward is unworkable, skip the trade."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What goes wrong with stop losses on thinly traded options?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Two things. First, the position may not trade for long stretches, so a premium trigger never fires cleanly \u2014 the stop is set but nothing happens at the level. Second, a wide bid-ask spread means the quoted bid or ask can trigger a stop that no real trade would have produced, or leave the trader exiting far from the last traded price. On thin contracts, prefer underlying-based stops watched manually, and treat any premium stop as approximate."
+     }
+    }
+   ]
+  }
+ ]
+}

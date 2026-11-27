@@ -1,0 +1,105 @@
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Article",
+   "headline": "Options vs Stocks for Beginners: Which Should You Start With?",
+   "description": "Options vs stocks for beginners: which to start with, what each really costs in rupees, and the risks, with a worked example, SEBI loss data and decision path.",
+   "author": {
+    "@type": "Person",
+    "@name": "Kaizen"
+   },
+   "datePublished": "2026-11-26",
+   "publisher": {
+    "@type": "Organization",
+    "@name": "Monks Of Market"
+   }
+  },
+  {
+   "@context": "https://schema.org",
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "Which is better for beginners: options or stocks?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Stocks. They are simpler, have no expiry, pay dividends, and forgive timing mistakes \u2014 a share can wait for your view to come right. Options demand that you get direction, timing and volatility right before a fixed deadline, and a bought option can lose its entire premium. Start with stocks; consider options only after paper-trading them for at least a month and passing the five questions in the decision path above."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Are options riskier than stocks?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "For a buyer, yes, in the way that matters most to a beginner: a bought option can lose 100% of the premium, and it can do so in days, even if the underlying barely moves, because of time decay. A share of a large company rarely loses everything, and it does not expire. For a seller, the risk is different and larger \u2014 margin, obligation, and theoretically unlimited loss on an uncovered call. Always ask \"buyer or seller?\" before accepting any sentence about options being risky."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Can I make more money with options vs stocks?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "In percentage terms, yes \u2014 a bought option can return several times the premium when the view is right and on time, as the worked example shows (+233% against +10% for the shares). But the same leverage produces total losses just as fast: the option lost 100% in both the flat and the down scenarios, while the shares lost 10% and could recover. Over many trades, SEBI's data shows about 9 in 10 individual F&O traders lost money in FY22\u2013FY25. Higher percentage upside is not higher expected wealth."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Can beginners invest in options? Is it safe for beginners to trade in options?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Beginners can, legally \u2014 there is no rule that forbids it \u2014 but it is not safe in the sense that matters: options are complex, leveraged, and time-bound, and most individual F&O traders lose money. The safe order is stocks first, learning the mechanics, paper-trading options for at least a month, and only then a single bought option sized so that losing the whole premium does not matter. Never start with sold options."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How much money do you need to start investing in options vs stocks?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Stocks can be started with very little \u2014 even one share of a low-priced company, from around \u20b9100. An option buyer pays only the premium, often a few thousand rupees, but the contract behind it is large: a new Nifty index contract is worth \u20b915\u201320 lakh in notional terms (SEBI framework, 2024), so the exposure is far bigger than the ticket price suggests. An option seller needs margin running into lakhs. Do not confuse a small premium with a small trade."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What is the main difference between options and stocks?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Stocks are ownership: you own part of a company, with no expiry, dividends and a vote. Options are contracts: you buy the right to transact at a fixed price before a fixed expiry, paying a premium for it, with no ownership, no dividends and no vote. A share can wait; an option cannot."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Are options better than stocks for long-term investing?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "No. Options expire, decay with time, and cannot be held for years. Long-term wealth building belongs to shares (and to diversified holdings), where compounding and dividends work for you and time is on your side. Options are a short-term instrument for a short-term view, or for hedging \u2014 both later learning."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Can you lose more money with options than with stocks?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "It depends on the side. A bought option's loss on one trade is capped at the premium \u2014 but that premium can be lost in full, repeatedly, which is how the total adds up. A seller can lose more than the premium received, and an uncovered call seller faces theoretically unlimited loss. A shareholder's loss is capped at the amount invested, and a share of a sound company rarely goes to zero. Over many trades, the option buyer's repeating full-premium losses are what the SEBI loss statistics describe."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Which is easier to start with, stocks or options?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Stocks, by a wide margin. Buying a share means understanding one thing: the company. Buying an option means understanding the strike, the expiry, the premium, volatility and time decay together, and getting direction and timing right at once. Easier to learn does not mean risk-free \u2014 shares can still fall \u2014 but the learning curve is shorter and the mistakes are cheaper."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Do options expire? What happens if an option expires worthless?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes \u2014 every option has a fixed expiry date, and Indian equity options are European-style, so exercise happens only at expiry. If a bought option is out-of-the-money at expiry, it expires worthless and the buyer loses the entire premium. The seller keeps it. That is a common outcome for bought options, not an exception, which is why the premium must be money you can afford to lose in full."
+     }
+    }
+   ]
+  }
+ ]
+}

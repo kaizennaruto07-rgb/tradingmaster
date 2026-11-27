@@ -1,0 +1,89 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "Trading Rules of Thumb, Ranked by Evidence",
+      "description": "Which trading rules of thumb survive an evidence test? Nine rules ranked — 1%, 2%, 3-5-7, 90-90-90, the 7% rule and more — with streak math and a clear verdict.",
+      "author": {
+        "@type": "Person",
+        "@name": "Kaizen"
+      },
+      "datePublished": "2026-11-03",
+      "publisher": {
+        "@type": "Organization",
+        "@name": "Monks Of Market"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How much should I risk per trade?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Risk 1% of account equity as the default, and 2% only as an upper bound for a verified edge over a large sample — always under a total-open-risk cap of about 5%. On a ₹2,00,000 account, that means up to ₹2,000 of risk per trade at 1% (₹1,980 after flooring to 33 shares in the worked example above) and up to ₹4,000 at 2% (₹3,960 after flooring to 66 shares). On a ₹50,000 account, 1% is ₹500, and if a lot's stop distance forces risk above that cap, the rule says to trade smaller, fewer, or not at all."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the 1% rule in trading?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The 1% rule says: risk at most 1% of your account equity on any single trade, with the risk set by the distance to your stop. After 10 consecutive losses at 1% risk, about 90.4% of capital remains before costs; after 20, about 81.8%. It is a risk budget, not a position size — the number of shares follows from the stop distance, not the other way round."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is 2% risk per trade too much?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It depends on who is using it and whether a total cap is in place. By streak math alone, before costs, 2% is survivable: about 81.7% of capital remains after 10 consecutive losses and about 66.8% after 20. But as a beginner default, or without a total-open-risk cap, yes — it is too much. Five simultaneous 2% trades are a 10% account bet. Reserve 2% for verified edges, and always pair it with a ~5% total cap."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is the 3-5-7 rule good?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It is good as a structure and weak as stated. Keep the 5% total-open-risk cap, which is the rule's genuinely valuable idea; tighten the 3% per-trade leg toward the supported 1–2% band; and treat the ~7% leg as a ~2.3R reward target, not a price move. Definitions of this rule vary — see the verdict section above — and the full definition question is covered in depth in a companion article, with no hyperlink here until that article is published."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is the 90-90-90 rule true?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "As a literal statistic, no published study has been identified behind the triple, so it should be treated as a community observation, not a measured fact. As a warning, it points the same way as real measured data: a regulator study found 89% of individual equity F&O traders lost money in FY22, and SEBI's September 2024 study found 93% of over 1 crore individual equity F&O traders incurred losses over FY22–FY24, inclusive of transaction costs; in FY24 alone 91.1% were loss-makers. The triple itself is never evidence — the measured figures, each with its population and period, are."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the 7% rule in stocks?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The 7% rule says to exit a stock position if it falls about 7% from entry. It is a price rule, not a risk rule: a 7% price fall says nothing about account risk until position size is set. Use it only by translating it — size the position so the 7% price stop equals your 1–2% risk budget — or do not use it at all."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What risk-reward ratio do I need to be profitable?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Before costs, the breakeven win rates are: 1:1 needs over 50%, 1:2 needs about 33.3%, 1:3 needs 25%, and ~2.3R needs about 30.3% for the rounded 2.3R label. Costs move every breakeven up. And a ratio is a filter, not a law: the target must actually be reached in your own backtest or journal data, or the ratio's tidiness is worthless."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does \"cut your losses and let your winners run\" mean in practice?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "In practice it means two mechanical rules, both decided before entry: a pre-defined exit for losers (stop at invalidation, never widened) and a mechanical rule for winners (partial profit at a defined multiple of risk, such as 2R, with the remainder trailed by a rule that only moves in your favour). The slogan alone is incomplete — without the winner half, it produces small wins and large losses."
+          }
+        }
+      ]
+    }
+  ]
+}

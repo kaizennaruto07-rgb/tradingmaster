@@ -1,0 +1,105 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "The 5 Ways Traders Blow Up, Ranked by Math",
+      "description": "Ranked by math on Rs 2,50,000 account: no stop loss is the most dangerous way to blow up, followed by oversizing, martingale, revenge trading and overtrading.",
+      "author": {
+        "@type": "Person",
+        "@name": "Kaizen"
+      },
+      "datePublished": "2026-10-30",
+      "publisher": {
+        "@type": "Organization",
+        "@name": "Monks Of Market"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What are the most common ways traders blow up their accounts?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The five ways ranked in this article: trading with no stop loss, oversizing or overleveraging, martingale trading and averaging down, revenge trading, and overtrading. They are the consensus causes across trading literature — not exotic habits, but ordinary ones, measured here on the same Rs 2,50,000 account."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which way of blowing up an account is the most dangerous?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No stop loss. Its worst single-trade loss is unbounded — there is no predefined exit to cap it. An illustrative 40% position through a 50% adverse gap move loses 20% of the account in one trade, and with no stop the same trade could lose far more. Every other way can be bounded and measured; this one cannot, which is why it ranks first."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How fast can overleveraging blow up a trading account?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Very fast. At 20% risk per trade, 5 ordinary consecutive losses take Rs 2,50,000 to Rs 81,920, a drawdown of -67.23%, crossing the -50% ruin line at the 4th loss (Rs 1,02,400, -59.04%). At 25% risk, just 3 losses leave Rs 1,05,469, a drawdown of -57.81%. No freak event is needed — an ordinary losing streak is enough."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is trading without a stop loss really that dangerous?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, because the danger is structural, not a matter of degree. With a stop, the worst loss on a trade is defined before the trade. Without one, it is not defined at all. The illustration in this article — a Rs 1,00,000 position (40% of a Rs 2,50,000 account) losing Rs 50,000 through a 50% adverse move — is one possible outcome, not a ceiling. The trade could lose the whole position."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is martingale trading, and why does it blow up accounts?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Martingale trading is planned doubling, or adding, into a losing position to lower the average entry. It blows up accounts because the ladder grows faster than the account can survive: from 2% risk, doubling after each loss, five steps take Rs 2,50,000 to Rs 1,23,599 (-50.56%), and the 6th step would risk 64% of what is left (Rs 79,103). The plan requires ever-larger bets from an ever-smaller account."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the difference between revenge trading and averaging down?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Averaging down, or martingale, is planned adding to the same losing position to lower the average entry. Revenge trading is impulsive, unplanned, same-session re-entry with new trades, bigger size, and worse entries, driven by the last loss. Same position by plan versus new trades by impulse — that is the distinction, and it decides which fix applies: never add to a loser, versus no same-session re-entry to recover a loss."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does overtrading slowly destroy a trading account?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Trade by trade, on marginal setups, with costs and slippage. At an illustrative -0.2% per trade, 100 trades take Rs 2,50,000 to Rs 2,04,642 (-18.14%) before any single bad streak. The bleed is slow enough to ignore and steady enough to matter — and it manufactures the frustration that triggers martingale and revenge trading, the faster ways above it."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much should I risk per trade to avoid blowing up?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No risk level guarantees avoiding a blow-up. The range most professional sources recommend is 1–2% per trade, and the control case in this article shows why it is recommended: at 1% risk, 5 consecutive losses cost -4.90%, and at 2% they cost -9.61% — against -67.23% at 20% risk. Treat 1% as the default starting point for the fixed-percentage rule, decided outside the session, and size from it using position size multiplied by stop distance."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How many losing trades in a row does it take to blow up an account?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It depends on the way, which is why the ranking matters. Five ordinary losses at 20% risk cross the -50% ruin line. A single trade with no stop can lose 20% of the account in the illustration here, with no cap at all. A martingale ladder crosses the ruin line in five doubling steps. Overtrading needs no losing streak at all — 100 trades at an illustrative -0.2% each are enough for -18.14%. There is no single number, because the habit, not just the streak, decides the speed."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What should I fix first after blowing up my trading account?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Fix your worst-ranked way first, using the five-question self-check over your last 20 trades. If you ever traded with no stop, that outranks everything. Then oversizing, then martingale, then revenge trading, then overtrading. Fix one way, in ranked order, before moving to the next. This article ends there; the companion piece After the Blow-Up: A Recovery Protocol owns the rebuild that follows."
+          }
+        }
+      ]
+    }
+  ]
+}

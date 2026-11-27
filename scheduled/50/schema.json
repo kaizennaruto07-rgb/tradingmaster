@@ -1,0 +1,113 @@
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Article",
+   "headline": "The Psychology of Money \u2014 Summary (Morgan Housel, 2020)",
+   "description": "The Psychology of Money summary for traders: why profits never compound, what 'enough' means in numbers, and how staying wealthy differs from getting wealthy.",
+   "author": {
+    "@type": "Person",
+    "@name": "Kaizen"
+   },
+   "datePublished": "2026-11-19",
+   "publisher": {
+    "@type": "Organization",
+    "@name": "Monks Of Market"
+   }
+  },
+  {
+   "@context": "https://schema.org",
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "What is The Psychology of Money about?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "It is a book by Morgan Housel (2020) about why doing well with money depends more on behaviour than on intelligence or knowledge. Money decisions are driven by personal history, ego, envy, fear, and patience \u2014 not by spreadsheets \u2014 so two people with the same information can make completely different, and completely reasonable, decisions. For traders, its value is explaining why knowing the maths does not stop you from breaking your own rules."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What are the key lessons of The Psychology of Money?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "The core lessons are: behaviour matters more than knowledge; no one is crazy, because everyone grew up in a different economy; luck and risk are the same force seen from opposite ends; the hardest skill is defining enough so the goalpost stops moving; getting wealthy and staying wealthy are different skills; a few tail events drive most results; freedom \u2014 control over your time \u2014 is money's highest dividend; wealth is what you don't see; a plan you can stick with beats a theoretically optimal one you abandon; volatility is a fee, not a fine; and room for error must be built into every plan."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What does \"never enough\" mean in the book?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "It means the goalpost never stops moving. People who already had wealth, reputation, and freedom have risked all of it for more they did not need, not because they were cartoonishly greedy, but because \"enough\" was never defined. For traders, it means a monthly target that rises every time it is hit, and size that increases after every good month \u2014 so no amount of winning ever registers as winning. The fix is defining enough in numbers, in writing, before the winning streak arrives."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What is the difference between getting wealthy and staying wealthy?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Getting wealthy takes optimism and risk-taking: acting, concentrating, believing a future can be better than the present. Staying wealthy takes frugality, humility, paranoia, and a survival mindset: protecting what exists rather than gambling it for more. Traders who blow up usually fail at the second skill, not the first \u2014 the aggression that built the account is not the discipline that keeps it."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What does Housel mean by wealth is what you don't see?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Rich is visible spending \u2014 cars, houses, clothes, lifestyle on display. Wealth is the assets not spent \u2014 the car not bought, the upgrade not taken, the profit not withdrawn and spent. A trader flashing profits is showing income, not wealth. What matters is what survives after withdrawals, costs, taxes, and the next drawdown."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What does volatility as a fee not a fine mean?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "It means market downturns, fear, doubt, and regret are the admission price of long-term returns, not a penalty for mistakes. A drawdown is not automatically proof your system broke; it is the fee you agreed to pay. The question is whether you sized so you can afford the fee \u2014 and whether the drawdown is inside your system's normal range or breaks its own rules."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What is room for error?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Room for error means planning on your plan not going according to plan: keeping a buffer between expected outcomes and worst cases \u2014 cash reserves, lower size, no single point of failure \u2014 while staying optimistic about the long term and paranoid about short-term landmines. For a trader, it is mostly a position-size decision: a size you can hold through a losing month is room for error, and a size that forces you out after a normal losing run is a plan with no room for being wrong."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Is The Psychology of Money a trading book? Is it good for traders?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "No, it is not a trading book \u2014 it teaches no setup, entry rule, or risk model, and its trading applications are translations, not prescriptions. It is good for traders whose failure is what happens after the win: spending profits, sizing them away, or never letting them compound. It is less useful for a trader with no tested method at all, because better behaviour applied to a losing system only loses more slowly."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How is The Psychology of Money different from Trading in the Zone?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "They attack different failures. This book owns money behaviour over a lifetime: luck and risk, enough, getting versus staying wealthy, compounding, and wealth as what you don't see. Trading in the Zone, by Mark Douglas, addresses what happens in the moment \u2014 knowing the rule and still breaking it under pressure, and the beliefs behind that pattern. If your failure is what happens after the win, start here; if it is self-sabotage in the moment, start with the Douglas books."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What is the \"enough\" rule for traders?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "It is a written contract, set before the trading week, with three lines: a monthly profit target after which size does not increase; a maximum weekly drawdown after which trading stops for the week; and a rule for what happens to profits \u2014 what fraction stays in the trading account and what fraction leaves it into something that compounds outside trading. Without it written down, every win just raises the bar."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Should I read The Psychology of Money before trading?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "It is worth reading early, but it is not a substitute for a tested method. Read it before you have a large account at stake, so the enough contract and the staying-wealthy discipline are in place before winning streaks arrive. But if you have no method at all, building and validating one comes first \u2014 this book becomes far more useful once there is something worth protecting."
+     }
+    }
+   ]
+  }
+ ]
+}

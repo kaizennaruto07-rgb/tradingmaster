@@ -1,0 +1,105 @@
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Article",
+   "headline": "Stop Loss for Intraday Trading",
+   "description": "Stop loss for intraday trading: risk budget, daily stop, structure and ATR placement, sizing from the stop, trailing rules and the planned square-off.",
+   "author": {
+    "@type": "Person",
+    "@name": "Kaizen"
+   },
+   "datePublished": "2026-11-16",
+   "publisher": {
+    "@type": "Organization",
+    "@name": "Monks Of Market"
+   }
+  },
+  {
+   "@context": "https://schema.org",
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "What is a stop loss in intraday trading?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "A preset exit level, decided before entry, that closes the trade automatically when price reaches it. Intraday makes it non-negotiable because the position must be closed by the session's end \u2014 there is no holding overnight to wait for a recovery. The companion piece Stop Loss Meaning covers the definition in full; this article covers the session procedure around it."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How do I calculate a stop loss for intraday trading?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Decide the risk budget first, then the stop distance, then divide: size = risk budget \u00f7 stop distance, floored. On the carried example: Rs 1,000 risk budget \u00f7 Rs 18 distance (entry Rs 1,000, stop Rs 982) = 55.55, floored to 55 shares. The planned loss is 55 \u00d7 Rs 18 = Rs 990, inside the budget. Never reverse the order and pick a size first."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What percentage stop loss is best for intraday trading?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "There is no universal percentage. The commonly quoted range for a fixed-percentage intraday stop is 0.5\u20131% of entry, but a percentage ignores both the chart and volatility, so this article uses it only as a cap, not as the basis. On the carried example, 1% of Rs 1,000 is Rs 10, giving a stop at Rs 990 \u2014 but Rs 10 is less than one 15-minute ATR (Rs 12), so it sits inside ordinary noise and is rejected here even though it allows 100 shares. Prefer structure first, ATR second, percentage only as a check."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Should my stop be based on percentage, support/resistance, or ATR?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "In this order: structure first, ATR second, percentage last as a cap. Structure \u2014 below intraday support for a long, above resistance for a short, with a small buffer \u2014 is tied to the trade idea itself: if that level breaks, the idea is wrong. ATR \u2014 a multiple of the stock's own per-candle movement, 1.5 \u00d7 Rs 12 = Rs 18 on the carried example \u2014 scales with volatility when no clean level exists. Percentage is the easiest to compute and the easiest to get wrong, because it treats a calm stock and a wild one identically."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What is a trailing stop loss in intraday trading, and when does it hurt?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "A trailing stop follows price in the trader's favour and never moves back, locking in part of a move. On the carried example the rule is two-stage: at +Rs 30, move to breakeven (Rs 1,000, risk now zero, not profit); then trail at the highest price minus 1.5 \u00d7 ATR (Rs 18), so at Rs 1,050 the stop is Rs 1,032, and a reversal there keeps 55 \u00d7 Rs 32 = Rs 1,760. It hurts when it exits a trade that then runs much further \u2014 the Rs 1,032 exit keeps Rs 1,760 but gives up any move beyond it. That exchange, certainty of part of the move for the possibility of the whole move, is the price of trailing, and it must be accepted knowingly, not discovered afterwards."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "SL vs SL-M \u2014 which should I use intraday?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "It depends on what matters more in the moment. SL (stop-loss limit) triggers a limit order: it protects the price but does not guarantee a fill, and in a fast move it can sit unfilled while price runs past it. SL-M (stop-loss market) triggers a market order: it prioritises getting out, but does not guarantee the fill price, and in a fast move or gap the fill can be worse than the trigger. Use SL-M when getting out matters more than the exact price \u2014 fast markets, spikes, or a position that must close before the session's end. Use SL when the price matters more and the market is calm. Never expect one type to give you the other's guarantee."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Should I move my stop loss once the trade is live?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Only in the direction that reduces risk, and only by the pre-set trailing rule. Move it to breakeven and then trail it up behind price, never back. Never widen it to \"give the trade room\" \u2014 widening converts a planned loss into an unplanned one, and it is done most often at the exact moment the stop exists to protect you. If the stop is wrong, the trade was wrong: exit, reassess, and re-enter on a fresh plan if the setup still justifies it."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What is a daily stop loss, and when should I stop trading for the day?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "A daily stop is a pre-set limit \u2014 a fixed number of losing trades or a fixed rupee loss \u2014 after which you stop trading for the day, without renegotiation. On the carried example it is Rs 2,000: two losing trades at Rs 1,000 each, and the day is over, no third trade. It exists because a bad morning, left unchecked, becomes a revenge-trading afternoon, and the afternoon's trades are made by a trader who is already down."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Do I need a stop loss if I watch the screen all day?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes. Watching is not a stop. A fast move can run past your intended exit before you react; a distraction, a frozen screen, or a moment's hesitation defeats a manual exit exactly when it matters most; and watching every candle makes it more tempting, not less, to move the stop by feel. The stop is placed the moment the entry fills, whether you are watching or not, and it works when you cannot."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What happens if my stop loss is not hit by market close?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "The position must still be closed by the session's end \u2014 the session end is itself an exit. Plan the square-off before entry: close open trades on purpose, at a planned point before the forced square-off window, at a price you choose, rather than drifting into the window where unplanned positions are all being closed at once. And check that nothing is still open before that point: never carry an intraday position overnight by accident."
+     }
+    }
+   ]
+  }
+ ]
+}

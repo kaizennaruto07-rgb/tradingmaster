@@ -1,0 +1,89 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "Why Do Most Day Traders Fail? The Real Mechanism Behind the Losses",
+      "description": "Why do most day traders lose money? Measured loss rates from SEBI, Brazil and Taiwan, and the compounding stack of costs, leverage and behaviour behind them.",
+      "author": {
+        "@type": "Person",
+        "@name": "Kaizen"
+      },
+      "datePublished": "2026-11-03",
+      "publisher": {
+        "@type": "Organization",
+        "@name": "Monks Of Market"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What percentage of day traders lose money?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "There is no single measured percentage — the honest answer is a range by population and period. SEBI found 92.8% of individual equity F&O traders lost over FY22–FY24, 87.7% of individual equity-derivatives traders lost in FY26 (90.9% on the revised FY25 basis), and 71% of individual intraday cash-equity traders lost in FY23. In Brazil, 97% of equity-futures day traders who persisted beyond 300 day-trading days lost. European CFD disclosures summarised by ESMA in 2018 ranged from 74–89% of retail accounts losing money. The direction is consistent; the number depends on who was measured, in what market, and when."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What percentage of day traders are profitable?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Distinguish two different questions. \"Profitable at all\" — SEBI found 7.2% of individual equity F&O traders made any profit over FY22–FY24, and only about 1% earned profits above ₹1 lakh after costs over those three years. \"Profitably, predictably, after fees\" is a much stricter test: in Taiwan from 1992–2006, less than 1% of day traders predictably and reliably earned positive abnormal returns net of fees. Making money in a given period and having a repeatable, predictable edge after fees are not the same thing, and conflating them is one of the most common errors in this debate."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can you make a living day trading?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A small minority does, and the evidence above shows how small. Making a living requires clearing every layer of the stack at once: an edge that survives costs, position sizing that survives normal losing streaks, a structural disadvantage that is somehow neutralised, and behaviour under time pressure that stays disciplined for years. That combination is rare, and nothing in this article promises it or offers a path that guarantees it. For most people, on the evidence, day trading is not a reliable income source — and the longer-horizon alternatives in the previous section carry the same risk discipline without the same structural headwinds."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is day trading gambling?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It depends on how it is done. Trading a tested edge, at small fixed risk, with costs accounted for and a journal reviewed on a schedule, is a probabilistic business with a measured expectancy — closer to a professional risk-taking activity than to a game of chance. Trading an untested setup, oversized, cost-blind, with no feedback loop, driven by variable rewards and revenge sizing, shares gambling's defining features: no edge, no control of risk, and a reinforcement schedule designed to keep you playing through losses. The gambling parallel holds exactly where the stack's layers are ignored, and breaks down exactly where they are respected."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long do most day traders last?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Most do not last long as active day traders. In Brazil, only 1,551 of 19,646 people who began day trading equity futures in 2013–2015 traded on more than 300 day-trading days — the large majority stopped well before that. At the same time, SEBI found that over 75% of loss-making F&O traders continued to trade F&O despite losses in FY22–FY24. Both facts can be true at once: most entrants quit, and many of those who stay keep trading while losing. Persistence is not the same as learning, as the Brazil cohort shows."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why do traders keep trading after losing?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The studies measure the persistence, not a single motive — so no single motive should be claimed. The mechanisms that plausibly sustain it are the ones this article has named: variable, intermittent rewards, where an occasional win outweighs a cumulative loss in memory; outcome-based learning, where rule-breaking winners are remembered as skill and well-executed losers as mistakes; and the absence of a feedback loop, where no journal or review ever forces a confrontation with the full distribution of results. Add the income expectation — admitting failure means abandoning the plan to quit a job or replace a salary — and continuing feels easier than stopping, even when stopping is the rational choice."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can a small account day-trade profitably?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The maths makes it very hard, and honesty requires saying so. A small account faces the same per-trade costs as a large one, needs the same minimum risk per trade to place a sensible stop, and therefore must risk a larger fraction of the account — which exposes it to the recovery asymmetry and streak maths above. The disciplined answer on a small account is often to trade smaller, trade fewer, or not day-trade at all — and to consider longer-horizon investing or swing trading, where the same risk rules apply but costs and time pressure weigh far less heavily. That answer is unwelcome, but it is the one the arithmetic supports."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do prop firms change the odds?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A funded account does not remove costs, the structural opponent, or any other layer of the stack. The trader still pays the spread, still faces faster counterparties, still needs a tested edge at survivable risk, and still faces the same psychology under time pressure — now with an external firm's rules and evaluation conditions added on top. Prop-firm mechanics are covered in their own companion articles (plain-text pointer only); they are not re-taught here, and they should not be read as a way around the failure stack. If the stack is not respected, changing who provides the capital does not change the outcome."
+          }
+        }
+      ]
+    }
+  ]
+}

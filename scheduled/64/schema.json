@@ -1,0 +1,145 @@
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Article",
+   "headline": "How to Place Your First Option Trade",
+   "description": "Place your first option trade step by step \u2014 approval, one contract, the order ticket field by field, and the exit plan \u2014 worked on one carried trade.",
+   "author": {
+    "@type": "Person",
+    "@name": "Kaizen"
+   },
+   "datePublished": "2026-11-26",
+   "publisher": {
+    "@type": "Organization",
+    "@name": "Monks Of Market"
+   }
+  },
+  {
+   "@context": "https://schema.org",
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "How do I place my first option trade?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Confirm options approval on your account, fund it and set the trade's risk budget, paper-trade the exact trade first, pick a view on an underlying you follow, buy a call if bullish or a put if bearish, find the contract on the chain, pick a strike near the money and an expiry a few weeks out, check the bid-ask spread, and place a limit order \u2014 then manage the trade against the exit plan you wrote before entry. This guide walks each step on one carried trade."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How do I buy a call option step by step?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Confirm your account is approved for buying options, pick a bullish view on an index you follow, find the call on the option chain at a strike near the money with an expiry a few weeks out, check that the bid-ask spread is tight, and place a limit order to buy to open one lot at or near the mid price. Read the total on the order ticket before confirming, and have your profit line, wrong line, and time line written down before you click buy."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How much money do I need to start options trading in India?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "There is no single verified figure, and this guide will not invent one. What you pay for a trade is the premium per unit multiplied by the lot size \u2014 so the amount depends entirely on which contract you choose. A contract with a low premium costs less to buy than one with a high premium. Beyond the trade itself, you need a cushion: enough left over that a few losing first trades do not end the experiment. Decide how much one trade may risk first \u2014 the widely-quoted rule is never more than 2% of capital on a single trade \u2014 and choose a contract that fits it. The method is in the guide on position sizing."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Can I start options trading with \u20b95,000?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "It depends on the premium of the contract you choose, because what you pay is the premium per unit multiplied by the lot size. Some contracts cost less than \u20b95,000 in total; many cost more \u2014 and the cheapest contracts are usually the far out-of-the-money ones this guide warns against, because they have the lowest probability of finishing profitable. The honest answer is that \u20b95,000 is not a yes or a no; it is a question about which contract you are buying. Whatever the amount, read the total on the order ticket before confirming, and keep a cushion beyond it."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Do I need to buy a full lot, or can I buy one option?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Options trade in lots, and the smallest trade is one lot \u2014 you cannot buy a single unit on its own. Your first trade is one lot of one contract. The total you pay is the premium per unit multiplied by the lot size, and the ticket shows that total before you confirm. This guide states no lot-size number: lot sizes are contested in live sources right now, so read the quantity and the total on your own order ticket."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How do I activate F&O in my trading account?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Activate the futures-and-options segment in your broker's account settings, which usually means uploading income proof. Confirm the approval covers buying options before you try to place an order. The process is described generically here on purpose \u2014 the exact screens differ by broker, and this guide names no broker or platform."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What is options approval?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "It is your broker confirming that your account may trade options. For a first trade, what matters is that the approval covers buying options \u2014 buying a call or a put. Confirm it is in place before anything else; do not discover it is missing at the moment you try to place the order."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Which option should I buy first \u2014 a call or a put?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "It depends on your view, not on the option. Bullish means buy a call; bearish means buy a put. If you have no view, you have no trade. The first trade is a buy either way \u2014 selling options is not a first trade, because it needs margin and its loss is not capped the way a buyer's is."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Which expiry should I choose for my first trade?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "An expiry a few weeks out \u2014 the standard beginner guidance is 30\u201345 days. Never the nearest or current-week expiry: short-dated options lose value fastest, and the nearest expiry decays fastest of all. Close the position well before expiry regardless of where the premium sits. No expiry weekday is named in this guide, because expiry days change; the current day for any contract is on the exchange's official contract-specification page."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Should I use a market order or a limit order for options?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "A limit order, always. Place it at or near the mid price between bid and ask. Option spreads are wider than stock spreads, and a market order fills at whatever the other side is asking \u2014 which is how beginners overpay before the trade has even begun. If a limit order does not fill in a few minutes, adjust it a little toward the natural side; do not switch to a market order."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How do I exit an option trade?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "The same way you entered, in reverse: place an order to sell the contract you bought, at a limit price, before expiry. The exit should already be decided before you enter \u2014 the profit line (\u20b9180 on the carried trade, a 50% gain on the premium), the wrong line (\u20b960, a 50% loss), and the time line (close well before expiry). Close on whichever line comes first."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What happens if I hold an option till expiry?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "If the option is out of the money at expiry, it expires worthless and the premium you paid is gone. If it is in the money, it still holds value at expiry \u2014 how much depends on how far in the money it is. Either way, holding to expiry is not the plan for a first trade: time decay is fastest in the final days, so the carried trade is closed well before expiry regardless of where the premium sits."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Should I paper trade before trading options with real money?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes. Execute the exact trade you planned in a practice account, watch it for a few days, and get comfortable with how options move differently from stocks \u2014 then place it for real, and even then small. The goal of the practice run is not to test whether the trade wins; it is to test whether you can follow the plan. The guide on paper trading versus real trading covers how to practise so it transfers."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How much can I lose when I buy an option?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "At most the premium you paid, plus charges. That is the whole reason the first trade is a buy: the loss is capped at the premium, and a buyer cannot be asked for more money because the trade moved against them. But capped is not small \u2014 the premium can go to zero, and most first trades lose money. The carried trade's maximum loss is the \u20b9120 per unit premium (plus charges)."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How do I know if my first option trade is a good trade?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Not by whether it profited. A good first trade is one executed exactly as planned: approval confirmed, paper-traded first, one lot, a limit order, the exit lines written before entry, and closed on a line. A trade that follows its plan is a success even if it loses money; a trade held past its lines hoping for a recovery is a failure even if it wins. Whether a trade is worth taking at all is a separate question, answered by expectancy \u2014 see the guides on what trading expectancy is and how to calculate real expectancy \u2014 and what it taught you belongs in your journal, as the guide on trading journal: what to track beyond profit and loss explains."
+     }
+    }
+   ]
+  }
+ ]
+}

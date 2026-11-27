@@ -1,0 +1,121 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "The 3-5-7 Rule in Trading: The Honest Definition, the Survival Math, and Where It Breaks",
+      "description": "What is the 3-5-7 rule in trading? No single definition exists — learn the working 3% / 5% / 7% risk budget, its survival math, and where it breaks in India.",
+      "author": {
+        "@type": "Person",
+        "@name": "Kaizen"
+      },
+      "datePublished": "2026-11-02",
+      "publisher": {
+        "@type": "Organization",
+        "@name": "Monks Of Market"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is the 3-5-7 rule in trading?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "In the working definition used in this article, the 3-5-7 rule is a risk budget: risk no more than 3% of account equity on any single trade, keep total risk across all open trades at or below 5% of account equity, and aim for winners of at least ~7% of account equity — about 2.3 times the per-trade risk. One honest caveat travels with that definition: other sources define the same digits differently, as the opening section shows, so always check which version a writer means."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do you calculate position size with 3% risk?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Divide the risk budget by the risk per share: shares = (account equity × 0.03) ÷ (entry price − stop-loss price). On a ₹2,00,000 account, the budget is ₹6,000; with an entry of ₹1,000 and a stop of ₹940 (₹60 risk per share), the maximum is 100 shares. Remember: 3% is the loss if the stop is hit, not 3% of capital invested — the position value here is ₹1,00,000, but the risk capped by the rule is ₹6,000."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why does the 5% cap matter if each trade is already under 3%?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Because per-trade caps alone allow unlimited concurrent risk. Five trades at 3% each put 15% of the account at risk, even though every single trade obeyed its limit. The 5% cap is what limits how many positions can be held: with one 3% trade open, a second trade can risk at most 2%, or it must wait."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How many trades can I hold under the 5% cap?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It depends on their risk sizes, not on a fixed count. Combinations that fit include 3% + 2%, 2% + 2% + 1%, and 3% + 1% + 1%. Two full 3% trades (6%) do not fit. And if the positions are correlated — one headline would hurt them all — count their risk together, which may mean holding fewer than the arithmetic alone suggests."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What happens if I break the 5% rule?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "More than 5% of account equity is at risk if all stops are hit at once, so a single bad session can cost more than the budget allows. Correlated positions make the breach worse than the sum suggests, because they can all fail together. Breaking the cap does not guarantee a loss — it means that a loss, when it comes, can be larger than the plan allowed."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does a 7% profit target mean in practice?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It means aiming for a winner of about 7% of account equity — about 2.3 times the 3% risk on the trade. In practice it is a filter: if a setup cannot honestly reach about 2.3 times its risk, skip it or re-plan it. It is not a promised payout, and costs, spreads, and slippage move the real breakeven above the before-costs figure of about a 30.3% win rate."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is a good risk-reward ratio?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "As a guideline, 2:1 or better is commonly treated as a sound minimum — winners at least twice the size of losers. The 3-5-7 rule implies about 2.3:1, which lowers the breakeven win rate to about 30.3% before costs: larger winners mean fewer wins are needed to break even. But the ratio alone does not create an edge; entries still have to clear that breakeven after costs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does the 3-5-7 rule compare to the 1% or 2% rule?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Only the risk level differs in this comparison. After 10 consecutive losses, 1% risk leaves 90.4% of capital, 2% leaves 81.7%, and 3% leaves about 73.7%. Beginners and small accounts usually do better starting at 1% and graduating to 3% only after consistent rule-following; 2% sits between the two. This article does not rank trading rules against each other — that is a separate question."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is the 3-5-7 rule an official or regulated standard?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. It is an informal, trader-created guideline, not issued by any regulator, broker, or exchange, and it appears in no official trading standard. Treat it as a discipline framework you choose to adopt, not as a rule anyone enforces."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is the 3-5-7 rule good for beginners?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It is usable by beginners as a cap, but 1% is the cheaper education while learning. A beginner who starts at 3% pays about a 26.3% drawdown for 10 straight losses; at 1%, the same run costs about 9.6%. Graduate to 3% only after consistent rule-following, and note that small accounts may find lot sizes force tighter sizing or fewer trades regardless of experience."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is 3% risk per trade too much?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Relative to the 1% guideline, yes, it is aggressive — 10 straight losses cost about 26.3% of the account, and the recovery needed from that drawdown is about 35.7%. It is defensible only with a tested approach, disciplined stop placement, and the 5% cap genuinely obeyed. Without those, tightening to 1% or 2% is the honest move."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does the 3-5-7 rule work for intraday, futures, and options?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It can be applied to each, but with different failure modes — not equally, and with no performance claim for any instrument. Intraday trading needs a real, live stop, because leverage without one voids the cap entirely. Futures carry gap and leverage risk that can push realised losses past planned risk. Options carry premium decay, which erodes a position even when the price view is right, plus the cost stack: STT of 0.15% on the sell side and the NSE equity-options charge of 0.03553% per side, all-in — with STT of 0.15% on intrinsic value for exercised in-the-money options."
+          }
+        }
+      ]
+    }
+  ]
+}

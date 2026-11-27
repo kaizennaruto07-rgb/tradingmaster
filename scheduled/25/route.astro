@@ -1,0 +1,306 @@
+// redeploy trigger 2026-10-22 PM — re-fire Pages build
+---
+import { getCollection, render } from 'astro:content';
+import Layout from '../../layouts/Layout.astro';
+import EmailSignup from '../../components/EmailSignup.astro';
+import optionsSchema from './article-schema-options.json';
+import cryptoSchema from './article-schema-crypto.json';
+import riskofruinSchema from './article-schema-riskofruin.json';
+import expectancySchema from './article-schema-expectancy.json';
+import winrateSchema from './article-schema-winrate.json';
+import breakevenSchema from './article-schema-breakeven.json';
+import thirtySchema from './article-schema-30percent.json';
+import positionsizingSchema from './article-schema-positionsizing.json';
+import profitfactorSchema from './article-schema-profitfactor.json';
+import strategyworksSchema from './article-schema-strategyworks.json';
+import howmanytradesSchema from './article-schema-howmanytrades.json';
+import backtestedSchema from './article-schema-backtested.json';
+import realexpectancySchema from './article-schema-realexpectancy.json';
+import overfittingSchema from './article-schema-overfitting.json';
+import montecarloSchema from './article-schema-montecarlo.json';
+import papertradingSchema from './article-schema-papertrading.json';
+import givebackSchema from './article-schema-giveback.json';
+import revengeSchema from './article-schema-revenge.json';
+import overtradingSchema from './article-schema-overtrading.json';
+import cgameSchema from './article-schema-cgame.json';
+import tiltSchema from './article-schema-tilt.json';
+import fomoSchema from './article-schema-fomo.json';
+import tradingjournalSchema from './article-schema-tradingjournal.json';
+import edgeluckSchema from './article-schema-edgeluck.json';
+import maxdrawdownSchema from './article-schema-maxdrawdown.json';
+import recoveryfactorSchema from './article-schema-recoveryfactor.json';
+import whenquitSchema from './article-schema-whenquit.json';
+import sharpeSchema from './article-schema-sharpe.json';
+import losingstreaksSchema from './article-schema-losingstreaks.json';
+import drawdownSchema from './article-schema-drawdown.json';
+import threedaySchema from './article-schema-the-3-day-rule.json';
+import firstsystemSchema from './article-schema-firsttradingsystem.json';
+import muhuratSchema from './article-schema-muhurat.json';
+import muhuratHistorySchema from './article-schema-muhurat-history.json';
+import muhuratBeginnersSchema from './article-schema-muhurat-beginners.json';
+import muhuratSettlementSchema from './article-schema-muhurat-settlement.json';
+import sizeAfterStreakSchema from './article-schema-sizeafterstreak.json';
+import kellySchema from './article-schema-kelly.json';
+import fullKellySchema from './article-schema-full-kelly.json';
+import smallAccountsSchema from './article-schema-small-accounts.json';
+import propRiskSchema from './article-schema-prop-risk.json';
+import propDrawdownSchema from './article-schema-prop-drawdown.json';
+import propWorthSchema from './article-schema-prop-worth.json';
+import drawdownRecoverySchema from './article-schema-drawdown-recovery.json';
+import asymmetrySchema from './article-schema-asymmetry.json';
+import recoveryVerdictSchema from './article-schema-recovery-verdict.json';
+import blowupCycleSchema from './article-schema-blowup-cycle.json';
+import fiveWaysBlowupSchema from './article-schema-five-ways-blow-up.json';
+import recoveryProtocolSchema from './article-schema-recovery-protocol.json';
+import backtestingEnoughSchema from './article-schema-backtesting-enough.json';
+import walkforwardSchema from './article-schema-walkforward.json';
+import insampleSplitSchema from './article-schema-insample-split.json';
+import ninetySchema from './article-schema-90-90-90.json';
+import threeFiveSevenSchema from './article-schema-3-5-7.json';
+import rulesOfThumbSchema from './article-schema-rules-of-thumb.json';
+import whyDayTradersFailSchema from './article-schema-why-day-traders-fail.json';
+import failureFunnelSchema from './article-schema-day-trader-failure-funnel.json';
+import rMultiplesSchema from './article-schema-r-multiples.json';
+import netExpectancySchema from './article-schema-net-expectancy.json';
+import fixedFractionalSchema from './article-schema-fixed-fractional.json';
+import circuitBreakerSchema from './article-schema-circuit-breaker.json';
+
+export async function getStaticPaths() {
+  const articles = await getCollection('articles');
+  return articles.map((article) => ({
+    params: { slug: article.id.replace(/\.md$/, '') },
+    props: { article },
+  }));
+}
+
+const { article } = Astro.props;
+const { Content } = await render(article);
+
+// Select the right schema based on slug
+const slug = article.id.replace(/\.md$/, '');
+const schemaData = slug === 'options-trading-charges-india' ? optionsSchema
+  : slug === 'risk-of-ruin-trading' ? riskofruinSchema
+  : slug === 'what-is-trading-expectancy' ? expectancySchema
+  : slug === 'win-rate-vs-risk-reward' ? winrateSchema
+  : slug === 'break-even-win-rate' ? breakevenSchema
+  : slug === 'profitable-with-30-percent-win-rate' ? thirtySchema
+  : slug === 'position-sizing' ? positionsizingSchema
+  : slug === 'profit-factor' ? profitfactorSchema
+  : slug === 'how-to-know-if-trading-strategy-works' ? strategyworksSchema
+  : slug === 'how-many-trades-to-validate-a-strategy' ? howmanytradesSchema
+  : slug === 'why-backtested-strategies-fail-in-live-trading' ? backtestedSchema
+  : slug === 'how-to-calculate-real-expectancy' ? realexpectancySchema
+  : slug === 'how-to-detect-overfitting-in-trading-strategy' ? overfittingSchema
+  : slug === 'monte-carlo-simulation-for-traders' ? montecarloSchema
+  : slug === 'paper-trading-vs-real-trading' ? papertradingSchema
+  : slug === 'why-traders-give-back-profits' ? givebackSchema
+  : slug === 'revenge-trading' ? revengeSchema
+  : slug === 'overtrading' ? overtradingSchema
+  : slug === 'c-game-to-a-game-signature-framework' ? cgameSchema
+  : slug === 'tilt-in-trading' ? tiltSchema
+  : slug === 'fomo-trading' ? fomoSchema
+  : slug === 'trading-journal-what-to-track-beyond-pnl' ? tradingjournalSchema
+  : slug === 'trading-edge-vs-luck' ? edgeluckSchema
+  : slug === 'maximum-drawdown' ? maxdrawdownSchema
+  : slug === 'recovery-factor' ? recoveryfactorSchema
+  : slug === 'when-to-quit-a-strategy' ? whenquitSchema
+  : slug === 'sharpe-ratio-for-retail-traders' ? sharpeSchema
+  : slug === 'how-losing-streaks-affect-trading-accounts' ? losingstreaksSchema
+  : slug === 'trading-drawdown-mathematics-of-recovery' ? drawdownSchema
+  : slug === 'the-3-day-rule' ? threedaySchema
+  : slug === 'building-your-first-trading-system' ? firstsystemSchema
+  : slug === 'muhurat-trading-2026' ? muhuratSchema
+  : slug === 'muhurat-trading-history' ? muhuratHistorySchema
+  : slug === 'muhurat-trading-beginners' ? muhuratBeginnersSchema
+  : slug === 'muhurat-trading-settlement-charges' ? muhuratSettlementSchema
+  : slug === 'how-to-size-positions-after-a-losing-streak' ? sizeAfterStreakSchema
+  : slug === 'kelly-criterion-calculator-for-traders' ? kellySchema
+  : slug === 'why-full-kelly-bankrupts-retail-traders' ? fullKellySchema
+  : slug === 'position-sizing-for-small-accounts' ? smallAccountsSchema
+  : slug === 'how-much-to-risk-per-trade-to-pass-a-prop-firm-challenge' ? propRiskSchema
+  : slug === 'prop-firm-drawdown-rules-decoded' ? propDrawdownSchema
+  : slug === 'are-prop-firms-worth-it-the-traders-math' ? propWorthSchema
+  : slug === 'drawdown-recovery-calculator' ? drawdownRecoverySchema
+  : slug === 'why-a-50-loss-needs-a-100-gain-the-asymmetry-of-drawdown' ? asymmetrySchema
+  : slug === 'recovery-factor-will-you-make-it-back' ? recoveryVerdictSchema
+  : slug === 'why-do-i-keep-blowing-up-my-trading-account' ? blowupCycleSchema
+  : slug === 'the-5-ways-traders-blow-up-ranked-by-math' ? fiveWaysBlowupSchema
+  : slug === 'after-the-blow-up-a-recovery-protocol' ? recoveryProtocolSchema
+  : slug === 'how-much-backtesting-is-enough' ? backtestingEnoughSchema
+  : slug === 'walk-forward-testing-explained' ? walkforwardSchema
+  : slug === 'in-sample-vs-out-of-sample-the-honest-split' ? insampleSplitSchema
+  : slug === 'the-90-90-90-rule-in-trading' ? ninetySchema
+  : slug === 'the-3-5-7-rule-in-trading' ? threeFiveSevenSchema
+  : slug === 'trading-rules-of-thumb-ranked-by-evidence' ? rulesOfThumbSchema
+  : slug === 'why-do-most-day-traders-fail' ? whyDayTradersFailSchema
+  : slug === 'the-day-trader-failure-funnel' ? failureFunnelSchema
+  : slug === 'r-multiples-how-professionals-measure-expectancy' ? rMultiplesSchema
+  : slug === 'net-expectancy-your-edge-after-everything' ? netExpectancySchema
+  : slug === 'risk-of-ruin-fixed-fractional-vs-fixed-ratio' ? fixedFractionalSchema
+  : slug === 'the-revenge-trading-circuit-breaker' ? circuitBreakerSchema
+  // recovery-factor wired 2026-10-19 PM (schema + CTA below)
+  : cryptoSchema;
+const schemaHtml = '<script type="application/ld+json">' + JSON.stringify(schemaData) + '</script' + '>';
+
+const description = article.data.meta_description || article.data.description || '';
+const dateStr = article.data.date.toLocaleDateString('en-IN', { day: 'numeric', month: 'long', year: 'numeric' });
+
+// Related tool CTA
+const toolCta = slug === 'options-trading-charges-india'
+  ? { href: '/tools/options-cost/', label: 'Calculate your options costs' }
+  : slug === 'risk-of-ruin-trading'
+  ? { href: '/tools/risk-of-ruin/', label: 'Calculate your risk of ruin' }
+  : slug === 'what-is-trading-expectancy'
+  ? { href: '/tools/what-if-simulator/', label: 'Simulate your expectancy' }
+  : slug === 'win-rate-vs-risk-reward'
+  ? { href: '/tools/what-if-simulator/', label: 'Simulate your win rate & risk-reward' }
+  : slug === 'break-even-win-rate'
+  ? { href: '/tools/what-if-simulator/', label: 'Test your breakeven in the simulator' }
+  : slug === 'profitable-with-30-percent-win-rate'
+  ? { href: '/tools/what-if-simulator/', label: 'Simulate your 30% win-rate system' }
+  : slug === 'position-sizing'
+  ? { href: '/tools/what-if-simulator/', label: 'Test your sizing in the simulator' }
+  : slug === 'profit-factor'
+  ? { href: '/tools/options-cost/', label: 'Calculate your real per-trade cost' }
+  : slug === 'how-to-know-if-trading-strategy-works'
+  ? { href: '/tools/what-if-simulator/', label: 'Stress-test your strategy in the simulator' }
+  : slug === 'how-many-trades-to-validate-a-strategy'
+  ? { href: '/tools/what-if-simulator/', label: 'Stress-test your sample in the simulator' }
+  : slug === 'why-backtested-strategies-fail-in-live-trading'
+  ? { href: '/tools/what-if-simulator/', label: 'Stress-test your backtest in the simulator' }
+  : slug === 'how-to-calculate-real-expectancy'
+  ? { href: '/tools/risk-of-ruin/', label: 'Check your ruin probability' }
+  : slug === 'how-to-detect-overfitting-in-trading-strategy'
+  ? { href: '/tools/what-if-simulator/', label: 'Run the honest sample in the simulator' }
+  : slug === 'monte-carlo-simulation-for-traders'
+  ? { href: '/tools/risk-of-ruin/', label: 'Size from ruin, not hope' }
+  : slug === 'paper-trading-vs-real-trading'
+  ? { href: '/tools/what-if-simulator/', label: 'Test your go-live size in the simulator' }
+  : slug === 'why-traders-give-back-profits'
+  ? { href: '/tools/what-if-simulator/', label: 'Stress-test your finish line in the simulator' }
+  : slug === 'revenge-trading'
+  ? { href: '/tools/what-if-simulator/', label: 'Stress-test the revenge circuit in the simulator' }
+  : slug === 'overtrading'
+  ? { href: '/tools/options-cost/', label: 'Price your own boredom tax' }
+  : slug === 'c-game-to-a-game-signature-framework'
+  ? { href: '/tools/risk-of-ruin/', label: 'Check your C-game ruin risk' }
+  : slug === 'tilt-in-trading'
+  ? { href: '/tools/what-if-simulator/', label: 'Stress-test your worst days in the simulator' }
+  : slug === 'fomo-trading'
+  ? { href: '/tools/options-cost/', label: 'Price your own FOMO tax' }
+  : slug === 'trading-journal-what-to-track-beyond-pnl'
+  ? { href: '/tools/options-cost/', label: 'Run your trades through the cost calculator' }
+  : slug === 'trading-edge-vs-luck'
+  ? { href: '/tools/risk-of-ruin/', label: 'Check your edge against ruin' }
+  : slug === 'maximum-drawdown'
+  ? { href: '/tools/risk-of-ruin/', label: 'Test your sizing against ruin' }
+  : slug === 'recovery-factor'
+  ? { href: '/tools/risk-of-ruin/', label: 'Price your pain against ruin' }
+  : slug === 'when-to-quit-a-strategy'
+  ? { href: '/tools/risk-of-ruin/', label: 'Check your bounds against ruin' }
+  : slug === 'sharpe-ratio-for-retail-traders'
+  ? { href: '/tools/what-if-simulator/', label: 'Stress-test your Sharpe in the simulator' }
+  : slug === 'how-losing-streaks-affect-trading-accounts'
+  ? { href: '/tools/what-if-simulator/', label: 'Stress-test your streaks in the simulator' }
+  : slug === 'trading-drawdown-mathematics-of-recovery'
+  ? { href: '/tools/risk-of-ruin/', label: 'Check your drawdown against ruin' }
+  : slug === 'the-3-day-rule'
+  ? { href: '/tools/what-if-simulator/', label: 'Stress-test your losing days in the simulator' }
+  : slug === 'building-your-first-trading-system'
+  ? { href: '/tools/what-if-simulator/', label: 'Stress-test your new system in the simulator' }
+  : slug === 'muhurat-trading-2026'
+  ? { href: '/tools/risk-of-ruin/', label: 'Check your symbolic sizing against ruin' }
+  : slug === 'muhurat-trading-history'
+  ? { href: '/tools/risk-of-ruin/', label: 'Check your symbolic sizing against ruin' }
+  : slug === 'muhurat-trading-beginners'
+  ? { href: '/tools/risk-of-ruin/', label: 'Check your symbolic sizing against ruin' }
+  : slug === 'muhurat-trading-settlement-charges'
+  ? { href: '/tools/risk-of-ruin/', label: 'Check your symbolic sizing against ruin' }
+  : slug === 'how-to-size-positions-after-a-losing-streak'
+  ? { href: '/tools/position-size/', label: 'Calculate your streak-adjusted size' }
+  : slug === 'kelly-criterion-calculator-for-traders'
+  ? { href: '/tools/position-size/', label: 'Calculate your position size' }
+  : slug === 'why-full-kelly-bankrupts-retail-traders'
+  ? { href: '/tools/risk-of-ruin/', label: 'Calculate your risk of ruin' }
+  : slug === 'position-sizing-for-small-accounts'
+  ? { href: '/tools/position-size/', label: 'Calculate your position size' }
+  : slug === 'how-much-to-risk-per-trade-to-pass-a-prop-firm-challenge'
+  ? { href: '/tools/position-size/', label: 'Calculate your position size' }
+  : slug === 'prop-firm-drawdown-rules-decoded'
+  ? { href: '/tools/position-size/', label: 'Calculate your position size' }
+  : slug === 'are-prop-firms-worth-it-the-traders-math'
+  ? { href: '/tools/position-size/', label: 'Calculate your position size' }
+  : slug === 'drawdown-recovery-calculator'
+  ? { href: '/tools/risk-of-ruin/', label: 'Check your drawdown against ruin' }
+  : slug === 'why-a-50-loss-needs-a-100-gain-the-asymmetry-of-drawdown'
+  ? { href: '/tools/risk-of-ruin/', label: 'Check your drawdown against ruin' }
+  : slug === 'recovery-factor-will-you-make-it-back'
+  ? { href: '/tools/position-size/', label: 'Calculate your position size' }
+  : slug === 'why-do-i-keep-blowing-up-my-trading-account'
+  ? { href: '/tools/position-size/', label: 'Calculate your position size' }
+  : slug === 'the-5-ways-traders-blow-up-ranked-by-math'
+  ? { href: '/tools/position-size/', label: 'Calculate your position size' }
+  : slug === 'after-the-blow-up-a-recovery-protocol'
+  ? { href: '/tools/position-size/', label: 'Calculate your position size' }
+  : slug === 'how-much-backtesting-is-enough'
+  ? { href: '/tools/what-if-simulator/', label: 'Stress-test your backtest in the simulator' }
+  : slug === 'walk-forward-testing-explained'
+  ? { href: '/tools/what-if-simulator/', label: 'Stress-test your walk-forward in the simulator' }
+  : slug === 'in-sample-vs-out-of-sample-the-honest-split'
+  ? { href: '/tools/what-if-simulator/', label: 'Stress-test your split in the simulator' }
+  : slug === 'the-90-90-90-rule-in-trading'
+  ? { href: '/tools/risk-of-ruin/', label: 'Check your survival sizing against ruin' }
+  : slug === 'the-3-5-7-rule-in-trading'
+  ? { href: '/tools/position-size/', label: 'Calculate your 3-5-7 position size' }
+  : slug === 'trading-rules-of-thumb-ranked-by-evidence'
+  ? { href: '/tools/position-size/', label: 'Calculate your risk-budget size' }
+  : slug === 'why-do-most-day-traders-fail'
+  ? { href: '/tools/what-if-simulator/', label: 'Stress-test your day-trading edge in the simulator' }
+  : slug === 'the-day-trader-failure-funnel'
+  ? { href: '/tools/risk-of-ruin/', label: 'Calculate your risk of ruin' }
+  : slug === 'r-multiples-how-professionals-measure-expectancy'
+  ? { href: '/tools/what-if-simulator/', label: 'Simulate your R expectancy' }
+  : slug === 'net-expectancy-your-edge-after-everything'
+  ? { href: '/tools/options-cost/', label: 'Calculate your real per-trade cost' }
+  : slug === 'risk-of-ruin-fixed-fractional-vs-fixed-ratio'
+  ? { href: '/tools/position-size/', label: 'Calculate your position size' }
+  : slug === 'the-revenge-trading-circuit-breaker'
+  ? { href: '/tools/what-if-simulator/', label: 'Stress-test the revenge circuit in the simulator' }
+  : { href: '/tools/crypto-futures/', label: 'Calculate your futures costs' };
+---
+
+<Layout
+  title={`${article.data.title} · Monks Of Market`}
+  description={description}
+  current="articles"
+  schema={schemaHtml}
+  ogType="article"
+>
+  <article class="article-page">
+    <div class="shell">
+      <div class="tool-header">
+        <div class="eyebrow">Monks Of Market · Article</div>
+        <h1>{article.data.title}</h1>
+        <p class="tool-lead">{description}</p>
+        <div class="article-card-meta">
+          <span>By {article.data.author}</span>
+          <span>{dateStr}</span>
+        </div>
+      </div>
+      <div class="article-body">
+        <Content />
+      </div>
+      <EmailSignup
+        variant="article"
+        formId="9999729"
+        uid="8b81f75b9e"
+        heading="Get the next breakdown first"
+        subtext="One exceptional article per day. No spam, unsubscribe anytime."
+      />
+      <div class="article-cta">
+        <a class="btn btn-primary" href={toolCta.href}>{toolCta.label} <span>→</span></a>
+        <a class="btn btn-secondary" href="/articles/">All articles</a>
+      </div>
+    </div>
+  </article>
+</Layout>

@@ -1,0 +1,129 @@
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Article",
+   "headline": "Option Trading for Beginners: The Decision Order, the Risk Rules, and the Map Before Your First Trade",
+   "description": "Option trading for beginners in decision order: the five contract fields, risk-first rules, honest odds, and a six-month learning map before your first trade.",
+   "author": {
+    "@type": "Person",
+    "@name": "Kaizen"
+   },
+   "datePublished": "2026-11-23",
+   "publisher": {
+    "@type": "Organization",
+    "@name": "Monks Of Market"
+   }
+  },
+  {
+   "@context": "https://schema.org",
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "What is option trading?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Option trading is buying and selling option contracts \u2014 contracts that give the buyer the choice to buy or sell an underlying asset at a set strike price before a set expiry date, for a price called the premium. A call is the choice to buy; a put is the choice to sell. The frame of this guide applies from the start: decide in order \u2014 view, then the five fields, then the risk check \u2014 before looking at a price."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How do I start option trading as a beginner?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Start by understanding the contract, then learn the five fields in decision order \u2014 underlying, call or put, strike, expiry, quantity \u2014 then paper trade for weeks before risking any real capital. The learning path in this guide runs from the contract to the five fields, through the risk-first rules, to paper trading, then to small live trades with a journal and a review after twenty trades. The live guide on paper trading \u2014 Paper Trading vs Real Trading \u2014 sets out what that first step can and cannot teach."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How much money do I need to start option trading?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "There is no single figure that answers this honestly, and this guide gives none. The honest answer is that the amount is set by the maximum loss you can afford on one trade, sized from that loss. For a bought option, the maximum loss is the premium paid, and the cash paid is the premium per unit multiplied by the quantity taken, plus the charges on the trade. Decide the largest loss you can accept on one trade first, size from that loss, and let the capital follow \u2014 never the other way round. The live charges guide \u2014 Options Trading Charges in India \u2014 sets out the costs that sit between the premium and the outcome."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Is option trading good for beginners?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "It is learnable, but only with the risk-first frame, paper trading first, and an acceptance of the honest odds set out above. It is not a quick-income route, and it is not suitable as a first step for someone who wants fast returns or who cannot afford to lose the premium paid. A beginner who starts by buying, sizes from the maximum loss, decides the exit before entry, and paper trades for weeks is starting in the right way."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Can beginners make money from option trading?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Some do, and no approach guarantees profit, so no beginner should start with profit as the first target. The first goal is survival, process, and learning: a written view, a pre-defined exit, a maximum loss set before entry, and a journaled record reviewed after twenty trades. The honest odds, and the reasons behind them, are set out once in the Honest Odds section above."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What is the difference between a call and a put option?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "A call option gives the buyer the choice to buy the underlying at the strike price; a put option gives the buyer the choice to sell the underlying at the strike price. Call buyers generally expect the underlying to rise; put buyers generally expect it to fall, or want protection against a fall. The full comparison belongs to the guide named Call vs Put Options, listed in the map above."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What is option premium?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Option premium is the price of the option itself \u2014 what the buyer pays and the seller receives for the choice the contract carries. It is not the strike price, and it is not the value of the underlying. What the buyer pays for, and what makes that price move, is covered in full in the guide named What Is Option Premium?, listed in the map above."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How do I read an option chain?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "An option chain is the place where the five fields meet real contracts: it lists the contracts available for one underlying, so a trader can check the spread and the liquidity of a chosen contract before entry. Learning to read it step by step belongs to the guide named How to Read an Option Chain, listed in the map above."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How long does it take to learn options trading?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "There is no verified timeline, and this guide gives none as a fact. The staged learning plan here is a sequence, not a schedule: understand the contract, learn the five fields, paper trade for weeks, then narrow to one index, one expiry type, and one simple setup, journal every trade, and review after twenty trades against the live expectancy guides. How long each step takes depends on how much time you give it and how honestly you review the record."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Do most option traders lose money?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes. The evidence, stated once and in full, is in the Honest Odds section above, with the reasons it happens \u2014 it is not repeated here, so the finding stays in one place."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What is the best option strategy for a beginner?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "This guide answers that question as a learning path, not a strategy pick, and it names, ranks, and teaches no strategy \u2014 that distinction is deliberate. A separate strategies guide names starting strategies; this page does not, and its answer is the path in this guide: understand the contract, learn the five fields in decision order, paper trade for weeks, narrow to one index, one expiry type, and one simple setup, journal every trade with its view and its worst case, and review after twenty trades against the expectancy guides."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Is option trading legal in India?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes, through the recognised, regulated route: trading through a trading account with the derivatives segment activated. Activation usually involves checks on identity and financial means, and the exact requirements vary. Trading outside recognised venues is not covered here and leaves a trader without the protections of the regulated route. No exchange, broker, or platform is named or recommended in this guide."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What should I learn before my first option trade?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Learn the five fields in decision order \u2014 underlying, call or put, strike, expiry, quantity \u2014 the risk-first frame, and the paper-trading step. That means understanding what an option is, the difference between a call and a put, what the premium is made of, how to read an option chain, and when an option fits a view better than a share \u2014 the six guides in the map above, in reading order: What Is an Option?, Call vs Put Options, What Is Option Premium?, How to Read an Option Chain, How to Place Your First Option Trade, and Options vs Stocks for Beginners. Then paper trade, journal, and review before risking real capital."
+     }
+    }
+   ]
+  }
+ ]
+}

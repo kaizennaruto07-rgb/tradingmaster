@@ -1,0 +1,121 @@
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Article",
+   "headline": "Options as a Strategic Investment \u2014 Summary (Lawrence G. McMillan)",
+   "description": "A plain-language summary of McMillan's Options as a Strategic Investment: the strategy-selection map, the volatility fork, and how to use the book well.",
+   "author": {
+    "@type": "Person",
+    "@name": "Kaizen"
+   },
+   "datePublished": "2026-11-21",
+   "publisher": {
+    "@type": "Organization",
+    "@name": "Monks Of Market"
+   }
+  },
+  {
+   "@context": "https://schema.org",
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "Is Options as a Strategic Investment good for beginners?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Not as a first book. It is the benchmark strategy reference, and the book to read once you already know calls, puts, and basic spreads and have placed a few trades. A reader with no mechanics yet will struggle with it \u2014 reviewers warn the length and density can overwhelm a trader still building basic vocabulary, and the book assumes familiarity with calls, puts, quotes, and basic terms such as support and resistance. Complete beginners should start with a lighter book first, then come back to McMillan. Motivated beginners who already know the mechanics can manage it if they follow the reading plan in this article instead of starting at page one."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Options as a Strategic Investment vs Option Volatility and Pricing \u2014 which should I read first?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "They do different jobs. McMillan's book is the complete strategy reference you keep on the desk and return to by chapter. Natenberg's Option Volatility and Pricing is the deep explanation of why options are priced the way they are. Read Natenberg first if volatility and pricing are your current question, and keep McMillan on the desk as the reference from the start. If you only buy one of the two, buy the one that matches your current stage. Both are necessary reads for a serious options trader \u2014 McMillan for strategy and hedging, Natenberg for volatility and pricing depth."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What is the difference between the 4th and 5th editions?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "The fifth edition, published in 2012, is the edition this summary follows. It updates the market structure and margin discussion and adds two new chapters \u2014 on volatility skew and on portfolio margin \u2014 that the fourth edition does not have. The fourth edition is still a legitimate way in for the core strategy framework: the philosophy, the strategy families, and the time-decay principle are all there. Buy the fifth edition if you want a living reference; buy the fourth if the core framework is all you need."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How long does it take to read Options as a Strategic Investment?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "There is no single answer, because this is not a book to read once and shelve. It is over 1,000 pages, organised so each chapter stands largely on its own \u2014 and it is meant to be read slowly, worked through chapter by chapter, and re-read as your trading raises new questions. The honest measure is not the reading time but the working time: a chapter you have worked through is worth five chapters you have skimmed. A motivated reader with the mechanics already in place can work through the core chapters over several weeks of steady reading, but the book stays on the desk for years."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Is McMillan's book worth reading?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes, if you are at the right stage. It is the most comprehensive single-volume options strategy reference available, the book most often cited as the field's core reference text, and the one book that turns \"which strategy should I use?\" from a guess into a decision. It is worth reading once you already know basic options mechanics and have started noticing that strategy selection \u2014 not just direction \u2014 is deciding your results. It is not worth reading as a first book, and it will not tell you when to trade or hand you an edge."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What does \"sell time value and buy intrinsic value\" mean?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "An option's price has two parts: intrinsic value, which comes from the option already being in the money and does not decay, and time value, which is the premium charged for the time remaining before expiry and decays every day. McMillan's philosophy \u2014 \"The basic philosophy of option strategy is to sell time value and buy intrinsic value\" \u2014 means: in any trade, know which side of that split you are on. When you sell an option you are usually selling time value and collecting the decay. When you buy an option you are usually buying time value and paying for time you may not need. A spread lets you buy the intrinsic value you want while selling some of the time value you do not want."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What is a LEAPS option?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "A LEAPS is a long-dated option \u2014 an option with a long time to expiry, often a year or more. Because it has so much time left, it decays slowly. McMillan uses LEAPS in three trades that are really one idea: calendar and diagonal spreads (buy the long-dated option that decays slowly, sell the short-dated one that decays fast), buying deep in-the-money put LEAPS against a short-term call, and naked-put selling with LEAPS. In every case the principle is the same \u2014 own the option that decays slowly, sell the one that decays fast. Note for Indian readers: LEAPS come from US options markets, so the concept translates but the specific instruments do not; Indian market mechanics differ."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Naked put selling vs covered call writing \u2014 which is better?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Neither is better in the abstract \u2014 the answer depends on your starting position. If you already own the stock, covered call writing fits: you sell a call against a holding you already have and collect premium on top of it. If you own no stock and want premium income if the underlying stays flat or rises, selling naked puts is generally the better structure, because it does not tie up the money needed to own the stock outright. Either way, a sold put carries real downside exposure and must be sized and planned like any short position \u2014 if the underlying falls sharply, the put seller is obliged to buy it at the strike."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What is volatility trading vs directional trading?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Directional trading means predicting the direction: the underlying will rise or fall, and you pick the entry, the stop, and the exit. It pays only when your timing is right as well as your direction, and its failure mode is being right about direction but stopped out on a wobble first. Volatility trading means profiting from the move in implied volatility and the passage of time, not from picking the right direction \u2014 you ask whether options are expensive or cheap relative to how much the underlying usually moves, and whether the coming move in either direction will be larger than the market has priced in. McMillan's fork: if directional trading is too time-consuming, or your stops keep getting whipsawed, concentrate more heavily on volatility trading. It is a different job, not an easier one."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Do I need maths to read McMillan?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "You need comfort with the ideas, not advanced mathematics. The book assumes familiarity with calls, puts, quotes, and basic technical-analysis terms such as support and resistance, and it works through strategy structures step by step \u2014 but it is a practitioner's reference, not a maths textbook. If you can follow a worked explanation and you already understand the mechanics, you can read it. The hard part is not the maths; it is the density and the length, which is why the reading plan in this article matters more than any maths preparation."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Is Options as a Strategic Investment the best book on options strategies?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "It is the book most often cited as the field's core reference text, and reviewers consistently call it the most comprehensive single-volume options strategy reference available \u2014 the book traders call the options \"bible\". For strategy and hedging depth in one volume, no other book covers as much ground. But \"best\" depends on your stage: it is not the best first book, and for volatility and pricing depth, Natenberg's Option Volatility and Pricing is the deeper book. The two together \u2014 McMillan for strategy, Natenberg for pricing \u2014 are the pair serious options traders keep returning to."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Can I read McMillan before ever trading options?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "You can, but you will get far less from it. The book assumes you already know calls, puts, and basic spreads, and its chapters on portfolio protection and volatility assume you have live experience to attach them to. Learn the mechanics first, place some trades \u2014 real or paper \u2014 and track them. Read McMillan when strategy selection is already a question you are asking, because that is when the book's answers land. The reading plan in this article gives the order: start with the philosophy chapter, the covered-writing and naked-put chapter, and the straddle chapter, then fetch the rest when a specific trade needs it."
+     }
+    }
+   ]
+  }
+ ]
+}

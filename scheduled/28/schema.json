@@ -1,0 +1,81 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "Losing Streak Probability Calculator: How to Calculate the Probability of Consecutive Losses",
+      "description": "Losing streak probability calculator guide: q^N for the next N losses, exact DP for at least one streak in T trades, and log for the expected longest streak.",
+      "author": {
+        "@type": "Person",
+        "@name": "Kaizen"
+      },
+      "datePublished": "2026-11-07",
+      "publisher": {
+        "@type": "Organization",
+        "@name": "Monks Of Market"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How do you calculate the probability of a losing streak?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "First, decide which question you are asking. For the next N losses in a row, starting now, use q^N, where q = 1 − win rate. For at least one N-streak somewhere in T trades, use the exact dynamic-programming recurrence described above — never q^N multiplied by T. For the expected longest streak in T trades, use log(T) / log(1/q). Each question has its own formula, and their answers are very different."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the probability of 5 losses in a row?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It depends on your win rate, and on which question you mean. For the next 5 losses in a row (method: q^N): at 40% win rate, 7.8%; at 50%, 3.1%; at 55%, 1.8%; at 60%, 1.0%. For at least one 5-loss streak somewhere in 100 trades (method: exact DP): at 40%, 97.6%; at 50%, 81.0%; at 55%, 64.7%; at 60%, 45.9%. Always state which of the two you mean before quoting a number."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the probability of a losing streak across 100 trades?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Use the at-least-one method from the exact-DP 100-trade table, not q^N. At the carried 55% win rate, the probability of at least one 5-loss streak in 100 trades is 64.7%. The figure moves sharply with win rate and streak length: at the same 100 trades, a 5-streak is 97.6% at a 40% win rate but only 15.3% at a 70% win rate, while an 8-streak at 55% is just 8.4%."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long a losing streak should you expect?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Use the expected-longest formula, log(T) / log(1/q). At a 55% win rate, expect a longest streak of about 6 in 100 trades and about 9 in 1,000 trades. Remember this is an average baseline for a sample of that size, not a maximum and not a prediction for your next 100 trades."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does a losing streak mean my strategy is broken?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Not by itself. A streak of a given length has a calculable probability — for example, at 55%, at least one 5-loss streak in 100 trades has a 64.7% probability by exact DP — so observing such a streak is, on its own, consistent with the stated win rate. Whether a particular streak counts as normal or as a warning sign is a separate verdict question, covered in the separate article titled \"How Many Losing Trades in a Row Is Normal\" (plain-text pointer; that article is staged, not live, and is not linked here). This article teaches no verdict rule."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "After 5 losses in a row, is a win due?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Under the independence model, the next trade's win probability is still p — at 55%, still 55% — regardless of the losses before it. A high at-least-one probability for a whole sample never means a win is due on the next trade."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do you turn a streak into a drawdown number?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Multiply the streak length by your risk per trade, assuming equal risk per trade and ignoring compounding within the streak. Then the recovery gain needed is drawdown / (1 − drawdown). Using the single example from this article: ₹1,00,000 capital, 1% risk per trade (₹1,000), a 5-loss streak loses ₹5,000, a 5% drawdown, and the recovery needed is 5.26% (₹5,000 on the remaining ₹95,000)."
+          }
+        }
+      ]
+    }
+  ]
+}

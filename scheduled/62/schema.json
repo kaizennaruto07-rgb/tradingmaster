@@ -1,0 +1,153 @@
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Article",
+   "headline": "What Is Option Premium? Intrinsic Value, Time Value, and What You Actually Pay",
+   "description": "What is option premium? A plain-language guide: intrinsic value plus time value, the five things that move a premium, time decay, and what you actually pay.",
+   "author": {
+    "@type": "Person",
+    "@name": "Kaizen"
+   },
+   "datePublished": "2026-11-25",
+   "publisher": {
+    "@type": "Organization",
+    "@name": "Monks Of Market"
+   }
+  },
+  {
+   "@context": "https://schema.org",
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "What is option premium?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "The option premium is the price of an option contract \u2014 what the buyer pays and the seller receives for the right, but not the obligation, to buy or sell the underlying at the strike price before or on expiry. It is made of two parts added together: intrinsic value and time value."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How is option premium calculated?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Add its two parts. First find the intrinsic value from the spot price and the strike \u2014 for a call, spot minus strike; for a put, strike minus spot, floored at zero. Then take the quoted premium and subtract the intrinsic value to get the time value. Premium equals intrinsic value plus time value."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What is the option premium formula?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Option premium = intrinsic value + time value. That is the formula a beginner needs. Pricing models like Black-Scholes estimate a theoretical premium from five inputs, but the market premium is set by supply and demand."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What is intrinsic value in options?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Intrinsic value is what an option would be worth if it expired right now. For a call it is the spot price minus the strike price; for a put it is the strike price minus the spot price; it is never below zero. At-the-money and out-of-the-money options have zero intrinsic value. In the example in this guide, the 24,900-strike call at an index level of 25,000 has Rs 100 of intrinsic value."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What is time value in options?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Time value \u2014 also called extrinsic value \u2014 is everything in the premium above intrinsic value. It is what the buyer pays for the possibility that the option becomes more valuable before expiry. It depends on how much time is left, how volatile the underlying is expected to be, and, to a small degree, interest rates. At expiry, time value is exactly zero."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What factors affect option premium?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Five things: the underlying asset price, the strike price, the time to expiry, implied volatility, and interest rates. The first three dominate. Higher implied volatility inflates all premiums, and more time to expiry means more time value, all else equal."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Why does option premium decrease with time?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Because time value shrinks as expiry approaches. The premium includes a payment for the chance the option becomes more valuable, and that chance gets smaller every day the clock runs down. The fall accelerates in the final days before expiry, and at expiry the time value is exactly zero."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What is time decay in options?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Time decay is the daily erosion of an option's premium purely from the passage of time, measured by theta. It works against buyers and in favour of sellers. Even if the underlying stays still, a buyer's option loses value every day, and the loss accelerates near expiry."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Is the premium the maximum loss for an option buyer?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes. The most a buyer can lose on a bought option is the premium paid. That capped loss is real, but it is not a guarantee of safety \u2014 the premium can still go to zero, and a trade that is too big still hurts even when the loss per trade is capped."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Do you get the premium back if the option expires worthless?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "No. The premium is not a deposit and it is not returned. It is the price paid for the right, and it is spent the moment the contract is bought. If the option expires worthless, the premium is gone."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What is the difference between option premium and margin?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "The premium is the price of the option: the buyer pays it upfront and the seller receives it. Margin is security the seller must post against the position, because the seller's potential loss is far larger than the premium received. Buyers pay the premium and nothing else; sellers receive the premium and post margin on top of it."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Can option premium be negative?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "No. A premium can never be negative, because intrinsic value is never below zero and time value is never below zero \u2014 the premium is the sum of the two. The lowest a premium can go is zero, which is what an out-of-the-money option is worth at expiry."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What happens to option premium at expiry?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "At expiry, time value is exactly zero, so the premium equals intrinsic value alone. An in-the-money option is worth its intrinsic value; an at-the-money or out-of-the-money option is worth zero. In the example in this guide, the 25,100-strike call's Rs 120 \u2014 all time value \u2014 would be gone entirely if the index is still at 25,000 at expiry."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What is Black-Scholes and what does it have to do with option premium?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Black-Scholes is the most widely referenced model for estimating an option's theoretical premium. It was built in 1973 for European-style options and uses five inputs: the underlying price, the strike price, the time to expiry, volatility, and the interest rate. The market premium is set by supply and demand; the model only estimates it. A beginner does not need the formula \u2014 reading the split is the job."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Why is the premium higher for at-the-money options?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Because time value peaks at the money. An at-the-money option has zero intrinsic value, so its entire premium is time value \u2014 and the uncertainty about which way the underlying will move is at its highest there, so the market charges the most for the chance."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How much premium do I actually pay for one lot?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "You pay the premium per unit multiplied by the lot size of the contract. The premium is quoted per unit, and the total cash outlay is the per-unit premium times the lot size. This guide states that relationship in words only, because lot sizes change and different guides quote different numbers for the same contract right now \u2014 check the contract's own specifications for the current figure before you trade."
+     }
+    }
+   ]
+  }
+ ]
+}

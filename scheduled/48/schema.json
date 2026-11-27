@@ -1,0 +1,105 @@
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Article",
+   "headline": "The Disciplined Trader \u2014 Summary (Mark Douglas, 1990)",
+   "description": "The Disciplined Trader summary: how beliefs filter every setup, the three stages to consistent trading, and one restructuring protocol to run this week.",
+   "author": {
+    "@type": "Person",
+    "@name": "Kaizen"
+   },
+   "datePublished": "2026-11-18",
+   "publisher": {
+    "@type": "Organization",
+    "@name": "Monks Of Market"
+   }
+  },
+  {
+   "@context": "https://schema.org",
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "What is The Disciplined Trader about?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "It is about why traders who already have a method still break their own rules. Mark Douglas argues that trading success is primarily psychological: beliefs built from past experience filter what a trader perceives, and those filters \u2014 not missing information \u2014 cause most execution errors. The book offers a framework for examining and restructuring those beliefs."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What is the mental environment in trading?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "It is the place where the information your senses take in is sorted, categorised, and stored into belief structures that shape all subsequent perception. Because beliefs filter perception, two traders can watch the same price action and see different opportunities. Most errors, on the book's account, trace back to unexamined beliefs rather than to missing information."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Why do traders who know the rules still break them?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Because knowing a rule is not the same as having a belief that supports following it under pressure. A trader who believes they need to be right will hold a loser past the planned exit even though they know the exit rule. A trader who believes they must win a loss back immediately will revenge-trade even though they know the plan forbids it. The rule lives in the plan; the belief runs the moment."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What are the three stages to becoming a successful trader?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "First, perceiving opportunity: seeing the present setup clearly, free of the emotional residue of past trades. Second, executing trades: acting without fear distorting the act, which requires pre-defining the loss and the exit before entry. Third, accumulating profits: keeping what the method earns, which the book ties to self-valuation \u2014 traders give themselves only the money corresponding to their sense of self-worth."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How is The Disciplined Trader different from Trading in the Zone?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "The Disciplined Trader is the earlier book and the foundation: it deals with self-sabotage despite knowing the rule, through the mental environment, belief restructuring, and the seven-step process. Trading in the Zone, by the same author, goes further into the probabilistic mindset \u2014 judging a method across a series of trades rather than by single trades. Read the former first if your failure is breaking rules you understand; read the latter first if your failure is needing to be right on every trade."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Does The Disciplined Trader teach a trading strategy?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "No. It does not teach strategy construction, position sizing, or stop-loss placement in depth. It assumes the reader already has a method and shows why they do not follow it. If you do not yet have a method that makes money over a large number of trades, you need strategy and validation work first; this book repairs execution, not a missing method."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Is The Disciplined Trader good for beginners?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "It is useful for a beginner who already has a simple, written method and keeps breaking it, but it is not the best first book for a complete beginner with no method at all. Without a method to execute, the book's framework has nothing to work on. A beginner in that position should build and validate a simple method first, then return to this book when execution \u2014 not method \u2014 is the problem."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What does it mean that the market is always right?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "It means price moves with the greatest collective force regardless of any one trader's conviction, so arguing with a price move is futile. A trader's opinion about what should happen does not constrain what does happen. The practical consequence is that the plan \u2014 not your opinion \u2014 decides when you enter and exit, because the market will not adjust itself to your analysis."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How do beliefs affect trading decisions?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Beliefs filter perception before conscious decision-making begins. A belief formed from one painful loss can make every later setup look like that loss, causing avoidance, hesitation, or overreaction. Because the filter operates before you deliberate, more information does not fix it \u2014 the information passes through the same filter. Changing the belief, through the surfacing and interrogation protocol in this article, is what changes the decision."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How long does it take for the book's ideas to change trading results?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Belief change is slow and comes from repeated experience, not from reading once. Run the thirty-day test in this article \u2014 one belief per week, deviations counted in a journal \u2014 and judge by whether your deviation rate fell, not by a month's profit. If deviations fell, the ideas are changing your behaviour; if they did not, check whether you named the right belief and whether your method itself holds up."
+     }
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,121 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "Covered Call Strategy: How Selling a Call Against Shares You Own Really Works — and Where It Fails",
+      "description": "Covered call strategy: one worked example (buy ₹2,000, sell ₹2,100 call for ₹40) with payoff, breakeven, max profit, max loss, and the honest income test.",
+      "author": {
+        "@type": "Person",
+        "@name": "Kaizen"
+      },
+      "datePublished": "2026-11-12",
+      "publisher": {
+        "@type": "Organization",
+        "@name": "Monks Of Market"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is a covered call in options trading?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A covered call is a position combining shares you own with one short call option sold against those shares — one short call per lot held. You collect the premium upfront and keep it whatever happens, in exchange for capping your upside at the strike price. It is called \"covered\" because your shares cover the delivery obligation if the call is exercised."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does a covered call work, step by step?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Own or buy the shares, sell one call per lot held at a strike above the current price, and collect the premium upfront. If the stock finishes below the strike at expiry, the call expires worthless and you keep the premium and the shares. If it finishes at or above the strike, your shares are delivered at the strike — you keep the gain up to the strike plus the premium, and forfeit upside beyond the strike."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the maximum profit and maximum loss in a covered call?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Maximum profit per share, before charges, is (strike − purchase price) + premium received — ₹140 per share in this article's example (₹2,100 − ₹2,000 + ₹40), achieved only when the stock is at or above the strike at expiry. Maximum loss per share, before charges, is purchase price − premium received — ₹1,960 per share in the example, suffered only if the stock falls to zero."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do you calculate the covered call breakeven price?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Breakeven per share is the stock purchase price minus the premium received. In the example: ₹2,000 − ₹40 = ₹1,960. Below ₹1,960 at expiry the position loses money; above ₹1,960 (up to the strike) it profits."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is a covered call profitable — and when is it most profitable?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It is most profitable when the stock finishes at or above the strike at expiry, where it earns the maximum profit — the stock gain up to the strike plus the premium. In flat markets it earns just the premium. It is least attractive in strong rallies, where the capped profit is far below what holding the stock outright would have earned, and in sharp falls, where the premium barely cushions the loss."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the main risk of a covered call?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Capped upside is the single biggest cost — in a strong rally you watch the stock run far past the strike while your profit stays locked at the strike. The second risk is near-full downside: a sharp fall overwhelms the small premium cushion and you still own a falling stock."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does a covered call protect against a stock decline?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No — not in any meaningful sense. The premium cushions the fall by exactly the premium amount: ₹40 per share in this article's example, against a ₹500 per share fall to ₹1,500. If you want real downside protection, the protective put is the trade built for that job."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Covered call vs protective put: what is the difference?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A covered call sells a call against shares you own: you receive premium, your upside is capped at the strike, and your downside is nearly the full stock downside. A protective put buys a put on shares you own: you pay premium, your upside stays unlimited, and your downside is floored at the put strike. One trades upside for income; the other pays for protection."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What happens if the stock rises above the strike price?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "At expiry, the call is exercised and your shares are delivered at the strike price. You keep the stock gain up to the strike plus the premium — ₹140 per share in the example — and every rupee of upside above the strike goes to the call buyer."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can you lose money on a covered call?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. If the stock finishes below the breakeven (purchase price minus premium — ₹1,960 in the example), the position loses money at expiry, and the loss grows with the fall, up to ₹1,960 per share if the stock falls to zero. The premium reduces the loss; it does not prevent it."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "When should you use a covered call — and when should you avoid it?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Use it when your view is flat to mildly rising, the stock is one you are genuinely happy to sell at the strike, and volatility is fair to rich for the premium on offer. Avoid it when you expect a strong rally, would regret selling the shares at the strike, face an illiquid chain with wide spreads, or cannot afford the stock's full downside."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What happens to dividends when your shares are called away?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "If your shares are delivered at expiry, you no longer hold them. If a dividend's ex-date falls after assignment, that dividend goes to the new owner, not to you. Check the dividend calendar before writing a call that spans an ex-date, and buy back or roll before expiry if holding through the ex-date matters to you. --- *Educational content only, not investment advice. Options involve risk, including the risk of losing the value of the underlying shares. All figures in the worked example are illustrative and before brokerage, taxes, and exchange charges.*"
+          }
+        }
+      ]
+    }
+  ]
+}

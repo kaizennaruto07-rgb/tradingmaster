@@ -1,0 +1,97 @@
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Article",
+   "headline": "Market Wizards \u2014 Summary (Jack D. Schwager, 1989)",
+   "description": "Market Wizards summary: what Schwager's interviewed traders share across markets and styles, and one next-trading-day habit for Indian retail traders.",
+   "author": {
+    "@type": "Person",
+    "@name": "Kaizen"
+   },
+   "datePublished": "2026-11-20",
+   "publisher": {
+    "@type": "Organization",
+    "@name": "Monks Of Market"
+   }
+  },
+  {
+   "@context": "https://schema.org",
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "What is Market Wizards about?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "It is a book of interviews by Jack D. Schwager, first published in 1989, in which exceptionally successful traders explain how they actually trade. The traders use very different methods \u2014 macro, trend following, floor trading, systematic rules \u2014 but share an attitude: control losses first, follow a method that fits them, and review their mistakes honestly."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What are the key lessons from Market Wizards?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "The recurring lessons are: think about how much you can lose before how much you can make; cut losses small and fast; follow a method you have tested enough to trust; trade in a style that fits your personality; be patient enough to skip trades your method does not recognise; and learn from losses by reviewing them. Schwager's summary is that success comes from a sound method plus the right mental attitude, and the attitude is the part that stays constant."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What do all the traders in Market Wizards have in common?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Despite different markets and styles, they share loss control, a followable method, patience, and honest review. They disagree about fundamentals versus charts, discretionary versus systematic trading, and holding periods \u2014 which is itself the point: method is personal, but the discipline around it is shared."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Is Market Wizards good for beginners?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "It is good for a beginner who already has a simple method and keeps breaking it, because it shows why execution fails and how successful traders structure around that failure. It is not the best first book for a complete beginner with no method, because it does not teach strategy construction \u2014 build and validate a simple method first, then read it for the execution lessons."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Does Market Wizards teach a trading strategy?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "No. It does not hand you entries, exits, or position sizes, and it should not be read as a system to copy. It teaches the shared principles behind many successful traders' systems, and the attitude required to follow any system under pressure. Strategy construction, position sizing, and stop placement are covered in our dedicated guides, linked above, not repeated here."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How is Market Wizards different from Trading in the Zone?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Market Wizards is a collection of interviews showing, through many different traders, that attitude matters more than any single method. Trading in the Zone, by Mark Douglas, goes deeper into one idea behind that finding: the probabilistic mindset \u2014 judging a method across a series of trades rather than by any single trade. Read Market Wizards first for breadth across traders, and Trading in the Zone next if the probabilistic mindset is the part you need most."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What is survivorship bias in Market Wizards?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Survivorship bias means the book interviews winners only. Traders who tried similar methods and failed are absent, so the shared habits of winners can look more sufficient than they are. Risk control and discipline may be necessary for success without guaranteeing it \u2014 luck, capital, timing, and market regime also matter. The honest way to use the book is to borrow the winners' risk habits, not their strategies or return expectations."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Who are the traders interviewed in Market Wizards?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "The original 1989 book interviews leading traders of the era across futures, currencies, bonds, options, and stocks, including Ed Seykota, Richard Dennis, Paul Tudor Jones, Bruce Kovner, Michael Steinhardt, and Marty Schwartz, among others. This summary names them illustratively; the value of the book is in what they share, not in any single trader's biography."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Should I read Market Wizards before Trading in the Zone?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Either order works, but Market Wizards first is the natural path for most readers: it establishes, through many traders, that attitude is shared while method is personal. Trading in the Zone then deepens that insight into a full mindset for thinking in probabilities. If your specific failure is breaking rules you understand, start instead with the companion on belief and discipline, then return here for breadth."
+     }
+    }
+   ]
+  }
+ ]
+}

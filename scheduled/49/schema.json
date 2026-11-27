@@ -1,0 +1,113 @@
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Article",
+   "headline": "Thinking, Fast and Slow \u2014 Summary (Daniel Kahneman)",
+   "description": "Thinking, Fast and Slow summary: System 1 vs System 2, loss aversion, and the biases behind impulsive trades \u2014 plus one pre-trade check you can run this week.",
+   "author": {
+    "@type": "Person",
+    "@name": "Kaizen"
+   },
+   "datePublished": "2026-11-18",
+   "publisher": {
+    "@type": "Organization",
+    "@name": "Monks Of Market"
+   }
+  },
+  {
+   "@context": "https://schema.org",
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "What is Thinking, Fast and Slow about?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "It is a general psychology book by Daniel Kahneman (2011) about how the mind makes decisions: a fast, automatic system that generates impressions and a slow, deliberate system that is supposed to check them but usually does not. For traders, its value is explaining why impulsive decisions happen in seconds and what systems can slow them down."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What are System 1 and System 2?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "System 1 is fast, automatic, emotional, and effortless \u2014 it recognises patterns and reacts instantly. System 2 is slow, deliberate, analytical, and effortful \u2014 it checks a thesis and does the arithmetic. System 1 generates impressions; System 2 is supposed to endorse or correct them, but it is lazy and usually accepts the first answer."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How does System 1 vs System 2 apply to trading?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Almost every impulsive trade is System 1 pulling the trigger before System 2 asks whether the trade fits the plan: chasing a breakout, holding a loser, cutting a winner early, revenge-trading, or sizing up after a win. The fix is not more knowledge but a system \u2014 a written pre-trade check and pre-decided exits \u2014 that forces System 2 in before entry."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What is loss aversion in trading?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Loss aversion is the tendency to feel losses roughly twice as strongly as equivalent gains. In trading it produces the disposition effect: cutting winners early for relief and holding losers in hope. Both are the same mechanism, and both are prevented the same way \u2014 by writing stops and targets before entry, when the slow system is still in charge."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What is prospect theory in simple terms?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Prospect theory, developed by Kahneman with Amos Tversky, says people judge outcomes relative to a reference point \u2014 such as the price they paid \u2014 rather than in absolute terms, and feel losses more strongly than equivalent gains. That is why the same trade can feel like a win or a loss depending on where the reference point sits."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What is the illusion of skill in trading?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "It is the gap between feeling skilled and being skilled. Kahneman's study of professional traders found year-to-year results showing almost no persistent skill, yet the traders remained fully confident. Confidence is the fast system's output, not a measurement; only measured results over many trades can tell you whether skill is really there."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What is anchoring bias in trading?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Anchoring is letting an irrelevant first number drag later decisions toward it. In trading the anchor is usually the entry price: you refuse to sell below it, or you judge a recovery by whether it gets back to it, even though the market does not know what you paid. Judge the trade from today's setup, never from the entry price."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What is the availability heuristic in trading?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "It is judging likelihood by how easily examples come to mind. A dramatic recent loss makes a setup feel dangerous; a spectacular recent win makes it feel like a goldmine. Neither feeling is data. The counter-move is the base rate from your journal \u2014 how the setup has actually performed over many trades."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Does knowing about biases stop you making them?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "No. Knowing a bias does not immunise you against it \u2014 the book is explicit about this. What reduces a bias's impact is a system: a written pre-trade checklist, exits decided before entry, and a journal that records reasons before memory edits them. Knowledge without a system changes nothing."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Is Thinking, Fast and Slow good for beginners, and for traders?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "It is good for a beginner trader who already has a simple written method and keeps breaking it under pressure, because it explains the machinery behind impulsive decisions. It is not the best first book for a complete beginner with no method at all \u2014 without a method to protect, better thinking only loses more slowly. It is a general psychology book, not a trading manual."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How is Thinking, Fast and Slow different from Trading in the Zone?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "They attack different failures. This book explains the decision-making machinery \u2014 two systems, biases, loss aversion \u2014 that produces an impulsive decision in seconds. Trading in the Zone, by Mark Douglas, addresses what happens once beliefs take over: knowing the rule and still breaking it. If your failure is speed, start here; if your failure is self-sabotage despite knowledge, start with the Douglas books."
+     }
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,113 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "Long Strangle Strategy: The Cheaper Big-Move Bet — and Exactly How Far the Market Must Move Before It Pays",
+      "description": "Long strangle strategy guide: OTM call + OTM put at different strikes, breakevens 25,665/24,335, max loss Rs 165/unit, flat payoff and when to use a strangle.",
+      "author": {
+        "@type": "Person",
+        "@name": "Kaizen"
+      },
+      "datePublished": "2026-11-10",
+      "publisher": {
+        "@type": "Organization",
+        "@name": "Monks Of Market"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is a long strangle in options trading?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Buying an out-of-the-money call and an out-of-the-money put on the same underlying, at different strikes, with the same expiry. You pay both premiums. You profit only if the underlying makes a very large move in either direction, far enough to cover both premiums. In the worked example — underlying 25,000, 24,500 put at an assumed ₹80 and 25,500 call at an assumed ₹85 — you pay ₹165 per unit plus charges, and you need a move beyond 25,665 or below 24,335 to profit at expiry, before charges."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do you calculate strangle breakeven points?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "First add the premiums: total premium = call premium + put premium. Then upper breakeven = call strike + total premium, and lower breakeven = put strike − total premium. In the worked example: ₹85 + ₹80 = ₹165; upper breakeven = 25,500 + 165 = 25,665; lower breakeven = 24,500 − 165 = 24,335. These are expiry breakevens before charges; after charges, the true breakevens sit slightly further out."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the maximum loss in a long strangle?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The total premium paid, plus charges. In the worked example, that is ₹165 per unit plus charges, suffered in full if the underlying closes anywhere between the two strikes (24,500 and 25,500) at expiry, because both legs then expire worthless. The loss cannot exceed the premium paid, plus charges, for a long strangle — it is a defined-risk trade for the buyer."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Long strangle vs long straddle: which is better?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Neither is better in general; they trade cost against distance. A straddle buys at-the-money legs at one strike, so it costs more but has tighter breakevens and responds faster to a small move. A strangle buys out-of-the-money legs at two strikes, so it costs less but has a wider dead zone — the whole gap between the strikes — and needs a bigger move. Choose the strangle when budget is tight and you expect a very large move; choose the straddle when you expect a move but want a smaller move to suffice and can afford the higher premium."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "When should you use a long strangle instead of a straddle?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "When three conditions line up: a known catalyst with unknown direction (earnings, Budget, RBI policy, elections) where a very large move is possible; implied volatility is relatively low, so the premiums are not already inflated; and the straddle's at-the-money cost is more than you want to risk. If the expected move is only moderate, or IV is already sky-high, the strangle's wider breakevens make it the worse choice despite its lower price."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is a long strangle profitable? Why do most strangles lose money?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A strangle is profitable only when the move is big enough and fast enough: beyond 25,665 or below 24,335 at expiry in the worked example, before charges. Most strangles lose because most of the time the market does not move that far. It stays between the strikes or stops short of a breakeven, and both premiums bleed away to time decay. Add IV crush after the event — both legs deflating at once — and even a correct-direction move can lose. No return figure or win-rate statistic is quoted here, because none is assumed in this article."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What happens to a long strangle if the market stays flat or stays between the strikes?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "At expiry, both legs expire worthless and you lose the entire premium paid, plus charges. In the worked example, that is ₹165 per unit plus charges, whether the underlying closes at 25,000 (unchanged), at 24,500, or at 25,500. The loss is flat across the whole zone between the strikes — it does not shrink as the underlying drifts toward a strike from inside the zone. Before expiry, a flat market still hurts: both legs lose time value every quiet day."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How far apart should strangle strikes be?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "There is no single best width; it is a trade-off chosen from expected move size and budget. Wider strikes cost less but widen the dead zone and demand a bigger move before profit. Narrower strikes cost more but narrow the dead zone, tighten the breakevens, and behave more like a straddle. In the worked example, the strikes are 1,000 points apart (24,500 to 25,500) around a 25,000 underlying, giving a 665-point (2.66%) move needed each way. If you expect a smaller move, narrower strikes fit better; if budget is the binding constraint, wider strikes are the compromise — with eyes open about the larger move they require."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Long strangle vs short strangle: what is the difference?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "They are mirror images. A long strangle buys the OTM call and OTM put, pays premium, has a defined maximum loss (the premium paid, plus charges), and profits from a very large move in either direction. A short strangle sells the OTM call and OTM put, collects premium, and profits if the market stays relatively quiet between the strikes — but its risk on a sharp move is unlimited on the upside and very large on the downside. Beginners must not sell naked strangles; this article does not teach the short strangle."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much capital do you need for a strangle?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The capital at risk is the total premium paid plus charges. Per unit, that is ₹165 plus charges in the worked example. For a full position, the formula is total premium × lot size + charges — stated in formula form only, with no rupee lot total given here."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Should you hold a strangle till expiry?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Not necessarily, and often not. A fast move or a rise in implied volatility can make a strangle profitable well before expiry, while time value is still in the options — that is why many buyers sell both legs to close on the move. Holding to expiry means accepting maximum time decay and, if the underlying pins between the strikes, the full maximum loss (₹165 per unit plus charges in the example). A time stop — deciding in advance how long you will wait for the move — and exiting on the move are the standard defences against theta bleed. ## Bottom Line: A Cheap Ticket That Needs a Very Big Move Recap, in one line each: construction is an OTM call plus an OTM put, at different strikes, with the same expiry. Cost in the example is ₹165 per unit plus charges (assumed ₹80 put + assumed ₹85 call). Breakevens are 25,665 and 24,335, before charges. The dead zone is 24,500–25,500. Maximum loss is ₹165 per unit plus charges, suffered in full anywhere inside that zone at expiry. Use a long strangle only when the conditions line up: a catalyst with unknown direction, a very large move possible, relatively low IV, and an expected move that clears the breakeven — not just a strike. Skip it when the expected move is moderate, when IV is already sky-high, or when the OTM legs are illiquid. For the wider map, the option-trading-strategies hub is referenced here in plain text only. The long-straddle discussion is the tighter-breakeven alternative in the chooser table above. The live position-sizing and risk-of-ruin articles cover capping the premium at risk, and the live options-charges article covers the charges behind \"plus charges\" in the worked example. None of those are re-taught here. The strangle's question, answered honestly, is always the same: is the move you expect big enough to pay for two premiums — and are you comfortable losing both if it is not? This article is educational only, not investment advice or a recommendation to trade. Options can lose their entire premium, plus charges, as the worked example shows, so any position should be sized as a loss you can afford."
+          }
+        }
+      ]
+    }
+  ]
+}

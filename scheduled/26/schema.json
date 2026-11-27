@@ -1,0 +1,89 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "How to Control Tilt in Trading: A Pre-Trade Checklist",
+      "description": "Control tilt in trading with a 7-check pre-trade gate: trade at normal size, reduced at half size, or take a no-trade day, plus the all-must-pass return test.",
+      "author": {
+        "@type": "Person",
+        "@name": "Kaizen"
+      },
+      "datePublished": "2026-11-06",
+      "publisher": {
+        "@type": "Organization",
+        "@name": "Monks Of Market"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is tilt in trading?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Tilt is emotional decision-making after a loss or shock, where decision quality drops while confidence does not drop to match it — full definition, triggers and sign catalogue: Tilt in Trading."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the signs of tilt in trading?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Commonly reported signs include body cues (clenched jaw, shallow breathing, tense shoulders) and behavioural cues (sizing up after a loss, re-entering seconds after a stop-out, watching profit and loss instead of the chart) — full catalogue: Tilt in Trading."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do you stop tilting in trading?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Mostly, you do not stop it mid-session by willpower. You gate it before the session with the seven checks in this article, and you break it mechanically after a loss with the post-loss protocol. For the full post-loss protocol, see the staged companion article The Revenge Trading Circuit-Breaker, pointed to here in plain text."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I know when tilt is over and I can trade again?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Use the all-must-pass return-to-baseline test in this article: body back to baseline, no urgency or compulsion, normal trading logic back online, curiosity instead of fear or anger as a self-check, able to calmly write the next trade's plan with no pressure, and no need to recover losses. It is practitioner advice and this article's own practical self-check, not a validated diagnostic — and every item must pass before you resume."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Should I trade every day?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. The no-trade day is a valid gate outcome, not a failure. Check 5 exists precisely to make that legitimate: if it would not genuinely be fine to take zero trades today, the gate has already caught you chasing. Some of the best gate outcomes are days when nothing is traded and the capital stays intact."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is a pre-trade checklist?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It is the gate itself: a set of conditions checked before the first trade — body, recovery urge, outside weight, win-streak pull, no-trade acceptability, hard stops, and setup readiness — with pass or fail branches that decide whether you trade at normal size, trade reduced, or do not trade at all."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much should I risk per trade to avoid tilt?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A fixed small percentage decided before the session, written into Check 6 and Check 7, so size is never decided under pressure. This article does not re-teach sizing maths: for the full method, see Position Sizing and the risk of ruin guide. The illustrative figures in this article — 1% per trade and a 3% daily illustration — are teaching numbers for one example, not a prescription for your account."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is tilt the same as revenge trading?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Tilt is the state; revenge trading is one behaviour inside it. Revenge trading is trading to win back a loss immediately, with size and urgency set by the loss rather than by the plan. For the full mechanism, read Revenge Trading, and for the state itself, read Tilt in Trading."
+          }
+        }
+      ]
+    }
+  ]
+}

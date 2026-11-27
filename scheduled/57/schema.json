@@ -1,0 +1,121 @@
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Article",
+   "headline": "The Options Playbook (Brian Overby) \u2014 Summary: Which Play to Run, and When",
+   "description": "The Options Playbook by Brian Overby, summarised as a decision ladder: outlook first, then the play. The five foundational plays, spreads, and the veto check.",
+   "author": {
+    "@type": "Person",
+    "@name": "Kaizen"
+   },
+   "datePublished": "2026-11-22",
+   "publisher": {
+    "@type": "Organization",
+    "@name": "Monks Of Market"
+   }
+  },
+  {
+   "@context": "https://schema.org",
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "What is The Options Playbook?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "It is a strategy reference by Brian Overby that presents forty options plays \u2014 one strategy per play \u2014 each laid out in the same uniform format, organised by the market outlook it fits: bullish, bearish, neutral, or volatile. Its central idea is outlook first, play second: state what you think the market will do, then choose among the plays that fit."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Is The Options Playbook good for beginners?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "In our judgement based on reviewer consensus, it is good for a beginner who already knows what an option is, and not good as a very first book. It is the best second book after a primer: complete beginners should start in Rookie's Corner and the five foundational plays, and readers who do not yet know what an option is should read a primer first. It is not the right book for an advanced trader looking for depth on a single strategy."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Who wrote The Options Playbook?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Brian Overby, a veteran options educator and senior options analyst with more than thirty years in the industry. Reviewers treat his plain-language teaching, not a trading record, as the book's authority."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How many strategies are in The Options Playbook?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "The edition this summary follows \u2014 the Expanded 2nd Edition, published in 2009 \u2014 features forty plays, ten of them new to that edition according to the publisher. The first edition dates to 2007."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What is Rookie's Corner in The Options Playbook?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "It is the book's opening section for the first-time trader: the basic definitions (calls, puts, strike, expiration), the most common mistakes beginners make, and how to read a play card before touching a strategy. Reviewers agree it is the on-ramp, and this article turns its mistakes list into a pre-trade checklist."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Which option strategy is best for beginners?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "In our judgement, the long call \u2014 the first rung of the ladder this article teaches. You pay a premium for upside, and the maximum loss is the premium you paid, known before entry. After it, in order: the long put, the covered call, the protective put, and the cash-secured put. The best strategy is the one whose outlook matches your view and whose maximum loss you can afford."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How do I choose an options strategy?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "State your outlook first \u2014 up, down, flat, or a big move either way \u2014 then choose among the plays that fit that outlook, read the play card, and check the maximum loss, the breakeven, and the two force fields (time decay and implied volatility) before entering. Reject any play that fails one of those checks, even if the outlook is right."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What is the best book to learn options trading?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "For a complete beginner, in our judgement based on reviewer consensus, a plain-language primer on the four basic trades is the best place to start \u2014 the Sincere book on understanding options is the primer this article's reading ladder names. The Options Playbook is the best second book: the reference for choosing among strategies once the basics are understood. After it, the next rungs are pricing, then strategy depth."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Is The Options Playbook worth reading?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "For the reader it was written for \u2014 someone who knows the basics and wants a reference for choosing strategies \u2014 yes, in our judgement based on reviewer consensus. It is worth reading as a decision tool and a reference to keep open beside the screen. For a complete beginner it is worth reading only after a primer, and for an advanced trader seeking depth on a single strategy, it is not the right book."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What is the difference between a debit spread and a credit spread?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "A debit spread costs money to enter: you pay a net premium, your maximum loss is that net premium, and your maximum gain is the gap between the strikes less what you paid. A credit spread pays you money up front: you receive a net credit, your maximum gain is that credit, and your maximum loss is the gap between the strikes less the credit received. In our carried example, the bull call debit spread costs Rs 12 with a maximum gain of Rs 38, while the credit put spread receives Rs 10 with a maximum loss of Rs 40."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Can I trade options after reading The Options Playbook?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Reading alone is not enough. The book teaches you to pick and run a strategy, not a complete trading system. Paper-trade the five foundational plays in ladder order first, journal every trade, and review after twenty trades. Only then consider small real trades with a defined maximum loss, sized so the worst case is affordable, with a written exit rule in place."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Do I need maths to read The Options Playbook?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "No. The book is written in plain language for traders who are choosing strategies, not solving equations. The play card states the maximum loss, the breakeven and the probability of profit as fields to read, not formulas to derive \u2014 and the two forces, time decay and implied volatility, are explained through what they do to a trade rather than through mathematics."
+     }
+    }
+   ]
+  }
+ ]
+}

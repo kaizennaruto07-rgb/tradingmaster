@@ -1,0 +1,121 @@
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Article",
+   "headline": "Stop Loss in Crypto Trading",
+   "description": "Stop loss in crypto trading: risk budget first, structure and ATR placement, sizing from the stop, and order, trigger and trailing rules for a 24/7 market.",
+   "author": {
+    "@type": "Person",
+    "@name": "Kaizen"
+   },
+   "datePublished": "2026-11-16",
+   "publisher": {
+    "@type": "Organization",
+    "@name": "Monks Of Market"
+   }
+  },
+  {
+   "@context": "https://schema.org",
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "What is a stop loss in crypto trading?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "A preset exit level, decided before entry, that closes the trade automatically when price moves against it. Crypto makes it non-negotiable because the market never closes: there is no session end to rescue an unmanaged position, and a sharp move can happen while you are asleep."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What percentage stop loss is best for crypto?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "There is no single number. The commonly quoted range for a fixed-percentage stop is 3 to 8% for majors on active trades, and wider for altcoins, but that range is a rough guide, never a rule, because a percentage ignores both the chart and volatility. On the carried example, a 2% stop gives $58,800, but $1,200 of distance is less than one daily ATR of $1,800, so it sits inside ordinary noise and is rejected even though it allows 0.0833 units. Prefer structure first, ATR second, percentage only as a check \u2014 and expect the right percentage, if you compute one at all, to be wider for an altcoin than for a major asset."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How do I calculate a crypto stop loss?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Decide the risk budget first, then the stop distance, then divide: size in asset units equals risk budget divided by stop distance. On the carried example: $100 risk budget divided by the $2,700 ATR distance (entry $60,000, stop $57,300) is 0.0370 units. The planned loss on the rounded size is 0.0370 times $2,700, which is $99.90, inside the budget. Never reverse the order and pick a size first."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Stop-market vs stop-limit vs trailing stop in crypto \u2014 which should I use when?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Use stop-market when getting out matters more than the exact fill price \u2014 fast markets, leveraged positions, any position you cannot afford to still hold \u2014 knowing the fill can be below the trigger. Use stop-limit only when the price matters more than guaranteed exit, knowing it can sit unfilled in a fast drop. Use a trailing stop, which follows price in your favour and never moves back, when the trade is moving in your favour and you want to lock in part of the move by a pre-set rule, not when the market is chopping, where it will whipsaw you out on normal pullbacks."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Mark price vs last price \u2014 which should trigger my stop?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Prefer a mark-price trigger where the choice is available, because a wick in last traded price alone should not be able to trigger a well-set stop. A last-price trigger can be fired by a single brief spike that touches your level and reverses \u2014 a routine event in crypto. Whichever you use, confirm the trigger type before entry, so the stop's behaviour in a wick is a choice you made, not a surprise you discover."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Should my stop be different for bitcoin vs altcoins?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes. The procedure is the same, but the inputs change. An altcoin moves more per candle, so the same percentage stop sits deeper inside its noise, and the same ATR multiple may still be too tight. Use a wider ATR multiple and a smaller position for the same account risk. On the carried example's numbers, a wider 2 times ATR multiple gives a $3,600 distance, a stop at $56,400, and 0.0278 units for the same $100 budget. Never copy a major asset's percentage stop onto an altcoin unchanged."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Do I need a stop loss if I hold spot long term?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Not in the same way, and the distinction matters. A long-term spot holding, bought with money you do not need and sized so a large drawdown does not force a sale, is an investment position, not a trade with a thesis that a price level can disprove. A stop on such a holding can do real harm: it can sell a long-term position into a flash wick that then reverses, locking in a loss on an asset you intended to hold. If you do use one, use it as a thesis check \u2014 the level at which your reason for holding is wrong \u2014 not as a tight percentage copied from a trading procedure. The procedure in this article is for trades, where the entry thesis has a price at which it fails."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Can a stop loss prevent liquidation?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Only if it is placed and ordered correctly. A stop prevents liquidation when it sits on the safe side of liquidation, with room to spare, and fires before liquidation arrives \u2014 which is why the ordering check in Step 3 comes before entry. A stop cannot prevent liquidation if the position is sized so liquidation arrives first, if a stop-limit sits unfilled through a flash drop, or if slippage carries the fill past the liquidation level. In those cases the stop was never in a position to help, and the fix is a smaller position, never a moved stop."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What happens to my stop in a flash crash?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "It depends on the order type you chose, and that is why the choice is made before entry. A stop-market will trigger and exit, but into a thin, falling book, so the fill can be far below the trigger \u2014 the planned loss is a best case, not a promise. A stop-limit may not fill at all if price runs past the limit, leaving the position open through the drop. A mark-price trigger resists wick-only triggers better than a last-price trigger, but no trigger type protects a fill price in a genuine crash. Size so the account survives a worse-than-planned fill, or do not hold that position through conditions you cannot monitor."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "When does a trailing stop hurt?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "In choppy, range-bound markets, and on thin pairs. A trailing stop follows price in your favour and never moves back, so in chop it exits the trade on a normal pullback, again and again, and on a thin pair a wick can trigger the trail and exit a trade that then resumes. It also hurts, by design, when it exits a trade that then runs much further \u2014 on the carried example the $66,300 exit keeps $233.10 but gives up any move beyond $69,000. That exchange, certainty of part of the move for the possibility of the whole move, is the price of trailing, and it must be accepted knowingly, not discovered afterwards."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Should I move my stop loss once the trade is live?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Only in the direction that reduces risk, and only by the pre-set trailing rule. Move it to breakeven and then trail it behind price, never back. Never widen it to give the trade room \u2014 widening converts a planned loss into an unplanned one, and it is done most often at the exact moment the stop exists to protect you. If the stop is wrong, the trade was wrong: exit, reassess, and re-enter on a fresh plan if the setup still justifies it."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How do you keep a stop working in a market that never closes?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "You do not watch it. You place it as an order the moment the entry fills, with the trigger type, order type and reduce-only setting already chosen, and then you let the order work while you sleep. A mental stop, a stop you intend to place later, and a stop you plan to manage by watching are all unmanaged positions in a market that never pauses. The system that works overnight is the one that was fully decided before the entry: budget, basis, size, settings, trailing rule, and liquidation check, all written down, all already in place as orders."
+     }
+    }
+   ]
+  }
+ ]
+}

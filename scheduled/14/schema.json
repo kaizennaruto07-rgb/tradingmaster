@@ -1,0 +1,105 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "How Much Backtesting Is Enough? The Six-Box Checklist Before You Risk Real Money",
+      "description": "How much backtesting is enough? Run the six-box checklist — trades, regimes, variants, costs, holdout, forward gate — and stop guessing.",
+      "author": {
+        "@type": "Person",
+        "@name": "Kaizen"
+      },
+      "datePublished": "2026-10-31",
+      "publisher": {
+        "@type": "Organization",
+        "@name": "Monks Of Market"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "1. How many trades do I need to backtest before trusting a strategy?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "There is no single number — use the procedure, not a magic threshold. Locate your count in the tier table (under 30 is anecdote, 30–100 is a first impression, 100–300 is where metrics begin to stabilise, 300+ is a serious sample), then run the six-box checklist: trades counted, regimes covered, variants counted, costs included, holdout kept untouched, and the forward-test gate passed. Your target tier follows your edge size — a small edge points to 300+, while a large, consistent edge may make 100+ defensible. All six boxes ticked is what \"trustworthy enough to forward test\" means here."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "2. Is 30 trades enough for a backtest?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Under 30 trades is anecdote in this article's tiers, and 30 trades is only the floor of \"first impression\" territory — direction only, not a decision-grade sample. At that size, win-rate precision is far wider than the ±10 points you get at about 96 trades, so the sample cannot distinguish a small edge from luck. Treat 30 trades as a reason to keep testing, not a reason to go live."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "3. Does more backtesting data always make my results more reliable?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. More trades help only inside the checklist. More trades from one regime, one sharp parameter peak, or a zero-cost test add no credibility — they add volume to a flawed sample. And more in-sample optimisation after the gate is passed is overfitting fuel, not more evidence. Reliability comes from trades plus regimes plus honest variant-counting plus real costs plus an untouched holdout, not from trade count alone."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "4. How far back should I backtest — a few months or several years?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Think in trades and regimes, not calendar time alone. An illustrative setup at about 5 trades per week reaches 300 trades in 60 weeks (about 14 months), while an illustrative setup at 2 trades per month needs 150 months (12.5 years) for the same count. Go back far enough to collect your target trade count across at least three market environments while still keeping 20–30% of the data held out. For a low-frequency setup, that honestly means years."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "5. Do I need to test my strategy in different market conditions?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. This procedure requires a minimum of three environments: a sustained trend, a choppy range, and a volatile shock period. A sample from a single environment fails box 2, however large it is, because it says nothing about how the setup behaves when the market changes character. If your sample covers only one regime, you need more kinds of trades, not just more trades."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "6. What is out-of-sample testing, and how much data should I hold out?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Out-of-sample testing means checking your setup on data that played no part in developing it: the in-sample result is the hypothesis, the out-of-sample result is the test. Reserve 20–30% of your data, untouched during development, for that final validation. If the out-of-sample result collapses, the edge did not survive contact with unseen data — the answer is not to test more in-sample data until something looks good again."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "7. How do I know if I have overfitted my backtest?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Apply the variants tax in box 3 and the sharp-peak test in trap 3: count every variant you tried, and check whether a broad region of settings around your chosen one also works. If only one narrow peak works and everything around it fails, or if the result is the best of a large number of uncounted variants, you have the signature of curve-fitting rather than a robust edge. A broad plateau of working settings is far more believable than a single spike."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "8. How long should I paper trade after backtesting?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Judge paper trading in trades across varied conditions, not in days. Paper testing follows the backtest gate — it does not replace it — and it is the stage where the forward-test gate is actually exercised: unseen, unfolding results compared against the backtest within reason. Paper profit never retroactively validates a failed holdout, and a large gap between paper results and backtest results sends you back to the checklist, not back to optimising in-sample parameters."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "9. Does a high win rate mean I need fewer backtest trades?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Not by itself. Payoff skew means a short sample can miss rare large losses it never saw, so a high win rate from a small sample may be an incomplete picture rather than a strong one. Win-rate precision also depends on the interval framing above — and win rate alone does not prove profitability, which depends on payoff size as well. A high win rate shortens nothing unless the sample also spans three regimes, counts all variants, and includes real costs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "10. When should I stop backtesting and go live?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Stop backtesting when the six boxes are ticked and the holdout result agrees with the in-sample result within a tolerance you stated in advance. That is the trigger to start forward testing — judged in trades across varied conditions — and going live follows the forward-test gate, not the backtest alone. If any box is unticked, or the holdout disagrees, you are not at the stop point yet: fix the unticked box rather than optimising in-sample parameters further."
+          }
+        }
+      ]
+    }
+  ]
+}

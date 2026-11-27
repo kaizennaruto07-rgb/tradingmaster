@@ -1,0 +1,137 @@
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Article",
+   "headline": "Stop Loss Meaning: What It Is and How It Actually Works",
+   "description": "A stop loss is a pre-set order to exit when price hits your level. Learn trigger vs fill price, slippage, gaps and the guarantee trade-off, with one example.",
+   "author": {
+    "@type": "Person",
+    "@name": "Kaizen"
+   },
+   "datePublished": "2026-11-14",
+   "publisher": {
+    "@type": "Organization",
+    "@name": "Monks Of Market"
+   }
+  },
+  {
+   "@context": "https://schema.org",
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "What is the meaning of stop loss in trading?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "A stop loss is a pre-set instruction to close a position automatically once the price reaches a level you chose in advance. It is an order type, not a strategy, not a profit tool, and not insurance. While it rests, it does nothing; when the price reaches the stop level, it triggers and the position is closed \u2014 or, for a stop-limit, an attempt is made to close it at or better than the limit price."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How does a stop loss order work?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "In two phases. First, resting: the order sits dormant and does nothing until the market price reaches the stop price. Second, triggered: the order converts and goes live \u2014 a plain stop loss becomes a market order that fills at the next available price, while a stop-limit becomes a limit order at the limit price you set. What counts as reaching the stop price varies by platform (last traded price versus bid/ask), so check your own platform's order form."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What is the difference between stop loss and stop limit?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "A plain stop loss (stop-market) becomes a market order on trigger: it prioritises getting you out, and the fill price can be worse than the stop price. A stop-limit becomes a limit order on trigger: it prioritises price, using two prices \u2014 the stop price as the trigger and the limit price as the worst price you will accept \u2014 but it may not fill at all if the price moves past the limit. A plain stop loss prioritises getting you out (sent as a market order on trigger, subject to tradable liquidity); a stop-limit prioritises price; you cannot have both priorities at once."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Does a stop loss guarantee I will exit at my stop price?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "No. The stop price is a trigger, not a promised exit price. A plain stop loss fills at the next available price after conversion, which can be worse than the stop price in a fast-moving or thin market or on an overnight gap. In the carried example \u2014 entry Rs 1000, stop Rs 900, 50 shares \u2014 a slippage fill at Rs 892 gives a total actual loss of Rs 5400 for 50 shares, and a gap fill at Rs 850 gives Rs 7500 for 50 shares, against an intended Rs 5000 for 50 shares."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What is slippage in a stop loss?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Slippage is the difference between the expected price (the stop price) and the actual fill price. In the carried example, a plain stop loss set at Rs 900 that fills at Rs 892 has slipped Rs 8 per share, turning an intended loss of Rs 100 per share into an actual loss of Rs 108 per share \u2014 Rs 5400 for 50 shares instead of the intended Rs 5000 for 50 shares. Slippage is most likely in fast-moving or thin markets, where the next available price after the trigger is worse than the stop price."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What happens to my stop loss if the stock gaps down overnight?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "A plain stop loss triggers and fills at the next available price, not at the stop price. In the carried example \u2014 entry Rs 1000, stop Rs 900, 50 shares \u2014 a gap fill at Rs 850 gives a loss of Rs 150 per share, or Rs 7500 for 50 shares, against the intended Rs 5000 for 50 shares. The position still closes; only the price changes. A stop-limit, by contrast, may remain unfilled if no price at or better than its limit is available, leaving the position open."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What is a trailing stop loss?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "A trailing stop is a stop whose level moves with the price in your favour by a set amount or percentage, and stays put when the price moves against you. As a stock rises, a trailing sell stop rises with it; when the price reverses by the set amount or percentage and hits the trailing level, the stop triggers and the position closes. On trigger it behaves like its underlying stop type, so it still carries slippage risk if market-based, or non-fill risk if limit-based. It can protect a gain as a trend runs, but it does not maximise profit, because it exits on a reversal rather than at the peak."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What is the difference between a sell stop and a buy stop?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "It depends on the direction of the position. A long position (bought, expecting a rise) uses a sell stop placed below the current price: if the price falls to that level, the position is sold. A short position (sold, expecting a fall) uses a buy stop placed above the current price: if the price rises to that level, the position is bought back. The stop always closes the position by trading in the opposite direction to how it was opened."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Should I use a stop loss on every trade?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "A stop loss sets a pre-set exit level, and without one there is no defined exit if the price moves against you \u2014 so as a matter of risk discipline, a defined exit is the norm, not the exception. But a stop loss on its own is not a complete risk plan: it does not guarantee an exit price, it does not protect against gaps, and it does not substitute for sizing, since the total loss also depends on quantity. The honest answer is that a stop is a necessary part of managing a trade's risk, not a sufficient one \u2014 it must be paired with a quantity that keeps the total risk, in rupees, at a level the trader has deliberately accepted."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What is a stop loss trigger price?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "The trigger price is the price at which a resting stop order converts and goes live. It is distinct from the fill price: the trigger price decides when the order activates, and the fill price is the price at which the order actually executes afterwards. In the carried example, Rs 900 is the trigger price; Rs 892 (slippage) or Rs 850 (gap) would be the fill price, and the actual loss follows from the fill price, not the trigger price."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Stop loss vs take profit: what is the difference?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "A stop loss closes a position when the price moves against it, at a level set to cap the loss. A take profit closes a position when the price reaches a favourable target \u2014 above the entry for a long position, below the entry for a short \u2014 to secure a gain. Both are pre-set, automatic exit instructions, but they operate in opposite directions: the stop loss guards the downside, the take profit collects the upside. This article makes no claim that a take profit guarantees its target price in all conditions."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Can a stop loss order fail to execute?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes, in the stop-limit case: if the price moves past the limit without trading at or better than it, the stop-limit order does not fill, and the position remains open and still exposed. A plain stop loss, converted to a market order on trigger, is sent for execution at the next available price, but even its execution depends on tradable liquidity being available. Platform behaviour outside trading hours also varies, so an order may not trigger as expected outside market hours \u2014 another reason to check your own order form."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Is a stop loss the same as a limit order?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "No. A limit order sets a price-or-better condition with no trigger conversion: it simply waits to trade at that price or better. A stop order waits for its trigger price to be reached and then converts \u2014 to a market order (plain stop loss) or to a limit order (stop-limit). The trigger-and-convert step is what makes a stop order different: a limit order is live from the start, while a stop order is dormant until triggered."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How does a stop loss decide how much I can lose on a trade?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "It sets the loss per share, and the total follows from the quantity. The entry-to-stop distance is the intended risk per share, and multiplying it by the quantity gives the intended total risk in rupees. In the carried example, the distance from Rs 1000 to Rs 900 is Rs 100 per share, and Rs 100 per share \u00d7 50 shares = Rs 5000 of intended loss for 50 shares. That intended figure is the maximum the stop aims for only if the fill lands at the stop price \u2014 under slippage (fill Rs 892) the actual loss is Rs 5400 for 50 shares, and under a gap (fill Rs 850) it is Rs 7500 for 50 shares. So a stop loss decides the intended loss, while the fill price decides the actual loss."
+     }
+    }
+   ]
+  }
+ ]
+}

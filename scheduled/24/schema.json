@@ -1,0 +1,89 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "Risk of Ruin: Fixed Fractional vs Fixed Ratio",
+      "description": "Fixed fractional vs fixed ratio position sizing, compared across 20 trades: where they diverge, the Ryan Jones delta, and a labelled heuristic for delta.",
+      "author": {
+        "@type": "Person",
+        "@name": "Kaizen"
+      },
+      "datePublished": "2026-11-05",
+      "publisher": {
+        "@type": "Organization",
+        "@name": "Monks Of Market"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is fixed fractional position sizing?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Fixed fractional position sizing means risking a fixed percentage of your current equity on every trade. Size = (equity × risk%) ÷ per-trade risk, where per-trade risk is the loss per unit at your stop. Because it uses current equity, the rupee risk shrinks automatically in a drawdown and grows as the account recovers. At ₹5,00,000 and 1%, the budget is ₹5,000; at ₹4,50,000, the same 1% is ₹4,500. Sizes are rounded down to whole tradable units, with any remainder left unused."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is fixed ratio position sizing, and what is a delta?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Fixed ratio position sizing, developed by Ryan Jones in *The Trading Game* (1999), sizes trades from accumulated profit, not from equity or per-trade risk. Its only freely chosen parameter is the delta: the profit per unit required to add one more unit. The short formula, valid only for starting size 1 unit, is N = 0.5 × [√(1 + 8P/Δ) + 1], where P is total closed-trade profit since the method started. At delta ₹50,000, reaching 2 units needs ₹50,000 of cumulative profit, 3 units needs ₹1,50,000, and 4 units needs ₹3,00,000 — each next unit costs more than the last."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Fixed fractional vs fixed ratio — which is better for a small account?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "There is no consensus winner, and published sources conflict: some recommend fractional for beginners and smaller accounts, for simplicity and capital protection, while others present ratio as attractive for small accounts because it scales once a profit threshold is met. Decide conditionally, not by verdict. If you trade divisible shares, fractional's continuous re-basing usually fits better. If you trade indivisible lots, both models bite through rounding, so granularity and your stated drawdown tolerance decide: if you must shrink on every loss, choose fractional; if your priority is not over-scaling on the way up and you can tolerate a losing run hitting a stepped-up size, ratio is the candidate — provided its delta passes the cross-check in this article."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does fixed fractional position sizing prevent risk of ruin?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No, not in the practical sense. In the idealised maths, proportional losses approach zero asymptotically and never reach exactly zero, so the model alone cannot take an account to precisely zero. But practical ruin — hitting a drawdown limit, a margin call, or a size too small to trade meaningfully — is entirely possible, and real gaps beyond a stop, costs, and forced liquidation can break the percentage cap the maths assumes. Fixed fractional reduces the speed at which a drawdown compounds; it does not prevent ruin. For the foundations, see risk of ruin explained."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I choose a delta for fixed ratio sizing?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No authoritative delta-selection formula was found, so use this article's clearly-labelled heuristic, not Jones's method: delta = average win per unit × W, where W is the number of average wins you require as proof before scaling (illustrative W = 3–5). With an average win of ₹10,000 per unit, W = 5 gives delta ₹50,000, the lane used in this article. Then cross-check: the profit proof required before the next step (N × Δ) must count as enough proof, and the cost of a typical losing run at the new size must stay within your stated drawdown tolerance; if either check fails, raise delta."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can you combine fixed fractional and fixed ratio sizing?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Only as a clearly-labelled original construction for this article, not as standard practice. The construction is: ratio gates the step-up, fractional caps the per-trade risk. Size steps up only when the ratio ladder earns the next rung, and on every trade the fractional cap still limits actual risk to your chosen percentage of current equity — if the ratio-earned size would breach the cap, you trade the smaller, cap-compliant size, and step-down follows whichever model shrinks first. No established combined method with rules and evidence was found, so treat this as an idea to test on paper, not a method with a track record."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What happens to fixed ratio size when you start losing — does it step down?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, but by rung, not by every loss. Under the symmetric single-delta formula, size steps down when cumulative profit falls below a ladder rung: at delta ₹50,000, P falling from ₹1,50,000 to ₹1,00,000 drops the formula from 3.0 to 2.56, which is 2 units after rounding down. It does not re-base off equity and does not shrink on every loss the way fractional does — between rungs, size stays flat no matter how many losses arrive. A smaller down-delta is an explicit choice that speeds step-down; it is not a precondition for stepping down at all."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why does fixed ratio growth slow down as profits grow?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Because each additional unit costs more profit than the last. Under the formula, units grow approximately with the square root of accumulated profit, and the incremental cost of the next unit is N × Δ: the 2nd unit costs 1 × delta, the 3rd costs 2 × delta, the 4th costs 3 × delta, and the 5th costs 4 × delta. At delta ₹50,000, that means ₹50,000, then a further ₹1,00,000, then a further ₹1,50,000, then a further ₹2,00,000. Growth slows because the price of growth keeps rising — which is exactly the control that stops a winning run from scaling the trader too fast."
+          }
+        }
+      ]
+    }
+  ]
+}

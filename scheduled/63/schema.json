@@ -1,0 +1,145 @@
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Article",
+   "headline": "How to Read an Option Chain",
+   "description": "Learn how to read an option chain step by step \u2014 layout, bid-ask, volume, open interest, PCR and max pain \u2014 worked on one illustrative chain for beginners.",
+   "author": {
+    "@type": "Person",
+    "@name": "Kaizen"
+   },
+   "datePublished": "2026-11-25",
+   "publisher": {
+    "@type": "Organization",
+    "@name": "Monks Of Market"
+   }
+  },
+  {
+   "@context": "https://schema.org",
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "How to read an option chain for beginners?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Follow six steps: note the underlying and its current price, choose an expiry a few weeks out, find the at-the-money strike, read the bid and ask, check volume and open interest, and note implied volatility. Calls sit left, puts right, strikes centre. The two columns that matter most are open interest \u2014 where money is parked \u2014 and change in open interest \u2014 whether new money is arriving or leaving."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What is an option chain?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "A table listing every available option contract for one underlying \u2014 an index or a stock \u2014 organised by expiration date and strike price. Calls sit on the left, puts on the right, strikes down the centre, expiry tabs across the top. Each row is one strike; each column is one fact about that strike: bid, ask, last price, volume, open interest, change in open interest."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What is open interest in an option chain?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "The number of contracts at a strike still open \u2014 created but not yet closed out or expired. It shows where money is parked, not where it is moving. On the illustrative chain here, the 25,100 call holds the heaviest call open interest (145,000 contracts) and the 24,900 put the heaviest put open interest (140,000)."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What is change in open interest?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "How much open interest rose or fell during the session. Static open interest is a photograph; change in open interest is the video. On the illustrative chain here, the 25,000 call's open interest rose by 15,600 while its premium rose from Rs 88 to Rs 95 \u2014 new longs coming in."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What does a high open interest mean?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Many positions are parked at that strike \u2014 many traders have committed money there. Heavy call open interest above the current price often behaves like resistance, and heavy put open interest below it like support, because sellers are positioned there. It is a map of where sellers sit, not a guarantee: levels hold until they do not, and breaks through them are violent."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How do I find support and resistance from an option chain?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Take the heaviest open interest on each side: the heaviest call open interest above the current price is the resistance read; the heaviest put open interest below it is the support read. On the illustrative chain here, that gives resistance near 25,100 (145,000 call contracts) and support near 24,900 (140,000 put contracts), with the index at 25,000 in between."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What is put-call ratio (PCR)?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Total put open interest divided by total call open interest \u2014 a sentiment gauge from the chain's own totals. Above 1 means more put than call open interest, read as bullish because put writers expect the puts they wrote to expire worthless; below 1 is read as bearish. On the illustrative chain here, PCR is 328,000 divided by 350,000, or about 0.94."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What is a good PCR value?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "There is no single good value \u2014 each instrument has its own typical range. As rough zones: above about 1.2 is crowded put writing, below about 0.8 crowded call writing, and around 0.9 to 1.1 fairly neutral. The chain here reads about 0.94, inside the neutral zone. Never use a PCR level as a buy or sell trigger."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What is max pain in options?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "The strike where the most options \u2014 calls and puts together \u2014 would expire worthless, where option buyers as a group lose the most. It is mostly looked at around weekly expiry, especially on expiry morning, and price sometimes drifts toward it and sometimes does not. On the illustrative chain here, max pain is 25,000: the total value of all six contracts at expiry is lowest there (Rs 16,300,000), against Rs 26,600,000 at 24,900 and Rs 29,000,000 at 25,100."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What is the difference between volume and open interest?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Volume counts trades; open interest counts positions. Volume is contracts traded today; open interest is contracts still open \u2014 created but not yet closed out or expired. If a contract is bought and sold an hour later, that adds to volume and zero to open interest; open interest only rises when a genuinely new position is created."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What is implied volatility in an option chain?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "The market's expectation of future movement, backed out from the option's price. High implied volatility means expensive options; low means cheap ones. Compare it across strikes and expiries to see how the market prices risk differently across the chain."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Which expiry should I choose on an option chain?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Start with expiries a few weeks out rather than the nearest expiry, because the nearest expiry decays fastest. The chain defaults to the nearest expiry; the tabs across the top let you pick a later one. Weekly expiries exist alongside monthly ones; the current expiry day for a contract is on the exchange's official contract-specification page."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What does the bid-ask spread tell me on an option chain?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "The gap between the bid and the ask is a cost on every entry and exit, because you buy at the ask and sell at the bid. Tight spreads mean easy entry and exit; wide spreads warn of illiquidity. Always check the spread before entering. On the illustrative chain here, spreads are small \u2014 Rs 4 per unit on the 25,000 call."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How do I read an option chain for NIFTY?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Exactly the same way as any other index chain. NIFTY is the underlying index; its chain has the same layout and the same columns. Follow the same six steps: note the index level, pick an expiry a few weeks out, find the at-the-money strike, read the bid and ask, check volume and open interest, and note implied volatility."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Can the option chain predict where the market will go?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "No. The chain maps positioning and pricing \u2014 where traders have placed their bets, what the market charges for each strike, and what mood the totals describe. It does not predict price. A neutral PCR and a clean support level can both be right about positioning and still be followed by a move nobody on the chain expected. Reading a chain well does not guarantee a profitable trade."
+     }
+    }
+   ]
+  }
+ ]
+}

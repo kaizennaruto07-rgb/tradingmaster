@@ -1,0 +1,105 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "Walk-Forward Testing Explained: How to Tell Whether Your Strategy Survives Unseen Data",
+      "description": "Walk-forward testing explained: run rolling windows, read the walk-forward efficiency ratio, and reach a go, fix, or reject verdict before risking capital.",
+      "author": {
+        "@type": "Person",
+        "@name": "Kaizen"
+      },
+      "datePublished": "2026-11-01",
+      "publisher": {
+        "@type": "Organization",
+        "@name": "Monks Of Market"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is walk-forward testing in trading?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Walk-forward testing divides historical data into alternating in-sample optimisation windows and out-of-sample test windows. Parameters are tuned on each in-sample window, locked, and tested untouched on the next unseen window, then the windows step forward and the out-of-sample periods are stitched into one continuous record. It tests a strategy on data it was never tuned on, repeated across many windows."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How is walk-forward testing different from backtesting?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A standard backtest optimises and reports on the same data, so it is circular and can memorise past noise. Walk-forward testing always tests on unseen data, repeated across many windows, so it measures both survival on unseen data and stability over time. A backtest shows what worked in the past; walk-forward testing shows whether it keeps working on new data."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the walk-forward efficiency ratio, and what is a good value?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The walk-forward efficiency ratio, or WFE, is out-of-sample performance divided by in-sample performance, using the same metric on both sides, expressed as a percentage. As widely used rules of thumb: above ~50–60% with consistent folds is a go, 30–50% is the grey zone requiring the fix branch in Section 5, and below ~30% is a reject. The ratio is meaningless if the in-sample figure is near zero or negative."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How many walk-forward periods do I need?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A minimum of 8 out-of-sample periods, or folds, with 10 or more preferred, and every fold reported. Fewer than 5 folds cannot distinguish a robust strategy from a lucky one. The 8-fold minimum is a minimum for a first verdict, not a guarantee of statistical significance."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Should I use rolling or anchored walk-forward windows?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Use rolling as the default, when the strategy's parameters plausibly drift with regime. Use anchored only for slow structural strategies where old data still matters and you can argue why. Decide on strategy logic before running the test, never after seeing which variant flatters the result, and never switch mid-loop."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What in-sample to out-of-sample ratio should I use?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A common starting point is roughly 3:1 or 4:1 — for example, 12 months in-sample with 3 months out-of-sample, or 24 months in-sample with 6 months out-of-sample as in this article's worked example. The binding constraint is trades per out-of-sample window, not calendar time: convert the window into a trade count for your own frequency, as shown in Section 4, before trusting a fold."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can walk-forward testing prevent all overfitting?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. It reduces parameter overfitting only. It cannot catch an overfitted choice of rules, instrument, or timeframe, because those were fixed before the test began. It never eliminates overfitting, and no honest version of the method claims to prevent all of it."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What should I do if my strategy fails walk-forward testing?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Reject or rebuild from frozen rules — widen the parameter plateau, simplify the rules, or gather more history — then re-run the full loop. Do not re-optimise on the same history and re-run, do not drop bad folds, and do not just re-run the failing folds. A fail is information, not an invitation to tune until the same history passes."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does passing walk-forward testing mean my strategy will profit live?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. A pass earns the next ladder rung: final holdout, then paper trading, then live small. Slippage, liquidity gaps, and regime shifts still apply, and tested results do not predict live results. Passing walk-forward testing is a validation step, not a live-profit guarantee."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How is walk-forward testing different from a single in-sample/out-of-sample split?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A single split gives one out-of-sample result with low power and no view of parameter stability over time. Walk-forward testing repeats the split across many stepping windows and stitches the out-of-sample periods into one continuous record, showing both unseen-data performance and consistency across conditions. Split methodology in depth belongs to the companion piece on the in-sample versus out-of-sample split, mentioned here in plain text only."
+          }
+        }
+      ]
+    }
+  ]
+}

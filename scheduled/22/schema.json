@@ -1,0 +1,97 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "R-Multiples: How Professionals Measure Expectancy",
+      "description": "Learn R-multiples in trading: define 1R from your initial stop, score every trade in R, and turn your journal into expectancy, SQN and break-even win rate.",
+      "author": {
+        "@type": "Person",
+        "@name": "Kaizen"
+      },
+      "datePublished": "2026-11-04",
+      "publisher": {
+        "@type": "Organization",
+        "@name": "Monks Of Market"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is an R multiple in trading?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "An R multiple is a single trade's profit or loss scored as a multiple of the risk you planned to take on that trade. If you risked ₹5,000 and made ₹10,000, that trade is +2R. If you were stopped out for your planned ₹5,000, it is −1R. It is a way of comparing trades of different sizes on one scale."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do you calculate an R multiple?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Divide the trade's profit or loss (net of costs) by its initial risk: R-multiple = trade P&L ÷ 1R, where 1R = |entry − initial stop| × position size (for a short: initial stop − entry, times position size). At ₹5,000 risk: +₹10,000 is +2R, +₹2,500 is +0.5R, −₹5,000 is −1R, and a breakeven close is 0R."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does 2R mean in trading?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A win of twice the amount you planned to risk. If 1R was ₹5,000, a +2R trade made ₹10,000 net of costs. It says nothing on its own about how good the system is — one +2R trade among many −1R losses can still be a losing system, which is why expectancy averages all trades rather than celebrating one."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is a good R multiple — or a good expectancy per trade?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "There is no honest single number to aim at, and this article claims none. The direction that matters is positive expectancy in R, read together with sample size, costs already subtracted, and outlier dependence. A +0.55R expectancy on 10 trades is a description of those 10 trades, not a benchmark; a +0.20R expectancy on a large, honestly scored sample with costs included is worth more than a +1R figure on a tiny or cherry-picked one. Beware any source that hands you a \"good expectancy\" target without mentioning sample size and costs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How is R different from risk-reward ratio?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Risk-reward ratio is the plan, set before entry: the distance to your target versus the distance to your stop. R-multiple is the result, measured after the trade closes: what actually happened, scored against initial risk. A 1:3 plan exited at +1.4R is a +1.4R trade. If your journal records the target instead of the outcome, you are grading intentions, not results."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How many trades do you need to calculate expectancy?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "You can calculate an average on any number of trades, but a small average is not reliable evidence. Van Tharp's 2005 guidance, cited in the research for this article, is that thirty trades is usually considered the minimum to begin to reflect the population and begin estimating a system's performance. Treat that as guidance, not a law: larger samples give a clearer picture, and the market conditions during the sample matter too."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is SQN, and what is a good SQN score?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "SQN (System Quality Number, from Van Tharp's work) is SQN = (mean R × √N) ÷ standard deviation of R, where N is the number of trades and the standard deviation is the population standard deviation of the R-multiples list (STDEV.P in a spreadsheet). It is a consistency measure: it rises when average R is high relative to its variability, but it also rises mechanically with sample size, so it must be read alongside N. Worked example: 40 trades, mean +0.8R, standard deviation 1.5R gives √40 × (0.8 ÷ 1.5) ≈ 3.37. This article deliberately gives no \"good SQN\" band as a verified scale, because secondary sources conflict on the boundaries and no primary source confirming one set of bands was found; treat any quoted SQN band as approximate, commonly cited guidance, not a firm grade."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can you have a high win rate and still lose money?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. A system winning 70% of the time with +0.3R average wins and −1.5R average losses has expectancy (0.70 × 0.3) − (0.30 × 1.5) = 0.21 − 0.45 = −0.24R per trade — it wins most of the time and loses money. Win rate without win and loss sizes is an incomplete sentence."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do professional traders measure performance?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "One professional method is the R-multiple method: one unit across trades of different sizes. Define 1R from the initial stop, score every trade as a realised multiple, average those multiples into expectancy, read the distribution for outliers and beyond-−1R losses, and then — separately — run ruin and drawdown calculations that the R distribution alone cannot supply. The unit is simple; the discipline of using it honestly is the professional part."
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "How Many Losing Trades in a Row Is Normal?",
+      "description": "How many losing trades in a row is normal? It depends on win rate and sample size. Look up your expected streak and apply the keep, reduce, or pause verdict.",
+      "author": {
+        "@type": "Person",
+        "@name": "Kaizen"
+      },
+      "datePublished": "2026-11-07",
+      "publisher": {
+        "@type": "Organization",
+        "@name": "Monks Of Market"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How many losing trades in a row is normal?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It depends on your win rate and sample size — there is no universal normal number. Over 100 trades, a 50% win rate expects 6–7 in a row, a 60% win rate expects 4–5, and a 40% win rate expects 9–10. Find your win rate and sample size, look up the band, apply the point-value rule (a streak is in the normal band if and only if it is at or below the log-formula point value plus one, compared as a real number), and then run the full verdict procedure: both labelled probabilities, your own backtest maximums, and the 20-trade floor."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the probability of losing 5 trades in a row?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Both probabilities, labelled, because they answer different questions. Probability 1, the specific-run probability (q^N): for a 60% win rate, the chance that a specific next 5 trades all lose is 0.4^5, about 1.0%. Probability 2, the at-least-one probability by exact dynamic programming: for a 60% win rate over 100 trades, the chance that at least one 5-streak appears somewhere inside those 100 trades is 45.9%, about 46%. The first number describes one pre-specified run; the second describes a streak appearing anywhere in your sample. Never quote one without its label."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can a good strategy lose 10 trades in a row?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, at low win rates and long horizons — and the numbers show which combinations make 10 normal and which make it a red flag. By exact dynamic programming, the probability of at least one 10-streak is 20.5% for a 40% win rate over 100 trades, about one sample in five, so a 10-streak there is not a red flag by length alone. It is 21.5% for a 50% win rate over 500 trades, and 38.5% for a 50% win rate over 1,000 trades. By contrast, the specific-run probability of 10 straight losses at a 60% win rate is only 0.011% — which is why the two probabilities must never be confused. In every case, the final word belongs to your own backtest maximums: a 10-streak beyond your backtested maximum consecutive losses, or beyond your backtested maximum drawdown, is a red flag whatever the generic table says."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I know if my losing streak means my strategy is broken?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Run the verdict procedure. Look up your expected longest streak for your win rate and sample size, compute both labelled probabilities, and then compare against your own backtest — live streak versus backtested maximum consecutive losses, and live drawdown versus backtested maximum drawdown. Either maximum breached means pause and review. Apply the 20-trade floor first: below about 20 trades since the last review, the only verdict is \"not enough data\". Then branch: normal band means trade the plan at normal size, the grey zone means reduced size with no new discretionary tweaks until a win at reduced size, and a red flag means stop, review out of sample, and paper-trade the review."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Should I stop trading after 3 losses in a row?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Separate the two decisions. The session rule is to stop the session after 2 consecutive losses or on hitting the daily loss limit, whichever comes first — so yes, a session can be over well before 3 losses, and that is a session decision, not a strategy verdict. The strategy verdict is a different decision, made over your full sample with the table, both probabilities, and your backtest maximums. Stopping a session does not mean your strategy is broken, and a normal-band streak does not override a session stop."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does a win become more likely after several losses?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. This is the gambler's fallacy. Under the independence baseline, each trade's odds are unchanged by previous results, so the probability that the next trade loses is still q, whatever the streak so far. A win is not due after losses. The caveat is that real strategies can cluster losses when the regime changes, positions correlate, or execution drifts — and clustering is a reason to review, not a reason to believe a win is owed."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much should I risk per trade so a losing streak does not ruin me?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The widely cited convention is about 1–2% of the account per trade, shown here with the compounded survival math rather than as a guarantee. On a Rs 1,00,000 account, charges excluded, 10 losses in a row cost 9.56%, leaving Rs 90,438, at 1% risk per trade, and 18.29%, leaving Rs 81,707, at 2% risk per trade. No risk level guarantees survival, and the real cost is higher once charges are included. For the sizing maths, see how to size positions after a losing streak and the position size tool article; they are not re-taught here."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How many trades do I need before judging a strategy?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "At least about 20 trades since the last review before any verdict at all — and below that floor, the only verdict is \"not enough data — keep size small, keep logging\". A 3-loss streak inside 5 trades tells you almost nothing. For the full treatment of how many trades validate a strategy, see how many trades you need to validate a strategy; this article gives the short answer only."
+          }
+        }
+      ]
+    }
+  ]
+}

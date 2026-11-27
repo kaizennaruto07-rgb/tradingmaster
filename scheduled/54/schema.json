@@ -1,0 +1,113 @@
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Article",
+   "headline": "Option Volatility and Pricing \u2014 Summary (Sheldon Natenberg)",
+   "description": "A plain-language summary of Natenberg's Option Volatility and Pricing: implied vs historical volatility, skew, the Greeks on one position, and how to use it.",
+   "author": {
+    "@type": "Person",
+    "@name": "Kaizen"
+   },
+   "datePublished": "2026-11-21",
+   "publisher": {
+    "@type": "Organization",
+    "@name": "Monks Of Market"
+   }
+  },
+  {
+   "@context": "https://schema.org",
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "Is Option Volatility and Pricing good for beginners?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Not as a first book. It is the benchmark text on volatility and pricing, and the book to read once implied volatility and the volatility surface start shaping your trade selection \u2014 but a reader with no mechanics yet will struggle with it. Several guides list it even for motivated beginners, because understanding volatility early saves money, and that is fair \u2014 but only if the beginner already understands calls, puts, and expiry. Learn the mechanics first, then read Natenberg."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What is implied volatility in simple terms?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Implied volatility is the market's expectation of how much the underlying will move in the future, read off the option's price. It is not measured from past prices. It is backed out of what the option actually costs: given the option's price and the other pricing inputs, what level of future volatility would make that price fair? Higher implied volatility means more expensive options, because the market is charging more for expected movement."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What is the difference between historical and implied volatility?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Historical volatility looks backwards: it measures how much the underlying actually moved in the past. Implied volatility looks forwards: it is the market's expectation of how much the underlying will move, priced into the option. The comparison between the two is the trader's first pricing question \u2014 is this option expensive or cheap relative to what the underlying usually does?"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What are the option Greeks and why do they matter?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "The Greeks measure how an option's price responds to different changes: delta to the underlying's price, gamma to how fast delta changes, theta to passing time, vega to volatility, and rho to interest rates. They matter because on a live position they move together \u2014 a bought call gains from direction, gamma, and volatility, but pays for all three with time decay every day. Reading them together, on one position, is what tells you what you are actually betting on and what you are paying for it."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Is Natenberg's book worth reading?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes, if you are at the right stage. It is one of the most widely read advanced options texts, the book professional traders study, and the deepest treatment of volatility and pricing in print. It is worth reading once you already know basic options mechanics and have started noticing that volatility, not direction, is deciding your results. It is not worth reading as a first book, and it will not tell you when to trade."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What is volatility skew and smile?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "If you plot implied volatility across strikes for one expiry, you do not get a flat line. Options further from the current price tend to carry higher implied volatility than at-the-money options \u2014 that U-shape is the volatility smile. In equity markets the curve is usually tilted, with out-of-the-money puts carrying higher implied volatility than out-of-the-money calls \u2014 that tilt is the volatility skew. The market charges more for downside protection because sharp falls hurt more and happen faster than gradual rises."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Do I need maths to read Natenberg?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "You need comfort with the idea that an option's price is a statement about the future, and that volatility is the loudest part of that statement \u2014 but you do not need advanced mathematics to follow the book's argument. Natenberg builds from what volatility means to how it shows up in prices, step by step. If you can follow a worked explanation and you already understand the mechanics, you can read it. The companion Workbook, published in December 2017, lets you practise the maths with exercises if you learn by doing."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What is the Black-Scholes model in simple terms?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "It is a pricing model that takes five inputs \u2014 the underlying's price, the strike price, the time to expiry, the interest rate, and volatility \u2014 and produces one output: a theoretical value for the option. Its point is not the formula but the comparison: the model gives you a reference price, the market gives you an actual price, and your job is to ask why they differ. Real markets violate its assumptions \u2014 volatility is not constant and returns are not perfectly normal \u2014 so use it as a reference, not as a truth."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Which is better, Options as a Strategic Investment or Option Volatility and Pricing \u2014 and which first?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "They do different jobs, so \"better\" is the wrong question. Options as a Strategic Investment by Lawrence G. McMillan is the complete reference you return to by chapter whenever a strategy needs thinking through. Option Volatility and Pricing is the deep explanation of why options are priced the way they are. Read Natenberg first if volatility and pricing are your current question, and keep McMillan on the desk as the reference from the start. If you only buy one of the two, buy the one that matches your current stage."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How long does it take to read Option Volatility and Pricing?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "There is no single answer, because this is not a book to read once and shelve. A motivated reader with the mechanics already in place can work through the second edition over several weeks of steady reading \u2014 but the book is meant to be read slowly, with the exercises, and re-read as your trading raises new questions. The honest measure is not the reading time but the working time: a chapter you have worked through is worth five chapters you have skimmed."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Should I read Natenberg before trading options?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "No \u2014 not before your first trades. Learn the mechanics first, place some trades (real or paper), and track them. Read Natenberg when volatility is already a question you are asking, because that is when the book's answers land. The ladder in this article gives the order: read implied vs historical volatility on one underlying, paper-trade one volatility idea and journal it, and only then read the book cover to cover with the Workbook."
+     }
+    }
+   ]
+  }
+ ]
+}

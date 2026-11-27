@@ -1,0 +1,121 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "Iron Condor Strategy: How the Four Legs Work, Where Profit Ends, and What the Worst Case Really Costs",
+      "description": "Learn the iron condor strategy: four legs, profit zone, breakevens, max profit and max loss, expectancy honesty, and adjustments — with one worked example.",
+      "author": {
+        "@type": "Person",
+        "@name": "Kaizen"
+      },
+      "datePublished": "2026-11-11",
+      "publisher": {
+        "@type": "Organization",
+        "@name": "Monks Of Market"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is an iron condor in options trading?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "An iron condor is a four-leg, non-directional, net-credit, defined-risk position on one underlying with one expiry. It combines a bull put spread below the current price with a bear call spread above it. It keeps its full net credit at expiry only if the underlying closes between the two short strikes, and its maximum loss is the wider wing width minus the net credit, on one side only."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do you construct an iron condor?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "In strike order, lowest to highest: buy a further out-of-the-money put (long put), sell a nearer out-of-the-money put (short put), sell a nearer out-of-the-money call (short call), and buy a further out-of-the-money call (long call). All four legs share one underlying and one expiry. Every short leg stays paired with its protective long leg on the same side."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the maximum profit and maximum loss in an iron condor?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Maximum profit per unit, before charges, equals the net credit received. Maximum loss per unit, before charges, equals the wider wing width minus the net credit. In the worked example, the net credit is 60 per unit, so maximum profit is 60 per unit and maximum loss is 300 − 60 = 240 per unit, both before charges."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do you calculate iron condor breakeven points?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Lower breakeven = short put strike − net credit. Upper breakeven = short call strike + net credit. In the example: 24,700 − 60 = 24,640 on the downside, and 25,300 + 60 = 25,360 on the upside. Both are expiry breakevens before charges; charges narrow the profitable zone in practice."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Iron condor vs long strangle: what is the difference?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "They are mirror images in intent. The long strangle buyer pays a debit for a big move and risks only the premium paid. The iron condor seller collects a credit for stillness and risks a multiple of the credit — 240 per unit against a 60 per unit credit in the example. The strangle needs movement; the condor needs the absence of it."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Iron condor vs butterfly spread: which is better for a range-bound market?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Neither is blanket-better; it depends on how precise the range view is. A butterfly has a narrower profit peak and suits a view that the underlying will land close to one central level. An iron condor has a wider, flat profit zone between two distinct short strikes and suits a broader view that the underlying will stay somewhere inside a range. Choose by the precision of the view, not by reputation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "When should you use an iron condor instead of buying options?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Use an iron condor when your view is range-bound or low-volatility, implied volatility is elevated enough that the credit is worth collecting, the short strikes can sit well out of the money, and all four legs are liquid — liquid index options are the usual default in India. Buy options instead when your view is directional or you expect a large move, since a condor's profit is capped at the credit and a big move is exactly what breaches a wing."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much capital do you need for an iron condor?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Capital at risk is set by maximum loss, never by the credit. In the example, that is 240 per unit plus charges, before converting to a real trade size. Multiply the per-unit maximum loss by the lot size in force at trade time and add charges to get the capital at risk for one lot. No lot-size total is given in this article, because the lot size was not verified from a primary source for this run."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "When should you exit an iron condor?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "As widely repeated rules of thumb, not guarantees: close at around 50% of maximum profit (about 30 per unit in the example), or by roughly 21 days to expiration if that target has not been reached. Exit sooner if a side is tested beyond your original thesis and rolling or converting no longer fits your view — do not hold a broken range thesis to expiry in the hope of recovering the credit."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do you adjust an iron condor when the market moves against you?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Roll the tested spread further out in strike and/or out in time to gain room, accepting a narrower profit zone or more time, usually for a net debit or reduced credit. Roll the untested spread closer to the current price at the same width to collect extra credit, which pushes the tested breakeven further out and lowers the worst case, at the cost of a narrower profit zone. If the range thesis is invalidated, convert to a directional spread or exit outright. Never widen a rolled spread to collect more premium, since widening raises defined risk."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What happens to an iron condor if the market trends strongly?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The tested side slides down the partial-loss slope: past its short strike, profit shrinks point for point, crosses zero at the breakeven, and reaches maximum loss at the long strike. In the example, a strong fall to 24,400 or below loses 240 per unit, and a strong rise to 25,600 or above also loses 240 per unit, both before charges. The other side cannot also reach maximum loss at the same time, but that is cold comfort — one breached wing is the full worst case on its own."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is an iron condor profitable? Why do iron condors lose money despite a high win rate?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "An iron condor can be profitable over a run of trades, but only if its win rate clears the hurdle its own ratio sets. At the example's 1:4 credit-to-risk ratio, the break-even win rate is 80% before charges — four quiet wins of 60 per unit are exactly erased by one breached wing losing 240 per unit. Charges raise the hurdle further. That is why a high win rate misleads on its own: frequent small wins and rare large losses can still net to zero or worse, and no return is promised here."
+          }
+        }
+      ]
+    }
+  ]
+}

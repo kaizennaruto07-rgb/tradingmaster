@@ -1,0 +1,121 @@
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Article",
+   "headline": "Stop Loss in Trading: The Complete Guide",
+   "description": "Stop loss placement, sizing from the stop, and trailing rules in one complete system \u2014 with a worked example, so every trade enters with its exit decided.",
+   "author": {
+    "@type": "Person",
+    "@name": "Kaizen"
+   },
+   "datePublished": "2026-11-15",
+   "publisher": {
+    "@type": "Organization",
+    "@name": "Monks Of Market"
+   }
+  },
+  {
+   "@context": "https://schema.org",
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "How do I set a stop loss in trading?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Find the invalidation level first \u2014 the price at which your trade idea is wrong, usually just beyond support for a long trade or resistance for a short trade. Place the stop just beyond that level, measure the distance from your entry, and divide the rupees you will risk by that distance to get your position size. Decide before entry when, if ever, the stop moves."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What percentage should I set my stop loss at?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "There is no universal percentage, because the right distance depends on the stock's structure and volatility, not on a fixed number. A 2% stop on a stock that moves 4% a day will be hit by ordinary noise, while the same 2% on a slow stock may be far too wide. Use a percentage only as a sanity cap: if your structure or ATR stop implies a percentage far outside your usual range, check the trade before entering."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Where exactly should I place a stop loss \u2014 below support, or a fixed distance?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Below support (for a long trade), with a small buffer beyond it \u2014 not on support itself, which gets tested, and not at an arbitrary fixed distance, which has no connection to the trade idea. If no clear support exists, use a volatility-based distance such as 2x ATR instead."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What is an ATR stop loss, and what multiple should I use?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "An ATR stop places the exit a multiple of the Average True Range \u2014 a measure of the stock's typical movement \u2014 away from the entry, so the stop widens in volatile conditions and tightens in quiet ones. Multiples of 1.5x to 2x ATR are the most commonly used, with some guides going to 3x. A wider multiple means fewer noise stop-outs but a larger loss per hit, and therefore a smaller position for the same risk."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What is a trailing stop loss, and when does it hurt?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "A trailing stop follows price in your favour at a fixed distance and never moves backwards, progressively locking in gains. It hurts in choppy, sideways markets, where it exits trades on every oscillation, and when the trail is too tight for the stock's volatility, which turns it into an exit timer rather than protection. It helps most in strong trends and in strategies that depend on occasional big winners."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Should I ever move my stop loss?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Only in your favour, and only under a rule decided before entry: to breakeven once the trade has moved meaningfully, and then trailing as price continues. Never move a stop further away to avoid being stopped out \u2014 that converts a planned small loss into an unplanned large one and teaches you that stops are negotiable."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Does a stop loss guarantee I exit at that price?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "No. In gaps and fast moves, the market may never trade at your stop level, and the exit happens at the next available price, which can be worse. Slippage is a normal market mechanic, not a malfunction. Size positions knowing that the actual loss on a gapped trade can exceed the planned loss."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Why do I keep getting stopped out before the price reverses?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Usually one of three causes: the stop sits exactly on an obvious level that gets tested, the stop is tighter than the stock's normal noise (check it against ATR), or the buffer beyond the level is too small. Review each stopped-out trade and record whether the stop was wrong or the trade was wrong \u2014 only the first case calls for changing the placement."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How does a stop loss relate to position size?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "The stop decides the size, not the reverse. Divide the rupees you will risk on the trade by the distance from entry to stop, and the result is the position: Rs 1,000 of risk divided by a Rs 50 distance is 20 shares; the same risk divided by a Rs 60 distance is 16 shares. Keeping the size fixed while widening the stop silently multiplies your risk."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Stop loss vs take profit \u2014 how do they work together?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "They are the two pre-decided exits of a single plan: the stop marks where you are wrong, the target marks where you bank the gain, and their ratio \u2014 reward divided by risk \u2014 is checked before entry. In the worked example, risking Rs 50 per share for a Rs 100 target is a 2-to-1 ratio. Checking it after entry invites moving both levels until any ratio can be justified."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Is a stop loss enough on its own to manage risk?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "No. A stop caps the loss on one trade, but risk management also needs a position size derived from the stop, a per-trade risk amount kept small relative to capital, and a strategy worth trading in the first place. A perfect stop on a bad strategy still loses money \u2014 it only loses it in controlled pieces."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What is a time-based stop loss?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "A time stop exits a trade that has not moved in your favour within a set period, regardless of price, to free capital from dead trades. It is a supplement to a price stop, never a replacement: a trade can go badly wrong long before its deadline, and only a price stop protects against that."
+     }
+    }
+   ]
+  }
+ ]
+}

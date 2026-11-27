@@ -1,0 +1,81 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "The Day Trader Failure Funnel: How 100 New Day Traders Thin to 1–2 — and Which Gate You Are Standing At",
+      "description": "100 new day traders enter the funnel: ~40 leave in month 1, ~20 remain at year 2, ~7 at year 5 — and only ~1–2 are predictably profitable. Find your gate.",
+      "author": {
+        "@type": "Person",
+        "@name": "Kaizen"
+      },
+      "datePublished": "2026-11-04",
+      "publisher": {
+        "@type": "Organization",
+        "@name": "Monks Of Market"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What percentage of day traders quit?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "About 80% of all day traders quit within the first two years (Taiwan Stock Exchange, 1992–2006, Barber, Lee, Liu and Odean lineage), and only about 7% remain after five years. These are attrition rates for that population and period — not a universal \"failure rate\" for all traders everywhere."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How many day traders quit in the first month?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Nearly 40% of day traders in the Taiwan study day-traded for only one month. Month 1 is the expectations gate: unrealistic expectations meeting first real losses, with no system and no risk plan."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long do most day traders last?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Most do not last two years. The funnel runs: ~60 of 100 after month 1, ~20 after two years, ~13 after three years, ~7 after five years (Taiwan, 1992–2006). Traders who trade heavily (20+ days) survive at much higher rates — a different population, not a contradiction."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What percentage of day traders are profitable?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "About 13% earn profits net of fees in a typical year, but less than 1% demonstrate predictably, reliably positive returns after fees, and roughly 1.6% are predictably profitable net of fees in an average year (Taiwan research lineage). A single profitable year is not predictability."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why do day traders quit?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "At different gates, for different reasons: expectations and leverage blow-ups in month 1; cost drag, strategy-switching, and revenge trading by year 2; no feedback loop by year 3; rule drift, boredom, and life changes by year 5. There is no single reason — that is why a funnel, not a list, is the right shape for the answer."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can you survive as a day trader?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Survival is possible — about 7 in 100 are still trading after five years in the Taiwan data — but survival is not profitability. Only about 1–2 of the original 100 are predictably profitable. The survivor behaviours in this article (written system, fixed risk, cost accounting, fixed samples, journal and review, unchanging position size) are what the survivors did; they are not a guarantee."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How many years does it take to become a profitable day trader?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The data does not give a \"years to profitability\" number, and any article that does is inventing one. What the data shows is a selection process: most traders leave within two years, and predictability — not a single good year — is rare even among five-year survivors. Judge yourself by process compliance over a fixed sample, not by a calendar target."
+          }
+        }
+      ]
+    }
+  ]
+}

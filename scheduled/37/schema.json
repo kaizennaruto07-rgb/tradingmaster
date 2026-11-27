@@ -1,0 +1,121 @@
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Article",
+   "headline": "Protective Put Strategy: How to Insure Shares You Own, What It Costs, and When It Fails",
+   "description": "A protective put caps loss at \u20b9130 per share in our \u20b92,000/\u20b91,900/\u20b930 example. Learn the at-expiry floor, breakeven, payoff and when the premium is worth it.",
+   "author": {
+    "@type": "Person",
+    "@name": "Kaizen"
+   },
+   "datePublished": "2026-11-12",
+   "publisher": {
+    "@type": "Organization",
+    "@name": "Monks Of Market"
+   }
+  },
+  {
+   "@context": "https://schema.org",
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "What is a protective put in options trading?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "A protective put is long stock you own plus one long put option on the same underlying, one put per lot of shares held. The put gives you the right to sell at the strike price, so at expiry your loss stops growing once the stock falls below the strike \u2014 in exchange for the premium you paid upfront."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How does a protective put work, step by step?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Own or buy the shares, buy a put on the same stock in the matching quantity, pay the premium upfront as a sunk cost, and hold to expiry for the floor to be fully realised. Indian stock options are European-style and physically settled, so exercise happens only at expiry; before expiry the put's market value moves with implied volatility and time decay, and selling the put early is not the same act as exercising it."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What is the maximum loss and breakeven in a protective put?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "In the worked example \u2014 buy at \u20b92,000, \u20b91,900 put, \u20b930 premium \u2014 the maximum loss is (\u20b92,000 \u2212 \u20b91,900) + \u20b930 = \u20b9130 per share, before charges, suffered at any expiry price at or below \u20b91,900. The breakeven is \u20b92,000 + \u20b930 = \u20b92,030 per share. In general, maximum loss = (purchase price \u2212 strike) + premium, and breakeven = purchase price + premium."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Is a protective put worth the premium cost?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "It depends on the fall you are insuring against and the window you are insuring over. In the example, the put turns a \u20b9500 outright loss at \u20b91,500 into a \u20b9130 loss, but costs the full \u20b930 if the stock ends flat at \u20b92,000, and trims a rally to \u20b92,500 from \u20b9500 to \u20b9470. Repeated every quarter at the assumed \u20b930, the drag is \u20b9120 per share, or 6.0% of the purchase price, before charges. The premium is worth it when the insured fall is large relative to the premium and the window is real; it is not worth it as a permanent, always-on cost."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Protective put vs stop loss: which protects better in a gap-down?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "On expiry maths, the protective put protects better: a gap through the strike does not change its expiry payoff, so the loss in the example stays capped at \u20b9130 per share. A stop-loss market order triggered by a gap executes at the next available price, which can be well below the stop level, while a stop-limit order risks not filling at all. That contrast is about expiry maths versus order execution \u2014 it is not a promise about the put's interim value during the gap, and a stop loss has the genuine advantage of costing no upfront premium."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Protective put vs covered call: what is the difference?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "They are mirror images. A protective put costs premium and keeps upside uncapped: you pay to put a floor under losses. A covered call earns income and caps upside: you take in premium in exchange for giving away gains above a level. One buys insurance, the other sells upside for income \u2014 they solve different problems, and the covered call is covered in its own staged sibling spoke."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What is a married put, and is it the same as a protective put?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes. A married put is the same position \u2014 long stock plus a long put on the same underlying \u2014 named for the timing of buying the stock and the put at the same time. It is a synonym, not a second strategy, and its payoff, maximum loss and breakeven are identical."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "When should you use a protective put?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "When you want to stay invested through a named risk window without selling, when you are sitting on a gain you do not want to give back but do not want to bank by selling, or when your conviction is intact but your near-term downside tolerance is limited. In each case, match the expiry to the window, and do not hedge every position permanently."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Can you lose money with a protective put?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes. In the worked example the maximum loss is \u20b9130 per share, before charges \u2014 the \u20b9100 deductible plus the \u20b930 premium \u2014 and that loss is suffered in full at any expiry price at or below \u20b91,900. If the stock ends above the strike, the full \u20b930 premium is lost even though the shares may have risen. A protective put limits loss at expiry; it does not remove it."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Does a protective put cap your upside?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "No. Above the strike, the position rises rupee for rupee with the stock, with no cap \u2014 in the example, a rally to \u20b92,500 gives \u20b9470 per share. The premium trims the rally by exactly \u20b930 per share, and the stock must first rise to the \u20b92,030 breakeven before the position is profitable."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How do you choose the strike price for a protective put?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Choose it as a deductible, not by shopping for the cheapest premium. A higher strike means a smaller deductible and a tighter floor, but generally a higher premium; a lower strike is cheaper but leaves a bigger deductible, so small falls go uncompensated. Decide how much of a fall you will absorb yourself, then pick the strike that matches that deductible, with expiry matched to your risk window."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What happens if the stock rises and the put expires worthless?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "You keep the shares and the full rally, minus the premium. In the example, a rise to \u20b92,100 leaves a \u20b970 per share profit (\u20b9100 on the stock, less \u20b930 premium), and a rise to \u20b92,500 leaves \u20b9470. The put expiring worthless is the normal outcome of insurance that was not needed \u2014 the cost was the premium, paid upfront, and it is gone whether or not the protection was used."
+     }
+    }
+   ]
+  }
+ ]
+}

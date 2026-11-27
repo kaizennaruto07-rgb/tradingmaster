@@ -1,0 +1,97 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "The 90-90-90 Rule in Trading: Is It True, What the Real Data Says, and How to Stay Out of It",
+      "description": "The 90-90-90 rule is a rhyme, not a measurement — but SEBI, EU and Brazil data show most traders lose. Here is why, and how to survive your first 90 days.",
+      "author": {
+        "@type": "Person",
+        "@name": "Kaizen"
+      },
+      "datePublished": "2026-11-02",
+      "publisher": {
+        "@type": "Organization",
+        "@name": "Monks Of Market"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Is the 90-90-90 rule true?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No, not as a measured statistic — no published study produces the triple \"90% lose 90% in 90 days.\" But the measured loss rates behind it are nearly as harsh, which is why it works as a warning rather than as a fact."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the 90% rule in trading?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It is the folk saying that 90% of traders lose 90% of their money within the first 90 days — three separate claims about how many lose, how much they lose, and how fast. Each claim must be checked separately against the evidence, and none of them is a published measurement in that exact form."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why do 90% of traders lose money?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The repeatable causes are no written plan, oversized risk, emotional exits, unrealistic expectations, and cost bleed from overtrading — not intelligence, and not secret indicators. The data points at preparation, process, and risk control."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How many traders actually lose money?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "By market, period, and population: 89% of Indian individual equity F&O traders lost in FY22, 93% lost over FY22–FY24, and about 91% lost in FY25 (SEBI studies); 74–89% of EU retail CFD accounts typically lost money in the March 2018 analyses; in Brazil, the share of mini-Ibovespa futures day traders with a positive net profit fell from 29.8% at 1 day to 3.0% beyond 300 days (starters 2013–2015); and 7 in 10 Indian individual intraday equity-cash traders lost in FY23."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the biggest mistake new traders make?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Oversized risk without a written plan — the combination that lets a normal losing streak end the account before any question about the strategy's edge is answered. The streak arithmetic above shows the mechanism: 10% risk per trade turns a 10-loss streak into a 65% drawdown, while 1% risk turns the same streak into under 10%."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long does it take to become a profitable trader?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No study measures a standard timeline. The 18–36 month, or 1–3 year, figures found in practitioner discussion are opinions, labelled as such, not data. The Brazil curve is a corrective: persistence alone, without an edge and tight risk control, did not produce profitability in that market."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I stop losing money in trading?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Follow the survival checklist above: a written plan, the 1–2% risk guideline, a live stop loss, a daily loss limit, journaling, and no premature scaling up. That is loss control, not a profit guarantee — it is aimed at improving survival, it does not promise profits."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can beginners become profitable traders?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The data shows most do not, in the markets and periods studied, and no guarantee is offered here. The minority outcome in the evidence is tied to preparation, process, and risk control rather than intelligence or secret indicators — which is why the checklist focuses on behaviour you can control."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is trading just gambling?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "One way to think about it — offered here as interpretive framing, not as a researched finding — is that gambling has a fixed negative edge that cannot be changed, whereas a trading edge is unproven until tested, so the high loss rates reflect untested trading, not a rigged game. Risk disclosure still applies: leveraged and derivatives trading can lose capital quickly, including through expiry and time decay and accumulated costs."
+          }
+        }
+      ]
+    }
+  ]
+}

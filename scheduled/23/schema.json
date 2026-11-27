@@ -1,0 +1,57 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "Net Expectancy: Your Edge After Everything",
+      "description": "Open your broker statement and audit your edge line by line: rank the cost that kills it, price the monthly frequency drag, and decide what to change.",
+      "author": {
+        "@type": "Person",
+        "@name": "Kaizen"
+      },
+      "datePublished": "2026-11-05",
+      "publisher": {
+        "@type": "Organization",
+        "@name": "Monks Of Market"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How do I work out net expectancy from my journal for this audit?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Take total net P&L after all charges and divide by the number of completed trades. Open positions are excluded — they have not finished. A trade that is breakeven before costs but negative after costs enters the total at its actual negative net amount after costs, not at ₹0."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "No single cost line is large, yet my net expectancy is at or below zero. What do I change?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The gross edge itself is too thin for any realistic cost load. Follow Step 5's last row: the lever is the system — a larger gross edge, or a different setup altogether."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "My charges are not flat per trade. How do I rank them?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Use the average-cost-per-trade bridge from Step 1: average cost per trade = total costs ÷ number of completed trades, taken from the statement. Flag it for what it is — an average, not a per-trade constant — then split the lines and rank them largest first."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I read a low fill rate alongside net expectancy?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Report the fill rate next to your net expectancy, as in Step 4: setups spotted versus fills taken over the same period for the same setup. A low fill rate changes the diagnosis — the problem may be execution and fill discipline rather than the setup's gross edge — and you cannot tell which until you log both numbers."
+          }
+        }
+      ]
+    }
+  ]
+}

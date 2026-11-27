@@ -1,0 +1,89 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "Option Trading Strategies: The Complete Guide",
+      "description": "Option strategies by market view: straddle, strangle, iron condor, butterfly, covered call, protective put — breakeven, max profit, max loss, when each fails.",
+      "author": {
+        "@type": "Person",
+        "@name": "Kaizen"
+      },
+      "datePublished": "2026-11-09",
+      "publisher": {
+        "@type": "Organization",
+        "@name": "Monks Of Market"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What are option trading strategies?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Option trading strategies are combinations of option legs — bought and sold calls and puts, sometimes alongside shares you own — chosen to create a defined risk-reward profile for a particular market view. Instead of betting only on direction, a strategy can bet on a big move in either direction, on a range holding, on income from a holding, or on protection for a holding. The legs, not any single option, create the payoff."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which option trading strategy is best for beginners?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "There is no single best strategy for beginners — fit depends on your market view, as the chooser table above shows. Sensible starting points are defined-risk structures with a small size: a covered call or protective put around shares you already own, or a long straddle or strangle around a known event where the total premium paid is the known maximum loss. Naked selling is excluded for beginners entirely, because its risk is undefined. Start small, paper-trade first, and size from the maximum loss."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the difference between a straddle and a strangle?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A straddle buys a call and a put at the same strike; a strangle buys an out-of-the-money call and an out-of-the-money put at different strikes. The straddle costs more — ₹350 per share in this guide's illustration against ₹185 for the strangle — but needs a smaller move to profit, with breakevens of ₹24,650 and ₹25,350 against the strangle's ₹24,315 and ₹25,685. The strangle is cheaper; the straddle is more likely to profit. Both lose to time decay in flat markets and to volatility collapse after an event."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is an iron condor?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "An iron condor sells an out-of-the-money put spread and an out-of-the-money call spread with the same expiry, for a net credit. It profits when the underlying stays between the two short strikes. Maximum profit is the net credit received (₹120 per share in this guide's illustration); maximum loss is the spread width minus the credit (₹500 − ₹120 = ₹380). The long legs hedge the short legs, which is what makes the risk defined — and the loss-to-profit ratio is why sizing matters more than win rate."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the difference between an iron condor and a butterfly spread?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A condor profits across a range; a butterfly profits at a point. The iron condor in this guide profits anywhere between its short strikes (₹24,380 to ₹25,620 after the credit), while the butterfly profits only between ₹24,585 and ₹25,415, peaking at the middle strike of ₹25,000. The condor's winning zone is wider but its maximum profit is smaller (₹120 against the butterfly's ₹415 in these illustrations); the butterfly's maximum profit is larger but its zone is far narrower. Wider zone, smaller prize versus narrower zone, bigger prize — that is the trade-off."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is a covered call?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A covered call means owning the underlying and selling a call against it. You collect the premium (₹35 per share in this guide's illustration, selling the 1,900 call against shares bought at ₹1,850), which lowers your breakeven to ₹1,815 and caps your maximum profit at ₹85 per share. The premium cushions small falls but does not prevent large ones, and in a strong rally you give up all gains above the strike. It is an income-for-upside trade, not downside protection."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is a protective put?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A protective put means owning the underlying and buying a put against it. In this guide's illustration you hold shares bought at ₹1,850 and buy the 1,750 put for ₹28, which caps your maximum loss at ₹128 per share while keeping unlimited upside minus the premium. The breakeven rises to ₹1,878. The cost is recurring: in flat markets the premium drags returns, month after month, which is the price of the floor."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do you choose an option strategy?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Choose in this order: market view first, then volatility view, then defined versus undefined risk, then affordability in lots. A big unknown-direction move points to a straddle or strangle; a range points to an iron condor or butterfly; a holding you want income from points to a covered call; a holding you want protected points to a protective put. Then size from the maximum loss, write down your exit before entry, and pick the failure mode you can live with — because every strategy fails in its own specific way, and that failure, not the best-case payoff, is what you are really choosing."
+          }
+        }
+      ]
+    }
+  ]
+}

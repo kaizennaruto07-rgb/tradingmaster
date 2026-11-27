@@ -1,0 +1,105 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "In-Sample vs Out-of-Sample: The Honest Split",
+      "description": "In-sample vs out-of-sample testing: the honest chronological split, the no-touch rule, and how to read the comparison with go, fix, and reject verdict bands.",
+      "author": {
+        "@type": "Person",
+        "@name": "Kaizen"
+      },
+      "datePublished": "2026-11-01",
+      "publisher": {
+        "@type": "Organization",
+        "@name": "Monks Of Market"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is in-sample vs out-of-sample testing in trading?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "In-sample testing develops and tunes a strategy on one portion of historical data. Out-of-sample backtesting runs the finished, locked strategy once on a separate portion it has never seen, as a blind test. The in-sample result shows how well the strategy fits its tuning data; the out-of-sample result is the first honest indication of whether the edge survives unseen data."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is a good in-sample to out-of-sample split ratio?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The standard rule of thumb is 70/30 — the first 70% of history for development, the remaining 30% for the blind test — with 70–80% / 20–30% as the commonly used range. The ratio must bend to trade counts: each side needs enough trades to judge. If either side is too thin, get more history rather than shrinking the holdout."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why must the split be chronological and not random?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Because time order is the point. A shuffled or random split mixes past and future, so the strategy gets tuned on data from after the period it is supposedly predicting. In live trading you never trade yesterday with tomorrow's knowledge, so a test that allows it is not a test. Time-series splits must respect chronological order."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much should out-of-sample performance degrade before I worry?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Some degradation is normal. As rules of thumb, degradation within roughly 20–30% on most metrics with an out-of-sample to in-sample ratio above ~0.5 is the healthy zone; degradation beyond ~50%, a ratio below ~0.3, profit factor collapsing below 1.0, or expectancy turning negative is a severe warning. These are overlapping rules of thumb from multiple sources, not one precise scientific cutoff — read the pattern across metrics, not a single number."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What should I do if my strategy fails out-of-sample testing?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Apply the branches. If the failure is total — profit factor below 1.0 or expectancy negative — reject or rebuild. If it is in-between, diagnose first: steady decay across metrics means simplify the rules or reduce parameter count; a single-metric collapse means check costs and regime before blaming the signal. In both cases, re-validate on genuinely fresh data, never on the same slice."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I re-test on the same out-of-sample data after changing my strategy?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. The moment a parameter or rule is changed because of what the holdout showed, that holdout is spent — it has become optimisation input, and a re-test on it proves nothing. The only honest re-test is fresh unseen data: a later period, or a walk-forward run over later data."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is out-of-sample testing enough to prevent overfitting?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. A single split tests parameter overfitting on one window. It cannot catch overfitting in the choice of rules, instrument, or timeframe, because those were fixed before the split. It is one rung: backtest, honest split, walk-forward, final holdout, paper trading, live small. Each rung can still veto the strategy."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How is a single in-sample/out-of-sample split different from walk-forward testing?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A single split gives one verdict on one unseen window, which may happen to be easy or hard for the strategy. Walk-forward testing repeats the split across many windows — optimise on one window, test on the next, roll forward — so the verdict rests on many unseen periods instead of one. Walk-forward is the next ladder rung after the split."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How many trades do I need in each part of the split?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Enough trades on each side to judge — a holdout with only a handful of trades cannot deliver a verdict, however clean the split looks on a calendar. The counting itself belongs to the companion article on how many trades it takes to validate a strategy; the rule here is that if you cannot fill both sides, no verdict is possible yet."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does passing out-of-sample testing mean my strategy will profit live?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. A pass means the strategy survived one unseen window of history. Costs, slippage, liquidity gaps, and regime shifts still stand between a backtest and a live account, and a single lucky window is not a pass. The ladder after the split — walk-forward, final holdout, paper trading, live small — exists precisely because a split pass is necessary but not sufficient."
+          }
+        }
+      ]
+    }
+  ]
+}

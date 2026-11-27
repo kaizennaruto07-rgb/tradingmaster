@@ -1,0 +1,145 @@
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Article",
+   "headline": "Call vs Put Options: The Difference, the Four Positions, and How to Choose",
+   "description": "Call vs put options explained for beginners: what each contract does, the four positions they create, a mirrored worked example, and a plain rule for choosing.",
+   "author": {
+    "@type": "Person",
+    "@name": "Kaizen"
+   },
+   "datePublished": "2026-11-24",
+   "publisher": {
+    "@type": "Organization",
+    "@name": "Monks Of Market"
+   }
+  },
+  {
+   "@context": "https://schema.org",
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "What is the difference between a call and a put option?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "A call option gives the buyer the right to buy the underlying at the strike price before expiry; a put option gives the buyer the right to sell at the strike price before expiry. You buy a call when you think the price will rise and a put when you think it will fall \u2014 or when you want to protect shares you already own."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "When should I buy a call option?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "When you think the price will rise meaningfully before expiry \u2014 meaningfully enough to clear your breakeven, which is the strike price plus the premium you paid. If the rise you expect is small or slow, a call is the wrong tool, because the premium decays every day and the option can expire worthless even if the direction was right."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "When should I buy a put option?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "When you think the price will fall meaningfully before expiry \u2014 far enough to clear your breakeven, the strike price minus the premium. The other reason is protection: you own shares and want insurance against a fall, so you buy a put that pays off if the holding drops."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Which is better, a call or a put?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Neither is better in general. A call wins when the price rises; a put wins when it falls. The right choice depends entirely on your view of the direction \u2014 and on whether the move you expect is big enough and fast enough to beat breakeven before expiry. If you have no directional view, neither is the right answer."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What is the maximum profit on a call option vs a put option?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "For a bought call, maximum profit is in principle unlimited, because a price can keep rising without a ceiling. For a bought put, maximum profit is capped at the strike price minus the premium, because a price cannot fall below zero. In both cases, the profit at expiry is the option's value minus the premium you paid."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Can you lose more money than the premium you paid?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "As a buyer, no \u2014 the most you can lose is the premium you paid, because you hold a right, not an obligation. As a seller, yes \u2014 selling an option takes on an obligation, and the loss can far exceed the premium collected. That asymmetry is why beginners are guided toward buying."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What happens if I buy a call and the price falls?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "The call loses value as the price falls, and if the price is below the strike at expiry, the call expires worthless and you lose the premium you paid. The loss is capped at the premium \u2014 but it is still a full loss of what you paid, which is why the move has to happen in your direction, by enough, before expiry."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What is CE and PE in options?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "On the Indian index market, contracts are labelled CE (Call European) and PE (Put European). A contract name reads as index + expiry + strike + CE or PE. European-style means the option can only be exercised at expiry, not before."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Is it better to buy or sell options as a beginner?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Buy. As a buyer, your maximum loss is the premium paid and your potential profit is large. As a seller, your profit is limited to the premium received while your loss can be large \u2014 and selling needs margin and carries obligations. Selling waits until margin, time decay, and assignment risk are properly understood."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Do call and put options expire?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes \u2014 both expire on a fixed date. At expiry, an option is either worth something (if the price has moved past the strike in your favour) or worthless. That deadline is what makes timing half the trade: the move has to happen before expiry, not eventually."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What is the breakeven price for a call option?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Strike price plus the premium paid. In this article's example: a 25,100-strike call bought for a Rs 120 premium breaks even at 25,220. The index must be above 25,220 at expiry for the call to make money."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What is the breakeven price for a put option?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Strike price minus the premium paid. In this article's example: a 24,900-strike put bought for a Rs 110 premium breaks even at 24,790. The index must be below 24,790 at expiry for the put to make money."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Can I buy both a call and a put at the same time?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes \u2014 you can hold both at once. Buying both means you pay two premiums, and you profit if the price moves strongly in either direction but lose both premiums if it stays near the middle. Whether that combination makes sense depends on the trade, and combinations of calls and puts belong to the strategies guide in this series, not to a first comparison."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What does it mean to sell a call option?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "It means you take on the obligation to sell the underlying at the strike price if the buyer chooses to exercise. You receive the premium up front \u2014 that is your maximum profit. Your loss is theoretically unlimited, because the price can keep rising and you would have to sell at the fixed strike. Selling a call is a seller's position, not a beginner activity."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Can a put option be used to protect shares I own?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes. A put bought against shares you own acts as insurance: if the holding falls, the put gains value and offsets part of the loss. The premium you pay is the cost of that insurance. A call has no equivalent use for protecting a holding."
+     }
+    }
+   ]
+  }
+ ]
+}

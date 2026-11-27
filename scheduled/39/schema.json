@@ -1,0 +1,137 @@
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Article",
+   "headline": "What Is Futures Trading? A Plain-English Guide for Indian Retail Traders",
+   "description": "What is futures trading? A plain-English guide for Indian traders: futures contracts, margin, leverage, daily settlement and expiry, with a worked example.",
+   "author": {
+    "@type": "Person",
+    "@name": "Kaizen"
+   },
+   "datePublished": "2026-11-13",
+   "publisher": {
+    "@type": "Organization",
+    "@name": "Monks Of Market"
+   }
+  },
+  {
+   "@context": "https://schema.org",
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "What is futures trading in simple words?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Futures trading is trading in standardised contracts that agree a price today for a transaction on a set future date. You are not buying the asset itself on day one \u2014 you are entering a binding agreement about its future price, and your account moves with the price every day until you close, roll, or reach expiry."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What is a futures contract?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "A futures contract is a standardised, exchange-traded, legally binding agreement to buy or sell a specific quantity of an underlying asset at a predetermined price on a set future date. The exchange fixes the asset, quantity, quality and delivery terms and expiry, and both parties are obligated to transact at expiry unless they close the position beforehand."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How does futures trading work?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "You open a position \u2014 long if you agree to buy, short if you agree to sell \u2014 and post initial margin. Each trading day the position is marked to market at the daily settlement price, with gains credited and losses debited that day. You then close before expiry with an equal opposite trade, roll into the next expiry, or hold to expiry and settle in cash or by physical delivery, depending on the underlying."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What is margin in futures trading?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Margin is a performance bond, not a down payment and not a loss limit. Initial margin is deposited on entry \u2014 in Indian equity derivatives, SPAN margin plus exposure margin \u2014 and if daily losses push your account below the maintenance level, a margin call requires you to top up or reduce or close the position, failing which your broker may close it."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Can you lose more than your margin in futures trading?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes. Profit and loss are calculated on the full notional value, not on the margin. In this guide's illustrative contract, a \u20b9100 fall wipes out the entire \u20b910,000 margin, and a \u20b9150 fall means a \u20b915,000 loss \u2014 \u20b95,000 more than the margin posted, before brokerage, taxes and charges."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What is mark-to-market settlement in futures?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Mark-to-market settlement is the daily revaluation of your position at the daily settlement price. Gains are credited and losses debited to your account every trading day the position is open, and the next day starts from the new settlement price. Losses therefore arrive daily, not only at expiry."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What happens when a futures contract expires?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "If the position is still open at expiry, it settles automatically: index futures are cash-settled, with only the cash difference paid or received, while stock futures are physically settled, with the long taking delivery of shares and the short delivering them. Most retail traders close or roll before expiry to avoid this. In India, NSE monthly derivatives expire on the last Tuesday of the month since 1 September 2025, and BSE contracts expire on Thursdays."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What is rollover in futures trading?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Rollover is closing an expiring contract and opening a position in the next expiry contract to keep the same exposure. It is not free and not automatic: you place both trades yourself, pay the price gap (spread) between the two expiries, and pay transaction costs on both legs."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Are futures cash-settled or physically settled?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "It depends on the underlying. In India, index futures are cash-settled and stock futures held to expiry are physically settled. Check the contract specification for the specific underlying before holding any future to expiry."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What are index futures and stock futures?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Index futures are futures whose underlying is a market index, such as the Nifty 50 or the Sensex. They give exposure to the broad market without owning any individual share, and in India they are cash-settled at expiry, with only the cash difference paid or received. Stock futures are futures whose underlying is an individual listed stock, and in India they are physically settled if held to expiry \u2014 the long takes delivery of the shares and the short delivers them. The settlement type follows the underlying; it is not chosen by the trader at expiry."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What is the difference between futures and forwards?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "A forward is a private, customised, over-the-counter agreement with bilateral counterparty risk and no daily settlement, while a futures contract is exchange-traded, standardised, centrally cleared through a clearinghouse, and settled daily."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What is the difference between futures and options?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "A futures contract obligates both parties to transact at expiry unless they close beforehand, while an option gives its buyer a choice \u2014 a right, not an obligation \u2014 for a premium. The full comparison belongs to the companion piece, Options vs Futures Trading."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Do you need a lot of capital to trade futures?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Margin is only a fraction of the notional value, so the deposit to open a position can look small \u2014 but the capital that matters is what the position's daily moves and margin calls can demand. A small margin does not mean small risk: in the illustrative contract, a 1% adverse move costs \u20b91,000 in a single day, and a larger move can exceed the margin entirely. No universal margin percentage applies to all contracts, so check the current specification for any real contract."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Is futures trading risky for beginners?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes, it is high-risk for a beginner without a defined risk plan, because of leverage, daily settlement, margin calls and the possibility of losing more than the margin posted. The honest starting point is to paper-trade and backtest first, as described in the live paper-trading and backtesting articles on this site, and only consider live futures once you can state in advance how much adverse movement you can survive and where you will exit."
+     }
+    }
+   ]
+  }
+ ]
+}

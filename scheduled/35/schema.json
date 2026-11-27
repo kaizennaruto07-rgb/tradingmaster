@@ -1,0 +1,105 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "Butterfly Spread Strategy: How the Four Legs Work, Where the Peak Really Is, and Why the Profit Zone Is So Narrow",
+      "description": "Butterfly spread strategy explained: 1-2-1 construction, breakevens, max profit and loss, and why the peak is a single point — one worked example.",
+      "author": {
+        "@type": "Person",
+        "@name": "Kaizen"
+      },
+      "datePublished": "2026-11-11",
+      "publisher": {
+        "@type": "Organization",
+        "@name": "Monks Of Market"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is a butterfly spread in options trading?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A butterfly spread is a neutral, defined-risk, limited-profit position on one underlying with one expiry, built from four contracts across three equally spaced strikes in a 1-2-1 ratio. In the call version you buy 1 lower-strike call, sell 2 middle-strike calls, and buy 1 higher-strike call, entering for a small net debit that is your maximum loss before charges."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do you construct a butterfly spread?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Choose three strikes with equal spacing, all on the same underlying and expiry. Buy 1 call at the lower strike, sell 2 calls at the middle strike, and buy 1 call at the upper strike. The two short middle legs fund most of the cost of the two long wings, so the position is entered for a net debit — ₹20 per unit in this article's example (180 + 60 − 2 × 110)."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the maximum profit and maximum loss in a butterfly spread?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Maximum loss is the net debit paid — ₹20 per unit in the example, before charges, suffered in full if the underlying closes at or below the lower strike or at or above the upper strike. Maximum profit is the wing width minus the net debit — 100 − 20 = ₹80 per unit before charges — achieved only if the underlying closes exactly at the middle strike at expiry."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do you calculate butterfly spread breakeven points?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Lower breakeven = lower strike + net debit; upper breakeven = upper strike − net debit. In the example: 24,900 + 20 = 24,920, and 25,100 − 20 = 25,080. Between those two levels the position is profitable at expiry before charges; charges narrow the zone in practice."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Butterfly spread vs iron condor: what is the difference?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The iron condor is a credit position with a wide, flat profit zone between two distinct short strikes — it suits a view that the underlying will stay somewhere inside a range. The butterfly is a debit position with a single-point peak — it suits a view that the underlying will finish at one specific level. The condor forgives imprecision; the butterfly punishes it point for point."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Butterfly spread vs straddle: which one should you use?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Use a straddle when you expect a big move in either direction and are willing to pay a larger debit for two at-the-money legs. Use a butterfly when you expect the underlying to finish near one specific level and are willing to accept a narrow profit zone for a small debit. They are mirror images: the move that makes a straddle profitable is the move that takes a butterfly to its full loss."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "When should you use a butterfly spread — and when should you avoid it?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Use it for a precise, low-volatility pin view: the underlying finishing near one level at expiry, with liquid legs and a debit you can afford to lose in full. Avoid it for directional views, for broad \"stay in a range\" views, when a big move or volatility expansion is expected, or when illiquid legs and charges would consume the small debit."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is an iron butterfly, and how is it different from a regular butterfly?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "An iron butterfly is the credit version using both puts and calls, with the short strikes at the same at-the-money level. It collects a credit rather than paying a debit, has a narrower profit zone, and most resembles a short straddle with wings. A regular (long) butterfly, taught in this article, pays a debit for a peaked payoff with the maximum profit at the middle strike."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What happens if the stock moves away from the middle strike before expiry?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Profit falls point for point with distance from the middle strike. Fifty points away in either direction in the example, profit is already down from 80 to 30. Beyond a breakeven (24,920 or 25,080) the position loses money, and beyond either wing (24,900 or 25,100) it loses the full ₹20 debit. The standard responses are to take a partial profit early, or to exit if the underlying moves beyond a breakeven with meaningful time left rather than hoping it drifts back."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is a butterfly spread good for beginners?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It can be a reasonable second spread to learn — after understanding single calls and simple vertical spreads — because its risk is defined and its worst case is a small, known debit. It is not a good first trade for a beginner who has not yet grasped that the peak is a single point: the common beginner error is sizing for the 4:1 headline ratio and discovering that most expiry outcomes pay far less than the peak, or lose the debit. Learn the construction, respect the pin requirement, keep all four legs in place, and size for the debit, not the peak. --- *This article is educational only. It describes how a butterfly spread works; it is not a recommendation to trade one, and it promises no return. Options can lose the full premium paid, and a butterfly can lose its full net debit. Check the lot size and charges in force at trade time, and understand your settlement type before holding any position into expiry.*"
+          }
+        }
+      ]
+    }
+  ]
+}

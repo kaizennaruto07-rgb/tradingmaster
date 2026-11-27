@@ -1,0 +1,113 @@
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Article",
+   "headline": "Understanding Options (Michael Sincere) \u2014 Summary: The First-Trades Ladder for Complete Beginners",
+   "description": "Understanding Options by Michael Sincere for complete beginners: the four basic trades as a practice ladder, assignment, pricing drivers and discipline.",
+   "author": {
+    "@type": "Person",
+    "@name": "Kaizen"
+   },
+   "datePublished": "2026-11-22",
+   "publisher": {
+    "@type": "Organization",
+    "@name": "Monks Of Market"
+   }
+  },
+  {
+   "@context": "https://schema.org",
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "Is Understanding Options a good book for beginners?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes, in our judgement based on reviewer consensus. It is written in plain, jargon-free language aimed at complete beginners, and it teaches the four basic option trades in the order you would actually use them, with the risks stated plainly. It is also a useful refresher for a more experienced reader. It is not the right book for an intermediate trader looking for depth."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Is Understanding Options worth reading?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "For a complete beginner, yes \u2014 as a first primer on what options are and how the four basic trades work. For a more experienced reader, it is worth reading as a refresher. For an intermediate trader looking for advanced strategy analysis or a complete trading system, it is not worth reading as a main book \u2014 reviewers agree it is too introductory for that reader."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What is the main message of Understanding Options?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "An option is a right, not an obligation \u2014 and that right decays every day you hold it. Learn the four basic trades in order, know your maximum loss before entering any trade, and let discipline, not the strategy, decide whether you survive your first trades."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What is the best book to learn options trading for a complete beginner?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "For a complete beginner, this article's judgement, based on reviewer consensus, is that Understanding Options is the best place to start, because it teaches the four basic trades in plain language before any strategy book does. Another primer-style starting point is also recognised for complete beginners, so this is a starting-point judgement, not an exclusive ranking. When you can explain all four trades and their maximum loss without looking, the next rungs are pricing, then strategy \u2014 Natenberg for pricing and McMillan for strategy."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What are the four basic option trades?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "The covered call, buying a call, buying a put, and selling a put \u2014 in that ladder order. The covered call sells a call on stock you own for income, with capped upside. Buying a call pays a premium for upside, with the maximum loss limited to the premium paid. Buying a put pays a premium for downside protection or a bearish view, with the maximum loss limited to the premium paid. Selling a put collects premium in exchange for the obligation to buy at the strike, with real downside exposure."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What is the difference between the 1st and 2nd editions of Understanding Options?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "The 1st edition dates to 2006. The 2nd edition was published by McGraw-Hill on January 6, 2014, runs to 320 pages, and is the edition this summary follows. The 2nd edition adds new material on assignment anxiety, LEAPS, the Greeks, protective and married puts, the collar, credit and debit spreads, straddles, the strangle, iron condors, calendar spreads, butterfly spreads, Weeklys, and mini-options."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How long does it take to read Understanding Options?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "It is a short book at 320 pages, which most readers work through over several sittings. Reading speed varies from person to person, so no fixed time is given here \u2014 the useful measure is not how fast you finish it, but whether you can explain all four basic trades and their maximum loss without looking once you have."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Is Understanding Options better than Options Trading for Dummies?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "No head-to-head ranking is claimed here. The comparison is on approach, using only verified facts about this book: Understanding Options teaches the four basic trades as a practice ladder in the order you would actually use them, with a maximum-loss rule for each rung and a paper-trading plan for putting them into practice. If you want a first book that tells you what to practise first, this one fits that job. This answer makes no claim about the other book's contents, coverage, or ranking against this one."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Do I need maths to read Understanding Options?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "No. The book is written in plain, jargon-free language for complete beginners, and the author says you do not need an advanced degree in mathematics to trade options successfully. The Greeks are introduced as plain-language dials, not formulas, and the pricing drivers are explained through what they do to a trade rather than through mathematics."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Can I trade options after reading Understanding Options?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Reading alone is not enough. The book teaches the four basic trades, not a complete trading system. Paper-trade the ladder first, in order, journal every trade, and review after twenty trades. Only then consider small real trades with a defined maximum loss, sized so the worst case is affordable, with a written exit rule in place."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What is assignment anxiety in options trading?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Assignment anxiety is the fear of being assigned on a short option \u2014 the worry that the buyer will exercise and you will have to honour your side of the deal. Assignment itself is the seller's normal obligation: on a covered call, it means selling the stock you own at the strike price, and on a short put, it means buying the shares at the strike price \u2014 and it can happen before expiry. It is made boring, rather than frightening, by the max-loss-first checklist: know the worst case before entry, size the position so the worst case is affordable, and have a written exit rule."
+     }
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,81 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "The Longest Losing Streak in Trading You'll Ever Face (And How to Prepare)",
+      "description": "The longest losing streak trading careers face grows with trade count. Use the exact-DP table to find your tail streak and prepare well before it arrives.",
+      "author": {
+        "@type": "Person",
+        "@name": "Kaizen"
+      },
+      "datePublished": "2026-11-08",
+      "publisher": {
+        "@type": "Organization",
+        "@name": "Monks Of Market"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How long can a losing streak last in trading?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Over a career, longer than over 100 trades — that is the career-length answer, not the short-sample answer. From the exact-DP table (independent trades, fixed win rate; clustering caveat applies: real markets cluster, so real runs can exceed the baseline), a 50% win-rate strategy has an expected longest of 6.0 losses over 100 trades, 9.3 over 1,000, and 11.6 over 5,000, with 90% tail values of 8, 12, and 14. A 40% win-rate strategy reaches a 90% tail value of 19 over 5,000 trades. There is no fixed maximum: even the 90% tail value leaves up to a 10% chance, under independence, of a longer run. So the honest answer is not a single number but a table row: your win rate plus your trade count gives your expected longest and your tail value, and your preparation should be built on the tail value."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the longest losing streak I should expect over 1,000 trades?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "From the article's own exact-DP table (independent trades, fixed win rate; clustering caveat: real markets cluster, so real runs can exceed the baseline), the expected longest losing streak over 1,000 trades — the central value, not a ceiling — is 12.4 losses at a 40% win rate, 9.3 at 50%, 8.1 at 55%, and 7.1 at 60%. The corresponding 90% tail values, which are the preparation figures, are 16, 12, 10, and 9 respectively. If you are planning for a losing streak over 1,000 trades, plan for the tail value in your row, not the expectation: a 50% trader who prepares for about 9 and meets 12 has prepared for the average and met the tail."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Will I definitely face a 10-loss streak if I trade long enough?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No — not definitely, and \"long enough\" must be quantified in trades, by win rate. These are at-least-one-in-T probabilities, exact DP (independent trades, fixed win rate; clustering caveat applies): at a 50% win rate, P(longest streak ≥ 10) is 4.4% over 100 trades, 38.5% over 1,000 trades, and 91.4% over 5,000 trades. At a 60% win rate, it is only 27.0% even over 5,000 trades. At a 40% win rate, it is already 91.5% over 1,000 trades. So a 10-loss streak becomes likely for some traders and stays unlikely for others, depending entirely on win rate and trade count. \"Long enough\" is not a feeling; it is a row and a column in the table."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I prepare for the worst losing streak?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Make the three pre-commitments before it arrives, all built on your tail value, not your expected longest. First, a capital buffer sized to the tail streak: set risk per trade so the compounded cost of your tail streak, 1 − (1 − r)^N, is an amount you can survive, including the recovery gain it demands. Second, a pause-and-review trigger adopted identically from the staged sibling article how-many-losing-trades-in-a-row-is-normal, mentioned in plain text only. Third, a psychological pre-commitment, decided in advance in writing, about what a streak inside the tail range means and does not mean — so it is recognised as foreseen when it arrives, not diagnosed as failure mid-streak."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much should I risk per trade so my worst streak doesn't ruin me?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Risk an amount such that your tail streak, compounded, costs a survivable drawdown. Use the formula 1 − (1 − r)^N with your own tail value N and your own capital — not the example's inputs. In the article's one worked example (₹100,000 account, 50% win rate, 1,000 trades, tail streak N = 12, exact DP), 1% risk per trade gives an 11.4% drawdown (₹11,362 lost, ₹88,638 left, 12.8% recovery needed), while 2% risk gives a 21.5% drawdown (₹21,528 lost, ₹78,472 left, 27.4% recovery needed). Doubling risk roughly doubles the worst-streak cost and more than doubles the recovery demanded. If the drawdown at your current risk feels unsurvivable, the fix is to reduce risk before the streak, not during it."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does a record losing streak mean my strategy is broken?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Not if it sits inside the tail range — it is a foreseen career event, not, by itself, evidence of failure. A record streak feels like proof because it is the worst you have personally seen, but the exact-DP table (independent trades, fixed win rate; clustering caveat applies) shows that longer runs are expected as trade count grows. The verdict procedure for judging whether a strategy has actually broken lives in the staged article how-many-losing-trades-in-a-row-is-normal, pointed to in plain text only and not re-taught here. Until that evidence question is answered separately, treat the streak as variance to survive, not as a verdict to act on by changing the strategy mid-drawdown."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why do losing streaks get longer the longer I trade?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Because more trades mean more windows in which a long run can appear, while the expected longest rises only slowly — logarithmically — with trade count. From the exact-DP table (independent trades, fixed win rate; clustering caveat applies), at a 50% win rate the expected longest rises from 6.0 over 100 trades to 9.3 over 1,000 and 11.6 over 5,000. The growth is slow, but it is steady, and the tail grows with it: P(longest streak ≥ 10) at 50% rises from 4.4% over 100 trades to 38.5% over 1,000 and 91.4% over 5,000. This article does not state a universal \"doubling adds exactly one loss\" rule, because the table does not support it at every step. The mechanism is simpler: a longer sequence simply gives a rare run more chances to occur somewhere inside it."
+          }
+        }
+      ]
+    }
+  ]
+}

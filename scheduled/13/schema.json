@@ -1,0 +1,105 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "After the Blow-Up: A Recovery Protocol",
+      "description": "Recovery after blowing up a trading account: pause 7 days, autopsy the log, rebuild five rules, then prove 20 rule-compliant trades at 0.5% before sizing up.",
+      "author": {
+        "@type": "Person",
+        "@name": "Kaizen"
+      },
+      "datePublished": "2026-10-31",
+      "publisher": {
+        "@type": "Organization",
+        "@name": "Monks Of Market"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What should I do immediately after blowing up my trading account?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Stop trading immediately. Close the platform, save the full trade history and your journal before memory edits it, and confirm the administrative facts: whether the account is actually at zero or terminated, whether any positions are still open, and whether any money is owed or blocked. Do not place a new trade, fund a new account, or start a new evaluation today. That is hour zero; the rest of the protocol starts after it."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long should I stay away from trading after a blow-up?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Under the protocol this article proposes, a minimum of 7 days with no live trading — and return only when the autopsy is written as well, whichever takes longer. A date alone never clears you to return. Reviewing old trades during the pause is allowed; trading new ideas in sim to soothe the loss is not, because it becomes shadow revenge trading."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Should I fund a new account right away to win the money back?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. The asymmetry is the reason: recovering from Rs 1,20,000 to Rs 3,00,000 after a 60% loss needs a Rs 1,80,000 gain, which is +150% on what is left, not +60%. Funding immediately to chase a 150% gain quickly means sizing up the same way that created the hole. Funding waits until the gates are passed: the pause, the written autopsy, and the five written rules — and then only from money you can afford to lose."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I figure out what actually caused my account to blow up?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "From the log, not from memory. Classify ALL losing trades in the log using the five labels — no stop, oversizing, averaging down/martingale, revenge re-entry, overtrading — recording the percentage of account risked, whether a stop existed and whether it was moved, whether size grew after a loss, and how many trades were taken in that session. If a trade fits none of the five labels, record it as \"unclassified — describe what happened in one line and treat it as a journaling gap, not as a sixth cause\". A rule-breaking winning trade is not a losing-trade classification: rule-breaking winning trades count as rule breaks for gate purposes even though they made money. Your primary cause and secondary cause are the classifications with log entries behind them. If the log is missing or too thin, the autopsy is incomplete, and a journaling rule becomes your first rebuild task."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How small should I start when I return to trading?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Smaller than the blown account — where \"smaller than the blown account\" means smaller than the ORIGINAL Rs 3,00,000 starting capital — funded only from money you can afford to lose, at 0.5% risk per trade. On the illustrative Rs 50,000 restart stake, that is Rs 250 risk per trade. The illustrative Rs 50,000 restart stake is separate affordable money used as the illustration, not an instruction to carve Rs 50,000 from the remainder. The rest of the Rs 1,20,000 balance is NOT traded during the 20-trade gate — only the restart stake trades, at 0.5% risk. The stake itself is your own affordable-money decision — this article gives the risk arithmetic, not a funding recommendation — and the 20-trade compliance gate applies regardless of stake size."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I know I am ready to trade live again?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Not by a feeling, and not by a winning streak. Under this protocol, readiness is the gates: 7 days elapsed, a written autopsy naming a primary and a secondary cause from the log, and five written rules plus a quit condition — followed by proof, which is 20 consecutive rule-compliant live trades at 0.5% risk. Compliance, not profit, is what the gate measures."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Should I go back to paper trading after blowing up?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sim or paper trading may be used after the Phase 1 exit gate and before Phase 4 live trades to test the mechanics of a changed setup. New-idea sim trading is prohibited during the 7-day pause and first becomes allowed only after the Phase 1 exit gate (7 days elapsed AND autopsy written), before any Phase 4 live trade; reviewing old trades in sim during the pause stays allowed; sim profit never counts toward any gate. Only rule-compliant live trades count, because sim carries no emotional cost, and emotional cost is what the gate is testing."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is different about recovering a blown funded/prop account?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A blown funded or evaluation account is normally terminated with no reset, so continuing means a new evaluation. The main protocol in this article is for your own capital; it does not resurrect a terminated account. No firm names, fee figures, or payout figures are relevant to that decision, and none are given here."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much do I need to gain to recover from a 60% loss?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "On this article's worked example, +150% on what is left — not +60%. Rs 3,00,000 falling to Rs 1,20,000 is a Rs 1,80,000 loss, and Rs 1,80,000 measured against the remaining Rs 1,20,000 is 150%. That figure is for this example only; it is the reason win-it-back sizing is a trap, not a promise about any real account."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "When should I stop trading instead of trying to recover?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Stop trading, at least for now, if the restart cannot be funded from money you can afford to lose, if the same primary cause has blown up two or more accounts with no rule change between them, or if you cannot complete the autopsy honestly. Stopping protects the rest of your money and is a successful outcome of this protocol, not a personal failure — and returning later, if you choose to, still means passing through the same gates."
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "The Revenge Trading Circuit-Breaker",
+      "description": "How to stop revenge trading, step by step: fill in the circuit-breaker contract, repair a breach, and compare what honouring it costs versus chasing a loss.",
+      "author": {
+        "@type": "Person",
+        "@name": "Kaizen"
+      },
+      "datePublished": "2026-11-06",
+      "publisher": {
+        "@type": "Organization",
+        "@name": "Monks Of Market"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What do I do after I break the breaker?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Follow the 5-step breach repair in this workbook, in order: stop trading immediately, close breach positions, log the breach honestly, leave the desk and do your walk-away activity with no return today, and review tomorrow — not tonight — what to change in the contract. A breach does not cancel the contract; the repair is part of using it."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does a scratch trade reset my consecutive-loss count?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, under this workbook's streak rule: a trade that ends flat or in profit — a scratch/breakeven trade or a win of any size — resets the consecutive-loss count to zero. Only a trade that loses money extends the count, so two losses separated by a scratch are not two consecutive losses."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I adapt the session stop for 24/7 crypto markets?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Define a personal session window and a rolling loss limit in the crypto row of the contract: your window's clock times, and a loss limit measured over any rolling 24 hours rather than a calendar day. When either the 2-consecutive-loss stop or the rolling limit is hit, you stop until the window resets — the window replaces the market close that day traders get for free."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I pick a first number for my daily loss limit?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Use the illustrative translation in this workbook, not a copied prescription: express a first fill-in value as a multiple of your normal risk per trade — for example, 3 times a 1% risk per trade gives a 3% first-fill figure to try — then adjust it from your own ledger. If hitting the number would leave you desperate to recover it the next morning, it is too large."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does a swing trader adapt the cooldown?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Use the swing row of the contract: cooldown until the next session, instead of the 15–30 minute day-trading cooldown. The rest of the contract does not change — the session still stops at 2 consecutive losses or at the daily loss limit, whichever comes first, and returns are still at half size under the winner-test."
+          }
+        }
+      ]
+    }
+  ]
+}

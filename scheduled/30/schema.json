@@ -1,0 +1,81 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "Consecutive Losses vs Drawdown: Which Should Scare You?",
+      "description": "Consecutive losses count trades; drawdown measures money lost from a peak. See why drawdown decides survival, with the 8-loss bridge table and a two-alarm rule.",
+      "author": {
+        "@type": "Person",
+        "@name": "Kaizen"
+      },
+      "datePublished": "2026-11-08",
+      "publisher": {
+        "@type": "Organization",
+        "@name": "Monks Of Market"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Is a losing streak the same as a drawdown?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. A losing streak is a count — losing trades in a row, with no winner between them. A drawdown is peak-to-trough money — how far equity has fallen from its prior peak, plus how long it stays underwater. The streak says how many trades lost; the drawdown says how much capital is gone. That distinction is the core of this article."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How many consecutive losses cause a big drawdown?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It depends on risk per trade. Under the bridge formula 1 − (1 − r)^N — assuming each loss equals exactly r of then-current equity, no trading costs, no partial exits, and no gap or slippage beyond the stop — eight consecutive losses give 3.93% at 0.5% risk, 7.73% at 1%, 14.92% at 2%, and 33.66% at 5%. There is no streak length that is \"big\" on its own; the same eight losses are small at 0.5% risk and large at 5%."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can you have a big drawdown without a losing streak?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. A single gap or oversized loss larger than the planned risk can produce a large drawdown in one trade, and a slow bleed of alternating wins and losses with negative expectancy can drag equity down with no streak at all. A streak alarm would miss both paths, which is why drawdown itself must be watched, not only the streak count."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can you have a long losing streak without a big drawdown?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. At small risk per trade, a long streak costs little. Eight consecutive losses at 0.5% risk produce only a 3.93% drawdown under the bridge assumptions stated above (each loss exactly r of then-current equity, no costs, no partial exits, no gap beyond the stop). The streak looks alarming; the money lost is small. Size, not count, decides the damage."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which is worse: 10 losses in a row or a 20% drawdown?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The 20% drawdown is worse as a survival question, because it measures money lost and recovery demanded — a 20% drawdown requires a 25% gain to recover — while the streak alone measures nothing. Ten consecutive losses illustrate the point: under the bridge assumptions, they give 9.56% at 1% risk and 18.29% at 2% (both below 20%), but 40.13% at 5% (above 20%). Whether ten losses are \"worse\" than a 20% drawdown therefore depends entirely on risk per trade; the drawdown figure answers the question directly, the streak count does not."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What drawdown should make me stop or reduce size?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Use the two-alarm rule in this article, decided before you trade: for the session itself, the session-stop rule of the staged companion article Revenge Trading Circuit-Breaker is adopted identically and pointed to in plain text only, and alongside it, the article's pre-committed sizing-down tier applies. Default starting tier: halve risk per trade at a 10% drawdown, and stop opening new trades at a 20% drawdown until the process review is complete. No competing ladder is offered here."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does a long losing streak mean my strategy is broken?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Not by itself. A streak diagnoses probability, regime and execution — it prompts the question of whether the run is consistent with your win rate, whether losses are clustering, and whether rules were broken. It does not deliver a verdict on its own. The normal-vs-red-flag verdict procedure lives in the staged companion article How Many Losing Trades in a Row Is Normal, pointed to in plain text only, and is not re-taught here. A long streak means review the process; it does not, alone, mean the strategy is broken."
+          }
+        }
+      ]
+    }
+  ]
+}

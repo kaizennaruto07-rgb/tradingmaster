@@ -1,0 +1,137 @@
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Article",
+   "headline": "What Is an Option? The Contract, the Four Building Blocks, and What Happens at Expiry",
+   "description": "What is an option? A plain-language guide for beginners: the four building blocks of every contract, call vs put, buyer vs seller, and what happens at expiry.",
+   "author": {
+    "@type": "Person",
+    "@name": "Kaizen"
+   },
+   "datePublished": "2026-11-24",
+   "publisher": {
+    "@type": "Organization",
+    "@name": "Monks Of Market"
+   }
+  },
+  {
+   "@context": "https://schema.org",
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "What is an option in simple words?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "An option is a paid chance, with a deadline. It is a contract that gives its buyer the right, but not the obligation, to buy or sell something at a fixed price \u2014 the strike \u2014 before a fixed date \u2014 the expiry \u2014 for a price called the premium. If the price moves your way, you can use the chance. If it does not, you walk away, and the premium is gone."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What is the difference between a call and a put option?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "A call option is the right to buy the underlying at the strike price before expiry; a put option is the right to sell the underlying at the strike price before expiry. Call buyers generally expect the underlying to rise; put buyers generally expect it to fall, or want protection against a fall. The full comparison belongs to the guide named Call vs Put Options."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What is a strike price?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "The strike price is the fixed price written into the option contract \u2014 the price at which the buyer may buy or sell the underlying if they choose to use the option. It never changes during the life of the contract. In the example in this guide, the call's strike is 25,100: the price at which the buyer may buy, and the line the underlying has to cross for the contract to be worth anything at expiry."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What is an option premium?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "The premium is the price of the option itself \u2014 what the buyer pays and the seller receives for the right the contract carries. It is not the strike price, and it is not the value of the underlying. In the example in this guide, the premium is Rs 120 per unit for the call and Rs 110 per unit for the put. The premium is non-refundable, and it is the most a buyer can lose. What the premium is made of, and what makes it move, is covered in full in the guide named What Is Option Premium?"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What is the expiry date of an option?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "The expiry is the date the option contract ends. After it, the option no longer exists. An option's entire value lives inside the time between now and expiry, which is why time is the product: a view that does not play out before the deadline can lose money even if it turns out right later."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What happens when an option expires?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "At expiry, an option is either worthless or worth exactly how far it is in the money \u2014 the time value has melted to zero and only the intrinsic value remains. In the example in this guide, the 25,100-strike call is worthless if the index ends below 25,100 and worth Rs 400 per unit if the index ends at 25,500. Most option contracts never get exercised; traders usually sell the option itself back to the market before expiry to capture any remaining time value."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Can you lose more money than the premium you paid?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "As a buyer, no: the maximum loss on a bought option is the premium paid \u2014 Rs 120 per unit in the call example in this guide \u2014 and nothing more is owed. As a seller, yes: the seller takes on an obligation, and the loss is not capped the same way. A naked call seller's loss is theoretically unlimited, and a short put can lose up to the strike minus the premium."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What is intrinsic value and time value?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Intrinsic value is what the option is worth right now if it were used today \u2014 for a call, how far the underlying is above the strike, or zero if it is below the strike. Time value is everything above intrinsic value: the price of the time left in the contract. Time value melts every day and is zero at expiry. In the example in this guide, the call at an index level of 25,500 has Rs 400 of intrinsic value per unit, and the buyer paid Rs 120 of premium, leaving a profit of Rs 280 per unit."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What is the difference between an option and a stock?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "A share is a piece of a business with no deadline on that ownership; an option is a contract about a price, with a deadline. An option expires, it is leveraged, and it confers no ownership \u2014 no dividends, no vote. A share can wait for a view to come right; an option cannot. The full comparison belongs to the guide named Options vs Stocks for Beginners."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How do options make money?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "A bought call makes money when the underlying rises above the breakeven \u2014 the strike plus the premium \u2014 before expiry. A bought put makes money when the underlying falls below the breakeven \u2014 the strike minus the premium \u2014 before expiry. In the example in this guide, the call breaks even at 25,220 and makes Rs 280 per unit if the index ends at 25,500; the put breaks even at 24,790 and makes Rs 290 per unit if the index ends at 24,500. Options also exist for insurance and for income, as set out in the Why Do Options Exist at All section above."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Are options risky for beginners?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes, in the specific way this guide describes: the risk is not only direction but timing, because the premium decays every day and the contract expires. A beginner can lose the entire premium, and a beginner who sells options takes on obligations whose losses are not capped the same way. The risk is manageable only with the frame set out in this guide \u2014 size from the maximum loss, decide the exit before entry, and paper trade for weeks before risking real capital."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Is option trading legal in India?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes. Options are traded on regulated exchanges under the market regulator's framework. Legality is not the question a beginner needs to answer; understanding the contract, the deadline, and the maximum loss is."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What does it mean to exercise an option?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Exercising an option means using the right the contract carries \u2014 buying the underlying at the strike if you hold a call, or selling it at the strike if you hold a put. Exercising captures only the intrinsic value, so it generally makes sense only at or near expiry; most traders sell the option itself back to the market before expiry instead. Some options can be exercised at any time before expiry, and others only at expiry."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Why do most options expire worthless?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Because the move they need is large and the time they have is short. An option is worthless at expiry unless the underlying has crossed the strike by then, and the time value \u2014 the price of the chance that it will \u2014 melts to zero as expiry approaches. Cheap far-out-of-the-money options are the clearest case: bought for a tiny premium, hoping for a huge return, they usually expire worthless because the underlying rarely travels that far that fast."
+     }
+    }
+   ]
+  }
+ ]
+}

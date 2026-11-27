@@ -1,0 +1,105 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "Long Straddle Strategy: What It Costs, Where It Breaks Even, and When It Fails",
+      "description": "A long straddle buys an ATM call and put at the same strike. Learn its cost, breakevens, payoff, and the four ways it fails — with one fully worked ₹ example.",
+      "author": {
+        "@type": "Person",
+        "@name": "Kaizen"
+      },
+      "datePublished": "2026-11-10",
+      "publisher": {
+        "@type": "Organization",
+        "@name": "Monks Of Market"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is a long straddle in options trading?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A long straddle buys a call and a put on the same underlying, at the same strike price (usually at-the-money) and with the same expiry. It profits from a large move in either direction and loses money if the underlying stays close to the strike. Its maximum loss is the total premium paid for both legs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do you calculate straddle breakeven points?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Add the call and put premiums to get the total premium. The upper breakeven is the strike plus the total premium, and the lower breakeven is the strike minus the total premium. In the worked example: strike 25,000 and total premium ₹230 give breakevens of 25,230 and 24,770. These are at-expiry breakevens before charges."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the maximum loss in a long straddle?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The total premium paid, plus charges. In the worked example that is ₹230 per unit, suffered in full if the index closes exactly at the 25,000 strike at expiry and both legs expire worthless. The loss is capped — unlike a short straddle, it cannot exceed what you paid."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Long straddle vs long strangle: which is better?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Neither is always better. A straddle costs more but has breakevens closer to the current price, so it needs a smaller move to profit. A strangle costs less but its out-of-the-money strikes push the breakevens further away, so it needs a larger move. Choose based on your budget, the size of move you expect, and how much premium you can afford to lose."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "When should you use a long straddle?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "When a known catalyst — earnings, a Budget announcement, a policy decision, or an election result — is likely to cause a large move, but you genuinely do not know the direction. Prefer entries when implied volatility is not already extreme, and always pair the trade with an exit plan."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is a long straddle profitable? Why do most straddles lose money?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A straddle is profitable only when the realised move beats the move already priced into the premiums, or when rising implied volatility lifts the position before expiry. Most straddles lose because most periods do not deliver a big enough move: time decay bleeds both legs on flat days, and IV crush after a known event can deflate both legs even when the underlying moves."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What happens to a long straddle if the market stays flat?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Both legs lose time value every day, and the position's value shrinks toward zero as expiry approaches. At expiry, if the underlying closes at the strike, both legs expire worthless and the entire premium is lost. A flat market is the straddle's worst environment, not a neutral one."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Long straddle vs short straddle: what is the difference?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A long straddle buys both legs, pays premium, has capped loss, and profits from a big move. A short straddle sells both legs, collects premium, profits if the underlying stays near the strike, and carries unlimited risk on the upside. Beginners should not sell straddles naked."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much capital do you need for a straddle?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The total premium multiplied by your lot size, plus brokerage and statutory charges. In the worked example the premium is ₹230 per unit, so the premium cost is ₹230 times the number of units in your lot, plus charges. Check your broker's current lot size before trading — lot sizes change — and size the trade so the full premium at risk fits your risk-per-trade limit."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Should you hold a straddle till expiry?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Usually not by default. A fast move or a rise in implied volatility can make the straddle profitable well before expiry, and holding to expiry exposes you to pinning at the strike — the maximum-loss point. Decide your exit triggers before entry, and treat \"exit on the move\" as the normal plan, with holding to expiry as the exception that needs its own reason."
+          }
+        }
+      ]
+    }
+  ]
+}
